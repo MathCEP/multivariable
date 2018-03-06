@@ -207,4 +207,102 @@ Practice identifying closed/open/neither/both.
 \end{example}
 \end{foldable}
 
+\section{Connected Sets}
+
+We now define what it means for a set to be path-connected. This is generally consistent with your intuitive idea of what ``connected'' should mean, but we are now able to make this mathematically rigorous.
+
+\begin{definition}
+A set $X\subset \mathbb{R}^n$ is path-connected if any two points can be connected by a path which lies entirely in $X$.
+\end{definition}
+
+\begin{example}
+\begin{foldable}
+For each of the following sets, determine whether or not they are path-connected.
+
+IMAGE
+\begin{multipleChoice}
+\choice[correct]{path-connected}
+\choice{not path-connected}
+\end{multipleChoice}
+
+IMAGE
+\begin{multipleChoice}
+\choice[correct]{path-connected}
+\choice{not path-connected}
+\end{multipleChoice}
+
+IMAGE
+\begin{multipleChoice}
+\choice{path-connected}
+\choice[correct]{not path-connected}
+\end{multipleChoice}
+\end{foldable}
+\end{example}
+
+\section{Simply Connected Sets}
+
+The last topological concept we will cover is when a path-connected set is ``simply connected.'' Intuitively, this depends on whether or not the set has holes. Our definition for simply connected is a bit hand wavy, but this will serve our purpose just fine. It can be made rigorous using continuous maps. (INCLUDE THIS SOMEWHERE?)
+
+\begin{definition}
+A path-connected set $X\subset\mathbb{R}^n$ is \emph{simply connected} if any closed path (i.e., loop) can be shrunk to a point, where the shrinking occurs entirely in $X$.
+\end{definition}
+
+Note that a set needs to be path-connected in order to be considered simply connected.
+
+\begin{example}
+\begin{foldable}
+For each of the following sets, determine whether or not they are simply connected.
+
+$\mathbb{R}^2\setminus\{(0,0)\}$
+IMAGE
+\begin{multipleChoice}
+\choice{simply connected}
+\choice[correct]{not simply connected}
+\end{multipleChoice}
+
+$\mathbb{R}^2$
+IMAGE
+\begin{multipleChoice}
+\choice[correct]{simply connected}
+\choice{not simply connected}
+\end{multipleChoice}
+
+$\{(x,y,z)\,:\,x^2+y^2+z^2=1\}$
+IMAGE
+\begin{multipleChoice}
+\choice[correct]{simply connected}
+\choice{not simply connected}
+\end{multipleChoice}
+
+A torus (the surface of a donut)
+IMAGE
+\begin{multipleChoice}
+\choice{simply connected}
+\choice[correct]{not simply connected}
+\end{multipleChoice}
+\end{foldable}
+\end{example}
+
+\section{Conclusion}
+
+In this activity, we introduced the following topological terms.
+\begin{itemize}
+\item open ball
+\item open set
+\item interior point
+\item closed set
+\item boundary point
+\item boundary of a set
+\item path-connected
+\item simply connected
+\end{itemize}
+
+We also established the following results.
+\begin{itemize}
+\item The union of a collection of open sets is itself open.
+\item A set is closed if and only if it contains all of its boundary points.
+\end{itemize}
+
+These terms will allow us to correctly state some theorems about vector fields, which have special requirements on the domain. These theorems will be covered in the next two activities.
+
 \end{document}
