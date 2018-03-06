@@ -1,6 +1,7 @@
 \documentclass{ximera}  
 
-\title{Topology}  
+\title{Topology}
+\author{Melissa Lynn}  
 
 \begin{document}  
 \begin{abstract}  
@@ -42,7 +43,7 @@ In $\mathbb{R}^1$, an open ball is simply an open interval. For example, $(1,3)$
 {$\x$};
 \node[draw, circle, thick, fill=white, minimum size=1mm, inner sep=0] at (1,0) {};
 \node[draw, circle, thick, fill=white, minimum size=1mm, inner sep=0] at (3,0) {};
-\draw[very thick    ] (1.05,0) -- (2.95,0);
+\draw[very thick] (1.05,0) -- (2.95,0);
 \end{tikzpicture}
 \end{center}
 
@@ -108,7 +109,7 @@ In $\mathbb{R}^3$, $B_4((1,2,3))$ is the
 \choice{inside of a circle}
 \choice[correct]{inside of a sphere}
 \end{multipleChoice}
-of radius $\answer[given]{4}$ centered at $(\answer[given]{1}, \answer[given]{2}, \answer[given]{3})$.
+of radius $\answer{4}$ centered at $(\answer{1}, \answer{2}, \answer{3})$.
 \end{foldable}
 \end{example}
 
@@ -120,7 +121,11 @@ A set $U\subset \mathbb{R}^n$ is \emph{open} if for every $\mathbf{a}\in U$, the
 
 In words, for any point $\mathbf{a}$ in $U$, we can find a radius $r$ small enough that the entire ball of radius $r$ centered at $\mathbf{a}$ is contained in $U$.
 
-%PICTURE, OR VIDEO?
+\begin{tikzpicture}
+\draw [dashed, fill=gray] plot [smooth cycle] coordinates {(0,0) (2,2) (4,1) (2,-2) (1.5,-0.5)};
+\draw[dashed, fill=darkgray] (2,1.6) circle (.3);
+\draw[fill=black] (2,1.6) circle (.03);
+\end{tikzpicture}
 
 Even if we don't have an open set, it's possible that there might be some points in $U$ with this special property. We call these points interior point.
 
