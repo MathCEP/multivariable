@@ -40,7 +40,7 @@ f(x,y) = \answer{x^2\sin(y)+y^2}
 
 \begin{problem}
 (Stolen from webwork) For each of the following vector fields $\mathbf{F}$, decide whether it is conservative or not. If it is conservative, give a potential function $f$. If it is not conservative, write ``DNE''.
-\begin{align}
+\begin{align*}
 \mathbf{F}(x,y) &= (12x-4y)\mathbf{i} + (-4x+8y)\mathbf{j}\\
 f(x,y) &=  \answer{6x^2-4xy+4y^2}\\
 \mathbf{F}(x,y) &= 6y\mathbf{i} + 7x\mathbf{j}\\
@@ -51,7 +51,7 @@ f(x,y,z) &= \answer{3x^2+\frac{7y^2}{z}}\\
 f(x,y) &= \answer{6x\sin(y)-4y^2}\\
 \mathbf{F}(x,y,z) &= 6x^2\mathbf{i}-4y^2\mathbf{j}+4z^2\mathbf{k}\\
 f(x,y,z) &= \answer{\frac{1}{3}(6x^3-4y^3+4z^3)}
-\end{align}
+\end{align*}
 \end{problem}
 
 \begin{problem}(Stolen from webwork)
@@ -150,6 +150,66 @@ For each problem, determine if the set is open, closed, connected, and/or simply
     \choice[correct]{Simply connected}
   \end{selectAll}
 \end{enumerate}
+\end{problem}
+
+\section{Written Homework}
+
+\begin{problem}
+(Stolen from Colley) Of the two vector fields
+\[
+\mathbf{F}=xy^2z^3\mathbf{i}+2x^2y\mathbf{j}+3x^2y^2z^2\mathbf{k}
+\]
+and
+\[
+\mathbf{G}=2xy\mathbf{i}+(x^2+2yz)\mathbf{j}+y^2\mathbf{k}
+\]
+one is conservative and one is not. Determine which is which, and, for the conservative field, find a scalar potential function.
+
+Quick check: the potential function is $\answer{x^2y+y^2z}$.
+\end{problem}
+
+\begin{problem}
+(Stolen from Colley) Find all functions $M(x,y)$ such that the vector field
+\[
+\mathbf{F}=M(x,y)\mathbf{i}+(x\sin y-y\cos x)\mathbf{j}
+\]
+is conservative.
+
+Quick check: $M(x,y) = -\cos y + \frac{1}{2} y^2\sin{x} + g(x)$.
+\end{problem}
+
+\begin{problem}
+Sketch both of the following sets (in two different pictures) and determine whether they are open, closed, neither, or both and whether they are disconnected, connected, and/or simply connected. State all which apply and justify your answer using appropriate definitions and theorems.
+\begin{enumerate}
+\item[(a)] $A=\{x^2+y^2<1\}\cup\{x=0\}\subset\mathbb{R}^2$
+\item[(b)] $B=\{x^2+y^2=1\}\cup\{x=0\}\subset\mathbb{R}^2$
+\end{enumerate}
+\end{problem}
+
+\section{Professional Problem}
+
+\begin{problem}
+Write a careful proof of this statement:
+
+\begin{theorem}
+Let $D_1,D_2,...,D_n$ be closed sets in $\mathbb{R}^n$. Then their intersection
+\[
+D=D_1\cap D_2\cap\cdots\cap D_n
+\]
+is a closed set as well.
+\end{theorem}
+
+For this professional problem, be \emph{very careful} to use notation and definitions correctly. Because you have already seen most of the necessary elements, your proof should be elegant, well-organized, and concise.
+
+\begin{hint}
+Take a similar theorem we proved in workshop about open sets, and use De Morgan's Laws for sets. Incidentally, this theorem would still be true even with an intersection of infinitely many closed sets!
+\end{hint}
+\end{problem}
+
+\section{Extra Problems}
+
+\begin{problem}
+More problems = more fun!
 \end{problem}
 
 \end{document}
