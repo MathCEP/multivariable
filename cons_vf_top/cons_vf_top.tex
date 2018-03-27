@@ -1,10 +1,10 @@
 \documentclass{ximera}  
 
-\title{Conservative Vector Fields and Topology}  
+\title{Path Independence and FTLI}  
 
 \begin{document}  
 \begin{abstract}  
-This activity deals with theorems about conservative vector fields, and the topological conditions for these theorems.  
+This activity introduces path independence and the Fundamental Theorem of Line Integrals.
 \end{abstract}  
 \maketitle  
 
@@ -17,10 +17,10 @@ Consider the vector field $\textbf{F}(x,y) = (y,0)$. Let $\textbf{x}(t)$ be the 
 \begin{explanation}
 We'll begin by parametrizing our paths.
 \[
-\textbf{x}(t)= (\answer[given]{1-t},\answer[given]{t})\hspace{1cm}\textrm{for }t\in[0,1]
+\textbf{x}(t)= (\answer{1-t},\answer{t})\hspace{1cm}\textrm{for }t\in[0,1]
 \]
 \[
-\textbf{y}(t)= (\answer[given]{\cos(t)},\answer[given]{\sin(t)})\hspace{1cm}\textrm{for }t\in[0,\frac{\pi}{2}]
+\textbf{y}(t)= (\answer{\cos(t)},\answer{\sin(t)})\hspace{1cm}\textrm{for }t\in[0,\frac{\pi}{2}]
 \]
 Now, we compute these line integrals using the definition
 \[
@@ -29,16 +29,16 @@ Now, we compute these line integrals using the definition
 Integrating along $\textbf{x}$, we have
 \begin{align*}
 \int_\textbf{x} \textbf{F}\cdot d\textbf{s} &= \int_a^b\textbf{F}(\textbf{x}(t))\cdot \textbf{x}'(t)\,dt\\
-&= \int_{\answer[given]{0}}^{\answer[given]{1}}(t,0)\cdot(-1, 1)\,dt\\
-&= \int_{\answer[given]{0}}^{\answer[given]{1}}-t\,dt\\
-&= \answer[given]{-\frac{1}{2}}
+&= \int_{\answer{0}}^{\answer[given]{1}}(t,0)\cdot(-1, 1)\,dt\\
+&= \int_{\answer{0}}^{\answer{1}}-t\,dt\\
+&= \answer{-\frac{1}{2}}
 \end{align*}
 Integrating along $\textbf{y}$, we have
 \begin{align*}
 \int_\textbf{y} \textbf{F}\cdot d\textbf{s} &= \int_a^b\textbf{F}(\textbf{y}(t))\cdot \textbf{y}'(t)\,dt\\
-&= \int_{0}^{\pi/2}(\sin(t),0)\cdot({\answer[given]{-\sin(t)}}, {\answer[given]{\cos(t)}})\,dt\\
-&= \int_{0}^{\pi/2}\answer[given]{-\sin^2(t)}\,dt\\
-&= \answer[given]{-\frac{\pi}{4}}
+&= \int_{0}^{\pi/2}(\sin(t),0)\cdot({\answer{-\sin(t)}}, {\answer{\cos(t)}})\,dt\\
+&= \int_{0}^{\pi/2}\answer{-\sin^2(t)}\,dt\\
+&= \answer{-\frac{\pi}{4}}
 \end{align*}
 Comparing $\int_\textbf{x} \textbf{F}\cdot d\textbf{s}$ and $\int_\textbf{y} \textbf{F}\cdot d\textbf{s}$, we see that they are
 \begin{multipleChoice}
@@ -67,16 +67,16 @@ Next, we compute these line integrals using the definition
 Integrating along $\textbf{x}$, we have
 \begin{align*}
 \int_\textbf{x} \textbf{F}\cdot d\textbf{s} &= \int_a^b\textbf{F}(\textbf{x}(t))\cdot \textbf{x}'(t)\,dt\\
-&= \int_{0}^{1}(\answer[given]{t},\answer[given]{1-t})\cdot(-1, 1)\,dt\\
-&= \int_{0}^{1}\answer[given]{1-2t}\,dt\\
-&= \answer[given]{0}
+&= \int_{0}^{1}(\answer{t},\answer{1-t})\cdot(-1, 1)\,dt\\
+&= \int_{0}^{1}\answer{1-2t}\,dt\\
+&= \answer{0}
 \end{align*}
 Integrating along $\textbf{y}$, we have
 \begin{align*}
 \int_\textbf{y} \textbf{F}\cdot d\textbf{s} &= \int_a^b\textbf{F}(\textbf{y}(t))\cdot \textbf{y}'(t)\,dt\\
-&= \int_{0}^{\pi/2}(\answer[given]{\sin(t)},\answer[given]{\cos(t)})\cdot(-\sin(t), \cos(t))\,dt\\
-&= \int_{0}^{\pi/2}\answer[given]{-\sin^2(t)+\cos^2(t)}\,dt\\
-&= \answer[given]{0}
+&= \int_{0}^{\pi/2}(\answer{\sin(t)},\answer{\cos(t)})\cdot(-\sin(t), \cos(t))\,dt\\
+&= \int_{0}^{\pi/2}\answer{-\sin^2(t)+\cos^2(t)}\,dt\\
+&= \answer{0}
 \end{align*}
 Comparing $\int_\textbf{x} \textbf{F}\cdot d\textbf{s}$ and $\int_\textbf{y} \textbf{F}\cdot d\textbf{s}$, we see that they are
 \begin{multipleChoice}
@@ -94,35 +94,22 @@ A continuous vector field is called \emph{path independent} if $\int_C \textbf{F
 
 Let's review the meaning of the requirements on the curves $C$ and $D$.
 
-A curve is \emph{simple} if it 
-\begin{multipleChoice}
-\choice{isn't too ``bumpy.''}
-\choice[correct]{doesn't intersect itself, except the start and end point can be the same.}
-\choice{is smooth.}
-\end{multipleChoice}
+A curve is \emph{simple} if it \wordChoice{\choice{isn't too ``bumpy.''}\choice[correct]{doesn't intersect itself, except the start and end point can be the same.}\choice{is smooth.}}
 
-A curve is $C^1$ if it 
-\begin{multipleChoice}
-\choice{is continuous.}
-\choice[correct]{is differentiable.}
-\end{multipleChoice}
+A curve is $C^1$ if it \wordChoice{\choice{is continuous.}\choice[correct]{is differentiable.}}
 
-A curve is \emph{oriented} if it 
-\begin{multipleChoice}
-\choice[correct]{has a specified direction.}
-\choice{knows which way is North.}
-\end{multipleChoice}
+A curve is \emph{oriented} if it \wordChoice{\choice[correct]{has a specified direction.}\choice{knows which way is North.}}
 
 Our next question is: how do we know if a vector field is path independent? Of course, it's impossible to check every line integral over every possible curve between any two points - we would never finish these computations! Instead, we need some theorems that give us conditions under which a vector field is path independent. Our first step towards these theorems is the Fundamental Theorem of Line Integrals.
 
 \section{Fundamental Theorem of Line Integrals}
 
-We now introduce the Fundamental Theorem of Line Integrals, which gives us a slick way to compute the integral of a gradient vector field over a piecewise $C^1$ curve.
+We now introduce the Fundamental Theorem of Line Integrals, which gives us a slick way to compute the integral of a gradient vector field over a piecewise $C^1$ curve. In particular, note the conditions on the domain $X$: it must be open and connected.
 
 \begin{theorem}
 \textbf{Fundamental Theorem of Line Integrals}
 
-Let $f:X\subset \mathbb{R}^n\rightarrow \mathbb{R}$ be $C^1$. Then if $C$ is any piecewise $C^1$ curve from $\textbf{A}$ to $\textbf{B}$, then
+Let $f:X\subset \mathbb{R}^n\rightarrow \mathbb{R}$ be $C^1$, where $X$ is open and connected. Then if $C$ is any piecewise $C^1$ curve from $\textbf{A}$ to $\textbf{B}$, then
 \[
 \int_C\nabla f\cdot d\textbf{s} = f(\textbf{B})-f(\textbf{A})
 \]
@@ -161,14 +148,33 @@ Thus, we have proven the Fundamental Theorem of Line Integrals (when we have a s
 Before discussing how the Fundamental Theorem of Line Integrals relates to path independence, let's look at how this helps us compute integrals of gradient vector fields.
 
 \begin{example}
-Let $\textbf{F}(x,y)=(y,x)$. Observe that $\textbf{F}=\nabla f$, where $f(x,y)=xy$. Compute $\int_C\textbf{F}\cdot d\textbf{s}$ for the curve $C$ below.
+Let $\textbf{F}(x,y)=(y,x)$. Observe that $\textbf{F}=\nabla f$, where $f(x,y)=xy$. Compute $\int_C\textbf{F}\cdot d\textbf{s}$ for the curve $C$ below, starting at $(0,1)$ and ending at $(1,0)$.
+\begin{center}
+\begin{tikzpicture}
+\draw[thick, fill=black] (1,0) circle (.1);
+\draw[thick] (1,0) -- (0.75, -2) -- (0.5, -1.75) -- (0.25, -2) -- (0, -1.75) -- (-0.25, -2);
+\draw[thick] (-0.25,-2) arc (270:180:2);
+\draw[thick] (-2.25,0) arc (270:360:2);
+\draw[thick] (-0.25,2) -- (0,1);
+\draw[thick, fill=black] (0,1) circle (.1);
+
+\draw[<->] (-2.5,0) -- (2.5,0);
+\draw[<->] (0,-2.5) -- (0,2.5);
+\foreach \x in {-2,2}
+\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] 
+{$\x$};
+\foreach \y in {-2,2}
+\draw[shift={(0,\y)},color=black] (-3pt,0pt) -- (3pt,0pt) node[right] 
+{$\y$};
+\end{tikzpicture}
+\end{center}
 \begin{explanation}
 We certainly would like to avoid parametrizing this curve! So, we will use the Fundamental Theorem of Line Integrals to compute this integral.
 
 First, let's verify that $\textbf{F}=\nabla f$ for $f(x,y)=xy$.
 \begin{align*}
-\frac{\partial}{\partial x}xy &= \answer[given]{y}\\
-\frac{\partial}{\partial y}xy &= \answer[given]{x}
+\frac{\partial}{\partial x}xy &= \answer{y}\\
+\frac{\partial}{\partial y}xy &= \answer{x}
 \end{align*}
 Thus, we have $\nabla f(x,y)= (y,x) = \textbf{F}(x,y)$.
 
@@ -176,7 +182,7 @@ We can then use the Fundamental Theorem of Line Integrals to compute $\int_C\tex
 \begin{align*}
 \int_C\textbf{F}\cdot d\textbf{s} &= \int_C\nabla f\cdot d\textbf{s}\\
 &= f(0,1) - f(1,0)\\
-&= \answer[given]{0}
+&= \answer{0}
 \end{align*}
 
 \end{explanation}
@@ -201,7 +207,7 @@ Recall that ``$\textbf{F}$ is conservative'' means that $\textbf{F}=\nabla f$ fo
 Thus, we have shown that $\int_C\textbf{F}\cdot d\textbf{s}=\int_D\textbf{F}\cdot d\textbf{s}$, and so have shown that $\textbf{F}$ is path independent.
 \end{proof}
 
-This corollary, with the Fundamental Theorem of Line Integrals, gives us a new tool for computing line integrals. We discuss these approaches in the next section.
+This corollary, with the Fundamental Theorem of Line Integrals, gives us a new tool for computing line integrals.
 
 \section{Strategies for Computing Line Integrals}
 
@@ -232,43 +238,43 @@ We'll evaluate this integral in three different ways.
 First, let's evaluate using the definition of vector line integrals.
 \begin{align*}
 \int_{\textbf{x}}\textbf{F}\cdot d\textbf{s} &= \int_a^b\textbf{F}(\textbf{x}(t))\cdot \textbf{x}'(t)\,dt\\
-&= \int_0^1(4\cos(\pi t)\sin^2(\pi t^2), 8\cos^2(\pi t)\sin(\pi t^2))\cdot (\answer[given]{-2\pi\sin(\pi t)}, \answer[given]{2\pi t\cos(\pi t^2)}\,dt\\
-&= \int_0^1\answer[given]{-8\pi\cos(\pi t)\sin(\pi t)\sin^2(\pi t^2) + 16\pi t\cos(\pi t^2)\cos^2(\pi t)\sin(\pi t^2)}\,dt
+&= \int_0^1(4\cos(\pi t)\sin^2(\pi t^2), 8\cos^2(\pi t)\sin(\pi t^2))\cdot (\answer{-2\pi\sin(\pi t)}, \answer{2\pi t\cos(\pi t^2)}\,dt\\
+&= \int_0^1\answer{-8\pi\cos(\pi t)\sin(\pi t)\sin^2(\pi t^2) + 16\pi t\cos(\pi t^2)\cos^2(\pi t)\sin(\pi t^2)}\,dt
 \end{align*}
 This is an integral that it might be possible to figure out how to compute, but we certainly do not want to! We can use a computer algebra system to see that the result is $0$, but to compute the integral by hand, we will turn to our other methods.
 
 For our alternate methods, we need to find a potential function $f(x,y)$ such that $\textbf{F}=\nabla f$. It turns out that $f(x,y)=x^2y^2$ works. Let's verify this.
 \begin{align*}
-\frac{\partial}{\partial x} (x^2y^2) &= \answer[given]{2xy^2}\\
-\frac{\partial}{\partial y} (x^2y^2) &= \answer[given]{2x^2y}\\
+\frac{\partial}{\partial x} (x^2y^2) &= \answer{2xy^2}\\
+\frac{\partial}{\partial y} (x^2y^2) &= \answer{2x^2y}\\
 \end{align*}
 
 Now that we have our function $f(x,y)=x^2y^2$ such that $\textbf{F}=\nabla f$, we will use the Fundamental Theorem of Line Integrals to evaluate. Note the start and end points of our curve
 
 \begin{align*}
-\textbf{A} &= \textbf{x}(0) = (\answer[given]{2}, \answer[given]{0})\\
-\textbf{B} &= \textbf{x}(1) = (\answer[given]{-2}, \answer[given]{0})\\
+\textbf{A} &= \textbf{x}(0) = (\answer{2}, \answer{0})\\
+\textbf{B} &= \textbf{x}(1) = (\answer{-2}, \answer{0})\\
 \end{align*}
 
 \begin{align*}
 \int_{\textbf{x}}\textbf{F}\cdot d\textbf{s} &= \int_{\textbf{x}}\nabla f\cdot d\textbf{s}\\
 &= f(\textbf{B})-f(\textbf{A})\\
-&= \answer[given]{0}
+&= \answer{0}
 \end{align*}
 
 Note that this is a much easier computation than the integral we had from the first method.
 
 Finally, we compute the line integral using the third method. We have already shown that $\mathbf{F}$ is a conservative vector field (by finding $f$ such that $\mathbf{F}=\nabla f$), and hence we know that $\mathbf{F}$ is path independent. So we can compute this integral by instead integrating over an easier path with the same start and end points, $(2,0)$ and $(-2,0)$, respectively. Let's choose the straight line from $(2,0)$ to $(-2,0)$, and parametrize this curve.
 \[
-\textbf{y}(t)=(\answer[given]{t}, 0)\hspace{1cm} \textrm{for }t\in[-2,2]
+\textbf{y}(t)=(\answer{t}, 0)\hspace{1cm} \textrm{for }t\in[-2,2]
 \]
 Now we can integrate over $y$ instead, which will be a much easier computation.
 \begin{align*}
 \int_{\textbf{x}}\textbf{F}\cdot d\textbf{s}  &= \int_{\textbf{y}}\textbf{F}\cdot d\textbf{s}\\
 &= \int_{-2}^{2} \textbf{F}(\textbf{y}(t))\cdot \textbf{y}'(t)\,dt\\
-&= \int_{-2}^{2} (\answer[given]{0},\answer[given]{0})\cdot (1,0)\,dt\\
-&= \int_{-2}^{2} \answer[given]{0}\,dt\\
-&= \answer[given]{0}
+&= \int_{-2}^{2} (\answer{0},\answer{0})\cdot (1,0)\,dt\\
+&= \int_{-2}^{2} \answer{0}\,dt\\
+&= \answer{0}
 \end{align*}
 
 So we've seen that we can compute this line integral in a few different ways, using the fact that the vector field is conservative.
