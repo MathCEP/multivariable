@@ -116,13 +116,15 @@ In $\mathbb{R}^1$, $B_3(1)$ is the \begin{multipleChoice}
 \choice{open interval}
 \choice[correct]{inside of a circle}
 \choice{inside of a sphere}
-\end{multipleChoice} of radius $\answer{2}$ centered at $(\answer{1}, \answer{1})$.
+\end{multipleChoice} \begin{problem}of radius $\answer{2}$ centered at $(\answer{1}, \answer{1})$.\end{problem}
+\end{problem}
 
+\begin{problem}
 In $\mathbb{R}^3$, $B_4((1,2,3))$ is the \begin{multipleChoice}
 \choice{open interval}
 \choice{inside of a circle}
 \choice[correct]{inside of a sphere}
-\end{multipleChoice} of radius $\answer{4}$ centered at $(\answer{1}, \answer{2}, \answer{3})$.
+\end{multipleChoice} \begin{problem} of radius $\answer{4}$ centered at $(\answer{1}, \answer{2}, \answer{3})$.\end{problem}
 \end{problem}
 
 
@@ -199,13 +201,11 @@ Suppose $\{U_i\}$ is a collection of open sets, where each $U_i$ is open. Let $U
 \end{theorem}
 
 \begin{proof}
-\begin{unfoldable}
 Let $\mathbf{a}\in U$. We will show that $\mathbf{a}$ is an interior point.
 
 Since $\mathbf{a}\in U=\bigcup U_i$, there is some $i$ such that $\mathbf{a}\in U_i$. Since $U_i$ is open, there is a radius $r>0$ such that $B_r(\mathbf{a})$ is contained entirely in $U_i$. Then, since $U_i \subset U$, we have that $B_r(\mathbf{a})\subset U$. This shows that $\mathbf{a}$ is an interior point, and that $U$ is an open set.
 
 %VIDEO EXPLANATION
-\end{unfoldable}
 \end{proof}
 
 \section{Closed Sets}
@@ -265,9 +265,9 @@ A set $X\subset\mathbb{R}^n$ is closed if and only if it contains all of its bou
 \end{theorem}
 
 \begin{proof}
-\begin{unfoldable}
-I'm not sure if I actually want to prove this...
-\end{unfoldable}
+If $X$ is closed, then its complement $X^C$ is open. Consider a boundary point $x$ of $X$. For any radius $r>0$, $B_r(x)$ contains points in $X$ and points in $X^C$. Since $X^C$ is open, this means that $x\notin X^C$. Thus $x\in X$, as desired.
+
+Working in the other direction, suppose that $X$ contains all of its boundary points. We will show that the complement of $X$, $X^C$, is open. Let $x\in X^C$. Since $x$ is not a boundary point of $X$, and any open ball centered at $x$ contains at least one point not in $X$ (namely, $x$), there must be an open ball $B_r(x)$ with $r>0$ containing no points in $X$. Then $B_r(x)\subset X^C$. This shows that $X^C$ is open, and hence $X$ is closed.
 \end{proof}
 
 \begin{example}
