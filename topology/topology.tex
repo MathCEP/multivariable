@@ -78,75 +78,72 @@ In words, this is the set of points within a fixed distance $r$ of a center poin
 \begin{example}
 In $\mathbb{R}^1$, an open ball is simply an open interval. For example, $(1,3)$ is the ball $B_1(2)$ of radius $1$ centered at $2$.
 
-%\begin{center}
-%\begin{tikzpicture}
-%\draw[<->] (0,0) -- (4,0) ;
-%\foreach \x in  {1,2,3}
-%\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt);
-%\foreach \x in {1,2,3}
-%\draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below] 
-%{$\x$};
-%\node[draw, circle, thick, fill=white, minimum size=1mm, inner sep=0] at (1,0) {};
-%\node[draw, circle, thick, fill=white, minimum size=1mm, inner sep=0] at (3,0) {};
-%\draw[very thick] (1.05,0) -- (2.95,0);
-%\end{tikzpicture}
-%\end{center}
+\begin{image}
+\begin{tikzpicture}
+\draw[<->] (0,0) -- (4,0) ;
+\foreach \x in  {1,2,3}
+\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt);
+\foreach \x in {1,2,3}
+\draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below] 
+{$\x$};
+\node[draw, circle, thick, fill=white, minimum size=1mm, inner sep=0] at (1,0) {};
+\node[draw, circle, thick, fill=white, minimum size=1mm, inner sep=0] at (3,0) {};
+\draw[very thick] (1.05,0) -- (2.95,0);
+\end{tikzpicture}
+\end{image}
 
 \youtube{QXy9aLiBfSs}
 
 
 In $\mathbb{R}^2$, an open ball is the inside of a circle (not including the boundary). For example, $B_2((0,3))$ is the inside of the circle of radius $2$ centered at $(0,3)$.
 
-%\begin{center}
-%\begin{tikzpicture}
-%\draw[thick, dashed, fill=gray] (0,3) circle (2);
-%\draw[<->, thick] (-3,0) -- (3,0);
-%\draw[<->, thick] (0,-1) -- (0,6);
-%
-%\foreach \x in {-2,2}
-%\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] 
-%{$\x$};
-%
-%\draw[shift={(0,3)},color=black] (-3pt,0pt) -- (3pt,0pt) node[right] 
-%{$3$};
-%\end{tikzpicture}
-%\end{center}
+\begin{image}
+\begin{tikzpicture}
+\draw[thick, dashed, fill=gray] (0,3) circle (2);
+\draw[<->, thick] (-3,0) -- (3,0);
+\draw[<->, thick] (0,-1) -- (0,6);
+
+\foreach \x in {-2,2}
+\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] 
+{$\x$};
+
+\draw[shift={(0,3)},color=black] (-3pt,0pt) -- (3pt,0pt) node[right] 
+{$3$};
+\end{tikzpicture}
+\end{image}
 
 \youtube{r9OMlNgPqZA}
 
 In $\mathbb{R}^3$, and open ball is the inside of a sphere of radius (not including the boundary). For example, $B_1((0,0,0))$ is the inside of the sphere of radius $1$ centered at the origin.
 
-%\begin{center}
-%\begin{tikzpicture}
-%  \shade[ball color = gray!40, opacity = 0.4] (0,0) circle (2cm);
-%  \draw[thick, densely dotted] (0,0) circle (2cm);
-%  \draw[thick, densely dotted] (-2,0) arc (180:360:2 and 0.6);
-%  \draw[dashed] (2,0) arc (0:180:2 and 0.6);
-%  \fill[fill=black] (0,0) circle (1pt);
-%  
-%  \draw[<-] (-3, 0) -- (-2,0);
-%  \draw[dashed ] (-2,0 ) -- (2,0) node[below, xshift=1ex] 
-%{$1$};
-%  \draw[->] (2,0) -- (3,0);
-%  \draw[<-] (0, -3) -- (0,-2);
-%  \draw[dashed] (0,-2 ) -- (0,2) node[right, yshift = 1ex] 
-%{$1$};
-%  \draw[->] (0,2) -- (0,3);
-%  \draw[<-] (-2.5, -1.25) -- (-1,-0.5);
-%  \draw[dashed] (-1,-0.5) node[below] 
-%{$1$} -- (1.8, 0.9);
-%  \draw[->] (1.8, 0.9) -- (2.5, 1.25);
-%\end{tikzpicture}
-%\end{center}
+\begin{image}
+\begin{tikzpicture}
+  \shade[ball color = gray!40, opacity = 0.4] (0,0) circle (2cm);
+  \draw[thick, densely dotted] (0,0) circle (2cm);
+  \draw[thick, densely dotted] (-2,0) arc (180:360:2 and 0.6);
+  \draw[dashed] (2,0) arc (0:180:2 and 0.6);
+  \fill[fill=black] (0,0) circle (1pt);
+  
+  \draw[<-] (-3, 0) -- (-2,0);
+  \draw[dashed ] (-2,0 ) -- (2,0) node[below, xshift=1ex] 
+{$1$};
+  \draw[->] (2,0) -- (3,0);
+  \draw[<-] (0, -3) -- (0,-2);
+  \draw[dashed] (0,-2 ) -- (0,2) node[right, yshift = 1ex] 
+{$1$};
+  \draw[->] (0,2) -- (0,3);
+  \draw[<-] (-2.5, -1.25) -- (-1,-0.5);
+  \draw[dashed] (-1,-0.5) node[below] 
+{$1$} -- (1.8, 0.9);
+  \draw[->] (1.8, 0.9) -- (2.5, 1.25);
+\end{tikzpicture}
+\end{image}
 
 \youtube{xSHf7KQN6Lc}
 
 \end{example}
 
-
-
-
-In each problem, describe the following open ball.
+In each problem, describe the open ball.
 
 \begin{problem}
 In $\mathbb{R}^1$, $B_3(1)$ is the \begin{multipleChoice}
@@ -378,28 +375,28 @@ A set $X\subset \mathbb{R}^n$ is path-connected if any two points can be connect
 For each of the following sets, determine whether or not they are path-connected.
 \begin{enumerate}
 
-\item \begin{tikzpicture}
+\item \begin{image}\begin{tikzpicture}
 \draw[thick, dashed, fill=gray] (0,0) circle (1);
-\end{tikzpicture}
+\end{tikzpicture}\end{image}
 \begin{multipleChoice}
 \choice[correct]{path-connected}
 \choice{not path-connected}
 \end{multipleChoice}
 
-\item \begin{tikzpicture}
+\item \begin{image}\begin{tikzpicture}
 \draw[thick, fill=gray] (0,0) circle (1);
 \draw[thick, fill=gray] (3,0) circle (1);
 \draw[thick] (1,0) -- (2,0);
-\end{tikzpicture}
+\end{tikzpicture}\end{image}
 \begin{multipleChoice}
 \choice[correct]{path-connected}
 \choice{not path-connected}
 \end{multipleChoice}
 
-\item \begin{tikzpicture}
+\item \begin{image}\begin{tikzpicture}
 \draw[thick, fill=gray] (0,0) circle (1);
 \draw[thick, fill=gray] (3,0) circle (1);
-\end{tikzpicture}
+\end{tikzpicture}\end{image}
 \begin{multipleChoice}
 \choice{path-connected}
 \choice[correct]{not path-connected}
@@ -426,7 +423,7 @@ For each of the following sets, determine whether or not they are simply connect
 \begin{enumerate}
 \item $\mathbb{R}^2\setminus\{(0,0)\}$
 
-\begin{tikzpicture}
+\begin{image}\begin{tikzpicture}
 \fill[gray]
        (-1.25,-1.25) -- (-1.25,1.25) -- (1.25,1.25) -- (1.25, -1.25) -- cycle;
 
@@ -441,7 +438,7 @@ For each of the following sets, determine whether or not they are simply connect
 \foreach \y in {1}
 \draw[shift={(0,\y)},color=black] (-3pt,0pt) -- (3pt,0pt) node[right] 
 {$\y$};
-\end{tikzpicture}
+\end{tikzpicture}\end{image}
 \begin{multipleChoice}
 \choice{simply connected}
 \choice[correct]{not simply connected}
@@ -449,7 +446,7 @@ For each of the following sets, determine whether or not they are simply connect
 
 \item $\mathbb{R}^2$
 
-\begin{tikzpicture}
+\begin{image}\begin{tikzpicture}
 \fill[gray]
        (-1.25,-1.25) -- (-1.25,1.25) -- (1.25,1.25) -- (1.25, -1.25) -- cycle;
 
@@ -463,7 +460,7 @@ For each of the following sets, determine whether or not they are simply connect
 \foreach \y in {1}
 \draw[shift={(0,\y)},color=black] (-3pt,0pt) -- (3pt,0pt) node[right] 
 {$\y$};
-\end{tikzpicture}
+\end{tikzpicture}\end{image}
 \begin{multipleChoice}
 \choice[correct]{simply connected}
 \choice{not simply connected}
@@ -471,7 +468,7 @@ For each of the following sets, determine whether or not they are simply connect
 
 \item $\{(x,y,z)\,:\,x^2+y^2+z^2=1\}$
 
-\begin{tikzpicture}
+\begin{image}\begin{tikzpicture}
   \shade[ball color = gray!40, opacity = 0.4] (0,0) circle (2cm);
   \draw[thick] (0,0) circle (2cm);
   \draw[thick] (-2,0) arc (180:360:2 and 0.6);
@@ -490,7 +487,7 @@ For each of the following sets, determine whether or not they are simply connect
   \draw[dashed] (-1,-0.5) node[below] 
 {$1$} -- (1.8, 0.9);
   \draw[->] (1.8, 0.9) -- (2.5, 1.25);
-\end{tikzpicture}
+\end{tikzpicture}\end{image}
 
 \begin{multipleChoice}
 \choice[correct]{simply connected}
@@ -499,7 +496,7 @@ For each of the following sets, determine whether or not they are simply connect
 
 \item A torus (the surface of a donut)
 
-\begin{tikzpicture}
+\begin{image}\begin{tikzpicture}
 \draw[thick] (0,-1) arc (270:180:2 and 1);
 \draw[thick] (0,-1) arc (270:360:2 and 1);
 \draw[thick] (0,1) arc (90:0:2 and 1);
@@ -508,7 +505,7 @@ For each of the following sets, determine whether or not they are simply connect
 \draw[thick] (0,-.1) arc (270:310:1.8 and 1);
 \draw[thick] (0,.2) arc (90:122:1.8 and 1);
 \draw[thick] (0,.2) arc (90:58:1.8 and 1);
-\end{tikzpicture}
+\end{tikzpicture}\end{image}
 \begin{multipleChoice}
 \choice{simply connected}
 \choice[correct]{not simply connected}
