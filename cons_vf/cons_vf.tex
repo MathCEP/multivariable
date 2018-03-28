@@ -15,14 +15,14 @@ In the previous activity, we proved the Fundamental Theorem of Line Integrals:
 
 Let $f:X\subset \mathbb{R}^n\rightarrow \mathbb{R}$ be $C^1$, where $X$ is open and connected. Then if $C$ is any piecewise $C^1$ curve from $\textbf{A}$ to $\textbf{B}$, then
 \[
-\int_C\nabla f\cdot d\textbf{s} = f(\textbf{B})-f(\textbf{A})
+\int_C\nabla f\cdot d\textbf{s} = \answer{f(\textbf{B})-f(\textbf{A})}
 \]
 \end{theorem}
 
 We were able to use the Fundamental Theorem of Line Integrals to easily compute line integrals of conservative vector fields, and we were also able to prove the following corollary.
 
 \begin{corollary}
-If $\textbf{F}$ is a conservative vector field (so $\textbf{F}=\nabla f$ for some $f$) defined on an open and connected domain $X$, then $\textbf{F}$ is path independent.
+If $\textbf{F}$ is a conservative vector field (so $\textbf{F}=\nabla f$ for some $f$) defined on an open and connected domain $X$, then $\textbf{F}$ is $\answer{path independent}$.
 \end{corollary}
 
 Both of these important results require that we have a conservative vector field. In this activity, we will discuss how we can determine whether or not a vector field is conservative, so that we can check if those results can be applied.
@@ -74,34 +74,34 @@ Find a potential function for the vector field $\mathbf{F}(x,y,z)=(2xy,x^2+z+2y,
 \begin{explanation}
 First, note that a potential function $f(x,y,z)$ would have to satisfy
 \[
-\left(\dfrac{\partial f}{\partial x}, \dfrac{\partial f}{\partial y}, \dfrac{\partial f}{\partial z}\right) = \left(2xy,x^2+z+2y,y+\cos(z)\right)
+\left(\dfrac{\partial f}{\partial x}, \dfrac{\partial f}{\partial y}, \dfrac{\partial f}{\partial z}\right) = \left(\answer{2xy},\answer{x^2+z+2y},\answer{y+\cos(z)}\right)
 \]
 We begin by considering the $x$-component, noticing that $\dfrac{\partial f}{\partial x} = 2xy$. We integrate with respect to $x$.
 \begin{align*}
 f(x,y,z) &= \int 2xy\,dx\\
-&= x^2y + g(y,z)
+&= \answer{x^2y} + g(y,z)
 \end{align*}
 Here, $g(y,z)$ is a function of only $y$ and $z$, hence constant with respect to $x$. We now differentiate with respect to $y$, in order to compare to the $y$-component of the vector field.
 \begin{align*}
 \dfrac{\partial f}{\partial y} &= \dfrac{\partial}{\partial x}\left(x^2y+g(y,z)\right)\\
-&= x^2+\dfrac{\partial g}{\partial y}
+&= \answer{x^2}+\dfrac{\partial g}{\partial y}
 \end{align*}
 Comparing this with $\dfrac{\partial f}{\partial y} = x^2+z+2y$, we have $\dfrac{\partial g}{\partial y} = z+2y$. We integrate this with respect to $y$.
 \begin{align*}
 g(y,z) &= \int z+2y\,dy\\
-&= yz+y^2+h(z)
+&= \answer{yz+y^2}+h(z)
 \end{align*}
 Here, $h$ is a function of only $z$, hence is constant with respect to $y$. We now know that $f$ has the form $f(x,y,z) = x^2y+yz+y^2+h(z)$. So, our final task is to find $h(z)$. We differentiate $f$ with respect to $z$ in order to compare with the $z$-component of the vector field.
 \begin{align*}
 \dfrac{\partial f}{\partial z} &= \dfrac{\partial}{\partial z}\left(x^2y+yz+y^2+h(z)\right)
-&= y+h'(z)
+&= \answer{y}+h'(z)
 \end{align*}
 Comparing this with $\dfrac{\partial f}{\partial z} = y+\cos(z)$, we have $h'(z)=\cos(z)$. Integrating with respect to $z$, we obtain
 \begin{align*}
 h(z) &= \int \cos(z)\,dz\\
-&=\sin(z)+C
+&=\answer{\sin(z)}+C
 \end{align*}
-Where $C$ is a constant. Thus, any potential function would have the form $f(x,y,z) = x^2y+yz+y^2+\sin(z)+C$. Choosing $C=0$, we have a specific potential function $f(x,y,z)= x^2y+yz+y^2+\sin(z)$.
+Where $C$ is a constant. Thus, any potential function would have the form $f(x,y,z) = \answer{x^2y+yz+y^2+\sin(z)}+C$. Choosing $C=0$, we have a specific potential function $f(x,y,z)= \answer{x^2y+yz+y^2+\sin(z)}$.
 \end{explanation}
 \end{example}
 
@@ -119,17 +119,17 @@ Try (and fail) to find a potential function for the vector field $\mathbf{F}(x,y
 \begin{explanation}
 If a potential function existed, it would have to satisfy
 \[
-\left(\dfrac{\partial f}{\partial x},\dfrac{\partial f}{\partial y}\right) = (-y,x)
+\left(\dfrac{\partial f}{\partial x},\dfrac{\partial f}{\partial y}\right) = (\answer{-y},\answer{x})
 \]
 We begin with $\dfrac{\partial f}{\partial x} = -y$. Integrating with respect to $x$, we have
 \begin{align*}
 f(x,y) &= \int -y\,dx\\
-&=-yx+g(y)
+&=\answer{-yx}+g(y)
 \end{align*}
 Differentating with respect to $y$, we then obtain
 \begin{align*}
 \dfrac{\partial f}{\partial y} &= \dfrac{\partial}{\partial y}\left(-yx+g(y)\right)\\
-&= -x+g(y)
+&= \answer{-x}+g(y)
 \end{align*}
 When we compare this to the $y$-component of the vector field $\mathbf{F}$ in order to determine $g(y)$, we would have to have $x=-x+g(y)$. But this is impossible! Thus we see that our method has broken down, and we are not able to find a potential function.
 \end{explanation}
@@ -144,7 +144,7 @@ Let $\mathbf{F}:X\subset\mathbb{R}^n\rightarrow \mathbb{R}^n$ be a $C^1$ vector 
 The contrapositive of this theorem states:
 
 \begin{theorem}
-Let $\mathbf{F}:X\subset\mathbb{R}^n\rightarrow \mathbb{R}^n$ be a $C^1$ vector field, and let $X$ be open and connected. If $D\mathbf{F}$ is not symmetric then $\mathbf{F}$ is not conservative.
+Let $\mathbf{F}:X\subset\mathbb{R}^n\rightarrow \mathbb{R}^n$ be a $C^1$ vector field, and let $X$ be open and connected. If $D\mathbf{F}$ is not $\answer{symmetric}$ then $\mathbf{F}$ is not $\answer{conservative}$.
 \end{theorem}
 
 Thus, provided we have a $C^1$ vector field and the domain is open and connected, we can show a vector field is not conservative by showing that its derivative matrix is not symmetric.
@@ -159,8 +159,8 @@ D\mathbf{F} &= \left(\begin{array}{cc}
 \dfrac{\partial}{\partial x} x & \dfrac{\partial}{\partial y} x\\
 \end{array}\right)\\
 &= \left(\begin{array}{cc}
-0 & -1\\
-1 & 0\\
+\answer{0} & \answer{-1}\\
+\answer{1} & \answer{0}\\
 \end{array}\right)
 \end{align*}
 Since this matrix is not symmetric, $\mathbf{F}$ is not a conservative vector field.
@@ -186,10 +186,30 @@ f_{x_nx_1} & f_{x_nx_2} & \cdots & f_{x_nx_n}\\
 By Clairaut's Theorem, the mixed partials are equal, so this matrix is symmetric.
 \end{proof}
 
-\begin{problem}
-For each of the given vector fields, find a potential function (if one exists). If there is no potential function, write ``DNE''.
+For each of the given vector fields $\mathbf{F}$, determine whether or not it's conservative. If it is conservative, find a potential function. If $\mathbf{F}$ is not conservative, compute the derivative matrix of $\mathbf{F}$ in order to prove that it is not conservative.
 
+\begin{problem}
+$\mathbf{F}(x,y) = (2xy+y^2+e^y, x^2+2xy+xe^y)$
+\begin{multipleChoice}
+\choice[correct]{conservative}
+\choice{not conservative}
+\end{multipleChoice}
+\begin{problem}
+$f(x,y)=\answer{x^2y+y^2x+e^yx}$
+\end{problem}
 \end{problem}
 
+\begin{problem}
+$\mathbf{F}(x,y) = (x^2y+e^{x^2},\sin(x)+y^3)$
+\begin{multipleChoice}
+\choice{conservative}
+\choice[correct]{not conservative}
+\end{multipleChoice}
+\begin{problem}
+$D\mathbf{F}(x,y) = \left(\begin{array}{cc}2xy+2xe^{x^2}&\answer{x^2}\\\answer{\cos(x)}&3y^2\end{array}\right)$
+\end{problem}
+\end{problem}
+
+We've seen that if a vector field is conservative, then its derivative matrix is symmetric. But is the converse true? That is, if the derivative matrix is symmetric, does that mean that the vector field is conservative? We'll answer this question in the next section.
 
 \end{document}

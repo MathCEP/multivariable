@@ -1,6 +1,6 @@
 \documentclass{ximera}  
 
-\title{Conservative Vector Fields and Topology Problems}
+\title{Conservative Vector Fields and Topology Homework}
 \author{Melissa Lynn}  
 
 \begin{document}  
@@ -9,7 +9,55 @@ These are problems based on the material from the activities ``Topology'' and ``
 \end{abstract}  
 \maketitle
 
-\section{Webwork}
+\section{Concept Check}
+
+\begin{problem}
+In your own words, what is an open set?
+\begin{freeResponse}
+\end{freeResponse}
+\end{problem}
+
+\begin{problem}
+In your own words, what is a closed set?
+\begin{freeResponse}
+\end{freeResponse}
+\end{problem}
+
+\begin{problem}
+True or False: If a set is not open, then it's closed.
+\begin{multipleChoice}
+\choice{True}
+\choice[correct]{False}
+\end{multipleChoice}
+\begin{problem}
+Provide a specific counterexample.
+\begin{freeResponse}
+\end{freeResponse}
+\end{problem}
+\end{problem}
+
+\begin{problem}
+Complete the definition.
+
+A continuous vector field is called $\answer{path independent}$ if $\int_C\mathbf{F}\cdot d\mathbf{s} = \int_D\mathbf{F}\cdot d\mathbf{s}$ for any two simple, piecewise $C^1$, oriented curves $C$ and $D$ with the same start and end points.
+\end{problem}
+
+\begin{problem}
+Complete the statement of the Fundamental Theorem of Line Integrals.
+
+Let $f:X\rightarrow\mathbb{R}$ be $C^1$, where $X\subset\mathbb{R}^n$ is $\answer{open}$ and $\answer{connected}$. Then if $C$ is any piecewise $C^1$ curve from $\mathbb{A}$ to $\mathbb{B}$, then
+\[
+\int_C\nabla f\cdot d\mathbb{s} = \answer{f(B)-f(A)}
+\]
+\end{problem}
+
+\begin{problem}
+Complete the theorem statement.
+
+Let $F:X\rightarrow\mathbb{R}^n$ be a $C^1$ vector field, where $X\subset\mathbb{R}^n$ is $\answer{open}$ and $\answer{connected}$. If $\mathbf{F}$ is conservative, then $D\mathbf{F}$ is symmetric.
+\end{problem}
+
+\section{Online Homework}
 
 \begin{problem}
 (Stolen from webwork) Determine whether the vector field $\mathbf{F}(x,y) = (2x\sin y,x^2\cos y + 2y)$ is conservative.
@@ -54,30 +102,62 @@ f(x,y,z) &= \answer{\frac{1}{3}(6x^3-4y^3+4z^3)}
 \end{align*}
 \end{problem}
 
-\begin{problem}(Stolen from webwork)
+\begin{problem}(Stolen from webwork) For each set, indicate if it's connected and/or simply connected (select all which apply).
 \begin{enumerate}
-\item $\mathbb{R}\setminus \{0\}$ \wordChoice{\choice{is}\choice[correct]{is not}} connected.
-\item $\mathbb{R}^2\setminus \{(0,0)\}$ \wordChoice{\choice[correct]{is}\choice{is not}} connected.
-\item $\mathbb{R}^3\setminus \{(0,0,0)\}$ \wordChoice{\choice[correct]{is}\choice{is not}} connected.
-\item $\mathbb{R}\setminus \{0\}$ \wordChoice{\choice{is}\choice[correct]{is not}} simply connected.
-\item $\mathbb{R}^2\setminus \{(0,0)\}$ \wordChoice{\choice{is}\choice[correct]{is not}} simply connected.
-\item $\mathbb{R}^3\setminus \{(0,0,0)\}$ \wordChoice{\choice[correct]{is}\choice{is not}} simply connected.
-\item $\mathbb{R}\setminus \{x\,:\,|x|\leq 1\}$ \wordChoice{\choice{is}\choice[correct]{is not}} connected.
-\item $\mathbb{R}^2\setminus \{(x,y)\,:\,|(x,y)|\leq 1\}$ \wordChoice{\choice[correct]{is}\choice{is not}} connected.
-\item $\mathbb{R}^3\setminus \{(x,y,z)\,:\,|(x,y,z)|\leq 1\}$ \wordChoice{\choice[correct]{is}\choice{is not}} connected.
-\item $\mathbb{R}\setminus \{x\,:\,|x|\leq 1\}$ \wordChoice{\choice{is}\choice[correct]{is not}} simply connected.
-\item $\mathbb{R}^2\setminus \{(x,y)\,:\,|(x,y)|\leq 1\}$ \wordChoice{\choice{is}\choice[correct]{is not}} simply connected.
-\item $\mathbb{R}^3\setminus \{(x,y,z)\,:\,|(x,y,z)|\leq 1\}$ \wordChoice{\choice[correct]{is}\choice{is not}} simply connected.
-\item $\mathbb{R}^2\setminus \{(x,y)\,:\,x=y\}$ \wordChoice{\choice{is}\choice[correct]{is not}} connected.
-\item $\mathbb{R}^3\setminus \{(x,y,z)\,:\,x=y=z\}$ \wordChoice{\choice[correct]{is}\choice{is not}} connected.
-\item $\mathbb{R}^2\setminus \{(x,y)\,:\,x=y\}$ \wordChoice{\choice{is}\choice[correct]{is not}} simply connected.
-\item $\mathbb{R}^3\setminus \{(x,y,z)\,:\,x=y=z\}$ \wordChoice{\choice{is}\choice[correct]{is not}} simply connected.
+\item $\mathbb{R}\setminus \{0\}$
+\begin{selectAll}
+    \choice{Connected}
+    \choice{Simply connected}
+    \choice[correct]{Neither}
+\end{selectAll}
+\item $\mathbb{R}^2\setminus \{(0,0)\}$
+\begin{selectAll}
+    \choice[correct]{Connected}
+    \choice{Simply connected}
+    \choice{Neither}
+\end{selectAll}
+\item $\mathbb{R}^3\setminus \{(0,0,0)\}$
+\begin{selectAll}
+    \choice[correct]{Connected}
+    \choice[correct]{Simply connected}
+    \choice{Neither}
+\end{selectAll}
+\item $\mathbb{R}\setminus \{x\,:\,|x|\leq 1\}$
+\begin{selectAll}
+    \choice{Connected}
+    \choice{Simply connected}
+    \choice[correct]{Neither}
+\end{selectAll}
+\item $\mathbb{R}^2\setminus \{(x,y)\,:\,|(x,y)|\leq 1\}$
+\begin{selectAll}
+    \choice[correct]{Connected}
+    \choice{Simply connected}
+    \choice{Neither}
+\end{selectAll}
+\item $\mathbb{R}^3\setminus \{(x,y,z)\,:\,|(x,y,z)|\leq 1\}$
+\begin{selectAll}
+    \choice[correct]{Connected}
+    \choice[correct]{Simply connected}
+    \choice{Neither}
+\end{selectAll}
+\item $\mathbb{R}^2\setminus \{(x,y)\,:\,x=y\}$
+\begin{selectAll}
+    \choice{Connected}
+    \choice{Simply connected}
+    \choice[correct]{Neither}
+\end{selectAll}
+\item $\mathbb{R}^3\setminus \{(x,y,z)\,:\,x=y=z\}$ 
+\begin{selectAll}
+    \choice[correct]{Connected}
+    \choice{Simply connected}
+    \choice{Neither}
+\end{selectAll}
 \end{enumerate}
 \end{problem}
 
 \begin{problem}
-Determine whether the given set is open, connected, and/or simply connected. Select all that apply.
-\begin{itemize}
+(Stolen from webwork) Determine whether the given set is open, connected, and/or simply connected. Select all that apply.
+\begin{enumerate}
 \item $\{(x,y)\,:\,x>1,\,y<2\}$
 \begin{selectAll}
     \choice[correct]{Open}
@@ -108,11 +188,11 @@ Determine whether the given set is open, connected, and/or simply connected. Sel
     \choice[correct]{Connected}
     \choice{Simply connected}
   \end{selectAll}
-\end{itemize}
+\end{enumerate}
 \end{problem}
 
 \begin{problem}
-For each problem, determine if the set is open, closed, connected, and/or simply connected. Select all that apply.
+(Stolen from webwork) For each problem, determine if the set is open, closed, connected, and/or simply connected. Select all that apply.
 \begin{enumerate}
 \item $\{(x,y)\,:\,x^2+y^2<1\}\cup\{(x,y)\,:\,(x-3)^2+y^2<2\}\subset \mathbb{R}^2$
 \begin{selectAll}
@@ -175,7 +255,7 @@ Quick check: the potential function is $\answer{x^2y+y^2z}$.
 \]
 is conservative.
 
-Quick check: $M(x,y) = -\cos y + \frac{1}{2} y^2\sin{x} + g(x)$.
+Quick check: $M(x,y) = \answer{-\cos y + \frac{1}{2} y^2\sin{x} + g(x)}$.
 \end{problem}
 
 \begin{problem}
