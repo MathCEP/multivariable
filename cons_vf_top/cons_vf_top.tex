@@ -4,9 +4,13 @@
 
 \begin{document}  
 \begin{abstract}  
-This activity introduces path independence and the Fundamental Theorem of Line Integrals.
+Fundamental Theorem of Line Integrals and path independence.
 \end{abstract}  
 \maketitle  
+
+In the previous activity, we introduced some basic definitions from topology. These definitions are necessary in order to correctly state theorems in this section and the next, so pay attention to the hypotheses of these theorems!
+
+We begin this activity by defining what it means for a vector field to be path independent. We then state and prove the Fundamental Theorem of Line Integrals. This theorem gives us an easy way to compute vector line integrals of a gradient field, provided the domain is open and connected. We then use the Fundamental Theorem of Line Integrals to show that conservative vector fields are path independent (under the appropriate conditions), and finish by discussing the various methods we now have for computing vector line integrals.
 
 \section{Path Independence}
 
@@ -96,7 +100,7 @@ Let's review the meaning of the requirements on the curves $C$ and $D$.
 
 A curve is \emph{simple} if it \wordChoice{\choice{isn't too ``bumpy.''}\choice[correct]{doesn't intersect itself, except the start and end point can be the same.}\choice{is smooth.}}
 
-A curve is $C^1$ if it \wordChoice{\choice{is continuous.}\choice[correct]{is differentiable.}}
+A curve is $C^1$ if it \wordChoice{\choice{is continuous.}\choice{is differentiable.}\choice[choice]{has continuous partial derivatives.}}
 
 A curve is \emph{oriented} if it \wordChoice{\choice[correct]{has a specified direction.}\choice{knows which way is North.}}
 
@@ -282,5 +286,21 @@ So we've seen that we can compute this line integral in a few different ways, us
 \end{example}
 
 Depending on the particular problem or example, any one of these methods might be easier than the others. You should practice trying these different methods, and see which you prefer! However, remember that for the second and third options, we need to first verify that the vector field $\mathbf{F}$ is conservative. This usually means finding a potential function $f$ such that $\mathbf{F}=\nabla f$.
+
+\section{Summary}
+
+In this activity, we introduced the following terms.
+\begin{itemize}
+\item Path independent
+\end{itemize}
+We also established the following results.
+\begin{itemize}
+\item The Fundamental Theorem of Line Integrals.
+\item If $\textbf{F}$ is a conservative vector field defined on an open and connected domain $X$, then $\textbf{F}$ is path independent.
+\end{itemize}
+
+These results provide us with new methods to compute some vector line integrals.
+
+In the next activity, we will discuss how we can determine whether or not a vector field is conservative.
 
 \end{document}
