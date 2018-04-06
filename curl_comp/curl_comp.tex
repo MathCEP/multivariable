@@ -11,6 +11,10 @@
 
 Imagine the vector field below represents fluid flow:
 
+\desmos{vhuoyka1ys}
+
+https://www.desmos.com/calculator/vhuoyka1ys
+
 %VECTOR FIELD (-y,0), with plus signs
 
 If we fix the center point of each $+$ above, which way will they rotate? \wordChoice{\choice{clockwise}\choice[correct]{counter-clockwise}}
@@ -74,13 +78,14 @@ Note that this is computed as the determinant
 \]
 \begin{problem}
 Given a vector field $\mathbf{F}=(M(x,y,z),N(x,y,z),P(x,y,z))$, how might we interpret $\nabla\times\mathbf{F}$?
-\[
-\nabla\times\mathbf{F} = \left|\begin{array}{ccc}
+\begin{align*}
+\nabla\times\mathbf{F} &= \left|\begin{array}{ccc}
 \mathbf{i}&\mathbf{j}&\mathbf{k}\\
 \answer{\dfrac{\partial}{\partial x}}&\answer{\dfrac{\partial}{\partial y}}&\answer{\dfrac{\partial}{\partial z}}\\
 M&N&P
-\end{array}\right| = \left(\dfrac{\partial P}{\partial y}-\dfrac{\partial N}{\partial z}, -\left(\dfrac{\partial P}{\partial x}-\dfrac{\partial M}{\partial z}\right), \dfrac{\partial N}{\partial x} - \dfrac{\partial M}{\partial y}\right)
-\]
+\end{array}\right|\\
+&= \left(\dfrac{\partial P}{\partial y}-\dfrac{\partial N}{\partial z}, -\left(\dfrac{\partial P}{\partial x}-\dfrac{\partial M}{\partial z}\right), \dfrac{\partial N}{\partial x} - \dfrac{\partial M}{\partial y}\right)
+\end{align*}
 \end{problem}
 \end{problem}
 \end{problem}
