@@ -33,39 +33,51 @@ where $N_x$ is the partial derivative of $N$ with respect to $x$, and $M_y$ is t
 
 First let's consider the case where $M_y<0$. In this case, the $x$-component of the vector field $\mathbf{F}$ is \emph{decreasing} as we move in the positive $y$ direction. Select all pictures which match this situation.
 
+\begin{image}
+\begin{tikzpicture}
+\draw[->, very thick] (0,0) -- (2,0) ;
+\draw[->, very thick] (.5,.5) -- (1.5,.5);
+\node at (1, -1) {(a)};
+
+\draw[->, very thick] (3,.5) -- (5,.5) ;
+\draw[->, very thick] (3.5,0) -- (4.5,0);
+\node at (4, -1) {(b)};
+
+\draw[->, very thick] (7,0) -- (7,2) ;
+\draw[->, very thick] (7.5,.5) -- (7.5,1.5);
+\node at (7.25, -1) {(c)};
+
+\draw[->, very thick] (10.5,0) -- (10.5,2) ;
+\draw[->, very thick] (10,.5) -- (10,1.5);
+\node at (10.25, -1) {(d)};
+
+\draw[<-, very thick] (12,0) -- (14,0) ;
+\draw[<-, very thick] (12.5,.5) -- (13.5,.5);
+\node at (13, -1) {(e)};
+
+\draw[<-, very thick] (15,.5) -- (17,.5) ;
+\draw[<-, very thick] (15.5,0) -- (16.5,0);
+\node at (16, -1) {(f)};
+
+\draw[<-, very thick] (19,0) -- (19,2) ;
+\draw[<-, very thick] (19.5,.5) -- (19.5,1.5);
+\node at (19.25, -1) {(g)};
+
+\draw[<-, very thick] (22.5,0) -- (22.5,2) ;
+\draw[<-, very thick] (22,.5) -- (22,1.5);
+\node at (22.25, -1) {(h)};
+\end{tikzpicture}
+\end{image}
+
 \begin{selectAll}
-\choice{\begin{tikzpicture}
-\draw[->] (0,0) -- (2,0) ;
-\draw[->] (.5,.5) -- (1.5,.5);
-\end{tikzpicture}}
-\choice{\begin{tikzpicture}
-\draw[->] (0,.5) -- (2,.5) ;
-\draw[->] (.5,0) -- (1.5,0);
-\end{tikzpicture}}
-\choice{\begin{tikzpicture}
-\draw[->] (0,0) -- (0,2) ;
-\draw[->] (.5,.5) -- (.5,1.5);
-\end{tikzpicture}}
-\choice{\begin{tikzpicture}
-\draw[->] (.5,0) -- (.5,2) ;
-\draw[->] (0,.5) -- (0,1.5);
-\end{tikzpicture}}
-\choice{\begin{tikzpicture}
-\draw[<-] (0,0) -- (2,0) ;
-\draw[<-] (.5,.5) -- (1.5,.5);
-\end{tikzpicture}}
-\choice{\begin{tikzpicture}
-\draw[<-] (0,.5) -- (2,.5) ;
-\draw[<-] (.5,0) -- (1.5,0);
-\end{tikzpicture}}
-\choice{\begin{tikzpicture}
-\draw[<-] (0,0) -- (0,2) ;
-\draw[<-] (.5,.5) -- (.5,1.5);
-\end{tikzpicture}}
-\choice{\begin{tikzpicture}
-\draw[<-] (.5,0) -- (.5,2) ;
-\draw[<-] (0,.5) -- (0,1.5);
-\end{tikzpicture}}
+\choice {(a)}
+\choice {(b)}
+\choice {(c)}
+\choice {(d)}
+\choice {(e)}
+\choice {(f)}
+\choice {(g)}
+\choice {(h)}
 \end{selectAll}
 
 If $M_y<0$, which way will this cause a particle in the vector field to rotate?
