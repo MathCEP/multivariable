@@ -70,73 +70,85 @@ First let's consider the case where $M_y<0$. In this case, the $x$-component of 
 \end{image}
 
 \begin{selectAll}
-\choice {(a)}
+\choice[correct] {(a)}
 \choice {(b)}
 \choice {(c)}
 \choice {(d)}
 \choice {(e)}
-\choice {(f)}
+\choice[correct] {(f)}
 \choice {(g)}
 \choice {(h)}
 \end{selectAll}
 
 If $M_y<0$, which way will this cause a particle in the vector field to rotate?
 \begin{multipleChoice}
-\choice Clockwise.
-\choice[correct] Counterclockwise.
+\choice {Clockwise.}
+\choice[correct] {Counterclockwise.}
 \end{multipleChoice}
 
 Now, let's consider the case where $N_x>0$. This means that the $y$-component of the vector field $\mathbf{F}$ is increasing as we move in the positive $x$ direction. Select all pictures which match this situation.
 
+\begin{image}
+\begin{tikzpicture}
+\draw[->, very thick] (0,0) -- (2,0) ;
+\draw[->, very thick] (.5,.5) -- (1.5,.5);
+\node at (1, -1) {(a)};
+
+\draw[->, very thick] (3,.5) -- (5,.5) ;
+\draw[->, very thick] (3.5,0) -- (4.5,0);
+\node at (4, -1) {(b)};
+
+\draw[->, very thick] (7,0) -- (7,2) ;
+\draw[->, very thick] (7.5,.5) -- (7.5,1.5);
+\node at (7.25, -1) {(c)};
+
+\draw[->, very thick] (10.5,0) -- (10.5,2) ;
+\draw[->, very thick] (10,.5) -- (10,1.5);
+\node at (10.25, -1) {(d)};
+
+\draw[<-, very thick] (12,0) -- (14,0) ;
+\draw[<-, very thick] (12.5,.5) -- (13.5,.5);
+\node at (13, -1) {(e)};
+
+\draw[<-, very thick] (15,.5) -- (17,.5) ;
+\draw[<-, very thick] (15.5,0) -- (16.5,0);
+\node at (16, -1) {(f)};
+
+\draw[<-, very thick] (19,0) -- (19,2) ;
+\draw[<-, very thick] (19.5,.5) -- (19.5,1.5);
+\node at (19.25, -1) {(g)};
+
+\draw[<-, very thick] (22.5,0) -- (22.5,2) ;
+\draw[<-, very thick] (22,.5) -- (22,1.5);
+\node at (22.25, -1) {(h)};
+\end{tikzpicture}
+\end{image}
+
 \begin{selectAll}
-\choice{\begin{tikzpicture}
-\draw[->] (0,0) -- (2,0) ;
-\draw[->] (.5,.5) -- (1.5,.5);
-\end{tikzpicture}}
-\choice{\begin{tikzpicture}
-\draw[->] (0,.5) -- (2,.5) ;
-\draw[->] (.5,0) -- (1.5,0);
-\end{tikzpicture}}
-\choice{\begin{tikzpicture}
-\draw[->] (0,0) -- (0,2) ;
-\draw[->] (.5,.5) -- (.5,1.5);
-\end{tikzpicture}}
-\choice{\begin{tikzpicture}
-\draw[->] (.5,0) -- (.5,2) ;
-\draw[->] (0,.5) -- (0,1.5);
-\end{tikzpicture}}
-\choice{\begin{tikzpicture}
-\draw[<-] (0,0) -- (2,0) ;
-\draw[<-] (.5,.5) -- (1.5,.5);
-\end{tikzpicture}}
-\choice{\begin{tikzpicture}
-\draw[<-] (0,.5) -- (2,.5) ;
-\draw[<-] (.5,0) -- (1.5,0);
-\end{tikzpicture}}
-\choice{\begin{tikzpicture}
-\draw[<-] (0,0) -- (0,2) ;
-\draw[<-] (.5,.5) -- (.5,1.5);
-\end{tikzpicture}}
-\choice{\begin{tikzpicture}
-\draw[<-] (.5,0) -- (.5,2) ;
-\draw[<-] (0,.5) -- (0,1.5);
-\end{tikzpicture}}
+\choice {(a)}
+\choice {(b)}
+\choice {(c)}
+\choice[correct] {(d)}
+\choice {(e)}
+\choice {(f)}
+\choice[correct] {(g)}
+\choice {(h)}
 \end{selectAll}
 
 If $N_x<0$, which way will this cause a particle in the vector field to rotate?
 \begin{multipleChoice}
-\choice Clockwise.
-\choice[correct] Counterclockwise.
+\choice {Clockwise.}
+\choice[correct] {Counterclockwise.}
 \end{multipleChoice}
 
 We've seen that the signs of $N_x$ and $M_y$ correspond to the direction of local rotation, with $N_x>0$ and $M_y<0$ contributing to counterclockwise rotation. 
 
 In general, we have that the sign of $N_x-M_y$ corresponds to the direction of local rotation in the plane. In particular, we have the following correspondences:
-\begin{align}
+\begin{align*}
 N_x-M_y>0\;&\longleftrightarrow\; \textrm{counterclockwise local rotation}\\
 N_x-M_y<0\;&\longleftrightarrow\; \textrm{clockwise local rotation}\\
 N_x-M_y=0\;&\longleftrightarrow\; \textrm{no local rotation}\\
-\end{align}
+\end{align*}
 
 Remembering that $N_x-M_y$ is the \emph{curl} of the two-dimensional vector field $\mathbf{F}$, we now have that the sign of the curl tells us the direction of local rotation for two-dimensional vector fields.
 
@@ -152,12 +164,12 @@ For example, in which case will the particle spin faster?
 
 \begin{multipleChoice}
 \choice[correct]{\begin{tikzpicture}
-\draw[->] (0,0) -- (0,2) ;
-\draw[->] (.5,.5) -- (.5,1.5);
+\draw[->, very thick] (0,0) -- (0,2) ;
+\draw[->, very thick] (.5,.5) -- (.5,1.5);
 \end{tikzpicture}}
 \choice{\begin{tikzpicture}
-\draw[->] (0,0) -- (0,2) ;
-\draw[->] (.5,.25) -- (.5,1.75);
+\draw[->, very thick] (0,0) -- (0,2) ;
+\draw[->, very thick] (.5,.25) -- (.5,1.75);
 \end{tikzpicture}}
 \end{multipleChoice}
 
@@ -239,28 +251,28 @@ We now put this to use in an example.
 \begin{problem}
 Consider the vector field $\mathbf{F}(x,y,z)=\left(0,\dfrac{-z}{(y^2+z^2)^{3/2}},\dfrac{y}{(y^2+z^2)^{3/2}}\right)$. Compute the curl of $\mathbf{F}$.
 \[
-\nabla\times\mathbf{F} = \answer{(\frac{-1}{(x^2+y^2)^{3/2}},0,0)}
+\nabla\times\mathbf{F} = \answer{(\frac{-1}{(y^2+z^2)^{3/2}},0,0)}
 \]
 \begin{problem}
 What is the axis of local rotation (at any point)?
 \begin{multipleChoice}
-\choice[correct] The $x$-axis.
-\choice The $y$-axis.
-\choice The $z$-axis.
-\choice Some other line.
+\choice[correct] {The $x$-axis.}
+\choice {The $y$-axis.}
+\choice {The $z$-axis.}
+\choice {Some other line.}
 \end{multipleChoice}
 \begin{problem}
 Viewed from the positive $x$-axis, what is the direction of local rotation (at any point)?
 \begin{multipleChoice}
-\choice[correct] Clockwise.
-\choice Counterclockwise.
+\choice[correct] {Clockwise.}
+\choice {Counterclockwise.}
 \end{multipleChoice}
 \begin{problem}
 How does the speed of local rotation change as we move closer to the origin?
 \begin{multipleChoice}
-\choice Stays the same.
-\choice Gets slower.
-\choice[correct] Gets faster.
+\choice {Stays the same.}
+\choice {Gets slower.}
+\choice[correct] {Gets faster.}
 \end{multipleChoice}
 \end{problem}
 \end{problem}
