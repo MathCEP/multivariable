@@ -69,10 +69,44 @@ Let $\vec{a}$ and $\vec{b}$ be vectors in $\mathbb{R}^3$, and consider their cro
 \]
 where $\theta$ is the angle between the vectors $\vec{a}$ and $\vec{b}$. Furthermore, this magnitude is equal to the area of the parallelogram determined by $\vec{a}$ and $\vec{b}$.
 
-ADD PICTURE
+\begin{image}
+\begin{tikzpicture}
+\draw[<->] (-1,0) -- (4,0);
+\draw[<->] (0,-1) -- (0,4);
+
+\draw[white, fill=gray!20] (0,0) -- (1,3) -- (4,4) -- (3,1) --  cycle;
+
+\node[draw, circle, thick, fill=black, minimum size=1mm, inner sep=0] at (0,0) {};
+\draw[->, very thick] (0,0) -- (1,3);
+\draw[->,very thick] (0,0) -- (3,1);
+\draw[dashed] (1, 3) -- (4, 4);
+\draw[dashed] (3, 1) -- (4,4);
+
+\node at (3.3,1) {$\vec{v}$};
+\node at (1,3.3) {$\vec{w}$};
+
+\end{tikzpicture}
+\end{image}
+
 \item The vector $\vec{a}\times\vec{b}$ is always perpendicular to both $\vec{a}$ and $\vec{b}$, and follows the \emph{right-hand rule}. That is, if you take your right hand and orient it so you can curl your fingers from the vector $\vec{a}$ to the $\vec{b}$, your thumb will be pointing in the same direction as the cross product $\vec{a}\times\vec{b}$.
 
-ADD PICTURE
+\begin{image}
+\begin{tikzpicture}
+
+\node[draw, circle, thick, fill=black, minimum size=1mm, inner sep=0] at (0,0) {};
+\draw[->, very thick] (0,0) -- (3,0);
+\draw[->,very thick] (0,0) -- (2,-1);
+\draw[->,very thick] (0,0) -- (0,3);
+
+\node at (3,0.3) {$\vec{b}$};
+\node at (2,-1.3) {$\vec{a}$};
+\node at (1,3) {$\vec{a}\times\vec{b}$};
+
+\end{tikzpicture}
+\end{image}
+
+Image this image in $\mathbb{R}^3$, so that $\vec{a}\times\vec{b}$ is perpendicular to both $\vec{a}$ and $\vec{b}$.
+
 \end{itemize}
 \end{proposition}
 
@@ -80,12 +114,36 @@ ADD PICTURE
 
 We can use the cross product and dot product together to compute the volume of a parallelepiped.
 
-ADD PICTURE
+\begin{image}
+\begin{tikzpicture}
+
+\draw[white, fill=gray!20] (0,0) -- (3,0) -- (6,1) -- (7,4) -- (4,4) -- (1,3) --  cycle;
+
+\node[draw, circle, thick, fill=black, minimum size=1mm, inner sep=0] at (0,0) {};
+\draw[->, very thick] (0,0) -- (3,0);
+\draw[->, dashed, very thick] (0,0) -- (3,1);
+\draw[->,very thick] (0,0) -- (1,3);
+\draw[] (3, 0) -- (4, 3);
+\draw[] (1, 3) -- (4,3);
+\draw[] (1, 3) -- (4,4);
+\draw[] (3, 0) -- (6,1);
+\draw[] (4, 3) -- (7,4);
+\draw[] (6, 1) -- (7,4);
+\draw[] (4, 4) -- (7,4);
+\draw[dashed] (3,1) -- (6,1);
+\draw[dashed] (3,1) -- (4,4);
+
+\end{tikzpicture}
+\end{image}
 
 The volume of the parellelepiped can be computed as the area of the base times the height. We've seen that the area of the base can be computed as the magnitude of a cross product, $\|\vec{a}\times\vec{b}\|$. The height of the parallelepiped can be computed as $\|\vec{c}\|\,|\cos(\theta)|$, where $\theta$ is the angle between the vector $\vec{c}$ and a line perpendicular to the base. We then have that the volume is $\|\vec{a}\times\vec{b}\|\,\|\vec{c}\|\,|\cos(\theta)|$, which we can recognize as the absolute value of the dot product of the vectors $\vec{a}\times\vec{b}$ and $\vec{c}$. Thus we have the following proposition.
 
 \begin{proposition}
 The volume of the parallelepiped determined by the vectors $\vec{a}$, $\vec{b}$, and $\vec{c}$ can be computed as $|(\vec{a}\times\vec{b})\cdot\vec{c}|$.
 \end{proposition}
+
+\section{Summary}
+
+We've reviewed the cross product, including its properties and geometric perspective, including its use in finding the area of parallelograms and volume of parallelepipeds.
 
 \end{document}
