@@ -1,0 +1,1390 @@
+<!doctype html> 
+<html lang="en"> 
+<head>
+<title>Matrices</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<!-- charset=utf-8,-css,html,htex4ht,xhtml --> 
+<meta name="src" content="ch0_matrices.tex" /> 
+<meta name="author" content="" /> 
+<meta charset="UTF-8" /> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
+<meta name="ximera" content="version 0.0.1" /> 
+<link href="http://ximera.osu.edu/public/static/base.min.css" rel="stylesheet" media="screen"/> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/> 
+<script data-module="script" data-main="http://ximera.osu.edu/public/javascripts/app.min" src="http://ximera.osu.edu/components/requirejs/require.js"></script> 
+</head><body> 
+<div class="preamble"><script type="math/tex">\newenvironment {prompt}{}{}
+\newcommand {\DeclareMathOperator }[2]{\@OldDeclareMathOperator {##1}{##2}\immediate \write \myfile {\unexpanded {\DeclareMathOperator }{\unexpanded {##1}}{\unexpanded {##2}}}}
+\newcommand {\reserved@a }[2]{}
+\newcommand {\reserved@a }[2]{}
+\newcommand {\HyperFirstAtBeginDocument }[0]{\AtBeginDocument }
+\newcommand {\reserved@a }[1]{}
+\newcommand {\reserved@a }[2]{}
+\newcommand {\AppendGraphicsExtensions }[0]{\@ifundefined {Gin@extensions}{\let \Gin@extensions \@empty }{}\@ifstar {\grfext@Append \grfext@Check }{\grfext@Append \grfext@@Add }}
+\newcommand {\PrependGraphicsExtensions }[0]{\@ifundefined {Gin@extensions}{\let \Gin@extensions \@empty }{}\@ifstar {\grfext@Prepend \grfext@Check }{\grfext@Prepend \grfext@@Add }}
+\newcommand {\RemoveGraphicsExtensions }[1]{\@ifundefined {Gin@extensions}{\def \Gin@extensions {}}{\edef \grfext@tmp {\zap@space ##1 \@empty }\@for \grfext@ext :=\grfext@tmp \do {\def \grfext@next {\let \grfext@tmp \Gin@extensions \@expandtwoargs \@removeelement \grfext@ext \Gin@extensions \Gin@extensions \ifx \grfext@tmp \Gin@extensions \let \grfext@next \relax \fi \grfext@next }\grfext@next }}\grfext@Print \RemoveGraphicsExtensions }
+\newcommand {\epstopdfsetup }[0]{\setkeys {ETE}}
+\newcommand {\epstopdfcall }[1]{\ifETE@InsideSetfile \expandafter \@firstoftwo \else \expandafter \@secondoftwo \fi {‘##1}{\Gin@base \Gin@ext }}
+\newcommand {\epstopdfDeclareGraphicsRule }[4]{\ifx \\##4\\\@PackageError {epstopdf-base}{Conversion command is missing}\@ehc \else \begingroup \@ifundefined {Gin@rule@##1}{}{\@PackageInfo {epstopdf-base}{Redefining graphics rule for ‘##1&#x2019;}}\endgroup \@namedef {Gin@rule@##1}####1{{##2}{##3}{\epstopdfcall {##4}}}\fi }
+\newcommand {\mdf@patchamsthm }[0]{\let \mdf@deferred@thm@head \deferred@thm@head \pretocmd {\deferred@thm@head }{\@inlabelfalse }{\mdf@PackageInfo {mdframed detected package amsthm
+ changed the theorem header of amsthm\MessageBreak }}{\mdf@PackageError {mdframed detected package amsthm
+ changed the theorem header of amsthm failed\MessageBreak }}}
+\newcommand {\GetTitleStringSetup }[0]{\setkeys {gettitlestring}}
+\newcommand {\GetTitleString }[0]{\ifGTS@expand \expandafter \GetTitleStringExpand \else \expandafter \GetTitleStringNonExpand \fi }
+\newcommand {\GetTitleStringExpand }[1]{\def \GetTitleStringResult {##1}\begingroup \GTS@DisablePredefinedCmds \GTS@DisableHook \edef \x {\endgroup \noexpand \def \noexpand \GetTitleStringResult {\GetTitleStringResult }}\x }
+\newcommand {\GetTitleStringNonExpand }[1]{\def \GetTitleStringResult {##1}\global \let \GTS@GlobalString \GetTitleStringResult \begingroup \GTS@RemoveLeft \GTS@RemoveRight \endgroup \let \GetTitleStringResult \GTS@GlobalString }
+\newcommand {\GTS@DisableHook }[0]{}
+\newcommand {\label@hook }[0]{}
+\newcommand {\@currentlabelname }[0]{}
+\newcommand {\reserved@a }[0]{}
+\newcommand {\@safe@activestrue }[0]{}
+\newcommand {\@safe@activesfalse }[0]{}
+\newcommand {\nameref  }[0]{\@ifstar \T@nameref \T@nameref }
+\newcommand {\Sectionformat }[2]{##1}
+\newcommand {\vnameref  }[1]{\unskip ~\nameref {##1}\@vpageref [\unskip ]{##1}}
+\newcommand {\ref  }[0]{\@ifstar \@refstar \T@ref }
+\newcommand {\pageref  }[0]{\@ifstar \@pagerefstar \T@pageref }
+\newcommand {\nameref  }[0]{\@ifstar \@namerefstar \T@nameref }
+\newcommand {\reserved@a }[2]{}
+\newcommand {\reserved@a }[2]{}
+\newcommand {\reserved@a }[0]{\AtBeginDocument }
+\newcommand {\reserved@a }[1]{}
+\newcommand {\reserved@a }[2]{}                                                                                                                                                                                                                                                                                                                                                                                                                         </script><script type="text/javascript"> 
+</script> 
+</div>
+<div 
+class="abstract" 
+>
+</div>   <div class="maketitle"></div>
+<!--l. 11--><p class="noindent" >In this section, we review matrices, including the determinant and the linear
+transformation represented by a matrix.
+</p>
+                                                                  
+
+                                                                  
+<h3 class="sectionHead"><a 
+ id="x1-1000"></a>Matrices</h3>
+<!--l. 15--><p class="noindent" >We begin with the definition of a matrix.
+</p>
+<div class="theorem-like problem-environment definition" id="problem1"><a 
+ id="x1-1001r1"></a>An <script type="math/tex"> <![CDATA[ 
+m\times n 
+]]> 
+</script> <em>matrix</em> <script type="math/tex"> <![CDATA[ 
+A 
+]]> 
+</script> is a rectangular array of numbers <script type="math/tex"> <![CDATA[ 
+a_{ij} 
+]]> 
+</script>, with <script type="math/tex"> <![CDATA[ 
+m 
+]]> 
+</script> rows and <script type="math/tex"> <![CDATA[ 
+n 
+]]> 
+</script> columns: <script type="math/tex; mode=display"> <![CDATA[ 
+ A = \left (\begin {array}{cccc} a_{11}& a_{12} & \cdots & a_{1n}\\ a_{21}& a_{22} & \cdots & a_{2n}\\ \vdots & \vdots & & \vdots \\ a_{m1}& a_{m2} & \cdots & a_{mn}\\ \end {array}\right ),  
+]]> 
+</script> where the <script type="math/tex"> <![CDATA[ 
+a_{ij} 
+]]> 
+</script>
+are real numbers for <script type="math/tex"> <![CDATA[ 
+i 
+]]> 
+</script> and <script type="math/tex"> <![CDATA[ 
+j 
+]]> 
+</script> integers with <script type="math/tex"> <![CDATA[ 
+1\leq i \leq m 
+]]> 
+</script> and <script type="math/tex"> <![CDATA[ 
+1\leq j\leq n 
+]]> 
+</script>.
+<!--l. 29--><p class="noindent" >The numbers <script type="math/tex"> <![CDATA[ 
+a_{ij} 
+]]> 
+</script> are called the <em>entries</em> of the matrix <script type="math/tex"> <![CDATA[ 
+A 
+]]> 
+</script>.
+</div>
+</p><!--l. 32--><p class="noindent" >Note that for an entry <script type="math/tex"> <![CDATA[ 
+a_{ij} 
+]]> 
+</script>, the subscript <script type="math/tex"> <![CDATA[ 
+ij 
+]]> 
+</script> describes the location of <script type="math/tex"> <![CDATA[ 
+a_{ij} 
+]]> 
+</script> in the matrix <script type="math/tex"> <![CDATA[ 
+A 
+]]> 
+</script>: <script type="math/tex"> <![CDATA[ 
+i 
+]]> 
+</script> gives
+the row, and <script type="math/tex"> <![CDATA[ 
+j 
+]]> 
+</script> gives the column.
+</p><!--l. 34--><p class="noindent" >We can also think of a matrix as a “vector of vectors” in two different ways. If we
+imagine that the columns of <script type="math/tex"> <![CDATA[ 
+A 
+]]> 
+</script> are vectors in <script type="math/tex"> <![CDATA[ 
+\mathbb {R}^n 
+]]> 
+</script>, then the matrix of <script type="math/tex"> <![CDATA[ 
+A 
+]]> 
+</script> can be viewed as a
+vector of column vectors. If we imagine that the rows of <script type="math/tex"> <![CDATA[ 
+A 
+]]> 
+</script> are vectors in <script type="math/tex"> <![CDATA[ 
+\mathbb {R}^n 
+]]> 
+</script>, then the
+matrix <script type="math/tex"> <![CDATA[ 
+A 
+]]> 
+</script> can be viewed as a vector of row vectors.
+</p>
+<h3 class="sectionHead"><a 
+ id="x1-2000"></a>Matrix Operations</h3>
+<!--l. 38--><p class="noindent" >Here, we&#x2019;ll define matrix addition and matrix multiplication.
+</p><!--l. 40--><p class="noindent" >In order to be able to add two matrices, they need to have the exact same dimensions.
+That is, they both need to be <script type="math/tex"> <![CDATA[ 
+m\times n 
+]]> 
+</script> matrices for some fixed values of <script type="math/tex"> <![CDATA[ 
+m 
+]]> 
+</script> and <script type="math/tex"> <![CDATA[ 
+n 
+]]> 
+</script>. When we have
+two matrices with the same dimensions, we define their sum component-wise or
+entry-wise.
+</p>
+<div class="theorem-like problem-environment definition" id="problem2"><a 
+ id="x1-2001r2"></a>Let <script type="math/tex"> <![CDATA[ 
+A 
+]]> 
+</script> and <script type="math/tex"> <![CDATA[ 
+B 
+]]> 
+</script> be two <script type="math/tex"> <![CDATA[ 
+m\times n 
+]]> 
+</script> matrices, with <script type="math/tex; mode=display"><![CDATA[ 
+\begin{align*} 
+A &= \left(\begin{array}{cccc}
+a_{11}& a_{12} & \cdots & a_{1n}\\
+a_{21}& a_{22} & \cdots & a_{2n}\\
+\vdots & \vdots & & \vdots\\
+a_{m1}& a_{m2} & \cdots & a_{mn}\\
+\end{array}\right), \\
+B &= \left(\begin{array}{cccc}
+b_{11}& b_{12} & \cdots & b_{1n}\\
+b_{21}& b_{22} & \cdots & b_{2n}\\
+\vdots & \vdots & & \vdots\\
+b_{m1}& b_{m2} & \cdots & b_{mn}\\
+\end{array}\right).
+\end{align*} 
+]]> 
+</script>
+Then we define the <em>matrix sum</em> <script type="math/tex"> <![CDATA[ 
+A+B 
+]]> 
+</script> to be <script type="math/tex; mode=display"> <![CDATA[ 
+ A+B = \left (\begin {array}{cccc} a_{11}+b_{11}& a_{12}+b_{12} & \cdots & a_{1n}+b_{1n}\\ a_{21}+b_{21}& a_{22}+b_{22} & \cdots & a_{2n}+b_{2n}\\ \vdots & \vdots & & \vdots \\ a_{m1}+b_{m1}& a_{m2}+b_{m2} & \cdots & a_{mn}+b_{mn}.\\ \end {array}\right ),  
+]]> 
+</script> That is, <script type="math/tex"> <![CDATA[ 
+A+B 
+]]> 
+</script> is the <script type="math/tex"> <![CDATA[ 
+m\times n 
+]]> 
+</script> matrix obtained by adding
+                                                                  
+
+                                                                  
+the corresponding entries of <script type="math/tex"> <![CDATA[ 
+A 
+]]> 
+</script> and <script type="math/tex"> <![CDATA[ 
+B 
+]]> 
+</script>.
+</div>
+<div class="theorem-like problem-environment example" id="problem3"><a 
+ id="x1-2002r3"></a>We can add the matrices <script type="math/tex"> <![CDATA[ 
+A = \left (\begin {array}{ccc}1&2&3\\4&5&6\end {array}\right ) 
+]]> 
+</script> and <script type="math/tex"> <![CDATA[ 
+B=\left (\begin {array}{ccc}7&8&9\\10&11&12\end {array}\right ) 
+]]> 
+</script> as follows:
+<script type="math/tex; mode=display"><![CDATA[ 
+\begin{align*} 
+A+B &= \left(\begin{array}{ccc}1&2&3\\4&5&6\end{array}\right) + \left(\begin{array}{ccc}7&8&9\\10&11&12\end{array}\right)\\
+&= \left(\begin{array}{ccc}1+7&2+8&3+9\\4+10&5+11&6+12\end{array}\right)\\
+&= \left(\begin{array}{ccc}8&10&12\\14&16&18\end{array}\right)
+\end{align*} 
+]]> 
+</script>
+</div>
+<div class="theorem-like problem-environment example" id="problem4"><a 
+ id="x1-2003r4"></a>We cannot add the matrices <script type="math/tex"> <![CDATA[ 
+A = \left (\begin {array}{ccc}1&2&3\\4&5&6\end {array}\right ) 
+]]> 
+</script> and <script type="math/tex"> <![CDATA[ 
+B=\left (\begin {array}{cc}7&8\\10&11\end {array}\right ) 
+]]> 
+</script>, because their dimensions don&#x2019;t match.
+</div>
+<!--l. 83--><p class="noindent" >As you might expect, matrix addition has some nice properties which are inherited
+from addition of real numbers. We list some of them here.
+</p>
+<div class="theorem-like problem-environment proposition" id="problem5"><a 
+ id="x1-2004r5"></a>Let <script type="math/tex"> <![CDATA[ 
+A 
+]]> 
+</script>, <script type="math/tex"> <![CDATA[ 
+B 
+]]> 
+</script>, and <script type="math/tex"> <![CDATA[ 
+C 
+]]> 
+</script> be <script type="math/tex"> <![CDATA[ 
+m\times n 
+]]> 
+</script> matrices. Then we have
+     <dl class="enumerate-enumitem"><dt class="enumerate-enumitem">
+ (a) </dt><dd 
+class="enumerate-enumitem"><script type="math/tex"> <![CDATA[ 
+A+B = B+A 
+]]> 
+</script> (matrix addition is <em>commutative</em>);
+     </dd><dt class="enumerate-enumitem">
+ (b) </dt><dd 
+class="enumerate-enumitem"><script type="math/tex"> <![CDATA[ 
+A+(B+C)=(A+B)+C 
+]]> 
+</script> (matrix addition is <em>associative</em>).</dd></dl>
+<!--l. 91--><p class="noindent" >Furthermore, there is an <script type="math/tex"> <![CDATA[ 
+m\times n 
+]]> 
+</script> matrix <script type="math/tex"> <![CDATA[ 
+O 
+]]> 
+</script>, called the <em>zero matrix</em>, such that <script type="math/tex"> <![CDATA[ 
+A+O = A 
+]]> 
+</script> for any <script type="math/tex"> <![CDATA[ 
+m\times n 
+]]> 
+</script> matrix <script type="math/tex"> <![CDATA[ 
+A 
+]]> 
+</script>.
+All of the entries of the zero matrix are the real number <script type="math/tex"> <![CDATA[ 
+0 
+]]> 
+</script>.
+</div>
+</p><!--l. 94--><p class="noindent" >We&#x2019;ve seen that matrix addition works in a very natural way, and multiplying a
+matrix by a scalar (or real number) is similarly nice. We now define scalar
+multiplication for matrices.
+</p>
+<div class="theorem-like problem-environment definition" id="problem6"><a 
+ id="x1-2007r6"></a>Let <script type="math/tex; mode=display"> <![CDATA[ 
+ A = \left (\begin {array}{cccc} a_{11}& a_{12} & \cdots & a_{1n}\\ a_{21}& a_{22} & \cdots & a_{2n}\\ \vdots & \vdots & & \vdots \\ a_{m1}& a_{m2} & \cdots & a_{mn}\\ \end {array}\right )  
+]]> 
+</script> be an <script type="math/tex"> <![CDATA[ 
+m\times n 
+]]> 
+</script> matrix, and let <script type="math/tex"> <![CDATA[ 
+k\in \mathbb {R} 
+]]> 
+</script> be a scalar. Then the <em>scalar product</em> of <script type="math/tex"> <![CDATA[ 
+k 
+]]> 
+</script> and <script type="math/tex"> <![CDATA[ 
+A 
+]]> 
+</script>, denoted <script type="math/tex"> <![CDATA[ 
+kA 
+]]> 
+</script>, is
+<script type="math/tex; mode=display"> <![CDATA[ 
+ kA = \left (\begin {array}{cccc} ka_{11}& ka_{12} & \cdots & ka_{1n}\\ ka_{21}& ka_{22} & \cdots & ka_{2n}\\ \vdots & \vdots & & \vdots \\ ka_{m1}& ka_{m2} & \cdots & ka_{mn}\\ \end {array}\right ).  
+]]> 
+</script> That is, we obtain the scalar product by multiplying each entry in <script type="math/tex"> <![CDATA[ 
+A 
+]]> 
+</script> by the scalar
+<script type="math/tex"> <![CDATA[ 
+k 
+]]> 
+</script>.
+</div>
+<div class="theorem-like problem-environment example" id="problem7"><a 
+ id="x1-2008r7"></a>We can compute the scalar product of <script type="math/tex"> <![CDATA[ 
+2 
+]]> 
+</script> and the matrix <script type="math/tex"> <![CDATA[ 
+A = \left (\begin {array}{ccc}1&2&3\\4&5&6\end {array}\right ) 
+]]> 
+</script> as follows:
+<script type="math/tex; mode=display"><![CDATA[ 
+\begin{align*} 
+2A &= 2\left(\begin{array}{ccc}1&2&3\\4&5&6\end{array}\right)\\
+&= \left(\begin{array}{ccc}2\cdot1&2\cdot2&2\cdot3\\2\cdot4&2\cdot5&2\cdot6\end{array}\right)\\
+&= \left(\begin{array}{ccc}2&4&6\\8&10&12\end{array}\right).
+\end{align*} 
+]]> 
+</script>
+</div>
+<!--l. 127--><p class="noindent" >We now list some nice properties of scalar multiplication.
+                                                                  
+
+                                                                  
+</p>
+<div class="theorem-like problem-environment proposition" id="problem8"><a 
+ id="x1-2009r8"></a>Let <script type="math/tex"> <![CDATA[ 
+A 
+]]> 
+</script> and <script type="math/tex"> <![CDATA[ 
+B 
+]]> 
+</script> be <script type="math/tex"> <![CDATA[ 
+m\times n 
+]]> 
+</script> matrices, and let <script type="math/tex"> <![CDATA[ 
+k 
+]]> 
+</script> and <script type="math/tex"> <![CDATA[ 
+l 
+]]> 
+</script> be scalars in <script type="math/tex"> <![CDATA[ 
+\mathbb {R} 
+]]> 
+</script>. Then
+     <dl class="enumerate-enumitem"><dt class="enumerate-enumitem">
+ (a) </dt><dd 
+class="enumerate-enumitem"><script type="math/tex"> <![CDATA[ 
+(k+l)A = kA+lA 
+]]> 
+</script> (scalar multiplication is <em>distributive</em> over scalar addition);
+     </dd><dt class="enumerate-enumitem">
+ (b) </dt><dd 
+class="enumerate-enumitem"><script type="math/tex"> <![CDATA[ 
+k(A+B)=kA+kB 
+]]> 
+</script> (scalar multiplication is <em>distributive</em> over matrix addition);
+     </dd><dt class="enumerate-enumitem">
+ (c) </dt><dd 
+class="enumerate-enumitem"><script type="math/tex"> <![CDATA[ 
+k(lA)=(kl)A = l(kA) 
+]]> 
+</script>.</dd></dl>
+<!--l. 136--><p class="noindent" ></div>
+</p><!--l. 138--><p class="noindent" >We&#x2019;ll now define matrix multiplication, which can be a bit trickier to work with than
+matrix addition or scalar multiplication. Here are some important things to
+remember about matrix multiplication: </p>
+     <ul class="itemize1">
+     <li class="itemize">Not all matrices can be multiplied. In order to compute the product <script type="math/tex"> <![CDATA[ 
+AB 
+]]> 
+</script> of
+     two matrices <script type="math/tex"> <![CDATA[ 
+A 
+]]> 
+</script> and <script type="math/tex"> <![CDATA[ 
+B 
+]]> 
+</script>, the number of columns in <script type="math/tex"> <![CDATA[ 
+A 
+]]> 
+</script> needs to be the same as
+     the number of rows in <script type="math/tex"> <![CDATA[ 
+B 
+]]> 
+</script>.
+     </li>
+     <li class="itemize">Matrix multiplication is <em>not</em> commutative. In fact, its possible that the
+     matrix product <script type="math/tex"> <![CDATA[ 
+AB 
+]]> 
+</script> exists but the product <script type="math/tex"> <![CDATA[ 
+BA 
+]]> 
+</script> does not.</li></ul>
+<div class="theorem-like problem-environment definition" id="problem9"><a 
+ id="x1-2013r9"></a>Let <script type="math/tex"> <![CDATA[ 
+A 
+]]> 
+</script> be an <script type="math/tex"> <![CDATA[ 
+m\times n 
+]]> 
+</script> matrix, and let <script type="math/tex"> <![CDATA[ 
+B 
+]]> 
+</script> be an <script type="math/tex"> <![CDATA[ 
+n\times p 
+]]> 
+</script> matrix, with <script type="math/tex; mode=display"><![CDATA[ 
+\begin{align*} 
+A &= \left(\begin{array}{cccc}
+a_{11}& a_{12} & \cdots & a_{1n}\\
+a_{21}& a_{22} & \cdots & a_{2n}\\
+\vdots & \vdots & & \vdots\\
+a_{m1}& a_{m2} & \cdots & a_{mn}\\
+\end{array}\right), \\
+B &= \left(\begin{array}{cccc}
+b_{11}& b_{12} & \cdots & b_{1p}\\
+b_{21}& b_{22} & \cdots & b_{2p}\\
+\vdots & \vdots & & \vdots\\
+b_{n1}& b_{n2} & \cdots & b_{np}\\
+\end{array}\right).
+\end{align*} 
+]]> 
+</script>
+Note that we are assuming the number of columns in <script type="math/tex"> <![CDATA[ 
+A 
+]]> 
+</script> is the same as the number of
+rows in <script type="math/tex"> <![CDATA[ 
+B 
+]]> 
+</script>.
+<!--l. 162--><p class="noindent" >We define the <em>matrix product</em> of <script type="math/tex"> <![CDATA[ 
+A 
+]]> 
+</script> and <script type="math/tex"> <![CDATA[ 
+B 
+]]> 
+</script>, denoted <script type="math/tex"> <![CDATA[ 
+AB 
+]]> 
+</script>, to be the <script type="math/tex"> <![CDATA[ 
+m\times p 
+]]> 
+</script> matrix <script type="math/tex; mode=display"> <![CDATA[ 
+ AB = \left (\begin {array}{cccc} a_{11}b_{11} + a_{12}b_{21}+\cdots + a_{1n}b_{n1}& a_{11}b_{12} + a_{12}b_{22}+\cdots + a_{1n}b_{n2} & \cdots & a_{11}b_{1p} + a_{12}b_{2p}+\cdots + a_{1n}b_{np}\\ a_{21}b_{11} + a_{22}b_{21}+\cdots + a_{2n}b_{n1}& a_{21}b_{12} + a_{22}b_{22}+\cdots + a_{2n}b_{n2} & \cdots & a_{21}b_{1p} + a_{22}b_{2p}+\cdots + a_{2n}b_{np}\\ \vdots & \vdots & & \vdots \\ a_{m1}b_{11} + a_{m2}b_{21}+\cdots + a_{mn}b_{n1}& a_{m1}b_{12} + a_{m2}b_{22}+\cdots + a_{mn}b_{n2} & \cdots & a_{m1}b_{1p} + a_{m2}b_{2p}+\cdots + a_{mn}b_{np}\\ \end {array}\right ).  
+]]> 
+</script> Equivalently, we
+                                                                  
+
+                                                                  
+could define the <script type="math/tex"> <![CDATA[ 
+ij 
+]]> 
+</script>th entry of <script type="math/tex"> <![CDATA[ 
+AB 
+]]> 
+</script> to be the dot product of the <script type="math/tex"> <![CDATA[ 
+i 
+]]> 
+</script>th row of <script type="math/tex"> <![CDATA[ 
+A 
+]]> 
+</script> with the <script type="math/tex"> <![CDATA[ 
+j 
+]]> 
+</script>th
+column of <script type="math/tex"> <![CDATA[ 
+B 
+]]> 
+</script>. This makes sense, since the number of columns in <script type="math/tex"> <![CDATA[ 
+A 
+]]> 
+</script> is the same as the
+number of rows in <script type="math/tex"> <![CDATA[ 
+B 
+]]> 
+</script> (both <script type="math/tex"> <![CDATA[ 
+n 
+]]> 
+</script>), which ensures that the <script type="math/tex"> <![CDATA[ 
+i 
+]]> 
+</script>th row of <script type="math/tex"> <![CDATA[ 
+A 
+]]> 
+</script> and the <script type="math/tex"> <![CDATA[ 
+j 
+]]> 
+</script>th column of <script type="math/tex"> <![CDATA[ 
+B 
+]]> 
+</script>
+are both vectors in <script type="math/tex"> <![CDATA[ 
+\mathbb {R}^n 
+]]> 
+</script>.
+</div>
+</p><!--l. 174--><p class="noindent" >This definition can seem a bit convoluted, and it&#x2019;s easier to understand how matrix
+multiplication works by going through an example.
+</p>
+<div class="theorem-like problem-environment example" id="problem10"><a 
+ id="x1-2014r10"></a>We can compute the product <script type="math/tex"> <![CDATA[ 
+AB 
+]]> 
+</script> of the matrices <script type="math/tex"> <![CDATA[ 
+A = \left (\begin {array}{ccc}1&2&3\\4&5&6\end {array}\right ) 
+]]> 
+</script> and <script type="math/tex"> <![CDATA[ 
+B=\left (\begin {array}{cc}7&8\\9&10\\11&12\end {array}\right ) 
+]]> 
+</script> as follows:
+<script type="math/tex; mode=display"><![CDATA[ 
+\begin{align*} 
+AB &= \left(\begin{array}{ccc}1&2&3\\4&5&6\end{array}\right)\left(\begin{array}{cc}7&8\\9&10\\11&12\end{array}\right),\\
+&= \left(\begin{array}{cc}1\cdot 7+ 2\cdot 9 + 3\cdot 11 & 1\cdot 8+ 2\cdot 10 + 3\cdot 12\\
+4\cdot 7+ 5\cdot 9 + 6\cdot 11 & 4\cdot 8+ 5\cdot 10 + 6\cdot 12\end{array}\right),\\
+&= \left(\begin{array}{cc}58 & 64\\
+139 & 154\end{array}\right).\\
+\end{align*} 
+]]> 
+</script>
+Note that we multiplied a <script type="math/tex"> <![CDATA[ 
+2\times 3 
+]]> 
+</script> matrix by a <script type="math/tex"> <![CDATA[ 
+3\times 2 
+]]> 
+</script> matrix, and we obtained a <script type="math/tex"> <![CDATA[ 
+2\times 2 
+]]> 
+</script> matrix.
+<!--l. 187--><p class="noindent" >We can also compute the product <script type="math/tex"> <![CDATA[ 
+BA 
+]]> 
+</script> for the same matrices as above.
+</p><script type="math/tex; mode=display"><![CDATA[ 
+\begin{align*} 
+BA &= \left(\begin{array}{cc}7&8\\9&10\\11&12\end{array}\right)\left(\begin{array}{ccc}1&2&3\\4&5&6\end{array}\right),\\
+&= \left(\begin{array}{ccc}7\cdot 1 + 8\cdot 4 & 7\cdot 2 + 8\cdot 5 & 7\cdot 3 + 8\cdot 6\\
+9\cdot 1 + 10\cdot 4 & 9\cdot 2 + 10\cdot 5 & 9\cdot 3 + 10\cdot 6\\
+11\cdot 1 + 12\cdot 4 & 11\cdot 2 + 12\cdot 5 & 11\cdot 3 + 12\cdot 6\end{array}\right),\\
+&= \left(\begin{array}{ccc}39 & 54 & 69\\
+49 & 68 & 81\\
+59 & 82 & 105\end{array}\right).
+\end{align*} 
+]]> 
+</script>
+Note that we multiplied a <script type="math/tex"> <![CDATA[ 
+3\times 2 
+]]> 
+</script> matrix by a <script type="math/tex"> <![CDATA[ 
+2\times 3 
+]]> 
+</script> matrix, and we obtained a <script type="math/tex"> <![CDATA[ 
+3\times 3 
+]]> 
+</script> matrix.
+<!--l. 199--><p class="noindent" >Note that in this case <script type="math/tex"> <![CDATA[ 
+AB\neq BA 
+]]> 
+</script>; matrix multiplication is not commutative, so the order of the
+matrices matters!
+</div>
+</p><!--l. 202--><p class="noindent" >Although matrix multiplication is not commutative, it still has some nice algebraic
+properties. We list some of them here.
+</p>
+<div class="theorem-like problem-environment proposition" id="problem11"><a 
+ id="x1-2015r11"></a>Let <script type="math/tex"> <![CDATA[ 
+A 
+]]> 
+</script>, <script type="math/tex"> <![CDATA[ 
+B 
+]]> 
+</script>, and <script type="math/tex"> <![CDATA[ 
+C 
+]]> 
+</script> be matrices of dimensions such that the following operations are defined,
+and let <script type="math/tex"> <![CDATA[ 
+k 
+]]> 
+</script> be a scalar. Then
+     <dl class="enumerate-enumitem"><dt class="enumerate-enumitem">
+ (a) </dt><dd 
+class="enumerate-enumitem"><script type="math/tex"> <![CDATA[ 
+A(BC) = (AB)C 
+]]> 
+</script> (matrix multiplication is <em>associative</em>);
+     </dd><dt class="enumerate-enumitem">
+                                                                  
+
+                                                                  
+ (b) </dt><dd 
+class="enumerate-enumitem"><script type="math/tex"> <![CDATA[ 
+k(AB) = (kA)B = A(kB) 
+]]> 
+</script>;
+     </dd><dt class="enumerate-enumitem">
+ (c) </dt><dd 
+class="enumerate-enumitem"><script type="math/tex"> <![CDATA[ 
+A(B+C) = AB+AC 
+]]> 
+</script>;
+     </dd><dt class="enumerate-enumitem">
+ (d) </dt><dd 
+class="enumerate-enumitem"><script type="math/tex"> <![CDATA[ 
+(A+B)C = AC+BC 
+]]> 
+</script> (with the previous property, matrix multiplication is <em>distributive</em> over
+     matrix addition).</dd></dl>
+<!--l. 212--><p class="noindent" ></div>
+</p>
+<h3 class="sectionHead"><a 
+ id="x1-3000"></a>Determinants</h3>
+<!--l. 216--><p class="noindent" >When we have a square matrix (meaning an <script type="math/tex"> <![CDATA[ 
+n\times n 
+]]> 
+</script> matrix, where the number of rows and
+number of columns are the same), we can compute an important number, called the
+determinant of the matrix. It turns out that this single number can tell us some
+important things about the matrix!
+</p><!--l. 218--><p class="noindent" >We begin by defining the determinant of a <script type="math/tex"> <![CDATA[ 
+2\times 2 
+]]> 
+</script> matrix.
+</p>
+<div class="theorem-like problem-environment definition" id="problem12"><a 
+ id="x1-3001r12"></a>Consider the <script type="math/tex"> <![CDATA[ 
+2\times 2 
+]]> 
+</script> matrix <script type="math/tex"> <![CDATA[ 
+A=\left (\begin {array}{cc}a & b \\ c & d\\\end {array}\right ) 
+]]> 
+</script>. We define the <em>determinant</em> of the matrix <script type="math/tex"> <![CDATA[ 
+A 
+]]> 
+</script> to be <script type="math/tex; mode=display"> <![CDATA[ 
+ \textrm {det}(A) = ad-bc.  
+]]> 
+</script> We also
+sometimes use the notation <script type="math/tex"> <![CDATA[ 
+|A| 
+]]> 
+</script> for the determinant of the matrix <script type="math/tex"> <![CDATA[ 
+A 
+]]> 
+</script>.
+</div>
+<!--l. 228--><p class="noindent" >Note that the determinate of a <script type="math/tex"> <![CDATA[ 
+2\times 2 
+]]> 
+</script> matrix is just a number, not a matrix. We compute
+the determinant in a couple of examples.
+</p>
+<div class="theorem-like problem-environment example" id="problem13"><a 
+ id="x1-3002r13"></a>We&#x2019;ll compute the determinant of the matrix <script type="math/tex"> <![CDATA[ 
+A = \left (\begin {array}{cc}1 & 2 \\ 3 & 4\\\end {array}\right ) 
+]]> 
+</script>. <script type="math/tex; mode=display"><![CDATA[ 
+\begin{align*} 
+\textrm{det}(A) &= 1\cdot 4 - 2\cdot 3\\
+&= -2.
+\end{align*} 
+]]> 
+</script>
+</div>
+<!--l. 238--><p class="noindent" >We&#x2019;ve defined the determinant of <script type="math/tex"> <![CDATA[ 
+2\times 2 
+]]> 
+</script> matrices, but we haven&#x2019;t defined the determinant
+of a larger square matrix yet. It turns out that the determinant is defined <em>inductively</em>.
+This means that the determinant of a <script type="math/tex"> <![CDATA[ 
+3\times 3 
+]]> 
+</script> matrix is defined using determinants of <script type="math/tex"> <![CDATA[ 
+2\times 2 
+]]> 
+</script>
+matrices, the determinant of a <script type="math/tex"> <![CDATA[ 
+4\times 4 
+]]> 
+</script> matrix is defined using determinants of <script type="math/tex"> <![CDATA[ 
+3\times 3 
+]]> 
+</script>
+matrices, the determinant of a <script type="math/tex"> <![CDATA[ 
+5\times 5 
+]]> 
+</script> matrix is defined using determinants of <script type="math/tex"> <![CDATA[ 
+4\times 4 
+]]> 
+</script>
+matrices, and so on. This means in order to compute the determinant of a large
+square matrix, we often need to compute the determinants of many smaller
+matrices.
+</p><!--l. 240--><p class="noindent" >We now give the definition of the determinant of an <script type="math/tex"> <![CDATA[ 
+n\times n 
+]]> 
+</script> matrix.
+</p>
+<div class="theorem-like problem-environment definition" id="problem14"><a 
+ id="x1-3003r14"></a>Let <script type="math/tex"> <![CDATA[ 
+A 
+]]> 
+</script> be an <script type="math/tex"> <![CDATA[ 
+n\times n 
+]]> 
+</script> matrix, with entries <script type="math/tex"> <![CDATA[ 
+a_{ij} 
+]]> 
+</script>. We defined the <em>determinant</em> of <script type="math/tex"> <![CDATA[ 
+A 
+]]> 
+</script> to be the number
+computed by <script type="math/tex; mode=display"> <![CDATA[ 
+ \textrm {det}(A) = (-1)^{1+1}a_{11}\textrm {det}(A_{11}) + (-1)^{1+2}a_{12}\textrm {det}(A_{12}) + \cdots + (-1)^{1+n}a_{1n}\textrm {det}(A_{1n}),  
+]]> 
+</script> where <script type="math/tex"> <![CDATA[ 
+A_{ij} 
+]]> 
+</script> is the <script type="math/tex"> <![CDATA[ 
+(n-1)\times (n-1) 
+]]> 
+</script> submatrix of <script type="math/tex"> <![CDATA[ 
+A 
+]]> 
+</script> which we obtain by deleting the <script type="math/tex"> <![CDATA[ 
+i 
+]]> 
+</script>th row
+                                                                  
+
+                                                                  
+and <script type="math/tex"> <![CDATA[ 
+j 
+]]> 
+</script>the column from <script type="math/tex"> <![CDATA[ 
+A 
+]]> 
+</script>.
+</div>
+<!--l. 250--><p class="noindent" >This definition is pretty confusing if you read through it without seeing an example,
+but this actually follows a nice pattern. This pattern is easier to see with an
+example.
+</p>
+<div class="theorem-like problem-environment example" id="problem15"><a 
+ id="x1-3004r15"></a>We compute the determinant of the <script type="math/tex"> <![CDATA[ 
+4\times 4 
+]]> 
+</script> matrix, <script type="math/tex; mode=display"> <![CDATA[ 
+ A = \left (\begin {array}{cccc} 1 & 4 & 2 & -1\\ 0 & 0 & -2 & 1\\ -3 & 0 & 1 & 0\\ 0 & 0 & 0 & 1\\ \end {array}\right ).  
+]]> 
+</script> Note that we begin by writing this in
+terms of determinants of <script type="math/tex"> <![CDATA[ 
+3\times 3 
+]]> 
+</script> matrices. But in order to compute the determinant of each <script type="math/tex"> <![CDATA[ 
+3\times 3 
+]]> 
+</script>
+matrix, we write it in terms of <script type="math/tex"> <![CDATA[ 
+2\times 2 
+]]> 
+</script> matrices! This winds up being a lot of determinants to
+compute. <script type="math/tex; mode=display"><![CDATA[ 
+\begin{align*} 
+\textrm{det}(A) = (-1&)^{1+1}1\textrm{det}\left(\begin{array}{ccc}
+0&-2&1\\
+0&1&0\\
+0&0&1
+\end{array}\right) + (-1)^{1+2}4\textrm{det}\left(\begin{array}{ccc}
+0&-2&1\\
+-3&1&0\\
+0&0&1
+\end{array}\right)\\ &+ (-1)^{1+3}2\textrm{det}\left(\begin{array}{ccc}
+0&0&1\\
+-3&0&0\\
+0&0&1
+\end{array}\right)+ (-1)^{1+4}(-1)\textrm{det}\left(\begin{array}{ccc}
+0&0&-2\\
+-3&0&1\\
+0&0&0
+\end{array}\right)
+\end{align*} 
+]]> 
+</script>
+We now compute the determinant of each of the <script type="math/tex"> <![CDATA[ 
+3\times 3 
+]]> 
+</script> submatrices, which we compute
+using determinants of <script type="math/tex"> <![CDATA[ 
+2\times 2 
+]]> 
+</script> matrices. <script type="math/tex; mode=display"><![CDATA[ 
+\begin{align*} 
+\textrm{det}\left(\begin{array}{ccc}
+0&-2&1\\
+0&1&0\\
+0&0&1
+\end{array}\right) &= (-1)^{1+1}0\textrm{det}\left(\begin{array}{cc}
+1&0\\
+0&1
+                                                                  
+
+                                                                  
+\end{array}\right) + (-1)^{1+2}(-2)\textrm{det}\left(\begin{array}{cc}
+0&0\\
+0&1
+\end{array}\right)\\ &\phantom{ihuegrhiuehuir}+ (-1)^{1+3}1\textrm{det}\left(\begin{array}{cc}
+0&1\\
+0&0
+\end{array}\right)\\
+&= 1\cdot 0\cdot (1\cdot 1 - 0\cdot 0) + -1\cdot (-2)\cdot (0\cdot 1 - 0\cdot 0) + 1\cdot 1\cdot (0\cdot 0 - 1\cdot 0)\\
+&= 0\\
+\textrm{det}\left(\begin{array}{ccc}
+0&-2&1\\
+-3&1&0\\
+0&0&1
+\end{array}\right) &= (-1)^{1+1}0\textrm{det}\left(\begin{array}{cc}
+1&0\\
+0&1
+\end{array}\right) + (-1)^{1+2}(-2)\textrm{det}\left(\begin{array}{cc}
+-3&0\\
+0&1
+\end{array}\right)\\ &\phantom{ihuegrhiuehuir}+ (-1)^{1+3}1\textrm{det}\left(\begin{array}{cc}
+-3&1\\
+0&0
+\end{array}\right)\\
+&= 1\cdot 0\cdot (1\cdot 1 - 0\cdot 0) + -1\cdot (-2)\cdot (-3\cdot 1 - 0\cdot 0) + 1\cdot 1\cdot (-3\cdot 0 - 1\cdot 0)\\
+&= 6\\
+\textrm{det}\left(\begin{array}{ccc}
+0&0&1\\
+-3&0&0\\
+0&0&1
+\end{array}\right) &= (-1)^{1+1}0\textrm{det}\left(\begin{array}{cc}
+0&0\\
+0&1
+                                                                  
+
+                                                                  
+\end{array}\right) + (-1)^{1+2}0\textrm{det}\left(\begin{array}{cc}
+-3&0\\
+0&1
+\end{array}\right)\\ &\phantom{ihuegrhiuehuir}+ (-1)^{1+3}1\textrm{det}\left(\begin{array}{cc}
+-3&0\\
+0&0
+\end{array}\right)\\
+&= 1\cdot 0\cdot (0\cdot 1 - 0\cdot 0) + -1\cdot 0\cdot (-3\cdot 1 - 0\cdot 0) + 1\cdot 1\cdot (-3\cdot 0 - 0\cdot 0)\\
+&= 0\\
+\textrm{det}\left(\begin{array}{ccc}
+0&0&-2\\
+-3&0&1\\
+0&0&0
+\end{array}\right) &= (-1)^{1+1}0\textrm{det}\left(\begin{array}{cc}
+0&1\\
+0&0
+\end{array}\right) + (-1)^{1+2}0\textrm{det}\left(\begin{array}{cc}
+-3&1\\
+0&0
+\end{array}\right)\\ &\phantom{ihuegrhiuehuir}+ (-1)^{1+3}(-2)\textrm{det}\left(\begin{array}{cc}
+-3&0\\
+0&0
+\end{array}\right)\\
+&= 1\cdot 0\cdot (0\cdot 0 - 1\cdot 0) + -1\cdot 0\cdot (-3\cdot 0 - 1\cdot 0) + 1\cdot (-2)\cdot (-3\cdot 0 - 0\cdot 0)\\
+&= 0\\
+\end{align*} 
+]]> 
+</script>
+Substituting these in to our computation of the determinant of <script type="math/tex"> <![CDATA[ 
+A 
+]]> 
+</script>, we then obtain
+<script type="math/tex; mode=display"><![CDATA[ 
+\begin{align*} 
+\textrm{det}(A) &= 1\cdot1\cdot 0 + (-1)\cdot 4\cdot (6) + 1\cdot 2\cdot 0+ (-1)\cdot (-1)\cdot 0\\
+&= -24.
+\end{align*} 
+]]> 
+</script>
+</div>
+<!--l. 356--><p class="noindent" >We sometimes call this method of computing a determinant as “expanding along the
+first row.” This is because we can also compute the determinant of a matrix by
+                                                                  
+
+                                                                  
+similarly expanding along a different row, or even a column.
+</p>
+<div class="theorem-like problem-environment proposition" id="problem16"><a 
+ id="x1-3005r16"></a>We can similarly compute the determinant of an <script type="math/tex"> <![CDATA[ 
+n\times n 
+]]> 
+</script> matrix <script type="math/tex"> <![CDATA[ 
+A 
+]]> 
+</script> by expanding along any
+row or column. Expanding along the <script type="math/tex"> <![CDATA[ 
+i 
+]]> 
+</script>th row, we have <script type="math/tex; mode=display"> <![CDATA[ 
+ \textrm {det}(A)=(-1)^{i+1}a_{i1}\textrm {det}(A_{i1}) + (-1)^{i+2}a_{i2}\textrm {det}(A_{i2}) +\cdots + (-1)^{i+n}a_{in}\textrm {det}(A_{in}).  
+]]> 
+</script> Expanding along the <script type="math/tex"> <![CDATA[ 
+j 
+]]> 
+</script>th
+column, we have <script type="math/tex; mode=display"> <![CDATA[ 
+ \textrm {det}(A) = (-1)^{1+j}a_{1j}\textrm {det}(A_{1j}) + (-1)^{2+j}a_{2j}\textrm {det}(A_{2j})+\cdots +(-1)^{n+j}a_{nj}\textrm {det}(A_{nj}).  
+]]> 
+</script> Once again, <script type="math/tex"> <![CDATA[ 
+A_{ij} 
+]]> 
+</script> is the <script type="math/tex"> <![CDATA[ 
+(n-1)\times (n-1) 
+]]> 
+</script> submatrix obtained from <script type="math/tex"> <![CDATA[ 
+A 
+]]> 
+</script> by deleting the <script type="math/tex"> <![CDATA[ 
+i 
+]]> 
+</script>th
+row and <script type="math/tex"> <![CDATA[ 
+j 
+]]> 
+</script>th column.
+</div>
+<!--l. 370--><p class="noindent" >It can be useful to think about which row or column will be easiest to expand along.
+In particular, choosing a row or column with a lot of zeros greatly simplifies
+computation.
+</p>
+<div class="theorem-like problem-environment example" id="problem17"><a 
+ id="x1-3006r17"></a>We&#x2019;ll once again compute the determinant of the <script type="math/tex"> <![CDATA[ 
+4\times 4 
+]]> 
+</script> matrix <script type="math/tex; mode=display"> <![CDATA[ 
+ A = \left (\begin {array}{cccc} 1 & 4 & 2 & -1\\ 0 & 0 & -2 & 1\\ -3 & 0 & 1 & 0\\ 0 & 0 & 0 & 1\\ \end {array}\right ),  
+]]> 
+</script> this time by expanding along
+the second column. Note that this column is a good choice, since there&#x2019;s only one
+nonzero element. We have <script type="math/tex; mode=display"> <![CDATA[ 
+ \textrm {det}(A) = (-1)^{1+2}(4)\textrm {det}\left (\begin {array}{ccc}0&-2&1\\-3&1&0\\0&0&1\\\end {array}\right ) + (-1)^{2+2}(0)\textrm {det}\left (\begin {array}{ccc}1&2&-1\\-3&1&0\\0&0&1\\\end {array}\right )+(-1)^{3+2}(0)\textrm {det}\left (\begin {array}{ccc}1&2&-1\\0&-2&1\\0&0&1\\\end {array}\right )+(-1)^{4+2}(0)\textrm {det}\left (\begin {array}{ccc}1&2&-1\\0&-2&1\\-3&1&0\\\end {array}\right ).  
+]]> 
+</script> We&#x2019;ll only compute the determinant of the submatrix <script type="math/tex"> <![CDATA[ 
+\left (\begin {array}{ccc}0&-2&1\\-3&1&0\\0&0&1\\\end {array}\right ) 
+]]> 
+</script>; we
+won&#x2019;t bother computing the others since their determinants will be multiplied by <script type="math/tex"> <![CDATA[ 
+0 
+]]> 
+</script>.
+<script type="math/tex; mode=display"><![CDATA[ 
+\begin{align*} 
+\textrm{det}\left(\begin{array}{ccc}0&-2&1\\-3&1&0\\0&0&1\\\end{array}\right) &= (-1)^{3+1}(0)\textrm{det}\left(\begin{array}{cc}-2&1\\1&0\end{array}\right) + (-1)^{3+2}(0)\textrm{det}\left(\begin{array}{cc}0&1\\-3&0\end{array}\right) + (-1)^{3+3}(1)\textrm{det}\left(\begin{array}{cc}0&-2\\-3&1\end{array}\right),\\
+&= 0 + 0 + (1)(1)(0\cdot 1- (-2)\cdot (-3)),\\
+&= -6.
+\end{align*} 
+]]> 
+</script>
+Once again, we don&#x2019;t bother computing the determinants which will be multiplied by
+zero. Note that we chose to expand across the last row, since it had two
+zeroes. Expanding along the first column would also have been a reasonable
+choice.
+<!--l. 393--><p class="noindent" >Returning to our computation of the determinant of <script type="math/tex"> <![CDATA[ 
+A 
+]]> 
+</script>, we have
+</p><script type="math/tex; mode=display"><![CDATA[ 
+\begin{align*} 
+\textrm{det}(A) &= (-1)^{1+2}(4)\textrm{det}\left(\begin{array}{ccc}0&-2&1\\-3&1&0\\0&0&1\\\end{array}\right) + (-1)^{2+2}(0)\textrm{det}\left(\begin{array}{ccc}1&2&-1\\-3&1&0\\0&0&1\\\end{array}\right)+(-1)^{3+2}(0)\textrm{det}\left(\begin{array}{ccc}1&2&-1\\0&-2&1\\0&0&1\\\end{array}\right)+(-1)^{4+2}(0)\textrm{det}\left(\begin{array}{ccc}1&2&-1\\0&-2&1\\-3&1&0\\\end{array}\right),\\
+&= (-1)(4)(-6) + 0 + 0 + 0,\\
+&= 24.
+\end{align*} 
+]]> 
+</script>
+Notice that this matching our previous computation, expanding along the first
+row.
+</div>
+<!--l. 402--><p class="noindent" >One of the most powerful uses of the determinant is to tell us whether or not a
+matrix is invertible. Recall that an <script type="math/tex"> <![CDATA[ 
+n\times n 
+]]> 
+</script> matrix <script type="math/tex"> <![CDATA[ 
+A 
+]]> 
+</script> is <em>invertible</em> if there is a matrix <script type="math/tex"> <![CDATA[ 
+B 
+]]> 
+</script> such
+that <script type="math/tex"> <![CDATA[ 
+AB=BA = I_n 
+]]> 
+</script>, where <script type="math/tex"> <![CDATA[ 
+I_n 
+]]> 
+</script> is the <script type="math/tex"> <![CDATA[ 
+n\times n 
+]]> 
+</script> identity matrix.
+</p>
+<div class="theorem-like problem-environment proposition" id="problem18"><a 
+ id="x1-3007r18"></a>An <script type="math/tex"> <![CDATA[ 
+n\times n 
+]]> 
+</script> matrix <script type="math/tex"> <![CDATA[ 
+A 
+]]> 
+</script> is invertible if and only if its determinant is nonzero.
+</div>
+<!--l. 408--><p class="noindent" >This gives us a convenient way to test if a matrix is invertible, without needing to
+produce an explicit inverse.
+</p>
+                                                                  
+
+                                                                  
+<div class="theorem-like problem-environment example" id="problem19"><a 
+ id="x1-3008r19"></a>We found that the determinant of the matrix <script type="math/tex; mode=display"> <![CDATA[ 
+ A = \left (\begin {array}{cccc} 1 & 4 & 2 & -1\\ 0 & 0 & -2 & 1\\ -3 & 0 & 1 & 0\\ 0 & 0 & 0 & 1\\ \end {array}\right )  
+]]> 
+</script> is <script type="math/tex"> <![CDATA[ 
+24 
+]]> 
+</script>. Since this is nonzero, the matrix <script type="math/tex"> <![CDATA[ 
+A 
+]]> 
+</script> is
+invertible.
+<!--l. 422--><p class="noindent" >On the other hand, you can verify that the determinant of the matrix <script type="math/tex; mode=display"> <![CDATA[ 
+ B = \left (\begin {array}{cccc} 1 & 2 & 3 & 4\\ 1 & 0 & -1 & -2\\ -3 & 1 & -1 & 0\\ -1 & 3 & 1 & 2\\ \end {array}\right )  
+]]> 
+</script> is <script type="math/tex"> <![CDATA[ 
+0 
+]]> 
+</script>. Thus, the
+matrix <script type="math/tex"> <![CDATA[ 
+B 
+]]> 
+</script> is not invertible.
+</div>
+</p>
+<h3 class="sectionHead"><a 
+ id="x1-4000"></a>Linear Transformations</h3>
+<!--l. 436--><p class="noindent" >One of the most important uses of matrices is to represent linear transformations.
+Recall the definition of a linear transformation.
+</p>
+<div class="theorem-like problem-environment definition" id="problem20"><a 
+ id="x1-4001r20"></a>A function <script type="math/tex"> <![CDATA[ 
+T 
+]]> 
+</script> from <script type="math/tex"> <![CDATA[ 
+\mathbb {R}^n 
+]]> 
+</script> to <script type="math/tex"> <![CDATA[ 
+\mathbb {R}^n 
+]]> 
+</script> is a linear transformation if for all vectors <script type="math/tex"> <![CDATA[ 
+\vec {v} 
+]]> 
+</script> and <script type="math/tex"> <![CDATA[ 
+\vec {w} 
+]]> 
+</script> in <script type="math/tex"> <![CDATA[ 
+\mathbb {R}^n 
+]]> 
+</script> and all
+scalars <script type="math/tex"> <![CDATA[ 
+k\in \mathbb {R} 
+]]> 
+</script>, we have
+     <dl class="enumerate-enumitem"><dt class="enumerate-enumitem">
+ (a) </dt><dd 
+class="enumerate-enumitem"><script type="math/tex"> <![CDATA[ 
+T(\vec {v}+\vec {w}) = T(\vec {v})+T(\vec {w}) 
+]]> 
+</script>;
+     </dd><dt class="enumerate-enumitem">
+ (b) </dt><dd 
+class="enumerate-enumitem"><script type="math/tex"> <![CDATA[ 
+T(k\vec {v}) = kT(\vec {v}) 
+]]> 
+</script>.</dd></dl>
+<!--l. 444--><p class="noindent" ></div>
+</p><!--l. 446--><p class="noindent" >We can view an <script type="math/tex"> <![CDATA[ 
+m\times n 
+]]> 
+</script> matrix <script type="math/tex"> <![CDATA[ 
+A 
+]]> 
+</script> as representing a linear transformation from <script type="math/tex"> <![CDATA[ 
+\mathbb {R}^n 
+]]> 
+</script> to <script type="math/tex"> <![CDATA[ 
+\mathbb {R}^m 
+]]> 
+</script> as follows.
+We write vectors as column vectors, or, equivalently, <script type="math/tex"> <![CDATA[ 
+n\times 1 
+]]> 
+</script> or <script type="math/tex"> <![CDATA[ 
+m\times 1 
+]]> 
+</script> matrices. For an input
+column vector <script type="math/tex"> <![CDATA[ 
+\vec {v} 
+]]> 
+</script> in <script type="math/tex"> <![CDATA[ 
+\mathbb {R}^n 
+]]> 
+</script>, we multiply <script type="math/tex"> <![CDATA[ 
+\vec {v} 
+]]> 
+</script> by <script type="math/tex"> <![CDATA[ 
+A 
+]]> 
+</script> on the left, using matrix multiplication. This
+produces an <script type="math/tex"> <![CDATA[ 
+m\times 1 
+]]> 
+</script> matrix, or, equivalently, a column vector in <script type="math/tex"> <![CDATA[ 
+\mathbb {R}^m 
+]]> 
+</script>. Thus, we can define a
+function <script type="math/tex; mode=display"> <![CDATA[ 
+ T_A(\vec {v}) = A\vec {v}.  
+]]> 
+</script> Using properties of matrix multiplication, we have that this is a linear
+transformation. Thus, we have the linear transformation associated to a
+matrix.
+</p>
+<div class="theorem-like problem-environment example" id="problem21"><a 
+ id="x1-4004r21"></a>Consider the linear transformation <script type="math/tex"> <![CDATA[ 
+T_A 
+]]> 
+</script> from <script type="math/tex"> <![CDATA[ 
+\mathbb {R}^3 
+]]> 
+</script> to <script type="math/tex"> <![CDATA[ 
+\mathbb {R}^2 
+]]> 
+</script> corresponding to the <script type="math/tex"> <![CDATA[ 
+2\times 3 
+]]> 
+</script> matrix <script type="math/tex; mode=display"> <![CDATA[ 
+ A = \left (\begin {array}{ccc} 1 & -5 & 3\\ 2 & 0 & -1 \end {array}\right ).  
+]]> 
+</script> Let
+investigate the images of several vectors in <script type="math/tex"> <![CDATA[ 
+\mathbb {R}^3 
+]]> 
+</script> under the linear transformation <script type="math/tex"> <![CDATA[ 
+T_A 
+]]> 
+</script>.
+<script type="math/tex; mode=display"><![CDATA[ 
+\begin{align*} 
+T_A((1,2,3)) &= \left(\begin{array}{ccc}
+1 & -5 & 3\\
+2 & 0 & -1
+\end{array}\right)\left(\begin{array}{c} 1\\2\\3\end{array}\right)\\
+& = \left(\begin{array}{c}
+1\cdot 1 + -5\cdot 2 + 3\cdot 3\\
+2\cdot 1 + 0\cdot 2 + -1\cdot 3\\
+\end{array}\right)\\
+& = \left(\begin{array}{c}
+0\\
+                                                                  
+
+                                                                  
+-1\\
+\end{array}\right)
+\end{align*} 
+]]> 
+</script>
+<script type="math/tex; mode=display"><![CDATA[ 
+\begin{align*} 
+T_A((1,-1,2)) &= \left(\begin{array}{ccc}
+1 & -5 & 3\\
+2 & 0 & -1
+\end{array}\right)\left(\begin{array}{c} 1\\-1\\1\end{array}\right)\\
+& = \left(\begin{array}{c}
+1\cdot 1 + -5\cdot -1 + 3\cdot 1\\
+2\cdot 1 + 0\cdot -1 + -1\cdot 1\\
+\end{array}\right)\\
+& = \left(\begin{array}{c}
+9\\
+1\\
+\end{array}\right)
+\end{align*} 
+]]> 
+</script>
+<script type="math/tex; mode=display"><![CDATA[ 
+\begin{align*} 
+T_A((1,0,0)) &= \left(\begin{array}{ccc}
+1 & -5 & 3\\
+2 & 0 & -1
+\end{array}\right)\left(\begin{array}{c} 1\\0\\0\end{array}\right)\\
+& = \left(\begin{array}{c}
+1\cdot 1 + -5\cdot 0 + 3\cdot 0\\
+2\cdot 1 + 0\cdot 0 + -1\cdot 0\\
+\end{array}\right)\\
+& = \left(\begin{array}{c}
+1\\
+2\\
+\end{array}\right)
+\end{align*} 
+]]> 
+</script>
+<script type="math/tex; mode=display"><![CDATA[ 
+\begin{align*} 
+T_A((0,1,0)) &= \left(\begin{array}{ccc}
+1 & -5 & 3\\
+2 & 0 & -1
+\end{array}\right)\left(\begin{array}{c} 0\\1\\0\end{array}\right)\\
+                                                                  
+
+                                                                  
+& = \left(\begin{array}{c}
+1\cdot 0 + -5\cdot 1 + 3\cdot 0\\
+2\cdot 0 + 0\cdot 1 + -1\cdot 0\\
+\end{array}\right)\\
+& = \left(\begin{array}{c}
+-5\\
+0\\
+\end{array}\right)
+\end{align*} 
+]]> 
+</script>
+<script type="math/tex; mode=display"><![CDATA[ 
+\begin{align*} 
+T_A((0,0,1)) &= \left(\begin{array}{ccc}
+1 & -5 & 3\\
+2 & 0 & -1
+\end{array}\right)\left(\begin{array}{c} 0\\0\\1\end{array}\right)\\
+& = \left(\begin{array}{c}
+1\cdot 0 + -5\cdot 0 + 3\cdot 1\\
+2\cdot 0 + 0\cdot 0 + -1\cdot 1\\
+\end{array}\right)\\
+& = \left(\begin{array}{c}
+3\\
+-1\\
+\end{array}\right)
+\end{align*} 
+]]> 
+</script>
+</div>
+<!--l. 533--><p class="noindent" >Notice that when we apply the linear transformation to the standard unit vectors <script type="math/tex"> <![CDATA[ 
+\vec {e}_1 
+]]> 
+</script>, <script type="math/tex"> <![CDATA[ 
+\vec {e}_2 
+]]> 
+</script>,
+and <script type="math/tex"> <![CDATA[ 
+\vec {e}_3 
+]]> 
+</script>, we obtain the columns of <script type="math/tex"> <![CDATA[ 
+A 
+]]> 
+</script> as the output vector. This observation can be used to
+reconstruct a matrix from a given linear transformation.
+</p>
+<div class="theorem-like problem-environment proposition" id="problem22"><a 
+ id="x1-4005r22"></a>Given any linear transformation <script type="math/tex"> <![CDATA[ 
+T 
+]]> 
+</script> from <script type="math/tex"> <![CDATA[ 
+\mathbb {R}^n 
+]]> 
+</script> to <script type="math/tex"> <![CDATA[ 
+\mathbb {R}^m 
+]]> 
+</script>, there is an <script type="math/tex"> <![CDATA[ 
+m\times n 
+]]> 
+</script> matrix such that
+<script type="math/tex"> <![CDATA[ 
+T = T_A 
+]]> 
+</script>.
+<!--l. 538--><p class="noindent" >Furthermore, the columns of <script type="math/tex"> <![CDATA[ 
+A 
+]]> 
+</script> can be obtained by applying <script type="math/tex"> <![CDATA[ 
+T 
+]]> 
+</script> to the standard unit
+vectors. More specifically, the <script type="math/tex"> <![CDATA[ 
+j 
+]]> 
+</script>th column of <script type="math/tex"> <![CDATA[ 
+A 
+]]> 
+</script> is given by <script type="math/tex"> <![CDATA[ 
+T(\vec {e}_j) 
+]]> 
+</script>.
+</div>
+</p><!--l. 541--><p class="noindent" >We can see how this is useful through an example.
+</p>
+                                                                  
+
+                                                                  
+<div class="theorem-like problem-environment example" id="problem23"><a 
+ id="x1-4006r23"></a>Consider the linear transformation <script type="math/tex"> <![CDATA[ 
+T 
+]]> 
+</script> from <script type="math/tex"> <![CDATA[ 
+\mathbb {R}^2 
+]]> 
+</script> to <script type="math/tex"> <![CDATA[ 
+\mathbb {R}^2 
+]]> 
+</script> that rotates a vector by <script type="math/tex"> <![CDATA[ 
+30^\circ  
+]]> 
+</script> counterclockwise.
+We can see geometrically that, for the standard unit vectors <script type="math/tex"> <![CDATA[ 
+\vec {e}_1 
+]]> 
+</script> and <script type="math/tex"> <![CDATA[ 
+\vec {e}_2 
+]]> 
+</script> in <script type="math/tex"> <![CDATA[ 
+\mathbb {R}^2 
+]]> 
+</script>, we have
+<script type="math/tex; mode=display"><![CDATA[ 
+\begin{align*} 
+T((1,0)) &= \left(\frac{\sqrt{3}}{2}, \frac{1}{2}\right),\\
+T((0,1)) &= \left(-\frac{1}{2}, \frac{\sqrt{3}}{2}\right).\\
+\end{align*} 
+]]> 
+</script>
+These tell us the columns of the matrix corresponding to the linear transformation,
+so we then know that the rotation can be represented by the matrix <script type="math/tex; mode=display"> <![CDATA[ 
+ A = \left (\begin {array}{cc} \frac {\sqrt {3}}{2} & -\frac {1}{2}\\ \frac {1}{2} & \frac {\sqrt {3}}{2} \end {array}\right ).  
+]]> 
+</script>
+</div>
+<h3 class="sectionHead"><a 
+ id="x1-5000"></a>Summary</h3>
+<!--l. 560--><p class="noindent" >In this section, we reviewed matrix operations and properties, determinants, and
+linear transformations.
+</p><!--l. 562--><p class="noindent" >Although we&#x2019;ve reviewed some of the most important concepts from linear algebra,
+there is still a lot of material that we weren&#x2019;t able to include here. Make sure you
+refer back to your linear algebra textbook if there&#x2019;s anything else you need to
+review!
+</body> 
+ 
+</html>
+                                                                  
+
+                                                                  
+                                                                  
+
+

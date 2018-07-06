@@ -1,0 +1,21 @@
+\contentsline {part}{I\hspace {1em}Week 9: Curl}{3}{part.1}
+\contentsline {section}{Curl of a Vector Field}{3}{section*.1}
+\contentsline {section}{Definition of Curl}{3}{section*.2}
+\contentsline {section}{Summary}{7}{section*.3}
+\contentsline {section}{Geometric Significance of Curl}{8}{section*.4}
+\contentsline {section}{Geometric Significance of Two-dimensional Curl}{8}{section*.5}
+\contentsline {section}{Geometric Significance of Three-dimensional Curl}{12}{section*.6}
+\contentsline {section}{Summary}{14}{section*.7}
+\contentsline {section}{Connections of Curl with Older Material}{15}{section*.8}
+\contentsline {section}{Curl of a Conservative Vector Field}{15}{section*.9}
+\contentsline {section}{Curl and Green's Theorem}{16}{section*.10}
+\contentsline {section}{Summary}{17}{section*.11}
+\contentsline {section}{Online Homework}{18}{section*.12}
+\contentsline {section}{Online Problems}{18}{section*.13}
+\contentsline {section}{Written Homework}{23}{section*.14}
+\contentsline {section}{Written Problems}{23}{section*.15}
+\contentsline {section}{Professional Problem}{23}{section*.16}
+\contentsline {section}{Extra Problems}{25}{section*.17}
+\contentsline {section}{Online Problems}{25}{section*.18}
+\contentsline {section}{Written Problems}{33}{section*.19}
+\contentsfinish 

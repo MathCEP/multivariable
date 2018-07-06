@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="85.438pt" height="85.438pt" viewBox="0 0 85.438 85.438">
+<path transform="matrix(1,0,0,-1,42.719,42.719)" d="M -35.43349 -35.43349 L -35.43349 35.43349 L 35.43349 35.43349 L 35.43349 -35.43349 Z " fill="#929292"/>
+<path transform="matrix(1,0,0,-1,42.719,42.719)" stroke-width="1" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#000000" d="M -42.06192 0 L 42.06192 0 "/>
+<path transform="matrix(-1,0,0,1,.6570816,42.719)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#000000" d="M -1.19551 1.59401 C -1.09587 .99626 0 .09961 .29886 0 C 0 -.09961 -1.09587 -.99626 -1.19551 -1.59401 "/>
+<path transform="matrix(1,0,0,-1,84.78092,42.719)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#000000" d="M -1.19551 1.59401 C -1.09587 .99626 0 .09961 .29886 0 C 0 -.09961 -1.09587 -.99626 -1.19551 -1.59401 "/>
+<path transform="matrix(1,0,0,-1,42.719,42.719)" stroke-width="1" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#000000" d="M 0 -42.06192 L 0 42.06192 "/>
+<path transform="matrix(0,1,1,0,42.719,84.78092)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#000000" d="M -1.19551 1.59401 C -1.09587 .99626 0 .09961 .29886 0 C 0 -.09961 -1.09587 -.99626 -1.19551 -1.59401 "/>
+<path transform="matrix(0,-1,-1,0,42.719,.6570816)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#000000" d="M -1.19551 1.59401 C -1.09587 .99626 0 .09961 .29886 0 C 0 -.09961 -1.09587 -.99626 -1.19551 -1.59401 "/>
+<path transform="matrix(1,0,0,-1,42.719,42.719)" d="M 2.83484 0 C 2.83484 1.56564 1.56564 2.83484 0 2.83484 C -1.56564 2.83484 -2.83484 1.56564 -2.83484 0 C -2.83484 -1.56564 -1.56564 -2.83484 0 -2.83484 C 1.56564 -2.83484 2.83484 -1.56564 2.83484 0 Z M 0 0 " fill="#ffffff"/>
+<path transform="matrix(1,0,0,-1,42.719,42.719)" stroke-width="1" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#000000" d="M 2.83484 0 C 2.83484 1.56564 1.56564 2.83484 0 2.83484 C -1.56564 2.83484 -2.83484 1.56564 -2.83484 0 C -2.83484 -1.56564 -1.56564 -2.83484 0 -2.83484 C 1.56564 -2.83484 2.83484 -1.56564 2.83484 0 Z M 0 0 "/>
+<path transform="matrix(1,0,0,-1,42.719,42.719)" stroke-width="1" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#000000" d="M 28.3468 2.98883 L 28.3468 -2.98883 "/>
+<symbol id="font_0_1">
+<path d="M .205 .64000007 C .205 .66400006 .205 .666 .18200003 .666 C .120000008 .60200008 .032000007 .60200008 0 .60200008 L 0 .57100006 C .020000004 .57100006 .07900001 .57100006 .13100001 .597 L .13100001 .079 C .13100001 .043 .128 .031000002 .038000004 .031000002 L .0060000049 .031000002 L .0060000049 0 C .04100001 .003 .128 .003 .168 .003 C .20800002 .003 .29500003 .003 .33000005 0 L .33000005 .031000002 L .29800005 .031000002 C .20800002 .031000002 .205 .042000005 .205 .079 L .205 .64000007 Z "/>
+</symbol>
+<use xlink:href="#font_0_1" transform="matrix(9.9626,0,0,-9.9626,69.46168,55.648004)"/>
+<path transform="matrix(1,0,0,-1,42.719,42.719)" stroke-width="1" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#000000" d="M -2.98883 28.3468 L 2.98883 28.3468 "/>
+<use xlink:href="#font_0_1" transform="matrix(9.9626,0,0,-9.9626,50.113676,17.583)"/>
+</svg>

@@ -1,0 +1,34 @@
+\begin{example}
+Determine whether or not the vector field $\mathbf{F}(x,y) = (-\sin(x)\sin(y)+2xye^{x^2y},\cos(x)\cos(y)+x^2e^{x^2y})$ is conservative. If it is conservative, find a potential function.
+\begin{explanation}
+Before we attempt to find a potential function, let's check if the derivative matrix $D\mathbf{F}$ is symmetric. Note that we only need to compare the $(0,1)$ and $(1,0)$ entries in order to check if this matrix is symmetric.
+\[
+D\mathbf{F}(x,y) = \left(\begin{array}{cc}
+*&-\sin(x)\cos(y)+2xe^{x^2y}+2x^3ye^{x^2y}\\
+-\sin(x)\cos(y)+2xe^{x^2y}+2x^3ye^{x^2y}&*\end{array}\right)
+\]
+We see that the derivative matrix is symmetric, so we suspect that this vector field is conservative. In order to verify this, we'll find a potential function.
+Suppose $f(x,y)$ is a potential function for $\mathbf{F}$. Then we must have
+\[
+\nabla f(x,y)=\mathbf{F}(x,y)=(-\sin(x)\sin(y)+2xye^{x^2y},\cos(x)\cos(y)+x^2e^{x^2y}+y^2).
+\]
+This means that $\frac{\partial f}{\partial x} = -\sin(x)\sin(y)+2xye^{x^2y}$ and $\frac{\partial f}{\partial y} = \cos(x)\cos(y)+x^2e^{x^2y}+y^2$. We'll start by considering $\frac{\partial f}{\partial x}$. Integrating with respect to $x$, we have
+\begin{align*}
+f(x,y) &= \int -\sin(x)\sin(y)+2xye^{x^2y}\,dx\\
+&= \cos(x)\sin(y)+e^{x^2y}+g(y)\\
+\end{align*}
+where $g(y)$ is a function of $y$. So, we know that $f$ has the form $f(x,y)=\cos(x)\sin(y)+e^{x^2y}+g(y)$. We differentiate this with respection to $y$ in order to compare with the $y$-component of the vector field $\mathbf{F}$.
+\begin{align*}
+\frac{\partial f}{\partial y} &= \frac{\partial}{\partial y}\left(\cos(x)\sin(y)+e^{x^2y}+g(y)\right)\\
+&= \cos(x)\cos(y) + x^2e^{x^2y}+g'(y)
+\end{align*}
+Comparing this with $\frac{\partial f}{\partial y} = \cos(x)\cos(y)+x^2e^{x^2y}+y^2$, we conclude that $g'(y)=y^2$, which we integrate with respect to $y$ in order to find $g$.
+\begin{align*}
+g(y) &= \int y^2\,dx\\
+&=\frac{1}{3}y^3+C
+\end{align*}
+Thus, we have that any potential function must have the form $f(x,y) = \cos(x)\sin(y)+e^{x^2y}+\frac{1}{3}y^3+C$. Taking $C=0$, we obtain a specific potential function $f(x,y) = \cos(x)\sin(y)+e^{x^2y}+\frac{1}{3}y^3$.
+
+Since $f$ is a potential function for $\mathbf{F}$, we conclude that $\mathbf{F}$ is conservative.
+\end{explanation}
+\end{example}
