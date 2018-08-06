@@ -4,8 +4,9 @@ entering extended mode
  file:line:error style messages enabled.
  %&-line parsing enabled.
 **\PassOptionsToClass{tikzexport}{ximera}\PassOptionsToClass{xake}{ximera}\Pass
-OptionsToClass{xake}{xourse}\nonstopmode\input{online_hw.tex}
-(./online_hw.tex (/Users/Melissa/Library/texmf/tex/latex/ximeraLatex/ximera.cls
+OptionsToClass{xake}{xourse}\nonstopmode\input{written_hw.tex}
+(./written_hw.tex
+(/Users/Melissa/Library/texmf/tex/latex/ximeraLatex/ximera.cls
 Document Class: ximera 2016/08/17 Version 1.33 by Bart Snapp
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
@@ -380,7 +381,7 @@ Package pdftexcmds Info: \pdfdraftmode found.
 )
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzexternalshared.code.tex))
-\openout3 = `online_hw.auxlock'.
+\openout3 = `written_hw.auxlock'.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/enumitem/enumitem.sty
@@ -1092,7 +1093,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \c@titlenumber=\count196
 \c@sectiontitlenumber=\count197
 \outcomefile=\write6
-\openout6 = `online_hw.oc'.
+\openout6 = `written_hw.oc'.
 
 \c@theorem=\count198
 \c@algorithm=\count199
@@ -1120,7 +1121,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \c@template=\count287
 \c@warning=\count288
 \idfile=\write7
-\openout7 = `online_hw.ids'.
+\openout7 = `written_hw.ids'.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/forloop/forloop.sty
@@ -1137,11 +1138,11 @@ Package: forloop 2006/09/18 v3.0 For Loops for LaTeX
 \c@problem=\count297
 \c@problemType=\count298
 \myfile=\write8
-\openout8 = `online_hw.jax'.
+\openout8 = `written_hw.jax'.
 
 )
-No file online_hw.aux.
-\openout1 = `online_hw.aux'.
+No file written_hw.aux.
+\openout1 = `written_hw.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
@@ -1207,7 +1208,7 @@ LaTeX Info: Redefining \ref on input line 3.
 LaTeX Info: Redefining \pageref on input line 3.
 LaTeX Info: Redefining \nameref on input line 3.
 \@outlinefile=\write9
-\openout9 = `online_hw.out'.
+\openout9 = `written_hw.out'.
 
 LaTeX Font Info:    Try loading font information for U+msa on input line 6.
 
@@ -1223,27 +1224,27 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 LaTeX Warning: No \author given.
 
 
-! LaTeX Error: File `./content/chCURL_curl/N.3_curl_connect/problems/online/pro
-blem1.tex' not found.
+! LaTeX Error: File `./content/chCURL_curl/N.1_curl_comp/problems/written/probl
+em1.tex' not found.
 
 Type X to quit or <RETURN> to proceed,
 or enter new name. (Default extension: tex)
 
 Enter file name: 
-./online_hw.tex:9: Emergency stop.
+./written_hw.tex:9: Emergency stop.
 <read *> 
          
-l.9 ..._curl_connect/problems/online/problem1.tex}
+l.9 ....1_curl_comp/problems/written/problem1.tex}
                                                   ^^M
 *** (cannot \read from terminal in nonstop modes)
 
  
 Here is how much of TeX's memory you used:
  36997 strings out of 493014
- 838762 string characters out of 6133351
- 975354 words of memory out of 5000000
+ 838766 string characters out of 6133351
+ 975363 words of memory out of 5000000
  39978 multiletter control sequences out of 15000+600000
  10601 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,8n,79p,10547b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
-./online_hw.tex:9:  ==> Fatal error occurred, no output PDF file produced!
+ 70i,8n,79p,10549b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+./written_hw.tex:9:  ==> Fatal error occurred, no output PDF file produced!

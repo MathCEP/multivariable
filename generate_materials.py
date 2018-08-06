@@ -31,7 +31,7 @@ def generate_week(name, topics, online_hw, written_hw, professional_hw):
     activities_list.append("\\part{" + name + "}\n")
 
     for section in topics:
-        path = "../." + section + "/"
+        path = "../../content/" + section + "/"
         for file in os.listdir(path):
             if file.endswith(".tex"):
                 activities_list.append("\\activity{" + section + "/" + file + "}\n")
@@ -44,7 +44,7 @@ def generate_week(name, topics, online_hw, written_hw, professional_hw):
     online_hw_list = []
 
     for problem in online_hw:
-                    online_hw_list.append("\\input{" + problem + "}\n")
+                    online_hw_list.append("\\input{../../content/" + problem + "}\n")
 
     if len(online_hw_list) > 0:
         online_hw = open("online_hw.tex", "w")
@@ -69,7 +69,7 @@ def generate_week(name, topics, online_hw, written_hw, professional_hw):
     written_hw_list = []
 
     for problem in written_hw:
-        written_hw_list.append("\\input{" + problem + "}\n")
+        written_hw_list.append("\\input{../../content/" + problem + "}\n")
     
     if len(written_hw_list) > 0:
         written_hw = open("written_hw.tex", "w")
@@ -87,7 +87,7 @@ def generate_week(name, topics, online_hw, written_hw, professional_hw):
 
         if len(professional_hw) > 0:
             for pro_problem in professional_hw:
-                written_hw.writelines(["\\section{Professional Problem}\n", "\\input{" + pro_problem + "}\n"])
+                written_hw.writelines(["\\section{Professional Problem}\n", "\\input{../../content/" + pro_problem + "}\n"])
 
         written_hw.write("\\end{document}")
 
@@ -100,16 +100,16 @@ def generate_week(name, topics, online_hw, written_hw, professional_hw):
     online_problem_list = []
 
     for section in topics:
-        path = "../." + section + "/problems/online/"
+        path = "../../content/" + section + "/problems/online/"
         for filename in os.listdir(path):
-            online_problem_list.append("\\input{" + section + "/problems/online/" + filename + "}\n")
+            online_problem_list.append("\\input{../../content/" + section + "/problems/online/" + filename + "}\n")
 
     written_problem_list = []
     
     for section in topics:
-        path = "../." + section + "/problems/written/"
+        path = "../../content/" + section + "/problems/written/"
         for filename in os.listdir(path):
-            written_problem_list.append("\\input{" + section + "/problems/written/" + filename + "}\n")
+            written_problem_list.append("\\input{../../content/" + section + "/problems/written/" + filename + "}\n")
 
     if len(online_problem_list) > 0 or len(written_problem_list) > 0:
         all_problems = open("all_problems.tex","w")
