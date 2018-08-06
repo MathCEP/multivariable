@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=latex 2016.5.22)  6 AUG 2018 16:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=latex 2016.5.22)  6 AUG 2018 16:44
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1769,23 +1769,71 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[1
+(../../content/chCURL_curl/N.1_curl_comp/problems/online/problem1.tex
+LaTeX Font Info:    Try loading font information for U+msa on input line 2.
 
-]
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 2.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+))
+(../../content/chCURL_curl/N.1_curl_comp/problems/online/problem10.tex)
+(../../content/chCURL_curl/N.1_curl_comp/problems/online/problem11.tex)
+(../../content/chCURL_curl/N.1_curl_comp/problems/online/problem2.tex)
+(../../content/chCURL_curl/N.1_curl_comp/problems/online/problem3.tex)
+(../../content/chCURL_curl/N.1_curl_comp/problems/online/problem4.tex)
+(../../content/chCURL_curl/N.1_curl_comp/problems/online/problem5.tex)
+(../../content/chCURL_curl/N.1_curl_comp/problems/online/problem6.tex)
+(../../content/chCURL_curl/N.1_curl_comp/problems/online/problem7.tex)
+(../../content/chCURL_curl/N.1_curl_comp/problems/online/problem8.tex)
+(../../content/chCURL_curl/N.1_curl_comp/problems/online/problem9.tex)
+(../../content/chCURL_curl/N.2_curl_geo/problems/online/problem1.tex)
+(../../content/chCURL_curl/N.2_curl_geo/problems/online/problem2.tex)
+(../../content/chCURL_curl/N.2_curl_geo/problems/online/problem3.tex)
+(../../content/chCURL_curl/N.2_curl_geo/problems/online/problem4.tex [1
+
+])
+(../../content/chCURL_curl/N.3_curl_connect/problems/online/problem1.tex)
+(../../content/chCURL_curl/N.3_curl_connect/problems/online/problem10.tex)
+(../../content/chCURL_curl/N.3_curl_connect/problems/online/problem2.tex)
+(../../content/chCURL_curl/N.3_curl_connect/problems/online/problem3.tex)
+(../../content/chCURL_curl/N.3_curl_connect/problems/online/problem4.tex)
+(../../content/chCURL_curl/N.3_curl_connect/problems/online/problem5.tex)
+(../../content/chCURL_curl/N.3_curl_connect/problems/online/problem6.tex)
+(../../content/chCURL_curl/N.3_curl_connect/problems/online/problem7.tex)
+(../../content/chCURL_curl/N.3_curl_connect/problems/online/problem8.tex)
+(../../content/chCURL_curl/N.3_curl_connect/problems/online/problem9.tex)
+[2] (../../content/chCURL_curl/N.1_curl_comp/problems/written/problem1.tex)
+(../../content/chCURL_curl/N.1_curl_comp/problems/written/problem2.tex)
+(../../content/chCURL_curl/N.1_curl_comp/problems/written/problem3.tex)
+(../../content/chCURL_curl/N.1_curl_comp/problems/written/problem4.tex)
+(../../content/chCURL_curl/N.1_curl_comp/problems/written/problem5.tex)
+(../../content/chCURL_curl/N.2_curl_geo/problems/written/problem1.tex [3])
+(../../content/chCURL_curl/N.3_curl_connect/problems/written/problem1.tex)
+[4]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 42.
- [2]
+ [5]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 42.
  (./all_problems.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 42.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 42.
  ) 
 Here is how much of TeX's memory you used:
- 41961 strings out of 493015
- 907930 string characters out of 6133377
- 1201073 words of memory out of 5000000
- 44732 multiletter control sequences out of 15000+600000
- 3808 words of font info for 15 fonts, out of 8000000 for 9000
+ 42250 strings out of 493015
+ 919877 string characters out of 6133377
+ 1212195 words of memory out of 5000000
+ 44915 multiletter control sequences out of 15000+600000
+ 6161 words of font info for 25 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  81i,5n,79p,10909b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on all_problems.dvi (2 pages, 7384 bytes).
+Output written on all_problems.dvi (5 pages, 38056 bytes).
