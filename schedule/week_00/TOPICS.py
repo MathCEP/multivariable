@@ -2,7 +2,7 @@
 
 name = "Week 0: Review"
 
-topics = [ "./content/ch00_review/1_vectors" , "./content/ch00_review/2_dotProd", "./content/ch00_review/3_crossProd", "./content/ch00_review/4_matrices" , "./content/ch00_review/5_planes"]
+topics = [ "ch00_review/1_vectors" , "ch00_review/2_dotProd", "ch00_review/3_crossProd", "ch00_review/4_matrices" , "ch00_review/5_planes"]
 
 online_hw = []
 
