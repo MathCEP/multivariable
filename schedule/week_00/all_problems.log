@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  7 AUG 2018 22:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  7 AUG 2018 22:08
 entering extended mode
- \write18 enabled.
- file:line:error style messages enabled.
+ restricted \write18 enabled.
  %&-line parsing enabled.
-**\PassOptionsToClass{tikzexport}{ximera}\PassOptionsToClass{xake}{ximera}\Pass
-OptionsToClass{xake}{xourse}\nonstopmode\input{ch0_vectors.tex}
-(./ch0_vectors.tex
+**all_problems.tex
+(./all_problems.tex
+LaTeX2e <2016/03/31>
+Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
 (/Users/Melissa/Library/texmf/tex/latex/ximeraLatex/ximera.cls
 Document Class: ximera 2018/10/17 v1.00 Simultaneously write print and online i
 nteractive materials
@@ -785,13 +785,6 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 )))
-(/usr/local/texlive/2016/texmf-dist/tex/latex/pgf/frontendlayer/libraries/tikzl
-ibraryexternal.code.tex
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
-s/tikzexternalshared.code.tex))
-\openout3 = `ch0_vectors.auxlock'.
-
-
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2016/05/05 v6.83n Hypertext links for LaTeX
 
@@ -891,7 +884,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \Hy@SectionHShift=\skip61
 )
 \outcomefile=\write6
-\openout6 = `ch0_vectors.oc'.
+\openout6 = `all_problems.oc'.
 
 \c@theorem=\count160
 \c@algorithm=\count161
@@ -925,29 +918,30 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \c@titlenumber=\count189
 \c@sectiontitlenumber=\count190
 \idfile=\write7
-\openout7 = `ch0_vectors.ids'.
+\openout7 = `all_problems.ids'.
 
 \myfile=\write8
-\openout8 = `ch0_vectors.jax'.
+\openout8 = `all_problems.jax'.
 
 )
-No file ch0_vectors.aux.
-\openout1 = `ch0_vectors.aux'.
+(./all_problems.aux)
+\openout1 = `all_problems.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+
 (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count191
@@ -966,11 +960,128 @@ LaTeX Font Info:    ... okay on input line 5.
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.13} into 
 your preamble.
- on input line 5.
+ on input line 3.
 
 \c@lstlisting=\count197
 \AtBeginShipoutBox=\box46
-Package hyperref Info: Link coloring ON on input line 5.
-LaTeX Info: Redefining \ref on input line 5.
-LaTeX Info: Redefining \pageref on input line 5.
-LaTeX Info:
+Package hyperref Info: Link coloring ON on input line 3.
+LaTeX Info: Redefining \ref on input line 3.
+LaTeX Info: Redefining \pageref on input line 3.
+LaTeX Info: Redefining \nameref on input line 3.
+(./all_problems.out) (./all_problems.out)
+\@outlinefile=\write9
+\openout9 = `all_problems.out'.
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 6.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 6.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+
+LaTeX Warning: No \author given.
+
+(../../content/ch00_review/1_vectors/problems/online/problem1.tex
+\c@depthICount=\count198
+)
+(../../content/ch00_review/1_vectors/problems/online/problem2.tex)
+(../../content/ch00_review/1_vectors/problems/online/problem3.tex
+
+! LaTeX Error: \begin{enumerate} on input line 6 ended by \end{mult ipleChoice}
+.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 \end{mult	ipleChoice}
+                         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+]
+
+! LaTeX Error: \begin{multipleChoice} on input line 5 ended by \end{problem}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.34 \end{problem}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+) (../../content/ch00_review/1_vectors/problems/online/problem4.tex
+
+LaTeX Font Warning: Font shape `OT1/cmss/bx/sl' undefined
+(Font)              using `OT1/cmss/bx/n' instead on input line 2.
+
+) (../../content/ch00_review/1_vectors/problems/online/problem5.tex) [2]
+
+! LaTeX Error: \begin{trivlist} on input line 2 ended by \end{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 \end{document}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 14.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 14.
+(./all_problems.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 14.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 14.
+Package rerunfilecheck Info: File `all_problems.out' has not changed.
+(rerunfilecheck)             Checksum: 08BFB15FFD1F3BF75A0589BFA2E5DD85;101.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 14.
+ )
+(\end occurred inside a group at level 2)
+
+### semi simple group (level 2) entered at line 2 (\begingroup)
+### semi simple group (level 1) entered at line 1 (\begingroup)
+### bottom level 
+Here is how much of TeX's memory you used:
+ 28786 strings out of 493014
+ 669153 string characters out of 6133351
+ 827374 words of memory out of 5000000
+ 31758 multiletter control sequences out of 15000+600000
+ 13573 words of font info for 51 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 62i,8n,79p,762b,701s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmbx10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmbx12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmbxsl10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmmi10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10
+.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx1
+0.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/ms
+am10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbol
+s/msbm10.pfb>
+Output written on all_problems.pdf (2 pages, 109367 bytes).
+PDF statistics:
+ 94 PDF objects out of 1000 (max. 8388607)
+ 77 compressed objects within 1 object stream
+ 17 named destinations out of 1000 (max. 500000)
+ 29 words of extra memory for PDF output out of 10000 (max. 10000000)
+
