@@ -1,0 +1,69 @@
+\documentclass{ximera}  
+
+\title{Representations of Lines and Planes}  
+
+\begin{document}  
+\begin{abstract}  
+%abstract
+\end{abstract}  
+\maketitle 
+
+In this section, we review the different ways we can represent lines and planes, including parametric representations.
+
+\section{Representations of Lines}
+
+When you think of describing a line algebraically, you might think of the standard form
+\[
+y = mx + b,
+\]
+where $m$ is the slope and $b$ is the $y$-intercept. This is often called \emph{slope-intercept} form.
+
+ In addition to slope-intercept form, there are several other ways to represent lines. For example, you may remember using \emph{point-slope} form in single variable calculus. We can describe a line of slope $m$ going through a point $(x_0, y_0)$ with the equation
+ \[
+ y-y_0 = m(x-x_0).
+ \]
+ It's important to note that there are many different possible choices for the point $(x_0,y_0)$. Because of this, unlike slope-intercept form, point-slope form does not give a unique representation of a line.
+ 
+ In linear algebra, we saw that we could parametrize a line using a vector $\vec{v}=(v_1,v_2)$ giving the direction of the line, and a point $(x_0, y_0)$ that the line passes through. We parametrize the line as
+ \begin{align*}
+ \vec{x}(t) &= (v_1,v_2)t+ (x_0, y_0),\\
+ &= (v_1t+x_0, v_2t+y_0).
+ \end{align*}
+ Note that this representation works a bit differently from the previous two representations. In slope-intercept form and point-slope form, the line was the set of points $(x,y)$ satisfying the given equation. However, in the parametrization, we plug in values for the parameter $t$ in order to get points on the line.
+ 
+ Unlike slope-intercept form and point-slope form, the parametrization of a line can easily be generalized to three or more dimensions. That is, a line in $\mathbb{R}^n$ through the point $\vec{a}$ and in the direction of the vector $\vec{v}$ can be parametrized as
+ \[
+ \vec{x}(t) = \vec{v}t + \vec{a},
+ \]
+ for $t\in\mathbb{R}$. 
+ 
+ If we would like to describe a line in higher dimensions using equations (rather than a parametrization), we would need more than one equation. For example, in $\mathbb{R}^3$, we would require two equations to determine a line.
+ 
+ \section{Representations of Planes}
+ 
+ We also have multiple ways to represent planes. Here, we'll focus on planes in $\mathbb{R}^3$.
+ 
+ Recall that a plane can be determined by two vectors (giving the ``direction'' of the plane) and a point that the plane passes through. We can use this to give a parametrization for the plane through the point $\vec{a}$ and parallel to the vectors $\vec{v}$ and $\vec{w}$:
+ \[
+ \vec{x}(s,t) = \vec{v}s+\vec{w}t + \vec{a},
+ \]
+ for $s$ and $t$ in $\mathbb{R}$. Note that we require two parameters for the parametrization of the plane.
+
+We can also describe a plane using a single linear equation in $x$, $y$, and $z$. For example,
+\[
+2x+4y-z=9
+\]
+defines a plane. A standard way to do this is using a point on the plane and a normal vector to the plane. Recall that a normal vector is perpendicular to every vector in the plane. If $\vec{n}=(n_1,n_2,n_3)$ is a normal vector to a plane passing through the point $\vec{a}=(a_1,a_2,a_3)$, the plane is defined by the equation
+\[
+\vec{n}\cdot(\vec{x}-\vec{a})=0.
+\]
+This can be rewritten as
+\[
+n_1(x-a_1)+n_2(y-a_2)+n_3(z-a_3)=0.
+\]
+
+\section{Summary}
+
+We reviewed various representations of lines and planes, including parametrizations.
+
+\end{document}

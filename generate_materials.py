@@ -55,7 +55,6 @@ def generate_week(name, topics, online_hw, written_hw, professional_hw):
         online_hw.write("\\begin{abstract}\n")
         online_hw.write("\\end{abstract}\n")
         online_hw.write("\\maketitle\n")
-        online_hw.write("%Will not compile on its own. Compile through the main text.\n")
         online_hw.write("\\section{Online Problems}\n")
 
         online_hw.writelines(online_hw_list)
@@ -80,7 +79,6 @@ def generate_week(name, topics, online_hw, written_hw, professional_hw):
         written_hw.write("\\begin{abstract}\n")
         written_hw.write("\\end{abstract}\n")
         written_hw.write("\\maketitle\n")
-        written_hw.write("%Will not compile on its own. Compile through the main text.\n")
         written_hw.write("\\section{Written Problems}\n")
 
         written_hw.writelines(written_hw_list)
@@ -120,7 +118,6 @@ def generate_week(name, topics, online_hw, written_hw, professional_hw):
         all_problems.write("\\begin{abstract}\n")
         all_problems.write("\\end{abstract}\n")
         all_problems.write("\\maketitle\n")
-        all_problems.write("%Will not compile on its own. Compile through the main text.\n")
         
         if len(online_problem_list) > 0:
             all_problems.write("\\section{Online Problems}\n")
