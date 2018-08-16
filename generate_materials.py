@@ -2,63 +2,82 @@ import os
 #import subprocess
 
 def parse_text_file(text_file):
+    #parses a curriculum file to produce title and groups necessary to make text. Prints as it interprets for error checking.
+    
+    print("This is how your curriculum file is being interpreted:\n")
+    
     tf = open(text_file)
     line = tf.readline()
     while line and line != "TITLE\n":
         line = tf.readline()
     title = tf.readline()
     title = title.strip('\n')
+    print("title:")
+    print(title)
 
     line = tf.readline()
     line = line.strip()
     assert line == ""
+    print("")
     line = tf.readline()
     line = line.strip()
     groups = []
     while line:                         #this block of code processes one group at a time
         assert line and line != ""
         name = line
+        print("new group:")
+        print(name)
         line = tf.readline()
         line = line.strip()
-        assert line == "TOPICS"
+        assert line == "TOPICS", "I think you have something besides 'TOPICS' after " + name
+        print("TOPICS")
         line = tf.readline()
         line = line.strip()
         topics = []
         while line != "" and os.path.exists("./content/" + line):
+            print(line)
             topics.append(line)
             line = tf.readline()
             line = line.strip()
-        assert line == "ONLINE HOMEWORK"
+        assert line == "ONLINE HOMEWORK", "I think you have something besides 'ONLINE HOMEWORK' after your topics in " + name + ", or one of your topics paths doesn't exist"
+        print(line)
         line = tf.readline()
         line = line.strip()
         online_hw = []
         while line != "" and os.path.exists("./content/" + line):
+            print(line)
             online_hw.append(line)
             line = tf.readline()
             line = line.strip()
-        assert line == "WRITTEN HOMEWORK"
+        assert line == "WRITTEN HOMEWORK", "I think you have something besides 'WRITTEN HOMEWORK' after your online homework in " + name + ", or one of your online homework paths doesn't exist"
+        print(line)
         line = tf.readline()
         line = line.strip()
         written_hw = []
         while line != "" and os.path.exists("./content/" + line):
+            print(line)
             written_hw.append(line)
             line = tf.readline()
             line = line.strip()
-        assert line == "PROFESSIONAL HOMEWORK"
+        assert line == "PROFESSIONAL HOMEWORK", "I think you have something besides 'PROFESSIONAL HOMEWORK' after your written homework in " + name + ", or one of your written homework paths doesn't exist"
         line = tf.readline()
         line = line.strip()
         professional_hw = []
         while line != "" and os.path.exists("./content/" + line):
+            print(line)
             professional_hw.append(line)
             line = tf.readline()
             line = line.strip()
         group = {"name": name, "topics": topics, "online_hw": online_hw, "written_hw": written_hw, "professional_hw": professional_hw}
         groups.append(group)
-        assert line == ""
+        assert line == "", "I think you have something extra after your professional homework in " + name + ", or one of your professional paths doesn't exist"
+        print("")
         line = tf.readline()
         line = line.strip()
 
     tf.close()
+
+    print("If this doesn't look right, check the formatting in your curriculum file.")
 
     return [title, groups]
 
@@ -173,7 +192,7 @@ def generate_all_problems(group, topics):
         activities.append("./auto_generated_text/" + group + "/all_problems.tex")
     
         all_problems.write("\\documentclass{ximera}\n")
-        all_problems.write("\\title{Extra Problems}\n")
+        all_problems.write("\\title{Practice Problems}\n")
         all_problems.write("\\begin{document}\n")
         all_problems.write("\\begin{abstract}\n")
         all_problems.write("\\end{abstract}\n")

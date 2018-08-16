@@ -31,7 +31,16 @@ ONLINE HOMEWORK
 WRITTEN HOMEWORK
 PROFESSIONAL HOMEWORK
 
-Week 9: Curl
+Week 27: Conservative Vector Fields and Topology
+TOPICS
+chCONS_consvf/N.1_topology
+chCONS_consvf/N.2_FTLI
+chCONS_consvf/N.3_potentialfns
+ONLINE HOMEWORK
+WRITTEN HOMEWORK
+PROFESSIONAL HOMEWORK
+
+Week 29: Curl
 TOPICS
 chCURL_curl/N.1_curl_comp
 chCURL_curl/N.2_curl_geo

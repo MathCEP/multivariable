@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="113.784pt" height="113.784pt" viewBox="0 0 113.784 113.784">
+<path transform="matrix(1,0,0,-1,28.546,56.892)" stroke-width="1" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#000000" d="M -27.88852 0 L 84.58214 0 "/>
+<path transform="matrix(-1,0,0,1,.65748026,56.892)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#000000" d="M -1.19551 1.59401 C -1.09587 .99626 0 .09961 .29886 0 C 0 -.09961 -1.09587 -.99626 -1.19551 -1.59401 "/>
+<path transform="matrix(1,0,0,-1,113.128139,56.892)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#000000" d="M -1.19551 1.59401 C -1.09587 .99626 0 .09961 .29886 0 C 0 -.09961 -1.09587 -.99626 -1.19551 -1.59401 "/>
+<path transform="matrix(1,0,0,-1,28.546,56.892)" stroke-width="1" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#000000" d="M 0 -56.23534 L 0 56.23534 "/>
+<path transform="matrix(0,1,1,0,28.546,113.127338)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#000000" d="M -1.19551 1.59401 C -1.09587 .99626 0 .09961 .29886 0 C 0 -.09961 -1.09587 -.99626 -1.19551 -1.59401 "/>
+<path transform="matrix(0,-1,-1,0,28.546,.6566582)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#000000" d="M -1.19551 1.59401 C -1.09587 .99626 0 .09961 .29886 0 C 0 -.09961 -1.09587 -.99626 -1.19551 -1.59401 "/>
+<path transform="matrix(1,0,0,-1,28.546,56.892)" stroke-width="1" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#000000" d="M 56.69362 0 C 56.69362 15.6557 44.00252 28.3468 28.3468 28.3468 C 12.69109 28.3468 0 15.6557 0 0 C 0 -15.6557 12.69109 -28.3468 28.3468 -28.3468 C 44.00252 -28.3468 56.69362 -15.6557 56.69362 0 Z M 28.3468 0 "/>
+<symbol id="font_0_1">
+<path d="M .07700001 .07700001 L .18300002 .18 C .33900003 .31800003 .39900003 .372 .39900003 .47200004 C .39900003 .586 .30900003 .666 .18700002 .666 C .074 .666 0 .574 0 .485 C 0 .42900003 .05 .42900003 .053000008 .42900003 C .07000001 .42900003 .105000007 .441 .105000007 .48200003 C .105000007 .508 .08700001 .53400006 .052000006 .53400006 C .044000005 .53400006 .042000008 .53400006 .039 .53300008 C .062000004 .59800007 .11600001 .63500007 .17400001 .63500007 C .26500003 .63500007 .308 .554 .308 .47200004 C .308 .39200003 .25800003 .31300003 .20300003 .25100003 L .011000004 .037 C 0 .026 0 .024 0 0 L .37100003 0 L .39900003 .17400001 L .374 .17400001 C .36900003 .14400001 .36200003 .1 .352 .085 C .345 .07700001 .279 .07700001 .257 .07700001 L .07700001 .07700001 Z "/>
+</symbol>
+<use xlink:href="#font_0_1" transform="matrix(9.9626,0,0,-9.9626,88.91513,54.432996)"/>
+</svg>

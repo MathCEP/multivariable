@@ -1,0 +1,60 @@
+\documentclass{ximera}
+\title{Written Homework}
+\begin{document}
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\section{Written Homework}
+
+\begin{problem}
+Prove that, for $C^1$ vector fields $\mathbf{F}$ and $\mathbf{G}$ in $\mathbf{R}^3$,
+\[
+\nabla \times (\mathbf{F}+\mathbf{G}) = \nabla \times \mathbf{F} + \nabla \times \mathbf{G}.
+\]
+(This shows that the curl is an \emph{additive operator}, so the curl of a sum is the sum of the curls.)
+\end{problem}
+
+\begin{problem}
+\begin{enumerate}
+\item Compute the curl of the vector field $\mathbf{F} = (x,y,z)$. Explain why your answer makes sense geometrically.
+\item Suppose we have a $C^1$ vector field $\mathbf{F}(x,y,z) = (f(x), g(y), h(z))$. Compute the curl of $\mathbf{F}$, and explain why your answer makes sense geometrically.
+\end{enumerate}
+\end{problem}
+
+\begin{problem}
+\begin{enumerate}
+\item Consider the function $f(x,y,z) = e^x\sin(y) + z^2\cos(y)$. Compute $\nabla f$, and verify that $\nabla \times(\nabla f) = \mathbf{0}$.
+\item Prove that for any $C^2$ function $f:\mathbb{R}^3\rightarrow\mathbb{R}$, the curl of the gradient of $f$ is zero. That is, prove that
+\[
+\nabla \times(\nabla f) = \mathbf{0}.
+\]
+\end{enumerate}
+\end{problem}
+
+\section{Professional Problem}
+
+\begin{problem}
+%Rewritten Stewart Problem, could probably be rewritten more for clarity.
+Consider a wheel $W$ centered at a point on the $z$-axis, rotating about the $z$-axis. In this problem, we will investigate how the rotation of this wheel relates to the curl of a vector field describing its motion.
+
+Let $P$ be a point on the wheel $W$, of distance $d$ from the center. The rotation of the wheel can be describe by the vector $\mathbf{w}=\omega\mathbf{k}$, where $\omega$ is the angular speed of the wheel $W$. You may assume that $\omega$ is constant. Let $\mathbf{x}(x,y,z)$ give the position of $P$ at time $t$.
+
+\begin{enumerate}
+\item Carefully explain why $\mathbf{x}'(t)$ is orthogonal to both $\mathbf{w}$ and $\mathbf{x}(t)$. Then use the angle $\theta$ in the figure to show that $\mathbf{x}'(t) = \mathbf{w}\times\mathbf{x}(t)$. We can therefore define a ``velocity field $\mathbf{F}(x,y,z) = \mathbf{w}\times(x,y,z)$, which describes the motion of the wheel $W$. In other words, every point on $W$ has velocity given by $\mathbf{F}(x,y,z)$.
+\item Show that $\mathbf{x}'(t) = (-\omega y, \omega x)$.
+\item Show that $\nabla\times\mathbf{F} = 2\mathbf{w}$. Hence if the motion of an object is described by the velocity field $\mathbf{F}$, the curl vector points in the direction of the axis of (positive) rotation, and its length is proportional to the angular speed of the rotation.
+\end{enumerate}
+
+ADD IMAGE
+
+\begin{hint}
+What is the linear speed of $P$ in terms of $\mathbf{x}$?
+
+Recall that angular speed equals linear speed divided by radius. How you can write this in terms of $\omega$, $d$, and $\mathbf{x}$?
+
+Be sure your solution addresses why $\mathbf{x}'(t)$ is $\mathbf{w}\times\mathbf{x}(t)$, and not $\mathbf{x}(t)\times\mathbf{w}$.
+\end{hint}
+\end{problem}
+
+\end{document}

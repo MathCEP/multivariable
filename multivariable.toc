@@ -25,7 +25,7 @@
 \contentsline {section}{Representations of Lines}{32}{section*.24}
 \contentsline {section}{Representations of Planes}{33}{section*.25}
 \contentsline {section}{Summary}{33}{section*.26}
-\contentsline {section}{Extra Problems}{34}{section*.27}
+\contentsline {section}{Practice Problems}{34}{section*.27}
 \contentsline {section}{Online Problems}{34}{section*.28}
 \contentsline {section}{Written Problems}{40}{section*.29}
 \contentsline {part}{II\hspace {1em}Week 1: Coordinate Systems}{42}{part.2}
@@ -39,23 +39,41 @@
 \contentsline {section}{Cylindrical Coordinates}{52}{section*.37}
 \contentsline {section}{Converting between Cartesian and cylindrical coordinates}{54}{section*.38}
 \contentsline {section}{Spherical Coordinates}{55}{section*.39}
-\contentsline {part}{III\hspace {1em}Week 9: Curl}{56}{part.3}
-\contentsline {section}{Curl of a Vector Field}{56}{section*.40}
-\contentsline {section}{Definition of Curl}{56}{section*.41}
-\contentsline {section}{Summary}{60}{section*.42}
-\contentsline {section}{Geometric Significance of Curl}{61}{section*.43}
-\contentsline {section}{Geometric Significance of Two-dimensional Curl}{61}{section*.44}
-\contentsline {section}{Geometric Significance of Three-dimensional Curl}{65}{section*.45}
-\contentsline {section}{Summary}{67}{section*.46}
-\contentsline {section}{Connections of Curl with Older Material}{68}{section*.47}
-\contentsline {section}{Curl of a Conservative Vector Field}{68}{section*.48}
-\contentsline {section}{Curl and Green's Theorem}{69}{section*.49}
-\contentsline {section}{Summary}{70}{section*.50}
-\contentsline {section}{Online Homework}{71}{section*.51}
-\contentsline {section}{Written Homework}{76}{section*.52}
-\contentsline {section}{Written Homework}{76}{section*.53}
-\contentsline {section}{Professional Problem}{76}{section*.54}
-\contentsline {section}{Extra Problems}{78}{section*.55}
-\contentsline {section}{Online Problems}{78}{section*.56}
-\contentsline {section}{Written Problems}{87}{section*.57}
+\contentsline {part}{III\hspace {1em}Week 27: Conservative Vector Fields and Topology}{56}{part.3}
+\contentsline {section}{Topology}{56}{section*.40}
+\contentsline {section}{Open Sets}{56}{section*.41}
+\contentsline {section}{Closed Sets}{60}{section*.42}
+\contentsline {section}{Connected Sets}{63}{section*.43}
+\contentsline {section}{Simply Connected Sets}{64}{section*.44}
+\contentsline {section}{Summary}{67}{section*.45}
+\contentsline {section}{Path Independence and FTLI}{68}{section*.46}
+\contentsline {section}{Path Independence}{68}{section*.47}
+\contentsline {section}{Fundamental Theorem of Line Integrals}{71}{section*.48}
+\contentsline {section}{Strategies for Computing Line Integrals}{74}{section*.49}
+\contentsline {section}{Summary}{76}{section*.50}
+\contentsline {section}{Conservative Vector Fields}{77}{section*.51}
+\contentsline {section}{Finding a Potential Function}{77}{section*.52}
+\contentsline {section}{Summary}{82}{section*.53}
+\contentsline {section}{Practice Problems}{84}{section*.54}
+\contentsline {section}{Online Problems}{84}{section*.55}
+\contentsline {section}{Written Problems}{84}{section*.56}
+\contentsline {part}{IV\hspace {1em}Week 29: Curl}{86}{part.4}
+\contentsline {section}{Curl of a Vector Field}{86}{section*.57}
+\contentsline {section}{Definition of Curl}{86}{section*.58}
+\contentsline {section}{Summary}{90}{section*.59}
+\contentsline {section}{Geometric Significance of Curl}{91}{section*.60}
+\contentsline {section}{Geometric Significance of Two-dimensional Curl}{91}{section*.61}
+\contentsline {section}{Geometric Significance of Three-dimensional Curl}{95}{section*.62}
+\contentsline {section}{Summary}{97}{section*.63}
+\contentsline {section}{Connections of Curl with Older Material}{98}{section*.64}
+\contentsline {section}{Curl of a Conservative Vector Field}{98}{section*.65}
+\contentsline {section}{Curl and Green's Theorem}{99}{section*.66}
+\contentsline {section}{Summary}{100}{section*.67}
+\contentsline {section}{Online Homework}{101}{section*.68}
+\contentsline {section}{Written Homework}{106}{section*.69}
+\contentsline {section}{Written Homework}{106}{section*.70}
+\contentsline {section}{Professional Problem}{106}{section*.71}
+\contentsline {section}{Practice Problems}{108}{section*.72}
+\contentsline {section}{Online Problems}{108}{section*.73}
+\contentsline {section}{Written Problems}{117}{section*.74}
 \contentsfinish 
