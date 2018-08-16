@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  14 AUG 2018 17:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  15 AUG 2018 17:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -999,10 +999,10 @@ Package rerunfilecheck Info: File `cylindrical_coords.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 99.
  ) 
 Here is how much of TeX's memory you used:
- 28919 strings out of 493014
- 672302 string characters out of 6133351
- 827419 words of memory out of 5000000
- 31921 multiletter control sequences out of 15000+600000
+ 28920 strings out of 493014
+ 672309 string characters out of 6133351
+ 827439 words of memory out of 5000000
+ 31922 multiletter control sequences out of 15000+600000
  11288 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,8n,79p,777b,662s stack positions out of 5000i,500n,10000p,200000b,80000s

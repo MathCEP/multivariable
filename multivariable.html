@@ -1,81 +1,49 @@
-<!DOCTYPE html><html lang="en"><head>
-<title>Multivariable Calculus</title> 
+<!DOCTYPE html><html lang="en"><head> <title>Multivariable Calculus</title> 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
 <meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)"/> 
 <meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)"/> 
 <!-- charset=utf-8,-css,html,htex4ht,xhtml --> 
 <meta name="src" content="multivariable.tex"/> 
-<meta name="description" content="xourse"/> 
 <meta name="og:image" content=""/> 
+<meta name="description" content="xourse"/> 
 <meta name="author" content=""/> 
-<meta charset="UTF-8"/> 
 <meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"/> 
 <meta name="ximera" content="version 0.0.1"/> 
-<link href="http://ximera.osu.edu/public/static/base.min.css" rel="stylesheet" media="screen"/> 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/> 
-<script data-module="script" data-main="http://ximera.osu.edu/public/javascripts/app.min" src="http://ximera.osu.edu/components/requirejs/require.js"></script> 
+<link href="https://ximera.osu.edu/public/stylesheets/standalone.css" rel="stylesheet" media="screen"/> 
+<script type="text/javascript" async="" src="https://ximera.osu.edu/public/javascripts/standalone.min.js"></script> 
 </head><body> 
 <div class="preamble"><script type="math/tex">\newenvironment {prompt}{}{}
 \newcommand {\DeclareMathOperator }[2]{\@OldDeclareMathOperator {##1}{##2}\immediate \write \myfile {\unexpanded {\DeclareMathOperator }{\unexpanded {##1}}{\unexpanded {##2}}}}
+\newcommand {\ungraded }[0]{}
 \newcommand {\skip@preamble }[0]{\let \document \relax \let \enddocument \relax \newenvironment {document}{\let \input \otherinput }{}\renewcommand {\documentclass }[2][subfiles]{}}
 \newcommand {\maketitle }[0]{ \pagestyle {empty} \begin {center} ~\\ \vskip .25\textheight \hrulefill \\ \vskip 1em \bfseries {\Huge \@title } \\ \hrulefill \\ \vskip 3em {\Large \@author } \vskip 2em {\large \@date } \end {center} \clearpage \ifnotoc \else \tableofcontents \clearpage \clearpage \fi \pagestyle {main} \let \maketitle \othermaketitle }
-\newcommand {\graded }[1]{}
 \newcommand {\l@section }[0]{\@dottedtocline {1}{1.5em}{4.2em}}
 \newcommand {\l@subsection }[0]{\@dottedtocline {2}{3.8em}{4.2em}}
-\newcommand {\logo }[1]{\ifx \@onlypreamble \@notprerr \ClassError {xourse}{logo can only be used in the preamble}{Move your logo command to the preamble}\else \IfFileExists {##1}{\gdef \xourse@logo {##1}}{\ClassError {xourse}{logo file does not exist}{To use logo,make sure that the referenced image file exists}}\fi }
-\newcommand {\reserved@a }[2]{}
+\newcommand {\logo }[1]{\ifx \@onlypreamble \@notprerr \ClassError {xourse}{logo can only be used in the preamble} {Move your logo command to the preamble} \else \IfFileExists {##1}{\gdef \xourse@logo {##1}}{\ClassError {xourse}{logo file does not exist} {To use logo,make sure that the referenced image file exists}}\fi }
+\newcommand {\graded }[1]{}
 \newcommand {\reserved@a }[2]{}
 \newcommand {\HyperFirstAtBeginDocument }[0]{\AtBeginDocument }
 \newcommand {\reserved@a }[1]{}
 \newcommand {\reserved@a }[2]{}
-\newcommand {\AppendGraphicsExtensions }[0]{\@ifundefined {Gin@extensions}{\let \Gin@extensions \@empty }{}\@ifstar {\grfext@Append \grfext@Check }{\grfext@Append \grfext@@Add }}
-\newcommand {\PrependGraphicsExtensions }[0]{\@ifundefined {Gin@extensions}{\let \Gin@extensions \@empty }{}\@ifstar {\grfext@Prepend \grfext@Check }{\grfext@Prepend \grfext@@Add }}
-\newcommand {\RemoveGraphicsExtensions }[1]{\@ifundefined {Gin@extensions}{\def \Gin@extensions {}}{\edef \grfext@tmp {\zap@space ##1 \@empty }\@for \grfext@ext :=\grfext@tmp \do {\def \grfext@next {\let \grfext@tmp \Gin@extensions \@expandtwoargs \@removeelement \grfext@ext \Gin@extensions \Gin@extensions \ifx \grfext@tmp \Gin@extensions \let \grfext@next \relax \fi \grfext@next }\grfext@next }}\grfext@Print \RemoveGraphicsExtensions }
-\newcommand {\epstopdfsetup }[0]{\setkeys {ETE}}
-\newcommand {\epstopdfcall }[1]{\ifETE@InsideSetfile \expandafter \@firstoftwo \else \expandafter \@secondoftwo \fi {‘##1}{\Gin@base \Gin@ext }}
-\newcommand {\epstopdfDeclareGraphicsRule }[4]{\ifx \\##4\\\@PackageError {epstopdf-base}{Conversion command is missing}\@ehc \else \begingroup \@ifundefined {Gin@rule@##1}{}{\@PackageInfo {epstopdf-base}{Redefining graphics rule for ‘##1&#x2019;}}\endgroup \@namedef {Gin@rule@##1}####1{{##2}{##3}{\epstopdfcall {##4}}}\fi }
-\newcommand {\mdf@patchamsthm }[0]{\let \mdf@deferred@thm@head \deferred@thm@head \pretocmd {\deferred@thm@head }{\@inlabelfalse }{\mdf@PackageInfo {mdframed detected package amsthm
- changed the theorem header of amsthm\MessageBreak }}{\mdf@PackageError {mdframed detected package amsthm
- changed the theorem header of amsthm failed\MessageBreak }}}
-\newcommand {\GetTitleStringSetup }[0]{\setkeys {gettitlestring}}
-\newcommand {\GetTitleString }[0]{\ifGTS@expand \expandafter \GetTitleStringExpand \else \expandafter \GetTitleStringNonExpand \fi }
-\newcommand {\GetTitleStringExpand }[1]{\def \GetTitleStringResult {##1}\begingroup \GTS@DisablePredefinedCmds \GTS@DisableHook \edef \x {\endgroup \noexpand \def \noexpand \GetTitleStringResult {\GetTitleStringResult }}\x }
-\newcommand {\GetTitleStringNonExpand }[1]{\def \GetTitleStringResult {##1}\global \let \GTS@GlobalString \GetTitleStringResult \begingroup \GTS@RemoveLeft \GTS@RemoveRight \endgroup \let \GetTitleStringResult \GTS@GlobalString }
-\newcommand {\GTS@DisableHook }[0]{}
-\newcommand {\label@hook }[0]{}
-\newcommand {\@currentlabelname }[0]{}
-\newcommand {\reserved@a }[0]{}
-\newcommand {\@safe@activestrue }[0]{}
-\newcommand {\@safe@activesfalse }[0]{}
-\newcommand {\nameref  }[0]{\@ifstar \T@nameref \T@nameref }
-\newcommand {\Sectionformat }[2]{##1}
 \newcommand {\vnameref  }[1]{\unskip ~\nameref {##1}\@vpageref [\unskip ]{##1}}
 \newcommand {\ref  }[0]{\@ifstar \@refstar \T@ref }
 \newcommand {\pageref  }[0]{\@ifstar \@pagerefstar \T@pageref }
 \newcommand {\nameref  }[0]{\@ifstar \@namerefstar \T@nameref }
 \newcommand {\reserved@a }[2]{}
-\newcommand {\reserved@a }[2]{}
 \newcommand {\reserved@a }[0]{\AtBeginDocument }
 \newcommand {\reserved@a }[1]{}
-\newcommand {\reserved@a }[2]{}                                                                                                                                                                                                                                                                                                                                                                                                                         </script><script type="text/javascript"> 
+\newcommand {\reserved@a }[2]{}                                                                                                                                                                                                                                                                                                                                 </script><script type="text/javascript"> 
 </script> 
 </div>
 <div class="abstract">
-                                                                  
-
-                                                                  
 <!--l. 5--><p class="noindent">This is the testing ground for the UMTYMP Multivariable Calculus book.
-</p></div>   <div class="maketitle"></div><h1 id="part1" class="card part">Week 0: Review</h1> <a class="activity card " href="content/ch00_review/1_vectors/ch0_vectors" data-options="">./content/ch00_review/1_vectors/ch0_vectors.tex<h2>Vectors</h2><h3>
-</h3></a> <a class="activity card " href="content/ch00_review/2_dotProd/ch0_dotProd" data-options="">./content/ch00_review/2_dotProd/ch0_dotProd.tex<h2>The Dot Product</h2><h3>
-</h3></a> <a class="activity card " href="content/ch00_review/3_crossProd/ch0_crossProd" data-options="">./content/ch00_review/3_crossProd/ch0_crossProd.tex<h2>The Cross Product</h2><h3>
-</h3></a> <a class="activity card " href="content/ch00_review/4_matrices/ch0_matrices" data-options="">./content/ch00_review/4_matrices/ch0_matrices.tex<h2>Matrices</h2><h3>
-</h3></a> <a class="activity card " href="content/ch00_review/5_planes/ch0_planes" data-options="">./content/ch00_review/5_planes/ch0_planes.tex<h2>Representations  of  Lines  and
+</p></div>   <div class="maketitle"></div><a class="activity card " href="auto_generated_text/week_00/ch0_vectors" data-options="">auto_generated_text/week_00/ch0_vectors.tex<h2>Vectors</h2><h3>
+</h3></a> <a class="activity card " href="auto_generated_text/week_00/ch0_dotProd" data-options="">auto_generated_text/week_00/ch0_dotProd.tex<h2>The Dot Product</h2><h3>
+</h3></a> <a class="activity card " href="auto_generated_text/week_00/ch0_crossProd" data-options="">auto_generated_text/week_00/ch0_crossProd.tex<h2>The Cross Product</h2><h3>
+</h3></a> <a class="activity card " href="auto_generated_text/week_00/ch0_matrices" data-options="">auto_generated_text/week_00/ch0_matrices.tex<h2>Matrices</h2><h3>
+</h3></a> <a class="activity card " href="auto_generated_text/week_00/ch0_planes" data-options="">auto_generated_text/week_00/ch0_planes.tex<h2>Representations  of  Lines  and
 Planes</h2><h3>
-</h3></a>  <h1 id="part2" class="card part">Week 9: Curl</h1> <a class="activity card " href="content/chCURL_curl/N.1_curl_comp/curl_comp" data-options="">./content/chCURL_curl/N.1_curl_comp/curl_comp.tex<h2>Curl of a Vector Field</h2><h3>
-</h3></a> <a class="activity card " href="content/chCURL_curl/N.2_curl_geo/curl_geo" data-options="">./content/chCURL_curl/N.2_curl_geo/curl_geo.tex<h2>Geometric Significance of Curl</h2><h3>
-</h3></a> <a class="activity card " href="content/chCURL_curl/N.3_curl_connect/curl_connect" data-options="">./content/chCURL_curl/N.3_curl_connect/curl_connect.tex<h2>Connections  of  Curl  with  Older
-Material</h2><h3>
-</h3></a> <a class="activity card " href="schedule/week_CURL/online_hw" data-options="">./schedule/week_CURL/online_hw.tex</a> <a class="activity card " href="schedule/week_CURL/written_hw" data-options="">./schedule/week_CURL/written_hw.tex</a>   
+</h3></a>  
  
 
                                                                   
