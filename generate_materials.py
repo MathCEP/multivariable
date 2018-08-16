@@ -1,8 +1,72 @@
 import os
 #import subprocess
 
-def generate_text(title, groups):
+def parse_text_file(text_file):
+    tf = open(text_file)
+    line = tf.readline()
+    while line and line != "TITLE\n":
+        line = tf.readline()
+    title = tf.readline()
+    title = title.strip('\n')
+
+    line = tf.readline()
+    line = line.strip()
+    assert line == ""
+    line = tf.readline()
+    line = line.strip()
+    groups = []
+    while line:                         #this block of code processes one group at a time
+        assert line and line != ""
+        name = line
+        line = tf.readline()
+        line = line.strip()
+        assert line == "TOPICS"
+        line = tf.readline()
+        line = line.strip()
+        topics = []
+        while line != "" and os.path.exists("./content/" + line):
+            topics.append(line)
+            line = tf.readline()
+            line = line.strip()
+        assert line == "ONLINE HOMEWORK"
+        line = tf.readline()
+        line = line.strip()
+        online_hw = []
+        while line != "" and os.path.exists("./content/" + line):
+            online_hw.append(line)
+            line = tf.readline()
+            line = line.strip()
+        assert line == "WRITTEN HOMEWORK"
+        line = tf.readline()
+        line = line.strip()
+        written_hw = []
+        while line != "" and os.path.exists("./content/" + line):
+            written_hw.append(line)
+            line = tf.readline()
+            line = line.strip()
+        assert line == "PROFESSIONAL HOMEWORK"
+        line = tf.readline()
+        line = line.strip()
+        professional_hw = []
+        while line != "" and os.path.exists("./content/" + line):
+            professional_hw.append(line)
+            line = tf.readline()
+            line = line.strip()
+        group = {"name": name, "topics": topics, "online_hw": online_hw, "written_hw": written_hw, "professional_hw": professional_hw}
+        groups.append(group)
+        assert line == ""
+        line = tf.readline()
+        line = line.strip()
+
+    tf.close()
+
+    return [title, groups]
+
+def generate_text(title_and_groups):
     #generates the entire text.
+    
+    title = title_and_groups[0]
+    groups = title_and_groups[1]
 
     text = open("multivariable.tex", "w")
 
@@ -23,7 +87,7 @@ def generate_text(title, groups):
 
     text.write("\\end{document}")
 
-    return
+    return title
 
 def generate_hw(group, online_hw, written_hw, professional_hw):
     #generates homework problem sets

@@ -45,14 +45,5 @@ written_hw = [ "chCURL_curl/N.1_curl_comp/problems/written/problem1.tex",
 
 professional_hw = [ "chCURL_curl/N.1_curl_comp/problems/professional/problem1.tex"]
 
-gm.generate_hw("week_CURL", online_hw, written_hw, professional_hw)
-
-gm.generate_all_problems("week_CURL", topics)
-
-gm.generate_topics("week_CURL", topics)
-
-gm.generate_group(weeks[0])
-gm.generate_group(weeks[1])
-
-gm.generate_text(title, weeks)
+gm.generate_text(gm.parse_text_file("curriculum.txt"))
 

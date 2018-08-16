@@ -1,0 +1,54 @@
+Note: be sure to follow exact formatting. Each week consists of title, followed by TOPICS, and the path for each topic on its own line.
+Then ONLINE HOMEWORK, with paths for problems each on their own line.
+Then WRITTEN HOMEWORK, with paths for problems each on their own line.
+Then PROFESSIONAL HOMEWORK, with paths for problems each on their own line.
+Empty lines indicate breaks between weeks, so don’t add any extra new lines.
+There should be only one empty line between groups.
+Make sure you don’t have an extra empty line at the end.
+Headings (e.g. ONLINE HOMEWORK) must be present, even if there isn’t any homework.
+You can add notes here if needed - anything before the line containing only “TITLE” will not be read.
+
+TITLE
+Multivariable Calculus
+
+Week 0: Review
+TOPICS
+ch00_review/1_vectors
+ch00_review/2_dotProd
+ch00_review/3_crossProd
+ch00_review/4_matrices
+ch00_review/5_planes
+ONLINE HOMEWORK
+WRITTEN HOMEWORK
+PROFESSIONAL HOMEWORK
+
+Week 1: Coordinate Systems
+TOPICS
+ch01_coordinate_systems/1_review
+ch01_coordinate_systems/2_cylindrical_coords
+ch01_coordinate_systems/3_spherical_coords
+ONLINE HOMEWORK
+WRITTEN HOMEWORK
+PROFESSIONAL HOMEWORK
+
+Week 9: Curl
+TOPICS
+chCURL_curl/N.1_curl_comp
+chCURL_curl/N.2_curl_geo
+chCURL_curl/N.3_curl_connect
+ONLINE HOMEWORK
+chCURL_curl/N.3_curl_connect/problems/online/problem1.tex
+chCURL_curl/N.2_curl_geo/problems/online/problem1.tex
+chCURL_curl/N.2_curl_geo/problems/online/problem2.tex
+chCURL_curl/N.2_curl_geo/problems/online/problem3.tex
+chCURL_curl/N.3_curl_connect/problems/online/problem2.tex
+chCURL_curl/N.3_curl_connect/problems/online/problem3.tex
+chCURL_curl/N.3_curl_connect/problems/online/problem4.tex
+chCURL_curl/N.3_curl_connect/problems/online/problem5.tex
+chCURL_curl/N.3_curl_connect/problems/online/problem6.tex
+WRITTEN HOMEWORK
+chCURL_curl/N.1_curl_comp/problems/written/problem1.tex
+chCURL_curl/N.2_curl_geo/problems/written/problem1.tex
+chCURL_curl/N.3_curl_connect/problems/written/problem1.tex
+PROFESSIONAL HOMEWORK
+chCURL_curl/N.1_curl_comp/problems/professional/problem1.tex
