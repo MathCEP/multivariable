@@ -15,7 +15,7 @@ def generate_text(title, groups):
     text.write("\\maketitle\n\n")
     
     for group in groups:
-        text.write("\n\\section{" + group["name"] + "}\n\n")
+        text.write("\n\\part{" + group["name"] + "}\n\n")
         activities = generate_group(group)
         for activity in activities:
             text.write("\\activity{" + activity + "}\n")

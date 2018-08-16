@@ -1,2 +1,4 @@
 \expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi 
+\doTocEntry\tocsection{}{\csname a:TocLink\endcsname{1}{x1-1000}{QQ2-1-1}{Week 0: Review}}{1}\relax 
+\doTocEntry\tocsection{}{\csname a:TocLink\endcsname{1}{x1-2000}{QQ2-1-2}{Week 1: Coordinate Systems}}{1}\relax 
 \par 
