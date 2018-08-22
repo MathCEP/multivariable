@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=latex 2016.5.22)  16 AUG 2018 13:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=latex 2016.5.22)  21 AUG 2018 20:27
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1680,12 +1680,12 @@ and I'll forget about whatever was undefined.
 
 l. 159 --- needs --- ./review-figure4.svg ---
 [3]
-l.226 --- TeX4ht warning --- Cannot determine size of graphic in ./review-figur
+l.234 --- TeX4ht warning --- Cannot determine size of graphic in ./review-figur
 e5.svg (no BoundingBox) ---
-./review.tex:226: Undefined control sequence.
+./review.tex:234: Undefined control sequence.
 \:Needs #1->File: \Gin 
                        @base.svg
-l.226 \end{tikzpicture}
+l.234 \end{tikzpicture}
                        
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1693,14 +1693,14 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-l. 226 --- needs --- ./review-figure5.svg ---
+l. 234 --- needs --- ./review-figure5.svg ---
 [4]
-l.286 --- TeX4ht warning --- Cannot determine size of graphic in ./review-figur
+l.294 --- TeX4ht warning --- Cannot determine size of graphic in ./review-figur
 e6.svg (no BoundingBox) ---
-./review.tex:286: Undefined control sequence.
+./review.tex:294: Undefined control sequence.
 \:Needs #1->File: \Gin 
                        @base.svg
-l.286 \end{tikzpicture}
+l.294 \end{tikzpicture}
                        
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1708,13 +1708,13 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-l. 286 --- needs --- ./review-figure6.svg ---
-l.319 --- TeX4ht warning --- Cannot determine size of graphic in ./review-figur
+l. 294 --- needs --- ./review-figure6.svg ---
+l.327 --- TeX4ht warning --- Cannot determine size of graphic in ./review-figur
 e7.svg (no BoundingBox) ---
-./review.tex:319: Undefined control sequence.
+./review.tex:327: Undefined control sequence.
 \:Needs #1->File: \Gin 
                        @base.svg
-l.319 \end{tikzpicture}
+l.327 \end{tikzpicture}
                        
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1722,13 +1722,13 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-l. 319 --- needs --- ./review-figure7.svg ---
-l.375 --- TeX4ht warning --- Cannot determine size of graphic in ./review-figur
+l. 327 --- needs --- ./review-figure7.svg ---
+l.383 --- TeX4ht warning --- Cannot determine size of graphic in ./review-figur
 e8.svg (no BoundingBox) ---
-./review.tex:375: Undefined control sequence.
+./review.tex:383: Undefined control sequence.
 \:Needs #1->File: \Gin 
                        @base.svg
-l.375 \end{tikzpicture}
+l.383 \end{tikzpicture}
                        
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1736,13 +1736,14 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-l. 375 --- needs --- ./review-figure8.svg ---
-l.404 --- TeX4ht warning --- Cannot determine size of graphic in ./review-figur
+l. 383 --- needs --- ./review-figure8.svg ---
+[5]
+l.412 --- TeX4ht warning --- Cannot determine size of graphic in ./review-figur
 e9.svg (no BoundingBox) ---
-./review.tex:404: Undefined control sequence.
+./review.tex:412: Undefined control sequence.
 \:Needs #1->File: \Gin 
                        @base.svg
-l.404 \end{tikzpicture}
+l.412 \end{tikzpicture}
                        \end{image}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1750,15 +1751,15 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-l. 404 --- needs --- ./review-figure9.svg ---
-[5] [6]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 413.
+l. 412 --- needs --- ./review-figure9.svg ---
+[6]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 421.
  [7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 413.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 421.
  (./review.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 413.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 413.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 413.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 421.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 421.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 421.
  ) 
 Here is how much of TeX's memory you used:
  34187 strings out of 493015
@@ -1769,4 +1770,4 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  62i,6n,79p,2287b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on review.dvi (7 pages, 30260 bytes).
+Output written on review.dvi (7 pages, 30904 bytes).

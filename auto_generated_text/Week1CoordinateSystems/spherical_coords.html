@@ -33,7 +33,154 @@
 class="abstract" 
 >
 </div>   <div class="maketitle"></div>
-<!--l. 8--><p class="noindent" >nothing to see here...
+<!--l. 8--><p class="noindent" >In this activity, we introduce spherical coordinates, a new coordinate system on <script type="math/tex">\mathbb {R}^3</script>. We
+also discuss how to convert between spherical and Cartesian coordinates.
+</p>
+<h3 class="sectionHead"><a 
+ id="x1-1000"></a>Spherical Coordinates</h3>
+<!--l. 12--><p class="noindent" >We&#x2019;ve seen how to express points in <script type="math/tex">\mathbb {R}^3</script> using Cartesian coordinates and using
+cylindrical coordinates. We&#x2019;ll now introduce a new coordinate system, called <em>spherical
+coordinates</em>.
+</p><!--l. 14--><p class="noindent" >Given a point <script type="math/tex">P</script> in <script type="math/tex">\mathbb {R}^3</script>, imagine drawing a line segment from the origin to <script type="math/tex">P</script>. In
+spherical coordinates, we write <script type="math/tex">P</script> as <script type="math/tex">(\rho , \theta , \phi )</script>. Here, <script type="math/tex">\rho </script> is the length of the segment (also
+the distance between <script type="math/tex">P</script> and the origin). The second coordinate, <script type="math/tex">\theta </script>, is angle
+between the positive <script type="math/tex">x</script>-axis and the projection of the segment onto the <script type="math/tex">xy</script>-plane.
+The third coordinate, <script type="math/tex">\phi </script>, is the angle between the segment and the positive
+<script type="math/tex">z</script>-axis.
+</p>
+<div class="image-environment" role="img" aria-labelledby="image-alt-1"> </div>
+<div class="theorem-like problem-environment example" id="problem1"><a 
+ id="x1-1001r1"></a>We&#x2019;ll write the point <script type="math/tex">P</script> in spherical coordinates, where <script type="math/tex">P</script> is given by <script type="math/tex">(x,y,z) = (0,1,1)</script> in Cartesian
+coordinates.
+<div class="image-environment" role="img" aria-labelledby="image-alt-2"> </div>
+<!--l. 27--><p class="noindent" >The distance between <script type="math/tex">P</script> and the origin is <script type="math/tex; mode=display"> \sqrt {0^2 + 1^2 + 1^2} = \answer {\sqrt {2}}, </script> so <script type="math/tex">\rho = \answer {\sqrt {2}}</script>.
+</p><!--l. 33--><p class="noindent" >The angle between the positive <script type="math/tex">x</script>-axis and the projection of <script type="math/tex">P</script> onto the <script type="math/tex">xy</script>-plane is <script type="math/tex">\answer {\pi /2}</script> (in
+radians), so <script type="math/tex">\theta = \answer {\pi /2}</script>.
+                                                                  
+
+                                                                  
+</p><!--l. 35--><p class="noindent" >The angle between <script type="math/tex">P</script> and the positive <script type="math/tex">z</script>-axis is <script type="math/tex">\answer {\pi /4}</script> (in radians), so <script type="math/tex">\phi = \answer {\pi /4}</script>.
+</p><!--l. 37--><p class="noindent" >Thus we can write <script type="math/tex">P</script> in spherical coordinates as <script type="math/tex">\answer {(\sqrt {2}, \pi /2,\pi /4)}</script>.
+</p><!--l. 39--><p class="noindent" ></div>
+</p><!--l. 41--><p class="noindent" >Although we will be consistent with our definitions of <script type="math/tex">\theta </script> and <script type="math/tex">\phi </script> as above, it&#x2019;s important
+to know that some people reverse the roles of <script type="math/tex">\theta </script> and <script type="math/tex">\phi </script>. This is particularly common
+among physicists.
+</p>
+<h3 class="sectionHead"><a 
+ id="x1-2000"></a>Uniqueness</h3>
+<!--l. 45--><p class="noindent" >As with polar and cylindrical coordinates, there are issues of uniqueness with
+spherical coordinates that we do not encounter in Cartesian coordinates.
+</p><!--l. 47--><p class="noindent" >Let&#x2019;s take for the example the point <script type="math/tex">(x,y,z) = (0,1,1)</script>, written in Cartesian coordinates. We&#x2019;ve seen
+the canonical way to write this point in spherical coordinates, as <script type="math/tex">(\sqrt {2}, \pi /2, \pi /4)</script>. However, we could
+also write this as <script type="math/tex">(\sqrt {2}, 5\pi /2, \pi /4)</script>, <script type="math/tex">(\sqrt {2}, -3\pi /2, \pi /4)</script>, or even <script type="math/tex">(-\sqrt {2}, 3\pi /2, 5\pi /4)</script>.
+</p><!--l. 49--><p class="noindent" >Because of this issue, we&#x2019;ll commonly use the restrictions </p><script type="math/tex; mode=display"> \begin{align*} 
+0\leq &\rho\\
+0\leq &\theta<2\pi\\
+0\leq &\phi\leq\pi
+\end{align*}</script>
+when working with spherical coordinates in order to improve the uniqueness situation.
+Unfortunately, there are still multiple ways to represent the origin in spherical
+coordinates.
+<div role="article" class="problem-environment problem" id="problem2"><a 
+ id="x1-2001r2"></a> Which of the following represent the origin in spherical coordinates? Select all that
+apply. <div class="select-all" id="problem3"><a 
+ id="x1-2002r3"></a> <span class="choice correct "   id="choice1"><script type="math/tex">(0,0,0)</script></span> <span class="choice correct "   id="choice2"><script type="math/tex">(0,\pi /2,0)</script></span> <span class="choice correct "   id="choice3"><script type="math/tex">(0,0,\pi /4)</script></span> <span class="choice correct "   id="choice4"><script type="math/tex">(0,\pi /2,\pi /4)</script></span>
+</div>
+</div>
+<!--l. 67--><p class="noindent" >You may use the following applet to experiment with how the different coordinates
+change a point written in spherical coordinates.
+</p><!--l. 69--><p class="noindent" ><a 
+href="https://mathinsight.org/spherical_coordinates" >MATH INSIGHT APPLET</a>
+</p>
+<h3 class="sectionHead"><a 
+ id="x1-3000"></a>Constant-Coordinate Surfaces</h3>
+<!--l. 73--><p class="noindent" >As we did with cylindrical coordinates, we&#x2019;ll see what happens when we set each of
+the coordinates to be constant.
+</p><!--l. 75--><p class="noindent" >Consider the set of points <script type="math/tex">(\rho , \theta , \phi )</script>, where <script type="math/tex">\rho = C</script> is constant. This means that the distance between
+the origin and any such point is <script type="math/tex">C</script>. Varying the angles <script type="math/tex">\theta </script> and <script type="math/tex">\phi </script> gives us all such points,
+which make a sphere of radius <script type="math/tex">C</script>.
+</p>
+<div class="image-environment" role="img" aria-labelledby="image-alt-3"> </div>
+                                                                  
+
+                                                                  
+<!--l. 81--><p class="noindent" >Now, consider the set of points <script type="math/tex">(\rho , \theta , \phi )</script>, where <script type="math/tex">\theta = C</script> is constant. This means that the projection
+of any such point onto the <script type="math/tex">xy</script>-plane will make an angle <script type="math/tex">C</script> with the positive <script type="math/tex">x</script>-axis. Varying
+<script type="math/tex">\rho </script> gives us points at various distances from the origin, and varying <script type="math/tex">\phi </script> gives us points
+making various angles with the positive <script type="math/tex">z</script>-axis. With the restrictions <script type="math/tex">\rho \geq 0</script> and <script type="math/tex">0\leq \phi \leq \pi </script>, we obtain
+a half plane, as below.
+</p>
+<div class="image-environment" role="img" aria-labelledby="image-alt-4"> </div>
+<!--l. 87--><p class="noindent" >Notice that if we relaxed the restrictions on <script type="math/tex">\rho </script> and <script type="math/tex">\phi </script>, we could obtain the entire
+plane.
+</p><!--l. 89--><p class="noindent" >Finally, we consider the set of points <script type="math/tex">(\rho , \theta , \phi )</script>, where <script type="math/tex">\phi = C</script> is constant. This means that every such
+point has an angle <script type="math/tex">C</script> with the positive <script type="math/tex">z</script>-axis. Varying <script type="math/tex">\rho </script> and <script type="math/tex">\theta </script>, with the restriction <script type="math/tex">\rho \geq 0</script>, we
+get the surfaces below, depending on if <script type="math/tex">C<\pi /2</script>, <script type="math/tex">C=pi/2</script>, or <script type="math/tex">C>pi/2</script>.
+</p>
+<div class="image-environment" role="img" aria-labelledby="image-alt-5"> </div>
+<!--l. 95--><p class="noindent" >Looking at the surfaces when <script type="math/tex">C>\pi /2</script> or <script type="math/tex">C<\pi /2</script>, we would commonly call these surfaces “cones.”
+However, in most mathematics, “cone” is more commonly used to describe the
+surface below, which you might call a double cone.
+</p>
+<div class="image-environment" role="img" aria-labelledby="image-alt-6"> </div>
+<!--l. 101--><p class="noindent" >Note that if you relax the restriction <script type="math/tex">\rho \geq 0</script>, you&#x2019;ll get cone (or double cone) above when
+<script type="math/tex">C\neq 0</script>.
+</p><!--l. 103--><p class="noindent" >It may seem strange that mathematicians prefer this double cone to the seemingly
+simpler cones that you&#x2019;re used to. However, it turns out that the double cone is easier
+to describe algebraically.
+</p><!--l. 105--><p class="noindent" >You can use the following applet to see what happens when you vary the value of the
+constant <script type="math/tex">C</script> for each of the constant-coordinate surfaces above:
+</p><!--l. 107--><p class="noindent" ><a 
+href="https://mathinsight.org/spherical_coordinates" >MATH INSIGHT APPLET</a>
+</p>
+<h3 class="sectionHead"><a 
+ id="x1-4000"></a>Converting Between Spherical and Cartesian Coordinates</h3>
+<!--l. 111--><p class="noindent" >When converting between spherical coordinates and Cartesian coordinates, it can be
+useful to use the following equations, which describe the relationship between the two
+coordinate systems.
+</p>
+<script type="math/tex; mode=display"> \begin{align*} 
+x &= \rho\cos\theta\sin\phi\\
+y &= \rho\sin\theta\sin\phi\\
+                                                                  
+
+                                                                  
+z &= \rho\cos\phi\\
+\rho^2 &= x^2 + y^2 + z^2
+\end{align*}</script>
+<div class="theorem-like problem-environment example" id="problem4"><a 
+ id="x1-4001r4"></a>We&#x2019;ll convert <script type="math/tex">x^2 + y^2 - z^2 = 1</script> from Cartesian coordinates to spherical coordinates. This surface is
+called an <em>elliptic hyperboloid</em>, and its graph is shown below. We&#x2019;ll learn how to
+identify this and other surfaces later in the course.
+<div class="image-environment" role="img" aria-labelledby="image-alt-7"> </div>
+<!--l. 127--><p class="noindent" >Making the substitutions <script type="math/tex">x = \rho \cos \theta \sin \phi </script>, <script type="math/tex">y = \rho \sin \theta \sin \phi </script>, and <script type="math/tex">z = \rho \cos \phi </script>, we have <script type="math/tex; mode=display"> \rho ^2\cos ^2\theta \sin ^2\phi + \rho ^2\sin ^2\theta \sin ^2\phi - \rho ^2\cos ^2\phi = 1. </script> We can factor <script type="math/tex">\rho ^2\sin ^2\phi </script> out of the first two terms
+and obtain <script type="math/tex; mode=display"> \rho ^2\sin ^2\phi (\cos ^2\theta + \sin ^2\theta ) - \rho ^2\cos ^2\phi = 1. </script> Recalling that <script type="math/tex">\cos ^2\theta + \sin ^2\theta = 1</script>, we can simplify this to <script type="math/tex; mode=display"> \rho ^2\sin ^2\phi - \rho ^2\cos ^2\phi = 1. </script> Recalling the double angle
+formula <script type="math/tex">\cos (2\phi ) = \cos ^2(\phi ) - \sin ^2(\phi )</script>, we can simplify this to <script type="math/tex; mode=display"> \rho ^2\cos (2\phi ) = 1. </script>
+</div>
+</p>
+<div class="theorem-like problem-environment example" id="problem5"><a 
+ id="x1-4002r5"></a>Sketch the set of points <script type="math/tex">(\rho ,\theta ,\phi )</script> (in spherical coordinates) such that <script type="math/tex">0\leq \rho \leq 1</script> and <script type="math/tex">0\leq \phi \leq \pi /4</script>.
+<!--l. 148--><p class="noindent" >The condition <script type="math/tex">0\leq \rho \leq 1</script> means that we&#x2019;ll have only points within distance <script type="math/tex">1</script> of the origin. The
+condition <script type="math/tex">0\leq \phi \leq \pi /4</script> means that we&#x2019;ll have only points within angle <script type="math/tex">\pi /4</script> from the <script type="math/tex">z</script>-axis. Putting
+these conditions together, we have the solid “ice-cream cone” region sketched
+below.
+</p>
+<div class="image-environment" role="img" aria-labelledby="image-alt-8"> </div>
+</div>
+<h3 class="sectionHead"><a 
+ id="x1-5000"></a>Spherical coordinates in <script type="math/tex">\mathbb {R}^n</script> [OPTIONAL]</h3>
+<!--l. 157--><p class="noindent" >Since we&#x2019;ve seen polar coordinates in <script type="math/tex">\mathbb {R}^2</script>, and cylindrical and spherical coordinates in <script type="math/tex">\mathbb {R}^3</script>,
+you might be wondering if there are similar coordinate systems in <script type="math/tex">\mathbb {R}^4</script>, <script type="math/tex">\mathbb {R}^5</script>, and so
+on.
+</p><!--l. 159--><p class="noindent" >It is possible to define spherical coordinates in <script type="math/tex">\mathbb {R}^n</script> for any <script type="math/tex">n</script>, and you can find a
+description <a 
+href="https://en.wikipedia.org/wiki/N-sphere#Spherical_coordinates"  >here</a>.
+</p>
+<h3 class="sectionHead"><a 
+ id="x1-6000"></a>Conclusion</h3>
+<!--l. 164--><p class="noindent" >We introduced spherical coordinates and how to convert between spherical
+coordinates and Cartesian coordinates, and we discussed the uniqueness of spherical
+coordinates.
 </body> 
  
 </html>

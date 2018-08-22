@@ -1,3 +1,6 @@
 \expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi
 \doTocEntry\tocsection{}{\csname a:TocLink\endcsname{1}{x1-1000}{QQ2-1-1}{Cylindrical Coordinates}}{1}\relax 
-\doTocEntry\tocsection{}{\csname a:TocLink\endcsname{1}{x1-2000}{QQ2-1-2}{Converting between Cartesian and cylindrical coordinates}}{2}\relax 
+\doTocEntry\tocsection{}{\csname a:TocLink\endcsname{1}{x1-2000}{QQ2-1-2}{Uniqueness}}{2}\relax 
+\doTocEntry\tocsection{}{\csname a:TocLink\endcsname{1}{x1-3000}{QQ2-1-3}{Constant-Coordinate Surfaces}}{2}\relax 
+\doTocEntry\tocsection{}{\csname a:TocLink\endcsname{1}{x1-4000}{QQ2-1-4}{Converting between Cartesian and cylindrical coordinates}}{3}\relax 
+\doTocEntry\tocsection{}{\csname a:TocLink\endcsname{1}{x1-5000}{QQ2-1-5}{Conclusion}}{4}\relax 

@@ -1,6 +1,6 @@
 \expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi
 \doTocEntry\tocsection{}{\csname a:TocLink\endcsname{1}{x1-1000}{QQ2-1-1}{Cartesian Plane}}{1}\relax 
 \doTocEntry\tocsection{}{\csname a:TocLink\endcsname{1}{x1-2000}{QQ2-1-2}{Polar Coordinates}}{1}\relax 
-\doTocEntry\tocsection{}{\csname a:TocLink\endcsname{1}{x1-3000}{QQ2-1-3}{Linear Change of Coordinates}}{4}\relax 
+\doTocEntry\tocsection{}{\csname a:TocLink\endcsname{1}{x1-3000}{QQ2-1-3}{Linear Change of Coordinates}}{5}\relax 
 \doTocEntry\tocsection{}{\csname a:TocLink\endcsname{1}{x1-4000}{QQ2-1-4}{Three-Dimensional Coordinates}}{5}\relax 
 \doTocEntry\tocsection{}{\csname a:TocLink\endcsname{1}{x1-5000}{QQ2-1-5}{Conclusion}}{6}\relax 
