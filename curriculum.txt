@@ -13,51 +13,51 @@ Multivariable Calculus
 
 Week 0: Review
 TOPICS
-ch00_review/1_vectors
-ch00_review/2_dotProd
-ch00_review/3_crossProd
-ch00_review/4_matrices
-ch00_review/5_planes
+00_review/1_vectors
+00_review/2_dotProd
+00_review/3_crossProd
+00_review/4_matrices
+00_review/5_planes
 ONLINE HOMEWORK
 WRITTEN HOMEWORK
 PROFESSIONAL HOMEWORK
 
 Week 1: Coordinate Systems
 TOPICS
-ch01_coordinate_systems/1_review
-ch01_coordinate_systems/2_cylindrical_coords
-ch01_coordinate_systems/3_spherical_coords
+01_coordinate_systems/1_review
+01_coordinate_systems/2_cylindrical_coords
+01_coordinate_systems/3_spherical_coords
 ONLINE HOMEWORK
 WRITTEN HOMEWORK
 PROFESSIONAL HOMEWORK
 
 Week 27: Conservative Vector Fields and Topology
 TOPICS
-chCONS_consvf/N.1_topology
-chCONS_consvf/N.2_FTLI
-chCONS_consvf/N.3_potentialfns
+CONS_consvf/N.1_topology
+CONS_consvf/N.2_FTLI
+CONS_consvf/N.3_potentialfns
 ONLINE HOMEWORK
 WRITTEN HOMEWORK
 PROFESSIONAL HOMEWORK
 
 Week 29: Curl
 TOPICS
-chCURL_curl/N.1_curl_comp
-chCURL_curl/N.2_curl_geo
-chCURL_curl/N.3_curl_connect
+CURL_curl/N.1_curl_comp
+CURL_curl/N.2_curl_geo
+CURL_curl/N.3_curl_connect
 ONLINE HOMEWORK
-chCURL_curl/N.3_curl_connect/problems/online/problem1.tex
-chCURL_curl/N.2_curl_geo/problems/online/problem1.tex
-chCURL_curl/N.2_curl_geo/problems/online/problem2.tex
-chCURL_curl/N.2_curl_geo/problems/online/problem3.tex
-chCURL_curl/N.3_curl_connect/problems/online/problem2.tex
-chCURL_curl/N.3_curl_connect/problems/online/problem3.tex
-chCURL_curl/N.3_curl_connect/problems/online/problem4.tex
-chCURL_curl/N.3_curl_connect/problems/online/problem5.tex
-chCURL_curl/N.3_curl_connect/problems/online/problem6.tex
+CURL_curl/N.3_curl_connect/problems/online/problem1.tex
+CURL_curl/N.2_curl_geo/problems/online/problem1.tex
+CURL_curl/N.2_curl_geo/problems/online/problem2.tex
+CURL_curl/N.2_curl_geo/problems/online/problem3.tex
+CURL_curl/N.3_curl_connect/problems/online/problem2.tex
+CURL_curl/N.3_curl_connect/problems/online/problem3.tex
+CURL_curl/N.3_curl_connect/problems/online/problem4.tex
+CURL_curl/N.3_curl_connect/problems/online/problem5.tex
+CURL_curl/N.3_curl_connect/problems/online/problem6.tex
 WRITTEN HOMEWORK
-chCURL_curl/N.1_curl_comp/problems/written/problem1.tex
-chCURL_curl/N.2_curl_geo/problems/written/problem1.tex
-chCURL_curl/N.3_curl_connect/problems/written/problem1.tex
+CURL_curl/N.1_curl_comp/problems/written/problem1.tex
+CURL_curl/N.2_curl_geo/problems/written/problem1.tex
+CURL_curl/N.3_curl_connect/problems/written/problem1.tex
 PROFESSIONAL HOMEWORK
-chCURL_curl/N.1_curl_comp/problems/professional/problem1.tex
+CURL_curl/N.1_curl_comp/problems/professional/problem1.tex

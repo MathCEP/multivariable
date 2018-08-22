@@ -1,0 +1,404 @@
+<!doctype html> 
+<html lang="en"> 
+<head> <title>Topology</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<!-- charset=utf-8,-css,html,htex4ht,xhtml --> 
+<meta name="src" content="topology.tex" /> 
+<meta name="author" content="Melissa Lynn" /> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
+<meta name="ximera" content="version 0.0.1" /> 
+<link href="https://ximera.osu.edu/public/stylesheets/standalone.css" rel="stylesheet" media="screen"/> 
+<script type="text/javascript" async src="https://ximera.osu.edu/public/javascripts/standalone.min.js"></script> 
+</head><body> 
+<div class="preamble"><script type="math/tex">\newenvironment {prompt}{}{}
+\newcommand {\DeclareMathOperator }[2]{\@OldDeclareMathOperator {##1}{##2}\immediate \write \myfile {\unexpanded {\DeclareMathOperator }{\unexpanded {##1}}{\unexpanded {##2}}}}
+\newcommand {\ungraded }[0]{}
+\newcommand {\reserved@a }[2]{}
+\newcommand {\HyperFirstAtBeginDocument }[0]{\AtBeginDocument }
+\newcommand {\reserved@a }[1]{}
+\newcommand {\reserved@a }[2]{}
+\newcommand {\vnameref  }[1]{\unskip ~\nameref {##1}\@vpageref [\unskip ]{##1}}
+\newcommand {\ref  }[0]{\@ifstar \@refstar \T@ref }
+\newcommand {\pageref  }[0]{\@ifstar \@pagerefstar \T@pageref }
+\newcommand {\nameref  }[0]{\@ifstar \@namerefstar \T@nameref }
+\newcommand {\reserved@a }[2]{}
+\newcommand {\reserved@a }[0]{\AtBeginDocument }
+\newcommand {\reserved@a }[1]{}
+\newcommand {\reserved@a }[2]{}                                                                                                                                                 </script><script type="text/javascript"> 
+</script> 
+</div>
+<div 
+class="abstract" 
+>
+</div>   <div class="maketitle"></div>
+<!--l. 12--><p class="noindent" >In this activity, we introduce some basic ideas from the area of mathematics called
+“topology.” We introduce these ideas in order to be able to correctly state the
+theorems in the next activities, on conservative vector fields.
+</p><!--l. 14--><p class="noindent" >Topology is focused on the shape and spaces, and how to distinguish between
+different shapes and spaces. However, it takes a much more flexible perspective that
+you might have seen in geometry classes. In topology, deformations like stretching,
+shrinking, or bending a space aren&#x2019;t viewed as changing a space. In particular,
+distance between points isn&#x2019;t important. Instead, topology employs a much
+looser idea of closeness - provided by open sets, which are defined in the first
+section.
+</p><!--l. 16--><p class="noindent" >In general, there are a lot of interesting and weird topological spaces which are not
+subspaces of any <script type="math/tex">\mathbb {R}^n</script>! However, for our purposes, focusing on subspaces of <script type="math/tex">\mathbb {R}^n</script> will be
+sufficient, so our definitions might look different from some of the definitions you
+would see in a topology textbook.
+</p>
+<h3 class="sectionHead"><a 
+ id="x1-1000"></a>Open Sets</h3>
+<!--l. 20--><p class="noindent" >You&#x2019;ve probably seen many open sets before, without even realizing it! For example,
+the open interval <script type="math/tex">(0,1)</script> is an open set, as is the disc <script type="math/tex">\{(x,y)\,|\,x^2+y^2<1\}</script> and the open half-plane
+<script type="math/tex">\{(x,y)\,|\,x<0\}</script>.
+</p>
+<div class="image-environment" role="img" aria-labelledby="image-alt-1">  <img 
+src="./topology-figure0.svg" alt=""  
+ />
+</div>
+                                                                  
+
+                                                                  
+<!--l. 69--><p class="noindent" >We begin by defining the most basic type of open set, called an open ball.
+</p>
+<div class="theorem-like problem-environment definition" id="problem1"><a 
+ id="x1-1001r1"></a>In <script type="math/tex">\mathbb {R}^n</script>, we call <script type="math/tex">B_r(\mathbf {x})=\{\mathbf {y}\in \mathbb {R}^n\,:\,|\mathbf {x}-\mathbf {y}|<r\}</script> the <em>open ball</em> of radius <script type="math/tex">r>0</script> centered at <script type="math/tex">\mathbf {x}</script>.
+</div>
+<!--l. 75--><p class="noindent" >In words, this is the set of points within a fixed distance <script type="math/tex">r</script> of a center point
+<script type="math/tex">\mathbf {x}</script>.
+</p>
+<div class="theorem-like problem-environment example" id="problem2"><a 
+ id="x1-1002r2"></a>In <script type="math/tex">\mathbb {R}^1</script>, an open ball is simply an open interval. For example, <script type="math/tex">(1,3)</script> is the ball <script type="math/tex">B_1(2)</script> of radius <script type="math/tex">1</script>
+centered at <script type="math/tex">2</script>.
+<div class="video youtube-player" data-youtube="QXy9aLiBfSs">_</div>
+<!--l. 98--><p class="noindent" >In <script type="math/tex">\mathbb {R}^2</script>, an open ball is the inside of a circle (not including the boundary). For example, <script type="math/tex">B_2((0,3))</script>
+is the inside of the circle of radius <script type="math/tex">2</script> centered at <script type="math/tex">(0,3)</script>.
+</p>
+<div class="video youtube-player" data-youtube="r9OMlNgPqZA">_</div>
+<!--l. 117--><p class="noindent" >In <script type="math/tex">\mathbb {R}^3</script>, and open ball is the inside of a sphere of radius (not including the boundary).
+For example, <script type="math/tex">B_1((0,0,0))</script> is the inside of the sphere of radius <script type="math/tex">1</script> centered at the origin.
+</p>
+<div class="video youtube-player" data-youtube="xSHf7KQN6Lc">_</div>
+<!--l. 144--><p class="noindent" ></div>
+</p><!--l. 146--><p class="noindent" >In each problem, describe the open ball.
+</p>
+<div role="article" class="problem-environment problem" id="problem3"><a 
+ id="x1-1003r3"></a> In <script type="math/tex">\mathbb {R}^1</script>, <script type="math/tex">B_3(1)</script> is the <div class="multiple-choice" id="problem4"><span class="choice correct "   id="choice1">open interval</span> <span class="choice  "   id="choice2">inside of a circle</span> <span class="choice  "   id="choice3">inside of a sphere</span> </div>
+<div role="article" class="problem-environment problem" id="problem5"><a 
+ id="x1-1004r4"></a><script type="math/tex">(\answer {-2},\answer {4})</script>.
+</div>
+</div>
+<div role="article" class="problem-environment problem" id="problem6"><a 
+ id="x1-1005r5"></a> In <script type="math/tex">\mathbb {R}^2</script>, <script type="math/tex">B_2((1,1))</script> is the <div class="multiple-choice" id="problem7"><span class="choice  "   id="choice4">open interval</span> <span class="choice correct "   id="choice5">inside of a circle</span> <span class="choice  "   id="choice6">inside of a sphere</span> </div>
+<div role="article" class="problem-environment problem" id="problem8"><a 
+ id="x1-1006r6"></a>of radius <script type="math/tex">\answer {2}</script> centered at <script type="math/tex">(\answer {1}, \answer {1})</script>.
+</div>
+</div>
+<div role="article" class="problem-environment problem" id="problem9"><a 
+ id="x1-1007r7"></a> In <script type="math/tex">\mathbb {R}^3</script>, <script type="math/tex">B_4((1,2,3))</script> is the <div class="multiple-choice" id="problem10"><span class="choice  "   id="choice7">open interval</span> <span class="choice  "   id="choice8">inside of a circle</span> <span class="choice correct "   id="choice9">inside of a sphere</span> </div>
+<div role="article" class="problem-environment problem" id="problem11"><a 
+ id="x1-1008r8"></a> of radius <script type="math/tex">\answer {4}</script> centered at <script type="math/tex">(\answer {1}, \answer {2}, \answer {3})</script>.
+</div>
+</div>
+<!--l. 173--><p class="noindent" >Now we can define open sets in general, using our new idea of open balls.
+</p>
+<div class="theorem-like problem-environment definition" id="problem12"><a 
+ id="x1-1009r9"></a>A set <script type="math/tex">U\subset \mathbb {R}^n</script> is <em>open</em> if for every <script type="math/tex">\mathbf {a}\in U</script>, there is a radius <script type="math/tex">r>0</script> such that <script type="math/tex">B_r(\mathbf {a})\subset U</script>.
+</div>
+<!--l. 179--><p class="noindent" >In words, for any point <script type="math/tex">\mathbf {a}</script> in <script type="math/tex">U</script>, we can find a radius <script type="math/tex">r</script> small enough that the entire ball of
+radius <script type="math/tex">r</script> centered at <script type="math/tex">\mathbf {a}</script> is contained in <script type="math/tex">U</script>.
+                                                                  
+
+                                                                  
+</p>
+<div class="video youtube-player" data-youtube="S-cLB6dLCQo">_</div>
+<!--l. 191--><p class="noindent" >Even if we don&#x2019;t have an open set, it&#x2019;s possible that there might be some points in <script type="math/tex">U</script>
+with this special property. We call these interior points.
+</p>
+<div class="theorem-like problem-environment definition" id="problem13"><a 
+ id="x1-1010r10"></a>Let <script type="math/tex">U\subset \mathbb {R}^n</script>. A point <script type="math/tex">\mathbf {a}\in U</script> is an <em>interior point</em> if there is a radius <script type="math/tex">r>0</script> such that <script type="math/tex">B_r(\mathbf {a})\subset U</script>.
+</div>
+<!--l. 197--><p class="noindent" >So, we can restate the definition of an open set as “every point is an interior
+point.”
+</p>
+<div role="article" class="problem-environment problem" id="problem14"><a 
+ id="x1-1011r11"></a>
+<!--l. 201--><p class="noindent" >For each of the following, determine whether or not the set is open.
+     </p><dl class="enumerate-enumitem"><dt class="enumerate-enumitem">
+ (a) </dt><dd 
+class="enumerate-enumitem"><script type="math/tex">\{(x,y)\,:\,x^2+y^2<1\}</script> in <script type="math/tex">\mathbb {R}^2</script> <div class="multiple-choice" id="problem15"><span class="choice correct "   id="choice10">open</span> <span class="choice  "   id="choice11">not open</span> </div>
+     </dd><dt class="enumerate-enumitem">
+ (b) </dt><dd 
+class="enumerate-enumitem"><script type="math/tex">\{(x,y)\,:\,x^2+y^2\leq 1\}</script> in <script type="math/tex">\mathbb {R}^2</script> <div class="multiple-choice" id="problem16"><span class="choice  "   id="choice12">open</span> <span class="choice correct "   id="choice13">not open</span> </div>
+     </dd><dt class="enumerate-enumitem">
+ (c) </dt><dd 
+class="enumerate-enumitem"><script type="math/tex">\mathbb {R}^2</script> in <script type="math/tex">\mathbb {R}^2</script> <div class="multiple-choice" id="problem17"><span class="choice correct "   id="choice14">open</span> <span class="choice  "   id="choice15">not open</span> </div>
+     </dd><dt class="enumerate-enumitem">
+ (d) </dt><dd 
+class="enumerate-enumitem"><script type="math/tex">\emptyset </script> in <script type="math/tex">\mathbb {R}^n</script> <div class="multiple-choice" id="problem18"><span class="choice correct "   id="choice16">open</span> <span class="choice  "   id="choice17">not open</span> </div>
+     </dd><dt class="enumerate-enumitem">
+ (e) </dt><dd 
+class="enumerate-enumitem"><script type="math/tex">\{(x,y)\,:\,x\geq 0\textrm { and }y\geq 0\}</script> in <script type="math/tex">\mathbb {R}^2</script> <div class="multiple-choice" id="problem19"><span class="choice  "   id="choice18">open</span> <span class="choice correct "   id="choice19">not open</span> </div>
+     </dd><dt class="enumerate-enumitem">
+  (f) </dt><dd 
+class="enumerate-enumitem"><script type="math/tex">\{(x,y)\,:\,x<y\}</script> in <script type="math/tex">\mathbb {R}^2</script> <div class="multiple-choice" id="problem20"><span class="choice correct "   id="choice20">open</span> <span class="choice  "   id="choice21">not open</span> </div>
+     </dd></dl>
+</div>
+<!--l. 238--><p class="noindent" >We finish this section by proving an important result about open sets: that the union
+of a collection of open sets is itself an open set.
+</p>
+<div class="theorem-like problem-environment theorem" id="problem21"><a 
+ id="x1-1018r12"></a>Suppose <script type="math/tex">\{U_i\}</script> is a collection of open sets, where each <script type="math/tex">U_i</script> is open. Let <script type="math/tex">U=\bigcup U_i</script>, the union of all the <script type="math/tex">U_i</script>.
+Then <script type="math/tex">U</script> is an open set.
+</div>
+                                                                  
+
+                                                                  
+<!--l. 244--><p class="noindent" >
+</p>
+<div class="proof">
+<!--l. 245--><p class="noindent" ><span class="head">
+</p><dl class="trivlist"><dt class="trivlist">
+Proof   </dt><dd 
+class="trivlist"></span>Let <script type="math/tex">\mathbf {a}\in U</script>. We will show that <script type="math/tex">\mathbf {a}</script> is an interior point.
+<!--l. 247--><p class="noindent" >Since <script type="math/tex">\mathbf {a}\in U=\bigcup U_i</script>, there is some <script type="math/tex">i</script> such that <script type="math/tex">\mathbf {a}\in U_i</script>. Since <script type="math/tex">U_i</script> is open, there is a radius <script type="math/tex">r>0</script> such that
+<script type="math/tex">B_r(\mathbf {a})</script> is contained entirely in <script type="math/tex">U_i</script>. Then, since <script type="math/tex">U_i \subset U</script>, we have that <script type="math/tex">B_r(\mathbf {a})\subset U</script>. This shows that <script type="math/tex">\mathbf {a}</script> is an
+interior point, and that <script type="math/tex">U</script> is an open set.
+                                                                  <script type="math/tex">\blacksquare </script></p></dd></dl>
+</div>
+<h3 class="sectionHead"><a 
+ id="x1-2000"></a>Closed Sets</h3>
+<!--l. 254--><p class="noindent" >We now introduce closed sets, which are defined via their relationship to open
+sets.
+</p>
+<div class="theorem-like problem-environment definition" id="problem22"><a 
+ id="x1-2001r13"></a>A set <script type="math/tex">X\subset \mathbb {R}^n</script> is <em>closed</em> if its complement is open.
+</div>
+<!--l. 260--><p class="noindent" >Recall that the <em>complement</em> of a subset <script type="math/tex">X</script> of <script type="math/tex">\mathbb {R}^n</script> consists of the elements of <script type="math/tex">\mathbb {R}^n</script> which are not
+in <script type="math/tex">X</script>. That is, <script type="math/tex; mode=display"> \mathbb {R}^n\setminus X = X^C = \{\mathbf {x}\in \mathbb {R}^n\,:\,\mathbf {x}\in X\}. </script> <script type="math/tex">\mathbb {R}^n\setminus X</script> and <script type="math/tex">X^C</script> are both common notations for complements. <script type="math/tex">X^C</script> has the advantage
+of being succinct, while <script type="math/tex">\mathbb {R}^n\setminus X</script> has the advantage of referring to the larger set <script type="math/tex">\mathbb {R}^n</script>, which can
+help avoid confusion.
+</p><!--l. 266--><p class="noindent" >We now give a couple examples of closed sets.
+</p>
+<div class="theorem-like problem-environment example" id="problem23"><a 
+ id="x1-2002r14"></a>
+<!--l. 270--><p class="noindent" >The closed interval <script type="math/tex">[1,3]</script> is a closed set in <script type="math/tex">\mathbb {R}</script>, since its complement, <script type="math/tex">(-\infty , 1)\cup (3,\infty )</script>, is an open
+set.
+</p><!--l. 272--><p class="noindent" >The set <script type="math/tex">\{(x,y)\,:\,x^2+y^2\leq 1\}\subset \mathbb {R}^2</script>, since its complement, <script type="math/tex">\{(x,y)\,:\,x^2+y^2> 1\}</script>, is an open set.
+</p><!--l. 274--><p class="noindent" ></div>
+</p><!--l. 276--><p class="noindent" >It&#x2019;s very important to remember that, even though closed sets are defined in relation
+to open sets, “closed” is not the same as “not open”. It is possible for a set to
+be neither closed nor open, and it&#x2019;s possible for a set to be both open and
+closed.
+</p>
+<div class="theorem-like problem-environment example" id="problem24"><a 
+ id="x1-2003r15"></a>
+<!--l. 280--><p class="noindent" >The interval <script type="math/tex">[0,1)</script> in <script type="math/tex">\mathbb {R}</script> is neither closed nor open. It is not open, since <script type="math/tex">0\in [0,1)</script> is not an interior
+point. It is also not closed, because its complement, <script type="math/tex">(-\infty , 0)\cup [1,\infty )</script>, is not open (<script type="math/tex">1</script> is not an interior
+point).
+                                                                  
+
+                                                                  
+</p><!--l. 282--><p class="noindent" ><script type="math/tex">\mathbb {R}^2</script> (in <script type="math/tex">\mathbb {R}^2</script>) is both closed and open. We&#x2019;ve seen that its open, and we&#x2019;ve seen that its
+complement, <script type="math/tex">\emptyset </script>, is also open. Hence <script type="math/tex">\mathbb {R}^2</script> is both open and closed.
+</p><!--l. 284--><p class="noindent" ></div>
+</p><!--l. 286--><p class="noindent" >We&#x2019;ve used the word “boundary” to refer to the “edge” of a set. This intuitive idea is
+useful in working with example, however we do need a rigorous definition of the
+boundary of a set, which we now give.
+</p>
+<div class="theorem-like problem-environment definition" id="problem25"><a 
+ id="x1-2004r16"></a>A point <script type="math/tex">\mathbf {x}\in \mathbb {R}^n</script> is a <em>boundary point</em> of a set <script type="math/tex">X\in \mathbb {R}^n</script> if every <script type="math/tex">B_r(\mathbf {x})</script> (for <script type="math/tex">r>0</script>) contains both points in <script type="math/tex">X</script> and
+points not in <script type="math/tex">X</script>.
+<!--l. 291--><p class="noindent" >The set of all boundary points of <script type="math/tex">X</script> is called the <em>boundary</em> of <script type="math/tex">X</script>.
+</div>
+</p>
+<div class="theorem-like problem-environment example" id="problem26"><a 
+ id="x1-2005r17"></a>
+<!--l. 296--><p class="noindent" >The boundary of <script type="math/tex">\{(x,y)\,:\,x^2+y^2<1\}\subset \mathbb {R}^2</script> is <script type="math/tex">\{(x,y)\,:\,x^2+y^2=1\}</script>.
+</p><!--l. 298--><p class="noindent" >The boundary of the interval <script type="math/tex">(0,1]\subset \mathbb {R}</script> is <script type="math/tex">\{0,1\}</script>.
+</p><!--l. 300--><p class="noindent" ></div>
+</p><!--l. 302--><p class="noindent" >From working with examples of open and closed sets, you may have guessed that
+closed sets tend to contain their boundary points, while open sets do not. This is
+supported by the following theorem.
+</p>
+<div class="theorem-like problem-environment theorem" id="problem27"><a 
+ id="x1-2006r18"></a>A set <script type="math/tex">X\subset \mathbb {R}^n</script> is closed if and only if it contains all of its boundary points.
+</div>
+<!--l. 308--><p class="noindent" >
+</p>
+<div class="proof">
+<!--l. 309--><p class="noindent" ><span class="head">
+</p><dl class="trivlist"><dt class="trivlist">
+Proof   </dt><dd 
+class="trivlist"></span>If <script type="math/tex">X</script> is closed, then its complement <script type="math/tex">X^C</script> is open. Consider a boundary point
+<script type="math/tex">x</script> of <script type="math/tex">X</script>. For any radius <script type="math/tex">r>0</script>, <script type="math/tex">B_r(x)</script> contains points in <script type="math/tex">X</script> and points in <script type="math/tex">X^C</script>. Since <script type="math/tex">X^C</script> is open, this
+means that <script type="math/tex">x\notin X^C</script>. Thus <script type="math/tex">x\in X</script>, as desired.
+<!--l. 311--><p class="noindent" >Working in the other direction, suppose that <script type="math/tex">X</script> contains all of its boundary points.
+We will show that the complement of <script type="math/tex">X</script>, <script type="math/tex">X^C</script>, is open. Let <script type="math/tex">x\in X^C</script>. Since <script type="math/tex">x</script> is not a boundary
+point of <script type="math/tex">X</script>, and any open ball centered at <script type="math/tex">x</script> contains at least one point not in <script type="math/tex">X</script>
+(namely, <script type="math/tex">x</script>), there must be an open ball <script type="math/tex">B_r(x)</script> with <script type="math/tex">r>0</script> containing no points in <script type="math/tex">X</script>. Then <script type="math/tex">B_r(x)\subset X^C</script>.
+This shows that <script type="math/tex">X^C</script> is open, and hence <script type="math/tex">X</script> is closed.                                           <script type="math/tex">\blacksquare </script></p></dd></dl>
+</div>
+<div role="article" class="problem-environment problem" id="problem28"><a 
+ id="x1-2007r19"></a>
+<!--l. 316--><p class="noindent" >For each of the following, determine if the set is open, closed, both, or neither.
+                                                                  
+
+                                                                  
+     </p><dl class="enumerate-enumitem"><dt class="enumerate-enumitem">
+ (a) </dt><dd 
+class="enumerate-enumitem"><script type="math/tex">\{(x,y)\,:\,x^2+y^2>1\}</script> in <script type="math/tex">\mathbb {R}^2</script> <div class="multiple-choice" id="problem29"><span class="choice correct "   id="choice22">open</span> <span class="choice  "   id="choice23">closed</span> <span class="choice  "   id="choice24">both open and closed</span> <span class="choice  "   id="choice25">neither open nor closed</span> </div>
+     </dd><dt class="enumerate-enumitem">
+ (b) </dt><dd 
+class="enumerate-enumitem"><script type="math/tex">\{(x,y)\,:\,x^2+y^2\leq 1\}</script> in <script type="math/tex">\mathbb {R}^2</script> <div class="multiple-choice" id="problem30"><span class="choice  "   id="choice26">open</span> <span class="choice correct "   id="choice27">closed</span> <span class="choice  "   id="choice28">both open and closed</span> <span class="choice  "   id="choice29">neither open nor closed</span> </div>
+     </dd><dt class="enumerate-enumitem">
+ (c) </dt><dd 
+class="enumerate-enumitem"><script type="math/tex">\mathbb {R}^2</script> in <script type="math/tex">\mathbb {R}^2</script> <div class="multiple-choice" id="problem31"><span class="choice  "   id="choice30">open</span> <span class="choice  "   id="choice31">closed</span> <span class="choice correct "   id="choice32">both open and closed</span> <span class="choice  "   id="choice33">neither open nor closed</span> </div>
+     </dd><dt class="enumerate-enumitem">
+ (d) </dt><dd 
+class="enumerate-enumitem"><script type="math/tex">\emptyset </script> in <script type="math/tex">\mathbb {R}^n</script> <div class="multiple-choice" id="problem32"><span class="choice  "   id="choice34">open</span> <span class="choice  "   id="choice35">closed</span> <span class="choice correct "   id="choice36">both open and closed</span> <span class="choice  "   id="choice37">neither open nor closed</span> </div>
+     </dd><dt class="enumerate-enumitem">
+ (e) </dt><dd 
+class="enumerate-enumitem"><script type="math/tex">\{(x,y)\,:\,x> 0\textrm { and }y\geq 0\}</script> in <script type="math/tex">\mathbb {R}^2</script> <div class="multiple-choice" id="problem33"><span class="choice  "   id="choice38">open</span> <span class="choice  "   id="choice39">closed</span> <span class="choice  "   id="choice40">both open and closed</span> <span class="choice correct "   id="choice41">neither open nor closed</span> </div>
+     </dd><dt class="enumerate-enumitem">
+  (f) </dt><dd 
+class="enumerate-enumitem"><script type="math/tex">\{(x,y)\,:\,x\leq y\}</script> in <script type="math/tex">\mathbb {R}^2</script> <div class="multiple-choice" id="problem34"><span class="choice  "   id="choice42">open</span> <span class="choice correct "   id="choice43">closed</span> <span class="choice  "   id="choice44">both open and closed</span> <span class="choice  "   id="choice45">neither open nor closed</span>
+     </div>
+     </dd></dl>
+</div>
+<h3 class="sectionHead"><a 
+ id="x1-3000"></a>Connected Sets</h3>
+<!--l. 367--><p class="noindent" >We now define what it means for a set to be path-connected. This is generally
+consistent with your intuitive idea of what “connected” should mean, but we are now
+able to make this mathematically rigorous.
+</p>
+<div class="theorem-like problem-environment definition" id="problem35"><a 
+ id="x1-3001r20"></a>A set <script type="math/tex">X\subset \mathbb {R}^n</script> is path-connected if any two points can be connected by a path which lies
+entirely in <script type="math/tex">X</script>.
+</div>
+<div role="article" class="problem-environment problem" id="problem36"><a 
+ id="x1-3002r21"></a>
+<!--l. 375--><p class="noindent" >For each of the following sets, determine whether or not they are path-connected.
+     </p><dl class="enumerate-enumitem"><dt class="enumerate-enumitem">
+ (a) </dt><dd 
+class="enumerate-enumitem"><div class="image-environment" role="img" aria-labelledby="image-alt-2">  <img 
+src="./topology-figure1.svg" alt=""  
+ />
+     </div>
+                                                                  
+
+                                                                  
+     <div class="multiple-choice" id="problem37"><span class="choice correct "   id="choice46">path-connected</span> <span class="choice  "   id="choice47">not path-connected</span> </div>
+     </dd><dt class="enumerate-enumitem">
+ (b) </dt><dd 
+class="enumerate-enumitem"><div class="image-environment" role="img" aria-labelledby="image-alt-3">  <img 
+src="./topology-figure2.svg" alt=""  
+ />
+     </div>
+     <div class="multiple-choice" id="problem38"><span class="choice correct "   id="choice48">path-connected</span> <span class="choice  "   id="choice49">not path-connected</span> </div>
+     </dd><dt class="enumerate-enumitem">
+ (c) </dt><dd 
+class="enumerate-enumitem"><div class="image-environment" role="img" aria-labelledby="image-alt-4">  <img 
+src="./topology-figure3.svg" alt=""  
+ />
+     </div>
+     <div class="multiple-choice" id="problem39"><span class="choice  "   id="choice50">path-connected</span> <span class="choice correct "   id="choice51">not path-connected</span> </div>
+     </dd></dl>
+</div>
+<h3 class="sectionHead"><a 
+ id="x1-4000"></a>Simply Connected Sets</h3>
+<!--l. 410--><p class="noindent" >The last topological concept we will cover is when a path-connected set
+is “simply connected.” Intuitively, this depends on whether or not the set
+has holes. Our definition for simply connected is a bit hand wavy, but this
+will serve our purpose just fine. It can be made rigorous using continuous
+maps.
+</p>
+<div class="theorem-like problem-environment definition" id="problem40"><a 
+ id="x1-4001r22"></a>A path-connected set <script type="math/tex">X\subset \mathbb {R}^n</script> is <em>simply connected</em> if any closed path (i.e., loop) can be
+shrunk to a point, where the shrinking occurs entirely in <script type="math/tex">X</script>.
+</div>
+<!--l. 418--><p class="noindent" >Note that a set needs to be path-connected in order to be considered simply
+connected.
+</p>
+<div role="article" class="problem-environment problem" id="problem41"><a 
+ id="x1-4002r23"></a>
+<!--l. 422--><p class="noindent" >For each of the following sets, determine whether or not they are simply
+connected.
+     </p><dl class="enumerate-enumitem"><dt class="enumerate-enumitem">
+ (a) </dt><dd 
+class="enumerate-enumitem"><script type="math/tex">\mathbb {R}^2\setminus \{(0,0)\}</script>
+     <div class="image-environment" role="img" aria-labelledby="image-alt-5">  <img 
+src="./topology-figure4.svg" alt=""  
+ />
+     </div>
+     <div class="multiple-choice" id="problem42"><span class="choice  "   id="choice52">simply connected</span> <span class="choice correct "   id="choice53">not simply connected</span> </div>
+     </dd><dt class="enumerate-enumitem">
+ (b) </dt><dd 
+class="enumerate-enumitem"><script type="math/tex">\mathbb {R}^2</script>
+                                                                  
+
+                                                                  
+     <div class="image-environment" role="img" aria-labelledby="image-alt-6">  <img 
+src="./topology-figure5.svg" alt=""  
+ />
+     </div>
+     <div class="multiple-choice" id="problem43"><span class="choice correct "   id="choice54">simply connected</span> <span class="choice  "   id="choice55">not simply connected</span> </div>
+     </dd><dt class="enumerate-enumitem">
+ (c) </dt><dd 
+class="enumerate-enumitem"><script type="math/tex">\{(x,y,z)\,:\,x^2+y^2+z^2=1\}</script>
+     <div class="image-environment" role="img" aria-labelledby="image-alt-7">  <img 
+src="./topology-figure6.svg" alt=""  
+ />
+     </div>
+     <div class="multiple-choice" id="problem44"><span class="choice correct "   id="choice56">simply connected</span> <span class="choice  "   id="choice57">not simply connected</span> </div>
+     </dd><dt class="enumerate-enumitem">
+ (d) </dt><dd 
+class="enumerate-enumitem">A torus (the surface of a donut)
+     <div class="image-environment" role="img" aria-labelledby="image-alt-8">  <img 
+src="./topology-figure7.svg" alt=""  
+ />
+     </div>
+     <div class="multiple-choice" id="problem45"><span class="choice  "   id="choice58">simply connected</span> <span class="choice correct "   id="choice59">not simply connected</span> </div>
+     </dd></dl>
+</div>
+<h3 class="sectionHead"><a 
+ id="x1-5000"></a>Summary</h3>
+<!--l. 519--><p class="noindent" >In this activity, we introduced the following topological terms. </p>
+     <ul class="itemize1">
+     <li class="itemize">open ball
+     </li>
+     <li class="itemize">open set
+     </li>
+     <li class="itemize">interior point
+     </li>
+     <li class="itemize">closed set
+     </li>
+     <li class="itemize">boundary point
+     </li>
+     <li class="itemize">boundary of a set
+     </li>
+     <li class="itemize">path-connected
+                                                                  
+
+                                                                  
+     </li>
+     <li class="itemize">simply connected</li></ul>
+<!--l. 531--><p class="noindent" >We also established the following results. </p>
+     <ul class="itemize1">
+     <li class="itemize">The union of a collection of open sets is itself open.
+     </li>
+     <li class="itemize">A set is closed if and only if it contains all of its boundary points.</li></ul>
+<!--l. 537--><p class="noindent" >These terms will allow us to correctly state some theorems about vector fields, which
+have special requirements on the domain. These theorems will be covered in the next
+two activities.
+</body> 
+ 
+</html>
+                                                                  
+
+                                                                  
+                                                                  
+
+

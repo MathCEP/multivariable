@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  16 AUG 2018 13:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  21 AUG 2018 20:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -982,30 +982,31 @@ LaTeX Warning: No \author given.
 [1
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./multivariable.toc)
-\tf@toc=\write10
-\openout10 = `multivariable.toc'.
-
- [2
-
-] (./auto_generated_text/Week0Review/ch0_vectors.tex
-LaTeX Font Info:    Try loading font information for U+msa on input line 9.
+(./multivariable.toc
+LaTeX Font Info:    Try loading font information for U+msa on input line 2.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 9.
+LaTeX Font Info:    Try loading font information for U+msb on input line 2.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
+) [2
+
+] [3])
+\tf@toc=\write10
+\openout10 = `multivariable.toc'.
+
+
+[4] (./auto_generated_text/Week0Review/ch0_vectors.tex
 
 LaTeX Warning: No \author given.
 
-[3
+[5
 
 
-] [4] [5] [6] [7] [8]
+] [6] [7] [8] [9] [10]
 Overfull \hbox (5.77017pt too wide) in paragraph at lines 368--369
 [][]\OT1/cmr/bx/n/10 Definition 6. []\OT1/cmr/m/it/10 The vec-tors $[] \OT1/cmr
 /m/n/10 = (1\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 ; :::\OT1/cmr/
@@ -1015,13 +1016,13 @@ m/n/10 0)$\OT1/cmr/m/it/10 , ..., $[] \OT1/cmr/m/n/10 = (0\OML/cmm/m/it/10 ; ::
 :; \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1)$
  []
 
-) [9] [10] (./auto_generated_text/Week0Review/ch0_dotProd.tex
+) [11] [12] (./auto_generated_text/Week0Review/ch0_dotProd.tex
 
 LaTeX Warning: No \author given.
 
-[11
+[13
 
-] [12]) [13] (./auto_generated_text/Week0Review/ch0_crossProd.tex
+] [14]) [15] (./auto_generated_text/Week0Review/ch0_crossProd.tex
 
 LaTeX Warning: No \author given.
 
@@ -1030,7 +1031,7 @@ Overfull \hbox (11.66574pt too wide) in paragraph at lines 42--42
 [] 
  []
 
-[14
+[16
 
 ]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 66.
@@ -1039,12 +1040,12 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 66.
- [15]
-[16] [17]) [18] (./auto_generated_text/Week0Review/ch0_matrices.tex
+ [17]
+[18] [19]) [20] (./auto_generated_text/Week0Review/ch0_matrices.tex
 
 LaTeX Warning: No \author given.
 
-[19
+[21
 
 ]
 Overfull \hbox (24.78291pt too wide) in paragraph at lines 71--72
@@ -1060,10 +1061,10 @@ es $\OML/cmm/m/it/10 A \OT1/cmr/m/n/10 = []$ \OT1/cmr/m/it/10 and $\OML/cmm/m/i
 t/10 B \OT1/cmr/m/n/10 = []$\OT1/cmr/m/it/10 ,
  []
 
-[20]
+[22]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 140.
- [21]
+ [23]
 Overfull \hbox (175.37045pt too wide) detected at line 170
 \OML/cmm/m/it/10 AB \OT1/cmr/m/n/10 = [] \OML/cmm/m/it/10 :
  []
@@ -1075,7 +1076,7 @@ t $\OML/cmm/m/it/10 AB$ \OT1/cmr/m/it/10 of the ma-tri-ces $\OML/cmm/m/it/10 A
 \OT1/cmr/m/n/10 = []$
  []
 
-[22] [23] [24]
+[24] [25] [26]
 Overfull \hbox (11.37776pt too wide) in paragraph at lines 281--281
 [] 
  []
@@ -1085,7 +1086,7 @@ Overfull \hbox (61.0876pt too wide) in paragraph at lines 348--348
 [] 
  []
 
-[25] [26]
+[27] [28]
 Overfull \hbox (295.00049pt too wide) detected at line 384
 []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 A\OT1/cmr/m/n/10 ) = (\OMS/cmsy/m/n/10 ^^@\
 OT1/cmr/m/n/10 1)[](4)[] [] + (\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 1)[](0)[] []
@@ -1103,20 +1104,20 @@ Overfull \hbox (308.3335pt too wide) in paragraph at lines 398--398
 [] 
  []
 
-[27] [28] [29] [30]) [31] (./auto_generated_text/Week0Review/ch0_planes.tex
+[29] [30] [31] [32]) [33] (./auto_generated_text/Week0Review/ch0_planes.tex
 
 LaTeX Warning: No \author given.
 
-[32
+[34
 
-]) [33] (./auto_generated_text/Week0Review/all_problems.tex
+]) [35] (./auto_generated_text/Week0Review/all_problems.tex
 
 LaTeX Warning: No \author given.
 
 \c@depthICount=\count198
-[34
+[36
 
-] [35] [36]
+] [37] [38]
 Overfull \hbox (30.88945pt too wide) in paragraph at lines 155--156
 []\OT1/cmr/m/sl/10 Compute the an-gle be-tween the vec-tors $\OT1/cmr/m/n/10 (2
 \OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 3\OML/cm
@@ -1126,24 +1127,24 @@ sl/10 and $\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 3\OML/cmm/m/it/
 T1/cmr/m/n/10 1\OML/cmm/m/it/10 ; \OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 2)$
  []
 
-[37]
+[39]
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/sl' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 182.
 
 \c@depthIICount=\count199
-[38]
+[40]
 Overfull \hbox (3.3619pt too wide) in paragraph at lines 241--242
 []\OT1/cmr/m/sl/10 Compute the vol-ume of the par-al-lelepiped de-ter-mined by 
 $\OT1/cmr/m/n/10 (1\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 6\OML/cmm/m/it/10 ; \OT1/
 cmr/m/n/10 2)$\OT1/cmr/m/sl/10 ,
  []
 
-[39] [40]) [41] (./auto_generated_text/Week1CoordinateSystems/review.tex
+[41] [42]) [43] (./auto_generated_text/Week1CoordinateSystems/review.tex
 
 LaTeX Warning: No \author given.
 
-[42
+[44
 
 ]
 Overfull \hbox (2.73442pt too wide) in paragraph at lines 47--48
@@ -1152,36 +1153,376 @@ cmm/m/it/10 r$\OT1/cmr/m/n/10 -coordinate and a $\OML/cmm/m/it/10 ^^R$\OT1/cmr/
 m/n/10 -coordinate.
  []
 
-[43] [44] [45] [46] [47]
-LaTeX Font Info:    Try loading font information for U+euf on input line 240.
+[45] [46] [47] [48] [49]
+LaTeX Font Info:    Try loading font information for U+euf on input line 248.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
-) [48] [49]
-[50]) [51] (./auto_generated_text/Week1CoordinateSystems/cylindrical_coords.tex
+) [50] [51]
+[52]) [53] (./auto_generated_text/Week1CoordinateSystems/cylindrical_coords.tex
 
 LaTeX Warning: No \author given.
 
-[52
+[54
 
-] [53]) [54]
-(./auto_generated_text/Week1CoordinateSystems/spherical_coords.tex
+] [55] [56]
+
+! LaTeX Error: File `theta_constant' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.127 \end{image}
+                 
+I could not locate the file with any of these extensions:
+.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package graphics Error: Division by 0.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.127 \end{image}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: File `z_constant' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.135 \end{image}
+                 
+I could not locate the file with any of these extensions:
+.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package graphics Error: Division by 0.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.135 \end{image}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[57]
+
+! LaTeX Error: File `half_sphere' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.164 \end{image}
+                 
+I could not locate the file with any of these extensions:
+.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package graphics Error: Division by 0.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.164 \end{image}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: File `cylinder_100' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.200 \end{image}
+                 
+I could not locate the file with any of these extensions:
+.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package graphics Error: Division by 0.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.200 \end{image}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[58]) [59] (./auto_generated_text/Week1CoordinateSystems/spherical_coords.tex
 
 LaTeX Warning: No \author given.
 
-) [55
+
+! LaTeX Error: File `spherical' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 \end{image}
+                
+I could not locate the file with any of these extensions:
+.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package graphics Error: Division by 0.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 \end{image}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: File `011' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 \end{image}
+                
+I could not locate the file with any of these extensions:
+.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package graphics Error: Division by 0.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 \end{image}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[60
 
 ]
+
+! LaTeX Error: File `rho_constant' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.79 \end{image}
+                
+I could not locate the file with any of these extensions:
+.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package graphics Error: Division by 0.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.79 \end{image}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[61]
+
+! LaTeX Error: File `theta_constant' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.85 \end{image}
+                
+I could not locate the file with any of these extensions:
+.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package graphics Error: Division by 0.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.85 \end{image}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: File `phi_constant' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.93 \end{image}
+                
+I could not locate the file with any of these extensions:
+.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package graphics Error: Division by 0.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.93 \end{image}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: File `cone' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.99 \end{image}
+                
+I could not locate the file with any of these extensions:
+.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package graphics Error: Division by 0.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.99 \end{image}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[62]
+
+! LaTeX Error: File `elliptic_hyper' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.125 \end{image}
+                 
+I could not locate the file with any of these extensions:
+.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package graphics Error: Division by 0.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.125 \end{image}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: File `ice_cream' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.152 \end{image}
+                 
+I could not locate the file with any of these extensions:
+.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package graphics Error: Division by 0.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.152 \end{image}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 155.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 155.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 155.
+
+[63]) [64]
 (./auto_generated_text/Week27ConservativeVectorFieldsandTopology/topology.tex
-[56
+[65
 
-] [57] [58] [59] [60] [61] [62] [63] [64] [65] [66]) [67]
+] [66] [67] [68] [69] [70] [71] [72] [73] [74] [75]) [76]
 (./auto_generated_text/Week27ConservativeVectorFieldsandTopology/cons_vf_top.te
-x [68
+x [77
 
-] [69] [70] [71] [72] [73]
+] [78] [79] [80] [81] [82]
 Overfull \hbox (10.04654pt too wide) in paragraph at lines 238--239
-[][]\OT1/cmr/bx/n/10 Example 33. []\OT1/cmr/m/it/10 Let $[]\OT1/cmr/m/n/10 (\OM
+[][]\OT1/cmr/bx/n/10 Example 38. []\OT1/cmr/m/it/10 Let $[]\OT1/cmr/m/n/10 (\OM
 L/cmm/m/it/10 x; y\OT1/cmr/m/n/10 ) = (2\OML/cmm/m/it/10 xy[]; \OT1/cmr/m/n/10 
 2\OML/cmm/m/it/10 x[]y\OT1/cmr/m/n/10 )$\OT1/cmr/m/it/10 , and con-sider $[]\OT
 1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) = (2 [](\OML/cmm/m/it/10 ^^Yt
@@ -1194,22 +1535,22 @@ Overfull \hbox (28.51959pt too wide) in paragraph at lines 247--247
 [] 
  []
 
-[74] [75]) [76]
+[83] [84]) [85]
 (./auto_generated_text/Week27ConservativeVectorFieldsandTopology/cons_vf.tex
-[77
+[86
 
 ]
 Overfull \hbox (3.72144pt too wide) in paragraph at lines 73--74
-[][]\OT1/cmr/bx/n/10 Example 35. []\OT1/cmr/m/it/10 Find a po-ten-tial func-tio
+[][]\OT1/cmr/bx/n/10 Example 40. []\OT1/cmr/m/it/10 Find a po-ten-tial func-tio
 n for the vec-tor field $\OT1/cmr/bx/n/10 F\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x;
  y; z\OT1/cmr/m/n/10 ) = (2\OML/cmm/m/it/10 xy; x[] \OT1/cmr/m/n/10 +
  []
 
-[78] [79] [80] [81] [82]) [83]
+[87] [88] [89] [90] [91]) [92]
 (./auto_generated_text/Week27ConservativeVectorFieldsandTopology/all_problems.t
-ex [84
+ex [93
 
-]) [85] (./auto_generated_text/Week29Curl/curl_comp.tex [86
+]) [94] (./auto_generated_text/Week29Curl/curl_comp.tex [95
 
 ]
 \c@depthIIICount=\count266
@@ -1220,7 +1561,7 @@ Overfull \hbox (17.33391pt too wide) in paragraph at lines 55--56
 /m/sl/10 should mean $[]$.
  []
 
-[87]
+[96]
 Overfull \hbox (107.87029pt too wide) in paragraph at lines 96--97
 [][]\OT1/cmr/bx/n/10 Definition 27. []\OT1/cmr/m/it/10 The \OT1/cmr/m/n/10 curl
  \OT1/cmr/m/it/10 of a three-dimensional vec-tor field $\OT1/cmr/bx/n/10 F\OT1/
@@ -1230,7 +1571,7 @@ cmr/m/n/10 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; P\OT1/c
 mr/m/n/10 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 ))$
  []
 
-[88] [89]
+[97] [98]
 Overfull \hbox (34.7304pt too wide) in paragraph at lines 183--184
 []\OT1/cmr/m/n/10 For a three-dimensional vec-tor field, $\OT1/cmr/bx/n/10 F\OT
 1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 ) = (\OML/cmm/m/it/10 M\O
@@ -1239,16 +1580,16 @@ T1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; N\OT
 /cmr/m/n/10 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 ))$,
  []
 
-) [90] (./auto_generated_text/Week29Curl/curl_geo.tex [91
+) [99] (./auto_generated_text/Week29Curl/curl_geo.tex [100
 
-] [92]
+] [101]
 Overfull \hbox (1.66492pt too wide) in paragraph at lines 176--177
 []\OT1/cmr/m/n/10 Note that this cor-re-sponds to a larger value of $\OML/cmm/m
 /it/10 N[]$ \OT1/cmr/m/n/10 (the change in the $\OML/cmm/m/it/10 y$\OT1/cmr/m/n
 /10 -component
  []
 
-[93] [94]
+[102] [103]
 Overfull \hbox (1.5896pt too wide) in paragraph at lines 223--223
 |\OT1/cmr/bx/n/14.4 Geometric Sig-nif-i-cance of Three-dimensional Curl| 
  []
@@ -1264,16 +1605,16 @@ Overfull \hbox (23.36295pt too wide) in paragraph at lines 252--253
 0 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 ) = []$\OT1/cmr/m/sl/10 .
  []
 
-[95] [96]) [97] (./auto_generated_text/Week29Curl/curl_connect.tex
+[104] [105]) [106] (./auto_generated_text/Week29Curl/curl_connect.tex
 Overfull \hbox (2.06386pt too wide) in paragraph at lines 35--36
 []\OT1/cmr/m/n/10 Now, we will use Clairaut's The-o-rem to sim-plify this vec-t
 or. Since $\OT1/cmr/bx/n/10 F \OT1/cmr/m/n/10 = (\OML/cmm/m/it/10 M; N; P\OT1/c
 mr/m/n/10 )$
  []
 
-[98
+[107
 
-] [99]) [100] (./auto_generated_text/Week29Curl/online_hw.tex
+] [108]) [109] (./auto_generated_text/Week29Curl/online_hw.tex
 Overfull \hbox (56.78523pt too wide) in paragraph at lines 9--10
 []\OT1/cmr/m/sl/10 Compute the curl of the vec-tor field $\OT1/cmr/bx/n/10 F\OT
 1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 ) = (\OMS/cmsy/m/n/10 ^^@
@@ -1283,9 +1624,9 @@ cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 3\OML/cmm/m/it/10 x []\OT1/cmr/m
 \OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 0)$\OT1/cmr/m/sl/10 . 
  []
 
-[101
+[110
 
-] [102] [103]
+] [111] [112]
 Overfull \hbox (21.5931pt too wide) in paragraph at lines 136--137
 []\OT1/cmr/m/sl/10 Compute the curl of the vec-tor field $\OT1/cmr/bx/n/10 F\OT
 1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y\OT1/cmr/m/n/10 ) = (\OMS/cmsy/m/n/10 ^^@\OT
@@ -1294,9 +1635,9 @@ r/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; []\OT1/cmr/m/n/
 10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ))$\OT1/cmr/m/sl/10 . 
  []
 
-[104]) [105] (./auto_generated_text/Week29Curl/written_hw.tex [106
+[113]) [114] (./auto_generated_text/Week29Curl/written_hw.tex [115
 
-]) [107]
+]) [116]
 (./auto_generated_text/Week29Curl/all_problems.tex
 Overfull \hbox (12.8963pt too wide) in paragraph at lines 44--45
 []\OT1/cmr/m/sl/10 Compute the curl of the vec-tor field $\OT1/cmr/bx/n/10 F\OT
@@ -1305,9 +1646,9 @@ x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 y\OT1/
 cmr/m/n/10 )\OML/cmm/m/it/10 ; xy\OT1/cmr/m/n/10 )$\OT1/cmr/m/sl/10 . 
  []
 
-[108
+[117
 
-] [109] [110] [111]
+] [118] [119] [120]
 Overfull \hbox (56.78523pt too wide) in paragraph at lines 190--191
 []\OT1/cmr/m/sl/10 Compute the curl of the vec-tor field $\OT1/cmr/bx/n/10 F\OT
 1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 ) = (\OMS/cmsy/m/n/10 ^^@
@@ -1317,7 +1658,7 @@ cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 3\OML/cmm/m/it/10 x []\OT1/cmr/m
 \OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 0)$\OT1/cmr/m/sl/10 . 
  []
 
-[112]
+[121]
 Overfull \hbox (64.95425pt too wide) in paragraph at lines 210--211
 []\OT1/cmr/m/sl/10 Compute the curl of the vec-tor field $\OT1/cmr/bx/n/10 F\OT
 1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 ) = (\OML/cmm/m/it/10 ze[
@@ -1326,7 +1667,7 @@ Overfull \hbox (64.95425pt too wide) in paragraph at lines 210--211
 \OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ))$\OT1/cmr/m/sl/10 . 
  []
 
-[113]
+[122]
 Overfull \hbox (21.5931pt too wide) in paragraph at lines 270--271
 []\OT1/cmr/m/sl/10 Compute the curl of the vec-tor field $\OT1/cmr/bx/n/10 F\OT
 1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y\OT1/cmr/m/n/10 ) = (\OMS/cmsy/m/n/10 ^^@\OT
@@ -1335,7 +1676,7 @@ r/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; []\OT1/cmr/m/n/
 10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ))$\OT1/cmr/m/sl/10 . 
  []
 
-[114] [115]
+[123] [124]
 Overfull \hbox (55.88019pt too wide) in paragraph at lines 336--337
 []\OT1/cmr/m/sl/10 Compute the curl of the vec-tor field $\OT1/cmr/bx/n/10 F\OT
 1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 ) = (\OML/cmm/m/it/10 ye[
@@ -1344,7 +1685,7 @@ Overfull \hbox (55.88019pt too wide) in paragraph at lines 336--337
 1/cmr/m/n/10 ))$\OT1/cmr/m/sl/10 . 
  []
 
-[116] [117]) [118]
+[125] [126]) [127]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 40.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 40.
  (./multivariable.aux)
@@ -1357,19 +1698,19 @@ Package rerunfilecheck Warning: File `multivariable.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `multivariable.out':
-(rerunfilecheck)             Before: A0A3A61921DD1F21EF22E8B792CC7DB8;157
-(rerunfilecheck)             After:  9E693FE6C84BBB8154A2BEDF11B75625;4914.
+(rerunfilecheck)             Before: FD65BD7ABB5CAD2F7BB01998CA97657F;5293
+(rerunfilecheck)             After:  9FC573DC7A44C2EC11C31078B07BAB12;5519.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 40.
  ) 
 Here is how much of TeX's memory you used:
- 29798 strings out of 493014
- 683346 string characters out of 6133351
- 844969 words of memory out of 5000000
- 32103 multiletter control sequences out of 15000+600000
- 21955 words of font info for 80 fonts, out of 8000000 for 9000
+ 29942 strings out of 493014
+ 684946 string characters out of 6133351
+ 844981 words of memory out of 5000000
+ 32189 multiletter control sequences out of 15000+600000
+ 23438 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,20n,81p,772b,986s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
@@ -1402,10 +1743,10 @@ t/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2016/texmf-dist
 st/fonts/type1/public/amsfonts/euler/eufm7.pfb></usr/local/texlive/2016/texmf-d
 ist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2016/tex
 mf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on multivariable.pdf (118 pages, 583871 bytes).
+Output written on multivariable.pdf (127 pages, 614606 bytes).
 PDF statistics:
- 1319 PDF objects out of 1440 (max. 8388607)
- 1154 compressed objects within 12 object streams
- 613 named destinations out of 1000 (max. 500000)
- 55 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1718 PDF objects out of 1728 (max. 8388607)
+ 1540 compressed objects within 16 object streams
+ 646 named destinations out of 1000 (max. 500000)
+ 703 words of extra memory for PDF output out of 10000 (max. 10000000)
 

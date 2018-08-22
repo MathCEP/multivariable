@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=latex 2016.5.22)  16 AUG 2018 13:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=latex 2016.5.22)  16 AUG 2018 13:58
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1620,10 +1620,10 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 404.
 Here is how much of TeX's memory you used:
  34178 strings out of 493015
  750960 string characters out of 6133377
- 1061304 words of memory out of 5000000
+ 1061310 words of memory out of 5000000
  36959 multiletter control sequences out of 15000+600000
  6187 words of font info for 26 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,5n,79p,1247b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,5n,79p,1250b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on all_problems.dvi (5 pages, 32728 bytes).
+Output written on all_problems.dvi (5 pages, 32732 bytes).

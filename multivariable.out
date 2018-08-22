@@ -37,42 +37,51 @@
 \BOOKMARK [1][-]{section*.35}{Conclusion}{part.2}% 37
 \BOOKMARK [1][-]{section*.36}{Cylindrical Coordinates}{part.2}% 38
 \BOOKMARK [1][-]{section*.37}{Cylindrical Coordinates}{part.2}% 39
-\BOOKMARK [1][-]{section*.38}{Converting between Cartesian and cylindrical coordinates}{part.2}% 40
-\BOOKMARK [1][-]{section*.39}{Spherical Coordinates}{part.2}% 41
-\BOOKMARK [0][-]{part.3}{III Week 27: Conservative Vector Fields and Topology}{}% 42
-\BOOKMARK [1][-]{section*.40}{Topology}{part.3}% 43
-\BOOKMARK [1][-]{section*.41}{Open Sets}{part.3}% 44
-\BOOKMARK [1][-]{section*.42}{Closed Sets}{part.3}% 45
-\BOOKMARK [1][-]{section*.43}{Connected Sets}{part.3}% 46
-\BOOKMARK [1][-]{section*.44}{Simply Connected Sets}{part.3}% 47
-\BOOKMARK [1][-]{section*.45}{Summary}{part.3}% 48
-\BOOKMARK [1][-]{section*.46}{Path Independence and FTLI}{part.3}% 49
-\BOOKMARK [1][-]{section*.47}{Path Independence}{part.3}% 50
-\BOOKMARK [1][-]{section*.48}{Fundamental Theorem of Line Integrals}{part.3}% 51
-\BOOKMARK [1][-]{section*.49}{Strategies for Computing Line Integrals}{part.3}% 52
-\BOOKMARK [1][-]{section*.50}{Summary}{part.3}% 53
-\BOOKMARK [1][-]{section*.51}{Conservative Vector Fields}{part.3}% 54
-\BOOKMARK [1][-]{section*.52}{Finding a Potential Function}{part.3}% 55
-\BOOKMARK [1][-]{section*.53}{Summary}{part.3}% 56
-\BOOKMARK [1][-]{section*.54}{Practice Problems}{part.3}% 57
-\BOOKMARK [1][-]{section*.55}{Online Problems}{part.3}% 58
-\BOOKMARK [1][-]{section*.56}{Written Problems}{part.3}% 59
-\BOOKMARK [0][-]{part.4}{IV Week 29: Curl}{}% 60
-\BOOKMARK [1][-]{section*.57}{Curl of a Vector Field}{part.4}% 61
-\BOOKMARK [1][-]{section*.58}{Definition of Curl}{part.4}% 62
-\BOOKMARK [1][-]{section*.59}{Summary}{part.4}% 63
-\BOOKMARK [1][-]{section*.60}{Geometric Significance of Curl}{part.4}% 64
-\BOOKMARK [1][-]{section*.61}{Geometric Significance of Two-dimensional Curl}{part.4}% 65
-\BOOKMARK [1][-]{section*.62}{Geometric Significance of Three-dimensional Curl}{part.4}% 66
-\BOOKMARK [1][-]{section*.63}{Summary}{part.4}% 67
-\BOOKMARK [1][-]{section*.64}{Connections of Curl with Older Material}{part.4}% 68
-\BOOKMARK [1][-]{section*.65}{Curl of a Conservative Vector Field}{part.4}% 69
-\BOOKMARK [1][-]{section*.66}{Curl and Green's Theorem}{part.4}% 70
-\BOOKMARK [1][-]{section*.67}{Summary}{part.4}% 71
-\BOOKMARK [1][-]{section*.68}{Online Homework}{part.4}% 72
-\BOOKMARK [1][-]{section*.69}{Written Homework}{part.4}% 73
-\BOOKMARK [1][-]{section*.70}{Written Homework}{part.4}% 74
-\BOOKMARK [1][-]{section*.71}{Professional Problem}{part.4}% 75
-\BOOKMARK [1][-]{section*.72}{Practice Problems}{part.4}% 76
-\BOOKMARK [1][-]{section*.73}{Online Problems}{part.4}% 77
-\BOOKMARK [1][-]{section*.74}{Written Problems}{part.4}% 78
+\BOOKMARK [1][-]{section*.38}{Uniqueness}{part.2}% 40
+\BOOKMARK [1][-]{section*.39}{Constant-Coordinate Surfaces}{part.2}% 41
+\BOOKMARK [1][-]{section*.40}{Converting between Cartesian and cylindrical coordinates}{part.2}% 42
+\BOOKMARK [1][-]{section*.41}{Conclusion}{part.2}% 43
+\BOOKMARK [1][-]{section*.42}{Spherical Coordinates}{part.2}% 44
+\BOOKMARK [1][-]{section*.43}{Spherical Coordinates}{part.2}% 45
+\BOOKMARK [1][-]{section*.44}{Uniqueness}{part.2}% 46
+\BOOKMARK [1][-]{section*.45}{Constant-Coordinate Surfaces}{part.2}% 47
+\BOOKMARK [1][-]{section*.46}{Converting Between Spherical and Cartesian Coordinates}{part.2}% 48
+\BOOKMARK [1][-]{section*.47}{Spherical coordinates in Rn [OPTIONAL]}{part.2}% 49
+\BOOKMARK [1][-]{section*.48}{Conclusion}{part.2}% 50
+\BOOKMARK [0][-]{part.3}{III Week 27: Conservative Vector Fields and Topology}{}% 51
+\BOOKMARK [1][-]{section*.49}{Topology}{part.3}% 52
+\BOOKMARK [1][-]{section*.50}{Open Sets}{part.3}% 53
+\BOOKMARK [1][-]{section*.51}{Closed Sets}{part.3}% 54
+\BOOKMARK [1][-]{section*.52}{Connected Sets}{part.3}% 55
+\BOOKMARK [1][-]{section*.53}{Simply Connected Sets}{part.3}% 56
+\BOOKMARK [1][-]{section*.54}{Summary}{part.3}% 57
+\BOOKMARK [1][-]{section*.55}{Path Independence and FTLI}{part.3}% 58
+\BOOKMARK [1][-]{section*.56}{Path Independence}{part.3}% 59
+\BOOKMARK [1][-]{section*.57}{Fundamental Theorem of Line Integrals}{part.3}% 60
+\BOOKMARK [1][-]{section*.58}{Strategies for Computing Line Integrals}{part.3}% 61
+\BOOKMARK [1][-]{section*.59}{Summary}{part.3}% 62
+\BOOKMARK [1][-]{section*.60}{Conservative Vector Fields}{part.3}% 63
+\BOOKMARK [1][-]{section*.61}{Finding a Potential Function}{part.3}% 64
+\BOOKMARK [1][-]{section*.62}{Summary}{part.3}% 65
+\BOOKMARK [1][-]{section*.63}{Practice Problems}{part.3}% 66
+\BOOKMARK [1][-]{section*.64}{Online Problems}{part.3}% 67
+\BOOKMARK [1][-]{section*.65}{Written Problems}{part.3}% 68
+\BOOKMARK [0][-]{part.4}{IV Week 29: Curl}{}% 69
+\BOOKMARK [1][-]{section*.66}{Curl of a Vector Field}{part.4}% 70
+\BOOKMARK [1][-]{section*.67}{Definition of Curl}{part.4}% 71
+\BOOKMARK [1][-]{section*.68}{Summary}{part.4}% 72
+\BOOKMARK [1][-]{section*.69}{Geometric Significance of Curl}{part.4}% 73
+\BOOKMARK [1][-]{section*.70}{Geometric Significance of Two-dimensional Curl}{part.4}% 74
+\BOOKMARK [1][-]{section*.71}{Geometric Significance of Three-dimensional Curl}{part.4}% 75
+\BOOKMARK [1][-]{section*.72}{Summary}{part.4}% 76
+\BOOKMARK [1][-]{section*.73}{Connections of Curl with Older Material}{part.4}% 77
+\BOOKMARK [1][-]{section*.74}{Curl of a Conservative Vector Field}{part.4}% 78
+\BOOKMARK [1][-]{section*.75}{Curl and Green's Theorem}{part.4}% 79
+\BOOKMARK [1][-]{section*.76}{Summary}{part.4}% 80
+\BOOKMARK [1][-]{section*.77}{Online Homework}{part.4}% 81
+\BOOKMARK [1][-]{section*.78}{Written Homework}{part.4}% 82
+\BOOKMARK [1][-]{section*.79}{Written Homework}{part.4}% 83
+\BOOKMARK [1][-]{section*.80}{Professional Problem}{part.4}% 84
+\BOOKMARK [1][-]{section*.81}{Practice Problems}{part.4}% 85
+\BOOKMARK [1][-]{section*.82}{Online Problems}{part.4}% 86
+\BOOKMARK [1][-]{section*.83}{Written Problems}{part.4}% 87
