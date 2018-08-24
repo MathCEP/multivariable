@@ -126,7 +126,10 @@ We'll begin by examining the set of points $(r,\theta, z)$, where $r=C$ is a con
 Next, we'll investigate the set of points $(r,\theta,z)$, where $\theta = C$ is constant. Let's consider the projection of this point onto the $xy$-plane. The projection will make an angle $C$ with the positive $x$-axis, and have distance $r\geq 0$ from the origin. The height of the point can be any real number. From these observations, we conclude that the set of such points is the following half plane in $\mathbb{R}^3$.
 
 \begin{image}
-\includegraphics{theta_constant}
+\begin{tikzpicture}
+\node[inner sep=0pt] (russell) at (0,0)
+    {\includegraphics{theta_constant}};
+\end{tikzpicture}
 \end{image}
 
 Note that if we didn't have the restriction $r\geq 0$, we would get an entire plane rather than a half plane.
