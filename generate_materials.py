@@ -92,6 +92,7 @@ def generate_text(title_and_groups):
     text.write("\\documentclass{xourse}\n")
     text.write("\\title{" + title + "}\n")
     text.write("\\graphicspath{")
+    text.write("{./}")
     for g in groups:
         group_folder = "".join(c for c in g["name"] if c.isalpha() or c.isdigit())
         text.write("{./auto_generated_text/" + group_folder + "/graphics/}")
@@ -240,7 +241,10 @@ def generate_topics(group, topics):
                 activities.append("./auto_generated_text/" + group + "/" + file)
                 with open(path + file) as f:
                     for line in f:
-                        copy.write(line)
+                        if "graphicspath" in line:
+                            copy.write("\\graphicspath{{./auto_generated_text/" + group + "/graphics/}{./graphics/}}\n")
+                        else:
+                            copy.write(line)
                 copy.close()
             if file == "graphics" and os.path.isdir(path + "graphics/"):
                 dest = "./auto_generated_text/" + group + "/graphics/"
