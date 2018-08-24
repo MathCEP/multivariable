@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  24 AUG 2018 12:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  24 AUG 2018 12:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1184,7 +1184,7 @@ hic file (type pdf)
 
 <use ./auto_generated_text/Week1CoordinateSystems/graphics/z_constant.pdf>
 Package pdftex.def Info: ./auto_generated_text/Week1CoordinateSystems/graphics/
-z_constant.pdf used on input line 141.
+z_constant.pdf used on input line 144.
 (pdftex.def)             Requested size: 277.59825pt x 203.12607pt.
 
 <./auto_generated_text/Week1CoordinateSystems/graphics/half_sphere.pdf, id=492,
@@ -1194,7 +1194,7 @@ phic file (type pdf)
 
 <use ./auto_generated_text/Week1CoordinateSystems/graphics/half_sphere.pdf>
 Package pdftex.def Info: ./auto_generated_text/Week1CoordinateSystems/graphics/
-half_sphere.pdf used on input line 170.
+half_sphere.pdf used on input line 176.
 (pdftex.def)             Requested size: 289.64107pt x 211.4405pt.
 
 [56 <./auto_generated_text/Week1CoordinateSystems/graphics/z_constant.pdf>]
@@ -1205,7 +1205,7 @@ aphic file (type pdf)
 
 <use ./auto_generated_text/Week1CoordinateSystems/graphics/cylinder_100.pdf>
 Package pdftex.def Info: ./auto_generated_text/Week1CoordinateSystems/graphics/
-cylinder_100.pdf used on input line 206.
+cylinder_100.pdf used on input line 216.
 (pdftex.def)             Requested size: 239.23244pt x 204.97789pt.
 
 [57 <./auto_generated_text/Week1CoordinateSystems/graphics/half_sphere.pdf>])
@@ -1222,7 +1222,7 @@ ic file (type pdf)
 
 <use ./auto_generated_text/Week1CoordinateSystems/graphics/spherical.pdf>
 Package pdftex.def Info: ./auto_generated_text/Week1CoordinateSystems/graphics/
-spherical.pdf used on input line 21.
+spherical.pdf used on input line 24.
 (pdftex.def)             Requested size: 213.52098pt x 193.40477pt.
 
 <./auto_generated_text/Week1CoordinateSystems/graphics/011.pdf, id=538, 220.757
@@ -1232,7 +1232,7 @@ e (type pdf)
 
 <use ./auto_generated_text/Week1CoordinateSystems/graphics/011.pdf>
 Package pdftex.def Info: ./auto_generated_text/Week1CoordinateSystems/graphics/
-011.pdf used on input line 28.
+011.pdf used on input line 34.
 (pdftex.def)             Requested size: 220.75665pt x 200.4844pt.
  [59
 
@@ -1245,7 +1245,7 @@ aphic file (type pdf)
 
 <use ./auto_generated_text/Week1CoordinateSystems/graphics/rho_constant.pdf>
 Package pdftex.def Info: ./auto_generated_text/Week1CoordinateSystems/graphics/
-rho_constant.pdf used on input line 82.
+rho_constant.pdf used on input line 91.
 (pdftex.def)             Requested size: 280.54372pt x 251.63568pt.
 
 [61]
@@ -1254,7 +1254,7 @@ Graphic file (type pdf)
 
 <use ./auto_generated_text/Week1CoordinateSystems/graphics/theta_constant.pdf>
 Package pdftex.def Info: ./auto_generated_text/Week1CoordinateSystems/graphics/
-theta_constant.pdf used on input line 88.
+theta_constant.pdf used on input line 100.
 (pdftex.def)             Requested size: 253.17688pt x 230.55809pt.
 
 [62 <./auto_generated_text/Week1CoordinateSystems/graphics/rho_constant.pdf>]
@@ -1265,7 +1265,7 @@ aphic file (type pdf)
 
 <use ./auto_generated_text/Week1CoordinateSystems/graphics/phi_constant.pdf>
 Package pdftex.def Info: ./auto_generated_text/Week1CoordinateSystems/graphics/
-phi_constant.pdf used on input line 96.
+phi_constant.pdf used on input line 111.
 (pdftex.def)             Requested size: 562.7204pt x 197.00151pt.
 
 <./auto_generated_text/Week1CoordinateSystems/graphics/cone.pdf, id=594, 197.60
@@ -1275,7 +1275,7 @@ le (type pdf)
 
 <use ./auto_generated_text/Week1CoordinateSystems/graphics/cone.pdf>
 Package pdftex.def Info: ./auto_generated_text/Week1CoordinateSystems/graphics/
-cone.pdf used on input line 102.
+cone.pdf used on input line 120.
 (pdftex.def)             Requested size: 197.603pt x 209.84235pt.
  [63 <./auto_generated_text/Week1CoordinateSystems/graphics/phi_constant.pdf> <
 ./auto_generated_text/Week1CoordinateSystems/graphics/cone.pdf>]
@@ -1286,7 +1286,7 @@ Graphic file (type pdf)
 
 <use ./auto_generated_text/Week1CoordinateSystems/graphics/elliptic_hyper.pdf>
 Package pdftex.def Info: ./auto_generated_text/Week1CoordinateSystems/graphics/
-elliptic_hyper.pdf used on input line 128.
+elliptic_hyper.pdf used on input line 149.
 (pdftex.def)             Requested size: 258.02135pt x 229.74274pt.
 
 [64 <./auto_generated_text/Week1CoordinateSystems/graphics/elliptic_hyper.pdf>]
@@ -1298,20 +1298,20 @@ ic file (type pdf)
 
 <use ./auto_generated_text/Week1CoordinateSystems/graphics/ice_cream.pdf>
 Package pdftex.def Info: ./auto_generated_text/Week1CoordinateSystems/graphics/
-ice_cream.pdf used on input line 155.
+ice_cream.pdf used on input line 179.
 (pdftex.def)             Requested size: 231.30077pt x 225.29543pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 158.
+(hyperref)                removing `math shift' on input line 183.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 158.
+(hyperref)                removing `superscript' on input line 183.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 158.
+(hyperref)                removing `math shift' on input line 183.
 
 ) [65 <./auto_generated_text/Week1CoordinateSystems/graphics/ice_cream.pdf>]
 [66]
@@ -1545,7 +1545,7 @@ t/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2016/texmf-dist
 st/fonts/type1/public/amsfonts/euler/eufm7.pfb></usr/local/texlive/2016/texmf-d
 ist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2016/tex
 mf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on multivariable.pdf (129 pages, 2840128 bytes).
+Output written on multivariable.pdf (129 pages, 2840765 bytes).
 PDF statistics:
  1502 PDF objects out of 1728 (max. 8388607)
  1292 compressed objects within 13 object streams

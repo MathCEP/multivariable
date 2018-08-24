@@ -137,7 +137,10 @@ Note that if we didn't have the restriction $r\geq 0$, we would get an entire pl
 Finally, we'll consider the set of points $(r,\theta, z)$, where $z = C$ is constant. Since $z = C$, we will only have points at height $C$. Varying $r$ and $\theta$ will then give us all points in the plane at height $C$ parallel to the $xy$-plane, as below.
 
 \begin{image}
-\includegraphics{z_constant}
+\begin{tikzpicture}
+\node[inner sep=0pt] (russell) at (0,0)
+    {\includegraphics{z_constant}};
+\end{tikzpicture}
 \end{image}
 
 \section{Converting between Cartesian and cylindrical coordinates}
@@ -166,8 +169,12 @@ x^2+y^2+z^2=1,
 keeping in mind that $z\geq 0$.
 
 \begin{image}
-\includegraphics{half_sphere}
+\begin{tikzpicture}
+\node[inner sep=0pt] (russell) at (0,0)
+    {\includegraphics{half_sphere}};
+\end{tikzpicture}
 \end{image}
+
 \end{example}
 
 \begin{example}
@@ -202,8 +209,12 @@ r = 4\cos(0) = 0,
 so the origin is already included in the surface $r = 4\cos\theta$.
 
 \begin{image}
-\includegraphics{cylinder_100}
+\begin{tikzpicture}
+\node[inner sep=0pt] (russell) at (0,0)
+    {\includegraphics{cylinder_100}};
+\end{tikzpicture}
 \end{image}
+
 \end{example}
 
 \section{Conclusion}
