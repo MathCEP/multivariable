@@ -1,5 +1,5 @@
 import os
-#import subprocess
+import shutil
 
 def parse_text_file(text_file):
     #parses a curriculum file to produce title and groups necessary to make text. Prints as it interprets for error checking.
@@ -77,7 +77,7 @@ def parse_text_file(text_file):
 
     tf.close()
 
-    print("If this doesn't look right, check the formatting in your curriculum file.")
+    print("If this doesn't look right, check the formatting in your curriculum file. Note that professional problems will be listed under Written Problems, since they will be in the same activity.")
 
     return [title, groups]
 
@@ -91,6 +91,11 @@ def generate_text(title_and_groups):
 
     text.write("\\documentclass{xourse}\n")
     text.write("\\title{" + title + "}\n")
+    text.write("\\graphicspath{")
+    for g in groups:
+        group_folder = "".join(c for c in g["name"] if c.isalpha() or c.isdigit())
+        text.write("{./auto_generated_text/" + group_folder + "/graphics/}")
+    text.write("}\n")
     text.write("\\begin{document}\n")
     text.write("\\begin{abstract}\n")
     text.write("This is the testing ground for the UMTYMP Multivariable Calculus book.\n")
@@ -237,6 +242,10 @@ def generate_topics(group, topics):
                     for line in f:
                         copy.write(line)
                 copy.close()
+            if file == "graphics" and os.path.isdir(path + "graphics/"):
+                dest = "./auto_generated_text/" + group + "/graphics/"
+                for g in os.listdir(path + "graphics"):
+                    shutil.copy(path + "graphics/" + g , dest)
     return activities
 
 def generate_group(group):
@@ -254,6 +263,9 @@ def generate_group(group):
     
     if not os.path.exists(directory):
         os.makedirs(directory)
+    
+    if not os.path.exists(directory + "/graphics"):
+        os.makedirs(directory + "/graphics")
     
     activities = generate_topics(name, topics) + generate_hw(name, online_hw, written_hw, professional_hw) + generate_all_problems(name, topics)
 
