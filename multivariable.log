@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  24 AUG 2018 11:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  24 AUG 2018 11:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1166,47 +1166,47 @@ LaTeX Warning: No \author given.
 [54
 
 ] [55] [56]
-<./auto_generated_text/Week1CoordinateSystems/graphics/theta_constant.pdf, id=8
-65, 253.1775pt x 230.55865pt>
-File: ./auto_generated_text/Week1CoordinateSystems/graphics/theta_constant.pdf 
-Graphic file (type pdf)
+<auto_generated_text/Week1CoordinateSystems/graphics/theta_constant.pdf, id=865
+, 253.1775pt x 230.55865pt>
+File: auto_generated_text/Week1CoordinateSystems/graphics/theta_constant.pdf Gr
+aphic file (type pdf)
 
-<use ./auto_generated_text/Week1CoordinateSystems/graphics/theta_constant.pdf>
-Package pdftex.def Info: ./auto_generated_text/Week1CoordinateSystems/graphics/
-theta_constant.pdf used on input line 130.
+<use auto_generated_text/Week1CoordinateSystems/graphics/theta_constant.pdf>
+Package pdftex.def Info: auto_generated_text/Week1CoordinateSystems/graphics/th
+eta_constant.pdf used on input line 130.
 (pdftex.def)             Requested size: 253.17688pt x 230.55809pt.
 
 [57 <./auto_generated_text/Week1CoordinateSystems/graphics/theta_constant.pdf>]
 
-<./auto_generated_text/Week1CoordinateSystems/graphics/z_constant.pdf, id=878, 
-277.59894pt x 203.12659pt>
-File: ./auto_generated_text/Week1CoordinateSystems/graphics/z_constant.pdf Grap
-hic file (type pdf)
+<auto_generated_text/Week1CoordinateSystems/graphics/z_constant.pdf, id=878, 27
+7.59894pt x 203.12659pt>
+File: auto_generated_text/Week1CoordinateSystems/graphics/z_constant.pdf Graphi
+c file (type pdf)
 
-<use ./auto_generated_text/Week1CoordinateSystems/graphics/z_constant.pdf>
-Package pdftex.def Info: ./auto_generated_text/Week1CoordinateSystems/graphics/
-z_constant.pdf used on input line 138.
+<use auto_generated_text/Week1CoordinateSystems/graphics/z_constant.pdf>
+Package pdftex.def Info: auto_generated_text/Week1CoordinateSystems/graphics/z_
+constant.pdf used on input line 138.
 (pdftex.def)             Requested size: 277.59825pt x 203.12607pt.
 
-<./auto_generated_text/Week1CoordinateSystems/graphics/half_sphere.pdf, id=879,
- 289.64178pt x 211.44104pt>
-File: ./auto_generated_text/Week1CoordinateSystems/graphics/half_sphere.pdf Gra
-phic file (type pdf)
+<auto_generated_text/Week1CoordinateSystems/graphics/half_sphere.pdf, id=879, 2
+89.64178pt x 211.44104pt>
+File: auto_generated_text/Week1CoordinateSystems/graphics/half_sphere.pdf Graph
+ic file (type pdf)
 
-<use ./auto_generated_text/Week1CoordinateSystems/graphics/half_sphere.pdf>
-Package pdftex.def Info: ./auto_generated_text/Week1CoordinateSystems/graphics/
-half_sphere.pdf used on input line 167.
+<use auto_generated_text/Week1CoordinateSystems/graphics/half_sphere.pdf>
+Package pdftex.def Info: auto_generated_text/Week1CoordinateSystems/graphics/ha
+lf_sphere.pdf used on input line 167.
 (pdftex.def)             Requested size: 289.64107pt x 211.4405pt.
 
 [58 <./auto_generated_text/Week1CoordinateSystems/graphics/z_constant.pdf>]
-<./auto_generated_text/Week1CoordinateSystems/graphics/cylinder_100.pdf, id=893
-, 239.23303pt x 204.9784pt>
-File: ./auto_generated_text/Week1CoordinateSystems/graphics/cylinder_100.pdf Gr
-aphic file (type pdf)
+<auto_generated_text/Week1CoordinateSystems/graphics/cylinder_100.pdf, id=893, 
+239.23303pt x 204.9784pt>
+File: auto_generated_text/Week1CoordinateSystems/graphics/cylinder_100.pdf Grap
+hic file (type pdf)
 
-<use ./auto_generated_text/Week1CoordinateSystems/graphics/cylinder_100.pdf>
-Package pdftex.def Info: ./auto_generated_text/Week1CoordinateSystems/graphics/
-cylinder_100.pdf used on input line 203.
+<use auto_generated_text/Week1CoordinateSystems/graphics/cylinder_100.pdf>
+Package pdftex.def Info: auto_generated_text/Week1CoordinateSystems/graphics/cy
+linder_100.pdf used on input line 203.
 (pdftex.def)             Requested size: 239.23244pt x 204.97789pt.
 
 [59 <./auto_generated_text/Week1CoordinateSystems/graphics/half_sphere.pdf>])
@@ -1216,90 +1216,90 @@ cylinder_100.pdf used on input line 203.
 LaTeX Warning: No \author given.
 
 
-<./auto_generated_text/Week1CoordinateSystems/graphics/spherical.pdf, id=921, 2
-13.52151pt x 193.40526pt>
-File: ./auto_generated_text/Week1CoordinateSystems/graphics/spherical.pdf Graph
-ic file (type pdf)
+<auto_generated_text/Week1CoordinateSystems/graphics/spherical.pdf, id=921, 213
+.52151pt x 193.40526pt>
+File: auto_generated_text/Week1CoordinateSystems/graphics/spherical.pdf Graphic
+ file (type pdf)
 
-<use ./auto_generated_text/Week1CoordinateSystems/graphics/spherical.pdf>
-Package pdftex.def Info: ./auto_generated_text/Week1CoordinateSystems/graphics/
-spherical.pdf used on input line 21.
+<use auto_generated_text/Week1CoordinateSystems/graphics/spherical.pdf>
+Package pdftex.def Info: auto_generated_text/Week1CoordinateSystems/graphics/sp
+herical.pdf used on input line 21.
 (pdftex.def)             Requested size: 213.52098pt x 193.40477pt.
 
-<./auto_generated_text/Week1CoordinateSystems/graphics/011.pdf, id=922, 220.757
-2pt x 200.48491pt>
-File: ./auto_generated_text/Week1CoordinateSystems/graphics/011.pdf Graphic fil
-e (type pdf)
+<auto_generated_text/Week1CoordinateSystems/graphics/011.pdf, id=922, 220.7572p
+t x 200.48491pt>
+File: auto_generated_text/Week1CoordinateSystems/graphics/011.pdf Graphic file 
+(type pdf)
 
-<use ./auto_generated_text/Week1CoordinateSystems/graphics/011.pdf>
-Package pdftex.def Info: ./auto_generated_text/Week1CoordinateSystems/graphics/
-011.pdf used on input line 28.
+<use auto_generated_text/Week1CoordinateSystems/graphics/011.pdf>
+Package pdftex.def Info: auto_generated_text/Week1CoordinateSystems/graphics/01
+1.pdf used on input line 28.
 (pdftex.def)             Requested size: 220.75665pt x 200.4844pt.
  [61
 
  <./auto_generated_text/Week1CoordinateSystems/graphics/spherical.pdf>] [62 <./
 auto_generated_text/Week1CoordinateSystems/graphics/011.pdf>]
-<./auto_generated_text/Week1CoordinateSystems/graphics/rho_constant.pdf, id=952
-, 280.54442pt x 251.6363pt>
-File: ./auto_generated_text/Week1CoordinateSystems/graphics/rho_constant.pdf Gr
-aphic file (type pdf)
+<auto_generated_text/Week1CoordinateSystems/graphics/rho_constant.pdf, id=952, 
+280.54442pt x 251.6363pt>
+File: auto_generated_text/Week1CoordinateSystems/graphics/rho_constant.pdf Grap
+hic file (type pdf)
 
-<use ./auto_generated_text/Week1CoordinateSystems/graphics/rho_constant.pdf>
-Package pdftex.def Info: ./auto_generated_text/Week1CoordinateSystems/graphics/
-rho_constant.pdf used on input line 82.
+<use auto_generated_text/Week1CoordinateSystems/graphics/rho_constant.pdf>
+Package pdftex.def Info: auto_generated_text/Week1CoordinateSystems/graphics/rh
+o_constant.pdf used on input line 82.
 (pdftex.def)             Requested size: 280.54372pt x 251.63568pt.
 
 [63]
-File: ./auto_generated_text/Week1CoordinateSystems/graphics/theta_constant.pdf 
-Graphic file (type pdf)
+File: auto_generated_text/Week1CoordinateSystems/graphics/theta_constant.pdf Gr
+aphic file (type pdf)
 
-<use ./auto_generated_text/Week1CoordinateSystems/graphics/theta_constant.pdf>
-Package pdftex.def Info: ./auto_generated_text/Week1CoordinateSystems/graphics/
-theta_constant.pdf used on input line 88.
+<use auto_generated_text/Week1CoordinateSystems/graphics/theta_constant.pdf>
+Package pdftex.def Info: auto_generated_text/Week1CoordinateSystems/graphics/th
+eta_constant.pdf used on input line 88.
 (pdftex.def)             Requested size: 253.17688pt x 230.55809pt.
 
 [64 <./auto_generated_text/Week1CoordinateSystems/graphics/rho_constant.pdf>]
-<./auto_generated_text/Week1CoordinateSystems/graphics/phi_constant.pdf, id=974
-, 562.72177pt x 197.002pt>
-File: ./auto_generated_text/Week1CoordinateSystems/graphics/phi_constant.pdf Gr
-aphic file (type pdf)
+<auto_generated_text/Week1CoordinateSystems/graphics/phi_constant.pdf, id=974, 
+562.72177pt x 197.002pt>
+File: auto_generated_text/Week1CoordinateSystems/graphics/phi_constant.pdf Grap
+hic file (type pdf)
 
-<use ./auto_generated_text/Week1CoordinateSystems/graphics/phi_constant.pdf>
-Package pdftex.def Info: ./auto_generated_text/Week1CoordinateSystems/graphics/
-phi_constant.pdf used on input line 96.
+<use auto_generated_text/Week1CoordinateSystems/graphics/phi_constant.pdf>
+Package pdftex.def Info: auto_generated_text/Week1CoordinateSystems/graphics/ph
+i_constant.pdf used on input line 96.
 (pdftex.def)             Requested size: 562.7204pt x 197.00151pt.
 
-<./auto_generated_text/Week1CoordinateSystems/graphics/cone.pdf, id=975, 197.60
-349pt x 209.84286pt>
-File: ./auto_generated_text/Week1CoordinateSystems/graphics/cone.pdf Graphic fi
-le (type pdf)
+<auto_generated_text/Week1CoordinateSystems/graphics/cone.pdf, id=975, 197.6034
+9pt x 209.84286pt>
+File: auto_generated_text/Week1CoordinateSystems/graphics/cone.pdf Graphic file
+ (type pdf)
 
-<use ./auto_generated_text/Week1CoordinateSystems/graphics/cone.pdf>
-Package pdftex.def Info: ./auto_generated_text/Week1CoordinateSystems/graphics/
-cone.pdf used on input line 102.
+<use auto_generated_text/Week1CoordinateSystems/graphics/cone.pdf>
+Package pdftex.def Info: auto_generated_text/Week1CoordinateSystems/graphics/co
+ne.pdf used on input line 102.
 (pdftex.def)             Requested size: 197.603pt x 209.84235pt.
  [65 <./auto_generated_text/Week1CoordinateSystems/graphics/phi_constant.pdf> <
 ./auto_generated_text/Week1CoordinateSystems/graphics/cone.pdf>]
-<./auto_generated_text/Week1CoordinateSystems/graphics/elliptic_hyper.pdf, id=9
-97, 258.02199pt x 229.74332pt>
-File: ./auto_generated_text/Week1CoordinateSystems/graphics/elliptic_hyper.pdf 
-Graphic file (type pdf)
+<auto_generated_text/Week1CoordinateSystems/graphics/elliptic_hyper.pdf, id=997
+, 258.02199pt x 229.74332pt>
+File: auto_generated_text/Week1CoordinateSystems/graphics/elliptic_hyper.pdf Gr
+aphic file (type pdf)
 
-<use ./auto_generated_text/Week1CoordinateSystems/graphics/elliptic_hyper.pdf>
-Package pdftex.def Info: ./auto_generated_text/Week1CoordinateSystems/graphics/
-elliptic_hyper.pdf used on input line 128.
+<use auto_generated_text/Week1CoordinateSystems/graphics/elliptic_hyper.pdf>
+Package pdftex.def Info: auto_generated_text/Week1CoordinateSystems/graphics/el
+liptic_hyper.pdf used on input line 128.
 (pdftex.def)             Requested size: 258.02135pt x 229.74274pt.
 
 [66 <./auto_generated_text/Week1CoordinateSystems/graphics/elliptic_hyper.pdf>]
 
-<./auto_generated_text/Week1CoordinateSystems/graphics/ice_cream.pdf, id=1011, 
-231.30133pt x 225.29599pt>
-File: ./auto_generated_text/Week1CoordinateSystems/graphics/ice_cream.pdf Graph
-ic file (type pdf)
+<auto_generated_text/Week1CoordinateSystems/graphics/ice_cream.pdf, id=1011, 23
+1.30133pt x 225.29599pt>
+File: auto_generated_text/Week1CoordinateSystems/graphics/ice_cream.pdf Graphic
+ file (type pdf)
 
-<use ./auto_generated_text/Week1CoordinateSystems/graphics/ice_cream.pdf>
-Package pdftex.def Info: ./auto_generated_text/Week1CoordinateSystems/graphics/
-ice_cream.pdf used on input line 155.
+<use auto_generated_text/Week1CoordinateSystems/graphics/ice_cream.pdf>
+Package pdftex.def Info: auto_generated_text/Week1CoordinateSystems/graphics/ic
+e_cream.pdf used on input line 155.
 (pdftex.def)             Requested size: 231.30077pt x 225.29543pt.
 
 
@@ -1504,8 +1504,8 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 41.
  ) 
 Here is how much of TeX's memory you used:
  29983 strings out of 493014
- 688273 string characters out of 6133351
- 845207 words of memory out of 5000000
+ 688183 string characters out of 6133351
+ 845199 words of memory out of 5000000
  32236 multiletter control sequences out of 15000+600000
  23438 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1540,7 +1540,7 @@ t/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2016/texmf-dist
 st/fonts/type1/public/amsfonts/euler/eufm7.pfb></usr/local/texlive/2016/texmf-d
 ist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2016/tex
 mf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on multivariable.pdf (131 pages, 2849830 bytes).
+Output written on multivariable.pdf (131 pages, 2849827 bytes).
 PDF statistics:
  1849 PDF objects out of 2073 (max. 8388607)
  1633 compressed objects within 17 object streams
