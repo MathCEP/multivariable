@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=latex 2016.5.22)  24 AUG 2018 12:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=latex 2016.5.22)  24 AUG 2018 12:39
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1653,65 +1653,65 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 l. 132 --- needs --- ./cylindrical_coords-figure2.svg ---
+l.143 --- TeX4ht warning --- Cannot determine size of graphic in ./cylindrical_
+coords-figure3.svg (no BoundingBox) ---
+./cylindrical_coords.tex:143: Undefined control sequence.
+\:Needs #1->File: \Gin 
+                       @base.svg
+l.143 \end{tikzpicture}
+                       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-./cylindrical_coords.tex:140: LaTeX Error: File `z_constant' not found.
+l. 143 --- needs --- ./cylindrical_coords-figure3.svg ---
+l.175 --- TeX4ht warning --- Cannot determine size of graphic in ./cylindrical_
+coords-figure4.svg (no BoundingBox) ---
+./cylindrical_coords.tex:175: Undefined control sequence.
+\:Needs #1->File: \Gin 
+                       @base.svg
+l.175 \end{tikzpicture}
+                       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.140 \includegraphics{z_constant}
-                                  
-I could not locate the file with any of these extensions:
-.jpg,.png,.gif,.svg
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./cylindrical_coords.tex:169: LaTeX Error: File `half_sphere' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.169 \includegraphics{half_sphere}
-                                   
-I could not locate the file with any of these extensions:
-.jpg,.png,.gif,.svg
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+l. 175 --- needs --- ./cylindrical_coords-figure4.svg ---
 [3]
+l.215 --- TeX4ht warning --- Cannot determine size of graphic in ./cylindrical_
+coords-figure5.svg (no BoundingBox) ---
+./cylindrical_coords.tex:215: Undefined control sequence.
+\:Needs #1->File: \Gin 
+                       @base.svg
+l.215 \end{tikzpicture}
+                       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-./cylindrical_coords.tex:205: LaTeX Error: File `cylinder_100' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.205 \includegraphics{cylinder_100}
-                                    
-I could not locate the file with any of these extensions:
-.jpg,.png,.gif,.svg
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+l. 215 --- needs --- ./cylindrical_coords-figure5.svg ---
 [4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 213.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 224.
  [5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 213.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 224.
  (./cylindrical_coords.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 213.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 213.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 213.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 224.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 224.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 224.
  ) 
 Here is how much of TeX's memory you used:
- 34194 strings out of 493015
- 751584 string characters out of 6133377
+ 34173 strings out of 493015
+ 751316 string characters out of 6133377
  1061312 words of memory out of 5000000
- 36963 multiletter control sequences out of 15000+600000
+ 36947 multiletter control sequences out of 15000+600000
  5879 words of font info for 25 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,5n,79p,1962b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on cylindrical_coords.dvi (5 pages, 21808 bytes).
+Output written on cylindrical_coords.dvi (5 pages, 22376 bytes).

@@ -11,6 +11,9 @@ Font_Css("12"): .htf-calligraphy-bold {font-family:cursive ; font-weight: bold; 
 File: @base.svg
 File: @base.svg
 File: @base.svg
+File: @base.svg
+File: @base.svg
+File: @base.svg
 --- characters ---
 Font("cmr","10","10","100")
 Font("cmtt","10","10","100")

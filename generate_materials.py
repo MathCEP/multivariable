@@ -184,14 +184,16 @@ def generate_all_problems(group, topics):
     for section in topics:
         path = "./content/" + section + "/problems/online/"
         for filename in os.listdir(path):
-            online_problem_list.append("./content/" + section + "/problems/online/" + filename)
+            if filename.endswith(".tex"):
+                online_problem_list.append("./content/" + section + "/problems/online/" + filename)
 
     written_problem_list = []
 
     for section in topics:
         path = "./content/" + section + "/problems/written/"
         for filename in os.listdir(path):
-            written_problem_list.append("./content/" + section + "/problems/written/" + filename)
+            if filename.endswith(".tex"):
+                written_problem_list.append("./content/" + section + "/problems/written/" + filename)
 
     if len(online_problem_list) > 0 or len(written_problem_list) > 0:
         all_problems = open("./auto_generated_text/" + group + "/all_problems.tex","w")

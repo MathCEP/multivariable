@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=latex 2016.5.22)  24 AUG 2018 12:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=latex 2016.5.22)  24 AUG 2018 12:39
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1607,139 +1607,139 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (/usr/local/texlive/2016/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
+l.23 --- TeX4ht warning --- Cannot determine size of graphic in ./spherical_coo
+rds-figure0.svg (no BoundingBox) ---
+./spherical_coords.tex:23: Undefined control sequence.
+\:Needs #1->File: \Gin 
+                       @base.svg
+l.23 \end{tikzpicture}
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-./spherical_coords.tex:20: LaTeX Error: File `spherical' not found.
+l. 23 --- needs --- ./spherical_coords-figure0.svg ---
+l.33 --- TeX4ht warning --- Cannot determine size of graphic in ./spherical_coo
+rds-figure1.svg (no BoundingBox) ---
+./spherical_coords.tex:33: Undefined control sequence.
+\:Needs #1->File: \Gin 
+                       @base.svg
+l.33 \end{tikzpicture}
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.20 \includegraphics{spherical}
-                                
-I could not locate the file with any of these extensions:
-.jpg,.png,.gif,.svg
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./spherical_coords.tex:27: LaTeX Error: File `011' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.27 \includegraphics{011}
-                          
-I could not locate the file with any of these extensions:
-.jpg,.png,.gif,.svg
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+l. 33 --- needs --- ./spherical_coords-figure1.svg ---
 [1
 
 ]
+l.90 --- TeX4ht warning --- Cannot determine size of graphic in ./spherical_coo
+rds-figure2.svg (no BoundingBox) ---
+./spherical_coords.tex:90: Undefined control sequence.
+\:Needs #1->File: \Gin 
+                       @base.svg
+l.90 \end{tikzpicture}
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-./spherical_coords.tex:81: LaTeX Error: File `rho_constant' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.81 \includegraphics{rho_constant}
-                                   
-I could not locate the file with any of these extensions:
-.jpg,.png,.gif,.svg
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+l. 90 --- needs --- ./spherical_coords-figure2.svg ---
 [2]
+l.99 --- TeX4ht warning --- Cannot determine size of graphic in ./spherical_coo
+rds-figure3.svg (no BoundingBox) ---
+./spherical_coords.tex:99: Undefined control sequence.
+\:Needs #1->File: \Gin 
+                       @base.svg
+l.99 \end{tikzpicture}
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-./spherical_coords.tex:87: LaTeX Error: File `theta_constant' not found.
+l. 99 --- needs --- ./spherical_coords-figure3.svg ---
+l.110 --- TeX4ht warning --- Cannot determine size of graphic in ./spherical_co
+ords-figure4.svg (no BoundingBox) ---
+./spherical_coords.tex:110: Undefined control sequence.
+\:Needs #1->File: \Gin 
+                       @base.svg
+l.110 \end{tikzpicture}
+                       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.87 \includegraphics{theta_constant}
-                                     
-I could not locate the file with any of these extensions:
-.jpg,.png,.gif,.svg
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+l. 110 --- needs --- ./spherical_coords-figure4.svg ---
+l.119 --- TeX4ht warning --- Cannot determine size of graphic in ./spherical_co
+ords-figure5.svg (no BoundingBox) ---
+./spherical_coords.tex:119: Undefined control sequence.
+\:Needs #1->File: \Gin 
+                       @base.svg
+l.119 \end{tikzpicture}
+                       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-
-./spherical_coords.tex:95: LaTeX Error: File `phi_constant' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.95 \includegraphics{phi_constant}
-                                   
-I could not locate the file with any of these extensions:
-.jpg,.png,.gif,.svg
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./spherical_coords.tex:101: LaTeX Error: File `cone' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.101 \includegraphics{cone}
-                            
-I could not locate the file with any of these extensions:
-.jpg,.png,.gif,.svg
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+l. 119 --- needs --- ./spherical_coords-figure5.svg ---
 [3]
+l.148 --- TeX4ht warning --- Cannot determine size of graphic in ./spherical_co
+ords-figure6.svg (no BoundingBox) ---
+./spherical_coords.tex:148: Undefined control sequence.
+\:Needs #1->File: \Gin 
+                       @base.svg
+l.148 \end{tikzpicture}
+                       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-./spherical_coords.tex:127: LaTeX Error: File `elliptic_hyper' not found.
+l. 148 --- needs --- ./spherical_coords-figure6.svg ---
+l.178 --- TeX4ht warning --- Cannot determine size of graphic in ./spherical_co
+ords-figure7.svg (no BoundingBox) ---
+./spherical_coords.tex:178: Undefined control sequence.
+\:Needs #1->File: \Gin 
+                       @base.svg
+l.178 \end{tikzpicture}
+                       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.127 \includegraphics{elliptic_hyper}
-                                      
-I could not locate the file with any of these extensions:
-.jpg,.png,.gif,.svg
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./spherical_coords.tex:154: LaTeX Error: File `ice_cream' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.154 \includegraphics{ice_cream}
-                                 
-I could not locate the file with any of these extensions:
-.jpg,.png,.gif,.svg
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 169.
- [5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 169.
+l. 178 --- needs --- ./spherical_coords-figure7.svg ---
+[4] [5]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 194.
+ [6]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 194.
  (./spherical_coords.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 169.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 169.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 169.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 194.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 194.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 194.
  ) 
 Here is how much of TeX's memory you used:
- 34225 strings out of 493015
- 751846 string characters out of 6133377
- 1061295 words of memory out of 5000000
- 36993 multiletter control sequences out of 15000+600000
+ 34181 strings out of 493015
+ 751440 string characters out of 6133377
+ 1060295 words of memory out of 5000000
+ 36953 multiletter control sequences out of 15000+600000
  5879 words of font info for 25 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,6n,79p,1229b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,5n,79p,1229b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on spherical_coords.dvi (5 pages, 23228 bytes).
+Output written on spherical_coords.dvi (6 pages, 24644 bytes).

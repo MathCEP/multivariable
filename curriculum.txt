@@ -28,8 +28,22 @@ TOPICS
 01_coordinate_systems/2_cylindrical_coords
 01_coordinate_systems/3_spherical_coords
 ONLINE HOMEWORK
+01_coordinate_systems/2_cylindrical_coords/problems/online/problem1.tex
+01_coordinate_systems/3_spherical_coords/problems/online/problem1.tex
+01_coordinate_systems/2_cylindrical_coords/problems/online/problem2.tex
+01_coordinate_systems/3_spherical_coords/problems/online/problem2.tex
+01_coordinate_systems/2_cylindrical_coords/problems/online/problem3.tex
+01_coordinate_systems/3_spherical_coords/problems/online/problem3.tex
+01_coordinate_systems/2_cylindrical_coords/problems/online/problem4.tex
+01_coordinate_systems/3_spherical_coords/problems/online/problem4.tex
+01_coordinate_systems/2_cylindrical_coords/problems/online/problem5.tex
+01_coordinate_systems/3_spherical_coords/problems/online/problem5.tex
 WRITTEN HOMEWORK
+01_coordinate_systems/2_cylindrical_coords/problems/written/problem1.tex
+01_coordinate_systems/2_cylindrical_coords/problems/written/problem2.tex
+01_coordinate_systems/3_spherical_coords/problems/written/problem1.tex
 PROFESSIONAL HOMEWORK
+01_coordinate_systems/3_spherical_coords/problems/professional/problem1.tex
 
 Week 27: Conservative Vector Fields and Topology
 TOPICS
