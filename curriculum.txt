@@ -45,6 +45,15 @@ WRITTEN HOMEWORK
 PROFESSIONAL HOMEWORK
 01_coordinate_systems/3_spherical_coords/problems/professional/problem1.tex
 
+Week 2: Multivariable Functions and Graphing
+TOPICS
+02_multivariable_functions/1_functions
+02_multivariable_functions/2_graphing
+02_multivariable_functions/3_quadric_surfaces
+ONLINE HOMEWORK
+WRITTEN HOMEWORK
+PROFESSIONAL HOMEWORK
+
 Week 27: Conservative Vector Fields and Topology
 TOPICS
 CONS_consvf/N.1_topology

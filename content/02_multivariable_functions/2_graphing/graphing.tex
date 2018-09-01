@@ -1,0 +1,78 @@
+\documentclass{ximera}
+\title{Graphing Functions}
+\begin{document}
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+In this activity, we give the formal definition of the graph of a function $f:\mathbb{R}^2\rightarrow\mathbb{R}$. We discuss strategies for figuring out the shapes of the graph of such functions, using contour curves, level curves, and sections.
+
+\section{Definition of the Graph of a Function}
+
+You might already have an intuitive idea of what the graph of a function $f:X\subset\mathbb{R}^2\rightarrow\mathbb{R}$ should be, but perhaps don't know the formal definition, or how to figure out what the graph of an arbitrary function looks like. We'll begin with the definition of the graph, before discussing how to actually produce graphs.
+
+\begin{definition}
+Let $f:X\subset\mathbb{R}^2\rightarrow\mathbb{R}$ be a function. The \emph{graph} of $f$ is the set of points
+\[
+\textrm{Graph }f = \{(\vec{x},f(\vec{x})\,:\,\vec{x}\in X\}
+\]
+in $\mathbb{R}^3$.
+
+We typically visualize a point in the graph as lying over the point $\vec{x}$ in the plane at a height $f(\vec{x})$.
+\end{definition}
+
+Note that this is similar to the graph of a function from a subset of $\mathbb{R}$ to $\mathbb{R}$. The graph of a function $X\subset\mathbb{R}^n\rightarrow\mathbb{R}$ can be defined similarly, but this tends to be less useful once $n\geq 3$, since it's hard to visualize four or more dimensions!
+
+\section{Strategies for Graphing}
+
+It can be much trickier to sketch the graph of a function $f:X\subset\mathbb{R}^2\rightarrow\mathbb{R}$ than it was to sketch the graphs of functions $\mathbb{R}\rightarrow\mathbb{R}$. One common strategy that people will initially try is plotting individual points to try to get a sense of the graph. However, for graphs in $\mathbb{R}^3$, you would need a lot of points to get a representative sample of the plane. For this reason, \emph{plotting points alone is not an effective strategy}. However, plotting a single point here or there can be helpful.
+
+We've now told you what doesn't work for graphing functions in $\mathbb{R}^3$, so now we should probably tell you what does work. The essential idea of all of these strategies is that we know you're pretty comfortable graphing in $\mathbb{R}^2$, so we're going to take advantage of that experience.
+
+We'll begin with contour curves, which are obtained by setting the $z$-coordinate to be constant. Think of this as taking horizontal slices of the graph.
+
+\begin{definition}
+Let $f:X\subset\mathbb{R}^2\rightarrow\mathbb{R}$ be a function. The \emph{contour curve} of the function $f$ at height $C$ is the set of points in $\mathbb{R}^3$ obtained by taking the intersection of the graph of $f$ with the plane $z=C$.
+\end{definition} 
+
+PICTURE/VIDEO EXAMPLE
+
+We can also consider the level curves of a function, which are closely related to contour curves.
+
+\begin{definition}
+Let $f:X\subset\mathbb{R}^2\rightarrow\mathbb{R}$ be a function. The \emph{level curve} of the function $f$at height $C$ is the set of points in $\mathbb{R}^2$ satisfying $C = f(x,y)$.
+\end{definition}
+
+After reading this definition, you're probably thinking ``hey, aren't contour curves and level curves the exact same thing?'' They're certainly closely related. The key difference is that level curves exist in the plane, $\mathbb{R}^2$, while contour curves exist in three-space, $\mathbb{R}^3$. Since they're in the plane, level curves are usually easier to draw. However, contour curves are more useful for figuring out the shape of a graph. For these reasons, it can be useful to go back and forth between level curves and contour curves.
+
+PICTURE/VIDEO EXAMPLE
+
+We can think of contour curves as taking slices of the graph where $z$ is constant. It can also be useful to take slices of the graph where $x$ or $y$ is constant. We call these slices sections of the graph.
+
+\begin{definition}
+Let $f:X\subset\mathbb{R}^2\rightarrow\mathbb{R}$ be a function, and let $C$ be a constant.
+
+The \emph{section} of the graph of $f$ by $x=C$ is the set of points 
+\[
+\{(C,y,z)\in\mathbb{R}^3\,:\,z = f(C,y)\}
+\]
+
+The \emph{section} of the graph of $f$ by $y=C$ is the set of points 
+\[
+\{(x,C,z)\in\mathbb{R}^3\,:\,z = f(x,C)\}
+\]
+\end{definition}
+
+Note that, like contour curves, sections exist in $\mathbb{R}^3$.
+
+PICTURE/VIDEO EXAMPLE
+
+EXTRA EXAMPLE
+
+
+
+\section{Conclusion}
+
+In this activity, we gave the formal definition of the graph of a function $f:\mathbb{R}^2\rightarrow\mathbb{R}$. We discussed strategies for figuring out the shapes of the graph of such functions, using contour curves, level curves, and sections.
+
+\end{document}
