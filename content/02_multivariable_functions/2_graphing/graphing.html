@@ -1,0 +1,124 @@
+<!doctype html> 
+<html lang="en"> 
+<head> <title>Graphing Functions</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<!-- charset=utf-8,-css,html,htex4ht,xhtml --> 
+<meta name="src" content="graphing.tex" /> 
+<meta name="author" content="" /> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
+<meta name="ximera" content="version 0.0.1" /> 
+<link href="https://ximera.osu.edu/public/stylesheets/standalone.css" rel="stylesheet" media="screen"/> 
+<script type="text/javascript" async src="https://ximera.osu.edu/public/javascripts/standalone.min.js"></script> 
+</head><body> 
+<div class="preamble"><script type="math/tex">\newenvironment {prompt}{}{}
+\newcommand {\DeclareMathOperator }[2]{\@OldDeclareMathOperator {##1}{##2}\immediate \write \myfile {\unexpanded {\DeclareMathOperator }{\unexpanded {##1}}{\unexpanded {##2}}}}
+\newcommand {\ungraded }[0]{}
+\newcommand {\reserved@a }[2]{}
+\newcommand {\HyperFirstAtBeginDocument }[0]{\AtBeginDocument }
+\newcommand {\reserved@a }[1]{}
+\newcommand {\reserved@a }[2]{}
+\newcommand {\vnameref  }[1]{\unskip ~\nameref {##1}\@vpageref [\unskip ]{##1}}
+\newcommand {\ref  }[0]{\@ifstar \@refstar \T@ref }
+\newcommand {\pageref  }[0]{\@ifstar \@pagerefstar \T@pageref }
+\newcommand {\nameref  }[0]{\@ifstar \@namerefstar \T@nameref }
+\newcommand {\reserved@a }[2]{}
+\newcommand {\reserved@a }[0]{\AtBeginDocument }
+\newcommand {\reserved@a }[1]{}
+\newcommand {\reserved@a }[2]{}                                                                                                                                                 </script><script type="text/javascript"> 
+</script> 
+</div>
+<div 
+class="abstract" 
+>
+</div>   <div class="maketitle"></div>
+<!--l. 8--><p class="noindent" >In this activity, we give the formal definition of the graph of a function <script type="math/tex">f:\mathbb {R}^2\rightarrow \mathbb {R}</script>. We discuss
+strategies for figuring out the shapes of the graph of such functions, using contour
+curves, level curves, and sections.
+</p>
+<h3 class="sectionHead"><a 
+ id="x1-1000"></a>Definition of the Graph of a Function</h3>
+<!--l. 12--><p class="noindent" >You might already have an intuitive idea of what the graph of a function <script type="math/tex">f:X\subset \mathbb {R}^2\rightarrow \mathbb {R}</script> should be,
+but perhaps don&#x2019;t know the formal definition, or how to figure out what the graph of
+an arbitrary function looks like. We&#x2019;ll begin with the definition of the graph, before
+discussing how to actually produce graphs.
+</p>
+<div class="theorem-like problem-environment definition" id="problem1"><a 
+ id="x1-1001r1"></a>Let <script type="math/tex">f:X\subset \mathbb {R}^2\rightarrow \mathbb {R}</script> be a function. The <em>graph</em> of <script type="math/tex">f</script> is the set of points <script type="math/tex; mode=display"> \textrm {Graph }f = \{(\vec {x},f(\vec {x})\,:\,\vec {x}\in X\} </script> in <script type="math/tex">\mathbb {R}^3</script>.
+<!--l. 21--><p class="noindent" >We typically visualize a point in the graph as lying over the point <script type="math/tex">\vec {x}</script> in the plane at a
+height <script type="math/tex">f(\vec {x})</script>.
+</div>
+</p><!--l. 24--><p class="noindent" >Note that this is similar to the graph of a function from a subset of <script type="math/tex">\mathbb {R}</script> to <script type="math/tex">\mathbb {R}</script>. The graph of
+a function <script type="math/tex">X\subset \mathbb {R}^n\rightarrow \mathbb {R}</script> can be defined similarly, but this tends to be less useful once <script type="math/tex">n\geq 3</script>, since it&#x2019;s
+hard to visualize four or more dimensions!
+</p>
+<h3 class="sectionHead"><a 
+ id="x1-2000"></a>Strategies for Graphing</h3>
+<!--l. 28--><p class="noindent" >It can be much trickier to sketch the graph of a function <script type="math/tex">f:X\subset \mathbb {R}^2\rightarrow \mathbb {R}</script> than it was to sketch the
+graphs of functions <script type="math/tex">\mathbb {R}\rightarrow \mathbb {R}</script>. One common strategy that people will initially try is plotting
+individual points to try to get a sense of the graph. However, for graphs in <script type="math/tex">\mathbb {R}^3</script>, you
+                                                                  
+
+                                                                  
+would need a lot of points to get a representative sample of the plane. For this reason,
+<em>plotting points alone is not an effective strategy</em>. However, plotting a single point here
+or there can be helpful.
+</p><!--l. 30--><p class="noindent" >We&#x2019;ve now told you what doesn&#x2019;t work for graphing functions in <script type="math/tex">\mathbb {R}^3</script>, so now we should
+probably tell you what does work. The essential idea of all of these strategies is that
+we know you&#x2019;re pretty comfortable graphing in <script type="math/tex">\mathbb {R}^2</script>, so we&#x2019;re going to take advantage of
+that experience.
+</p><!--l. 32--><p class="noindent" >We&#x2019;ll begin with contour curves, which are obtained by setting the <script type="math/tex">z</script>-coordinate to be
+constant. Think of this as taking horizontal slices of the graph.
+</p>
+<div class="theorem-like problem-environment definition" id="problem2"><a 
+ id="x1-2001r2"></a>Let <script type="math/tex">f:X\subset \mathbb {R}^2\rightarrow \mathbb {R}</script> be a function. The <em>contour curve</em> of the function <script type="math/tex">f</script> at height <script type="math/tex">C</script> is the set of
+points in <script type="math/tex">\mathbb {R}^3</script> obtained by taking the intersection of the graph of <script type="math/tex">f</script> with the plane
+<script type="math/tex">z=C</script>.
+</div>
+<!--l. 38--><p class="noindent" >PICTURE/VIDEO EXAMPLE
+</p><!--l. 40--><p class="noindent" >We can also consider the level curves of a function, which are closely related to
+contour curves.
+</p>
+<div class="theorem-like problem-environment definition" id="problem3"><a 
+ id="x1-2002r3"></a>Let <script type="math/tex">f:X\subset \mathbb {R}^2\rightarrow \mathbb {R}</script> be a function. The <em>level curve</em> of the function <script type="math/tex">f</script>at height <script type="math/tex">C</script> is the set of points in <script type="math/tex">\mathbb {R}^2</script>
+satisfying <script type="math/tex">C = f(x,y)</script>.
+</div>
+<!--l. 46--><p class="noindent" >After reading this definition, you&#x2019;re probably thinking “hey, aren&#x2019;t contour curves
+and level curves the exact same thing?” They&#x2019;re certainly closely related. The key
+difference is that level curves exist in the plane, <script type="math/tex">\mathbb {R}^2</script>, while contour curves exist in
+three-space, <script type="math/tex">\mathbb {R}^3</script>. Since they&#x2019;re in the plane, level curves are usually easier to draw.
+However, contour curves are more useful for figuring out the shape of a graph. For
+these reasons, it can be useful to go back and forth between level curves and contour
+curves.
+</p><!--l. 48--><p class="noindent" >PICTURE/VIDEO EXAMPLE
+</p><!--l. 50--><p class="noindent" >We can think of contour curves as taking slices of the graph where <script type="math/tex">z</script> is constant. It can
+also be useful to take slices of the graph where <script type="math/tex">x</script> or <script type="math/tex">y</script> is constant. We call these slices
+sections of the graph.
+</p>
+<div class="theorem-like problem-environment definition" id="problem4"><a 
+ id="x1-2003r4"></a>Let <script type="math/tex">f:X\subset \mathbb {R}^2\rightarrow \mathbb {R}</script> be a function, and let <script type="math/tex">C</script> be a constant.
+<!--l. 55--><p class="noindent" >The <em>section</em> of the graph of <script type="math/tex">f</script> by <script type="math/tex">x=C</script> is the set of points <script type="math/tex; mode=display"> \{(C,y,z)\in \mathbb {R}^3\,:\,z = f(C,y)\} </script>
+</p><!--l. 60--><p class="noindent" >The <em>section</em> of the graph of <script type="math/tex">f</script> by <script type="math/tex">y=C</script> is the set of points <script type="math/tex; mode=display"> \{(x,C,z)\in \mathbb {R}^3\,:\,z = f(x,C)\} </script>
+</div>
+</p><!--l. 66--><p class="noindent" >Note that, like contour curves, sections exist in <script type="math/tex">\mathbb {R}^3</script>.
+</p><!--l. 68--><p class="noindent" >PICTURE/VIDEO EXAMPLE
+                                                                  
+
+                                                                  
+</p><!--l. 70--><p class="noindent" >EXTRA EXAMPLE
+</p>
+<h3 class="sectionHead"><a 
+ id="x1-3000"></a>Conclusion</h3>
+<!--l. 76--><p class="noindent" >In this activity, we gave the formal definition of the graph of a function <script type="math/tex">f:\mathbb {R}^2\rightarrow \mathbb {R}</script>. We
+discussed strategies for figuring out the shapes of the graph of such functions, using
+contour curves, level curves, and sections.
+</body> 
+ 
+</html>
+                                                                  
+
+                                                                  
+                                                                  
+
+

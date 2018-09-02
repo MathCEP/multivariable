@@ -51,8 +51,20 @@ TOPICS
 02_multivariable_functions/2_graphing
 02_multivariable_functions/3_quadric_surfaces
 ONLINE HOMEWORK
+02_multivariable_functions/1_functions/problems/online/problem1.tex
+02_multivariable_functions/1_functions/problems/online/problem2.tex
+02_multivariable_functions/1_functions/problems/online/problem3.tex
+02_multivariable_functions/2_graphing/problems/online/problem1.tex
+02_multivariable_functions/2_graphing/problems/online/problem2.tex
+02_multivariable_functions/2_graphing/problems/online/problem3.tex
+02_multivariable_functions/3_quadric_surfaces/problems/online/problem1.tex
+02_multivariable_functions/3_quadric_surfaces/problems/online/problem2.tex
 WRITTEN HOMEWORK
+02_multivariable_functions/1_functions/problems/written/problem1.tex
+02_multivariable_functions/2_graphing/problems/written/problem1.tex
+02_multivariable_functions/2_graphing/problems/written/problem2.tex
 PROFESSIONAL HOMEWORK
+02_multivariable_functions/2_graphing/problems/professional/problem1.tex
 
 Week 27: Conservative Vector Fields and Topology
 TOPICS

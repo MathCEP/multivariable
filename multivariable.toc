@@ -1,108 +1,113 @@
-\contentsline {part}{I\hspace {1em}Week 0: Review}{6}{part.1}
-\contentsline {section}{Vectors}{6}{section*.1}
-\contentsline {section}{Vectors}{6}{section*.2}
-\contentsline {section}{The Geometric Perspective}{7}{section*.3}
-\contentsline {section}{Vector Operations}{8}{section*.4}
-\contentsline {section}{Properties}{11}{section*.5}
-\contentsline {section}{Standard Basis Vectors}{12}{section*.6}
-\contentsline {section}{Summary}{13}{section*.7}
-\contentsline {section}{The Dot Product}{14}{section*.8}
-\contentsline {section}{The Dot Product}{14}{section*.9}
-\contentsline {section}{Projection of one vector onto another}{16}{section*.10}
-\contentsline {section}{Summary}{16}{section*.11}
-\contentsline {section}{The Cross Product}{17}{section*.12}
-\contentsline {section}{The Cross Product}{17}{section*.13}
-\contentsline {section}{Geometry of the Cross Product}{18}{section*.14}
-\contentsline {section}{Volume of a Parallelepiped}{20}{section*.15}
-\contentsline {section}{Summary}{21}{section*.16}
-\contentsline {section}{Matrices}{22}{section*.17}
-\contentsline {section}{Matrices}{22}{section*.18}
-\contentsline {section}{Matrix Operations}{22}{section*.19}
-\contentsline {section}{Determinants}{27}{section*.20}
-\contentsline {section}{Linear Transformations}{31}{section*.21}
-\contentsline {section}{Summary}{34}{section*.22}
-\contentsline {section}{Representations of Lines and Planes}{35}{section*.23}
-\contentsline {section}{Representations of Lines}{35}{section*.24}
-\contentsline {section}{Representations of Planes}{36}{section*.25}
-\contentsline {section}{Summary}{36}{section*.26}
-\contentsline {section}{Practice Problems}{37}{section*.27}
-\contentsline {section}{Online Problems}{37}{section*.28}
-\contentsline {section}{Written Problems}{43}{section*.29}
-\contentsline {part}{II\hspace {1em}Week 1: Coordinate Systems}{45}{part.2}
-\contentsline {section}{Review of Coordinate Systems}{45}{section*.30}
-\contentsline {section}{Cartesian Plane}{45}{section*.31}
-\contentsline {section}{Polar Coordinates}{46}{section*.32}
-\contentsline {section}{Linear Change of Coordinates}{51}{section*.33}
-\contentsline {section}{Three-Dimensional Coordinates}{52}{section*.34}
-\contentsline {section}{Conclusion}{54}{section*.35}
-\contentsline {section}{Cylindrical Coordinates}{55}{section*.36}
-\contentsline {section}{Cylindrical Coordinates}{55}{section*.37}
-\contentsline {section}{Uniqueness}{56}{section*.38}
-\contentsline {section}{Constant-Coordinate Surfaces}{57}{section*.39}
-\contentsline {section}{Converting between Cartesian and cylindrical coordinates}{59}{section*.40}
-\contentsline {section}{Conclusion}{61}{section*.41}
-\contentsline {section}{Spherical Coordinates}{62}{section*.42}
-\contentsline {section}{Spherical Coordinates}{62}{section*.43}
-\contentsline {section}{Uniqueness}{63}{section*.44}
-\contentsline {section}{Constant-Coordinate Surfaces}{64}{section*.45}
-\contentsline {section}{Converting Between Spherical and Cartesian Coordinates}{67}{section*.46}
-\contentsline {section}{Spherical coordinates in $\mathbb {R}^n$ [OPTIONAL]}{68}{section*.47}
-\contentsline {section}{Conclusion}{68}{section*.48}
-\contentsline {section}{Online Homework}{70}{section*.49}
-\contentsline {section}{Written Homework}{75}{section*.50}
-\contentsline {section}{Written Homework}{75}{section*.51}
-\contentsline {section}{Professional Problem}{76}{section*.52}
-\contentsline {section}{Practice Problems}{77}{section*.53}
-\contentsline {section}{Online Problems}{77}{section*.54}
-\contentsline {section}{Written Problems}{83}{section*.55}
-\contentsline {part}{III\hspace {1em}Week 2: Multivariable Functions and Graphing}{86}{part.3}
-\contentsline {section}{Functions}{86}{section*.56}
-\contentsline {section}{Definition of a Function}{86}{section*.57}
-\contentsline {section}{Types of Functions}{88}{section*.58}
-\contentsline {section}{Component Functions}{89}{section*.59}
-\contentsline {section}{Conclusion}{89}{section*.60}
-\contentsline {section}{Graphing Functions}{90}{section*.61}
-\contentsline {section}{Definition of the Graph of a Function}{90}{section*.62}
-\contentsline {section}{Strategies for Graphing}{90}{section*.63}
-\contentsline {section}{Conclusion}{91}{section*.64}
-\contentsline {section}{Graphing Functions}{93}{section*.65}
-\contentsline {section}{Definition of a Quadric Surface}{93}{section*.66}
-\contentsline {section}{Conclusion}{93}{section*.67}
-\contentsline {part}{IV\hspace {1em}Week 27: Conservative Vector Fields and Topology}{94}{part.4}
-\contentsline {section}{Topology}{94}{section*.68}
-\contentsline {section}{Open Sets}{94}{section*.69}
-\contentsline {section}{Closed Sets}{98}{section*.70}
-\contentsline {section}{Connected Sets}{101}{section*.71}
-\contentsline {section}{Simply Connected Sets}{102}{section*.72}
-\contentsline {section}{Summary}{105}{section*.73}
-\contentsline {section}{Path Independence and FTLI}{106}{section*.74}
-\contentsline {section}{Path Independence}{106}{section*.75}
-\contentsline {section}{Fundamental Theorem of Line Integrals}{109}{section*.76}
-\contentsline {section}{Strategies for Computing Line Integrals}{112}{section*.77}
-\contentsline {section}{Summary}{114}{section*.78}
-\contentsline {section}{Conservative Vector Fields}{115}{section*.79}
-\contentsline {section}{Finding a Potential Function}{115}{section*.80}
-\contentsline {section}{Summary}{120}{section*.81}
-\contentsline {section}{Practice Problems}{122}{section*.82}
-\contentsline {section}{Online Problems}{122}{section*.83}
-\contentsline {section}{Written Problems}{122}{section*.84}
-\contentsline {part}{V\hspace {1em}Week 29: Curl}{124}{part.5}
-\contentsline {section}{Curl of a Vector Field}{124}{section*.85}
-\contentsline {section}{Definition of Curl}{124}{section*.86}
-\contentsline {section}{Summary}{128}{section*.87}
-\contentsline {section}{Geometric Significance of Curl}{129}{section*.88}
-\contentsline {section}{Geometric Significance of Two-dimensional Curl}{129}{section*.89}
-\contentsline {section}{Geometric Significance of Three-dimensional Curl}{133}{section*.90}
-\contentsline {section}{Summary}{135}{section*.91}
-\contentsline {section}{Connections of Curl with Older Material}{136}{section*.92}
-\contentsline {section}{Curl of a Conservative Vector Field}{136}{section*.93}
-\contentsline {section}{Curl and Green's Theorem}{137}{section*.94}
-\contentsline {section}{Summary}{138}{section*.95}
-\contentsline {section}{Online Homework}{139}{section*.96}
-\contentsline {section}{Written Homework}{144}{section*.97}
-\contentsline {section}{Written Homework}{144}{section*.98}
-\contentsline {section}{Professional Problem}{144}{section*.99}
-\contentsline {section}{Practice Problems}{146}{section*.100}
-\contentsline {section}{Online Problems}{146}{section*.101}
-\contentsline {section}{Written Problems}{155}{section*.102}
+\contentsline {part}{I\hspace {1em}Week 0: Review}{3}{part.1}
+\contentsline {section}{Vectors}{3}{section*.1}
+\contentsline {section}{Vectors}{3}{section*.2}
+\contentsline {section}{The Geometric Perspective}{4}{section*.3}
+\contentsline {section}{Vector Operations}{5}{section*.4}
+\contentsline {section}{Properties}{8}{section*.5}
+\contentsline {section}{Standard Basis Vectors}{9}{section*.6}
+\contentsline {section}{Summary}{10}{section*.7}
+\contentsline {section}{The Dot Product}{11}{section*.8}
+\contentsline {section}{The Dot Product}{11}{section*.9}
+\contentsline {section}{Projection of one vector onto another}{13}{section*.10}
+\contentsline {section}{Summary}{13}{section*.11}
+\contentsline {section}{The Cross Product}{14}{section*.12}
+\contentsline {section}{The Cross Product}{14}{section*.13}
+\contentsline {section}{Geometry of the Cross Product}{15}{section*.14}
+\contentsline {section}{Volume of a Parallelepiped}{17}{section*.15}
+\contentsline {section}{Summary}{18}{section*.16}
+\contentsline {section}{Matrices}{19}{section*.17}
+\contentsline {section}{Matrices}{19}{section*.18}
+\contentsline {section}{Matrix Operations}{19}{section*.19}
+\contentsline {section}{Determinants}{24}{section*.20}
+\contentsline {section}{Linear Transformations}{28}{section*.21}
+\contentsline {section}{Summary}{31}{section*.22}
+\contentsline {section}{Representations of Lines and Planes}{32}{section*.23}
+\contentsline {section}{Representations of Lines}{32}{section*.24}
+\contentsline {section}{Representations of Planes}{33}{section*.25}
+\contentsline {section}{Summary}{33}{section*.26}
+\contentsline {section}{Practice Problems}{34}{section*.27}
+\contentsline {section}{Online Problems}{34}{section*.28}
+\contentsline {section}{Written Problems}{40}{section*.29}
+\contentsline {part}{II\hspace {1em}Week 1: Coordinate Systems}{42}{part.2}
+\contentsline {section}{Review of Coordinate Systems}{42}{section*.30}
+\contentsline {section}{Cartesian Plane}{42}{section*.31}
+\contentsline {section}{Polar Coordinates}{43}{section*.32}
+\contentsline {section}{Linear Change of Coordinates}{48}{section*.33}
+\contentsline {section}{Three-Dimensional Coordinates}{49}{section*.34}
+\contentsline {section}{Conclusion}{51}{section*.35}
+\contentsline {section}{Cylindrical Coordinates}{52}{section*.36}
+\contentsline {section}{Cylindrical Coordinates}{52}{section*.37}
+\contentsline {section}{Uniqueness}{53}{section*.38}
+\contentsline {section}{Constant-Coordinate Surfaces}{54}{section*.39}
+\contentsline {section}{Converting between Cartesian and cylindrical coordinates}{56}{section*.40}
+\contentsline {section}{Conclusion}{58}{section*.41}
+\contentsline {section}{Spherical Coordinates}{59}{section*.42}
+\contentsline {section}{Spherical Coordinates}{59}{section*.43}
+\contentsline {section}{Uniqueness}{60}{section*.44}
+\contentsline {section}{Constant-Coordinate Surfaces}{61}{section*.45}
+\contentsline {section}{Converting Between Spherical and Cartesian Coordinates}{64}{section*.46}
+\contentsline {section}{Spherical coordinates in $\mathbb {R}^n$ [OPTIONAL]}{65}{section*.47}
+\contentsline {section}{Conclusion}{65}{section*.48}
+\contentsline {section}{Online Homework}{67}{section*.49}
+\contentsline {section}{Written Homework}{72}{section*.50}
+\contentsline {section}{Written Homework}{72}{section*.51}
+\contentsline {section}{Professional Problem}{73}{section*.52}
+\contentsline {section}{Practice Problems}{74}{section*.53}
+\contentsline {section}{Online Problems}{74}{section*.54}
+\contentsline {section}{Written Problems}{80}{section*.55}
+\contentsline {part}{III\hspace {1em}Week 2: Multivariable Functions and Graphing}{83}{part.3}
+\contentsline {section}{Functions}{83}{section*.56}
+\contentsline {section}{Definition of a Function}{83}{section*.57}
+\contentsline {section}{Types of Functions}{85}{section*.58}
+\contentsline {section}{Component Functions}{86}{section*.59}
+\contentsline {section}{Conclusion}{86}{section*.60}
+\contentsline {section}{Graphing Functions}{87}{section*.61}
+\contentsline {section}{Definition of the Graph of a Function}{87}{section*.62}
+\contentsline {section}{Strategies for Graphing}{87}{section*.63}
+\contentsline {section}{Conclusion}{88}{section*.64}
+\contentsline {section}{Graphing Functions}{90}{section*.65}
+\contentsline {section}{Definition of a Quadric Surface}{90}{section*.66}
+\contentsline {section}{Conclusion}{92}{section*.67}
+\contentsline {section}{Written Homework}{93}{section*.68}
+\contentsline {section}{Written Homework}{93}{section*.69}
+\contentsline {section}{Professional Problem}{93}{section*.70}
+\contentsline {section}{Practice Problems}{95}{section*.71}
+\contentsline {section}{Written Problems}{95}{section*.72}
+\contentsline {part}{IV\hspace {1em}Week 27: Conservative Vector Fields and Topology}{96}{part.4}
+\contentsline {section}{Topology}{96}{section*.73}
+\contentsline {section}{Open Sets}{96}{section*.74}
+\contentsline {section}{Closed Sets}{100}{section*.75}
+\contentsline {section}{Connected Sets}{103}{section*.76}
+\contentsline {section}{Simply Connected Sets}{104}{section*.77}
+\contentsline {section}{Summary}{107}{section*.78}
+\contentsline {section}{Path Independence and FTLI}{108}{section*.79}
+\contentsline {section}{Path Independence}{108}{section*.80}
+\contentsline {section}{Fundamental Theorem of Line Integrals}{111}{section*.81}
+\contentsline {section}{Strategies for Computing Line Integrals}{114}{section*.82}
+\contentsline {section}{Summary}{116}{section*.83}
+\contentsline {section}{Conservative Vector Fields}{117}{section*.84}
+\contentsline {section}{Finding a Potential Function}{117}{section*.85}
+\contentsline {section}{Summary}{122}{section*.86}
+\contentsline {section}{Practice Problems}{124}{section*.87}
+\contentsline {section}{Online Problems}{124}{section*.88}
+\contentsline {section}{Written Problems}{124}{section*.89}
+\contentsline {part}{V\hspace {1em}Week 29: Curl}{126}{part.5}
+\contentsline {section}{Curl of a Vector Field}{126}{section*.90}
+\contentsline {section}{Definition of Curl}{126}{section*.91}
+\contentsline {section}{Summary}{130}{section*.92}
+\contentsline {section}{Geometric Significance of Curl}{131}{section*.93}
+\contentsline {section}{Geometric Significance of Two-dimensional Curl}{131}{section*.94}
+\contentsline {section}{Geometric Significance of Three-dimensional Curl}{135}{section*.95}
+\contentsline {section}{Summary}{137}{section*.96}
+\contentsline {section}{Connections of Curl with Older Material}{138}{section*.97}
+\contentsline {section}{Curl of a Conservative Vector Field}{138}{section*.98}
+\contentsline {section}{Curl and Green's Theorem}{139}{section*.99}
+\contentsline {section}{Summary}{140}{section*.100}
+\contentsline {section}{Online Homework}{141}{section*.101}
+\contentsline {section}{Written Homework}{146}{section*.102}
+\contentsline {section}{Written Homework}{146}{section*.103}
+\contentsline {section}{Professional Problem}{146}{section*.104}
+\contentsline {section}{Practice Problems}{148}{section*.105}
+\contentsline {section}{Online Problems}{148}{section*.106}
+\contentsline {section}{Written Problems}{157}{section*.107}
 \contentsfinish 
