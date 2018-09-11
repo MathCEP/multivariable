@@ -124,6 +124,7 @@ def generate_hw(group, online_hw, written_hw, professional_hw):
         activities.append("./auto_generated_text/" + group + "/online_hw.tex")
     
         olhw_file.write("\\documentclass{ximera}\n")
+        olhw_file.write("\\graphicspath{{./auto_generated_text/" + group + "/graphics/}{./graphics/}}\n")
         olhw_file.write("\\title{Online Homework}\n")
         olhw_file.write("\\begin{document}\n")
         olhw_file.write("\\begin{abstract}\n")
@@ -145,6 +146,7 @@ def generate_hw(group, online_hw, written_hw, professional_hw):
         activities.append("./auto_generated_text/" + group + "/written_hw.tex")
     
         whw_file.write("\\documentclass{ximera}\n")
+        whw_file.write("\\graphicspath{{./auto_generated_text/" + group + "/graphics/}{./graphics/}}\n")
         whw_file.write("\\title{Written Homework}\n")
         whw_file.write("\\begin{document}\n")
         whw_file.write("\\begin{abstract}\n")
@@ -200,6 +202,7 @@ def generate_all_problems(group, topics):
         activities.append("./auto_generated_text/" + group + "/all_problems.tex")
     
         all_problems.write("\\documentclass{ximera}\n")
+        all_problems.write("\\graphicspath{{./auto_generated_text/" + group + "/graphics/}{./graphics/}}\n")
         all_problems.write("\\title{Practice Problems}\n")
         all_problems.write("\\begin{document}\n")
         all_problems.write("\\begin{abstract}\n")
