@@ -1,4 +1,7 @@
 \documentclass{ximera}
+
+\graphicspath{{./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/}{./graphics/}}
+
 \title{Quadric Surfaces}
 \begin{document}
 \begin{abstract}
@@ -12,7 +15,12 @@ In this activity, we introduce and classify quadric surfaces, which form an impo
 
 You might remember studying conic sections, such as parabolas, circles, ellipses, and hyperbolas. These are curves in the plane that arise through polynomial equations of degree two in two variables.
 
-PICTURE
+\begin{image}
+\begin{tikzpicture}
+\node[inner sep=0pt] at (0,0)
+    {\includegraphics{conics}};
+\end{tikzpicture}
+\end{image}
 
 Quadric Surfaces are the three dimensional analogue of conic sections. That is, a quadric surface is the set of points in $\mathbb{R}^3$ satisfying some polynomial of degree two in three variables.
 
@@ -35,7 +43,12 @@ x^2/a^2 + y^2/b^2 + z^2/c^2 = 1,
 \]
 for some constants $a,b,c\in\mathbb{R}$, is called an \emph{ellipsoid}.
 
-PICTURE
+\begin{image}
+\begin{tikzpicture}
+\node[inner sep=0pt] at (0,0)
+    {\includegraphics{ellipsoid}};
+\end{tikzpicture}
+\end{image}
 
 An ellipsoid is kind of like a three dimensional ellipse. In fact, the sections and contour curves of such an an ellipsoid are ellipses.
 
@@ -49,7 +62,12 @@ z/c = x^2/a^2 + y^2/b^2,
 \]
 for some constants $a,b,c\in\mathbb{R}$, is called an \emph{elliptic paraboloid}.
 
-PICTURE
+\begin{image}
+\begin{tikzpicture}
+\node[inner sep=0pt] at (0,0)
+    {\includegraphics{paraboloid}};
+\end{tikzpicture}
+\end{image}
 
 The contour curves of such an elliptic paraboloid are ellipses, however the sections are parabolas which all open in the same direction.
 \end{example}
@@ -61,7 +79,12 @@ z/c = y^2/b^2 - x^2/a^2,
 \]
 for some constants $a,b,c\in\mathbb{R}$, is called a \emph{hyperbolic paraboloid}.
 
-PICTURE
+\begin{image}
+\begin{tikzpicture}
+\node[inner sep=0pt] at (0,0)
+    {\includegraphics{hyperbolic_paraboloid}};
+\end{tikzpicture}
+\end{image}
 
 The contour curves of such a hyperbolic paraboloid are hyperbolas, and the sections are parabolas opening in opposite directions for $x$ and $y$ sections. This surface is often described as a ``saddle''.
 \end{example}
@@ -73,7 +96,12 @@ z^2/c^2 = x^2/a^2 + y^2/b^2,
 \]
 for some constants $a,b,c\in\mathbb{R}$, is called an \emph{elliptic cone}.
 
-PICTURE
+\begin{image}
+\begin{tikzpicture}
+\node[inner sep=0pt] at (0,0)
+    {\includegraphics{elliptic_cone}};
+\end{tikzpicture}
+\end{image}
 
 The contour curves of such an elliptic cone are ellipses, and the sections by $x=0$ and $y=0$ are pairs of intersecting lines.
 \end{example}
@@ -85,7 +113,12 @@ x^2/a^2 + y^2/b^2 - z^2/c^2 =1.
 \]
 for some constants $a,b,c\in\mathbb{R}$, is called a \emph{hyperboloid of one sheet}.
 
-PICTURE
+\begin{image}
+\begin{tikzpicture}
+\node[inner sep=0pt] at (0,0)
+    {\includegraphics{hyperboloid_one_sheet}};
+\end{tikzpicture}
+\end{image}
 
 The contour curves of such a hyperboloid are ellipses, and the sections are hyperbolas.
 \end{example}
@@ -97,7 +130,12 @@ z^2/c^2 -x^2/a^2 - y^2/b^2 =1.
 \]
 for some constants $a,b,c\in\mathbb{R}$, is called a \emph{hyperboloid of two sheets}.
 
-PICTURE
+\begin{image}
+\begin{tikzpicture}
+\node[inner sep=0pt] at (0,0)
+    {\includegraphics{hyperboloid_two_sheet}};
+\end{tikzpicture}
+\end{image}
 
 The contour curves of such a hyperboloid are ellipses, and the sections are hyperbolas. We describe this as the hyperboloid ``of two sheets'' since it has two disconnected pieces, as opposed to the hyperboloid of one sheet, which has only one.
 \end{example}
@@ -112,7 +150,7 @@ For example, the graph of the equation
 \[
 (x-3)^2 + \frac{(y+2)^2}{3} + \frac{(z-1)^2}{2} = 1
 \]
-is an ellipse centered at $(3,-2,1)$.
+is an ellipsoid centered at $(3,-2,1)$.
 
 PICTURE
 
