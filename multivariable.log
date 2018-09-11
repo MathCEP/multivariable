@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  1 SEP 2018 19:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  11 SEP 2018 12:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1165,8 +1165,8 @@ LaTeX Warning: No \author given.
 [52
 
 ] [53] [54]
-<./auto_generated_text/Week1CoordinateSystems/graphics/theta_constant.pdf, id=8
-72, 253.1775pt x 230.55865pt>
+<./auto_generated_text/Week1CoordinateSystems/graphics/theta_constant.pdf, id=4
+82, 253.1775pt x 230.55865pt>
 File: ./auto_generated_text/Week1CoordinateSystems/graphics/theta_constant.pdf 
 Graphic file (type pdf)
 
@@ -1177,7 +1177,7 @@ theta_constant.pdf used on input line 133.
 
 [55 <./auto_generated_text/Week1CoordinateSystems/graphics/theta_constant.pdf>]
 
-<./auto_generated_text/Week1CoordinateSystems/graphics/z_constant.pdf, id=887, 
+<./auto_generated_text/Week1CoordinateSystems/graphics/z_constant.pdf, id=496, 
 277.59894pt x 203.12659pt>
 File: ./auto_generated_text/Week1CoordinateSystems/graphics/z_constant.pdf Grap
 hic file (type pdf)
@@ -1187,7 +1187,7 @@ Package pdftex.def Info: ./auto_generated_text/Week1CoordinateSystems/graphics/
 z_constant.pdf used on input line 144.
 (pdftex.def)             Requested size: 277.59825pt x 203.12607pt.
 
-<./auto_generated_text/Week1CoordinateSystems/graphics/half_sphere.pdf, id=888,
+<./auto_generated_text/Week1CoordinateSystems/graphics/half_sphere.pdf, id=497,
  289.64178pt x 211.44104pt>
 File: ./auto_generated_text/Week1CoordinateSystems/graphics/half_sphere.pdf Gra
 phic file (type pdf)
@@ -1198,7 +1198,7 @@ half_sphere.pdf used on input line 176.
 (pdftex.def)             Requested size: 289.64107pt x 211.4405pt.
 
 [56 <./auto_generated_text/Week1CoordinateSystems/graphics/z_constant.pdf>]
-<./auto_generated_text/Week1CoordinateSystems/graphics/cylinder_100.pdf, id=902
+<./auto_generated_text/Week1CoordinateSystems/graphics/cylinder_100.pdf, id=513
 , 239.23303pt x 204.9784pt>
 File: ./auto_generated_text/Week1CoordinateSystems/graphics/cylinder_100.pdf Gr
 aphic file (type pdf)
@@ -1215,7 +1215,7 @@ cylinder_100.pdf used on input line 216.
 LaTeX Warning: No \author given.
 
 
-<./auto_generated_text/Week1CoordinateSystems/graphics/spherical.pdf, id=930, 2
+<./auto_generated_text/Week1CoordinateSystems/graphics/spherical.pdf, id=542, 2
 13.52151pt x 193.40526pt>
 File: ./auto_generated_text/Week1CoordinateSystems/graphics/spherical.pdf Graph
 ic file (type pdf)
@@ -1225,7 +1225,7 @@ Package pdftex.def Info: ./auto_generated_text/Week1CoordinateSystems/graphics/
 spherical.pdf used on input line 24.
 (pdftex.def)             Requested size: 213.52098pt x 193.40477pt.
 
-<./auto_generated_text/Week1CoordinateSystems/graphics/011.pdf, id=931, 220.757
+<./auto_generated_text/Week1CoordinateSystems/graphics/011.pdf, id=543, 220.757
 2pt x 200.48491pt>
 File: ./auto_generated_text/Week1CoordinateSystems/graphics/011.pdf Graphic fil
 e (type pdf)
@@ -1238,7 +1238,7 @@ Package pdftex.def Info: ./auto_generated_text/Week1CoordinateSystems/graphics/
 
  <./auto_generated_text/Week1CoordinateSystems/graphics/spherical.pdf>] [60 <./
 auto_generated_text/Week1CoordinateSystems/graphics/011.pdf>]
-<./auto_generated_text/Week1CoordinateSystems/graphics/rho_constant.pdf, id=960
+<./auto_generated_text/Week1CoordinateSystems/graphics/rho_constant.pdf, id=575
 , 280.54442pt x 251.6363pt>
 File: ./auto_generated_text/Week1CoordinateSystems/graphics/rho_constant.pdf Gr
 aphic file (type pdf)
@@ -1258,7 +1258,7 @@ theta_constant.pdf used on input line 100.
 (pdftex.def)             Requested size: 253.17688pt x 230.55809pt.
 
 [62 <./auto_generated_text/Week1CoordinateSystems/graphics/rho_constant.pdf>]
-<./auto_generated_text/Week1CoordinateSystems/graphics/phi_constant.pdf, id=982
+<./auto_generated_text/Week1CoordinateSystems/graphics/phi_constant.pdf, id=598
 , 562.72177pt x 197.002pt>
 File: ./auto_generated_text/Week1CoordinateSystems/graphics/phi_constant.pdf Gr
 aphic file (type pdf)
@@ -1268,7 +1268,7 @@ Package pdftex.def Info: ./auto_generated_text/Week1CoordinateSystems/graphics/
 phi_constant.pdf used on input line 111.
 (pdftex.def)             Requested size: 562.7204pt x 197.00151pt.
 
-<./auto_generated_text/Week1CoordinateSystems/graphics/cone.pdf, id=983, 197.60
+<./auto_generated_text/Week1CoordinateSystems/graphics/cone.pdf, id=599, 197.60
 349pt x 209.84286pt>
 File: ./auto_generated_text/Week1CoordinateSystems/graphics/cone.pdf Graphic fi
 le (type pdf)
@@ -1279,8 +1279,8 @@ cone.pdf used on input line 120.
 (pdftex.def)             Requested size: 197.603pt x 209.84235pt.
  [63 <./auto_generated_text/Week1CoordinateSystems/graphics/phi_constant.pdf> <
 ./auto_generated_text/Week1CoordinateSystems/graphics/cone.pdf>]
-<./auto_generated_text/Week1CoordinateSystems/graphics/elliptic_hyper.pdf, id=1
-005, 258.02199pt x 229.74332pt>
+<./auto_generated_text/Week1CoordinateSystems/graphics/elliptic_hyper.pdf, id=6
+21, 258.02199pt x 229.74332pt>
 File: ./auto_generated_text/Week1CoordinateSystems/graphics/elliptic_hyper.pdf 
 Graphic file (type pdf)
 
@@ -1291,8 +1291,8 @@ elliptic_hyper.pdf used on input line 149.
 
 [64 <./auto_generated_text/Week1CoordinateSystems/graphics/elliptic_hyper.pdf>]
 
-<./auto_generated_text/Week1CoordinateSystems/graphics/ice_cream.pdf, id=1020, 
-231.30133pt x 225.29599pt>
+<./auto_generated_text/Week1CoordinateSystems/graphics/ice_cream.pdf, id=636, 2
+31.30133pt x 225.29599pt>
 File: ./auto_generated_text/Week1CoordinateSystems/graphics/ice_cream.pdf Graph
 ic file (type pdf)
 
@@ -1320,76 +1320,130 @@ LaTeX Warning: No \author given.
 
 [67
 
-] [68] [69] [70]) [71]
+]
+<./auto_generated_text/Week1CoordinateSystems/graphics/cylinder_wedge.pdf, id=6
+68, 169.41634pt x 170.5846pt>
+File: ./auto_generated_text/Week1CoordinateSystems/graphics/cylinder_wedge.pdf 
+Graphic file (type pdf)
+
+<use ./auto_generated_text/Week1CoordinateSystems/graphics/cylinder_wedge.pdf>
+Package pdftex.def Info: ./auto_generated_text/Week1CoordinateSystems/graphics/
+cylinder_wedge.pdf used on input line 84.
+(pdftex.def)             Requested size: 169.41591pt x 170.58417pt.
+
+[68]
+<./auto_generated_text/Week1CoordinateSystems/graphics/sphere_wedge.pdf, id=683
+, 167.46265pt x 193.85759pt>
+File: ./auto_generated_text/Week1CoordinateSystems/graphics/sphere_wedge.pdf Gr
+aphic file (type pdf)
+
+<use ./auto_generated_text/Week1CoordinateSystems/graphics/sphere_wedge.pdf>
+Package pdftex.def Info: ./auto_generated_text/Week1CoordinateSystems/graphics/
+sphere_wedge.pdf used on input line 103.
+(pdftex.def)             Requested size: 167.46222pt x 193.8571pt.
+
+[69 <./auto_generated_text/Week1CoordinateSystems/graphics/cylinder_wedge.pdf, 
+page is rotated 180 degrees>] [70 <./auto_generated_text/Week1CoordinateSystems
+/graphics/sphere_wedge.pdf, page is rotated 180 degrees>] [71]) [72]
 (./auto_generated_text/Week1CoordinateSystems/written_hw.tex
 
 LaTeX Warning: No \author given.
 
-[72
+[73
 
 ]
+<./auto_generated_text/Week1CoordinateSystems/graphics/ice_cream_pp.pdf, id=759
+, 163.92058pt x 176.62718pt>
+File: ./auto_generated_text/Week1CoordinateSystems/graphics/ice_cream_pp.pdf Gr
+aphic file (type pdf)
+
+<use ./auto_generated_text/Week1CoordinateSystems/graphics/ice_cream_pp.pdf>
+Package pdftex.def Info: ./auto_generated_text/Week1CoordinateSystems/graphics/
+ice_cream_pp.pdf used on input line 46.
+(pdftex.def)             Requested size: 163.92017pt x 176.62674pt.
 LaTeX Font Info:    Font shape `OMS/cmr/m/sl' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 50.
-) [73] (./auto_generated_text/Week1CoordinateSystems/all_problems.tex
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 55.
+
+[74 <./auto_generated_text/Week1CoordinateSystems/graphics/ice_cream_pp.pdf, pa
+ge is rotated 180 degrees>]) [75]
+(./auto_generated_text/Week1CoordinateSystems/all_problems.tex
 
 LaTeX Warning: No \author given.
 
-[74
+[76
 
-] [75] [76] [77] [78] [79] [80] [81]) [82]
+]
+File: ./auto_generated_text/Week1CoordinateSystems/graphics/cylinder_wedge.pdf 
+Graphic file (type pdf)
+
+<use ./auto_generated_text/Week1CoordinateSystems/graphics/cylinder_wedge.pdf>
+Package pdftex.def Info: ./auto_generated_text/Week1CoordinateSystems/graphics/
+cylinder_wedge.pdf used on input line 92.
+(pdftex.def)             Requested size: 169.41591pt x 170.58417pt.
+
+[77] [78] [79]
+File: ./auto_generated_text/Week1CoordinateSystems/graphics/sphere_wedge.pdf Gr
+aphic file (type pdf)
+
+<use ./auto_generated_text/Week1CoordinateSystems/graphics/sphere_wedge.pdf>
+Package pdftex.def Info: ./auto_generated_text/Week1CoordinateSystems/graphics/
+sphere_wedge.pdf used on input line 209.
+(pdftex.def)             Requested size: 167.46222pt x 193.8571pt.
+
+[80] [81] [82] [83] [84]) [85]
 (./auto_generated_text/Week2MultivariableFunctionsandGraphing/functions.tex
 
 LaTeX Warning: No \author given.
 
-[83
+[86
 
-] [84] [85]) [86]
+] [87] [88]) [89]
 (./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphing.tex
-
-LaTeX Warning: No \author given.
-
-[87
-
-]) [88] [89]
-(./auto_generated_text/Week2MultivariableFunctionsandGraphing/quadric_surfaces.
-tex
 
 LaTeX Warning: No \author given.
 
 [90
 
-]) [91] [92]
+] [91] [92]) [93]
+(./auto_generated_text/Week2MultivariableFunctionsandGraphing/quadric_surfaces.
+tex
+
+LaTeX Warning: No \author given.
+
+[94
+
+] [95] [96]) [97]
 (./auto_generated_text/Week2MultivariableFunctionsandGraphing/online_hw.tex
 
 LaTeX Warning: No \author given.
 
-[93
+[98
 
-] [94] [95] [96] [97] [98] [99] [100]) [101]
+] [99] [100] [101] [102] [103] [104] [105]) [106]
 (./auto_generated_text/Week2MultivariableFunctionsandGraphing/written_hw.tex
 
 LaTeX Warning: No \author given.
 
-[102
+[107
 
-]) [103]
+]) [108]
 (./auto_generated_text/Week2MultivariableFunctionsandGraphing/all_problems.tex
 
 LaTeX Warning: No \author given.
 
-[104
+[109
 
-] [105] [106] [107] [108] [109] [110] [111]) [112]
+] [110] [111] [112] [113] [114] [115] [116]) [117]
 (./auto_generated_text/Week27ConservativeVectorFieldsandTopology/topology.tex
-[113
+[118
 
-] [114] [115] [116] [117] [118] [119] [120] [121] [122] [123]) [124]
+] [119] [120] [121] [122] [123] [124] [125] [126] [127] [128]) [129]
 (./auto_generated_text/Week27ConservativeVectorFieldsandTopology/cons_vf_top.te
-x [125
+x [130
 
-] [126] [127] [128] [129] [130]
+] [131] [132] [133] [134] [135]
 Overfull \hbox (10.04654pt too wide) in paragraph at lines 238--239
-[][]\OT1/cmr/bx/n/10 Example 44. []\OT1/cmr/m/it/10 Let $[]\OT1/cmr/m/n/10 (\OM
+[][]\OT1/cmr/bx/n/10 Example 46. []\OT1/cmr/m/it/10 Let $[]\OT1/cmr/m/n/10 (\OM
 L/cmm/m/it/10 x; y\OT1/cmr/m/n/10 ) = (2\OML/cmm/m/it/10 xy[]; \OT1/cmr/m/n/10 
 2\OML/cmm/m/it/10 x[]y\OT1/cmr/m/n/10 )$\OT1/cmr/m/it/10 , and con-sider $[]\OT
 1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) = (2 [](\OML/cmm/m/it/10 ^^Yt
@@ -1402,22 +1456,22 @@ Overfull \hbox (28.51959pt too wide) in paragraph at lines 247--247
 [] 
  []
 
-[131] [132]) [133]
+[136] [137]) [138]
 (./auto_generated_text/Week27ConservativeVectorFieldsandTopology/cons_vf.tex
-[134
+[139
 
 ]
 Overfull \hbox (3.72144pt too wide) in paragraph at lines 73--74
-[][]\OT1/cmr/bx/n/10 Example 46. []\OT1/cmr/m/it/10 Find a po-ten-tial func-tio
+[][]\OT1/cmr/bx/n/10 Example 48. []\OT1/cmr/m/it/10 Find a po-ten-tial func-tio
 n for the vec-tor field $\OT1/cmr/bx/n/10 F\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x;
  y; z\OT1/cmr/m/n/10 ) = (2\OML/cmm/m/it/10 xy; x[] \OT1/cmr/m/n/10 +
  []
 
-[135] [136] [137] [138] [139]) [140]
+[140] [141] [142] [143] [144]) [145]
 (./auto_generated_text/Week27ConservativeVectorFieldsandTopology/all_problems.t
-ex [141
+ex [146
 
-]) [142] (./auto_generated_text/Week29Curl/curl_comp.tex [143
+]) [147] (./auto_generated_text/Week29Curl/curl_comp.tex [148
 
 ]
 \c@depthIIICount=\count266
@@ -1428,7 +1482,7 @@ Overfull \hbox (22.83394pt too wide) in paragraph at lines 55--56
 /m/sl/10 should mean $[]$.
  []
 
-[144]
+[149]
 Overfull \hbox (107.87029pt too wide) in paragraph at lines 96--97
 [][]\OT1/cmr/bx/n/10 Definition 37. []\OT1/cmr/m/it/10 The \OT1/cmr/m/n/10 curl
  \OT1/cmr/m/it/10 of a three-dimensional vec-tor field $\OT1/cmr/bx/n/10 F\OT1/
@@ -1438,7 +1492,7 @@ cmr/m/n/10 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; P\OT1/c
 mr/m/n/10 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 ))$
  []
 
-[145] [146]
+[150] [151]
 Overfull \hbox (34.7304pt too wide) in paragraph at lines 183--184
 []\OT1/cmr/m/n/10 For a three-dimensional vec-tor field, $\OT1/cmr/bx/n/10 F\OT
 1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 ) = (\OML/cmm/m/it/10 M\O
@@ -1447,16 +1501,16 @@ T1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; N\OT
 /cmr/m/n/10 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 ))$,
  []
 
-) [147] (./auto_generated_text/Week29Curl/curl_geo.tex [148
+) [152] (./auto_generated_text/Week29Curl/curl_geo.tex [153
 
-] [149]
+] [154]
 Overfull \hbox (1.66492pt too wide) in paragraph at lines 176--177
 []\OT1/cmr/m/n/10 Note that this cor-re-sponds to a larger value of $\OML/cmm/m
 /it/10 N[]$ \OT1/cmr/m/n/10 (the change in the $\OML/cmm/m/it/10 y$\OT1/cmr/m/n
 /10 -component
  []
 
-[150] [151]
+[155] [156]
 Overfull \hbox (1.5896pt too wide) in paragraph at lines 223--223
 |\OT1/cmr/bx/n/14.4 Geometric Sig-nif-i-cance of Three-dimensional Curl| 
  []
@@ -1472,16 +1526,16 @@ Overfull \hbox (28.86298pt too wide) in paragraph at lines 252--253
 0 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 ) = []$\OT1/cmr/m/sl/10 .
  []
 
-[152] [153]) [154] (./auto_generated_text/Week29Curl/curl_connect.tex
+[157] [158]) [159] (./auto_generated_text/Week29Curl/curl_connect.tex
 Overfull \hbox (2.06386pt too wide) in paragraph at lines 35--36
 []\OT1/cmr/m/n/10 Now, we will use Clairaut's The-o-rem to sim-plify this vec-t
 or. Since $\OT1/cmr/bx/n/10 F \OT1/cmr/m/n/10 = (\OML/cmm/m/it/10 M; N; P\OT1/c
 mr/m/n/10 )$
  []
 
-[155
+[160
 
-] [156]) [157] (./auto_generated_text/Week29Curl/online_hw.tex
+] [161]) [162] (./auto_generated_text/Week29Curl/online_hw.tex
 Overfull \hbox (62.28526pt too wide) in paragraph at lines 9--10
 []\OT1/cmr/m/sl/10 Compute the curl of the vec-tor field $\OT1/cmr/bx/n/10 F\OT
 1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 ) = (\OMS/cmsy/m/n/10 ^^@
@@ -1491,9 +1545,9 @@ cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 3\OML/cmm/m/it/10 x []\OT1/cmr/m
 \OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 0)$\OT1/cmr/m/sl/10 . 
  []
 
-[158
+[163
 
-] [159] [160]
+] [164] [165]
 Overfull \hbox (27.09312pt too wide) in paragraph at lines 136--137
 []\OT1/cmr/m/sl/10 Compute the curl of the vec-tor field $\OT1/cmr/bx/n/10 F\OT
 1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y\OT1/cmr/m/n/10 ) = (\OMS/cmsy/m/n/10 ^^@\OT
@@ -1502,9 +1556,9 @@ r/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; []\OT1/cmr/m/n/
 10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ))$\OT1/cmr/m/sl/10 . 
  []
 
-[161]) [162] (./auto_generated_text/Week29Curl/written_hw.tex [163
+[166]) [167] (./auto_generated_text/Week29Curl/written_hw.tex [168
 
-]) [164]
+]) [169]
 (./auto_generated_text/Week29Curl/all_problems.tex
 Overfull \hbox (18.39633pt too wide) in paragraph at lines 44--45
 []\OT1/cmr/m/sl/10 Compute the curl of the vec-tor field $\OT1/cmr/bx/n/10 F\OT
@@ -1513,7 +1567,7 @@ x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 y\OT1/
 cmr/m/n/10 )\OML/cmm/m/it/10 ; xy\OT1/cmr/m/n/10 )$\OT1/cmr/m/sl/10 . 
  []
 
-[165
+[170
 
 ]
 Overfull \hbox (4.93805pt too wide) in paragraph at lines 58--59
@@ -1523,14 +1577,14 @@ Overfull \hbox (4.93805pt too wide) in paragraph at lines 58--59
 OT1/cmr/m/n/10 )$\OT1/cmr/m/sl/10 . 
  []
 
-[166] [167]
+[171] [172]
 Overfull \hbox (2.69038pt too wide) in paragraph at lines 145--146
 []\OT1/cmr/m/sl/10 Find the 2-dimensional curl of the vec-tor field $\OT1/cmr/b
 x/n/10 F\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y\OT1/cmr/m/n/10 ) = (\OMS/cmsy/m/
 n/10 ^^@\OML/cmm/m/it/10 y; x\OT1/cmr/m/n/10 )$\OT1/cmr/m/sl/10 .
  []
 
-[168]
+[173]
 Overfull \hbox (62.28526pt too wide) in paragraph at lines 190--191
 []\OT1/cmr/m/sl/10 Compute the curl of the vec-tor field $\OT1/cmr/bx/n/10 F\OT
 1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 ) = (\OMS/cmsy/m/n/10 ^^@
@@ -1540,7 +1594,7 @@ cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 3\OML/cmm/m/it/10 x []\OT1/cmr/m
 \OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 0)$\OT1/cmr/m/sl/10 . 
  []
 
-[169]
+[174]
 Overfull \hbox (70.45428pt too wide) in paragraph at lines 210--211
 []\OT1/cmr/m/sl/10 Compute the curl of the vec-tor field $\OT1/cmr/bx/n/10 F\OT
 1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 ) = (\OML/cmm/m/it/10 ze[
@@ -1549,7 +1603,7 @@ Overfull \hbox (70.45428pt too wide) in paragraph at lines 210--211
 \OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ))$\OT1/cmr/m/sl/10 . 
  []
 
-[170]
+[175]
 Overfull \hbox (27.09312pt too wide) in paragraph at lines 270--271
 []\OT1/cmr/m/sl/10 Compute the curl of the vec-tor field $\OT1/cmr/bx/n/10 F\OT
 1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y\OT1/cmr/m/n/10 ) = (\OMS/cmsy/m/n/10 ^^@\OT
@@ -1558,7 +1612,7 @@ r/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; []\OT1/cmr/m/n/
 10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ))$\OT1/cmr/m/sl/10 . 
  []
 
-[171] [172]
+[176] [177]
 Overfull \hbox (61.38022pt too wide) in paragraph at lines 336--337
 []\OT1/cmr/m/sl/10 Compute the curl of the vec-tor field $\OT1/cmr/bx/n/10 F\OT
 1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 ) = (\OML/cmm/m/it/10 ye[
@@ -1567,7 +1621,7 @@ Overfull \hbox (61.38022pt too wide) in paragraph at lines 336--337
 1/cmr/m/n/10 ))$\OT1/cmr/m/sl/10 . 
  []
 
-[173] [174]) [175]
+[178] [179]) [180]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 53.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 53.
  (./multivariable.aux)
@@ -1580,18 +1634,18 @@ Package rerunfilecheck Warning: File `multivariable.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `multivariable.out':
-(rerunfilecheck)             Before: AB2FCBA3704A2F90095C789BB4912D81;7158
-(rerunfilecheck)             After:  B37AA61B9CDECE7DEBAB799B6847D7FC;7224.
+(rerunfilecheck)             Before: BF5AE610F960586EFCE826623B808EA5;319
+(rerunfilecheck)             After:  14DD60DC7C6F5C5832933228883937BD;7402.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 53.
  ) 
 Here is how much of TeX's memory you used:
- 30499 strings out of 493014
- 694012 string characters out of 6133351
- 845247 words of memory out of 5000000
- 32271 multiletter control sequences out of 15000+600000
+ 30421 strings out of 493014
+ 693894 string characters out of 6133351
+ 845231 words of memory out of 5000000
+ 32176 multiletter control sequences out of 15000+600000
  24156 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,20n,81p,772b,986s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1626,10 +1680,10 @@ onts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2016/texmf-dist
 /fonts/type1/public/amsfonts/euler/eufm7.pfb></usr/local/texlive/2016/texmf-dis
 t/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2016/texmf
 -dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on multivariable.pdf (175 pages, 2944025 bytes).
+Output written on multivariable.pdf (180 pages, 3697715 bytes).
 PDF statistics:
- 2558 PDF objects out of 2984 (max. 8388607)
- 2291 compressed objects within 23 object streams
- 1109 named destinations out of 1200 (max. 500000)
- 990 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2292 PDF objects out of 2487 (max. 8388607)
+ 2013 compressed objects within 21 object streams
+ 1119 named destinations out of 1200 (max. 500000)
+ 141 words of extra memory for PDF output out of 10000 (max. 10000000)
 

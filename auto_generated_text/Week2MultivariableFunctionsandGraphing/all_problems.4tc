@@ -1,2 +1,3 @@
 \expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi
-\doTocEntry\tocsection{}{\csname a:TocLink\endcsname{1}{x1-1000}{QQ2-1-1}{Written Problems}}{1}\relax 
+\doTocEntry\tocsection{}{\csname a:TocLink\endcsname{1}{x1-1000}{QQ2-1-1}{Online Problems}}{1}\relax 
+\doTocEntry\tocsection{}{\csname a:TocLink\endcsname{1}{x1-2000}{QQ2-1-2}{Written Problems}}{4}\relax 
