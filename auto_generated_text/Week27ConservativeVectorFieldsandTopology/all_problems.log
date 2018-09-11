@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=latex 2016.5.22)  1 SEP 2018 19:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=latex 2016.5.22)  11 SEP 2018 12:52
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1566,39 +1566,39 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             See the microtype manual for details.
 )
 
-./all_problems.tex:4: LaTeX Error: Environment abstract undefined.
+./all_problems.tex:5: LaTeX Error: Environment abstract undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.4 \begin{abstract}
+l.5 \begin{abstract}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./all_problems.tex:5: LaTeX Error: \begin{document} ended by \end{abstract}.
+./all_problems.tex:6: LaTeX Error: \begin{document} ended by \end{abstract}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.5 \end{abstract}
+l.6 \end{abstract}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 11.
+LaTeX Font Info:    Try loading font information for U+msa on input line 12.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 11.
+LaTeX Font Info:    Try loading font information for U+msb on input line 12.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1609,21 +1609,21 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
 ]
 [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 38.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 39.
  [3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 38.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 39.
  (./all_problems.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 38.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 38.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 38.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 39.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 39.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 39.
  ) 
 Here is how much of TeX's memory you used:
  34136 strings out of 493015
  750317 string characters out of 6133377
- 1059169 words of memory out of 5000000
+ 1059259 words of memory out of 5000000
  36918 multiletter control sequences out of 15000+600000
  5841 words of font info for 25 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,6n,79p,1250b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,6n,79p,1328b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on all_problems.dvi (3 pages, 8336 bytes).

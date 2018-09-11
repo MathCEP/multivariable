@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=latex 2016.5.22)  1 SEP 2018 19:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=latex 2016.5.22)  11 SEP 2018 12:54
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1609,22 +1609,22 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 ) [1
 
 ]
-[2] [3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 109.
- [4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 109.
+[2] [3] [4]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 167.
+ [5]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 167.
  (./quadric_surfaces.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 109.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 109.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 109.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 167.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 167.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 167.
  ) 
 Here is how much of TeX's memory you used:
- 34131 strings out of 493015
- 750377 string characters out of 6133377
- 1059212 words of memory out of 5000000
- 36913 multiletter control sequences out of 15000+600000
+ 34138 strings out of 493015
+ 750443 string characters out of 6133377
+ 1059217 words of memory out of 5000000
+ 36920 multiletter control sequences out of 15000+600000
  5879 words of font info for 25 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,5n,79p,1255b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,6n,79p,1253b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on quadric_surfaces.dvi (4 pages, 11964 bytes).
+Output written on quadric_surfaces.dvi (5 pages, 17084 bytes).

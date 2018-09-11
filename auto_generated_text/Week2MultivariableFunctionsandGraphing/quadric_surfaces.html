@@ -1,6 +1,6 @@
 <!doctype html> 
 <html lang="en"> 
-<head> <title>Graphing Functions</title> 
+<head> <title>Quadric Surfaces</title> 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
 <meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
 <meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
@@ -50,67 +50,110 @@ three variables.
  id="x1-1001r1"></a>A <em>quadric surface</em> is the set of points <script type="math/tex">(x,y,z)</script> in <script type="math/tex">\mathbb {R}^3</script> satisfying the equation <script type="math/tex; mode=display"> Ax^2 + Bxy + Cxz + Dy^2 + Eyz + Fz^2 +Gx + Hy + Iz + J = 0, </script> where <script type="math/tex">A,B,C,D,E,F,G,H,I,J\in \mathbb {R}</script> are
 constants.
 </div>
-<!--l. 27--><p class="noindent" >Dealing with quadric surfaces in general can be computationally cumbersome, so
+<h3 class="sectionHead"><a 
+ id="x1-2000"></a>Simple Forms</h3>
+<!--l. 29--><p class="noindent" >Dealing with quadric surfaces in general can be computationally cumbersome, so
 we&#x2019;ll focus on quadric surfaces in some simple forms.
 </p>
 <div class="theorem-like problem-environment example" id="problem2"><a 
- id="x1-1002r2"></a>The set of points satisfying <script type="math/tex; mode=display"> x^2/a^2 + y^2/b^2 + z^2/c^2 = 1, </script> for some constants <script type="math/tex">a,b,c\in \mathbb {R}</script>, is called an <em>ellipsoid</em>.
-<!--l. 36--><p class="noindent" >PICTURE
-</p><!--l. 38--><p class="noindent" >An ellipsoid is kind of like a three dimensional ellipse. In fact, the sections and
-contour curves of such an an ellipsoid are ellipses.
+ id="x1-2001r2"></a>The set of points satisfying <script type="math/tex; mode=display"> x^2/a^2 + y^2/b^2 + z^2/c^2 = 1, </script> for some constants <script type="math/tex">a,b,c\in \mathbb {R}</script>, is called an <em>ellipsoid</em>.
+<!--l. 38--><p class="noindent" >PICTURE
                                                                   
 
                                                                   
-</p><!--l. 40--><p class="noindent" >In the special case that <script type="math/tex">a=b=c</script>, this ellipsoid is a sphere of radius <script type="math/tex">a</script>.
+</p><!--l. 40--><p class="noindent" >An ellipsoid is kind of like a three dimensional ellipse. In fact, the sections and
+contour curves of such an an ellipsoid are ellipses.
+</p><!--l. 42--><p class="noindent" >In the special case that <script type="math/tex">a=b=c</script>, this ellipsoid is a sphere of radius <script type="math/tex">a</script>.
 </div>
 </p>
 <div class="theorem-like problem-environment example" id="problem3"><a 
- id="x1-1003r3"></a>The set of points satisfying <script type="math/tex; mode=display"> z/c = x^2/a^2 + y^2/b^2, </script> for some constants <script type="math/tex">a,b,c\in \mathbb {R}</script>, is called an <em>elliptic paraboloid</em>.
-<!--l. 50--><p class="noindent" >PICTURE
-</p><!--l. 52--><p class="noindent" >The contour curves of such an elliptic paraboloid are ellipses, however the sections
+ id="x1-2002r3"></a>The set of points satisfying <script type="math/tex; mode=display"> z/c = x^2/a^2 + y^2/b^2, </script> for some constants <script type="math/tex">a,b,c\in \mathbb {R}</script>, is called an <em>elliptic paraboloid</em>.
+<!--l. 52--><p class="noindent" >PICTURE
+</p><!--l. 54--><p class="noindent" >The contour curves of such an elliptic paraboloid are ellipses, however the sections
 are parabolas which all open in the same direction.
 </div>
 </p>
 <div class="theorem-like problem-environment example" id="problem4"><a 
- id="x1-1004r4"></a>The set of points satisfying <script type="math/tex; mode=display"> z/c = y^2/b^2 - x^2/a^2, </script> for some constants <script type="math/tex">a,b,c\in \mathbb {R}</script>, is called a <em>hyperbolic paraboloid</em>.
-<!--l. 62--><p class="noindent" >PICTURE
-</p><!--l. 64--><p class="noindent" >The contour curves of such a hyperbolic paraboloid are hyperbolas, and the sections
+ id="x1-2003r4"></a>The set of points satisfying <script type="math/tex; mode=display"> z/c = y^2/b^2 - x^2/a^2, </script> for some constants <script type="math/tex">a,b,c\in \mathbb {R}</script>, is called a <em>hyperbolic paraboloid</em>.
+<!--l. 64--><p class="noindent" >PICTURE
+</p><!--l. 66--><p class="noindent" >The contour curves of such a hyperbolic paraboloid are hyperbolas, and the sections
 are parabolas opening in opposite directions for <script type="math/tex">x</script> and <script type="math/tex">y</script> sections. This surface is often
 described as a “saddle”.
 </div>
 </p>
 <div class="theorem-like problem-environment example" id="problem5"><a 
- id="x1-1005r5"></a>The set of points satisfying <script type="math/tex; mode=display"> z^2/c^2 = x^2/a^2 + y^2/b^2, </script> for some constants <script type="math/tex">a,b,c\in \mathbb {R}</script>, is called an <em>elliptic cone</em>.
-<!--l. 74--><p class="noindent" >PICTURE
-</p><!--l. 76--><p class="noindent" >The contour curves of such an elliptic cone are ellipses, and the sections by <script type="math/tex">x=0</script> and <script type="math/tex">y=0</script> are
+ id="x1-2004r5"></a>The set of points satisfying <script type="math/tex; mode=display"> z^2/c^2 = x^2/a^2 + y^2/b^2, </script> for some constants <script type="math/tex">a,b,c\in \mathbb {R}</script>, is called an <em>elliptic cone</em>.
+<!--l. 76--><p class="noindent" >PICTURE
+</p><!--l. 78--><p class="noindent" >The contour curves of such an elliptic cone are ellipses, and the sections by <script type="math/tex">x=0</script> and <script type="math/tex">y=0</script> are
 pairs of intersecting lines.
 </div>
 </p>
 <div class="theorem-like problem-environment example" id="problem6"><a 
- id="x1-1006r6"></a>The set of points satisfying <script type="math/tex; mode=display"> x^2/a^2 + y^2/b^2 - z^2/c^2 =1. </script> for some constants <script type="math/tex">a,b,c\in \mathbb {R}</script>, is called a <em>hyperboloid of one
+ id="x1-2005r6"></a>The set of points satisfying <script type="math/tex; mode=display"> x^2/a^2 + y^2/b^2 - z^2/c^2 =1. </script> for some constants <script type="math/tex">a,b,c\in \mathbb {R}</script>, is called a <em>hyperboloid of one
 sheet</em>.
-<!--l. 86--><p class="noindent" >PICTURE
-</p><!--l. 88--><p class="noindent" >The contour curves of such a hyperboloid are ellipses, and the sections are
+<!--l. 88--><p class="noindent" >PICTURE
+</p><!--l. 90--><p class="noindent" >The contour curves of such a hyperboloid are ellipses, and the sections are
 hyperbolas.
 </div>
 </p>
 <div class="theorem-like problem-environment example" id="problem7"><a 
- id="x1-1007r7"></a>The set of points satisfying <script type="math/tex; mode=display"> z^2/c^2 -x^2/a^2 - y^2/b^2 =1. </script> for some constants <script type="math/tex">a,b,c\in \mathbb {R}</script>, is called a <em>hyperboloid of two
+ id="x1-2006r7"></a>The set of points satisfying <script type="math/tex; mode=display"> z^2/c^2 -x^2/a^2 - y^2/b^2 =1. </script> for some constants <script type="math/tex">a,b,c\in \mathbb {R}</script>, is called a <em>hyperboloid of two
 sheets</em>.
-<!--l. 98--><p class="noindent" >PICTURE
-</p><!--l. 100--><p class="noindent" >The contour curves of such a hyperboloid are ellipses, and the sections are
+<!--l. 100--><p class="noindent" >PICTURE
+</p><!--l. 102--><p class="noindent" >The contour curves of such a hyperboloid are ellipses, and the sections are
 hyperbolas. We describe this as the hyperboloid “of two sheets” since it has two
 disconnected pieces, as opposed to the hyperboloid of one sheet, which has only
 one.
 </div>
-</p><!--l. 103--><p class="noindent" >APPLET/INTERACTIVE VARYING PARAMETERS
+                                                                  
+
+                                                                  
+</p><!--l. 105--><p class="noindent" >APPLET/INTERACTIVE VARYING PARAMETERS
+</p>
+<h3 class="sectionHead"><a 
+ id="x1-3000"></a>Some Other Forms</h3>
+<!--l. 109--><p class="noindent" >Although we won&#x2019;t really work with quadric surfaces in their most general form,
+we will consider quadric surfaces that are translations of the forms given
+above.
+</p><!--l. 111--><p class="noindent" >For example, the graph of the equation <script type="math/tex; mode=display"> (x-3)^2 + \frac {(y+2)^2}{3} + \frac {(z-1)^2}{2} = 1 </script> is an ellipse centered at <script type="math/tex">(3,-2,1)</script>.
+</p><!--l. 117--><p class="noindent" >PICTURE
+</p><!--l. 119--><p class="noindent" >However, equations describing quadric surfaces might not always be given to you in
+easily identifiable forms. In these cases, you might have to do some algebra in order
+to get the equation into a form where it can be identified as a particular
+quadric surface. These manipulations will frequently involve completing the
+square.
+</p><!--l. 121--><p class="noindent" >We now work through an example of identifying a quadric surface given in a
+non-standard form.
+</p>
+<div class="theorem-like problem-environment example" id="problem8"><a 
+ id="x1-3001r8"></a>Identify the type of quadric surface determined by the equation <script type="math/tex; mode=display"> -4x^2 + 2y^2 + z^2 + 8x + 4y+4z = 2, </script> and sketch a graph
+of this surface.
+<!--l. 130--><p class="noindent" >Our strategy for writing this equation in a recognizable form will be to group terms
+involving <script type="math/tex">x</script>, group terms involving <script type="math/tex">y</script>, and group terms involving <script type="math/tex">z</script>. We&#x2019;ll then complete
+the square for each variable.
+</p><!--l. 132--><p class="noindent" >Grouping terms by variable, we have <script type="math/tex; mode=display"> (-4x^2+8x) + (2y^2 + 4y) + (z^2 + 4z) = 2. </script> For each of these grouping, we factor out the
+leading coefficient, obtaining <script type="math/tex; mode=display"> \answer {-4}(x^2-2x) + \answer {2}(y^2 + 2y) + (z^2 + 4z) = 2. </script> We now add or subtract as needed to make the
+quadratics into squares, getting <script type="math/tex; mode=display"> -4(x^2-2x + 1) + 2(y^2 + 2y + 1) + (z^2 + 4z + 2) = \answer {4}. </script> We factor the quadratics to get <script type="math/tex; mode=display"> -4(\answer {x-1})^2 + 2(\answer {y+1})^2 + (\answer {z+2})^2 = 4. </script> Finally, we divide
+by the constant on the right, to get the final form <script type="math/tex; mode=display"> -(\answer {x-1})^2 + \frac {(\answer {y+1})^2}{2} + \frac {(\answer {z+2})^2}{4} = 1. </script> We can see that this quadric
+surface is centered at <script type="math/tex">\answer {(1,-1,-2)}</script>, but maybe it still isn&#x2019;t apparent which quadric surface this
+determines.
+</p><!--l. 154--><p class="noindent" >Notice that this form is similar to our standard form for a hyperboloid of one sheet,
+except here it&#x2019;s the <script type="math/tex">x</script>-term that&#x2019;s subtracted instead of the <script type="math/tex">z</script>-term. This is because this
+is, in fact, a hyperboloid of one sheet, it just happens to be “around” a line parallel
+to the <script type="math/tex">x</script>-axis, rather than a vertical line.
+</p><!--l. 156--><p class="noindent" >Let&#x2019;s look at a section, in order to help with our sketch. Taking the section <script type="math/tex">x = 1</script>, we have
+an ellipse parallel to the <script type="math/tex">yz</script>-plane, centered at <script type="math/tex">(1,-1,-2)</script>, with radii <script type="math/tex">\sqrt {2}</script> and <script type="math/tex">2</script>.
+</p><!--l. 158--><p class="noindent" >Combining our observations, we can sketch the graph of this hyperboloid as
+below.
+</p><!--l. 160--><p class="noindent" >PICTURE
+</div>
 </p>
                                                                   
 
                                                                   
 <h3 class="sectionHead"><a 
- id="x1-2000"></a>Conclusion</h3>
-<!--l. 107--><p class="noindent" >In this activity, we introduced and classified quadric surfaces, which form an
+ id="x1-4000"></a>Conclusion</h3>
+<!--l. 165--><p class="noindent" >In this activity, we introduced and classified quadric surfaces, which form an
 important family of surfaces.
 </body> 
  
