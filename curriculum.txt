@@ -66,6 +66,15 @@ WRITTEN HOMEWORK
 PROFESSIONAL HOMEWORK
 02_multivariable_functions/2_graphing/problems/professional/problem1.tex
 
+Week 3: Parametric Curves
+TOPICS
+03_parametric_curves/1_parametric_curves
+03_parametric_curves/2_velocity_and_speed
+03_parametric_curves/3_properties
+ONLINE HOMEWORK
+WRITTEN HOMEWORK
+PROFESSIONAL HOMEWORK
+
 Week 27: Conservative Vector Fields and Topology
 TOPICS
 CONS_consvf/N.1_topology

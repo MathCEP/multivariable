@@ -1,5 +1,117 @@
 \BOOKMARK [0][-]{part.1}{I Week 0: Review}{}% 1
-\BOOKMARK [0][-]{part.2}{II Week 1: Coordinate Systems}{}% 2
-\BOOKMARK [0][-]{part.3}{III Week 2: Multivariable Functions and Graphing}{}% 3
-\BOOKMARK [0][-]{part.4}{IV Week 27: Conservative Vector Fields and Topology}{}% 4
-\BOOKMARK [0][-]{part.5}{V Week 29: Curl}{}% 5
+\BOOKMARK [1][-]{section*.1}{Vectors}{part.1}% 2
+\BOOKMARK [1][-]{section*.2}{Vectors}{part.1}% 3
+\BOOKMARK [1][-]{section*.3}{The Geometric Perspective}{part.1}% 4
+\BOOKMARK [1][-]{section*.4}{Vector Operations}{part.1}% 5
+\BOOKMARK [1][-]{section*.5}{Properties}{part.1}% 6
+\BOOKMARK [1][-]{section*.6}{Standard Basis Vectors}{part.1}% 7
+\BOOKMARK [1][-]{section*.7}{Summary}{part.1}% 8
+\BOOKMARK [1][-]{section*.8}{The Dot Product}{part.1}% 9
+\BOOKMARK [1][-]{section*.9}{The Dot Product}{part.1}% 10
+\BOOKMARK [1][-]{section*.10}{Projection of one vector onto another}{part.1}% 11
+\BOOKMARK [1][-]{section*.11}{Summary}{part.1}% 12
+\BOOKMARK [1][-]{section*.12}{The Cross Product}{part.1}% 13
+\BOOKMARK [1][-]{section*.13}{The Cross Product}{part.1}% 14
+\BOOKMARK [1][-]{section*.14}{Geometry of the Cross Product}{part.1}% 15
+\BOOKMARK [1][-]{section*.15}{Volume of a Parallelepiped}{part.1}% 16
+\BOOKMARK [1][-]{section*.16}{Summary}{part.1}% 17
+\BOOKMARK [1][-]{section*.17}{Matrices}{part.1}% 18
+\BOOKMARK [1][-]{section*.18}{Matrices}{part.1}% 19
+\BOOKMARK [1][-]{section*.19}{Matrix Operations}{part.1}% 20
+\BOOKMARK [1][-]{section*.20}{Determinants}{part.1}% 21
+\BOOKMARK [1][-]{section*.21}{Linear Transformations}{part.1}% 22
+\BOOKMARK [1][-]{section*.22}{Summary}{part.1}% 23
+\BOOKMARK [1][-]{section*.23}{Representations of Lines and Planes}{part.1}% 24
+\BOOKMARK [1][-]{section*.24}{Representations of Lines}{part.1}% 25
+\BOOKMARK [1][-]{section*.25}{Representations of Planes}{part.1}% 26
+\BOOKMARK [1][-]{section*.26}{Summary}{part.1}% 27
+\BOOKMARK [1][-]{section*.27}{Practice Problems}{part.1}% 28
+\BOOKMARK [1][-]{section*.28}{Online Problems}{part.1}% 29
+\BOOKMARK [1][-]{section*.29}{Written Problems}{part.1}% 30
+\BOOKMARK [0][-]{part.2}{II Week 1: Coordinate Systems}{}% 31
+\BOOKMARK [1][-]{section*.30}{Review of Coordinate Systems}{part.2}% 32
+\BOOKMARK [1][-]{section*.31}{Cartesian Plane}{part.2}% 33
+\BOOKMARK [1][-]{section*.32}{Polar Coordinates}{part.2}% 34
+\BOOKMARK [1][-]{section*.33}{Linear Change of Coordinates}{part.2}% 35
+\BOOKMARK [1][-]{section*.34}{Three-Dimensional Coordinates}{part.2}% 36
+\BOOKMARK [1][-]{section*.35}{Conclusion}{part.2}% 37
+\BOOKMARK [1][-]{section*.36}{Cylindrical Coordinates}{part.2}% 38
+\BOOKMARK [1][-]{section*.37}{Cylindrical Coordinates}{part.2}% 39
+\BOOKMARK [1][-]{section*.38}{Uniqueness}{part.2}% 40
+\BOOKMARK [1][-]{section*.39}{Constant-Coordinate Surfaces}{part.2}% 41
+\BOOKMARK [1][-]{section*.40}{Converting between Cartesian and cylindrical coordinates}{part.2}% 42
+\BOOKMARK [1][-]{section*.41}{Conclusion}{part.2}% 43
+\BOOKMARK [1][-]{section*.42}{Spherical Coordinates}{part.2}% 44
+\BOOKMARK [1][-]{section*.43}{Spherical Coordinates}{part.2}% 45
+\BOOKMARK [1][-]{section*.44}{Uniqueness}{part.2}% 46
+\BOOKMARK [1][-]{section*.45}{Constant-Coordinate Surfaces}{part.2}% 47
+\BOOKMARK [1][-]{section*.46}{Converting Between Spherical and Cartesian Coordinates}{part.2}% 48
+\BOOKMARK [1][-]{section*.47}{Spherical coordinates in Rn [OPTIONAL]}{part.2}% 49
+\BOOKMARK [1][-]{section*.48}{Conclusion}{part.2}% 50
+\BOOKMARK [1][-]{section*.49}{Online Homework}{part.2}% 51
+\BOOKMARK [1][-]{section*.50}{Written Homework}{part.2}% 52
+\BOOKMARK [1][-]{section*.51}{Written Homework}{part.2}% 53
+\BOOKMARK [1][-]{section*.52}{Professional Problem}{part.2}% 54
+\BOOKMARK [1][-]{section*.53}{Practice Problems}{part.2}% 55
+\BOOKMARK [1][-]{section*.54}{Online Problems}{part.2}% 56
+\BOOKMARK [1][-]{section*.55}{Written Problems}{part.2}% 57
+\BOOKMARK [0][-]{part.3}{III Week 2: Multivariable Functions and Graphing}{}% 58
+\BOOKMARK [1][-]{section*.56}{Functions}{part.3}% 59
+\BOOKMARK [1][-]{section*.57}{Definition of a Function}{part.3}% 60
+\BOOKMARK [1][-]{section*.58}{Types of Functions}{part.3}% 61
+\BOOKMARK [1][-]{section*.59}{Component Functions}{part.3}% 62
+\BOOKMARK [1][-]{section*.60}{Conclusion}{part.3}% 63
+\BOOKMARK [1][-]{section*.61}{Graphing Functions}{part.3}% 64
+\BOOKMARK [1][-]{section*.62}{Definition of the Graph of a Function}{part.3}% 65
+\BOOKMARK [1][-]{section*.63}{Strategies for Graphing}{part.3}% 66
+\BOOKMARK [1][-]{section*.64}{Level Surfaces}{part.3}% 67
+\BOOKMARK [1][-]{section*.65}{Conclusion}{part.3}% 68
+\BOOKMARK [1][-]{section*.66}{Quadric Surfaces}{part.3}% 69
+\BOOKMARK [1][-]{section*.67}{Definition of a Quadric Surface}{part.3}% 70
+\BOOKMARK [1][-]{section*.68}{Simple Forms}{part.3}% 71
+\BOOKMARK [1][-]{section*.69}{Some Other Forms}{part.3}% 72
+\BOOKMARK [1][-]{section*.70}{Conclusion}{part.3}% 73
+\BOOKMARK [1][-]{section*.71}{Online Homework}{part.3}% 74
+\BOOKMARK [1][-]{section*.72}{Written Homework}{part.3}% 75
+\BOOKMARK [1][-]{section*.73}{Written Homework}{part.3}% 76
+\BOOKMARK [1][-]{section*.74}{Professional Problem}{part.3}% 77
+\BOOKMARK [1][-]{section*.75}{Practice Problems}{part.3}% 78
+\BOOKMARK [1][-]{section*.76}{Online Problems}{part.3}% 79
+\BOOKMARK [1][-]{section*.77}{Written Problems}{part.3}% 80
+\BOOKMARK [0][-]{part.4}{IV Week 27: Conservative Vector Fields and Topology}{}% 81
+\BOOKMARK [1][-]{section*.78}{Topology}{part.4}% 82
+\BOOKMARK [1][-]{section*.79}{Open Sets}{part.4}% 83
+\BOOKMARK [1][-]{section*.80}{Closed Sets}{part.4}% 84
+\BOOKMARK [1][-]{section*.81}{Connected Sets}{part.4}% 85
+\BOOKMARK [1][-]{section*.82}{Simply Connected Sets}{part.4}% 86
+\BOOKMARK [1][-]{section*.83}{Summary}{part.4}% 87
+\BOOKMARK [1][-]{section*.84}{Path Independence and FTLI}{part.4}% 88
+\BOOKMARK [1][-]{section*.85}{Path Independence}{part.4}% 89
+\BOOKMARK [1][-]{section*.86}{Fundamental Theorem of Line Integrals}{part.4}% 90
+\BOOKMARK [1][-]{section*.87}{Strategies for Computing Line Integrals}{part.4}% 91
+\BOOKMARK [1][-]{section*.88}{Summary}{part.4}% 92
+\BOOKMARK [1][-]{section*.89}{Conservative Vector Fields}{part.4}% 93
+\BOOKMARK [1][-]{section*.90}{Finding a Potential Function}{part.4}% 94
+\BOOKMARK [1][-]{section*.91}{Summary}{part.4}% 95
+\BOOKMARK [1][-]{section*.92}{Practice Problems}{part.4}% 96
+\BOOKMARK [1][-]{section*.93}{Online Problems}{part.4}% 97
+\BOOKMARK [1][-]{section*.94}{Written Problems}{part.4}% 98
+\BOOKMARK [0][-]{part.5}{V Week 29: Curl}{}% 99
+\BOOKMARK [1][-]{section*.95}{Curl of a Vector Field}{part.5}% 100
+\BOOKMARK [1][-]{section*.96}{Definition of Curl}{part.5}% 101
+\BOOKMARK [1][-]{section*.97}{Summary}{part.5}% 102
+\BOOKMARK [1][-]{section*.98}{Geometric Significance of Curl}{part.5}% 103
+\BOOKMARK [1][-]{section*.99}{Geometric Significance of Two-dimensional Curl}{part.5}% 104
+\BOOKMARK [1][-]{section*.100}{Geometric Significance of Three-dimensional Curl}{part.5}% 105
+\BOOKMARK [1][-]{section*.101}{Summary}{part.5}% 106
+\BOOKMARK [1][-]{section*.102}{Connections of Curl with Older Material}{part.5}% 107
+\BOOKMARK [1][-]{section*.103}{Curl of a Conservative Vector Field}{part.5}% 108
+\BOOKMARK [1][-]{section*.104}{Curl and Green's Theorem}{part.5}% 109
+\BOOKMARK [1][-]{section*.105}{Summary}{part.5}% 110
+\BOOKMARK [1][-]{section*.106}{Online Homework}{part.5}% 111
+\BOOKMARK [1][-]{section*.107}{Written Homework}{part.5}% 112
+\BOOKMARK [1][-]{section*.108}{Written Homework}{part.5}% 113
+\BOOKMARK [1][-]{section*.109}{Professional Problem}{part.5}% 114
+\BOOKMARK [1][-]{section*.110}{Practice Problems}{part.5}% 115
+\BOOKMARK [1][-]{section*.111}{Online Problems}{part.5}% 116
+\BOOKMARK [1][-]{section*.112}{Written Problems}{part.5}% 117
