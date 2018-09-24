@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  14 SEP 2018 10:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  24 SEP 2018 09:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1367,45 +1367,20 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/sl' in size <10> not available
 
 [77 <./auto_generated_text/Week1CoordinateSystems/graphics/ice_cream_pp.pdf, pa
 ge is rotated 180 degrees>]) [78]
-(./auto_generated_text/Week1CoordinateSystems/all_problems.tex
+(./auto_generated_text/Week2MultivariableFunctionsandGraphing/functions.tex
 
 LaTeX Warning: No \author given.
 
 [79
 
-]
-File: ./auto_generated_text/Week1CoordinateSystems/graphics/cylinder_wedge.pdf 
-Graphic file (type pdf)
-
-<use ./auto_generated_text/Week1CoordinateSystems/graphics/cylinder_wedge.pdf>
-Package pdftex.def Info: ./auto_generated_text/Week1CoordinateSystems/graphics/
-cylinder_wedge.pdf used on input line 93.
-(pdftex.def)             Requested size: 169.41591pt x 170.58417pt.
-
-[80] [81] [82]
-File: ./auto_generated_text/Week1CoordinateSystems/graphics/sphere_wedge.pdf Gr
-aphic file (type pdf)
-
-<use ./auto_generated_text/Week1CoordinateSystems/graphics/sphere_wedge.pdf>
-Package pdftex.def Info: ./auto_generated_text/Week1CoordinateSystems/graphics/
-sphere_wedge.pdf used on input line 210.
-(pdftex.def)             Requested size: 167.46222pt x 193.8571pt.
-
-[83] [84] [85] [86] [87]) [88]
-(./auto_generated_text/Week2MultivariableFunctionsandGraphing/functions.tex
-
-LaTeX Warning: No \author given.
-
-[89
-
-] [90] [91]) [92]
+] [80] [81]) [82]
 (./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphing.tex
 
 LaTeX Warning: No \author given.
 
-[93
+[83
 
-] [94] [95]) [96]
+] [84] [85]) [86]
 (./auto_generated_text/Week2MultivariableFunctionsandGraphing/quadric_surfaces.
 tex
 
@@ -1413,7 +1388,7 @@ LaTeX Warning: No \author given.
 
 
 <./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/conics.p
-df, id=1468, 587.21967pt x 165.90663pt>
+df, id=1380, 587.21967pt x 165.90663pt>
 File: ./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/con
 ics.pdf Graphic file (type pdf)
 
@@ -1424,7 +1399,7 @@ aphing/graphics/conics.pdf used on input line 23.
 (pdftex.def)             Requested size: 587.21823pt x 165.9062pt.
 
 <./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/ellipsoi
-d.pdf, id=1469, 179.78648pt x 144.69919pt>
+d.pdf, id=1381, 179.78648pt x 144.69919pt>
 File: ./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/ell
 ipsoid.pdf Graphic file (type pdf)
 
@@ -1433,12 +1408,12 @@ psoid.pdf>
 Package pdftex.def Info: ./auto_generated_text/Week2MultivariableFunctionsandGr
 aphing/graphics/ellipsoid.pdf used on input line 51.
 (pdftex.def)             Requested size: 179.78604pt x 144.69882pt.
- [97
+ [87
 
  <./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/conics.
 pdf, page is rotated 180 degrees>]
 <./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/parabolo
-id.pdf, id=1487, 183.01524pt x 161.9892pt>
+id.pdf, id=1398, 183.01524pt x 161.9892pt>
 File: ./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/par
 aboloid.pdf Graphic file (type pdf)
 
@@ -1447,11 +1422,11 @@ boloid.pdf>
 Package pdftex.def Info: ./auto_generated_text/Week2MultivariableFunctionsandGr
 aphing/graphics/paraboloid.pdf used on input line 70.
 (pdftex.def)             Requested size: 183.01479pt x 161.98878pt.
- [98 <./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/ell
+ [88 <./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/ell
 ipsoid.pdf, page is rotated 180 degrees> <./auto_generated_text/Week2Multivaria
 bleFunctionsandGraphing/graphics/paraboloid.pdf, page is rotated 180 degrees>]
 <./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/hyperbol
-ic_paraboloid.pdf, id=1509, 216.63852pt x 187.661pt>
+ic_paraboloid.pdf, id=1420, 216.63852pt x 187.661pt>
 File: ./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/hyp
 erbolic_paraboloid.pdf Graphic file (type pdf)
 
@@ -1462,7 +1437,7 @@ aphing/graphics/hyperbolic_paraboloid.pdf used on input line 87.
 (pdftex.def)             Requested size: 216.63799pt x 187.66054pt.
 
 <./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/elliptic
-_cone.pdf, id=1510, 189.94774pt x 168.601pt>
+_cone.pdf, id=1421, 189.94774pt x 168.601pt>
 File: ./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/ell
 iptic_cone.pdf Graphic file (type pdf)
 
@@ -1471,12 +1446,12 @@ ptic_cone.pdf>
 Package pdftex.def Info: ./auto_generated_text/Week2MultivariableFunctionsandGr
 aphing/graphics/elliptic_cone.pdf used on input line 104.
 (pdftex.def)             Requested size: 189.94727pt x 168.60057pt.
- [99 <./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/hyp
+ [89 <./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/hyp
 erbolic_paraboloid.pdf, page is rotated 180 degrees> <./auto_generated_text/Wee
 k2MultivariableFunctionsandGraphing/graphics/elliptic_cone.pdf, page is rotated
  180 degrees>]
 <./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/hyperbol
-oid_one_sheet.pdf, id=1533, 213.11139pt x 203.90462pt>
+oid_one_sheet.pdf, id=1444, 213.11139pt x 203.90462pt>
 File: ./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/hyp
 erboloid_one_sheet.pdf Graphic file (type pdf)
 
@@ -1487,7 +1462,7 @@ aphing/graphics/hyperboloid_one_sheet.pdf used on input line 121.
 (pdftex.def)             Requested size: 213.11086pt x 203.90411pt.
 
 <./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/hyperbol
-oid_two_sheet.pdf, id=1534, 200.40482pt x 222.2263pt>
+oid_two_sheet.pdf, id=1445, 200.40482pt x 222.2263pt>
 File: ./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/hyp
 erboloid_two_sheet.pdf Graphic file (type pdf)
 
@@ -1496,19 +1471,19 @@ rboloid_two_sheet.pdf>
 Package pdftex.def Info: ./auto_generated_text/Week2MultivariableFunctionsandGr
 aphing/graphics/hyperboloid_two_sheet.pdf used on input line 138.
 (pdftex.def)             Requested size: 200.40431pt x 222.22575pt.
- [100 <./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/hy
-perboloid_one_sheet.pdf, page is rotated 180 degrees>]
-[101 <./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/hyp
-erboloid_two_sheet.pdf, page is rotated 180 degrees>]) [102] [103]
+ [90 <./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/hyp
+erboloid_one_sheet.pdf, page is rotated 180 degrees>]
+[91 <./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/hype
+rboloid_two_sheet.pdf, page is rotated 180 degrees>]) [92] [93]
 (./auto_generated_text/Week2MultivariableFunctionsandGraphing/online_hw.tex
 
 LaTeX Warning: No \author given.
 
-[104
+[94
 
-] [105] [106] [107]
+] [95] [96] [97]
 <./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/quadric_
-options.pdf, id=1644, 559.35623pt x 145.58891pt>
+options.pdf, id=1556, 559.35623pt x 145.58891pt>
 File: ./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/qua
 dric_options.pdf Graphic file (type pdf)
 
@@ -1517,10 +1492,10 @@ ric_options.pdf>
 Package pdftex.def Info: ./auto_generated_text/Week2MultivariableFunctionsandGr
 aphing/graphics/quadric_options.pdf used on input line 176.
 (pdftex.def)             Requested size: 559.35486pt x 145.58855pt.
- [108 <./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/qu
-adric_options.pdf, page is rotated 180 degrees>] [109]
+ [98 <./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/qua
+dric_options.pdf, page is rotated 180 degrees>] [99]
 <./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/wedge_op
-tions.pdf, id=1697, 577.3523pt x 137.42863pt>
+tions.pdf, id=1608, 577.3523pt x 137.42863pt>
 File: ./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/wed
 ge_options.pdf Graphic file (type pdf)
 
@@ -1529,50 +1504,105 @@ e_options.pdf>
 Package pdftex.def Info: ./auto_generated_text/Week2MultivariableFunctionsandGr
 aphing/graphics/wedge_options.pdf used on input line 239.
 (pdftex.def)             Requested size: 577.35088pt x 137.42828pt.
- [110 <./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/we
-dge_options.pdf, page is rotated 180 degrees>] [111]) [112]
+ [100 <./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/we
+dge_options.pdf, page is rotated 180 degrees>] [101]) [102]
 (./auto_generated_text/Week2MultivariableFunctionsandGraphing/written_hw.tex
 
 LaTeX Warning: No \author given.
 
-[113
+[103
 
-]) [114]
-(./auto_generated_text/Week2MultivariableFunctionsandGraphing/all_problems.tex
+]) [104] (./auto_generated_text/Week3ParametricCurves/parametric_curves.tex
 
 LaTeX Warning: No \author given.
 
-[115
 
-] [116] [117] [118]
-File: ./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/qua
-dric_options.pdf Graphic file (type pdf)
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 13.
 
-<use ./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/quad
-ric_options.pdf>
-Package pdftex.def Info: ./auto_generated_text/Week2MultivariableFunctionsandGr
-aphing/graphics/quadric_options.pdf used on input line 176.
-(pdftex.def)             Requested size: 559.35486pt x 145.58855pt.
- [119] [120]
-File: ./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/wed
-ge_options.pdf Graphic file (type pdf)
 
-<use ./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/wedg
-e_options.pdf>
-Package pdftex.def Info: ./auto_generated_text/Week2MultivariableFunctionsandGr
-aphing/graphics/wedge_options.pdf used on input line 239.
-(pdftex.def)             Requested size: 577.35088pt x 137.42828pt.
- [121] [122] [123]) [124]
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 13.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 13.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 37.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 37.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 37.
+
+[105
+
+] [106]
+Overfull \hbox (11.97978pt too wide) in paragraph at lines 119--121
+\OT1/cmr/m/it/10 We can ap-ply this to the parametriza-tion for the unit cir-cl
+e, in or-der to parametriza-
+ []
+
+[107]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 163.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 163.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 163.
+
+[108]) [109]
+(./auto_generated_text/Week3ParametricCurves/velocity_and_speed.tex
+
+LaTeX Warning: No \author given.
+
+[110
+
+] [111]
+Overfull \hbox (8.02846pt too wide) in paragraph at lines 123--124
+[]\OT1/cmr/m/it/10 Consider the path $[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1
+/cmr/m/n/10 ) = ([](\OML/cmm/m/it/10 t[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; []\
+OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t[]\OT1/cmr/m/n/10 ))$ \OT1/cmr/m/it/10 for $\
+OT1/cmr/m/n/10 0 \OMS/cmsy/m/n/10 ^^T \OML/cmm/m/it/10 t \OMS/cmsy/m/n/10 ^^T [
+]$\OT1/cmr/m/it/10 . This also parametrizes
+ []
+
+[112]) [113] (./auto_generated_text/Week3ParametricCurves/properties.tex
+
+LaTeX Warning: No \author given.
+
+
+Overfull \hbox (2.46915pt too wide) in paragraph at lines 31--32
+[]\OT1/cmr/m/n/10 Suppose $\OML/cmm/m/it/10 t$ \OT1/cmr/m/n/10 is such that bot
+h $[](\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )$ and $[](\OML/cmm/m/it/10 t\OT1/cmr/m
+/n/10 )$ ex-ist, and write $[](\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) = (\OML/cmm/
+m/it/10 x[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/m/it/10
+ ; :::; x[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ))$
+ []
+
+[114
+
+]) [115]
 (./auto_generated_text/Week27ConservativeVectorFieldsandTopology/topology.tex
-[125
+[116
 
-] [126] [127] [128] [129] [130] [131] [132] [133] [134] [135]) [136]
+] [117] [118] [119] [120] [121] [122] [123] [124] [125] [126]) [127]
 (./auto_generated_text/Week27ConservativeVectorFieldsandTopology/cons_vf_top.te
-x [137
+x [128
 
-] [138] [139] [140] [141] [142]
+] [129] [130] [131] [132] [133]
 Overfull \hbox (10.04654pt too wide) in paragraph at lines 238--239
-[][]\OT1/cmr/bx/n/10 Example 46. []\OT1/cmr/m/it/10 Let $[]\OT1/cmr/m/n/10 (\OM
+[][]\OT1/cmr/bx/n/10 Example 54. []\OT1/cmr/m/it/10 Let $[]\OT1/cmr/m/n/10 (\OM
 L/cmm/m/it/10 x; y\OT1/cmr/m/n/10 ) = (2\OML/cmm/m/it/10 xy[]; \OT1/cmr/m/n/10 
 2\OML/cmm/m/it/10 x[]y\OT1/cmr/m/n/10 )$\OT1/cmr/m/it/10 , and con-sider $[]\OT
 1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) = (2 [](\OML/cmm/m/it/10 ^^Yt
@@ -1585,35 +1615,35 @@ Overfull \hbox (28.51959pt too wide) in paragraph at lines 247--247
 [] 
  []
 
-[143] [144]) [145]
+[134] [135]) [136]
 (./auto_generated_text/Week27ConservativeVectorFieldsandTopology/cons_vf.tex
-[146
+[137
 
 ]
 Overfull \hbox (3.72144pt too wide) in paragraph at lines 73--74
-[][]\OT1/cmr/bx/n/10 Example 48. []\OT1/cmr/m/it/10 Find a po-ten-tial func-tio
+[][]\OT1/cmr/bx/n/10 Example 56. []\OT1/cmr/m/it/10 Find a po-ten-tial func-tio
 n for the vec-tor field $\OT1/cmr/bx/n/10 F\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x;
  y; z\OT1/cmr/m/n/10 ) = (2\OML/cmm/m/it/10 xy; x[] \OT1/cmr/m/n/10 +
  []
 
-[147] [148] [149] [150] [151]) [152]
+[138] [139] [140] [141] [142]) [143]
 (./auto_generated_text/Week27ConservativeVectorFieldsandTopology/all_problems.t
-ex [153
+ex [144
 
-]) [154] (./auto_generated_text/Week29Curl/curl_comp.tex [155
+]) [145] (./auto_generated_text/Week29Curl/curl_comp.tex [146
 
 ]
 \c@depthIIICount=\count266
 \c@depthIVCount=\count267
 
-Overfull \hbox (22.83394pt too wide) in paragraph at lines 55--56
+Overfull \hbox (17.33391pt too wide) in paragraph at lines 55--56
 []\OT1/cmr/m/sl/10 From this, we can de-duce that $\OMS/cmsy/m/n/10 r$ \OT1/cmr
 /m/sl/10 should mean $[]$.
  []
 
-[156]
+[147]
 Overfull \hbox (107.87029pt too wide) in paragraph at lines 96--97
-[][]\OT1/cmr/bx/n/10 Definition 37. []\OT1/cmr/m/it/10 The \OT1/cmr/m/n/10 curl
+[][]\OT1/cmr/bx/n/10 Definition 41. []\OT1/cmr/m/it/10 The \OT1/cmr/m/n/10 curl
  \OT1/cmr/m/it/10 of a three-dimensional vec-tor field $\OT1/cmr/bx/n/10 F\OT1/
 cmr/m/n/10 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 ) = (\OML/cmm/m/it/10 M\OT1
 /cmr/m/n/10 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; N\OT1/
@@ -1621,7 +1651,7 @@ cmr/m/n/10 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; P\OT1/c
 mr/m/n/10 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 ))$
  []
 
-[157] [158]
+[148] [149]
 Overfull \hbox (34.7304pt too wide) in paragraph at lines 183--184
 []\OT1/cmr/m/n/10 For a three-dimensional vec-tor field, $\OT1/cmr/bx/n/10 F\OT
 1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 ) = (\OML/cmm/m/it/10 M\O
@@ -1630,16 +1660,16 @@ T1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; N\OT
 /cmr/m/n/10 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 ))$,
  []
 
-) [159] (./auto_generated_text/Week29Curl/curl_geo.tex [160
+) [150] (./auto_generated_text/Week29Curl/curl_geo.tex [151
 
-] [161]
+] [152]
 Overfull \hbox (1.66492pt too wide) in paragraph at lines 176--177
 []\OT1/cmr/m/n/10 Note that this cor-re-sponds to a larger value of $\OML/cmm/m
 /it/10 N[]$ \OT1/cmr/m/n/10 (the change in the $\OML/cmm/m/it/10 y$\OT1/cmr/m/n
 /10 -component
  []
 
-[162] [163]
+[153] [154]
 Overfull \hbox (1.5896pt too wide) in paragraph at lines 223--223
 |\OT1/cmr/bx/n/14.4 Geometric Sig-nif-i-cance of Three-dimensional Curl| 
  []
@@ -1650,22 +1680,22 @@ Overfull \hbox (1.33823pt too wide) in paragraph at lines 238--238
  []
 
 
-Overfull \hbox (28.86298pt too wide) in paragraph at lines 252--253
+Overfull \hbox (23.36295pt too wide) in paragraph at lines 252--253
 []\OT1/cmr/m/sl/10 Consider the vec-tor field $\OT1/cmr/bx/n/10 F\OT1/cmr/m/n/1
 0 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 ) = []$\OT1/cmr/m/sl/10 .
  []
 
-[164] [165]) [166] (./auto_generated_text/Week29Curl/curl_connect.tex
+[155] [156]) [157] (./auto_generated_text/Week29Curl/curl_connect.tex
 Overfull \hbox (2.06386pt too wide) in paragraph at lines 35--36
 []\OT1/cmr/m/n/10 Now, we will use Clairaut's The-o-rem to sim-plify this vec-t
 or. Since $\OT1/cmr/bx/n/10 F \OT1/cmr/m/n/10 = (\OML/cmm/m/it/10 M; N; P\OT1/c
 mr/m/n/10 )$
  []
 
-[167
+[158
 
-] [168]) [169] (./auto_generated_text/Week29Curl/online_hw.tex
-Overfull \hbox (62.28526pt too wide) in paragraph at lines 10--11
+] [159]) [160] (./auto_generated_text/Week29Curl/online_hw.tex
+Overfull \hbox (56.78523pt too wide) in paragraph at lines 10--11
 []\OT1/cmr/m/sl/10 Compute the curl of the vec-tor field $\OT1/cmr/bx/n/10 F\OT
 1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 ) = (\OMS/cmsy/m/n/10 ^^@
 \OT1/cmr/m/n/10 2\OML/cmm/m/it/10 y []\OT1/cmr/m/n/10 (3\OML/cmm/m/it/10 x\OT1/
@@ -1674,10 +1704,10 @@ cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 3\OML/cmm/m/it/10 x []\OT1/cmr/m
 \OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 0)$\OT1/cmr/m/sl/10 . 
  []
 
-[170
+[161
 
-] [171] [172]
-Overfull \hbox (27.09312pt too wide) in paragraph at lines 137--138
+] [162] [163]
+Overfull \hbox (21.5931pt too wide) in paragraph at lines 137--138
 []\OT1/cmr/m/sl/10 Compute the curl of the vec-tor field $\OT1/cmr/bx/n/10 F\OT
 1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y\OT1/cmr/m/n/10 ) = (\OMS/cmsy/m/n/10 ^^@\OT
 1/cmr/m/n/10 4\OML/cmm/m/it/10 x \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 y []\OT1/cm
@@ -1685,9 +1715,9 @@ r/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; []\OT1/cmr/m/n/
 10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ))$\OT1/cmr/m/sl/10 . 
  []
 
-[173]) [174] (./auto_generated_text/Week29Curl/written_hw.tex [175
+[164]) [165] (./auto_generated_text/Week29Curl/written_hw.tex [166
 
-]) [176]
+]) [167]
 (./auto_generated_text/Week29Curl/all_problems.tex
 Overfull \hbox (18.39633pt too wide) in paragraph at lines 45--46
 []\OT1/cmr/m/sl/10 Compute the curl of the vec-tor field $\OT1/cmr/bx/n/10 F\OT
@@ -1696,7 +1726,7 @@ x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 y\OT1/
 cmr/m/n/10 )\OML/cmm/m/it/10 ; xy\OT1/cmr/m/n/10 )$\OT1/cmr/m/sl/10 . 
  []
 
-[177
+[168
 
 ]
 Overfull \hbox (4.93805pt too wide) in paragraph at lines 59--60
@@ -1706,14 +1736,14 @@ Overfull \hbox (4.93805pt too wide) in paragraph at lines 59--60
 OT1/cmr/m/n/10 )$\OT1/cmr/m/sl/10 . 
  []
 
-[178] [179]
+[169] [170]
 Overfull \hbox (2.69038pt too wide) in paragraph at lines 146--147
 []\OT1/cmr/m/sl/10 Find the 2-dimensional curl of the vec-tor field $\OT1/cmr/b
 x/n/10 F\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y\OT1/cmr/m/n/10 ) = (\OMS/cmsy/m/
 n/10 ^^@\OML/cmm/m/it/10 y; x\OT1/cmr/m/n/10 )$\OT1/cmr/m/sl/10 .
  []
 
-[180]
+[171]
 Overfull \hbox (62.28526pt too wide) in paragraph at lines 191--192
 []\OT1/cmr/m/sl/10 Compute the curl of the vec-tor field $\OT1/cmr/bx/n/10 F\OT
 1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 ) = (\OMS/cmsy/m/n/10 ^^@
@@ -1723,7 +1753,7 @@ cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 3\OML/cmm/m/it/10 x []\OT1/cmr/m
 \OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 0)$\OT1/cmr/m/sl/10 . 
  []
 
-[181]
+[172]
 Overfull \hbox (70.45428pt too wide) in paragraph at lines 211--212
 []\OT1/cmr/m/sl/10 Compute the curl of the vec-tor field $\OT1/cmr/bx/n/10 F\OT
 1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 ) = (\OML/cmm/m/it/10 ze[
@@ -1732,7 +1762,7 @@ Overfull \hbox (70.45428pt too wide) in paragraph at lines 211--212
 \OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ))$\OT1/cmr/m/sl/10 . 
  []
 
-[182]
+[173]
 Overfull \hbox (27.09312pt too wide) in paragraph at lines 271--272
 []\OT1/cmr/m/sl/10 Compute the curl of the vec-tor field $\OT1/cmr/bx/n/10 F\OT
 1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y\OT1/cmr/m/n/10 ) = (\OMS/cmsy/m/n/10 ^^@\OT
@@ -1741,7 +1771,7 @@ r/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; []\OT1/cmr/m/n/
 10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ))$\OT1/cmr/m/sl/10 . 
  []
 
-[183] [184]
+[174] [175]
 Overfull \hbox (61.38022pt too wide) in paragraph at lines 337--338
 []\OT1/cmr/m/sl/10 Compute the curl of the vec-tor field $\OT1/cmr/bx/n/10 F\OT
 1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 ) = (\OML/cmm/m/it/10 ye[
@@ -1750,24 +1780,30 @@ Overfull \hbox (61.38022pt too wide) in paragraph at lines 337--338
 1/cmr/m/n/10 ))$\OT1/cmr/m/sl/10 . 
  []
 
-[185] [186]) [187]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 53.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 53.
+[176] [177]) [178]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 59.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 59.
  (./multivariable.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 53.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 53.
-Package rerunfilecheck Info: File `multivariable.out' has not changed.
-(rerunfilecheck)             Checksum: 14DD60DC7C6F5C5832933228883937BD;7402.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 59.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 59.
 
+
+Package rerunfilecheck Warning: File `multivariable.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `multivariable.out':
+(rerunfilecheck)             Before: 14DD60DC7C6F5C5832933228883937BD;7402
+(rerunfilecheck)             After:  EE87E883A2122816363B6AA94F7AC557;7927.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 53.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 59.
  ) 
 Here is how much of TeX's memory you used:
- 30581 strings out of 493014
- 698761 string characters out of 6133351
- 845250 words of memory out of 5000000
+ 30445 strings out of 493014
+ 697910 string characters out of 6133351
+ 845305 words of memory out of 5000000
  32323 multiletter control sequences out of 15000+600000
  24156 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1803,10 +1839,10 @@ onts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2016/texmf-dist
 /fonts/type1/public/amsfonts/euler/eufm7.pfb></usr/local/texlive/2016/texmf-dis
 t/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2016/texmf
 -dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on multivariable.pdf (187 pages, 5812450 bytes).
+Output written on multivariable.pdf (178 pages, 5805555 bytes).
 PDF statistics:
- 2858 PDF objects out of 2984 (max. 8388607)
- 2540 compressed objects within 26 object streams
- 1126 named destinations out of 1200 (max. 500000)
+ 2657 PDF objects out of 2984 (max. 8388607)
+ 2350 compressed objects within 24 object streams
+ 984 named destinations out of 1000 (max. 500000)
  1082 words of extra memory for PDF output out of 10000 (max. 10000000)
 

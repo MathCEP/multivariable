@@ -52,67 +52,75 @@
 \contentsline {section}{Written Homework}{76}{section*.50}
 \contentsline {section}{Written Homework}{76}{section*.51}
 \contentsline {section}{Professional Problem}{77}{section*.52}
-\contentsline {section}{Practice Problems}{79}{section*.53}
-\contentsline {section}{Online Problems}{79}{section*.54}
-\contentsline {section}{Written Problems}{86}{section*.55}
-\contentsline {part}{III\hspace {1em}Week 2: Multivariable Functions and Graphing}{89}{part.3}
-\contentsline {section}{Functions}{89}{section*.56}
-\contentsline {section}{Definition of a Function}{89}{section*.57}
-\contentsline {section}{Types of Functions}{91}{section*.58}
-\contentsline {section}{Component Functions}{92}{section*.59}
-\contentsline {section}{Conclusion}{92}{section*.60}
-\contentsline {section}{Graphing Functions}{93}{section*.61}
-\contentsline {section}{Definition of the Graph of a Function}{93}{section*.62}
-\contentsline {section}{Strategies for Graphing}{93}{section*.63}
-\contentsline {section}{Level Surfaces}{94}{section*.64}
-\contentsline {section}{Conclusion}{96}{section*.65}
-\contentsline {section}{Quadric Surfaces}{97}{section*.66}
-\contentsline {section}{Definition of a Quadric Surface}{97}{section*.67}
-\contentsline {section}{Simple Forms}{97}{section*.68}
-\contentsline {section}{Some Other Forms}{101}{section*.69}
-\contentsline {section}{Conclusion}{103}{section*.70}
-\contentsline {section}{Online Homework}{104}{section*.71}
-\contentsline {section}{Written Homework}{113}{section*.72}
-\contentsline {section}{Written Homework}{113}{section*.73}
-\contentsline {section}{Professional Problem}{113}{section*.74}
-\contentsline {section}{Practice Problems}{115}{section*.75}
-\contentsline {section}{Online Problems}{115}{section*.76}
-\contentsline {section}{Written Problems}{123}{section*.77}
-\contentsline {part}{IV\hspace {1em}Week 27: Conservative Vector Fields and Topology}{125}{part.4}
-\contentsline {section}{Topology}{125}{section*.78}
-\contentsline {section}{Open Sets}{125}{section*.79}
-\contentsline {section}{Closed Sets}{129}{section*.80}
-\contentsline {section}{Connected Sets}{132}{section*.81}
-\contentsline {section}{Simply Connected Sets}{133}{section*.82}
-\contentsline {section}{Summary}{136}{section*.83}
-\contentsline {section}{Path Independence and FTLI}{137}{section*.84}
-\contentsline {section}{Path Independence}{137}{section*.85}
-\contentsline {section}{Fundamental Theorem of Line Integrals}{140}{section*.86}
-\contentsline {section}{Strategies for Computing Line Integrals}{143}{section*.87}
-\contentsline {section}{Summary}{145}{section*.88}
-\contentsline {section}{Conservative Vector Fields}{146}{section*.89}
-\contentsline {section}{Finding a Potential Function}{146}{section*.90}
-\contentsline {section}{Summary}{151}{section*.91}
-\contentsline {section}{Practice Problems}{153}{section*.92}
-\contentsline {section}{Online Problems}{153}{section*.93}
-\contentsline {section}{Written Problems}{153}{section*.94}
-\contentsline {part}{V\hspace {1em}Week 29: Curl}{155}{part.5}
-\contentsline {section}{Curl of a Vector Field}{155}{section*.95}
-\contentsline {section}{Definition of Curl}{155}{section*.96}
-\contentsline {section}{Summary}{159}{section*.97}
-\contentsline {section}{Geometric Significance of Curl}{160}{section*.98}
-\contentsline {section}{Geometric Significance of Two-dimensional Curl}{160}{section*.99}
-\contentsline {section}{Geometric Significance of Three-dimensional Curl}{164}{section*.100}
-\contentsline {section}{Summary}{166}{section*.101}
-\contentsline {section}{Connections of Curl with Older Material}{167}{section*.102}
-\contentsline {section}{Curl of a Conservative Vector Field}{167}{section*.103}
-\contentsline {section}{Curl and Green's Theorem}{168}{section*.104}
-\contentsline {section}{Summary}{169}{section*.105}
-\contentsline {section}{Online Homework}{170}{section*.106}
-\contentsline {section}{Written Homework}{175}{section*.107}
-\contentsline {section}{Written Homework}{175}{section*.108}
-\contentsline {section}{Professional Problem}{175}{section*.109}
-\contentsline {section}{Practice Problems}{177}{section*.110}
-\contentsline {section}{Online Problems}{177}{section*.111}
-\contentsline {section}{Written Problems}{186}{section*.112}
+\contentsline {part}{III\hspace {1em}Week 2: Multivariable Functions and Graphing}{79}{part.3}
+\contentsline {section}{Functions}{79}{section*.53}
+\contentsline {section}{Definition of a Function}{79}{section*.54}
+\contentsline {section}{Types of Functions}{81}{section*.55}
+\contentsline {section}{Component Functions}{82}{section*.56}
+\contentsline {section}{Conclusion}{82}{section*.57}
+\contentsline {section}{Graphing Functions}{83}{section*.58}
+\contentsline {section}{Definition of the Graph of a Function}{83}{section*.59}
+\contentsline {section}{Strategies for Graphing}{83}{section*.60}
+\contentsline {section}{Level Surfaces}{84}{section*.61}
+\contentsline {section}{Conclusion}{86}{section*.62}
+\contentsline {section}{Quadric Surfaces}{87}{section*.63}
+\contentsline {section}{Definition of a Quadric Surface}{87}{section*.64}
+\contentsline {section}{Simple Forms}{87}{section*.65}
+\contentsline {section}{Some Other Forms}{91}{section*.66}
+\contentsline {section}{Conclusion}{93}{section*.67}
+\contentsline {section}{Online Homework}{94}{section*.68}
+\contentsline {section}{Written Homework}{103}{section*.69}
+\contentsline {section}{Written Homework}{103}{section*.70}
+\contentsline {section}{Professional Problem}{103}{section*.71}
+\contentsline {part}{IV\hspace {1em}Week 3: Parametric Curves}{105}{part.4}
+\contentsline {section}{Parametric Curves}{105}{section*.72}
+\contentsline {section}{Review of Parametrizations in $\mathbb {R}^2$}{105}{section*.73}
+\contentsline {section}{Parametrizing Curves in $\mathbb {R}^n$}{106}{section*.74}
+\contentsline {section}{Examples in $\mathbb {R}^3$}{108}{section*.75}
+\contentsline {section}{Conclusion}{109}{section*.76}
+\contentsline {section}{Velocity and Speed}{110}{section*.77}
+\contentsline {section}{Derivatives}{110}{section*.78}
+\contentsline {section}{Velocity and Speed}{112}{section*.79}
+\contentsline {section}{Conclusion}{113}{section*.80}
+\contentsline {section}{Properties of Velocity and Speed}{114}{section*.81}
+\contentsline {section}{Differentiation Laws}{114}{section*.82}
+\contentsline {section}{Constant Speed Path}{115}{section*.83}
+\contentsline {section}{Conclusion}{115}{section*.84}
+\contentsline {part}{V\hspace {1em}Week 27: Conservative Vector Fields and Topology}{116}{part.5}
+\contentsline {section}{Topology}{116}{section*.85}
+\contentsline {section}{Open Sets}{116}{section*.86}
+\contentsline {section}{Closed Sets}{120}{section*.87}
+\contentsline {section}{Connected Sets}{123}{section*.88}
+\contentsline {section}{Simply Connected Sets}{124}{section*.89}
+\contentsline {section}{Summary}{127}{section*.90}
+\contentsline {section}{Path Independence and FTLI}{128}{section*.91}
+\contentsline {section}{Path Independence}{128}{section*.92}
+\contentsline {section}{Fundamental Theorem of Line Integrals}{131}{section*.93}
+\contentsline {section}{Strategies for Computing Line Integrals}{134}{section*.94}
+\contentsline {section}{Summary}{136}{section*.95}
+\contentsline {section}{Conservative Vector Fields}{137}{section*.96}
+\contentsline {section}{Finding a Potential Function}{137}{section*.97}
+\contentsline {section}{Summary}{142}{section*.98}
+\contentsline {section}{Practice Problems}{144}{section*.99}
+\contentsline {section}{Online Problems}{144}{section*.100}
+\contentsline {section}{Written Problems}{144}{section*.101}
+\contentsline {part}{VI\hspace {1em}Week 29: Curl}{146}{part.6}
+\contentsline {section}{Curl of a Vector Field}{146}{section*.102}
+\contentsline {section}{Definition of Curl}{146}{section*.103}
+\contentsline {section}{Summary}{150}{section*.104}
+\contentsline {section}{Geometric Significance of Curl}{151}{section*.105}
+\contentsline {section}{Geometric Significance of Two-dimensional Curl}{151}{section*.106}
+\contentsline {section}{Geometric Significance of Three-dimensional Curl}{155}{section*.107}
+\contentsline {section}{Summary}{157}{section*.108}
+\contentsline {section}{Connections of Curl with Older Material}{158}{section*.109}
+\contentsline {section}{Curl of a Conservative Vector Field}{158}{section*.110}
+\contentsline {section}{Curl and Green's Theorem}{159}{section*.111}
+\contentsline {section}{Summary}{160}{section*.112}
+\contentsline {section}{Online Homework}{161}{section*.113}
+\contentsline {section}{Written Homework}{166}{section*.114}
+\contentsline {section}{Written Homework}{166}{section*.115}
+\contentsline {section}{Professional Problem}{166}{section*.116}
+\contentsline {section}{Practice Problems}{168}{section*.117}
+\contentsline {section}{Online Problems}{168}{section*.118}
+\contentsline {section}{Written Problems}{177}{section*.119}
 \contentsfinish 
