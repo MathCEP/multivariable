@@ -49,6 +49,15 @@ ONLINE HOMEWORK
 WRITTEN HOMEWORK
 PROFESSIONAL HOMEWORK
 
+Week 9: Properties of Derivatives
+TOPICS
+09_properties_of_derivatives/1_higher_order_partials
+09_properties_of_derivatives/2_differentiation_rules
+09_properties_of_derivatives/3_chain_rule
+ONLINE HOMEWORK
+WRITTEN HOMEWORK
+PROFESSIONAL HOMEWORK
+
 Week 27: Conservative Vector Fields and Topology
 TOPICS
 CONS_consvf/N.1_topology

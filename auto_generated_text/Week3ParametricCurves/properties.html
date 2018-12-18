@@ -1,0 +1,102 @@
+<!doctype html> 
+<html lang="en"> 
+<head> <title>Properties  of  Velocity  and
+Speed</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<!-- charset=utf-8,-css,html,htex4ht,xhtml --> 
+<meta name="src" content="properties.tex" /> 
+<meta name="author" content="" /> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
+<meta name="ximera" content="version 0.0.1" /> 
+<link href="https://ximera.osu.edu/public/stylesheets/standalone.css" rel="stylesheet" media="screen"/> 
+<script type="text/javascript" async src="https://ximera.osu.edu/public/javascripts/standalone.min.js"></script> 
+</head><body> 
+<div class="preamble"><script type="math/tex">\newenvironment {prompt}{}{}
+\newcommand {\DeclareMathOperator }[2]{\@OldDeclareMathOperator {##1}{##2}\immediate \write \myfile {\unexpanded {\DeclareMathOperator }{\unexpanded {##1}}{\unexpanded {##2}}}}
+\newcommand {\ungraded }[0]{}
+\newcommand {\reserved@a }[2]{}
+\newcommand {\HyperFirstAtBeginDocument }[0]{\AtBeginDocument }
+\newcommand {\reserved@a }[1]{}
+\newcommand {\reserved@a }[2]{}
+\newcommand {\vnameref  }[1]{\unskip ~\nameref {##1}\@vpageref [\unskip ]{##1}}
+\newcommand {\ref  }[0]{\@ifstar \@refstar \T@ref }
+\newcommand {\pageref  }[0]{\@ifstar \@pagerefstar \T@pageref }
+\newcommand {\nameref  }[0]{\@ifstar \@namerefstar \T@nameref }
+\newcommand {\reserved@a }[2]{}
+\newcommand {\reserved@a }[0]{\AtBeginDocument }
+\newcommand {\reserved@a }[1]{}
+\newcommand {\reserved@a }[2]{}                                                                                                                                                 </script><script type="text/javascript"> 
+</script> 
+</div>
+<div 
+class="abstract" 
+>
+</div>   <div class="maketitle"></div>
+<!--l. 11--><p class="noindent" >In this activity, we explore some important properties of the velocity and speed of a
+parametrized curve.
+</p>
+<h3 class="sectionHead"><a 
+ id="x1-1000"></a>Differentiation Laws</h3>
+<!--l. 15--><p class="noindent" >In single variable calculus, we used the product rule to differentiate products of
+functions. Although we can’t take the product of two vectors in general, we do have
+the dot product and cross product, and we would like to understand how
+differentiation interacts with these products. Fortunately, they turn out to be very
+similar to the product rule from single variable calculus.
+</p>
+<div class="theorem-like problem-environment proposition" id="problem1"><a 
+ id="x1-1001r1"></a>Consider paths <script type="math/tex">\vec {x}</script> and <script type="math/tex">\vec {y}</script> in <script type="math/tex">\mathbb {R}^n</script>. For <script type="math/tex">t</script> such that <script type="math/tex">\vec {x}'(t)</script> and <script type="math/tex">\vec {y}'(t)</script> both exist, we have <script type="math/tex; mode=display"> (\vec {x}\cdot \vec {y})'(t) = \vec {x}'(t)\cdot \vec {y}(t) + \vec {x}(t)\cdot \vec {y}'(t). </script> If <script type="math/tex">n=3</script>, we also have
+<script type="math/tex; mode=display"> (\vec {x}\times \vec {y})'(t) = \vec {x}'(t)\times \vec {y}(t) + \vec {x}(t)\times \vec {y}'(t). </script>
+</div>
+<!--l. 28--><p class="noindent" >
+</p>
+<div class="proof">
+<!--l. 29--><p class="noindent" ><span class="head">
+</p><dl class="trivlist"><dt class="trivlist">
+Proof   </dt><dd 
+class="trivlist"></span>We prove this result for the dot product, and leave the proof for the
+cross product as an exercise.
+<!--l. 31--><p class="noindent" >Suppose <script type="math/tex">t</script> is such that both <script type="math/tex">\vec {x}'(t)</script> and <script type="math/tex">\vec {y}'(t)</script> exist, and write <script type="math/tex">\vec {x}(t) = (x_1(t),...,x_n(t))</script> and <script type="math/tex">\vec {y}(t) = (y_1(t),...,y_n(t))</script>. Then we
+have <script type="math/tex; mode=display"> (\vec {x}\cdot \vec {y})(t) = x_1(t)y_1(t) + \cdots + x_n(t)y_n(t). </script> Using the single variable product rule and regrouping, we have
+                                                                  
+
+                                                                  
+</p><script type="math/tex; mode=display"> \begin{align*} 
+(\vec{x}\cdot\vec{y})'(t) & = \frac{d}{dt}\left(x_1(t)y_1(t) + \cdots + x_n(t)y_n(t)\right),\\
+& = x_1'(t) y_1(t) + x_1(t)y_1'(t) +\cdots+x_n'(t) y_n(t) + x_n(t)y_n'(t),\\
+& = \left(x_1'(t) y_1(t) + \cdots + x_n'(t) y_n(t)\right) + \left(x_1(t) y_1'(t) + \cdots + x_n(t) y_n'(t)\right).
+\end{align*}</script>
+<!--l. 41--><p class="noindent" >Notice that the left summand is <script type="math/tex">\vec {x}'(t)\cdot \vec {y}(t)</script> and the right summand is <script type="math/tex">\vec {x}(t)\cdot \vec {y}'(t)</script>. Thus, we arrive at our
+result, <script type="math/tex; mode=display"> (\vec {x}\cdot \vec {y})'(t) = \vec {x}'(t)\cdot \vec {y}(t) + \vec {x}(t)\cdot \vec {y}'(t). </script>                                                                                              <script type="math/tex">\blacksquare </script></p></dd></dl>
+</div>
+<h3 class="sectionHead"><a 
+ id="x1-2000"></a>Constant Speed Path</h3>
+<!--l. 50--><p class="noindent" >To finish up our unit on parametrized paths, we consider the special case where a
+path is constant distance from the origin. In this case, the path <script type="math/tex">\vec {x}</script> is always
+perpendicular to its derivative. This makes sense intuitively, if you imagine a particle
+on the path moving in the direction of its velocity vector. If the velocity
+vector <script type="math/tex">\vec {v}</script> were not perpendicular to <script type="math/tex">\vec {x}</script>, a particle moving a tiny distance along
+the path would have to move either closer to the origin or farther from the
+origin.
+</p><!--l. 52--><p class="noindent" >PICTURE
+</p>
+<div class="theorem-like problem-environment proposition" id="problem2"><a 
+ id="x1-2001r2"></a>If <script type="math/tex">\vec {x}(t)</script> has constant length, then <script type="math/tex">\vec {x}(t)</script> is perpendicular to <script type="math/tex">\vec {x}'(t)</script>, for all <script type="math/tex">t</script> such that <script type="math/tex">\vec {x}'(t)</script> is defined.
+</div>
+<!--l. 58--><p class="noindent" >We leave the proof of this proposition as an exercise. It’s helpful to think about how
+the dot product <script type="math/tex">\vec {x}(t)\cdot \vec {x}(t)</script> relates to the length of <script type="math/tex">\vec {x}(t)</script>.
+</p>
+<h3 class="sectionHead"><a 
+ id="x1-3000"></a>Conclusion</h3>
+<!--l. 64--><p class="noindent" >In this activity, we explore some important properties of the velocity and speed of a
+parametrized curve.
+</body> 
+ 
+</html>
+                                                                  
+
+                                                                  
+                                                                  
+
+

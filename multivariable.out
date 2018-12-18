@@ -87,36 +87,52 @@
 \BOOKMARK [1][-]{section*.83}{Practice Problems}{part.4}% 87
 \BOOKMARK [1][-]{section*.84}{Online Problems}{part.4}% 88
 \BOOKMARK [1][-]{section*.85}{Written Problems}{part.4}% 89
-\BOOKMARK [0][-]{part.5}{V Week 27: Conservative Vector Fields and Topology}{}% 90
-\BOOKMARK [1][-]{section*.86}{Topology}{part.5}% 91
-\BOOKMARK [1][-]{section*.87}{Open Sets}{part.5}% 92
-\BOOKMARK [1][-]{section*.88}{Closed Sets}{part.5}% 93
-\BOOKMARK [1][-]{section*.89}{Connected Sets}{part.5}% 94
-\BOOKMARK [1][-]{section*.90}{Simply Connected Sets}{part.5}% 95
-\BOOKMARK [1][-]{section*.91}{Summary}{part.5}% 96
-\BOOKMARK [1][-]{section*.92}{Path Independence and FTLI}{part.5}% 97
-\BOOKMARK [1][-]{section*.93}{Path Independence}{part.5}% 98
-\BOOKMARK [1][-]{section*.94}{Fundamental Theorem of Line Integrals}{part.5}% 99
-\BOOKMARK [1][-]{section*.95}{Strategies for Computing Line Integrals}{part.5}% 100
-\BOOKMARK [1][-]{section*.96}{Summary}{part.5}% 101
-\BOOKMARK [1][-]{section*.97}{Conservative Vector Fields}{part.5}% 102
-\BOOKMARK [1][-]{section*.98}{Finding a Potential Function}{part.5}% 103
-\BOOKMARK [1][-]{section*.99}{Summary}{part.5}% 104
-\BOOKMARK [1][-]{section*.100}{Practice Problems}{part.5}% 105
-\BOOKMARK [1][-]{section*.101}{Online Problems}{part.5}% 106
-\BOOKMARK [1][-]{section*.102}{Written Problems}{part.5}% 107
-\BOOKMARK [0][-]{part.6}{VI Week 29: Curl}{}% 108
-\BOOKMARK [1][-]{section*.103}{Curl of a Vector Field}{part.6}% 109
-\BOOKMARK [1][-]{section*.104}{Definition of Curl}{part.6}% 110
-\BOOKMARK [1][-]{section*.105}{Summary}{part.6}% 111
-\BOOKMARK [1][-]{section*.106}{Geometric Significance of Curl}{part.6}% 112
-\BOOKMARK [1][-]{section*.107}{Geometric Significance of Two-dimensional Curl}{part.6}% 113
-\BOOKMARK [1][-]{section*.108}{Geometric Significance of Three-dimensional Curl}{part.6}% 114
-\BOOKMARK [1][-]{section*.109}{Summary}{part.6}% 115
-\BOOKMARK [1][-]{section*.110}{Connections of Curl with Older Material}{part.6}% 116
-\BOOKMARK [1][-]{section*.111}{Curl of a Conservative Vector Field}{part.6}% 117
-\BOOKMARK [1][-]{section*.112}{Curl and Green's Theorem}{part.6}% 118
-\BOOKMARK [1][-]{section*.113}{Summary}{part.6}% 119
-\BOOKMARK [1][-]{section*.114}{Practice Problems}{part.6}% 120
-\BOOKMARK [1][-]{section*.115}{Online Problems}{part.6}% 121
-\BOOKMARK [1][-]{section*.116}{Written Problems}{part.6}% 122
+\BOOKMARK [0][-]{part.5}{V Week 9: Properties of Derivatives}{}% 90
+\BOOKMARK [1][-]{section*.86}{Higher Order Partial Derivatives}{part.5}% 91
+\BOOKMARK [1][-]{section*.87}{Higher Order Partials}{part.5}% 92
+\BOOKMARK [1][-]{section*.88}{Clairaut's Theorem}{part.5}% 93
+\BOOKMARK [1][-]{section*.89}{Geometric Significance}{part.5}% 94
+\BOOKMARK [1][-]{section*.90}{Conclusion}{part.5}% 95
+\BOOKMARK [1][-]{section*.91}{Differentiation Properties}{part.5}% 96
+\BOOKMARK [1][-]{section*.92}{Linearity of the derivative}{part.5}% 97
+\BOOKMARK [1][-]{section*.93}{Product and Quotient laws}{part.5}% 98
+\BOOKMARK [1][-]{section*.94}{Chain Rule}{part.5}% 99
+\BOOKMARK [1][-]{section*.95}{The Chain Rule}{part.5}% 100
+\BOOKMARK [1][-]{section*.96}{A Special Case}{part.5}% 101
+\BOOKMARK [1][-]{section*.97}{Examples}{part.5}% 102
+\BOOKMARK [1][-]{section*.98}{Conclusion}{part.5}% 103
+\BOOKMARK [1][-]{section*.99}{Practice Problems}{part.5}% 104
+\BOOKMARK [1][-]{section*.100}{Written Problems}{part.5}% 105
+\BOOKMARK [0][-]{part.6}{VI Week 27: Conservative Vector Fields and Topology}{}% 106
+\BOOKMARK [1][-]{section*.101}{Topology}{part.6}% 107
+\BOOKMARK [1][-]{section*.102}{Open Sets}{part.6}% 108
+\BOOKMARK [1][-]{section*.103}{Closed Sets}{part.6}% 109
+\BOOKMARK [1][-]{section*.104}{Connected Sets}{part.6}% 110
+\BOOKMARK [1][-]{section*.105}{Simply Connected Sets}{part.6}% 111
+\BOOKMARK [1][-]{section*.106}{Summary}{part.6}% 112
+\BOOKMARK [1][-]{section*.107}{Path Independence and FTLI}{part.6}% 113
+\BOOKMARK [1][-]{section*.108}{Path Independence}{part.6}% 114
+\BOOKMARK [1][-]{section*.109}{Fundamental Theorem of Line Integrals}{part.6}% 115
+\BOOKMARK [1][-]{section*.110}{Strategies for Computing Line Integrals}{part.6}% 116
+\BOOKMARK [1][-]{section*.111}{Summary}{part.6}% 117
+\BOOKMARK [1][-]{section*.112}{Conservative Vector Fields}{part.6}% 118
+\BOOKMARK [1][-]{section*.113}{Finding a Potential Function}{part.6}% 119
+\BOOKMARK [1][-]{section*.114}{Summary}{part.6}% 120
+\BOOKMARK [1][-]{section*.115}{Practice Problems}{part.6}% 121
+\BOOKMARK [1][-]{section*.116}{Online Problems}{part.6}% 122
+\BOOKMARK [1][-]{section*.117}{Written Problems}{part.6}% 123
+\BOOKMARK [0][-]{part.7}{VII Week 29: Curl}{}% 124
+\BOOKMARK [1][-]{section*.118}{Curl of a Vector Field}{part.7}% 125
+\BOOKMARK [1][-]{section*.119}{Definition of Curl}{part.7}% 126
+\BOOKMARK [1][-]{section*.120}{Summary}{part.7}% 127
+\BOOKMARK [1][-]{section*.121}{Geometric Significance of Curl}{part.7}% 128
+\BOOKMARK [1][-]{section*.122}{Geometric Significance of Two-dimensional Curl}{part.7}% 129
+\BOOKMARK [1][-]{section*.123}{Geometric Significance of Three-dimensional Curl}{part.7}% 130
+\BOOKMARK [1][-]{section*.124}{Summary}{part.7}% 131
+\BOOKMARK [1][-]{section*.125}{Connections of Curl with Older Material}{part.7}% 132
+\BOOKMARK [1][-]{section*.126}{Curl of a Conservative Vector Field}{part.7}% 133
+\BOOKMARK [1][-]{section*.127}{Curl and Green's Theorem}{part.7}% 134
+\BOOKMARK [1][-]{section*.128}{Summary}{part.7}% 135
+\BOOKMARK [1][-]{section*.129}{Practice Problems}{part.7}% 136
+\BOOKMARK [1][-]{section*.130}{Online Problems}{part.7}% 137
+\BOOKMARK [1][-]{section*.131}{Written Problems}{part.7}% 138
