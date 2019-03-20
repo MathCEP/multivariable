@@ -1,0 +1,121 @@
+<!doctype html> 
+<html lang="en"> 
+<head> <title>Moving Frame Computations</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<!-- charset=utf-8,-css,html,htex4ht,xhtml --> 
+<meta name="src" content="more_tnb.tex" /> 
+<meta name="author" content="" /> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
+<meta name="ximera" content="version 0.0.1" /> 
+<link href="https://ximera.osu.edu/public/stylesheets/standalone.css" rel="stylesheet" media="screen"/> 
+<script type="text/javascript" async src="https://ximera.osu.edu/public/javascripts/standalone.min.js"></script> 
+</head><body> 
+<div class="preamble"><script type="math/tex">\newenvironment {prompt}{}{}
+\newcommand {\DeclareMathOperator }[2]{\@OldDeclareMathOperator {##1}{##2}\immediate \write \myfile {\unexpanded {\DeclareMathOperator }{\unexpanded {##1}}{\unexpanded {##2}}}}
+\newcommand {\ungraded }[0]{}
+\newcommand {\reserved@a }[2]{}
+\newcommand {\HyperFirstAtBeginDocument }[0]{\AtBeginDocument }
+\newcommand {\reserved@a }[1]{}
+\newcommand {\reserved@a }[2]{}
+\newcommand {\vnameref  }[1]{\unskip ~\nameref {##1}\@vpageref [\unskip ]{##1}}
+\newcommand {\ref  }[0]{\@ifstar \@refstar \T@ref }
+\newcommand {\pageref  }[0]{\@ifstar \@pagerefstar \T@pageref }
+\newcommand {\nameref  }[0]{\@ifstar \@namerefstar \T@nameref }
+\newcommand {\reserved@a }[2]{}
+\newcommand {\reserved@a }[0]{\AtBeginDocument }
+\newcommand {\reserved@a }[1]{}
+\newcommand {\reserved@a }[2]{}                                                                                                                                                 </script><script type="text/javascript"> 
+</script> 
+</div>
+<div 
+class="abstract" 
+>
+</div>   <div class="maketitle"></div>
+<!--l. 11--><p class="noindent" >Recall our definition of the moving frame:
+</p>
+<div class="theorem-like problem-environment definition" id="problem1"><a 
+ id="x1-17r1"></a>Given a path <script type="math/tex">\vec {x}(t)</script>, we define the <em>moving frame</em> of the path to be the triple <script type="math/tex">(\vec {T},\vec {N},\vec {B})</script>.
+<!--l. 16--><p class="noindent" ><script type="math/tex">\vec {T}</script> is the <em>unit tangent vector</em>, <script type="math/tex; mode=display"> \vec {T}(t) = \dfrac {\vec {x}'(t)}{\|\vec {x}'(t)\|}. </script>
+</p><!--l. 21--><p class="noindent" ><script type="math/tex">\vec {N}</script> is the <em>unit normal vector</em>, <script type="math/tex; mode=display"> \vec {N}(t) = \dfrac {\vec {T}'(t)}{\|\vec {T}'(t)\|}. </script>
+</p><!--l. 26--><p class="noindent" ><script type="math/tex">\vec {B}</script> is the <em>unit binormal vector</em>, <script type="math/tex; mode=display"> \vec {B}(t) = \vec {T}(t)\times \vec {N}(t). </script>
+</p><!--l. 31--><p class="noindent" >The moving frame is also called the <em>TNB frame</em>.
+</div>
+</p><!--l. 34--><p class="noindent" >We’ll now work through some moving frame computations. These computations can
+sometimes get quite nasty, so it’s important to simplify as you go, and plug in points
+when possible.
+<a 
+ id="Q1-1-1"></a>
+</p>
+<h3 class="likesectionHead"><a 
+ id="x1-1000"></a>Examples</h3>
+<div class="theorem-like problem-environment example" id="problem2"><a 
+ id="x1-1001r2"></a>We’ll compute the moving frame for the path <script type="math/tex">\vec {x}(t) = (\cos (t),\sin (t), t)</script> in general, and when <script type="math/tex">t = 0</script>.
+<!--l. 41--><p class="noindent" >In order to find the unit tangent vector, we first need to find the velocity
+vector. <script type="math/tex; mode=display"> \vec {x}'(t) = \answer {(-\sin (t), \cos (t), 1)} </script> Computing the length, we have <script type="math/tex; mode=display"> \|\vec {x}'(t)\| = \answer {\sqrt {2}}. </script> From these, we compute
+</p><script type="math/tex; mode=display"> \begin{align*} 
+\vec{T}(t) &= \dfrac{\vec{x}'(t)}{\|\vec{x}'(t)\|}\\
+&= \answer{(-\frac{1}{\sqrt{2}}\sin(t), \frac{1}{\sqrt{2}}\cos(t), \frac{1}{\sqrt{2}})}.
+\end{align*}</script>
+                                                                  
+
+                                                                  
+<!--l. 54--><p class="noindent" >Plugging in <script type="math/tex">t=0</script>, we have <script type="math/tex; mode=display"> \vec {T}(0) = \answer {(0,\frac {1}{\sqrt {2}},\frac {1}{\sqrt {2}})}. </script> Next, we need to find the unit binormal vector. For this, we
+first need to find <script type="math/tex">\vec {T}'(t)</script>. <script type="math/tex; mode=display"> \vec {T}'(t) = \answer {(-\frac {1}{\sqrt {2}}\cos (t), -\frac {1}{\sqrt {2}}\sin (t), 0)} </script> Computing the length, we have <script type="math/tex; mode=display"> \|\vec {T}'(t)\| = \answer {\frac {1}{\sqrt {2}}}. </script> From these, we compute
+</p><script type="math/tex; mode=display"> \begin{align*} 
+\vec{N}(t) &= \dfrac{\vec{T}'(t)}{\|\vec{T}'(t)\|}\\
+&= \answer{(-\cos(t), -\sin(t),0)}.
+\end{align*}</script>
+<!--l. 71--><p class="noindent" >Plugging in <script type="math/tex">t=0</script>, we have <script type="math/tex; mode=display"> \vec {N}(t) = \answer {(-1,0,0)}. </script> Finally, we need to find the unit binormal vector.
+</p><script type="math/tex; mode=display"> \begin{align*} 
+\vec{B}(t) &= \vec{T}(t)\times\vec{N}(t)\\
+&= \answer{(\frac{1}{\sqrt{2}}\sin(t), -\frac{1}{\sqrt{2}}\cos(t), \frac{1}{\sqrt{2}})}
+\end{align*}</script>
+<!--l. 80--><p class="noindent" >Plugging in <script type="math/tex">t=0</script>, we have <script type="math/tex; mode=display"> \vec {B}(0) = \answer {(0, \frac {1}{\sqrt {2}}, \frac {1}{\sqrt {2}})}. </script>
+</p><!--l. 85--><p class="noindent" >PICTURE/VIDEO/INTERACTIVE
+</div>
+</p>
+<div class="theorem-like problem-environment example" id="problem3"><a 
+ id="x1-1002r3"></a>We’ll compute the moving frame for the path <script type="math/tex">\vec {x}(t) = (1, t, t^2)</script> when <script type="math/tex">t=1</script>.
+<!--l. 91--><p class="noindent" >Since we only need the moving frame for one specific value of <script type="math/tex">t</script>, we’ll plug in this
+value as soon as we can, to help simplify computation. However, we need
+to make sure that we’ve taken all necessary derivatives before plugging in
+<script type="math/tex">t=1</script>.
+</p><!--l. 93--><p class="noindent" >In order to find the unit tangent vector, we first need to find the velocity vector. <script type="math/tex; mode=display"> \vec {x}'(t) = \answer {(0, 1, 2t)} </script> If
+we only needed to find <script type="math/tex">\vec {T}(1)</script>, we could plug in <script type="math/tex">t=1</script> at this point. However, we will
+eventually need to differentiate <script type="math/tex">\vec {T}(t)</script> to find <script type="math/tex">\vec {N}(t)</script>, so we’ll hold off on plugging in <script type="math/tex">t=1</script> for
+now.
+</p><!--l. 99--><p class="noindent" >Next, we find the length of <script type="math/tex">\vec {x}'(t)</script>. <script type="math/tex; mode=display"> \|\vec {x}'(t)\| = \answer {\sqrt {1+4t^2}} </script>
+</p><!--l. 104--><p class="noindent" >Then, we have that the unit tangent vector is </p><script type="math/tex; mode=display"> \begin{align*} 
+\vec{T}(t) &= \dfrac{\vec{x}'(t)}{\|\vec{x}'(t)\|}\\
+&= \answer{(0,\frac{1}{\sqrt{1+4t^2}}, \frac{2t}{\sqrt{1+4t^2}})}.
+\end{align*}</script>
+<!--l. 110--><p class="noindent" >Plugging in <script type="math/tex">t=1</script>, we have <script type="math/tex; mode=display"> \vec {T}(1) = \answer {(0,\frac {1}{\sqrt {5}}, \frac {2}{\sqrt {5}})}. </script>
+</p><!--l. 115--><p class="noindent" >Next, we differentiate <script type="math/tex">\vec {T}(t)</script>. Take a moment to revel in gratitude that we’re doing this
+computation for you. <script type="math/tex; mode=display"> \vec {T}'(t) = \left (0,\frac {-4t}{(1+4t^2)^{3/2}}, \frac {2}{(1+4t^2)^{3/2}}\right ) </script> At this point, we don’t have anymore derivatives
+to take, so we’ll plug in <script type="math/tex">t=1</script> before continuing our computation. <script type="math/tex; mode=display"> \vec {T}'(1) = \answer {(0,\frac {-4}{5^{3/2}}, \frac {2}{5^{3/2}})} </script> The length
+of this vector is <script type="math/tex; mode=display"> \|\vec {T}'(1)\| = \answer {2/5}. </script> From these, we compute the unit normal vector when <script type="math/tex">t=1</script>,
+</p><script type="math/tex; mode=display"> \begin{align*} 
+\vec{N}(1) &= \dfrac{\vec{T}'(1)}{\|\vec{T}'(1)\|}\\
+&= \answer{(0,\frac{-2}{\sqrt{5}},\frac{1}{\sqrt{5}})}.
+\end{align*}</script>
+                                                                  
+
+                                                                  
+<!--l. 132--><p class="noindent" >Finally, we compute the unit binormal vector when <script type="math/tex">t=1</script>. </p><script type="math/tex; mode=display"> \begin{align*} 
+\vec{B}(1) &= \vec{T}(1)\times\vec{N}(1)\\
+&= \answer{(1,0,0)}
+\end{align*}</script>
+<!--l. 137--><p class="noindent" >Notice how helpful it was to plug in <script type="math/tex">t=1</script> as early as we could!
+</p><!--l. 140--><p class="noindent" >PICTURE/VIDEO/INTERACTIVE
+</div>
+</body> 
+ 
+</html>
+                                                                  
+
+                                                                  
+                                                                  
+
+

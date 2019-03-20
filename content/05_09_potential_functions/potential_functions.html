@@ -1,0 +1,289 @@
+<!doctype html> 
+<html lang="en"> 
+<head> <title>Conservative Vector Fields</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<!-- charset=utf-8,-css,html,htex4ht,xhtml --> 
+<meta name="src" content="potential_functions.tex" /> 
+<meta name="author" content="" /> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
+<meta name="ximera" content="version 0.0.1" /> 
+<link href="https://ximera.osu.edu/public/stylesheets/standalone.css" rel="stylesheet" media="screen"/> 
+<script type="text/javascript" async src="https://ximera.osu.edu/public/javascripts/standalone.min.js"></script> 
+</head><body> 
+<div class="preamble"><script type="math/tex">\newenvironment {prompt}{}{}
+\newcommand {\DeclareMathOperator }[2]{\@OldDeclareMathOperator {##1}{##2}\immediate \write \myfile {\unexpanded {\DeclareMathOperator }{\unexpanded {##1}}{\unexpanded {##2}}}}
+\newcommand {\ungraded }[0]{}
+\newcommand {\reserved@a }[2]{}
+\newcommand {\HyperFirstAtBeginDocument }[0]{\AtBeginDocument }
+\newcommand {\reserved@a }[1]{}
+\newcommand {\reserved@a }[2]{}
+\newcommand {\vnameref  }[1]{\unskip ~\nameref {##1}\@vpageref [\unskip ]{##1}}
+\newcommand {\ref  }[0]{\@ifstar \@refstar \T@ref }
+\newcommand {\pageref  }[0]{\@ifstar \@pagerefstar \T@pageref }
+\newcommand {\nameref  }[0]{\@ifstar \@namerefstar \T@nameref }
+\newcommand {\reserved@a }[2]{}
+\newcommand {\reserved@a }[0]{\AtBeginDocument }
+\newcommand {\reserved@a }[1]{}
+\newcommand {\reserved@a }[2]{}                                                                                                                                                 </script><script type="text/javascript"> 
+</script> 
+</div>
+<div 
+class="abstract" 
+>
+</div>   <div class="maketitle"></div>
+<!--l. 11--><p class="noindent" >In the previous activity, we proved the Fundamental Theorem of Line Integrals:
+</p>
+<div class="theorem-like problem-environment theorem" id="problem1"><a 
+ id="x1-17r1"></a><strong>Fundamental Theorem of Line Integrals</strong>
+<!--l. 16--><p class="noindent" >Let <script type="math/tex">f:X\subset \mathbb {R}^n\rightarrow \mathbb {R}</script> be <script type="math/tex">C^1</script>, where <script type="math/tex">X</script> is open and connected. Then if <script type="math/tex">C</script> is any piecewise <script type="math/tex">C^1</script> curve from <script type="math/tex">\textbf {A}</script> to <script type="math/tex">\textbf {B}</script>,
+then <script type="math/tex; mode=display"> \int _C\nabla f\cdot d\textbf {s} = \answer {f(B)-f(A)} </script>
+</div>
+</p><!--l. 22--><p class="noindent" >We were able to use the Fundamental Theorem of Line Integrals to easily compute
+line integrals of conservative vector fields, and we were also able to prove the
+following corollary.
+</p>
+<div class="theorem-like problem-environment corollary" id="problem2"><a 
+ id="x1-18r2"></a>If <script type="math/tex">\textbf {F}</script> is a conservative vector field (so <script type="math/tex">\textbf {F}=\nabla f</script> for some <script type="math/tex">f</script>) defined on an open and connected
+domain <script type="math/tex">X</script>, then <script type="math/tex">\textbf {F}</script> is <script type="math/tex">\answer [format=string]{path independent}</script>.
+</div>
+<!--l. 28--><p class="noindent" >Both of these important results require that we have a conservative vector
+field. In this activity, we will discuss how we can determine whether or not
+a vector field is conservative, so that we can check if those results can be
+applied.
+<a 
+ id="Q1-1-1"></a>
+</p>
+<h3 class="likesectionHead"><a 
+ id="x1-1000"></a>Finding a Potential Function</h3>
+<!--l. 32--><p class="noindent" >Recall the definition of a conservative vector field.
+</p>
+<div class="theorem-like problem-environment definition" id="problem3"><a 
+ id="x1-1001r3"></a>A vector field <script type="math/tex">\mathbf {F}</script> is <em>conservative</em> if there is a <script type="math/tex">C^1</script> scalar-valued function <script type="math/tex">f</script> such that <script type="math/tex">\mathbf {F}=\nabla f</script>. Then <script type="math/tex">f</script> is
+                                                                  
+
+                                                                  
+called a <em>potential function</em> for <script type="math/tex">\mathbf {F}</script>.
+</div>
+<!--l. 38--><p class="noindent" >So, one way to show that a vector field <script type="math/tex">\mathbf {F}</script> is conservative is by finding such a potential
+function <script type="math/tex">f</script>.
+</p><!--l. 40--><p class="noindent" >For simple examples, you might be able to do this by guessing. However, more
+complicated examples require a more systematic approach. The approach is easiest to
+understand through examples, so we’ll work through a couple before describing the
+steps for the general case.
+</p>
+<div class="theorem-like problem-environment example" id="problem4"><a 
+ id="x1-1002r4"></a>Find a potential function for the vector field <script type="math/tex">\mathbf {F}(x,y)=(2xy^3+1,3x^2y^2-y^{-2})</script>. <div class="theorem-like problem-environment explanation" id="problem5"><a 
+ id="x1-1003r5"></a>First, note that if there there is a
+function <script type="math/tex">f</script> such that <script type="math/tex">\nabla f = \mathbf {F}</script>, then <script type="math/tex; mode=display"> \left (\dfrac {\partial f}{\partial x}, \dfrac {\partial f}{\partial y}\right )=\left (2xy^3+1,3x^2y^2-y^{-2}\right ) </script> Let’s start by looking at the <script type="math/tex">x</script>-term. We must have <script type="math/tex">\dfrac {\partial f}{\partial x} = 2xy^3+1</script>.
+Integrating with respect to <script type="math/tex">x</script>, we have <script type="math/tex; mode=display"> \begin{align*} 
+f(x,y) &= \int 2xy^3+1\,dx\\
+&= x^2y^3+x+g(y)
+\end{align*}</script>
+<!--l. 54--><p class="noindent" >The first part of this expression, <script type="math/tex">x^2y^3+x</script>, is an antiderivative for <script type="math/tex">2xy^3+1</script> with respect to <script type="math/tex">x</script>. The
+second part of the expression, <script type="math/tex">g(y)</script>, is the “constant” for the integral. It’s possible that
+there are some terms which depend only on <script type="math/tex">y</script>, hence are constant with respect to <script type="math/tex">x</script>, and
+writing <script type="math/tex">g(y)</script> takes these terms into account.
+</p><!--l. 56--><p class="noindent" >At this point, we know that <script type="math/tex">f</script> has the form <script type="math/tex">f(x,y)=x^2y^3+x+g(y)</script>, but we still need to figure out what <script type="math/tex">g(y)</script> is. For this,
+we use the <script type="math/tex">y</script>-term of the vector field <script type="math/tex">\mathbf {F}</script>. From this, we have <script type="math/tex">\dfrac {\partial f}{\partial y} = 3x^2y^2-y^{-2}</script>. Since we know <script type="math/tex">f(x,y)=x^2y^3+x+g(y)</script>, we must have
+</p><script type="math/tex; mode=display"> \begin{align*} 
+\dfrac{\partial f}{\partial y} &= \dfrac{\partial}{\partial y}\left(x^2y^3+x+g(y)\right)\\
+&= 3x^2y^2+g'(y).
+\end{align*}</script>
+<!--l. 61--><p class="noindent" >Comparing this with <script type="math/tex">\dfrac {\partial f}{\partial y} = 3x^2y^2-y^{-2}</script>, we must have <script type="math/tex">g'(y) = -y^{-2}</script>. Then we find that </p><script type="math/tex; mode=display"> \begin{align*} 
+g(y) &= \int -y^{-2}\,dy\\
+&= y^{-1}+C
+\end{align*}</script>
+<!--l. 66--><p class="noindent" >Hence, any potential function would have the form <script type="math/tex">f(x,y)=x^2y^3+x+y^{-1}+C</script>. Choosing <script type="math/tex">C=0</script>, we obtain a specific
+potential function <script type="math/tex">f(x,y)=x^2y^3+x+y^{-1}</script>.
+</div>
+</div>
+</p><!--l. 70--><p class="noindent" >We now work through finding a potential function for a three dimensional vector
+field.
+</p>
+<div class="theorem-like problem-environment example" id="problem6"><a 
+ id="x1-1004r6"></a>Find a potential function for the vector field <script type="math/tex">\mathbf {F}(x,y,z)=(2xy,x^2+z+2y,y+\cos (z))</script>. <div class="theorem-like problem-environment explanation" id="problem7"><a 
+ id="x1-1005r7"></a>First, note that a potential function <script type="math/tex">f(x,y,z)</script>
+would have to satisfy <script type="math/tex; mode=display"> \left (\dfrac {\partial f}{\partial x}, \dfrac {\partial f}{\partial y}, \dfrac {\partial f}{\partial z}\right ) = \left (\answer {2xy},\answer {x^2+z+2y},\answer {y+\cos (z)}\right ) </script> We begin by considering the <script type="math/tex">x</script>-component, noticing that <script type="math/tex">\dfrac {\partial f}{\partial x} = 2xy</script>. We
+integrate with respect to <script type="math/tex">x</script>. <script type="math/tex; mode=display"> \begin{align*} 
+f(x,y,z) &= \int 2xy\,dx\\
+                                                                  
+
+                                                                  
+&= \answer{x^2y} + g(y,z)
+\end{align*}</script>
+<!--l. 84--><p class="noindent" >Here, <script type="math/tex">g(y,z)</script> is a function of only <script type="math/tex">y</script> and <script type="math/tex">z</script>, hence constant with respect to <script type="math/tex">x</script>. We now differentiate
+with respect to <script type="math/tex">y</script>, in order to compare to the <script type="math/tex">y</script>-component of the vector field.
+</p><script type="math/tex; mode=display"> \begin{align*} 
+\dfrac{\partial f}{\partial y} &= \dfrac{\partial}{\partial x}\left(x^2y+g(y,z)\right)\\
+&= \answer{x^2}+\dfrac{\partial g}{\partial y}
+\end{align*}</script>
+<!--l. 89--><p class="noindent" >Comparing this with <script type="math/tex">\dfrac {\partial f}{\partial y} = x^2+z+2y</script>, we have <script type="math/tex">\dfrac {\partial g}{\partial y} = z+2y</script>. We integrate this with respect to <script type="math/tex">y</script>.
+</p><script type="math/tex; mode=display"> \begin{align*} 
+g(y,z) &= \int z+2y\,dy\\
+&= \answer{yz+y^2}+h(z)
+\end{align*}</script>
+<!--l. 94--><p class="noindent" >Here, <script type="math/tex">h</script> is a function of only <script type="math/tex">z</script>, hence is constant with respect to <script type="math/tex">y</script>. We now know
+that <script type="math/tex">f</script> has the form <script type="math/tex">f(x,y,z) = x^2y+yz+y^2+h(z)</script>. So, our final task is to find <script type="math/tex">h(z)</script>. We differentiate <script type="math/tex">f</script> with
+respect to <script type="math/tex">z</script> in order to compare with the <script type="math/tex">z</script>-component of the vector field.
+</p><script type="math/tex; mode=display"> \begin{align*} 
+\dfrac{\partial f}{\partial z} &= \dfrac{\partial}{\partial z}\left(x^2y+yz+y^2+h(z)\right)
+&= \answer{y}+h'(z)
+\end{align*}</script>
+<!--l. 99--><p class="noindent" >Comparing this with <script type="math/tex">\dfrac {\partial f}{\partial z} = y+\cos (z)</script>, we have <script type="math/tex">h'(z)=\cos (z)</script>. Integrating with respect to <script type="math/tex">z</script>, we obtain
+</p><script type="math/tex; mode=display"> \begin{align*} 
+h(z) &= \int \cos(z)\,dz\\
+&=\answer{\sin(z)}+C
+\end{align*}</script>
+<!--l. 104--><p class="noindent" >Where <script type="math/tex">C</script> is a constant. Thus, any potential function would have the form <script type="math/tex">f(x,y,z) = \answer {x^2y+yz+y^2+\sin (z)}+C</script>. Choosing <script type="math/tex">C=0</script>,
+we have a specific potential function <script type="math/tex">f(x,y,z)= \answer {x^2y+yz+y^2+\sin (z)}</script>.
+</div>
+</div>
+</p><!--l. 108--><p class="noindent" >Summarizing the steps we take in each of the above examples, we have the
+following process for finding a potential function for a conservative vector field
+<script type="math/tex">\mathbf {F}(x_1,x_2,...,x_n)</script>.
+     </p><dl class="enumerate-enumitem"><dt class="enumerate-enumitem">
+ (a) </dt><dd 
+class="enumerate-enumitem">Integrate the first component of <script type="math/tex">\mathbf {F}</script> with respect to <script type="math/tex">x_1</script>, in order to find the
+     terms of <script type="math/tex">f(x_1,x_2,...,x_n)</script> which depend on <script type="math/tex">x_1</script>. From this, we can write <script type="math/tex">f(x_1,x_2,...,x_n)=(x_1\textrm {-terms})+f_1(x_2,...,x_n)</script>.
+     </dd><dt class="enumerate-enumitem">
+ (b) </dt><dd 
+class="enumerate-enumitem">Differentiate <script type="math/tex">f(x_1,x_2,...,x_n)=(x\textrm {-terms})+f_1(x_2,...,x_n)</script> with respect to <script type="math/tex">x_2</script>. Compare this to the second component of
+                                                                  
+
+                                                                  
+     <script type="math/tex">\mathbf {F}</script> in order to determine an expression for <script type="math/tex">\dfrac {\partial f_1}{\partial x_2}</script>. Integrate this expression with
+     respect to <script type="math/tex">x_2</script>, so we can write <script type="math/tex">f_1(x_2,...,x_n)=(x_2\textrm {-terms})+f_2(x_3,...,x_n)</script>. Hence we have <script type="math/tex">f(x_1,x_2,...,x_n)=(x_1\textrm {- and }x_2\textrm {-terms})+f_2(x_3,...,x_n)</script>.
+     </dd><dt class="enumerate-enumitem">
+ (c) </dt><dd 
+class="enumerate-enumitem">Repeat this process until all components are used.</dd></dl>
+<!--l. 115--><p class="noindent" >So far, we’ve only seen cases where a potential function exists. However, we would
+also like to be able to show that a vector field is <em>not</em> conservative. Let’s look
+at what happens in our process when we have a vector field which is not
+conservative.
+</p>
+<div class="theorem-like problem-environment example" id="problem8"><a 
+ id="x1-1009r8"></a>Try (and fail) to find a potential function for the vector field <script type="math/tex">\mathbf {F}(x,y) = (-y,x)</script>. <div class="theorem-like problem-environment explanation" id="problem9"><a 
+ id="x1-1010r9"></a>If a potential function
+existed, it would have to satisfy <script type="math/tex; mode=display"> \left (\dfrac {\partial f}{\partial x},\dfrac {\partial f}{\partial y}\right ) = (\answer {-y},\answer {x}) </script> We begin with <script type="math/tex">\dfrac {\partial f}{\partial x} = -y</script>. Integrating with respect to <script type="math/tex">x</script>, we
+have <script type="math/tex; mode=display"> \begin{align*} 
+f(x,y) &= \int -y\,dx\\
+&=\answer{-yx}+g(y)
+\end{align*}</script>
+<!--l. 129--><p class="noindent" >Differentating with respect to <script type="math/tex">y</script>, we then obtain
+</p><script type="math/tex; mode=display"> \begin{align*} 
+\dfrac{\partial f}{\partial y} &= \dfrac{\partial}{\partial y}\left(-yx+g(y)\right)\\
+&= \answer{-x}+g(y)
+\end{align*}</script>
+<!--l. 134--><p class="noindent" >When we compare this to the <script type="math/tex">y</script>-component of the vector field <script type="math/tex">\mathbf {F}</script> in order to
+determine <script type="math/tex">g(y)</script>, we would have to have <script type="math/tex">x=-x+g(y)</script>. But this is impossible! Thus we see
+that our method has broken down, and we are not able to find a potential
+function.
+</div>
+</div>
+</p><!--l. 138--><p class="noindent" >Here, we see that the system breaks down, and we aren’t able to produce a potential
+function. This is good, since it turns out the vector field isn’t conservative.
+However, we would an easy way to prove that it isn’t conservative. The
+following theorem gives us a quick way to prove that a vector field is not
+conservative.
+</p>
+<div class="theorem-like problem-environment theorem" id="problem10"><a 
+ id="x1-1011r10"></a>Let <script type="math/tex">\mathbf {F}:X\subset \mathbb {R}^n\rightarrow \mathbb {R}^n</script> be a <script type="math/tex">C^1</script> vector field, and let <script type="math/tex">X</script> be open and connected. If <script type="math/tex">\mathbf {F}</script> is conservative, then <script type="math/tex">D\mathbf {F}</script> is
+symmetric.
+</div>
+<!--l. 144--><p class="noindent" >The contrapositive of this theorem states:
+</p>
+<div class="theorem-like problem-environment theorem" id="problem11"><a 
+ id="x1-1012r11"></a>Let <script type="math/tex">\mathbf {F}:X\subset \mathbb {R}^n\rightarrow \mathbb {R}^n</script> be a <script type="math/tex">C^1</script> vector field, and let <script type="math/tex">X</script> be open and connected. If <script type="math/tex">D\mathbf {F}</script> is not <script type="math/tex">\answer [format=string]{symmetric}</script> then <script type="math/tex">\mathbf {F}</script> is not
+<script type="math/tex">\answer [format=string]{conservative}</script>.
+</div>
+                                                                  
+
+                                                                  
+<!--l. 150--><p class="noindent" >Thus, provided we have a <script type="math/tex">C^1</script> vector field and the domain is open and connected, we can
+show a vector field is not conservative by showing that its derivative matrix is not
+symmetric.
+</p>
+<div class="theorem-like problem-environment example" id="problem12"><a 
+ id="x1-1013r12"></a>Show that the vector field <script type="math/tex">\mathbf {F}(x,y)=(-y,x)</script> is not conservative. <div class="theorem-like problem-environment explanation" id="problem13"><a 
+ id="x1-1014r13"></a>First, note that <script type="math/tex">\mathbf {F}</script> is a <script type="math/tex">C^1</script> vector field with
+domain <script type="math/tex">\mathbb {R}^2</script>. Since <script type="math/tex">\mathbb {R}^2</script> is open and connected, our theorem applies. We compute the
+derivative matrix <script type="math/tex">D\mathbf {F}</script>. <script type="math/tex; mode=display"> \begin{align*} 
+D\mathbf{F} &= \left(\begin{array}{cc}
+\dfrac{\partial}{\partial x} (-y) & \dfrac{\partial}{\partial y} (-y)\\
+\dfrac{\partial}{\partial x} x & \dfrac{\partial}{\partial y} x\\
+\end{array}\right)\\
+&= \left(\begin{array}{cc}
+\answer{0} & \answer{-1}\\
+\answer{1} & \answer{0}\\
+\end{array}\right)
+\end{align*}</script>
+<!--l. 166--><p class="noindent" >Since this matrix is not symmetric, <script type="math/tex">\mathbf {F}</script> is not a conservative vector field.
+</div>
+</div>
+</p><!--l. 170--><p class="noindent" >Note how much simpler this is than trying to find a potential function. We now prove
+our theorem, showing that a conservative <script type="math/tex">C^1</script> vector field on an open and connected
+domain has symmetric derivative.
+</p><!--l. 172--><p class="noindent" >
+</p>
+<div class="proof">
+<!--l. 173--><p class="noindent" ><span class="head">
+</p><dl class="trivlist"><dt class="trivlist">
+Proof   </dt><dd 
+class="trivlist"></span>Let <script type="math/tex">\mathbf {F}</script> be a <script type="math/tex">C^1</script> vector field defined on an open connected domain <script type="math/tex">X\subset \mathbb {R}^n</script>. If <script type="math/tex">\mathbf {F}</script> is
+conservative, then <script type="math/tex">\mathbf {F}=\nabla f</script> for some scalar-valued function <script type="math/tex">f</script> on <script type="math/tex">X</script>. This means <script type="math/tex; mode=display"> \mathbf {F}(x_1,...,x_n) = \nabla f(x_1,...,x_n) = \left (\dfrac {\partial f}{\partial x_1}, \dfrac {\partial f}{\partial x_2}, ...,\dfrac {\partial f}{\partial x_n}\right ). </script> Then the
+derivative matrix of <script type="math/tex">\mathbf {F}</script> is <script type="math/tex; mode=display"> D\mathbf {F} = D(\nabla f) = \left (\begin {array}{cccc} f_{x_1x_1} & f_{x_1x_2} & \cdots & f_{x_1x_n}\\ f_{x_2x_1} & f_{x_2x_2} & \cdots & f_{x_2x_n}\\ \vdots & \vdots & & \vdots \\ f_{x_nx_1} & f_{x_nx_2} & \cdots & f_{x_nx_n}\\ \end {array}\right ) </script> By Clairaut’s Theorem, the mixed partials are equal,
+so this matrix is symmetric.                                                                   <script type="math/tex">\blacksquare </script></dd></dl>
+</div>
+<!--l. 189--><p class="noindent" >For each of the given vector fields <script type="math/tex">\mathbf {F}</script>, determine whether or not it’s conservative. If it is
+conservative, find a potential function. If <script type="math/tex">\mathbf {F}</script> is not conservative, compute the derivative
+matrix of <script type="math/tex">\mathbf {F}</script> in order to prove that it is not conservative.
+</p>
+<div role="article" class="problem-environment problem" id="problem14"><a 
+ id="x1-1015r14"></a> <script type="math/tex">\mathbf {F}(x,y) = (2xy+y^2+e^y, x^2+2xy+xe^y)</script> <div class="multiple-choice" id="problem15"><span class="choice correct "   id="choice1">conservative</span> <span class="choice  "   id="choice2">not conservative</span> </div>
+<div role="article" class="problem-environment problem" id="problem16"><a 
+ id="x1-1016r15"></a> <script type="math/tex">f(x,y)=\answer {x^2y+y^2x+e^yx}</script>
+                                                                  
+
+                                                                  
+</div>
+</div>
+<div role="article" class="problem-environment problem" id="problem17"><a 
+ id="x1-1017r16"></a> <script type="math/tex">\mathbf {F}(x,y) = (x^2y+e^{x^2},\sin (x)+y^3)</script> <div class="multiple-choice" id="problem18"><span class="choice  "   id="choice3">conservative</span> <span class="choice correct "   id="choice4">not conservative</span> </div>
+<div role="article" class="problem-environment problem" id="problem19"><a 
+ id="x1-1018r17"></a> <script type="math/tex">D\mathbf {F}(x,y) = \left (\begin {array}{cc}2xy+2xe^{x^2}&\answer {x^2}\\\answer {\cos (x)}&3y^2\end {array}\right )</script>
+</div>
+</div>
+<!--l. 213--><p class="noindent" >We’ve seen that if a vector field is conservative, then its derivative matrix is
+symmetric. But is the converse true? That is, if the derivative matrix is symmetric,
+does that mean that the vector field is conservative? We’ll answer this question in the
+next chapter.
+<a 
+ id="Q1-1-3"></a>
+</p>
+<h3 class="likesectionHead"><a 
+ id="x1-2000"></a>Summary</h3>
+<!--l. 217--><p class="noindent" >In this activity, we reviewed the following terms. </p>
+     <ul class="itemize1">
+     <li class="itemize">Conservative
+     </li>
+     <li class="itemize">Potential function</li></ul>
+<!--l. 223--><p class="noindent" >We also established the following results. </p>
+     <ul class="itemize1">
+     <li class="itemize">A systematic method for finding a potential function for a given vector
+     field (thus showing that the vector field is conservative).
+     </li>
+     <li class="itemize">Let <script type="math/tex">\mathbf {F}</script> be a <script type="math/tex">C^1</script> vector field, and let <script type="math/tex">X</script> be open and connected. If <script type="math/tex">D\mathbf {F}</script> is not symmetric
+     then <script type="math/tex">\mathbf {F}</script> is not conservative.</li></ul>
+<!--l. 229--><p class="noindent" >These provide us with methods for showing that vector field isn’t conservative, and
+for providing a potential function when it is conservative.
+</body> 
+ 
+</html>
+                                                                  
+
+                                                                  
+                                                                  
+
+

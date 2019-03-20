@@ -1,0 +1,200 @@
+<!doctype html> 
+<html lang="en"> 
+<head> <title>Geometry of Differentiability</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<!-- charset=utf-8,-css,html,htex4ht,xhtml --> 
+<meta name="src" content="tangent_plane.tex" /> 
+<meta name="author" content="" /> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
+<meta name="ximera" content="version 0.0.1" /> 
+<link href="https://ximera.osu.edu/public/stylesheets/standalone.css" rel="stylesheet" media="screen"/> 
+<script type="text/javascript" async src="https://ximera.osu.edu/public/javascripts/standalone.min.js"></script> 
+</head><body> 
+<div class="preamble"><script type="math/tex">\newenvironment {prompt}{}{}
+\newcommand {\DeclareMathOperator }[2]{\@OldDeclareMathOperator {##1}{##2}\immediate \write \myfile {\unexpanded {\DeclareMathOperator }{\unexpanded {##1}}{\unexpanded {##2}}}}
+\newcommand {\ungraded }[0]{}
+\newcommand {\reserved@a }[2]{}
+\newcommand {\HyperFirstAtBeginDocument }[0]{\AtBeginDocument }
+\newcommand {\reserved@a }[1]{}
+\newcommand {\reserved@a }[2]{}
+\newcommand {\vnameref  }[1]{\unskip ~\nameref {##1}\@vpageref [\unskip ]{##1}}
+\newcommand {\ref  }[0]{\@ifstar \@refstar \T@ref }
+\newcommand {\pageref  }[0]{\@ifstar \@pagerefstar \T@pageref }
+\newcommand {\nameref  }[0]{\@ifstar \@namerefstar \T@nameref }
+\newcommand {\reserved@a }[2]{}
+\newcommand {\reserved@a }[0]{\AtBeginDocument }
+\newcommand {\reserved@a }[1]{}
+\newcommand {\reserved@a }[2]{}                                                                                                                                                 </script><script type="text/javascript"> 
+</script> 
+</div>
+<div 
+class="abstract" 
+>
+</div>   <div class="maketitle"></div>
+<!--l. 11--><p class="noindent" >In single variable calculus, derivatives were closely related to the slope of the tangent
+line to a graph at a point. We used this idea of the slope of the tangent line to define
+derivatives as a limit of slopes of secant lines, <script type="math/tex; mode=display"> f'(a) = \lim _{h\rightarrow 0}\frac {f(a+h)-f(a)}{h}. </script>
+</p><!--l. 16--><p class="noindent" >VISUAL
+</p><!--l. 18--><p class="noindent" >In the other direction, we were able to use differentiation rules to more easily find the
+equation for the tangent line to a graph at a point.
+</p>
+<div class="theorem-like problem-environment example" id="problem1"><a 
+ id="x1-17r1"></a>We’ll find the equation for the tangent line to the graph of <script type="math/tex">f(x)=x^3+2x+1</script> at <script type="math/tex">x=2</script>.
+<!--l. 23--><p class="noindent" >We can find the slope of the tangent line by computing <script type="math/tex">f'(2)</script>. Using differentiation rules,
+we have <script type="math/tex; mode=display"> f'(x) = \answer {3x^2+2}. </script> Plugging in <script type="math/tex">x=2</script>, we have <script type="math/tex">f'(2) = \answer {14}</script>.
+</p><!--l. 29--><p class="noindent" >Since the tangent line will have to pass through the point <script type="math/tex">(2,f(2))</script>, we compute
+<script type="math/tex; mode=display"> f(2) = \answer {13}. </script>
+</p><!--l. 34--><p class="noindent" >So, the tangent line will pass through the point <script type="math/tex">(2,13)</script>, and will have slope <script type="math/tex">14</script>. Writing the
+equation of the line in point-slope form, we have <script type="math/tex; mode=display"> y-13 = \answer {14(x-2)}. </script>
+</div>
+</p><!--l. 40--><p class="noindent" >When a single variable function is differentiable, we can use the above method to find
+an equation for the tangent line. In addition, the tangent line provides us with a good
+linear approximation for the function.
+</p><!--l. 42--><p class="noindent" >We would like to do something analogous for multi-variable functions, but this raises
+a few questions. What would be the equivalent of the tangent line? What does it
+mean for a function to be differentiable?
+</p><!--l. 44--><p class="noindent" >As we begin to explore these questions, we’ll focus on functions <script type="math/tex">\mathbb {R}^2\rightarrow \mathbb {R}</script>, so that we can
+visualize their graphs.
+<a 
+ id="Q1-1-1"></a>
+                                                                  
+
+                                                                  
+</p>
+<h3 class="likesectionHead"><a 
+ id="x1-1000"></a>Geometric Interpretation of Differentiability</h3>
+<!--l. 48--><p class="noindent" >In single variable calculus, we could get a good sense of whether a function was
+differentiable by looking at its graph.
+</p>
+<div role="article" class="problem-environment problem" id="problem2"><a 
+ id="x1-1001r2"></a> For each of the graphs, determine whether the given function is differentiable at
+<script type="math/tex">x=a</script>.
+<!--l. 53--><p class="noindent" >GRAPH PARABOLA </p><div class="multiple-choice" id="problem3"><span class="choice correct "   id="choice1">differentiable</span> <span class="choice  "   id="choice2">not differentiable</span> </div>
+<!--l. 59--><p class="noindent" >GRAPH JUMP DISCONTINUITY </p><div class="multiple-choice" id="problem4"><span class="choice  "   id="choice3">differentiable</span> <span class="choice correct "   id="choice4">not differentiable</span> </div>
+<!--l. 65--><p class="noindent" >GRAPH ABSOLUTE VALUE </p><div class="multiple-choice" id="problem5"><span class="choice  "   id="choice5">differentiable</span> <span class="choice correct "   id="choice6">not differentiable</span> </div>
+</div>
+<!--l. 73--><p class="noindent" >If there is a discontinuity or some sort of corner or cusp in the graph at a point,
+then the function will not be differentiable at that point. Roughly speaking,
+if we “zoom in” on the graph of a function near a point, and the graph
+looks very close to a line, then the function will be differentiable at that
+point.
+</p><!--l. 75--><p class="noindent" >PARABOLA ZOOM
+</p><!--l. 77--><p class="noindent" >We’ll extend this idea to make our first, informal definition of differentiability for a
+function from <script type="math/tex">\mathbb {R}^2</script> to <script type="math/tex">\mathbb {R}</script>.
+</p>
+<div class="theorem-like problem-environment definition" id="problem6"><a 
+ id="x1-1002r3"></a>(Informal Definition) Consider a function <script type="math/tex">f:\mathbb {R}^2\rightarrow \mathbb {R}</script>. Suppose for some point <script type="math/tex">(a,b)</script> in <script type="math/tex">\mathbb {R}^2</script>, if we zoom in
+on the graph of <script type="math/tex">f</script> near the point <script type="math/tex">(a,b)</script>, the graph of <script type="math/tex">f</script> looks like a plane. Then <script type="math/tex">f</script> is
+differentiable at <script type="math/tex">(a,b)</script>.
+</div>
+<!--l. 83--><p class="noindent" >Although this definition provides us with nice geometric intuition for determining if a
+function is differentiable, it’s not at all precise or rigorous. Eventually, we’ll need a
+more formal definition of differentiability, so we’ll return to this concept
+later.
+</p><!--l. 85--><p class="noindent" >For now, let’s use this informal definition to investigate differentiability for a couple
+of functions.
+</p>
+<div class="theorem-like problem-environment example" id="problem7"><a 
+ id="x1-1003r4"></a>Consider the function <script type="math/tex">f(x,y) = xy+2x+y</script>, graphed below.
+<!--l. 90--><p class="noindent" >ZOOMABLE GRAPH
+</p><!--l. 92--><p class="noindent" >Is <script type="math/tex">f</script> differentiable at <script type="math/tex">(0,0)</script>? </p><div class="multiple-choice" id="problem8"><span class="choice correct "   id="choice7">Yes.</span> <span class="choice  "   id="choice8">No.</span> </div>
+                                                                  
+
+                                                                  
+<!--l. 98--><p class="noindent" ></div>
+</p>
+<div class="theorem-like problem-environment example" id="problem9"><a 
+ id="x1-1004r5"></a>Consider the function <script type="math/tex; mode=display"> f(x,y) = \begin {cases} 1-|y| & \text {if }|y|\leq |x| \\ 1-|x| & \text {if }|y| > |x| \end {cases}, </script> graphed below.
+<!--l. 109--><p class="noindent" >ZOOMABLE GRAPH
+</p><!--l. 111--><p class="noindent" >Is f differentiable at <script type="math/tex">(0,0)</script>? </p><div class="multiple-choice" id="problem10"><span class="choice  "   id="choice9">Yes.</span> <span class="choice correct "   id="choice10">No.</span> </div>
+<!--l. 117--><p class="noindent" ></div>
+<a 
+ id="Q1-1-3"></a>
+</p>
+<h3 class="likesectionHead"><a 
+ id="x1-2000"></a>The tangent plane</h3>
+<!--l. 121--><p class="noindent" >If a function <script type="math/tex">f:\mathbb {R}^2\rightarrow \mathbb {R}</script> is differentiable, when we zoom in, the graph will look like a plane.
+Because of this, there will be a plane that’s a good linear approximation
+for the function near that point. We can use the partial derivatives with
+respect to <script type="math/tex">x</script> and <script type="math/tex">y</script> to find an equation for this plane, which we call the tangent
+plane.
+</p>
+<div class="theorem-like problem-environment definition" id="problem11"><a 
+ id="x1-2001r6"></a>If <script type="math/tex">f:\mathbb {R}^2\rightarrow \mathbb {R}</script> is differentiable at <script type="math/tex">(a,b)</script>, then the <em>tangent plane</em> to the graph of <script type="math/tex">f</script> at <script type="math/tex">(a,b)</script> is defined by the
+equation <script type="math/tex; mode=display"> z=f(a,b)+f_x(a,b)(x-a)+f_y(a,b)(y-b). </script>
+</div>
+<!--l. 130--><p class="noindent" >Let’s revisit our previous examples, and see what happens with the tangent
+plane.
+</p>
+<div class="theorem-like problem-environment example" id="problem12"><a 
+ id="x1-2002r7"></a>Consider the function <script type="math/tex">f(x,y) = xy+2x+y</script>, which we found is differentiable at the point <script type="math/tex">(0,0)</script>. Let’s find an
+equation for the tangent plane to the graph of <script type="math/tex">f</script> at <script type="math/tex">(0,0)</script>.
+<!--l. 135--><p class="noindent" >We begin by finding the partial derivatives with respect to <script type="math/tex">x</script> and <script type="math/tex">y</script>.
+</p><script type="math/tex; mode=display"> \begin{align*} 
+f_x(x,y) &= \answer{y+2}\\
+f_y(x,y) &= \answer{x+1}
+\end{align*}</script>
+<!--l. 140--><p class="noindent" >At <script type="math/tex">(0,0)</script>, we have </p><script type="math/tex; mode=display"> \begin{align*} 
+f_x(0,0) &= \answer{2},\\
+f_y(0,0) &= \answer{1}.
+\end{align*}</script>
+<!--l. 145--><p class="noindent" >Finding the value of <script type="math/tex">f</script> at <script type="math/tex">(0,0)</script>, we have <script type="math/tex; mode=display"> f(0,0) = \answer {0}. </script> Putting all of this together, we obtain an equation for
+the tangent plane to the graph of <script type="math/tex">f</script> at <script type="math/tex">(0,0)</script>. </p><script type="math/tex; mode=display"> \begin{align*} 
+z &=f(a,b)+f_x(a,b)(x-a)+f_y(a,b)(y-b)\\
+&= \answer{2x+y}
+                                                                  
+
+                                                                  
+\end{align*}</script>
+<!--l. 155--><p class="noindent" ></div>
+</p>
+<div class="theorem-like problem-environment example" id="problem13"><a 
+ id="x1-2003r8"></a>Consider the function <script type="math/tex; mode=display"> f(x,y) = \begin {cases} 1-|y| & \text {if }|y|\leq |x| \\ 1-|x| & \text {if }|y| > |x| \end {cases}, </script> which we found is not differentiable <script type="math/tex">(0,0)</script>. Even though this
+function is not differentiable, let’s see what happens when we try to find an equation
+for the tangent plane.
+<!--l. 166--><p class="noindent" >To compute the partial derivatives with respect to <script type="math/tex">x</script> and <script type="math/tex">y</script>, we’ll need to use the limit
+definition.
+</p>
+<script type="math/tex; mode=display"> \begin{align*} 
+f_x(0,0) &= \lim_{h\rightarrow 0}\frac{f(0+h,0)-f(0,0)}{h}\\
+&= \lim_{h\rightarrow 0}\frac{(1-|0|)-(1-|0|)}{h}\\
+&= \lim_{h\rightarrow 0}\frac{0}{h}\\
+&= 0.
+f_y(0,0) &= \lim_{h\rightarrow 0}\frac{f(0,0+h)-f(0,0)}{h}\\
+&= \lim_{h\rightarrow 0}\frac{(1-|0|)-(1-|0|)}{h}\\
+&= \lim_{h\rightarrow 0}\frac{0}{h}\\
+&= 0.
+\end{align*}</script>
+<!--l. 179--><p class="noindent" >We can also find <script type="math/tex">f(0,0)</script>, <script type="math/tex; mode=display"> f(0,0)= 1. </script>
+</p><!--l. 184--><p class="noindent" >So, we have all of the necessary pieces to find an equation for the (nonexistent)
+“tangent plane”: </p><script type="math/tex; mode=display"> \begin{align*} 
+z &=f(a,b)+f_x(a,b)(x-a)+f_y(a,b)(y-b)\\
+&= 1.
+\end{align*}</script>
+<!--l. 190--><p class="noindent" >However, we decided that the function wasn’t differentiable at <script type="math/tex">(0,0)</script>, so the graph does not
+have a tangent plane at the point.
+</p><!--l. 192--><p class="noindent" ></div>
+</p><!--l. 194--><p class="noindent" >This example brings up a couple of important points. </p>
+     <ul class="itemize1">
+     <li class="itemize">It’s possible for the partial derivatives of a function to all exist, and yet
+     the function is not differentiable.
+     </li>
+     <li class="itemize">It’s possible that we can find the equation <script type="math/tex">z =f(a,b)+f_x(a,b)(x-a)+f_y(a,b)(y-b)</script>, and yet <script type="math/tex">f</script> has no tangent plane
+     at the point <script type="math/tex">(a,b)</script>.</li></ul>
+                                                                  
+
+                                                                  
+<!--l. 200--><p class="noindent" >For these reasons, differentiability is a much more subtle concept in multivariable
+calculus than it was in single variable calculus, and our next task will be to find a
+formal definition for differentiability.
+</body> 
+ 
+</html>
+                                                                  
+
+                                                                  
+                                                                  
+
+

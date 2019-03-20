@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=latex 2018.4.16)  25 OCT 2018 16:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=latex 2018.4.16)  19 MAR 2019 21:31
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1626,12 +1626,12 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 150.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 150.
  ) 
 Here is how much of TeX's memory you used:
- 34933 strings out of 492650
- 773901 string characters out of 6129648
- 1100992 words of memory out of 5000000
- 38046 multiletter control sequences out of 15000+600000
+ 34935 strings out of 492650
+ 773947 string characters out of 6129648
+ 1101001 words of memory out of 5000000
+ 38048 multiletter control sequences out of 15000+600000
  5879 words of font info for 25 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,6n,98p,1231b,797s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on velocity_and_speed.dvi (5 pages, 21528 bytes).
+Output written on velocity_and_speed.dvi (5 pages, 21656 bytes).

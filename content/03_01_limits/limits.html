@@ -1,0 +1,176 @@
+<!doctype html> 
+<html lang="en"> 
+<head> <title>Introduction to Limits</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<!-- charset=utf-8,-css,html,htex4ht,xhtml --> 
+<meta name="src" content="limits.tex" /> 
+<meta name="author" content="" /> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
+<meta name="ximera" content="version 0.0.1" /> 
+<link href="https://ximera.osu.edu/public/stylesheets/standalone.css" rel="stylesheet" media="screen"/> 
+<script type="text/javascript" async src="https://ximera.osu.edu/public/javascripts/standalone.min.js"></script> 
+</head><body> 
+<div class="preamble"><script type="math/tex">\newenvironment {prompt}{}{}
+\newcommand {\DeclareMathOperator }[2]{\@OldDeclareMathOperator {##1}{##2}\immediate \write \myfile {\unexpanded {\DeclareMathOperator }{\unexpanded {##1}}{\unexpanded {##2}}}}
+\newcommand {\ungraded }[0]{}
+\newcommand {\reserved@a }[2]{}
+\newcommand {\HyperFirstAtBeginDocument }[0]{\AtBeginDocument }
+\newcommand {\reserved@a }[1]{}
+\newcommand {\reserved@a }[2]{}
+\newcommand {\vnameref  }[1]{\unskip ~\nameref {##1}\@vpageref [\unskip ]{##1}}
+\newcommand {\ref  }[0]{\@ifstar \@refstar \T@ref }
+\newcommand {\pageref  }[0]{\@ifstar \@pagerefstar \T@pageref }
+\newcommand {\nameref  }[0]{\@ifstar \@namerefstar \T@nameref }
+\newcommand {\reserved@a }[2]{}
+\newcommand {\reserved@a }[0]{\AtBeginDocument }
+\newcommand {\reserved@a }[1]{}
+\newcommand {\reserved@a }[2]{}                                                                                                                                                 </script><script type="text/javascript"> 
+</script> 
+</div>
+<div 
+class="abstract" 
+>
+</div>   <div class="maketitle"></div>
+<!--l. 11--><p class="noindent" >We would like to eventually define derivatives and integrals for functions on <script type="math/tex">\mathbb {R}^n</script>, but
+before we do this, we’ll need to study limits.
+</p><!--l. 13--><p class="noindent" >In single variable calculus, we gave a formal, epsilon-delta definition of limits.
+</p>
+<div class="theorem-like problem-environment definition" id="problem1"><a 
+ id="x1-17r1"></a>Let <script type="math/tex">f:\mathbb {R}\rightarrow \mathbb {R}</script> be a function. We write <script type="math/tex; mode=display"> \lim _{x\rightarrow a} f(x) = L </script> if for all <script type="math/tex">\epsilon >0</script>, there exists some <script type="math/tex">\delta >0</script> such that for all <script type="math/tex">x</script> with <script type="math/tex">0 < |x-a| < \delta </script>, we
+have <script type="math/tex">|f(x)-L| < \epsilon </script>.
+</div>
+<!--l. 23--><p class="noindent" >The idea here is that if <script type="math/tex">x</script> gets close enough to <script type="math/tex">a</script>, then <script type="math/tex">f(x)</script> is guaranteed to get close to <script type="math/tex">L</script>.
+This leads us to our second, informal definition of a limit.
+</p>
+<div class="theorem-like problem-environment definition" id="problem2"><a 
+ id="x1-18r2"></a>(Informal definition) We say that <script type="math/tex; mode=display"> \lim _{x\rightarrow a} f(x) = L </script> if <script type="math/tex">f(x)</script> approaches <script type="math/tex">L</script> as <script type="math/tex">x</script> approaches <script type="math/tex">a</script>.
+</div>
+<!--l. 33--><p class="noindent" >When we think of <script type="math/tex">x</script> approaching <script type="math/tex">a</script> along the number line, <script type="math/tex">\mathbb {R}</script>, we can approach <script type="math/tex">a</script> from two
+directions: left and right.
+</p><!--l. 35--><p class="noindent" >VISUAL
+</p><!--l. 37--><p class="noindent" >This lead us to the idea of left and right limits.
+</p><!--l. 39--><p class="noindent" >When we have a function whose domain is a subset of <script type="math/tex">\mathbb {R}^n</script>, there are infinitely
+many possible ways to approach a point. We can approach a point along
+infinitely many different lines, and we can also “zig-zag” or “spiral” into a
+point.
+</p><!--l. 41--><p class="noindent" >VISUAL
+</p><!--l. 43--><p class="noindent" >This makes limits in <script type="math/tex">\mathbb {R}^n</script> particularly challenging!
+<a 
+ id="Q1-1-1"></a>
+                                                                  
+
+                                                                  
+</p>
+<h3 class="likesectionHead"><a 
+ id="x1-1000"></a>Showing that limits do not exist</h3>
+<!--l. 47--><p class="noindent" >For now, we’ll work with an informal, intuitive definition of limits of functions <script type="math/tex">f:\mathbb {R}^n\rightarrow \mathbb {R}</script>. We’ll
+revisit this definition, and provide a formal, epsilon-delta definition, in a later section.
+We model our informal definition after our definition from single variable
+calculus.
+</p>
+<div class="theorem-like problem-environment definition" id="problem3"><a 
+ id="x1-1001r3"></a>Let <script type="math/tex">f:\mathbb {R}^n\rightarrow \mathbb {R}</script>. We say that <script type="math/tex; mode=display"> \lim _{\vec {x}\rightarrow \vec {a}}f(\vec {x})=L </script> if <script type="math/tex">f(\vec {x})</script> gets close to <script type="math/tex">L</script> as <script type="math/tex">\vec {x}</script> gets close to <script type="math/tex">\vec {a}</script>.
+</div>
+<!--l. 57--><p class="noindent" >Note that since <script type="math/tex">f</script> is a function from <script type="math/tex">\mathbb {R}^n</script> to <script type="math/tex">\mathbb {R}</script>, the inputs of <script type="math/tex">f</script> are points/vectors in <script type="math/tex">\mathbb {R}^n</script>, and the
+outputs of <script type="math/tex">f</script> are numbers in <script type="math/tex">\mathbb {R}</script>.
+</p><!--l. 59--><p class="noindent" >An important consequence of this definition is that if we approach the point <script type="math/tex">\vec {a}</script> along
+any path, the value of the function <script type="math/tex">f</script> should always approach the limit <script type="math/tex">L</script> (if the limit
+exists). This provides us with an important tool for showing that some limits do not
+exist.
+</p>
+<div class="theorem-like problem-environment proposition" id="problem4"><a 
+ id="x1-1002r4"></a>Consider a function <script type="math/tex">f:\mathbb {R}^n\rightarrow \mathbb {R}</script>, and a point <script type="math/tex">\vec {a}\in \mathbb {R}^n</script>. Suppose there are continuous paths <script type="math/tex">vec{x}(t)</script> and <script type="math/tex">\vec {y}(t)</script> such
+that <script type="math/tex">\vec {x}(t_1) = \vec {y}(t_2) = \vec {a}</script>, and suppose that <script type="math/tex; mode=display"> \lim _{t\rightarrow t_1}f(\vec {x}(t))\neq \lim _{t\rightarrow t_2}f(\vec {y}(t)) </script> (or one of these limits does not exist). Then <script type="math/tex">\lim _{\vec {x}\rightarrow \vec {a}}f(x)</script> does not
+exist.
+</div>
+<!--l. 69--><p class="noindent" >Note that the contrapositive of this statement is false: if we find two paths along
+which a function has the same limit, this does not guarantee that the overall limit
+exists.
+</p><!--l. 71--><p class="noindent" >We will prove this proposition once we give the epsilon-delta definition of a limit, but
+for now, we’ll use it to show that some limits do not exist.
+</p>
+<div class="theorem-like problem-environment example" id="problem5"><a 
+ id="x1-1003r5"></a>Consider the function <script type="math/tex">f(x,y) = \frac {x^2-y^2}{x^2+y^2}</script>. We will show that <script type="math/tex">\lim _{(x,y)\rightarrow (0,0)} f(x,y)</script> does not exist.
+<!--l. 76--><p class="noindent" >First, let’s see what happens when we approach the origin along the
+<script type="math/tex">x</script>-axis. In this case, the <script type="math/tex">y</script>-coordinate will always be <script type="math/tex">0</script>. More specifically, we
+approach along the path <script type="math/tex">\vec {x}(t) = (t,0)</script>, and let <script type="math/tex">t\rightarrow 0</script>. We find the limit of <script type="math/tex">f</script> along this path:
+</p><script type="math/tex; mode=display"> \begin{align*} 
+\lim_{t\rightarrow 0}f(\vec{x}(t)) &= \lim_{t\rightarrow 0}f(t,0)\\
+&= \lim_{t\rightarrow 0}\frac{t^2-0^2}{t^2+0^2}\\
+&= \lim_{t\rightarrow 0}1\\
+&= 1.
+\end{align*}</script>
+<!--l. 84--><p class="noindent" >Next, let’s see what happens when we approach the origin along the <script type="math/tex">y</script>-axis. That is,
+we’ll consider the path <script type="math/tex">\vec {y}(t) = (0,t)</script>, and take <script type="math/tex">t\rightarrow 0</script>. We find the limit of <script type="math/tex">f</script> along this path:
+                                                                  
+
+                                                                  
+</p><script type="math/tex; mode=display"> \begin{align*} 
+\lim_{t\rightarrow 0}f(\vec{y}(t)) &= \lim_{t\rightarrow 0}f(0,t)\\
+&= \lim_{t\rightarrow 0}\frac{0^2-t^2}{0^2+t^2}\\
+&= \answer{-1}.
+\end{align*}</script>
+<!--l. 91--><p class="noindent" >Thus, we have found two paths along which <script type="math/tex">f</script> approaches different values. This means
+that <script type="math/tex">\lim _{\vec {x}\rightarrow \vec {a}}f(\vec {x})</script> does not exist.
+</p><!--l. 93--><p class="noindent" >We can see this behavior reflected in the graph of <script type="math/tex">f</script>.
+</p><!--l. 95--><p class="noindent" >GRAPH
+</div>
+</p>
+<div class="theorem-like problem-environment example" id="problem6"><a 
+ id="x1-1004r6"></a>Consider the function <script type="math/tex">f(x,y) = \frac {x^2y}{x^4+y^2}</script>. We’ll investigate whether <script type="math/tex">\lim _{(x,y)\rightarrow (0,0)}f(x,y)</script> exists.
+<!--l. 101--><p class="noindent" >First, let’s see what happens when we approach the origin along the <script type="math/tex">x</script>- and
+<script type="math/tex">y</script>-axes.
+</p><!--l. 103--><p class="noindent" >Along the <script type="math/tex">x</script>-axis, we use the path <script type="math/tex">\vec {x}(t) = (t,0)</script>, and we have
+</p><script type="math/tex; mode=display"> \begin{align*} 
+\lim_{t\rightarrow 0}f(\vec{x}(t)) &= \lim_{t\rightarrow 0}f(t,0)\\
+&= \lim_{t\rightarrow 0}\frac{t^2 0}{t^4+0^2}\\
+&= \answer{0}.\\
+\end{align*}</script>
+<!--l. 110--><p class="noindent" >Along the <script type="math/tex">y</script>-axis, we use the path <script type="math/tex">\vec {y}(t) = (0,t)</script>, and we have
+</p><script type="math/tex; mode=display"> \begin{align*} 
+\lim_{t\rightarrow 0}f(\vec{y}(t)) &= \lim_{t\rightarrow 0}f(0,t)\\
+&= \lim_{t\rightarrow 0}\frac{0^2 t}{0^4+t^2}\\
+&= \answer{0}.
+\end{align*}</script>
+<!--l. 117--><p class="noindent" >Based on these limits, what can we conclude about <script type="math/tex">\lim _{(x,y)\rightarrow (0,0)}f(x,y)</script>? </p><div class="multiple-choice" id="problem7"><span class="choice  "   id="choice1">It exists, and equals <script type="math/tex">0</script>.</span> <span class="choice  "   id="choice2">It
+doesn’t exist.</span> <span class="choice correct "   id="choice3">We still don’t know if it exists or not.</span> </div>
+<!--l. 124--><p class="noindent" >Next, let’s see what happens when we approach the origin along any
+line <script type="math/tex">y=mx</script>. We can parametrize this line as <script type="math/tex">\vec {z}(t) = (t, mt)</script>. Along this line, we have
+</p><script type="math/tex; mode=display"> \begin{align*} 
+\lim_{t\rightarrow 0}f(\vec{z}(t)) &= \lim_{t\rightarrow 0}f(t,mt)\\
+&= \lim_{t\rightarrow 0}\frac{t^2 mt}{t^4+(mt)^2}\\
+&= \lim_{t\rightarrow 0}\frac{mt^3}{t^4+(mt)^2}\\
+&= \lim_{t\rightarrow 0}\frac{mt}{t^2+m^2}\\
+&= \answer{0}.
+                                                                  
+
+                                                                  
+\end{align*}</script>
+<!--l. 133--><p class="noindent" >Based on the above limits, what can we conclude about <script type="math/tex">\lim _{(x,y)\rightarrow (0,0)}f(x,y)</script>? </p><div class="multiple-choice" id="problem8"><span class="choice  "   id="choice4">It exists, and equals <script type="math/tex">0</script>.</span> <span class="choice  " 
+id="choice5">It doesn’t exist.</span> <span class="choice correct "   id="choice6">We still don’t know if it exists or not.</span> </div>
+<!--l. 140--><p class="noindent" >Finally, let’s see what happens when we approach the origin along
+the parabola <script type="math/tex">y=x^2</script>, which can be parametrized as <script type="math/tex">\vec {w}(t) = (t, t^2)</script>. Along this path, we have
+</p><script type="math/tex; mode=display"> \begin{align*} 
+\lim_{t\rightarrow 0}f(\vec{q}(t)) &= \lim_{t\rightarrow 0}f(t,t^2)\\
+&= \lim_{t\rightarrow 0}\frac{t^2 t^2}{t^4+(t^2)^2}\\
+&= \lim_{t\rightarrow 0}\frac{t^4}{t^4+mt^4}\\
+&= \answer{1/2}.
+\end{align*}</script>
+<!--l. 148--><p class="noindent" >Based on the above limits, what can we conclude about <script type="math/tex">\lim _{(x,y)\rightarrow (0,0)}f(x,y)</script>? </p><div class="multiple-choice" id="problem9"><span class="choice  "   id="choice7">It exists, and equals <script type="math/tex">0</script>.</span> <span class="choice correct " 
+id="choice8">It doesn’t exist.</span> <span class="choice  "   id="choice9">We still don’t know if it exists or not.</span> </div>
+<!--l. 155--><p class="noindent" ></div>
+</p><!--l. 157--><p class="noindent" >In the previous example, we saw that we might get the same limit approaching along
+any line through the origin, but it’s still possible that the overall limit might not
+exist. Thus, we won’t be able to show that limits exist by examining specific paths,
+and we’ll need to find other methods to evaluate limits.
+</body> 
+ 
+</html>
+                                                                  
+
+                                                                  
+                                                                  
+
+

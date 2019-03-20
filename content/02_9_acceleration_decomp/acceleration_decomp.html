@@ -1,0 +1,279 @@
+<!doctype html> 
+<html lang="en"> 
+<head> <title>Decomposition of Acceleration</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<!-- charset=utf-8,-css,html,htex4ht,xhtml --> 
+<meta name="src" content="acceleration_decomp.tex" /> 
+<meta name="author" content="" /> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
+<meta name="ximera" content="version 0.0.1" /> 
+<link href="https://ximera.osu.edu/public/stylesheets/standalone.css" rel="stylesheet" media="screen"/> 
+<script type="text/javascript" async src="https://ximera.osu.edu/public/javascripts/standalone.min.js"></script> 
+</head><body> 
+<div class="preamble"><script type="math/tex">\newenvironment {prompt}{}{}
+\newcommand {\DeclareMathOperator }[2]{\@OldDeclareMathOperator {##1}{##2}\immediate \write \myfile {\unexpanded {\DeclareMathOperator }{\unexpanded {##1}}{\unexpanded {##2}}}}
+\newcommand {\ungraded }[0]{}
+\newcommand {\reserved@a }[2]{}
+\newcommand {\HyperFirstAtBeginDocument }[0]{\AtBeginDocument }
+\newcommand {\reserved@a }[1]{}
+\newcommand {\reserved@a }[2]{}
+\newcommand {\vnameref  }[1]{\unskip ~\nameref {##1}\@vpageref [\unskip ]{##1}}
+\newcommand {\ref  }[0]{\@ifstar \@refstar \T@ref }
+\newcommand {\pageref  }[0]{\@ifstar \@pagerefstar \T@pageref }
+\newcommand {\nameref  }[0]{\@ifstar \@namerefstar \T@nameref }
+\newcommand {\reserved@a }[2]{}
+\newcommand {\reserved@a }[0]{\AtBeginDocument }
+\newcommand {\reserved@a }[1]{}
+\newcommand {\reserved@a }[2]{}                                                                                                                                                 </script><script type="text/javascript"> 
+</script> 
+</div>
+<div 
+class="abstract" 
+>
+</div>   <div class="maketitle"></div>
+<!--l. 11--><p class="noindent" >Recall our definition of the moving frame:
+</p>
+<div class="theorem-like problem-environment definition" id="problem1"><a 
+ id="x1-17r1"></a>Given a path <script type="math/tex">\vec {x}(t)</script>, we define the <em>moving frame</em> of the path to be the triple <script type="math/tex">(\vec {T},\vec {N},\vec {B})</script>.
+<!--l. 16--><p class="noindent" ><script type="math/tex">\vec {T}</script> is the <em>unit tangent vector</em>, <script type="math/tex; mode=display"> \vec {T}(t) = \dfrac {\vec {x}'(t)}{\|\vec {x}'(t)\|}. </script>
+</p><!--l. 21--><p class="noindent" ><script type="math/tex">\vec {N}</script> is the <em>unit normal vector</em>, <script type="math/tex; mode=display"> \vec {N}(t) = \dfrac {\vec {T}'(t)}{\|\vec {T}'(t)\|}. </script>
+</p><!--l. 26--><p class="noindent" ><script type="math/tex">\vec {B}</script> is the <em>unit binormal vector</em>, <script type="math/tex; mode=display"> \vec {B}(t) = \vec {T}(t)\times \vec {N}(t). </script>
+</p><!--l. 31--><p class="noindent" >The moving frame is also called the <em>TNB frame</em>.
+</div>
+</p><!--l. 34--><p class="noindent" >Throughout our study of paths, we’ve found a lot of ways that we can describe the
+behavior of the path, in addition to the moving frame: </p>
+     <ul class="itemize1">
+     <li class="itemize">The velocity vector, <script type="math/tex">\vec {v}(t)= \vec {x}'(t)</script>.
+     </li>
+     <li class="itemize">The speed, <script type="math/tex">s'(t) = \|\vec {x}'(t)\|</script>.
+     </li>
+     <li class="itemize">The acceleration, <script type="math/tex">\vec {a}(t) = \vec {x}''(t)</script>.
+     </li>
+     <li class="itemize">The arclength function, <script type="math/tex">s(t) = \int _a^t \|\vec {x}'(\tau )\|d\tau </script>.
+     </li>
+     <li class="itemize">The parametrization with respect to arclength, <script type="math/tex">\vec {x}(s)</script>.
+     </li>
+     <li class="itemize">The curvature, <script type="math/tex">\kappa (t) = \|\vec {T}'(s)\| = \frac {\|\vec {T}'(t)\|}{\|\vec {x}'(t)\|}</script>.
+                                                                  
+
+                                                                  
+     </li>
+     <li class="itemize">The osculating circle and osculating plane (DID I EVER DEFINE THIS?).</li></ul>
+<!--l. 45--><p class="noindent" >We’ll now explore the connections between these concepts. In particular, we’ll derive
+a useful decomposition of the acceleration vector as a linear combination of the unit
+tangent and unit normal vectors.
+<a 
+ id="Q1-1-1"></a>
+</p>
+<h3 class="likesectionHead"><a 
+ id="x1-1000"></a>Curvature and torsion</h3>
+<!--l. 49--><p class="noindent" >We begin with the following result, which connects the curvature and unit
+normal vector with the derivative of the unit tangent vector with respect to
+arclength.
+</p>
+<div class="theorem-like problem-environment proposition" id="problem2"><a 
+ id="x1-1001r2"></a><script type="math/tex; mode=display"> \dfrac {d\vec {T}}{ds} = \kappa \vec {N} </script>
+</div>
+<!--l. 57--><p class="noindent" >
+</p>
+<div class="proof">
+<!--l. 58--><p class="noindent" ><span class="head">
+</p><dl class="trivlist"><dt class="trivlist">
+Proof   </dt><dd 
+class="trivlist"></span>First, thinking of arclength <script type="math/tex">s</script> as a function of <script type="math/tex">t</script> and using the chain rule,
+we have <script type="math/tex; mode=display"> \dfrac {d}{dt}\vec {T}(s(t)) = \vec {T}'(s(t))s'(t). </script> Recognizing <script type="math/tex">s'(t)</script> as the speed, we can rewrite this as <script type="math/tex; mode=display"> \dfrac {d}{dt}\vec {T}(t) = \vec {T}'(s)\|\vec {x}'(t)\|. </script> Solving for <script type="math/tex">\vec {T}'(s)</script>, we have
+<script type="math/tex; mode=display"> \dfrac {d\vec {T}}{ds} = \dfrac {\vec {T}'(t)}{\|\vec {x}'(t)\|}. </script>
+<!--l. 71--><p class="noindent" >Turning to the other side of the equality, recall that we defined the curvature
+to be <script type="math/tex">\kappa (t) = \|\vec {T}'(s)\| </script>, and we found that we could also compute this as <script type="math/tex">\frac {\|\vec {T}'(t)\|}{\|\vec {x}'(t)\|}</script>. We defined the unit
+normal vector to be <script type="math/tex">\dfrac {\vec {T}'(t)}{\|\vec {T}'(t)\|}</script>.
+</p><!--l. 73--><p class="noindent" >Putting  all  of  this  together,  we  have
+</p><script type="math/tex; mode=display"> \begin{align*} 
+\kappa(t)\vec{N}(t) &= \frac{\|\vec{T}'(t)\|}{\|\vec{x}'(t)\|}\dfrac{\vec{T}'(t)}{\|\vec{T}'(t)\|}\\
+&= \frac{\vec{T}'(t)}{\|\vec{x}'(t)\|}\\
+&= \dfrac{d\vec{T}}{ds},
+\end{align*}</script>
+<!--l. 79--><p class="noindent" >proving our result.                                                                               <script type="math/tex">\blacksquare </script></p></dd></dl>
+</div>
+<!--l. 82--><p class="noindent" >It turns out that there is a similar result relating the normal vector with the
+derivative of the unit binormal vector with respect to arclength: <script type="math/tex; mode=display"> \dfrac {d\vec {B}}{ds} = \tau \vec {N}. </script> We haven’t talked
+about the coefficient <script type="math/tex">\tau </script> yet, but this is another important property of curves, called
+                                                                  
+
+                                                                  
+<em>torsion</em>.
+</p><!--l. 88--><p class="noindent" >Together, the curvature and torsion carry a lot of important information
+about the curve. In fact, the curvature and torsion completely determine the
+curve!
+<a 
+ id="Q1-1-3"></a>
+</p>
+<h3 class="likesectionHead"><a 
+ id="x1-2000"></a>Decomposition of acceleration</h3>
+<!--l. 92--><p class="noindent" >Recall that the unit tangent vector <script type="math/tex">\vec {T}</script> points in the direction of instantaneous motion,
+and the unit normal vector <script type="math/tex">\vec {N}</script> points in the direction that a path is turning. So, it
+shouldn’t be too surprising that the acceleration vector is always a linear
+combination of <script type="math/tex">\vec {T}</script> and <script type="math/tex">\vec {N}</script>. However, it’s very surprising that we can recognize the
+coefficients in terms of things we’ve seen before!
+</p>
+<div class="theorem-like problem-environment proposition" id="problem3"><a 
+ id="x1-2001r3"></a>Let <script type="math/tex">\vec {x}(t)</script> be a <script type="math/tex">C^2</script> path in <script type="math/tex">\mathbb {R}^3</script>. Then the acceleration vector can be written as <script type="math/tex; mode=display"> \vec {a} = s''\vec {T} + (s')^2\kappa \vec {N}, </script> where <script type="math/tex">s</script> is the
+arclength function (so <script type="math/tex">s'</script> is the speed), <script type="math/tex">\vec {T}</script> is the unit tangent vector, <script type="math/tex">\kappa </script> is the curvature,
+and <script type="math/tex">\vec {N}</script> is the unit normal vector.
+</div>
+<!--l. 102--><p class="noindent" >
+</p>
+<div class="proof">
+<!--l. 103--><p class="noindent" ><span class="head">
+</p><dl class="trivlist"><dt class="trivlist">
+Proof   </dt><dd 
+class="trivlist"></span>We begin with some observations.
+<!--l. 105--><p class="noindent" >Recall that we defined the unit tangent vector as <script type="math/tex">\vec {T}</script> as <script type="math/tex">\vec {T}=\frac {\vec {v}}{\|\vec {v}\|}</script>, where <script type="math/tex">\vec {v}(t) = \vec {x}'(t)</script> is the velocity
+vector. Replacing the speed <script type="math/tex">\|\vec {v}\|</script> with <script type="math/tex">s'</script>, this gives us <script type="math/tex; mode=display"> \vec {T} = s'\vec {v}. </script>
+</p><!--l. 110--><p class="noindent" >Similarly, we defined the unit normal vector as <script type="math/tex">\vec {N}=\frac {\vec {T}'}{\|\vec {T}'\|}</script>, so we can write <script type="math/tex; mode=display"> \vec {T}' = \|\vec {T}'\|\vec {N}. </script> We have that the
+curvature is <script type="math/tex">\kappa = \frac {\|\vec {T}'\|}{s'}</script>, so we can rewrite this as </p><script type="math/tex; mode=display"> \begin{align*} 
+\vec{T}' &= \|\vec{T}'\|\vec{N}\\
+&= (s'\kappa)\vec{N}.
+\end{align*}</script>
+<!--l. 120--><p class="noindent" >Finally, we turn to our acceleration vector. We recall that acceleration is the
+derivative of velocity, and use the product rule with the above observations to obtain
+</p><script type="math/tex; mode=display"> \begin{align*} 
+\vec{a} &= \vec{v'}\\
+&= \frac{d}{dt}(s'\vec{T})\\
+&= s''\vec{T} + s'\vec{T}'\\
+&= s''\vec{T} + s'(s'\kappa)\vec{N}\\
+&= s''\vec{T} + (s')^2\kappa\vec{N}.
+                                                                  
+
+                                                                  
+\end{align*}</script>
+                                                                  <script type="math/tex">\blacksquare </script></dd></dl>
+</div>
+<!--l. 130--><p class="noindent" >Immediately from this result, we can make a lot of important observations.
+</p>
+<div class="theorem-like problem-environment proposition" id="problem4"><a 
+ id="x1-2002r4"></a>Let <script type="math/tex">\vec {x}(t)</script> be a <script type="math/tex">C^2</script> path in <script type="math/tex">\mathbb {R}^3</script>. Then:
+     <ul class="itemize1">
+     <li class="itemize"><script type="math/tex">\vec {a}</script> is a linear combination of <script type="math/tex">\vec {T}</script> and <script type="math/tex">\vec {N}</script>.
+     </li>
+     <li class="itemize"><script type="math/tex">\vec {a}</script> is always in the osculating plane.
+     </li>
+     <li class="itemize">Since <script type="math/tex">(s')^2\geq 0</script> and <script type="math/tex">\kappa \geq 0</script>, the acceleration <script type="math/tex">\vec {a}</script> points in the direction that we’re turning.
+     </li>
+     <li class="itemize">If <script type="math/tex">\kappa = 0</script>, then <script type="math/tex">\vec {a}</script> is parallel to <script type="math/tex">\vec {T}</script>.
+     </li>
+     <li class="itemize">If speed is constant, then <script type="math/tex">s''=0</script>, so <script type="math/tex">\vec {a}</script> is parallel to <script type="math/tex">\vec {N}</script>.</li></ul>
+<!--l. 141--><p class="noindent" ></div>
+</p><!--l. 143--><p class="noindent" >We leave the proofs of these facts as an exercise.
+<a 
+ id="Q1-1-5"></a>
+</p>
+<h3 class="likesectionHead"><a 
+ id="x1-3000"></a>Summary of notation for parametric curves</h3>
+<!--l. 147--><p class="noindent" >There are a lot of symbols to keep track of when studying the geometry of parametric
+curves. To make matters worse, most of them have multiple names. For example, the
+derivative of <script type="math/tex">\vec {x}(t)</script> can be denoted by either <script type="math/tex">\vec {x}'(t)</script> or <script type="math/tex">\dot {\mathbf {x}}(x)</script>, but we often call it <script type="math/tex">\vec {v}(t)</script> because it
+represents velocity. Given a parametrization <script type="math/tex">\vec {x}(t)</script>, <script type="math/tex">t \in [a,b]</script>, which represents motion of
+a particle along a curve <script type="math/tex">C</script>, we list most of the related functions and their
+interpretations.<br 
+class="newline" />
+</p><!--l. 149--><p class="noindent" ><strong>Position vector</strong> </p>
+     <ul class="itemize1">
+     <li class="itemize">Notation: <script type="math/tex"> \vec {x}(t)</script>, <script type="math/tex">\mathbf {x}(t)</script>
+     </li>
+     <li class="itemize">Represents the position of a particle at time <script type="math/tex">t</script></li></ul>
+<!--l. 155--><p class="noindent" ><strong>Tangent vector</strong> </p>
+                                                                  
+
+                                                                  
+     <ul class="itemize1">
+     <li class="itemize">Notation: <script type="math/tex">\vec {x}'(t)</script>, <script type="math/tex">\dot {\mathbf {x}}(t)</script>, <script type="math/tex">\vec {v}(t)</script>, <script type="math/tex">\mathbf {x}'(t)</script>, <script type="math/tex">\mathbf {v}(t)</script>
+     </li>
+     <li class="itemize">Derivative of <script type="math/tex">\vec {x}(t)</script>; also called the velocity vector.
+     </li>
+     <li class="itemize">Its direction shows the direction of instantaneous motion, and its length
+     (<script type="math/tex">||\vec {v}(t)||=||\vec {x}'(t)||</script> etc.) is the instantaneous speed.</li></ul>
+<!--l. 162--><p class="noindent" ><strong>Unit tangent vector</strong> </p>
+     <ul class="itemize1">
+     <li class="itemize">Notation: <script type="math/tex">\vec {T}(t)</script>
+     </li>
+     <li class="itemize">Computed as <script type="math/tex">\vec {x}'(t)/||\vec {x}'(t)||</script>, <script type="math/tex">\vec {v}(t)/||\vec {v}(t)||</script>, etc.</li></ul>
+<!--l. 168--><p class="noindent" ><strong>Derivative of the unit tangent vector</strong> </p>
+     <ul class="itemize1">
+     <li class="itemize">Notation: <script type="math/tex">\vec {T}'(t)</script>, <script type="math/tex">d\vec {T}/dt</script>
+     </li>
+     <li class="itemize">Derivative of unit tangent vector with respect to time.
+     </li>
+     <li class="itemize">Not necessarily a unit vector.
+     </li>
+     <li class="itemize">Must be perpendicular to <script type="math/tex">\vec {T}(t)</script>: because <script type="math/tex">\vec {T}</script> is a unit vector, <script type="math/tex">\vec {T}\cdot \vec {T}=1</script>; differentiating both
+     sides with respect to <script type="math/tex">t</script> gives <script type="math/tex">2\vec {T}\cdot \vec {T}' = 0</script>.</li></ul>
+<!--l. 177--><p class="noindent" ><strong>Unit normal vector</strong> </p>
+     <ul class="itemize1">
+     <li class="itemize">Notation: <script type="math/tex">\vec {N}(t)</script>
+     </li>
+     <li class="itemize">Computed as <script type="math/tex">\vec {T}'(t) / ||\vec {T}'(t)||</script>.
+     </li>
+     <li class="itemize">Perpendicular to <script type="math/tex">\vec {T}</script>, since it’s a scaled version of <script type="math/tex">\vec {T}'</script>.</li></ul>
+<!--l. 184--><p class="noindent" ><strong>Binormal vector</strong> </p>
+     <ul class="itemize1">
+     <li class="itemize">Notation: <script type="math/tex">\vec {B}(t)</script>
+     </li>
+     <li class="itemize">Computed as <script type="math/tex">\vec {B} = \vec {T} \times \vec {N}</script>.
+                                                                  
+
+                                                                  
+     </li>
+     <li class="itemize">Is a unit vector, since the angle between <script type="math/tex">\vec {T}</script> and <script type="math/tex">\vec {N}</script> is <script type="math/tex">\theta =\pi /2</script> and therefore <script type="math/tex"> ||\vec {T} \times \vec {N}|| = ||\vec {T}|| \, ||\vec {N}|| \, \sin \theta = 1 </script>.</li></ul>
+<!--l. 192--><p class="noindent" ><strong>Distance Traveled</strong> </p>
+     <ul class="itemize1">
+     <li class="itemize">Notation: <script type="math/tex">s</script>, <script type="math/tex">s(t)</script>
+     </li>
+     <li class="itemize">Written as <script type="math/tex">s</script> when it’s treated as a variable.
+     </li>
+     <li class="itemize">We often view <script type="math/tex">s</script> as a function of time, and compute the arclength function
+     <script type="math/tex"> s(t) = \int _a^t ||\vec {x}'(u)|| \, du </script>.</li></ul>
+<!--l. 201--><p class="noindent" ><strong>Speed</strong> </p>
+     <ul class="itemize1">
+     <li class="itemize">Notation: <script type="math/tex">ds/dt</script>, <script type="math/tex">s'(t)</script>
+     </li>
+     <li class="itemize">Computed  as  <script type="math/tex">ds/dt = s'(t) = ||\vec {x}'(t)||=||\vec {v}(t)||</script>  as  proven  by  applying  the  Fundamental  Theorem  of
+     Calculus to the definition of <script type="math/tex">s(t)</script>.</li></ul>
+<!--l. 207--><p class="noindent" ><strong>Curvature</strong> </p>
+     <ul class="itemize1">
+     <li class="itemize">Notation: <script type="math/tex">\kappa </script>
+     </li>
+     <li class="itemize">Measures how quickly a curve “turns” at a given point: <script type="math/tex">\kappa = \left || \frac {d\vec {T}}{ds} \right ||</script>.
+     </li>
+     <li class="itemize">Using the chain rule we can write <script type="math/tex">\kappa </script> as a function of <script type="math/tex">t</script>:
+     <!--l. 214--><p class="noindent" ><script type="math/tex; mode=display"> \kappa (t) = \left | \left | \frac {d\vec {T}}{ds} \right | \right | = \left | \left | \frac {d\vec {T}}{dt} \frac {dt}{ds} \right | \right | = \left | \left | \frac {d\vec {T}/dt}{ds/dt} \right | \right | = \frac {||\vec {T}'(t)||}{s'(t)} = \frac {||\vec {T}'(t)||}{||\vec {x}'(t)||} </script>
+     </p></li>
+     <li class="itemize">Many other formulas exist, e.g. for curves which are the graphs of functions
+     <script type="math/tex">y=f(x)</script>.</li></ul>
+<!--l. 218--><p class="noindent" ><strong>Acceleration vector</strong> </p>
+     <ul class="itemize1">
+     <li class="itemize">Notation: <script type="math/tex">\vec {x}''(t)</script>, <script type="math/tex">\ddot {\mathbf {x}}(t)</script>, <script type="math/tex">\vec {x}''(t)</script>, <script type="math/tex">\vec {a}(t)</script>, <script type="math/tex">\vec {a}(t)</script>
+     </li>
+     <li class="itemize">Second derivative of <script type="math/tex">\vec {x}(t)</script> and first derivative of velocity.
+     </li>
+     <li class="itemize">If we rewrite <script type="math/tex">\vec {T}(t) = \vec {v}(t)/||\vec {v}(t)|| = \vec {v}(t)/s'(t)</script> as <script type="math/tex">\vec {v}=s'\vec {T}</script>, we can apply the product rule to calculate: <script type="math/tex; mode=display"> \vec {a}(t) = \color {red} s''(t) \color {black}\vec {T}(t) + \color {red} s'(t) \color {black} \vec {T}'(t) = \color {red} s'' \color {black} \vec {T} + \color {red} s'||\vec {T}'|| \color {black}\vec {N} = \color {red} s'' \color {black} \vec {T} + \color {red} (s')^2 \kappa \color {black}\vec {N} </script> The second
+                                                                  
+
+                                                                  
+     equation comes from rewriting <script type="math/tex">\vec {N}(t) = \vec {T}'(t) / ||\vec {T}'(t)||</script> as <script type="math/tex">\vec {T}' = ||\vec {T}'||\vec {N}</script> and substituting. The third equation
+     used the fact that <script type="math/tex">\kappa = ||\vec {T'}||/s'</script>, so that <script type="math/tex">||\vec {T}'||=\kappa s'.</script> We’ve made the scalar functions red and the
+     vectors black to emphasize that acceleration is a linear combination of <script type="math/tex">\vec {T}</script>
+     and <script type="math/tex">\vec {N}</script> (or <script type="math/tex">\vec {T}'</script>).</li></ul>
+<!--l. 231--><p class="noindent" >I COPIED THIS FROM THE HANDOUT (except for formatting, some notation,
+and a little rewriting)... HOPEFULLY THAT’S FINE?
+</p><!--l. 233--><p class="noindent" >SOME SORT OF RANDOMIZED NOTATION QUIZ?
+</body> 
+ 
+</html>
+                                                                  
+
+                                                                  
+                                                                  
+
+

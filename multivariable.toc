@@ -1,55 +1,11 @@
-\contentsline {part}{I\hspace {1em}Review}{5}{part.1}
-\contentsline {section}{Vectors}{5}{section*.1}
-\contentsline {section}{The Dot Product}{12}{section*.2}
-\contentsline {section}{The Cross Product}{15}{section*.3}
-\contentsline {section}{Matrices}{20}{section*.4}
-\contentsline {section}{Representations of Lines and Planes}{33}{section*.5}
-\contentsline {part}{II\hspace {1em}Coordinate Systems and Functions}{35}{part.2}
-\contentsline {section}{Review of Coordinate Systems}{35}{section*.6}
-\contentsline {section}{Cylindrical Coordinates}{46}{section*.7}
-\contentsline {section}{Spherical Coordinates}{53}{section*.8}
-\contentsline {section}{Functions}{60}{section*.9}
-\contentsline {section}{Graphing Functions}{64}{section*.10}
-\contentsline {section}{Quadric Surfaces}{68}{section*.11}
-\contentsline {part}{III\hspace {1em}Curves in $\mathbb {R}^n$}{75}{part.3}
-\contentsline {section}{Parametric Curves}{75}{section*.12}
-\contentsline {section}{Velocity and Speed}{80}{section*.13}
-\contentsline {section}{Properties of Velocity and Speed}{84}{section*.14}
-\contentsline {section}{The Length of a Curve}{86}{section*.15}
-\contentsline {section}{Arclength Function}{90}{section*.16}
-\contentsline {section}{Curvature}{93}{section*.17}
-\contentsline {section}{Defining the Moving Frame}{96}{section*.18}
-\contentsline {section}{Moving Frame Computations}{100}{section*.19}
-\contentsline {section}{Decomposition of Acceleration}{104}{section*.20}
-\contentsline {part}{IV\hspace {1em}Limits and Derivatives}{110}{part.4}
-\contentsline {section}{Introduction to Limits}{110}{section*.21}
-\contentsline {section}{Evaluating Limits}{115}{section*.22}
-\contentsline {section}{Continuity and Limits in General}{121}{section*.23}
-\contentsline {section}{Partial Derivatives}{125}{section*.24}
-\contentsline {section}{Geometric Interpretation of Partial Derivatives}{129}{section*.25}
-\contentsline {section}{Geometry of Differentiability}{131}{section*.26}
-\contentsline {section}{Higher Order Partial Derivatives}{136}{section*.27}
-\contentsline {section}{Differentiation Properties}{142}{section*.28}
-\contentsline {section}{Chain Rule}{147}{section*.29}
-\contentsline {part}{V\hspace {1em}Optimization}{152}{part.5}
-\contentsline {part}{VI\hspace {1em}Vector Fields and Line Integrals}{152}{part.6}
-\contentsline {section}{Vector Fields}{152}{section*.30}
-\contentsline {section}{Topology}{154}{section*.31}
-\contentsline {section}{Path Independence and FTLI}{166}{section*.32}
-\contentsline {section}{Conservative Vector Fields}{175}{section*.33}
-\contentsline {part}{VII\hspace {1em}Double Integrals}{182}{part.7}
-\contentsline {part}{VIII\hspace {1em}Curl and Divergence}{182}{part.8}
-\contentsline {section}{Curl of a Vector Field}{182}{section*.34}
-\contentsline {section}{Definition of Curl}{182}{section*.35}
-\contentsline {section}{Summary}{186}{section*.36}
-\contentsline {section}{Geometric Significance of Curl}{187}{section*.37}
-\contentsline {section}{Geometric Significance of Two-dimensional Curl}{187}{section*.38}
-\contentsline {section}{Geometric Significance of Three-dimensional Curl}{191}{section*.39}
-\contentsline {section}{Summary}{193}{section*.40}
-\contentsline {section}{Connections of Curl with Older Material}{194}{section*.41}
-\contentsline {section}{Curl of a Conservative Vector Field}{194}{section*.42}
-\contentsline {section}{Curl and Green's Theorem}{195}{section*.43}
-\contentsline {section}{Summary}{196}{section*.44}
-\contentsline {part}{IX\hspace {1em}Surface Integrals}{197}{part.9}
-\contentsline {part}{X\hspace {1em}Triple Integrals}{197}{part.10}
+\contentsline {part}{I\hspace {1em}Review}{3}{part.1}
+\contentsline {part}{II\hspace {1em}Coordinate Systems and Functions}{4}{part.2}
+\contentsline {part}{III\hspace {1em}Curves in $\mathbb {R}^n$}{4}{part.3}
+\contentsline {part}{IV\hspace {1em}Limits and Derivatives}{4}{part.4}
+\contentsline {part}{V\hspace {1em}Optimization}{4}{part.5}
+\contentsline {part}{VI\hspace {1em}Vector Fields and Line Integrals}{4}{part.6}
+\contentsline {part}{VII\hspace {1em}Double Integrals}{4}{part.7}
+\contentsline {part}{VIII\hspace {1em}Curl and Divergence}{4}{part.8}
+\contentsline {part}{IX\hspace {1em}Surface Integrals}{4}{part.9}
+\contentsline {part}{X\hspace {1em}Triple Integrals}{4}{part.10}
 \contentsfinish 

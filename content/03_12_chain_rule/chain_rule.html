@@ -35,8 +35,10 @@ class="abstract"
 </div>   <div class="maketitle"></div>
 <!--l. 11--><p class="noindent" >In this activity, we introduce the multi-variable chain rule, and we use it to compute
 derivatives of compositions of functions.
+<a 
+ id="Q1-1-1"></a>
 </p>
-<h3 class="sectionHead"><a 
+<h3 class="likesectionHead"><a 
  id="x1-1000"></a>The Chain Rule</h3>
 <!--l. 15--><p class="noindent" >Let’s begin by recalling the chain rule from single variable calculus. If we have
 differentiable functions <script type="math/tex">f</script> and <script type="math/tex">g</script>, then we can compute the derivative of the composition
@@ -55,10 +57,10 @@ as <script type="math/tex">(f\circ g)'(x) =f'(g(x))g'(x)</script>.
 &=2(f(x))\cos(x)\\
 &=2\sin(x)\cos(x)
 \end{align*}</script>
-<!--l. 30--><p class="noindent" ></div>
                                                                   
 
                                                                   
+<!--l. 30--><p class="noindent" ></div>
 </p><!--l. 32--><p class="noindent" >The multi-variable chain rule is similar, with the derivative matrix taking the place of
 the single variable derivative, so that the chain rule will involve matrix multiplication.
 We also need to pay extra attention to whether the composition of functions is even
@@ -85,15 +87,117 @@ chain rule.
 Proof   </dt><dd 
 class="trivlist"></span>super great proof of chain rule                                                   <script type="math/tex">\blacksquare </script></dd></dl>
 </div>
-<h3 class="sectionHead"><a 
+<a 
+ id="Q1-1-3"></a>
+<h3 class="likesectionHead"><a 
  id="x1-2000"></a>A Special Case</h3>
-<!--l. 52--><p class="noindent" >R -¿ Rn -¿ R
+<!--l. 52--><p class="noindent" >We’ll now consider a special case of the chain rule, when we have a composition <script type="math/tex">f\circ g</script> of
+functions <script type="math/tex">f:\mathbb {R}^n\rightarrow \mathbb {R}</script> and <script type="math/tex">\mathbf {g}:\mathbb {R}\rightarrow \mathbb {R}^n</script>. Note that <script type="math/tex">f</script> is a scalar function, and we can think of <script type="math/tex">\mathbf {g}</script> as a curve in
+<script type="math/tex">\mathbb {R}^n</script>.
+</p><!--l. 54--><p class="noindent" >Let’s look at what the chain rule tells us in this case. For any <script type="math/tex">x_0\in \mathbb {R}</script>, we have <script type="math/tex; mode=display"> D(f\circ \mathbf {g})(x_0) = Df(\mathbf {g}(x_0))D\mathbf {g}(x_0). </script>
+Writing <script type="math/tex">\mathbf {g}(x) = (g_1(x),...,g_n(x))</script> in terms of its components, we have <script type="math/tex; mode=display"> D\mathbf {g} = \left (\begin {array}{c}\partial g_1/\partial x\\ \vdots \\\partial g_n/\partial x\end {array}\right ). </script> Since <script type="math/tex">\mathbf {g}</script> only has one input
+variable, we can rewrite this as <script type="math/tex; mode=display"> D\mathbf {g}(x) = \left (\begin {array}{c}g_1'(x)\\ \vdots \\g_n'(x)\end {array}\right ). </script> Now that we’ve sorted out <script type="math/tex">D\mathbf {g}</script>, let’s consider <script type="math/tex">Df</script>.
+Since <script type="math/tex">f</script> is a scalar-valued function, <script type="math/tex">Df</script> will consist of only one row, <script type="math/tex; mode=display"> Df = \left (\begin {array}{ccc}\frac {\partial f}{\partial x_1} & \cdots & \frac {\partial f}{\partial x_n}\end {array}\right ). </script> For <script type="math/tex">Df(\mathbf {g}(x_0))</script>, we
+would evaluate these partial derivatives at <script type="math/tex">\mathbf {g}(x_0)</script>: <script type="math/tex; mode=display"> Df(\mathbf {g}(x_0)) = \left (\begin {array}{ccc}\frac {\partial f}{\partial x_1}(\mathbf {g}(x_0)) & \cdots & \frac {\partial f}{\partial x_n}(\mathbf {g}(x_0))\end {array}\right ). </script> Now let’s turn our attention
+back to the composition <script type="math/tex">f\circ \mathbf {g}</script>. Putting together our results from above, we have
+</p><script type="math/tex; mode=display"> \begin{align*} 
+D(f\circ\mathbf{g})(x_0) &= Df(\mathbf{g}(x_0))D\mathbf{g}(x_0)\\
+&= \left(\begin{array}{ccc}\frac{\partial f}{\partial x_1}(\mathbf{g}(x_0)) & \cdots & \frac{\partial f}{\partial x_n}(\mathbf{g}(x_0))\end{array}\right)\left(\begin{array}{c}g_1'(x_0)\\ \vdots\\g_n'(x_0)\end{array}\right)\\
+                                                                  
+
+                                                                  
+&=\left(\left(\frac{\partial f}{\partial x_1}(\mathbf{g}(x_0))\right)g_1'(x_0)+\cdots + \left(\frac{\partial f}{\partial x_n}(\mathbf{g}(x_0))\right)g_n'(x_0)\right)
+\end{align*}</script>
+<!--l. 80--><p class="noindent" >Since <script type="math/tex">f\circ \mathbf {g}:\mathbb {R}\rightarrow \mathbb {R}</script> is a single variable function, its derivative matrix at <script type="math/tex">x_0</script> only has one entry,
+which is <script type="math/tex">\frac {d f\circ \mathbf {g}}{dx}(x_0)</script>. So, we can rewrite the above as <script type="math/tex; mode=display"> \frac {d f\circ \mathbf {g}}{dx}(x_0) = \left (\frac {\partial f}{\partial x_1}(\mathbf {g}(x_0))\right )g_1'(x_0)+\cdots + \left (\frac {\partial f}{\partial x_n}(\mathbf {g}(x_0))\right )g_n'(x_0). </script> This gives us a special case of the
+Chain Rule, that can be useful when we have a composition of functions
+<script type="math/tex">\mathbb {R}\rightarrow \mathbb {R}^n\rightarrow \mathbb {R}</script>.
+<a 
+ id="Q1-1-5"></a>
 </p>
-<h3 class="sectionHead"><a 
+<h3 class="likesectionHead"><a 
  id="x1-3000"></a>Examples</h3>
-<!--l. 57--><p class="noindent" >Examples of using the chain rule, including polar coords conversion.
+<div class="theorem-like problem-environment example" id="problem3"><a 
+ id="x1-3001r3"></a>Let’s consider the functions <script type="math/tex">\mathbf {f}(x,y) = (x^2+y^2, xy)</script> and <script type="math/tex">\mathbf {g}(x,y) = (3xy, x-y, 7y^2)</script>. First, let’s decide how we can compose these
+functions.
+<!--l. 91--><p class="noindent" >Which composition(s) exist? </p><div class="multiple-choice" id="problem4"><span class="choice  "   id="choice1">Neither <script type="math/tex">\mathbf {f}\circ \mathbf {g}</script> nor <script type="math/tex">\mathbf {g}\circ \mathbf {f}</script> exists.</span> <span class="choice  "   id="choice2"><script type="math/tex">\mathbf {f}\circ \mathbf {g}</script> exists, but <script type="math/tex">\mathbf {g}\circ \mathbf {f}</script> does not.</span> <span class="choice correct "   id="choice3"><script type="math/tex">\mathbf {g}\circ \mathbf {f}</script> exists,
+but <script type="math/tex">\mathbf {f}\circ \mathbf {g}</script> does not.</span> <span class="choice  "   id="choice4"><script type="math/tex">\mathbf {f}\circ \mathbf {g}</script> and <script type="math/tex">\mathbf {g}\circ \mathbf {f}</script> both exist.</span> </div>
+<!--l. 99--><p class="noindent" >We’ll compute the derivative matrix <script type="math/tex">D(\mathbf {g}\circ \mathbf {f}</script> in two ways: using the chain rule, and
+directly.
+</p><!--l. 101--><p class="noindent" >Let’s begin by using the chain rule. We’ll have <script type="math/tex; mode=display"> D(\mathbf {g}\circ \mathbf {f})(\mathbf {x}) = D\mathbf {g}(\mathbf {f}(\mathbf {x}))D\mathbf {f}(\mathbf {x}), </script> so we’ll start by computing the derivative matrices <script type="math/tex">D\mathbf {f}</script> and <script type="math/tex">D\mathbf {g}</script>.
+</p><script type="math/tex; mode=display"> \begin{align*} 
+D\mathbf{f}(x,y) &= \left(\begin{array}{cc}\answer{2x} & \answer{2y}\\\answer{y} & \answer{x}\end{array}\right)\\
+D\mathbf{g}(x,y) &= \left(\begin{array}{cc}\answer{3y} & \answer{3x}\\\answer{1} & \answer{-1}\\\answer{0} & \answer{14y}\end{array}\right)
+\end{align*}</script>
+<!--l. 110--><p class="noindent" >Now, for <script type="math/tex">D\mathbf {g}(\mathbf {f}(\mathbf {x}))</script>, we need to input <script type="math/tex">\mathbf {f}(x,y)</script> into <script type="math/tex">D\mathbf {g}</script>. </p><script type="math/tex; mode=display"> \begin{align*} 
+D\mathbf{g}(\mathbf{f}(x,y)) &= D\mathbf{g}(x^2+y^2, xy)\\
+&= \left(\begin{array}{cc}\answer{3(xy)} & \answer{3(x^2+y^2)}\\\answer{1} & \answer{-1}\\\answer{0} & \answer{14(xy)}\end{array}\right)
+\end{align*}</script>
+<!--l. 115--><p class="noindent" >To compute <script type="math/tex"> D(\mathbf {g}\circ \mathbf {f})(x,y)</script>, we multiply matrices, and obtain
+</p><script type="math/tex; mode=display"> \begin{align*} 
+D(\mathbf{g}\circ\mathbf{f})(x,y) &=  \left(\begin{array}{cc}\answer{3(xy)} & \answer{3(x^2+y^2)}\\\answer{1} & \answer{-1}\\\answer{0} & \answer{14(xy)}\end{array}\right)\left(\begin{array}{cc}\answer{2x} & \answer{2y}\\\answer{y} & \answer{x}\end{array}\right)\\
+&= \left(\begin{array}{cc}\answer{9x^2y+3y^3} & \answer{3x^3+9xy^2}\\\answer{2x-y} & \answer{2y-x}\\\answer{14xy^2} & \answer{14x^2y}\end{array}\right).
+\end{align*}</script>
+<!--l. 121--><p class="noindent" >Let’s verify our answer, by computing the <script type="math/tex">D(\mathbf {g}\circ \mathbf {f})(x,y)</script> directly, without using the chain rule. We’ll
+begin by finding <script type="math/tex">\mathbf {g}\circ \mathbf {f}</script>. </p><script type="math/tex; mode=display"> \begin{align*} 
+(\mathbf{g}\circ\mathbf{f})(x,y) &= \mathbf{g}(f(x,y))\\
+&= \mathbf{g}(x^2+y^2,xy)\\
+&= \answer{(3(x^2+y^2)(xy),(x^2+y^2)-(xy),7(xy)^2)}.
+\end{align*}</script>
+                                                                  
+
+                                                                  
+<!--l. 127--><p class="noindent" >This simplifies to <script type="math/tex">(\mathbf {g}\circ \mathbf {f})(x,y) = (3x^3y+3xy^3, x^2+y^2-xy,7x^2y^2)</script>. We can then compute the derivative matrix. <script type="math/tex; mode=display"> (\mathbf {g}\circ \mathbf {f})(x,y) = \left (\begin {array}{cc}\answer {9x^2y+3y^3} & \answer {3x^3+9xy^2}\\\answer {2x-y} & \answer {2y-x}\\\answer {14xy^2} & \answer {14x^2y}\end {array}\right ) </script> We see that this
+gives the same result as using the chain rule.
+</div>
 </p>
-<h3 class="sectionHead"><a 
+<div class="theorem-like problem-environment example" id="problem5"><a 
+ id="x1-3002r4"></a>special case
+</div>
+<div class="theorem-like problem-environment example" id="problem6"><a 
+ id="x1-3003r5"></a>Consider the function <script type="math/tex">g:\mathbb {R}^2\rightarrow \mathbb {R}^2</script>, given by <script type="math/tex">\mathbf {g}(r,\theta ) = (r\cos \theta , r\sin \theta )</script>. We can think of this function as converting from
+polar coordinates to Cartesian coordinates. Suppose we have a function <script type="math/tex">f:\mathbb {R}^2\rightarrow \mathbb {R}</script>,
+and we want to know how <script type="math/tex">f</script> changes with respect to polar coordinates. We
+could find this by computing <script type="math/tex; mode=display"> D(f\circ \mathbf {g}) = \left (\begin {array}{cc}\frac {\partial (f\circ \mathbf {g})}{\partial r} & \frac {\partial (f\circ \mathbf {g})}{\partial \theta }\end {array}\right ). </script> For specific functions <script type="math/tex">f</script>, we could probably
+compute this derivative matrix directly. However, if we use the chain rule, we
+can find a general formula for the derivative matrix. The chain rule tells us
+<script type="math/tex; mode=display"> D(f\circ \mathbf {g})(r,\theta ) = Df(\mathbf {g}(r,\theta ))D\mathbf {g}(r,\theta ). </script> We don’t know precisely what <script type="math/tex">Df</script> will be, but we can write it in terms of
+its partial derivatives: <script type="math/tex; mode=display"> Df = \left (\begin {array}{cc}\frac {\partial f}{\partial x} & \frac {\partial f}{\partial y} \end {array}\right ). </script> Given <script type="math/tex">\mathbf {g}(r,\theta ) = (r\cos \theta , r\sin \theta )</script>, we can compute the derivative matrix of <script type="math/tex">\mathbf {g}</script>.
+<script type="math/tex; mode=display"> \begin{align*} 
+D\mathbf{g}(r,\theta) &= \left(\begin{array}{cc}
+\partial g_1/\partial r & \partial g_1/\partial\theta\\
+\partial g_2\partial r & \partial g_2/\partial\theta
+\end{array}\right)\\
+&= \left(\begin{array}{cc}
+\answer{\cos\theta} & \answer{-r\sin\theta}\\
+\answer{\sin\theta} & \answer{r\cos\theta}
+\end{array}\right)
+\end{align*}</script>
+<!--l. 163--><p class="noindent" >Then,  from  the  chain  rule,  we  have
+</p><script type="math/tex; mode=display"> \begin{align*} 
+D(f\circ\mathbf{g})(r,\theta) &= Df(\mathbf{g}(r,\theta))D\mathbf{g}(r,\theta)\\
+&= \left(\begin{array}{cc}\frac{\partial f}{\partial x}(\mathbf{g}(r,\theta)) & \frac{\partial f}{\partial y}(\mathbf{g}(r,\theta)) \end{array}\right)\left(\begin{array}{cc}
+\cos\theta & -r\sin\theta\\
+\sin\theta & r\cos\theta
+\end{array}\right)\\
+&= \left(\begin{array}{cc}\cos\theta\frac{\partial f}{\partial x}(\mathbf{g}(r,\theta)) + \sin\theta\frac{\partial f}{\partial y}(\mathbf{g}(r,\theta)) & -r\sin\theta\frac{\partial f}{\partial x}(\mathbf{g}(r,\theta)) + r\cos\theta\frac{\partial f}{\partial y}(\mathbf{g}(r,\theta))  \end{array}\right)
+\end{align*}</script>
+<!--l. 172--><p class="noindent" >Since <script type="math/tex; mode=display"> D(f\circ \mathbf {g}) = \left (\begin {array}{cc}\frac {\partial (f\circ \mathbf {g})}{\partial r} & \frac {\partial (f\circ \mathbf {g})}{\partial \theta }\end {array}\right ), </script> we then have that </p><script type="math/tex; mode=display"> \begin{align*} 
+\frac{\partial(f\circ \mathbf{g})}{\partial r} &= \cos\theta\frac{\partial f}{\partial x}(\mathbf{g}(r,\theta)) + \sin\theta\frac{\partial f}{\partial y}(\mathbf{g}(r,\theta))\\
+&= \cos\theta\frac{\partial f}{\partial x}(r\cos\theta,r\sin\theta) + \sin\theta\frac{\partial f}{\partial y}(r\cos\theta,r\sin\theta),
+\end{align*}</script>
+                                                                  
+
+                                                                  
+<!--l. 181--><p class="noindent" >and </p><script type="math/tex; mode=display"> \begin{align*} 
+\frac{\partial(f\circ \mathbf{g})}{\partial \theta}&=-r\sin\theta\frac{\partial f}{\partial x}(\mathbf{g}(r,\theta)) + r\cos\theta\frac{\partial f}{\partial y}(\mathbf{g}(r,\theta)) \\
+&=-r\sin\theta\frac{\partial f}{\partial x}(r\cos\theta,r\sin\theta) + r\cos\theta\frac{\partial f}{\partial y}(r\cos\theta,r\sin\theta).
+\end{align*}</script>
+<!--l. 188--><p class="noindent" ></div>
+<a 
+ id="Q1-1-7"></a>
+</p>
+<h3 class="likesectionHead"><a 
  id="x1-4000"></a>Conclusion</h3>
 </body> 
  

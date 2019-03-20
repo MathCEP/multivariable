@@ -35,8 +35,10 @@ class="abstract"
 </div>   <div class="maketitle"></div>
 <!--l. 11--><p class="noindent" >In this activity, we introduce higher order partial derivatives, and discuss their
 geometric meaning.
+<a 
+ id="Q1-1-1"></a>
 </p>
-<h3 class="sectionHead"><a 
+<h3 class="likesectionHead"><a 
  id="x1-1000"></a>Higher Order Partials</h3>
 <!--l. 15--><p class="noindent" >Back in single variable Calculus, we were able to use the second derivative to get
 information about a function. For instance, the second derivative gave us valuable
@@ -55,10 +57,10 @@ second derivative as the rate-of-change of a rate-of-change, or describing some 
 acceleration or deceleration.
 </p><!--l. 23--><p class="noindent" >Since the second derivative contains so much useful information, we would like to
 come up with a way to define second derivatives for multivariable functions! At first,
-this might seem simple: just take the derivative of the derivative. But when we
                                                                   
 
                                                                   
+this might seem simple: just take the derivative of the derivative. But when we
 took the total derivative of a multivariable function <script type="math/tex">f:\mathbb {R}^m\rightarrow \mathbb {R}^n</script>, we got a matrix of
 partial derivatives, and it’s not at all clear how we would differentiate a
 matrix.
@@ -99,14 +101,16 @@ of these notations, start with the variable closest to <script type="math/tex">f
 out.
 </p><!--l. 56--><p class="noindent" >We can similarly define and compute third order partials, fourth order partials, and
 so on.
-</p>
                                                                   
 
                                                                   
+</p>
 <div class="theorem-like problem-environment example" id="problem2"><a 
  id="x1-1002r2"></a>COMPUTE SOME PARTIAL DERIVATIVES
 </div>
-<h3 class="sectionHead"><a 
+<a 
+ id="Q1-1-3"></a>
+<h3 class="likesectionHead"><a 
  id="x1-2000"></a>Clairaut’s Theorem</h3>
 <!--l. 64--><p class="noindent" >In previous examples, we’ve seen that it doesn’t matter what order you use to take
 higher order partial derivatives, you seem to wind up with the same answer no
@@ -146,11 +150,11 @@ order exist and are continuous.
 id="choice5"><script type="math/tex">f</script> is <script type="math/tex">\mathcal {C}^\infty </script>.</span>
 </div>
 </div>
-<!--l. 100--><p class="noindent" >We can generalize Clairaut’s Theorem to <script type="math/tex">k</script>th order derivatives for <script type="math/tex">\mathcal {C}^k</script> functions.
-</p>
                                                                   
 
                                                                   
+<!--l. 100--><p class="noindent" >We can generalize Clairaut’s Theorem to <script type="math/tex">k</script>th order derivatives for <script type="math/tex">\mathcal {C}^k</script> functions.
+</p>
 <div class="theorem-like problem-environment theorem" id="problem7"><a 
  id="x1-2005r7"></a>If <script type="math/tex">f</script> is <script type="math/tex">\mathcal {C}^k</script>, then the <script type="math/tex">k</script>th order mixed partials can be computed in any order.
 </div>
@@ -164,7 +168,9 @@ f_{xyxyzyzzxyxz}&=f_{xxxxyyyyzzzz}\\
 id="choice6"><script type="math/tex">f_{xxzxy}</script></span> <span class="choice correct "   id="choice7"><script type="math/tex">f_{xyzzz}</script></span> <span class="choice correct "   id="choice8"><script type="math/tex">f_{xzzzy}</script></span> <span class="choice correct "   id="choice9"><script type="math/tex">f_{zzxzy}</script></span> <span class="choice  "   id="choice10"><script type="math/tex">f_{yyzyx}</script></span>
 </div>
 </div>
-<h3 class="sectionHead"><a 
+<a 
+ id="Q1-1-5"></a>
+<h3 class="likesectionHead"><a 
  id="x1-3000"></a>Geometric Significance</h3>
 <!--l. 125--><p class="noindent" >Remembering back to single variable calculus, we could use the first and second
 derivatives of a function to figure out the shape of the graph.
@@ -189,12 +195,12 @@ move in the positive <script type="math/tex">x</script>-direction from the point
 </p><!--l. 143--><p class="noindent" >PICTURE
 </p><!--l. 145--><p class="noindent" >Suppose <script type="math/tex">f_x(x,y_0)=0</script> for <script type="math/tex">x</script> in some open interval constaining <script type="math/tex">x_0</script>. Then <script type="math/tex">f(x,y)</script> is constant as we move in the
 positive <script type="math/tex">x</script>-direction from the point <script type="math/tex">(x_0,y_0)</script>.
-</p><!--l. 147--><p class="noindent" >PICTURE
-</p><!--l. 149--><p class="noindent" >The partial derivative with respect to <script type="math/tex">y</script>, <script type="math/tex">f_y</script>, can tell us where <script type="math/tex">f</script> is increasing, decreasing,
-or constant as we move in the positive <script type="math/tex">y</script> direction.
                                                                   
 
                                                                   
+</p><!--l. 147--><p class="noindent" >PICTURE
+</p><!--l. 149--><p class="noindent" >The partial derivative with respect to <script type="math/tex">y</script>, <script type="math/tex">f_y</script>, can tell us where <script type="math/tex">f</script> is increasing, decreasing,
+or constant as we move in the positive <script type="math/tex">y</script> direction.
 </p><!--l. 151--><p class="noindent" >PICTURE
 </p><!--l. 153--><p class="noindent" >Now, let’s look at what the second-order partial derivatives tell us about the graph of
 the function <script type="math/tex">f(x,y)</script>. It shouldn’t be too surprising that the sign of <script type="math/tex">f_{xx}</script> tells us about the
@@ -213,8 +219,10 @@ direction. This is a lot to unravel!
 </p><!--l. 165--><p class="noindent" >We can similarly think of <script type="math/tex">f_{yx}</script> as the change in <script type="math/tex">f_y</script> as we move in the positive <script type="math/tex">x</script>
 direction.
 </p><!--l. 167--><p class="noindent" >PICTURE/VIDEO/INTERACTIVE
+<a 
+ id="Q1-1-7"></a>
 </p>
-<h3 class="sectionHead"><a 
+<h3 class="likesectionHead"><a 
  id="x1-4000"></a>Conclusion</h3>
 <!--l. 171--><p class="noindent" >In this activity, we considered higher order partial derivatives, and found that the
 order of differentiation doesn’t matter for “nice” functions using Clairaut’s theorem.

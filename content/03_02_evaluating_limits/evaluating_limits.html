@@ -1,0 +1,233 @@
+<!doctype html> 
+<html lang="en"> 
+<head> <title>Evaluating Limits</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<!-- charset=utf-8,-css,html,htex4ht,xhtml --> 
+<meta name="src" content="evaluating_limits.tex" /> 
+<meta name="author" content="" /> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
+<meta name="ximera" content="version 0.0.1" /> 
+<link href="https://ximera.osu.edu/public/stylesheets/standalone.css" rel="stylesheet" media="screen"/> 
+<script type="text/javascript" async src="https://ximera.osu.edu/public/javascripts/standalone.min.js"></script> 
+</head><body> 
+<div class="preamble"><script type="math/tex">\newenvironment {prompt}{}{}
+\newcommand {\DeclareMathOperator }[2]{\@OldDeclareMathOperator {##1}{##2}\immediate \write \myfile {\unexpanded {\DeclareMathOperator }{\unexpanded {##1}}{\unexpanded {##2}}}}
+\newcommand {\ungraded }[0]{}
+\newcommand {\reserved@a }[2]{}
+\newcommand {\HyperFirstAtBeginDocument }[0]{\AtBeginDocument }
+\newcommand {\reserved@a }[1]{}
+\newcommand {\reserved@a }[2]{}
+\newcommand {\vnameref  }[1]{\unskip ~\nameref {##1}\@vpageref [\unskip ]{##1}}
+\newcommand {\ref  }[0]{\@ifstar \@refstar \T@ref }
+\newcommand {\pageref  }[0]{\@ifstar \@pagerefstar \T@pageref }
+\newcommand {\nameref  }[0]{\@ifstar \@namerefstar \T@nameref }
+\newcommand {\reserved@a }[2]{}
+\newcommand {\reserved@a }[0]{\AtBeginDocument }
+\newcommand {\reserved@a }[1]{}
+\newcommand {\reserved@a }[2]{}                                                                                                                                                 </script><script type="text/javascript"> 
+</script> 
+</div>
+<div 
+class="abstract" 
+>
+</div>   <div class="maketitle"></div>
+<!--l. 11--><p class="noindent" >We’ve seen how we can approach along paths to show that some limits do not exist,
+but we still don’t have any methods for showing that multivariable limits do exist.
+Our first tool for doing this will be the epsilon-delta definition of a limit, which will
+allow us to formally prove that a limit exists.
+</p><!--l. 13--><p class="noindent" >Unfortunately, the epsilon-delta approach has some draw backs. Epsilon-delta proofs
+can be difficult, and they often require you to either guess or compute the value of a
+limit prior to starting the proof! So, we will want some easier methods for evaluating
+limits. One such method will be changing coordinates in a way that reduces our limit
+to a single variable limit.
+<a 
+ id="Q1-1-1"></a>
+</p>
+<h3 class="likesectionHead"><a 
+ id="x1-1000"></a>Epsilon-delta definition</h3>
+<!--l. 17--><p class="noindent" >Let’s begin by recalling the epsilon-delta definition of a limit from single variable
+calculus.
+</p>
+<div class="theorem-like problem-environment definition" id="problem1"><a 
+ id="x1-1001r1"></a>Let <script type="math/tex">f:\mathbb {R}\rightarrow \mathbb {R}</script> be a function. We write <script type="math/tex; mode=display"> \lim _{x\rightarrow a} f(x) = L </script> if for all <script type="math/tex">\epsilon >0</script>, there exists some <script type="math/tex">\delta >0</script> such that for all <script type="math/tex">x</script> with <script type="math/tex">0 < |x-a| < \delta </script>, we
+have <script type="math/tex">|f(x)-L| < \epsilon </script>.
+</div>
+<!--l. 27--><p class="noindent" >VISUAL
+</p><!--l. 29--><p class="noindent" >We use this definition to guide our formal definition of a limit for multivariable
+functions.
+</p>
+<div class="theorem-like problem-environment definition" id="problem2"><a 
+ id="x1-1002r2"></a>Let <script type="math/tex">f:\mathbb {R}^n\rightarrow \mathbb {R}</script> be a function. We write <script type="math/tex; mode=display"> \lim _{\vec {x}\rightarrow \vec {a}} f(\vec {x}) = L </script> if for all <script type="math/tex">\epsilon >0</script>, there exists some <script type="math/tex">\delta >0</script> such that for all <script type="math/tex">\vec {x}</script> with <script type="math/tex">0 < \|\vec {x}-\vec {a}\| < \delta </script>, we
+                                                                  
+
+                                                                  
+have <script type="math/tex">|f(x)-L| < \epsilon </script>.
+</div>
+<!--l. 39--><p class="noindent" >Because the inputs here are points in <script type="math/tex">\mathbb {R}^n</script>, when we take points “close to” <script type="math/tex">\vec {a}</script>, we do this in
+terms of distance. Recall that we can compute the distance between points <script type="math/tex">\vec {x}=(x_1,...,x_n)</script>
+and <script type="math/tex">\vec {y}=(y_1,...,y_n)</script> as <script type="math/tex; mode=display"> \|\vec {x}-\vec {y}\| = \sqrt {(x_1-y_1)^2+(x_n-y_n)^2}. </script> So when we’re considering all <script type="math/tex">\vec {x}</script> such that <script type="math/tex">\|\vec {x}-\vec {a}\| < \delta </script>, we’re taking all points
+within a distance <script type="math/tex">\delta </script> of <script type="math/tex">\vec {a}</script>. This is called the <em>open ball of radius <script type="math/tex">\delta </script> centered at
+<script type="math/tex">\vec {a}</script></em>.
+</p><!--l. 45--><p class="noindent" >PICTURES
+</p><!--l. 47--><p class="noindent" >When we add in the condition that <script type="math/tex">0<\|\vec {x}-\vec {a}\|</script>, we are excluding the point <script type="math/tex">a</script> itself.
+</p>
+<div class="theorem-like problem-environment example" id="problem3"><a 
+ id="x1-1003r3"></a>We’ll prove that <script type="math/tex">\lim _{\vec {x}\rightarrow (1,2,3)} (2x-y+5z) = 15</script>, using the epsilon-delta definition of a limit.
+<!--l. 52--><p class="noindent" >Given <script type="math/tex">\epsilon >0</script>, we’d like to find <script type="math/tex">\delta </script> such that <script type="math/tex">0< \|(x,y,z)-(1,2,3)\|<\delta </script> guarantees <script type="math/tex">|(2x-y+5z)-15|<\epsilon </script>. Let’s see what we can get from <script type="math/tex">0< \|(x,y,z)-(1,2,3)\|<\delta </script>.
+We have <script type="math/tex; mode=display"> 0< \sqrt {(x-1)^2+(y-2)^2+(z-3)^2}<\delta . </script> Using the triangle inequality (DOES THIS SHOW UP IN THE
+REVIEW?), we have <script type="math/tex; mode=display"> 0< \sqrt {(x-1)^2}+\sqrt {(y-2)^2}+\sqrt {(z-3)^2}<\delta , </script> which we can rewrite as <script type="math/tex; mode=display"> 0< |x-1|+|y-2|+|z-3|<\delta . </script> From this, we have <script type="math/tex">|x-1|<\delta </script>, <script type="math/tex">|y-2|<\delta </script>, and
+<script type="math/tex">|z-3|<\delta </script>.
+</p><!--l. 66--><p class="noindent" >Now, let’s look at <script type="math/tex">|(2x-y+5z)-15|</script>, and try to rewrite this to make use of what we’ve found so far.
+We have </p><script type="math/tex; mode=display"> \begin{align*} 
+  |(2x-y+5z)-15| &=|(2x-2)+(-y+2)+(5z-15)|\\
+&=|2(x-1)-(y-2)+5(z-3)|\\
+&\geq |2(x-1)|+|y-2|+|5(z-3)|,
+\end{align*}</script>
+<!--l. 72--><p class="noindent" >using the triangle inequality. By properties of absolute values, and using our above
+observations, we have </p><script type="math/tex; mode=display"> \begin{align*} 
+|2(x-1)|+|y-2|+|5(z-3)| &= 2|x-1|+|y-2|+5|z-3|\\
+&=2\delta + \delta + 5\delta\\
+&=8\delta.
+\end{align*}</script>
+<!--l. 78--><p class="noindent" >So if we choose <script type="math/tex">\delta = \epsilon /8</script>, we’ll have <script type="math/tex">|(2x-y+5z)-15|<\epsilon </script> for all <script type="math/tex">(x,y,z)</script> with <script type="math/tex">0< \|(x,y,z)-(1,2,3)\|<\delta </script>.
+</p><!--l. 80--><p class="noindent" >SHOULD I DO THE WHOLE PROOF?
+</div>
+</p><!--l. 83--><p class="noindent" >Now that we have a formal definition of limits, let’s revisit our result about
+approaching a point along various paths.
+</p>
+<div class="theorem-like problem-environment proposition" id="problem4"><a 
+ id="x1-1004r4"></a>Consider a function <script type="math/tex">f:\mathbb {R}^n\rightarrow \mathbb {R}</script>, and a point <script type="math/tex">\vec {a}\in \mathbb {R}^n</script>. Suppose there are continuous paths <script type="math/tex">vec{x}(t)</script> and <script type="math/tex">\vec {y}(t)</script> such
+that <script type="math/tex">\vec {x}(t_1) = \vec {y}(t_2) = \vec {a}</script>, and suppose that <script type="math/tex; mode=display"> \lim _{t\rightarrow t_1}f(\vec {x}(t))\neq \lim _{t\rightarrow t_2}f(\vec {y}(t)) </script> (or one of these limits does not exist). Then <script type="math/tex">\lim _{\vec {x}\rightarrow \vec {a}}f(x)</script> does not
+exist.
+</div>
+<!--l. 93--><p class="noindent" >
+                                                                  
+
+                                                                  
+</p>
+<div class="proof">
+<!--l. 94--><p class="noindent" ><span class="head">
+</p><dl class="trivlist"><dt class="trivlist">
+Proof   </dt><dd 
+class="trivlist"></span>(I’M  NOT  SURE  THIS  IS  ACTUALLY  WORTHWHILE...SO  I
+STOPPED WRITING IT)
+<!--l. 96--><p class="noindent" >In this proof, we’ll handle the case where both limits exist. Suppose <script type="math/tex">\lim _{t\rightarrow t_1}f(\vec {x}(t)) = L</script> and <script type="math/tex">\lim _{t\rightarrow t_2}f(\vec {y}(t)) = M</script>. Let
+<script type="math/tex">\epsilon = \frac {|L-M|}{4}</script>.
+</p><!--l. 98--><p class="noindent" >We will do a proof by contradiction. Suppose <script type="math/tex">\lim _{\vec {x}\rightarrow \vec {a}}f(x)=N</script>. Then there exists <script type="math/tex">\delta </script> such that
+</p><!--l. 100--><p class="noindent" >Since <script type="math/tex">\lim _{t\rightarrow t_1}f(\vec {x}(t)) = L</script>, there exists some <script type="math/tex">\delta _1>0</script> such that for all <script type="math/tex">t</script> with <script type="math/tex">0<|t-t_1|<\delta _1</script>, we have <script type="math/tex">|f(\vec {x}(t))-L|<\epsilon </script>. Since <script type="math/tex">\vec {x}</script> is continuous,
+we can also find some <script type="math/tex">\delta _1'</script> such that <script type="math/tex">\|\vec {x}(t)-\vec {a}\|<\delta </script> for <script type="math/tex">|t-t_1|<\delta _1'</script>.
+</p><!--l. 102--><p class="noindent" >Since <script type="math/tex">\lim _{t\rightarrow t_2}f(\vec {y}(t)) = M</script>, there exists some <script type="math/tex">\delta _2>0</script> such that for all <script type="math/tex">t</script> with <script type="math/tex">0<|t-t_2|<\delta _2</script>, we have <script type="math/tex">|f(\vec {x}(t))-L|<\epsilon </script>.
+                                                                  <script type="math/tex">\blacksquare </script></p></dd></dl>
+</div>
+<a 
+ id="Q1-1-3"></a>
+<h3 class="likesectionHead"><a 
+ id="x1-2000"></a>Changing coordinates</h3>
+<!--l. 108--><p class="noindent" >Although doing a delta-epsilon proof can be effective for proving that a limit exists
+and what it’s equal to, we still need to predict the value of a limit before starting
+such a proof. So, we’d like some other techniques for showing that multivariable
+limits exist, and for evaluating them.
+</p><!--l. 110--><p class="noindent" >One strategy for evaluating limits is to change coordinates in a way that reduces our
+multivariable limit to a single variable limit.
+</p><!--l. 112--><p class="noindent" >Suppose we’re taking the limit of a function <script type="math/tex">f(x,y)</script> as <script type="math/tex">(x,y)\rightarrow (0,0)</script>, so we’re approaching the origin.
+In polar coordinates <script type="math/tex">(\theta , r)</script>, approaching the origin is equivalent to taking <script type="math/tex">r\rightarrow 0</script>. It
+doesn’t matter what <script type="math/tex">\theta </script> does; as long as <script type="math/tex">r</script> goes to <script type="math/tex">0</script>, we will be approaching the
+origin.
+</p><!--l. 114--><p class="noindent" >VISUAL
+</p><!--l. 116--><p class="noindent" >This makes polar coordinates a common and convenient choice for a change of
+variables to evaluate limits.
+</p>
+<div class="theorem-like problem-environment example" id="problem5"><a 
+ id="x1-2001r5"></a>We’ll use polar coordinates to evaluate the limit <script type="math/tex">\lim _{(x,y)\rightarrow (0,0)}xy</script>. Changing to polar coordinates, we have
+<script type="math/tex; mode=display"> \begin{align*} 
+\lim_{(x,y)\rightarrow (0,0)}xy &= \lim_{r\rightarrow 0} r\cos\theta \cdot r\sin\theta\\
+&= \lim_{r\rightarrow 0} r^2\cos\theta\sin\theta.
+\end{align*}</script>
+<!--l. 124--><p class="noindent" >We will use the squeeze theorem to evaluate this limit. Since <script type="math/tex">-1\leq \cos \theta \sin \theta \leq 1</script> for all <script type="math/tex">\theta </script>, we have <script type="math/tex; mode=display"> -r^2\leq r^2\cos \theta \sin \theta \leq r^2. </script> Since <script type="math/tex">\lim _{r\rightarrow 0} -r^2 = \lim _{r\rightarrow 0} r^2=0</script>,
+                                                                  
+
+                                                                  
+by the squeeze theorem, we have <script type="math/tex; mode=display"> \lim _{r\rightarrow 0} r^2\cos \theta \sin \theta = 0. </script> Thus, <script type="math/tex">\lim _{(x,y)\rightarrow (0,0)}xy = 0</script>.
+</div>
+</p><!--l. 135--><p class="noindent" >Similarly, when the domain of a function is <script type="math/tex">\mathbb {R}^3</script>, we can use spherical coordinates to
+evaluate a limit approaching the origin.
+</p>
+<div class="theorem-like problem-environment example" id="problem6"><a 
+ id="x1-2002r6"></a>We will use spherical coordinates to evaluate the limit <script type="math/tex">\lim _{(x,y,z)\rightarrow (0,0,0)}\frac {x^3}{x^2+y^2+z^2}</script>. Changing to spherical coordinates, we have
+<script type="math/tex; mode=display"> \begin{align*} 
+\lim_{(x,y,z)\rightarrow (0,0,0)}\frac{x^3}{x^2+y^2+z^2} &= \lim_{\rho\rightarrow 0}\frac{(\rho\cos\theta\sin\phi)^3}{(\rho\cos\theta\sin\phi)^2+(\rho\sin\theta\sin\phi)^2+(\rho\cos\phi)^2}\\
+&= \lim_{\rho\rightarrow 0}\frac{\rho^3\cos^3\theta\sin^3\phi}{\rho^2\cos^2\theta\sin^2\phi+\rho^2\sin^2\theta\sin^2\phi+\rho^2\cos^2\phi}\\
+&= \lim_{\rho\rightarrow 0}\frac{\rho^3\cos^3\theta\sin^3\phi}{(\rho^2\cos^2\theta+\rho^2\sin^2\theta)\sin^2\phi+\rho^2\cos^2\phi}\\
+&= \lim_{\rho\rightarrow 0}\frac{\rho^3\cos^3\theta\sin^3\phi}{\rho^2\sin^2\phi+\rho^2\cos^2\phi}\\
+&= \lim_{\rho\rightarrow 0}\frac{\rho^3\cos^3\theta\sin^3\phi}{\rho^2}\\
+&= \lim_{\rho\rightarrow 0}\rho\cos^3\theta\sin^3\phi.\\
+\end{align*}</script>
+<!--l. 147--><p class="noindent" >Since <script type="math/tex">-1\leq \cos ^3\theta \sin ^3\phi \leq 1</script>, we have <script type="math/tex; mode=display"> -|\rho |\leq \rho \cos ^3\theta \sin ^3\phi \leq |\rho |. </script> Since <script type="math/tex">\lim _{\rho \rightarrow 0}-|\rho | = \lim _{\rho \rightarrow 0}|\rho |=0</script>, by the squeeze theorem, we have <script type="math/tex; mode=display"> \lim _{\rho \rightarrow 0}\rho \cos ^3\theta \sin ^3\phi = 0, </script> So <script type="math/tex">\lim _{(x,y,z)\rightarrow (0,0,0)}\frac {x^3}{x^2+y^2+z^2}</script>.
+</div>
+</p><!--l. 158--><p class="noindent" >In other situations, a different change of coordinates might be more useful. For
+example, linear changes of coordinates might be used.
+</p>
+<div class="theorem-like problem-environment example" id="problem7"><a 
+ id="x1-2003r7"></a>We’ll use a change of coordinates to evaluate <script type="math/tex">\lim _{(x,y)\rightarrow (0,0)} (x-y)e^{-(x-y)^2}</script>. Here, it’s convenient to use
+the linear change of coordinates <script type="math/tex">y=x-y</script> and <script type="math/tex">v=x+y</script>. Notice that <script type="math/tex">(x,y)\rightarrow (0,0)</script> is equivalent to <script type="math/tex">(u,v)\rightarrow (0,0)</script>.
+From this, we have <script type="math/tex; mode=display"> \lim _{(x,y)\rightarrow (0,0)} (x-y)e^{-(x-y)^2} = \lim _{(u,v)\rightarrow (0,0)} ue^{-u^2}. </script> Notice that the expression on the right depends
+only on <script type="math/tex">u</script>, and not on <script type="math/tex">v</script>. Because of this, we can evaluate this limit as
+<script type="math/tex; mode=display"> \begin{align*} 
+\lim_{(u,v)\rightarrow (0,0)} ue^{-u^2} &= \lim_{u\rightarrow 0} ue^{-u^2}\\
+&= \lim_{u\rightarrow 0}\frac{u}{e^{u^2}}
+&= \answer{0}.
+\end{align*}</script>
+<!--l. 171--><p class="noindent" >Thus, we have <script type="math/tex">\lim _{(x,y)\rightarrow (0,0)} (x-y)e^{-(x-y)^2}=0</script>.
+</p><!--l. 173--><p class="noindent" ></div>
+</p><!--l. 175--><p class="noindent" >We can also change coordinates to help us show that certain limits do not
+exist.
+</p>
+<div class="theorem-like problem-environment example" id="problem8"><a 
+ id="x1-2004r8"></a>We will use polar coordinates to show that <script type="math/tex">\lim _{(x,y)\rightarrow (0,0)} \frac {xy}{x^2+y^2}</script> doesn’t exist. Changing to polar coordinates, we have
+<script type="math/tex; mode=display"> \begin{align*} 
+\lim_{(x,y)\rightarrow (0,0)} \frac{xy}{x^2+y^2} &= \lim_{r\rightarrow 0}\frac{r\cos\theta\cdot r\sin\theta}{r^2}\\
+&= \lim_{r\rightarrow 0}\cos\theta \sin\theta.\\
+\end{align*}</script>
+                                                                  
+
+                                                                  
+<!--l. 183--><p class="noindent" >If we take <script type="math/tex">\theta = 0</script>, this is equivalent to approaching the origin along the <script type="math/tex">x</script>-axis, and we have
+<script type="math/tex">\cos \theta \sin \theta = 0</script>.
+</p><!--l. 185--><p class="noindent" >If we take <script type="math/tex">\theta = \pi /4</script>, this is equivalent to approaching the origin along the line <script type="math/tex">y=x</script>, and we have
+<script type="math/tex">\cos \theta \sin \theta = \frac {1}{2}</script>.
+</p><!--l. 187--><p class="noindent" >Since we get different values approaching the origin along different paths, we see that
+<script type="math/tex">\lim _{(x,y)\rightarrow (0,0)} \frac {xy}{x^2+y^2}</script> does not exist.
+</p><!--l. 189--><p class="noindent" >Note that the change of coordinates here wasn’t absolutely necessary. We
+could have directly evaluated the limits approaching along the <script type="math/tex">x</script>-axis and
+along the line <script type="math/tex">y=x</script>, and seen that the limit does not exist. However, sometimes
+it’s easier to see that a limit doesn’t exist by attempting a change to polar
+coordinates, and finding that we end up with a limit that depends on the value of
+<script type="math/tex">\theta </script>.
+</div>
+</p><!--l. 192--><p class="noindent" >In all of the above cases, we considered limits approaching the origin. We can use
+similar techniques to evaluate limits approaching other points, often by translating
+coordinate systems.
+</p>
+<div class="theorem-like problem-environment example" id="problem9"><a 
+ id="x1-2005r9"></a>Consider the limit <script type="math/tex">\lim _{(x,y)\rightarrow (2,3)} (x-2)(y-3)</script>. Here, it’s convenient to use polar coordinates translated so they’re
+centered at the point <script type="math/tex">(2,3)</script>. That is, we let <script type="math/tex">x = 2+r\cos \theta </script> and <script type="math/tex">y=3+r\sin \theta </script>, so that <script type="math/tex">r=0</script> when <script type="math/tex">(x,y)=(2,3)</script>. Then we can evaluate our limit as
+<script type="math/tex; mode=display"> \begin{align*} 
+\lim_{(x,y)\rightarrow(2,3)} (x-2)(y-3) &= \lim_{r\rightarrow 0}(2+r\cos\theta-2)(3+r\sin\theta -3)\\
+&=\lim_{r\rightarrow 0}r\cos\theta\cdot r\sin\theta
+&= \lim_{r\rightarrow 0}r^2\cos\theta\sin\theta
+\end{align*}</script>
+<!--l. 201--><p class="noindent" >Notice that <script type="math/tex">-r^2\leq r^2\cos \theta \sin \theta \leq r^2</script>, and <script type="math/tex">\lim _{r\rightarrow 0}-r^2 = \lim _{r\rightarrow 0}r^2 = 0</script>. Then, by the squeeze theorem, <script type="math/tex">\lim _{r\rightarrow 0} r^2\cos \theta \sin \theta =0</script>. Thus, we have <script type="math/tex; mode=display"> \lim _{(x,y)\rightarrow (2,3)} (x-2)(y-3) = 0. </script>
+</div>
+</p><!--l. 207--><p class="noindent" >SHOULD THIS INCLUDE SOMETHING ABOUT THE REQUIREMENTS FOR A
+CHANGE OF COORDINATES?
+</body> 
+ 
+</html>
+                                                                  
+
+                                                                  
+                                                                  
+
+

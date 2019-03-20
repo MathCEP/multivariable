@@ -1,0 +1,90 @@
+<!doctype html> 
+<html lang="en"> 
+<head> <title>Geometric Interpretation of Partial
+Derivatives</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<!-- charset=utf-8,-css,html,htex4ht,xhtml --> 
+<meta name="src" content="partials_geo.tex" /> 
+<meta name="author" content="" /> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
+<meta name="ximera" content="version 0.0.1" /> 
+<link href="https://ximera.osu.edu/public/stylesheets/standalone.css" rel="stylesheet" media="screen"/> 
+<script type="text/javascript" async src="https://ximera.osu.edu/public/javascripts/standalone.min.js"></script> 
+</head><body> 
+<div class="preamble"><script type="math/tex">\newenvironment {prompt}{}{}
+\newcommand {\DeclareMathOperator }[2]{\@OldDeclareMathOperator {##1}{##2}\immediate \write \myfile {\unexpanded {\DeclareMathOperator }{\unexpanded {##1}}{\unexpanded {##2}}}}
+\newcommand {\ungraded }[0]{}
+\newcommand {\reserved@a }[2]{}
+\newcommand {\HyperFirstAtBeginDocument }[0]{\AtBeginDocument }
+\newcommand {\reserved@a }[1]{}
+\newcommand {\reserved@a }[2]{}
+\newcommand {\vnameref  }[1]{\unskip ~\nameref {##1}\@vpageref [\unskip ]{##1}}
+\newcommand {\ref  }[0]{\@ifstar \@refstar \T@ref }
+\newcommand {\pageref  }[0]{\@ifstar \@pagerefstar \T@pageref }
+\newcommand {\nameref  }[0]{\@ifstar \@namerefstar \T@nameref }
+\newcommand {\reserved@a }[2]{}
+\newcommand {\reserved@a }[0]{\AtBeginDocument }
+\newcommand {\reserved@a }[1]{}
+\newcommand {\reserved@a }[2]{}                                                                                                                                                 </script><script type="text/javascript"> 
+</script> 
+</div>
+<div 
+class="abstract" 
+>
+</div>   <div class="maketitle"></div>
+<!--l. 11--><p class="noindent" >We’ve defined the partial derivatives of a function as follows.
+</p>
+<div class="theorem-like problem-environment definition" id="problem1"><a 
+ id="x1-17r1"></a>Consider a function <script type="math/tex">f:\mathbb {R}^n\rightarrow \mathbb {R}</script>. For <script type="math/tex">1\leq i\leq n</script>, we define the <em>partial derivative of <script type="math/tex">f</script> with respect to <script type="math/tex">x_i</script></em> to be <script type="math/tex; mode=display"> f_{x_i}(x_1,...,x_n) = \lim _{h\rightarrow 0}\frac {f(x_1,...,x_{i-1}, x_i+h, x_{i+1},...,x_n)-f(x_1,...,x_n)}{h}, </script>
+provided this limit exists.
+</div>
+<!--l. 21--><p class="noindent" >In other words, if we treat all variables except for <script type="math/tex">x_i</script> as constants, and differentiate
+with respect to <script type="math/tex">x_i</script>, we get the partial derivative with respect to <script type="math/tex">x_i</script>.
+</p><!--l. 23--><p class="noindent" >When computing a partial derivative with respect to <script type="math/tex">x_i</script>, we’re looking at the
+instantaneous rate of change of <script type="math/tex">f</script> with respect to <script type="math/tex">x_i</script>, if we keep the rest of the variables
+constant. Roughly speaking, we’re asking: how does increasing <script type="math/tex">x_i</script> a tiny bit affect the
+value of <script type="math/tex">f</script>?
+</p><!--l. 25--><p class="noindent" >We can see the partial derivatives reflected in the shape of the graph of <script type="math/tex">f</script>.
+So that we can visualize the graph of <script type="math/tex">f</script>, we’ll focus on a function <script type="math/tex">f:\mathbb {R}^2\rightarrow \mathbb {R}</script>, so we’re
+considering the partial derivative of <script type="math/tex">f</script> with respect to <script type="math/tex">x</script>, and with respect to
+<script type="math/tex">y</script>.
+</p><!--l. 27--><p class="noindent" >Suppose at the point <script type="math/tex">(1,2)</script>, we have that <script type="math/tex">f_x(1,2)>0</script> and <script type="math/tex">f_y(1,2)>0</script>. Then, around the point <script type="math/tex">(1,2)</script>, if we move
+a tiny amount in the positive <script type="math/tex">x</script> direction, the value of <script type="math/tex">f</script> will increase. If we
+move a tiny amount in the positive <script type="math/tex">y</script> direction, the value of <script type="math/tex">f</script> will increase as
+well.
+</p><!--l. 29--><p class="noindent" >INTERACTIVE
+</p><!--l. 31--><p class="noindent" >Similarly, suppose at the point <script type="math/tex">(1,2)</script>, we have that <script type="math/tex">f_x(1,2)<0</script> and <script type="math/tex">f_y(1,2)<0</script>. Then, around the point <script type="math/tex">(1,2)</script>, if we
+move a tiny amount in the positive <script type="math/tex">x</script> direction, the value of <script type="math/tex">f</script> will decrease. If we
+move a tiny amount in the positive <script type="math/tex">y</script> direction, the value of <script type="math/tex">f</script> will decrease as
+well.
+                                                                  
+
+                                                                  
+</p><!--l. 33--><p class="noindent" >INTERACTIVE
+</p><!--l. 35--><p class="noindent" >Now, let’s consider the case where <script type="math/tex">f_x(1,2)>0</script> and <script type="math/tex">f_y(1,2)<0</script>. Then, around the point <script type="math/tex">(1,2)</script>, if we
+move a tiny amount in the positive <script type="math/tex">x</script> direction, the value of <script type="math/tex">f</script> will increase.
+But, if we move a tiny amount in the positive <script type="math/tex">y</script> direction, the value of <script type="math/tex">f</script> will
+decrease.
+</p><!--l. 37--><p class="noindent" >INTERACTIVE
+</p><!--l. 39--><p class="noindent" >Next, let’s suppose that <script type="math/tex">f_x(1,2)>0</script> and <script type="math/tex">f_y(1,2) =0</script>. As expected, <script type="math/tex">f</script> increases as we move a tiny
+amount in the positive <script type="math/tex">x</script> direction. On the other hand, the graph of <script type="math/tex">f</script> has
+flattened out as we move in the <script type="math/tex">y</script> direction. However, this doesn’t mean that
+it’s constant! It’s just the instantaneous rate of change that’s <script type="math/tex">0</script> at that one
+point.
+</p><!--l. 41--><p class="noindent" >INTERACTIVE
+</p><!--l. 43--><p class="noindent" >Now, let’s look at a case where <script type="math/tex">f_x(1,2)=0</script> and <script type="math/tex">f_y(1,2)=0</script>. As before, this does not mean that <script type="math/tex">f</script> is constant.
+This just means that the rates of change are both instantaneously <script type="math/tex">0</script>. Points
+with this property will be important later in the course, when we study
+optimization.
+</p><!--l. 45--><p class="noindent" >INTERACTIVE
+</body> 
+ 
+</html>
+                                                                  
+
+                                                                  
+                                                                  
+
+
