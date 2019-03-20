@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=latex 2018.4.16)  19 MAR 2019 21:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=latex 2018.4.16)  20 MAR 2019 09:32
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -12,10 +12,10 @@ documentstyle\def\documentstyle{\let\documentstyle\HCode\expandafter\def\csname
 .b.c.\input  multivariable.tex
 (./multivariable.tex
 (/Users/Melissa/Library/texmf/tex/latex/ximeraLatex/xourse.cls
-Document Class: xourse 2018/10/17 v1.00 Combining Ximera activities into Xourse
+Document Class: xourse 2018/10/28 v1.00 Combining Ximera activities into Xourse
 s
 (/Users/Melissa/Library/texmf/tex/latex/ximeraLatex/ximera.cls
-Document Class: ximera 2018/10/17 v1.00 Simultaneously write print and online i
+Document Class: ximera 2018/10/28 v1.00 Simultaneously write print and online i
 nteractive materials
 
 '::.   .::' ::  :::::     :::::  .:::::::::::::::::::.    ::: 
@@ -195,7 +195,8 @@ File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
 Driver file for pgf: pgfsys-tex4ht.def
 
-(/Users/Melissa/Library/texmf/tex/latex/ximeraLatex/pgfsys-tex4ht.def
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-tex4ht.d
+ef
 File: pgfsys-tex4ht.def 2013/08/06  (rcs-revision 1.25)
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-s
@@ -360,6 +361,751 @@ File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 (/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
 -0-65.sty
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:190: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.190   \pgfusepathqfill}
+                         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:190: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.190   \pgfusepathqfill}
+                         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:190: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.190   \pgfusepathqfill}
+                         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:190: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.190   \pgfusepathqfill}
+                         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:190: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.190   \pgfusepathqfill}
+                         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:209: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.209   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:209: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.209   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:209: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.209   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:209: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.209   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:209: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.209   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:209: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.209   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:209: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.209   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:209: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.209   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:209: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.209   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:209: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.209   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:209: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.209   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:209: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.209   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:209: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.209   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:214: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.214   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:214: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.214   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:214: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.214   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:214: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.214   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:214: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.214   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:214: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.214   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:214: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.214   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:221: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.221   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:221: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.221   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:221: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.221   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:221: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.221   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:221: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.221   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:221: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.221   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:221: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.221   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:226: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.226   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:226: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.226   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:226: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.226   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:226: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.226   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:226: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.226   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:226: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.226   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:226: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.226   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:232: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.232   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:232: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.232   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:232: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.232   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:232: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.232   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:232: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.232   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:232: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.232   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:232: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.232   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:237: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.237   \pgfusepathqfillstroke}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:237: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.237   \pgfusepathqfillstroke}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:237: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.237   \pgfusepathqfillstroke}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:237: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.237   \pgfusepathqfillstroke}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:237: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.237   \pgfusepathqfillstroke}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:237: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.237   \pgfusepathqfillstroke}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:237: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.237   \pgfusepathqfillstroke}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:237: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.237   \pgfusepathqfillstroke}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:237: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.237   \pgfusepathqfillstroke}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:245: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.245   \pgfusepathqfillstroke}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:245: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.245   \pgfusepathqfillstroke}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:245: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.245   \pgfusepathqfillstroke}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:245: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.245   \pgfusepathqfillstroke}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:245: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.245   \pgfusepathqfillstroke}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:245: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.245   \pgfusepathqfillstroke}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:245: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.245   \pgfusepathqfillstroke}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 \pgf@nodesepstart=\dimen151
 \pgf@nodesepend=\dimen152
 )
@@ -1685,8 +2431,8 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 80.
  ) 
 Here is how much of TeX's memory you used:
  34853 strings out of 492650
- 772629 string characters out of 6129648
- 1099043 words of memory out of 5000000
+ 772653 string characters out of 6129648
+ 1098981 words of memory out of 5000000
  37981 multiletter control sequences out of 15000+600000
  3834 words of font info for 16 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
