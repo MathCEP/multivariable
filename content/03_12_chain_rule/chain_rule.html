@@ -1,0 +1,106 @@
+<!doctype html> 
+<html lang="en"> 
+<head> <title>Chain Rule</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<!-- charset=utf-8,-css,html,htex4ht,xhtml --> 
+<meta name="src" content="chain_rule.tex" /> 
+<meta name="author" content="" /> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
+<meta name="ximera" content="version 0.0.1" /> 
+<link href="https://ximera.osu.edu/public/stylesheets/standalone.css" rel="stylesheet" media="screen"/> 
+<script type="text/javascript" async src="https://ximera.osu.edu/public/javascripts/standalone.min.js"></script> 
+</head><body> 
+<div class="preamble"><script type="math/tex">\newenvironment {prompt}{}{}
+\newcommand {\DeclareMathOperator }[2]{\@OldDeclareMathOperator {##1}{##2}\immediate \write \myfile {\unexpanded {\DeclareMathOperator }{\unexpanded {##1}}{\unexpanded {##2}}}}
+\newcommand {\ungraded }[0]{}
+\newcommand {\reserved@a }[2]{}
+\newcommand {\HyperFirstAtBeginDocument }[0]{\AtBeginDocument }
+\newcommand {\reserved@a }[1]{}
+\newcommand {\reserved@a }[2]{}
+\newcommand {\vnameref  }[1]{\unskip ~\nameref {##1}\@vpageref [\unskip ]{##1}}
+\newcommand {\ref  }[0]{\@ifstar \@refstar \T@ref }
+\newcommand {\pageref  }[0]{\@ifstar \@pagerefstar \T@pageref }
+\newcommand {\nameref  }[0]{\@ifstar \@namerefstar \T@nameref }
+\newcommand {\reserved@a }[2]{}
+\newcommand {\reserved@a }[0]{\AtBeginDocument }
+\newcommand {\reserved@a }[1]{}
+\newcommand {\reserved@a }[2]{}                                                                                                                                                 </script><script type="text/javascript"> 
+</script> 
+</div>
+<div 
+class="abstract" 
+>
+</div>   <div class="maketitle"></div>
+<!--l. 11--><p class="noindent" >In this activity, we introduce the multi-variable chain rule, and we use it to compute
+derivatives of compositions of functions.
+</p>
+<h3 class="sectionHead"><a 
+ id="x1-1000"></a>The Chain Rule</h3>
+<!--l. 15--><p class="noindent" >Let’s begin by recalling the chain rule from single variable calculus. If we have
+differentiable functions <script type="math/tex">f</script> and <script type="math/tex">g</script>, then we can compute the derivative of the composition
+as <script type="math/tex">(f\circ g)'(x) =f'(g(x))g'(x)</script>.
+</p>
+<div class="theorem-like problem-environment example" id="problem1"><a 
+ id="x1-1001r1"></a>Let <script type="math/tex">f(x) = \sin (x)</script> and <script type="math/tex">g(x) = x^2</script>. Then <script type="math/tex">f'(x) = \cos (x)</script>, <script type="math/tex">g'(x)=2x</script>, and we can differentiate the composition <script type="math/tex">(f\circ g)(x) = \sin (x^2)</script> using the chain rule:
+<script type="math/tex; mode=display"> \begin{align*} 
+(f\circ g)'(x) &= f'(g(x))g'(x)\\
+&=\cos(g(x))\cdot 2x\\
+&=\cos(x^2)\cdot 2x.
+\end{align*}</script>
+<!--l. 24--><p class="noindent" >We can also use the chain rule to differentiate the composition <script type="math/tex">(g\circ f)(x) = \sin ^2(x)</script>.
+</p><script type="math/tex; mode=display"> \begin{align*} 
+(g\circ f)'(x) &= g'(f(x))f'(x)\\
+&=2(f(x))\cos(x)\\
+&=2\sin(x)\cos(x)
+\end{align*}</script>
+<!--l. 30--><p class="noindent" ></div>
+                                                                  
+
+                                                                  
+</p><!--l. 32--><p class="noindent" >The multi-variable chain rule is similar, with the derivative matrix taking the place of
+the single variable derivative, so that the chain rule will involve matrix multiplication.
+We also need to pay extra attention to whether the composition of functions is even
+defined.
+</p>
+<div class="theorem-like problem-environment theorem" id="problem2"><a 
+ id="x1-1002r2"></a>Suppose <script type="math/tex">\mathbf {f}:Y\subset \mathbb {R}^p\rightarrow \mathbb {R}^n</script> and <script type="math/tex">\mathbf {g}:X\subset \mathbb {R}^m\rightarrow \mathbb {R}^p</script> are defined on open sets <script type="math/tex">Y\subset \mathbb {R}^p</script> and <script type="math/tex">X\subset \mathbb {R}^m</script>, respectively. Suppose that <script type="math/tex">\mathbf {g}(X)\subset Y</script>, so the
+image of <script type="math/tex">\mathbf {g}</script> is contained in the domain of <script type="math/tex">\mathbf {f}</script>. Suppose further that <script type="math/tex">\mathbf {g}</script> is differentiable at
+some point <script type="math/tex">\mathbf {x}_0\in X</script>, and that <script type="math/tex">\mathbf {f}</script> is differentiable at <script type="math/tex">\mathbf {y}_0=\mathbf {g}(\mathbf {x}_0)\in Y</script>.
+<!--l. 37--><p class="noindent" >Then the composition <script type="math/tex">\mathbf {f}\circ \mathbf {g}</script> is differentiable at <script type="math/tex">\mathbf {x}_0</script>, and
+</p><script type="math/tex; mode=display"> \begin{align*} 
+ D(\mathbf{f}\circ\mathbf{g})(\mathbf{x}_0) &= D\mathbf{f}(\mathbf{y}_0)D\mathbf{g}(\mathbf{x}_0)\\
+ &= D\mathbf{f}(\mathbf{g}(\mathbf{x}_0))D\mathbf{g}(\mathbf{x}_0).
+ \end{align*}</script>
+<!--l. 42--><p class="noindent" ></div>
+</p><!--l. 44--><p class="noindent" >Although the conditions sound complicated, essentially they’re just requiring that all
+of the derivatives mentioned actually exist. Note the similarities to the single variable
+chain rule.
+</p><!--l. 46--><p class="noindent" >
+</p>
+<div class="proof">
+<!--l. 47--><p class="noindent" ><span class="head">
+</p><dl class="trivlist"><dt class="trivlist">
+Proof   </dt><dd 
+class="trivlist"></span>super great proof of chain rule                                                   <script type="math/tex">\blacksquare </script></dd></dl>
+</div>
+<h3 class="sectionHead"><a 
+ id="x1-2000"></a>A Special Case</h3>
+<!--l. 52--><p class="noindent" >R -¿ Rn -¿ R
+</p>
+<h3 class="sectionHead"><a 
+ id="x1-3000"></a>Examples</h3>
+<!--l. 57--><p class="noindent" >Examples of using the chain rule, including polar coords conversion.
+</p>
+<h3 class="sectionHead"><a 
+ id="x1-4000"></a>Conclusion</h3>
+</body> 
+ 
+</html>
+                                                                  
+
+                                                                  
+                                                                  
+
+

@@ -1,0 +1,155 @@
+\documentclass{ximera}
+
+\graphicspath{{./graphics/}}
+
+\title{Differentiation Properties}
+\begin{document}
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+In this activity, we explore some of the properties of differentiation. This include how derivatives interact with addition and scalar multiplication, as well as product and quotient rules for scalar valued functions.
+
+\section*{Linearity of the derivative}
+
+As you may recall from single variable calculus, ``the derivative of the sum is the sum of the derivatives.'' That is, if we have differentiable functions $f(x)$ and $g(x)$, we compute the derivative of the sum $f(x)+g(x)$ by taking the sum of the derivatives $f'(x)$ and $g'(x)$. For example,
+\begin{align*}
+\frac{d}{dx}\left(\sin(x)+x^2\right) &= \frac{d}{dx}\left(\sin(x)\right) + \frac{d}{dx}\left(x^2\right)\\
+&= \cos(x)+2x.
+\end{align*}
+
+An analogous result holds in multivariable calculus, for the derivative matrix.
+
+\begin{proposition}
+Suppose $\mathbf{f}:X\subset \mathbb{R}^n\rightarrow \mathbb{R}^m$ and $\mathbf{g}:Y\subset\mathbb{R}^n\rightarrow\mathbb{R}^m$ are differentiable functions on subsets $X$ and $Y$ of $\mathbb{R}^n$, respectively. Then $\mathbf{f}+\mathbf{g}$ is differentiable on $X\cap Y$, and $D(\mathbf{f}+\mathbf{g})=D\mathbf{f}+D\mathbf{g}$ on $X\cap Y$.
+\end{proposition}
+
+\begin{proof}
+We will begin by showing that $D(\mathbf{f}+\mathbf{g}) = D\mathbf{f}+D\mathbf{g}$ on $X\cap Y$. Since $X\cap Y$ is contained in the domains of both $\mathbf{f}$ and $\mathbf{g}$, $D\mathbf{f}$ and $D\mathbf{g}$ both exist on $X\cap Y$.
+
+Write $\mathbf{f}(\mathbf{x}) = (f_1(\mathbf{x}),...,f_m(\mathbf{x}))$ and $\mathbf{g}(\mathbf{x}) = (g_1(\mathbf{x}),...,g_m(\mathbf{x}))$ in terms of their component functions. Then, we have
+\begin{align*}
+(\mathbf{f}+\mathbf{g})(\mathbf{x}) &= \mathbf{f}(\mathbf{x})+\mathbf{g}(\mathbf{x})\\
+&= (f_1(\mathbf{x}),...,f_m(\mathbf{x})) + (g_1(\mathbf{x}),...,g_m(\mathbf{x}))\\
+&= (f_1(\mathbf{x})+g_1(\mathbf{x}),...,f_m(\mathbf{x})+g_m(\mathbf{x}))\\
+&= ((f_1+g_1)(\mathbf{x}),...,(f_m+g_m)(\mathbf{x})),
+\end{align*}
+giving us the component functions of $\mathbf{f}+\mathbf{g}$.
+
+Using the component functions found above, we take the derivative matrix of $\mathbf{f}+\mathbf{g}$, using the linearity of partial derivatives.
+\begin{align*}
+D(\mathbf{f}+\mathbf{g}) &=\left(\begin{array}{cccc}
+\frac{\partial (f_1+g_1)}{\partial x_1} & \frac{\partial (f_1+g_1)}{\partial x_2} & \cdots &\frac{\partial (f_1+g_1)}{\partial x_n}\\
+ \frac{\partial (f_2+g_2)}{\partial x_1} & \frac{\partial (f_2+g_2)}{\partial x_2} & \cdots &\frac{\partial (f_2+g_2)}{\partial x_n}\\
+ \vdots & \vdots && \vdots\\
+ \frac{\partial (f_m+g_m)}{\partial x_1} & \frac{\partial (f_m+g_m)}{\partial x_2} & \cdots &\frac{\partial (f_m+g_m)}{\partial x_n}\\
+\end{array}\right)\\
+&=\left(\begin{array}{cccc}
+\frac{\partial f_1}{\partial x_1}+\frac{\partial g_1}{\partial x_1} & \frac{\partial f_1}{\partial x_2}+\frac{\partial g_1}{\partial x_2} & \cdots &\frac{\partial f_1}{\partial x_n}+\frac{\partial g_1}{\partial x_n}\\
+\frac{\partial f_2}{\partial x_1}+\frac{\partial g_2}{\partial x_1} & \frac{\partial f_2}{\partial x_2}+\frac{\partial g_2}{\partial x_2} & \cdots &\frac{\partial f_2}{\partial x_n}+\frac{\partial g_2}{\partial x_n}\\
+ \vdots & \vdots && \vdots\\
+\frac{\partial f_m}{\partial x_1}+\frac{\partial g_m}{\partial x_1} & \frac{\partial f_m}{\partial x_2}+\frac{\partial g_m}{\partial x_2} & \cdots &\frac{\partial f_m}{\partial x_n}+\frac{\partial g_m}{\partial x_n}\\
+\end{array}\right)\\
+&=\left(\begin{array}{cccc}
+\frac{\partial f_1}{\partial x_1} & \frac{\partial f_1}{\partial x_2} & \cdots &\frac{\partial f_1}{\partial x_n}\\
+\frac{\partial f_2}{\partial x_1} & \frac{\partial f_2}{\partial x_2} & \cdots &\frac{\partial f_2}{\partial x_n}\\
+ \vdots & \vdots && \vdots\\
+\frac{\partial f_m}{\partial x_1} & \frac{\partial f_m}{\partial x_2} & \cdots &\frac{\partial f_m}{\partial x_n}\\
+\end{array}\right)
++\left(\begin{array}{cccc}
+\frac{\partial g_1}{\partial x_1} & \frac{\partial g_1}{\partial x_2} & \cdots &\frac{\partial g_1}{\partial x_n}\\
+\frac{\partial g_2}{\partial x_1} & \frac{\partial g_2}{\partial x_2} & \cdots &\frac{\partial g_2}{\partial x_n}\\
+ \vdots & \vdots && \vdots\\
+\frac{\partial g_m}{\partial x_1} & \frac{\partial g_m}{\partial x_2} & \cdots &\frac{\partial g_m}{\partial x_n}\\
+\end{array}\right)\\
+&= D\mathbf{f}+D\mathbf{g}.
+\end{align*}
+
+Thus, we have $D(\mathbf{f}+\mathbf{g}) = D\mathbf{f}+D\mathbf{g}$ on $X\cap Y$.
+
+Next, we need to show that $\mathbf{f}+\mathbf{g}$ is differentiable on $X\cap Y$. In order to show this, we will show that the following limit evaluates to $0$, for $\mathbf{a}\in X\cap Y$. This is done by separating the $\mathbf{f}$ and $\mathbf{g}$ terms, using the triangle inequality, and using the fact that $\mathbf{f}$ and $\mathbf{g}$ are both differentiable on $X\cap Y$.
+
+\begin{align*}
+\lim_{\mathbf{x}\rightarrow\mathbf{a}}&\frac{\|(\mathbf{f}+\mathbf{g})(\mathbf{x}) - ((\mathbf{f}+\mathbf{g})(\mathbf{a})+D(\mathbf{f}+\mathbf{g})(\mathbf{a})(\mathbf{x}-\mathbf{a})\|}{\|\mathbf{x}-\mathbf{a}\|}\\
+&= \lim_{\mathbf{x}\rightarrow\mathbf{a}}\frac{\|\mathbf{f}(\mathbf{x})+\mathbf{g}(\mathbf{x}) - \mathbf{f}(\mathbf{a})-\mathbf{g}(\mathbf{a})-(D\mathbf{f}(\mathbf{a})+D\mathbf{g}(\mathbf{a}))(\mathbf{x}-\mathbf{a})\|}{\|\mathbf{x}-\mathbf{a}\|}\\
+&= \lim_{\mathbf{x}\rightarrow\mathbf{a}}\frac{\|\mathbf{f}(\mathbf{x})+\mathbf{g}(\mathbf{x}) - \mathbf{f}(\mathbf{a})-\mathbf{g}(\mathbf{a})-D\mathbf{f}(\mathbf{a})(\mathbf{x}-\mathbf{a})-D\mathbf{g}(\mathbf{a})(\mathbf{x}-\mathbf{a})\|}{\|\mathbf{x}-\mathbf{a}\|}\\
+&= \lim_{\mathbf{x}\rightarrow\mathbf{a}}\frac{\|\mathbf{f}(\mathbf{x}) - \mathbf{f}(\mathbf{a})-D\mathbf{f}(\mathbf{a})(\mathbf{x}-\mathbf{a})+\mathbf{g}(\mathbf{x}) - \mathbf{g}(\mathbf{a})-D\mathbf{g}(\mathbf{a})(\mathbf{x}-\mathbf{a})\|}{\|\mathbf{x}-\mathbf{a}\|}\\
+&\leq \lim_{\mathbf{x}\rightarrow\mathbf{a}}\frac{\|\mathbf{f}(\mathbf{x}) - \mathbf{f}(\mathbf{a})-D\mathbf{f}(\mathbf{a})(\mathbf{x}-\mathbf{a})\|+\|\mathbf{g}(\mathbf{x}) - \mathbf{g}(\mathbf{a})-D\mathbf{g}(\mathbf{a})(\mathbf{x}-\mathbf{a})\|}{\|\mathbf{x}-\mathbf{a}\|}\\
+&\leq \lim_{\mathbf{x}\rightarrow\mathbf{a}}\frac{\|\mathbf{f}(\mathbf{x}) - \mathbf{f}(\mathbf{a})-D\mathbf{f}(\mathbf{a})(\mathbf{x}-\mathbf{a})\|}{\|\mathbf{x}-\mathbf{a}\|}+\lim_{\mathbf{x}\rightarrow\mathbf{a}}\frac{\|\mathbf{g}(\mathbf{x}) - \mathbf{g}(\mathbf{a})-D\mathbf{g}(\mathbf{a})(\mathbf{x}-\mathbf{a})\|}{\|\mathbf{x}-\mathbf{a}\|}\\
+&= \lim_{\mathbf{x}\rightarrow\mathbf{a}}\frac{\|\mathbf{f}(\mathbf{x}) - (\mathbf{f}(\mathbf{a})+D\mathbf{f}(\mathbf{a})(\mathbf{x}-\mathbf{a}))\|}{\|\mathbf{x}-\mathbf{a}\|}+\lim_{\mathbf{x}\rightarrow\mathbf{a}}\frac{\|\mathbf{g}(\mathbf{x}) - (\mathbf{g}(\mathbf{a})+D\mathbf{g}(\mathbf{a})(\mathbf{x}-\mathbf{a}))\|}{\|\mathbf{x}-\mathbf{a}\|}\\
+&= 0 + 0\\
+&= 0
+\end{align*}
+
+\end{proof}
+
+You may also recall the constant multiple rule from single variable calculus. For example,
+\begin{align*}
+\frac{d}{dx}(4x^2) &= 4\left(\frac{d}{dx}(x^2)\right)\\
+&= 4(2x)\\
+&=8x.
+\end{align*}
+
+We have an analogous result in multivariable calculus.
+
+\begin{proposition}
+Suppose $\mathbf{f}:X\subset \mathbb{R}^n\rightarrow \mathbb{R}^m$is a differentiable function on a subset $X$ of $\mathbb{R}^n$, and let $k$ be any constant. Then $k\mathbf{f}$ is also differentiable on $X$, and $D(k\mathbf{f})=kD\mathbf{f}$ on $X$.
+\end{proposition}
+
+The proof of this proposition is somewhat similar to the previous theorem, and it is left as an exercise.
+
+Although these are important results, they actually aren't particularly useful for computing derivative matrices. In practice, you'd compute the derivative matrix of a sum of functions by first adding the components, then differentiating. We include an example to demonstrate this.
+
+\begin{example}
+Consider the functions $\mathbf{f},\mathbf{g}:\mathbb{R}^2\rightarrow\mathbb{R}^2$ given by $\mathbf{f}(x,y) = (x^2, xy)$ and $\mathbf{g}(x,y) = (xy^2, y)$.
+
+We will compute the derivative matrix $D(\mathbf{f}+\mathbf{g})$ in two ways: first directly, and then by using the sum rule proved above.
+
+The function $\mathbf{f}+\mathbf{g}$ is given by
+\[
+(\mathbf{f}+\mathbf{g})(x,y) = \answer{(x^2+xy^2, xy+y)}.
+\]
+We can then compute the derivative matrix $D(\mathbf{f}+mathbf{g})$ directly as 
+\[
+D(\mathbf{f}+\mathbf{g})=\left(\begin{array}{cc} \answer{2x+y^2} & \answer{2xy}\\\answer{y} & \answer{x+1}\end{array}\right).
+\]
+
+We will now use our multivariable sum rule.
+We have
+\[
+D\mathbf{f}(x,y) = \left(\begin{array}{cc} \answer{2x} & \answer{0}\\\answer{y} & \answer{x}\end{array}\right),
+\]
+and 
+\[
+D\mathbf{g}(x,y) = \left(\begin{array}{cc} \answer{y^2} & \answer{2xy}\\\answer{0} & \answer{1}\end{array}\right).
+\]
+Adding these matrices, we then have that
+\begin{align*}
+D(\mathbf{f}+\mathbf{g})(x,y) &= D\mathbf{f}(x,y)+D\mathbf{g}(x,y)\\
+&= \left(\begin{array}{cc} \answer{2x+y^2} & \answer{2xy}\\\answer{y} & \answer{x+1}\end{array}\right).
+\end{align*}
+
+We get the correct answer using either method, but using the sum rule doesn't seem to provide much (if any) of a computational advantage over computing the derivative matrix directly. Nonetheless, it is mathematically important that the derivative seems to ``distribute'' over addition.
+\end{example}
+
+\section*{Product and Quotient laws}
+
+We will now try to find multi-variable analogs to the product and quotient rules from single variable calculus. Let's start by considering when these rules might make sense.
+
+Suppose we have functions $\mathbf{f}(x,y) = (x^2,xy)$ and $\mathbf{g}(x,y) = (xy^2, y)$. If we wanted to define the product of these functions, what would that mean? The outputs of $\mathbf{f}$ and $\mathbf{g}$ are vectors, so we'd be trying to multiply two vectors - but there isn't really a clear multiplication on vectors,! We could try multiplying component-wise, taking the dot product, or taking the cross product, and in different settings, these all might be reasonable things to do. We could work on finding product rules for all of the different ways we could ``multiply'' two vectors (these can be found in the exercises), but we'll save some time, and focus on a case where we do have one clear choice for multiplication: \emph{scalar-valued functions}.
+
+\begin{proposition}
+Suppose $\mathbf{f}:X\subset \mathbb{R}^n\rightarrow \mathbb{R}$ and $\mathbf{g}:Y\subset\mathbb{R}^n\rightarrow\mathbb{R}$ are differentiable scalar-valued functions on subsets $X$ and $Y$ of $\mathbb{R}^n$, respectively. Then $fg$ is differentiable on $X\cap Y$, and \[D(fg)(\mathbf{a})=g(\mathbf{a})Df(\mathbf{a})+f(\mathbf{a})Dg(\mathbf{a})\] for $\mathbf{a}$ in $X\cap Y$.
+\end{proposition}
+
+Similarly, we have a multi-variable quotient rule for scalar valued functions.
+
+\begin{proposition}
+Suppose $\mathbf{f}:X\subset \mathbb{R}^n\rightarrow \mathbb{R}$ and $\mathbf{g}:Y\subset\mathbb{R}^n\rightarrow\mathbb{R}$ are differentiable scalar-valued functions on subsets $X$ and $Y$ of $\mathbb{R}^n$, respectively. Then $\frac{f}{g}$ is differentiable on $X\cap Y$, and \[D\left(\frac{f}{g}\right)(\mathbf{a})=\frac{g(\mathbf{a})Df(\mathbf{a})-f(\mathbf{a})Dg(\mathbf{a})}{(g(\mathbf{a}))^2}\] for $\mathbf{a}$ in $X\cap Y$.
+\end{proposition}
+
+We'll leave the proofs of these results as exercises, as they are similar to the single variable proofs.
+
+
+
+\end{document}

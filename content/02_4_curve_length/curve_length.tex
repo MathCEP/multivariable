@@ -1,0 +1,124 @@
+\documentclass{ximera}
+
+\graphicspath{{./graphics/}}
+
+\title{The Length of a Curve}
+\begin{document}
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+In this activity, we learn how to compute the length of a curve given a smooth parametrization.
+
+\section*{The Length of a Path}
+
+Suppose we have a path $\vec{x}:I\rightarrow\mathbb{R}^n$, where $I$ is the interval $[a,b]$, and suppose we want to find the length of the corresponding curve $C$.
+
+PICTURE
+
+We can approximate the curve with a lot of short line segments, and then compute the total length of the line segments to estimate the length of the curve.
+
+PICTURE
+
+One way that we can do this is by subdividing the interval $[a,b]$ into $n$ subintervals $[t_{i-1},t_i]$ of equal length, and then take the line segments connecting $\vec{x}(t_{i-1})$ and $\vec{x}(t_i)$.
+
+PICTURE
+
+As $n$ increases, our line segments get shorter and shorter, giving us a more accurate approximation of the length of the curve. If $\vec{x}$ is a smooth parametrization of $C$, when we take the limit as $n\rightarrow\infty$, we will find the exact length of the curve.
+
+PICTURE
+
+Let's use this idea to find a formula for the length of a curve parametrized by a smooth path $\vec{x}(t)$. The length of the segment connecting $\vec{x}(t_{i-1})$ and $\vec{x}(t_i)$ can be computed as $\|\vec{x}(t_i)-\vec{x}(t_{i-1})\|$, so we have that the length of the curve is
+\begin{align*}
+L(\vec{x}) &\approx \sum_{i=1}^n\|\vec{x}(t_i)-\vec{x}(t_{i-1})\|\\
+&=\sum_{i=1}^n\|\frac{\vec{x}(t_i)-\vec{x}(t_{i-1})}{\delta t}\|\delta t,
+\end{align*}
+where we both multiply and divide by $\delta t$, the length of each subinterval.
+
+As $n\rightarrow \infty$, the length of the subintervals, $\delta t$, goes to $0$, and $\frac{\vec{x}(t_i)-\vec{x}(t_{i-1})}{\delta t}$ goes to $\vec{x}'(t_i)$. This gives us
+\[
+L(\vec{x})=\lim_{n\rightarrow\infty}\sum_{i=1}^n \|\vec{x}'(t_i)\|\delta.
+\]
+Recognizing this as an integral, we arrive at
+\[
+L(\vec{x}) = \int_a^b\|\vec{x}'(t)\|dt.
+\]
+Although we started with the goal of finding the length of a \emph{curve}, however the result that we came up with could depend on the choice of parametrization $\vec{x}(t)$ of the curve. So, for now, we will use this idea to define the length of a path.
+
+\begin{definition}
+Let $\vec{x}:I\rightarrow\mathbb{R}^n$ be a $C^1$ path defined on the interval $I=[a,b]$. The \emph{length} of the path $\vec{x}$ is 
+\[
+L(\vec{x}) = \int_a^b\|\vec{x}'(t)\|dt.
+\]
+\end{definition} 
+
+In the next section, we will explore how the choice of the parametrization affects the computation of the length of the corresponding curve. For now, we'll compute the length of paths in a couple of examples.
+
+\begin{example}
+Consider the path $\vec{x}:[0,2\pi]\rightarrow\mathbb{R}^2$ defined by $\vec{x}(t) = (\cos(t),\sin(t))$.
+
+PICTURE
+
+We compute the length of this path.
+\begin{align*}
+L(\vec{x}) &= \int_a^b\|\vec{x}'(t)\|dt\\
+&= \int_{0}^{2\pi}\|(-\sin(t),\cos(t))\|dt\\
+&= \int_{0}^{2\pi} \sqrt{(-\sin(t))^2 + (\cos(t))^2}\;dt\\
+&= \int_{0}^{2\pi} \answer{1}dt\\
+& = \answer{2pi}
+\end{align*}
+Remembering that this is a parametrization for the unit circle, this matches with what we know to be the circumference of the circle.
+\end{example}
+
+\begin{example}
+Consider the path $\vec{x}:[0,3\pi]\rightarrow\mathbb{R}^3$ defined by $\vec{x}(t) = (\cos(t),\sin(t),t)$.
+
+PICTURE
+
+We compute the length of this path.
+\begin{align*}
+L(\vec{x}) &= \int_a^b\|\vec{x}'(t)\|dt\\
+&= \int_{0}^{3\pi} \|\answer{(-\sin(t),\cos(t),1)}\|dt\\
+&= \int_{0}^{3\pi} \answer{\sqrt{2}}dt\\
+&= \answer{3\sqrt{2}\pi}
+\end{align*}
+\end{example}
+
+Because of the square roots that appear when we take the magnitude of $\vec{x}'(t)$, arclength integrals for arbitrary curves are often messy to compute. However, in these cases, at least we can write down an integral representing the length of the curve, and perhaps use technology to either evaluate or approximate the integral.
+
+\section*{The Length of a Curve}
+
+In one of the previous examples, we found the length of the path $\vec{x}(t) = (\cos(t),\sin(t))$ for $t\in [0,2\pi]$. we found that $L(\vec{x}) = 2\pi$, matching what we know to be the circumference of the circle of radius $1$.
+
+PICTURE
+
+Let's see what happens when we take a different parametrization for the same curve, this time computing the length of $\vec{y}(t) = (\cos(t),\sin(t))$ for $t\in[0,4\pi]$. In this case, we get
+\begin{align*}
+L(\vec{x}) &= \int_a^b\|\vec{x}'(t)\|dt\\
+&= \int_{0}^{4\pi}\|(-\sin(t),\cos(t))\|dt\\
+&= \int_{0}^{4\pi} \sqrt{(-\sin(t))^2 + (\cos(t))^2}\;dt\\
+&= \int_{0}^{4\pi} 1\;dt\\
+& = \answer{4pi}.
+\end{align*}
+Although $\vec{y}$ is another $C^1$ parametrization of the unit circle, we get a different result for the length of the path!
+
+The issue here is that while $\vec{x}$ traces around the unit circle once, the path $\vec{y}$ traces around the unit circle twice. When we are computing $L(\vec{y})$, we are really computing the distance traced by the path $\vec{y}$, which is why we get twice the length of the actual curve.
+
+Because of this, if we want to compute the length of a curve, we need to be careful with our choice of parametrization, to make sure that we are only tracing over the curve once. 
+
+The proof of the following theorem is left as an exercise. A curve is \emph{simple} if it does not intersect itself.
+
+\begin{theorem}
+Let $\vec{x}(t)$, $a\leq t\leq b$, and $\vec{y}(s)$, $c\leq s\leq d$ be smooth and simple parametrizations of the same curve $C$. Then $L(\vec{x}) = L(\vec{y})$.
+
+In this case, we define the length of $C$ to be
+\[
+L(C) = L(\vec{x}) = L(\vec{y}).
+\]
+\end{theorem}
+
+We also might encounter a situation where we want to compute the length of a curve which is not $C^1$, but is piecewise $C^1$. In this case, we can compute the length of the curve by computing the lengths of the pieces, and adding them together.
+
+PICTURE
+
+\end{document}

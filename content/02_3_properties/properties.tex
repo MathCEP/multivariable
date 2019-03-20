@@ -1,0 +1,66 @@
+\documentclass{ximera}
+
+\graphicspath{{./graphics/}}
+
+\title{Properties of Velocity and Speed}
+\begin{document}
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+In this activity, we explore some important properties of the velocity and speed of a parametrized curve.
+
+\section*{Differentiation Laws}
+
+In single variable calculus, we used the product rule to differentiate products of functions. Although we can't take the product of two vectors in general, we do have the dot product and cross product, and we would like to understand how differentiation interacts with these products. Fortunately, they turn out to be very similar to the product rule from single variable calculus. 
+
+\begin{proposition}
+Consider paths $\vec{x}$ and $\vec{y}$ in $\mathbb{R}^n$. For $t$ such that $\vec{x}'(t)$ and $\vec{y}'(t)$ both exist, we have
+\[
+(\vec{x}\cdot\vec{y})'(t) = \vec{x}'(t)\cdot \vec{y}(t) + \vec{x}(t)\cdot \vec{y}'(t).
+\]
+If $n=3$, we also have
+\[
+(\vec{x}\times \vec{y})'(t) = \vec{x}'(t)\times \vec{y}(t) + \vec{x}(t)\times \vec{y}'(t).
+\]
+\end{proposition}
+
+\begin{proof}
+We prove this result for the dot product, and leave the proof for the cross product as an exercise.
+
+Suppose $t$ is such that both $\vec{x}'(t)$ and $\vec{y}'(t)$ exist, and write $\vec{x}(t) = (x_1(t),...,x_n(t))$ and $\vec{y}(t) = (y_1(t),...,y_n(t))$. Then we have
+\[
+(\vec{x}\cdot\vec{y})(t) = x_1(t)y_1(t) + \cdots + x_n(t)y_n(t).
+\]
+Using the single variable product rule and regrouping, we have
+\begin{align*}
+(\vec{x}\cdot\vec{y})'(t) & = \frac{d}{dt}\left(x_1(t)y_1(t) + \cdots + x_n(t)y_n(t)\right),\\
+& = x_1'(t) y_1(t) + x_1(t)y_1'(t) +\cdots+x_n'(t) y_n(t) + x_n(t)y_n'(t),\\
+& = \left(x_1'(t) y_1(t) + \cdots + x_n'(t) y_n(t)\right) + \left(x_1(t) y_1'(t) + \cdots + x_n(t) y_n'(t)\right).
+\end{align*}
+Notice that the left summand is $\vec{x}'(t)\cdot\vec{y}(t)$ and the right summand is $\vec{x}(t)\cdot\vec{y}'(t)$. Thus, we arrive at our result,
+\[
+(\vec{x}\cdot\vec{y})'(t) = \vec{x}'(t)\cdot \vec{y}(t) + \vec{x}(t)\cdot \vec{y}'(t).
+\]
+\end{proof}
+
+
+\section*{Constant Speed Path}
+
+To finish up our unit on parametrized paths, we consider the special case where a path is constant distance from the origin. In this case, the path $\vec{x}$ is always perpendicular to its derivative. This makes sense intuitively, if you imagine a particle on the path moving in the direction of its velocity vector. If the velocity vector $\vec{v}$ were not perpendicular to $\vec{x}$, a particle moving a tiny distance along the path would have to move either closer to the origin or farther from the origin.
+
+PICTURE
+
+\begin{proposition}
+If $\vec{x}(t)$ has constant length, then $\vec{x}(t)$ is perpendicular to $\vec{x}'(t)$, for all $t$ such that $\vec{x}'(t)$ is defined.
+\end{proposition}
+
+We leave the proof of this proposition as an exercise. It's helpful to think about how the dot product $\vec{x}(t)\cdot\vec{x}(t)$ relates to the length of $\vec{x}(t)$.
+
+
+
+\section*{Conclusion}
+
+In this activity, we explore some important properties of the velocity and speed of a parametrized curve.
+
+\end{document}

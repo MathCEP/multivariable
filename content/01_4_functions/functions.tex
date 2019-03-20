@@ -1,0 +1,155 @@
+\documentclass{ximera}
+\title{Functions}
+\begin{document}
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+In this activity, we cover the definition of a function. We also cover several important definitions and properties of functions, including domain, codomain, range, surjective and injective functions, and component functions.
+
+\section*{Definition of a Function}
+
+You've certainly seen many functions before. For example, you've worked with linear functions, such as
+\[
+f(x) = 3x+2,
+\]
+quadratic functions, such as
+\[
+h(t) = -4.9t^2 + 20t + 5,
+\]
+and more complicated functions such as
+\[
+g(x) = e^{5\sin(x^2)}+\ln \cot x.
+\]
+You've seen functions of more than one variable in the form of linear transformations, such as
+\begin{align*}
+&T:\mathbb{R}^2\rightarrow\mathbb{R}^3,\\
+&T(x,y) = \left(\begin{array}{cc}
+1 & 2\\
+0 & -1\\
+1 & 2
+\end{array}\right)
+\left(\begin{array}{c}
+x\\
+y
+\end{array}\right).
+\end{align*}
+
+Not surprisingly, in multivariable calculus, we'll be studying functions of more than one variable. Before starting to work with these functions, we now cover some of the fundamental definitions and properties related to functions in general, beginning with the definition of a function.
+
+\begin{definition}
+For sets $X$ and $Y$, a \emph{function} $f:X\rightarrow Y$ from $X$ to $Y$ assigns an element of $Y$ to each element of $X$.
+
+We call $X$ the \emph{domain} of $f$, and $Y$ the \emph{codomain} of $f$.
+\end{definition}
+
+VIDEO
+
+We commonly think of $X$ as giving the set of inputs to a function, and $Y$ as containing the outputs. Each input coming from the set $X$ has to have some corresponding output, but some elements of $Y$ might not actually occur as outputs of the function.
+
+\begin{problem}
+Which of the following are functions? Select All that apply.
+\begin{selectAll}
+\choice[correct]{$f:\mathbb{R}\rightarrow\mathbb{R}$ defined by $f(x) = x^2$}
+\choice[correct]{$f:\mathbb{R}^2\rightarrow\mathbb{R}$ defined by $f(a,b) = a-b$}
+\choice{$f:\mathbb{R}\rightarrow\mathbb{R}$ defined by $f(x) = \pm x$}
+\choice[correct]{$f:\mathbb{R}\rightarrow\mathbb{R}^2$ defined by $f(x) = (x,x)$}
+\end{selectAll}
+\end{problem}
+
+If we would like to refer to the elements in the codomain which actually do occur as outputs, we call this the range of $f$.
+
+\begin{definition}
+The \emph{range} of a function $f:X\rightarrow Y$ is the set of elements $y\in Y$ such that there is some $x\in X$ with $f(x) = y$. That is, there is some input $x$ that has $y$ as an output. In set notation, we write
+\[
+\textrm{Range }f = \{y\in Y\,:\, y = f(x) \textrm{ for some } x\in X\}.
+\]
+\end{definition}
+
+VIDEO
+
+\begin{problem}
+What is the range of the function $f:\mathbb{R}\rightarrow \mathbb{R}^2$ defined by $f(x) = (x,x)$?
+\begin{multipleChoice}
+\choice{$\mathbb{R}^2$}
+\choice{$\mathbb{R}$}
+\choice[correct]{$\{(a,b)\in\mathbb{R}^2\,:\,a=b\}$}
+\choice{$\{(a,b)\in\mathbb{R}^2\,:\,a=b\}$}
+\end{multipleChoice}
+\end{problem}
+
+Sometimes we work with functions that aren't defined on all of $\mathbb{R}^n$. When the domain of $f$ is a subset $D$ of $\mathbb{R}^n$, we write
+\[
+f:D\subset\mathbb{R}^n\rightarrow\mathbb{R}^m.
+\]
+When we're working with functions on subsets of $\mathbb{R}^n$, we'll frequently want to work with the largest possible set that the function is defined on. We call this the \emph{natural domain} of the function.
+
+\begin{problem}
+What is the natural domain of the function $f(x,y) = \dfrac{x}{x-y}$?
+\begin{multipleChoice}
+\choice{$\mathbb{R}^2$}
+\choice{$\mathbb{R}^2 \setminus \{(0,0)\}$}
+\choice{$\mathbb{R}^2\setminus\{(a,b)\,:\,a=0\textrm{ or }b=0\}$}
+\choice[correct]{$\mathbb{R}^2\setminus\{(x,y)\,:\,a=b\}$}
+\end{multipleChoice}
+\end{problem}
+
+\section*{Types of Functions}
+
+In some special situations, every element of $Y$ really does appear as an output of the function $f$. In this case, we say that $f$ is onto, or surjective.
+
+\begin{definition}
+A function $f:X\rightarrow Y$ is \emph{onto}, or \emph{surjective}, if for every element $y\in Y$, there is some $x\in X$ such that $f(x) = y$. We can also write this condition as 
+\[
+Y = \textrm{Range }f.
+\]
+\end{definition}
+
+VIDEO
+
+\begin{problem}
+Which of the following functions are onto? Select all that apply.
+\begin{selectAll}
+\choice{$f:\mathbb{R}\rightarrow\mathbb{R}$ defined by $f(x) = x^2$}
+\choice[correct]{$f:\mathbb{R}^2\rightarrow\mathbb{R}$ defined by $f(a,b) = a-b$}
+\choice{$f:\mathbb{R}\rightarrow\mathbb{R}^2$ defined by $f(x) = (x,x)$}
+\choice{$f:\mathbb{R}^2\rightarrow\mathbb{R}$ defined by $f(x,y) = x^2y^2$}
+\end{selectAll}
+\end{problem}
+
+Another important type of function is a one-to-one, or injective, function. For a one-to-one function, different inputs always go to different outputs.
+
+\begin{definition}
+A function $f:X\rightarrow Y$ is \emph{one-to-one}, or \emph{injective}, if whenever $f(x_1) = f(x_2)$ for $x_1,x_2\in X$, then we must have $x_1 = x_2$.
+
+Another way to say this is that whenever $x_1\neq x_2$, we have $f(x_1)\neq f(x_2)$.
+\end{definition}
+
+VIDEO
+
+\begin{problem}
+Which of the following functions are injective? Select all that apply.
+\begin{selectAll}
+\choice{$f:\mathbb{R}\rightarrow\mathbb{R}$ defined by $f(x) = x^2$}
+\choice{$f:\mathbb{R}^2\rightarrow\mathbb{R}$ defined by $f(a,b) = a-b$}
+\choice[correct]{$f:\mathbb{R}\rightarrow\mathbb{R}^2$ defined by $f(x) = (x,x)$}
+\choice{$f:\mathbb{R}^2\rightarrow\mathbb{R}$ defined by $f(x,y) = x^2y^2$}
+\end{selectAll}
+\end{problem}
+
+\section*{Component Functions}
+
+When we're trying to understand the behavior of a function $f:X\subset \mathbb{R}^n\rightarrow \mathbb{R}^m$, it can sometimes be helpful to split $\mathbb{R}^m$ into its components. From this, we get the component functions of $f$.
+
+\begin{definition}
+Let $f:X\subset \mathbb{R}^n\rightarrow \mathbb{R}^m$ be a function. The \emph{component functions} of $f$ are scalar-valued functions $f_i:X\subset\mathbb{R}^n\rightarrow\mathbb{R}$ for $1\leq i\leq m$ such that 
+\[
+f(\vec{x}) = (f_1(\vec{x}),f_2(\vec{x}),...,f_m(\vec{x})).
+\]
+\end{definition}
+
+\section*{Conclusion}
+
+We covered the definition of a function. We also covered several important definitions and properties of functions, including domain, codomain, range, surjective and injective functions, and component functions.
+
+\end{document}

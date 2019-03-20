@@ -1,0 +1,120 @@
+\documentclass{ximera}
+
+\graphicspath{{./graphics/}}
+
+\title{Continuity and Limits in General}
+\begin{document}
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+So far, we've seen how we can show that limits exist using a delta-epsilon proof, or by changing coordinates. In single variable calculus, we were often able to evaluate limits by direct substitution. For example, we could evaluate
+\begin{align*}
+\lim_{x\rightarrow 2} x^2+x\sin(\pi x) &= 2^2 + 2\sin(\pi \cdot 2)\\
+&= \answer{4}. 
+\end{align*}
+We are able to do this because the function $f(x) = x^2+x\sin(\pi x)$ is continuous. Recall that a function $f:\mathbb{R}\rightarrow \mathbb{R}$ is \emph{continuous} at $x=a$ if
+\[
+\lim_{x\rightarrow a}f(x) = f(a).
+\]
+For continuous functions, we can evaluate limits by simply plugging in the value.
+
+Once we define continuity for multivariable functions, and determine which functions are continuous, we can use similar methods to evaluate multivariable limits.
+
+\section*{Continuity}
+
+We define continuity similarly to how we did in single variable calculus.
+
+\begin{definition}
+A function $f:\mathbb{R}^n\rightarrow\mathbb{R}$ is \emph{continuous} at $\vec{x}=\vec{a}$ in $\mathbb{R}^n$ if
+\[
+\lim_{\vec{x}\rightarrow\vec{a}}f(\vec{x}) = f(\vec{a}).
+\]
+\end{definition}
+
+Also similar to single variable calculus, virtually all of the common functions that we work with are continuous on their domains. That is, anywhere that they're defined, they are continuous.
+
+\begin{theorem}
+The following functions are continuous on their domains:
+\begin{itemize}
+\item polynomials
+\item root functions
+\item rational functions
+\item trigonometric functions and inverse trigonometric functions
+\item exponential functions and logarithmic functions
+\end{itemize}
+\end{theorem}
+
+Furthermore, all of the ways that we'd like to combine continuous functions will result in another continuous function.
+
+\begin{theorem}
+If $f$ is continuous at $\vec{x}=\vec{a}$, and $k$ is a real number, then $kf$ is also continuous at $\vec{a}$.
+
+If $f$ and $g$ are continuous at $\vec{x}=\vec{a}\in\mathbb{R}^n$, then $f+g$ is also continuous at $\vec{a}$.
+
+If $f$ and $g$ are continuous at $\vec{x}=\vec{a}\in\mathbb{R}^n$, then $fg$ is also continuous at $\vec{a}$.
+
+If $g$ is continuous at $\vec{x}=\vec{a}$, and $f$ is continuous at $g(\vec{a})$, then $f\circ g$ is continuous at $\vec{a}$.
+\end{theorem}
+
+\begin{example}
+Which of the following functions is continuous at $(0,0)$? Select all that apply.
+\begin{selectAll}
+\choice[correct]{$f(x,y) = 3x^3+2xy^2+x+1$}
+\choice[correct]{$g(x,y) = \sin(x)\cos(x)$}
+\choice[correct]{$h(x,y) = \frac{x^2+y^2+1}{x+y+1}$}
+\choice{$i(x,y) = \frac{x^2y}{x^2+y^2}$}
+\choice[correct]{$j(x,y) = \tan(xy)$}
+\choice[correct]{$k(x,y) = e^{\sin(x+y)}$}
+\choice{$l(x,y) = \ln(x^2+y^2)$}
+\choice[correct]{$m(x,y) = \frac{1}{\ln(x^2+y^2+2)}$}
+\end{selectAll}
+\end{example}
+
+\begin{example}
+Evaluate the following limits, or enter ``DNE'' if they do not exist.
+\begin{align*}
+\lim_{(x,y)\rightarrow(0,0)}3x^3+2xy^2+x+1& = \answer{1}\\
+\lim_{(x,y)\rightarrow(0,0)} \sin(x)\cos(x) &= \answer{0}\\
+\lim_{(x,y)\rightarrow(0,0)}\frac{x^2+y^2+1}{x+y+1} &= \answer{1}\\
+\lim_{(x,y)\rightarrow(0,0)} \frac{x^2y}{x^2+y^2} &= \answer{0}\\
+\lim_{(x,y)\rightarrow(0,0)}\tan(xy) &= \answer{0}\\
+\lim_{(x,y)\rightarrow(0,0)}e^{\sin(x+y)} &= \answer{1}\\
+\lim_{(x,y)\rightarrow(0,0)}\ln(x^2+y^2) &= \answer{DNE}\\
+\lim_{(x,y)\rightarrow(0,0)}\frac{1}{\ln(x^2+y^2+2)} &= \answer{1/\ln(2)}
+\end{align*}
+Note that even if a function is discontinuous at a point, it's still possible that the limit exists. In this case, you'll need to use a change of coordinates or other method to evaluate the limit.
+\end{example}
+
+\section*{Limits in General}
+
+So far, we've defined limits of scalar-valued functions, $\mathbb{R}^n\rightarrow\mathbb{R}$. We've seen how we can evaluate these limits, or show that they do not exist. However, we've yet to deal with more general multivariable functions, $\mathbb{R}^n\rightarrow\mathbb{R}^m$.
+
+Fortunately, limits in the more general setting turn out to be an easy extension of the limits that we've already defined. That is, if we have a function $\vec{f}:\mathbb{R}^n\rightarrow\mathbb{R}^m$, we can write $\vec{f}$ in terms of its coordinate functions,
+\[
+\vec{f}(\vec{x}) = (f_1(\vec{x}), f_2(\vec{x}),...,f_m(\vec{x})).
+\]
+Then, we can use the limits of the coordinate functions to define a limit of $f$.
+
+\begin{definition}
+Suppose we have a function $\vec{f}:\mathbb{R}^n\rightarrow\mathbb{R}^m$ with $\vec{f}(\vec{x}) = (f_1(\vec{x}), f_2(\vec{x}),...,f_m(\vec{x}))$. Then we define
+\[
+\lim_{\vec{x}\rightarrow\vec{a}}\vec{f}(\vec{x}) = \left(\lim_{\vec{x}\rightarrow\vec{a}}f_1(\vec{x}), \lim_{\vec{x}\rightarrow\vec{a}}f_2(\vec{x}),...,\lim_{\vec{x}\rightarrow\vec{a}}f_m(\vec{x})\right),
+\]
+provided each of these limits exist.
+\end{definition}
+
+So, we can evaluate the limit of a function $\vec{f}:\mathbb{R}^n\rightarrow\mathbb{R}^m$ by taking the limit of the component functions. Because of this, the results and methods that we've used for limits of scalar functions carry naturally over to this more general setting.
+
+\begin{example}
+Evaluate the following limits, or enter ``DNE'' if they do not exist.
+\begin{align*}
+\lim_{(x,y,z)\rightarrow (1,2,3)}(x^2+y, z, xz) &= \answer{(3,3,3)}\\
+\lim_{(x,y)\rightarrow(0,1)}\left(\sin(x+y), \frac{1}{\ln(y)}\right) &= \answer{DNE}\\
+\lim_{(x,y)\rightarrow(0,0)}\left(\frac{x^3y}{x^2+y^2}, \frac{xy^3}{x^2+y^2}\right) &= \answer{(0,0)}
+\end{align*}
+\end{example}
+
+
+
+\end{document}

@@ -1,0 +1,232 @@
+\documentclass{ximera}  
+
+\title{Conservative Vector Fields}  
+
+\begin{document}  
+\begin{abstract}  
+%How to determine if a vector field is conservative.
+\end{abstract}  
+\maketitle  
+
+In the previous activity, we proved the Fundamental Theorem of Line Integrals:
+
+\begin{theorem}
+\textbf{Fundamental Theorem of Line Integrals}
+
+Let $f:X\subset \mathbb{R}^n\rightarrow \mathbb{R}$ be $C^1$, where $X$ is open and connected. Then if $C$ is any piecewise $C^1$ curve from $\textbf{A}$ to $\textbf{B}$, then
+\[
+\int_C\nabla f\cdot d\textbf{s} = \answer{f(B)-f(A)}
+\]
+\end{theorem}
+
+We were able to use the Fundamental Theorem of Line Integrals to easily compute line integrals of conservative vector fields, and we were also able to prove the following corollary.
+
+\begin{corollary}
+If $\textbf{F}$ is a conservative vector field (so $\textbf{F}=\nabla f$ for some $f$) defined on an open and connected domain $X$, then $\textbf{F}$ is $\answer[format=string]{path independent}$.
+\end{corollary}
+
+Both of these important results require that we have a conservative vector field. In this activity, we will discuss how we can determine whether or not a vector field is conservative, so that we can check if those results can be applied.
+
+\section*{Finding a Potential Function}
+
+Recall the definition of a conservative vector field.
+
+\begin{definition}
+A vector field $\mathbf{F}$ is \emph{conservative} if there is a $C^1$ scalar-valued function $f$ such that $\mathbf{F}=\nabla f$. Then $f$ is called a \emph{potential function} for $\mathbf{F}$.
+\end{definition}
+
+So, one way to show that a vector field $\mathbf{F}$ is conservative is by finding such a potential function $f$.
+
+For simple examples, you might be able to do this by guessing. However, more complicated examples require a more systematic approach. The approach is easiest to understand through examples, so we'll work through a couple before describing the steps for the general case.
+
+\begin{example}
+Find a potential function for the vector field $\mathbf{F}(x,y)=(2xy^3+1,3x^2y^2-y^{-2})$.
+\begin{explanation}
+First, note that if there there is a function $f$ such that $\nabla f = \mathbf{F}$, then
+\[
+\left(\dfrac{\partial f}{\partial x}, \dfrac{\partial f}{\partial y}\right)=\left(2xy^3+1,3x^2y^2-y^{-2}\right)
+\]
+Let's start by looking at the $x$-term. We must have $\dfrac{\partial f}{\partial x} = 2xy^3+1$. Integrating with respect to $x$, we have
+\begin{align*}
+f(x,y) &= \int 2xy^3+1\,dx\\
+&= x^2y^3+x+g(y)
+\end{align*}
+The first part of this expression, $x^2y^3+x$, is an antiderivative for $2xy^3+1$ with respect to $x$. The second part of the expression, $g(y)$, is the ``constant'' for the integral. It's possible that there are some terms which depend only on $y$, hence are constant with respect to $x$, and writing $g(y)$ takes these terms into account.
+
+At this point, we know that $f$ has the form $f(x,y)=x^2y^3+x+g(y)$, but we still need to figure out what $g(y)$ is. For this, we use the $y$-term of the vector field $\mathbf{F}$. From this, we have $\dfrac{\partial f}{\partial y} = 3x^2y^2-y^{-2}$. Since we know $f(x,y)=x^2y^3+x+g(y)$, we must have
+\begin{align*}
+\dfrac{\partial f}{\partial y} &= \dfrac{\partial}{\partial y}\left(x^2y^3+x+g(y)\right)\\
+&= 3x^2y^2+g'(y).
+\end{align*}
+Comparing this with $\dfrac{\partial f}{\partial y} = 3x^2y^2-y^{-2}$, we must have $g'(y) = -y^{-2}$. Then we find that 
+\begin{align*}
+g(y) &= \int -y^{-2}\,dy\\
+&= y^{-1}+C
+\end{align*}
+Hence, any potential function would have the form $f(x,y)=x^2y^3+x+y^{-1}+C$. Choosing $C=0$, we obtain a specific potential function $f(x,y)=x^2y^3+x+y^{-1}$.
+\end{explanation}
+\end{example}
+
+We now work through finding a potential function for a three dimensional vector field.
+
+\begin{example}
+Find a potential function for the vector field $\mathbf{F}(x,y,z)=(2xy,x^2+z+2y,y+\cos(z))$.
+\begin{explanation}
+First, note that a potential function $f(x,y,z)$ would have to satisfy
+\[
+\left(\dfrac{\partial f}{\partial x}, \dfrac{\partial f}{\partial y}, \dfrac{\partial f}{\partial z}\right) = \left(\answer{2xy},\answer{x^2+z+2y},\answer{y+\cos(z)}\right)
+\]
+We begin by considering the $x$-component, noticing that $\dfrac{\partial f}{\partial x} = 2xy$. We integrate with respect to $x$.
+\begin{align*}
+f(x,y,z) &= \int 2xy\,dx\\
+&= \answer{x^2y} + g(y,z)
+\end{align*}
+Here, $g(y,z)$ is a function of only $y$ and $z$, hence constant with respect to $x$. We now differentiate with respect to $y$, in order to compare to the $y$-component of the vector field.
+\begin{align*}
+\dfrac{\partial f}{\partial y} &= \dfrac{\partial}{\partial x}\left(x^2y+g(y,z)\right)\\
+&= \answer{x^2}+\dfrac{\partial g}{\partial y}
+\end{align*}
+Comparing this with $\dfrac{\partial f}{\partial y} = x^2+z+2y$, we have $\dfrac{\partial g}{\partial y} = z+2y$. We integrate this with respect to $y$.
+\begin{align*}
+g(y,z) &= \int z+2y\,dy\\
+&= \answer{yz+y^2}+h(z)
+\end{align*}
+Here, $h$ is a function of only $z$, hence is constant with respect to $y$. We now know that $f$ has the form $f(x,y,z) = x^2y+yz+y^2+h(z)$. So, our final task is to find $h(z)$. We differentiate $f$ with respect to $z$ in order to compare with the $z$-component of the vector field.
+\begin{align*}
+\dfrac{\partial f}{\partial z} &= \dfrac{\partial}{\partial z}\left(x^2y+yz+y^2+h(z)\right)
+&= \answer{y}+h'(z)
+\end{align*}
+Comparing this with $\dfrac{\partial f}{\partial z} = y+\cos(z)$, we have $h'(z)=\cos(z)$. Integrating with respect to $z$, we obtain
+\begin{align*}
+h(z) &= \int \cos(z)\,dz\\
+&=\answer{\sin(z)}+C
+\end{align*}
+Where $C$ is a constant. Thus, any potential function would have the form $f(x,y,z) = \answer{x^2y+yz+y^2+\sin(z)}+C$. Choosing $C=0$, we have a specific potential function $f(x,y,z)= \answer{x^2y+yz+y^2+\sin(z)}$.
+\end{explanation}
+\end{example}
+
+Summarizing the steps we take in each of the above examples, we have the following process for finding a potential function for a conservative vector field $\mathbf{F}(x_1,x_2,...,x_n)$.
+\begin{enumerate}
+\item Integrate the first component of $\mathbf{F}$ with respect to $x_1$, in order to find the terms of $f(x_1,x_2,...,x_n)$ which depend on $x_1$. From this, we can write $f(x_1,x_2,...,x_n)=(x_1\textrm{-terms})+f_1(x_2,...,x_n)$.
+\item Differentiate $f(x_1,x_2,...,x_n)=(x\textrm{-terms})+f_1(x_2,...,x_n)$ with respect to $x_2$. Compare this to the second component of $\mathbf{F}$ in order to determine an expression for $\dfrac{\partial f_1}{\partial x_2}$. Integrate this expression with respect to $x_2$, so we can write $f_1(x_2,...,x_n)=(x_2\textrm{-terms})+f_2(x_3,...,x_n)$. Hence we have $f(x_1,x_2,...,x_n)=(x_1\textrm{- and }x_2\textrm{-terms})+f_2(x_3,...,x_n)$.
+\item Repeat this process until all components are used.
+\end{enumerate}
+
+So far, we've only seen cases where a potential function exists. However, we would also like to be able to show that a vector field is \emph{not} conservative. Let's look at what happens in our process when we have a vector field which is not conservative.
+
+\begin{example}
+Try (and fail) to find a potential function for the vector field $\mathbf{F}(x,y) = (-y,x)$.
+\begin{explanation}
+If a potential function existed, it would have to satisfy
+\[
+\left(\dfrac{\partial f}{\partial x},\dfrac{\partial f}{\partial y}\right) = (\answer{-y},\answer{x})
+\]
+We begin with $\dfrac{\partial f}{\partial x} = -y$. Integrating with respect to $x$, we have
+\begin{align*}
+f(x,y) &= \int -y\,dx\\
+&=\answer{-yx}+g(y)
+\end{align*}
+Differentating with respect to $y$, we then obtain
+\begin{align*}
+\dfrac{\partial f}{\partial y} &= \dfrac{\partial}{\partial y}\left(-yx+g(y)\right)\\
+&= \answer{-x}+g(y)
+\end{align*}
+When we compare this to the $y$-component of the vector field $\mathbf{F}$ in order to determine $g(y)$, we would have to have $x=-x+g(y)$. But this is impossible! Thus we see that our method has broken down, and we are not able to find a potential function.
+\end{explanation}
+\end{example}
+
+Here, we see that the system breaks down, and we aren't able to produce a potential function. This is good, since it turns out the vector field isn't conservative. However, we would an easy way to prove that it isn't conservative. The following theorem gives us a quick way to prove that a vector field is not conservative.
+
+\begin{theorem}
+Let $\mathbf{F}:X\subset\mathbb{R}^n\rightarrow \mathbb{R}^n$ be a $C^1$ vector field, and let $X$ be open and connected. If $\mathbf{F}$ is conservative, then $D\mathbf{F}$ is symmetric.
+\end{theorem}
+
+The contrapositive of this theorem states:
+
+\begin{theorem}
+Let $\mathbf{F}:X\subset\mathbb{R}^n\rightarrow \mathbb{R}^n$ be a $C^1$ vector field, and let $X$ be open and connected. If $D\mathbf{F}$ is not $\answer[format=string]{symmetric}$ then $\mathbf{F}$ is not $\answer[format=string]{conservative}$.
+\end{theorem}
+
+Thus, provided we have a $C^1$ vector field and the domain is open and connected, we can show a vector field is not conservative by showing that its derivative matrix is not symmetric.
+
+\begin{example}
+Show that the vector field $\mathbf{F}(x,y)=(-y,x)$ is not conservative.
+\begin{explanation}
+First, note that $\mathbf{F}$ is a $C^1$ vector field with domain $\mathbb{R}^2$. Since $\mathbb{R}^2$ is open and connected, our theorem applies. We compute the derivative matrix $D\mathbf{F}$.
+\begin{align*}
+D\mathbf{F} &= \left(\begin{array}{cc}
+\dfrac{\partial}{\partial x} (-y) & \dfrac{\partial}{\partial y} (-y)\\
+\dfrac{\partial}{\partial x} x & \dfrac{\partial}{\partial y} x\\
+\end{array}\right)\\
+&= \left(\begin{array}{cc}
+\answer{0} & \answer{-1}\\
+\answer{1} & \answer{0}\\
+\end{array}\right)
+\end{align*}
+Since this matrix is not symmetric, $\mathbf{F}$ is not a conservative vector field.
+\end{explanation}
+\end{example}
+
+Note how much simpler this is than trying to find a potential function. We now prove our theorem, showing that a conservative $C^1$ vector field on an open and connected domain has symmetric derivative.
+
+\begin{proof}
+Let $\mathbf{F}$ be a $C^1$ vector field defined on an open connected domain $X\subset\mathbb{R}^n$. If $\mathbf{F}$ is  conservative, then $\mathbf{F}=\nabla f$ for some scalar-valued function $f$ on $X$. This means
+\[
+\mathbf{F}(x_1,...,x_n) = \nabla f(x_1,...,x_n) = \left(\dfrac{\partial f}{\partial x_1}, \dfrac{\partial f}{\partial x_2}, ...,\dfrac{\partial f}{\partial x_n}\right).
+\]
+Then the derivative matrix of $\mathbf{F}$ is
+\[
+D\mathbf{F} = D(\nabla f) = \left(\begin{array}{cccc}
+f_{x_1x_1} & f_{x_1x_2} & \cdots & f_{x_1x_n}\\
+f_{x_2x_1} & f_{x_2x_2} & \cdots & f_{x_2x_n}\\
+\vdots & \vdots & & \vdots\\
+f_{x_nx_1} & f_{x_nx_2} & \cdots & f_{x_nx_n}\\
+\end{array}\right)
+\]
+By Clairaut's Theorem, the mixed partials are equal, so this matrix is symmetric.
+\end{proof}
+
+For each of the given vector fields $\mathbf{F}$, determine whether or not it's conservative. If it is conservative, find a potential function. If $\mathbf{F}$ is not conservative, compute the derivative matrix of $\mathbf{F}$ in order to prove that it is not conservative.
+
+\begin{problem}
+$\mathbf{F}(x,y) = (2xy+y^2+e^y, x^2+2xy+xe^y)$
+\begin{multipleChoice}
+\choice[correct]{conservative}
+\choice{not conservative}
+\end{multipleChoice}
+\begin{problem}
+$f(x,y)=\answer{x^2y+y^2x+e^yx}$
+\end{problem}
+\end{problem}
+
+\begin{problem}
+$\mathbf{F}(x,y) = (x^2y+e^{x^2},\sin(x)+y^3)$
+\begin{multipleChoice}
+\choice{conservative}
+\choice[correct]{not conservative}
+\end{multipleChoice}
+\begin{problem}
+$D\mathbf{F}(x,y) = \left(\begin{array}{cc}2xy+2xe^{x^2}&\answer{x^2}\\\answer{\cos(x)}&3y^2\end{array}\right)$
+\end{problem}
+\end{problem}
+
+We've seen that if a vector field is conservative, then its derivative matrix is symmetric. But is the converse true? That is, if the derivative matrix is symmetric, does that mean that the vector field is conservative? We'll answer this question in the next chapter.
+
+\section*{Summary}
+
+In this activity, we reviewed the following terms.
+\begin{itemize}
+\item Conservative
+\item Potential function
+\end{itemize}
+
+We also established the following results.
+\begin{itemize}
+\item A systematic method for finding a potential function for a given vector field (thus showing that the vector field is conservative).
+\item Let $\mathbf{F}$ be a $C^1$ vector field, and let $X$ be open and connected. If $D\mathbf{F}$ is not symmetric then $\mathbf{F}$ is not conservative.
+\end{itemize}
+
+These provide us with methods for showing that vector field isn't conservative, and for providing a potential function when it is conservative.
+
+
+\end{document}

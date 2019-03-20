@@ -1,6 +1,0 @@
-\expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi 
-\doTocEntry\tocsection{}{\csname a:TocLink\endcsname{1}{x1-1000}{QQ2-1-1}{Review of Parametrizations in $\mathbb  {R}^2$}}{1}\relax 
-\doTocEntry\tocsection{}{\csname a:TocLink\endcsname{1}{x1-2000}{QQ2-1-2}{Parametrizing Curves in $\mathbb  {R}^n$}}{2}\relax 
-\doTocEntry\tocsection{}{\csname a:TocLink\endcsname{1}{x1-3000}{QQ2-1-3}{Examples in $\mathbb  {R}^3$}}{4}\relax 
-\doTocEntry\tocsection{}{\csname a:TocLink\endcsname{1}{x1-4000}{QQ2-1-4}{Conclusion}}{5}\relax 
-\par 

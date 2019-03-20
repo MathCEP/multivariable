@@ -1,0 +1,231 @@
+<!doctype html> 
+<html lang="en"> 
+<head> <title>Higher Order Partial Derivatives</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<!-- charset=utf-8,-css,html,htex4ht,xhtml --> 
+<meta name="src" content="higher_order_partials.tex" /> 
+<meta name="author" content="" /> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
+<meta name="ximera" content="version 0.0.1" /> 
+<link href="https://ximera.osu.edu/public/stylesheets/standalone.css" rel="stylesheet" media="screen"/> 
+<script type="text/javascript" async src="https://ximera.osu.edu/public/javascripts/standalone.min.js"></script> 
+</head><body> 
+<div class="preamble"><script type="math/tex">\newenvironment {prompt}{}{}
+\newcommand {\DeclareMathOperator }[2]{\@OldDeclareMathOperator {##1}{##2}\immediate \write \myfile {\unexpanded {\DeclareMathOperator }{\unexpanded {##1}}{\unexpanded {##2}}}}
+\newcommand {\ungraded }[0]{}
+\newcommand {\reserved@a }[2]{}
+\newcommand {\HyperFirstAtBeginDocument }[0]{\AtBeginDocument }
+\newcommand {\reserved@a }[1]{}
+\newcommand {\reserved@a }[2]{}
+\newcommand {\vnameref  }[1]{\unskip ~\nameref {##1}\@vpageref [\unskip ]{##1}}
+\newcommand {\ref  }[0]{\@ifstar \@refstar \T@ref }
+\newcommand {\pageref  }[0]{\@ifstar \@pagerefstar \T@pageref }
+\newcommand {\nameref  }[0]{\@ifstar \@namerefstar \T@nameref }
+\newcommand {\reserved@a }[2]{}
+\newcommand {\reserved@a }[0]{\AtBeginDocument }
+\newcommand {\reserved@a }[1]{}
+\newcommand {\reserved@a }[2]{}                                                                                                                                                 </script><script type="text/javascript"> 
+</script> 
+</div>
+<div 
+class="abstract" 
+>
+</div>   <div class="maketitle"></div>
+<!--l. 11--><p class="noindent" >In this activity, we introduce higher order partial derivatives, and discuss their
+geometric meaning.
+</p>
+<h3 class="sectionHead"><a 
+ id="x1-1000"></a>Higher Order Partials</h3>
+<!--l. 15--><p class="noindent" >Back in single variable Calculus, we were able to use the second derivative to get
+information about a function. For instance, the second derivative gave us valuable
+information about the shape of the graph. More specifically, we could use the second
+derivative to determine the concavity. </p>
+     <ul class="itemize1">
+     <li class="itemize">If <script type="math/tex">f''(x)>0</script> on an interval, then the graph of <script type="math/tex">f</script> is concave up on that interval.
+     </li>
+     <li class="itemize">If <script type="math/tex">f''(x)<0</script> on an interval, then the graph of <script type="math/tex">f</script> is concave down on that interval.
+     </li>
+     <li class="itemize">If <script type="math/tex">f''</script> changes signs at a point, then the graph of <script type="math/tex">f</script> has an inflection point at
+     that point.</li></ul>
+<!--l. 21--><p class="noindent" >Furthermore, we were able to use second derivative in conjunction with roots of the
+first derivative to find local maxima and minima. We could also think about the
+second derivative as the rate-of-change of a rate-of-change, or describing some sort of
+acceleration or deceleration.
+</p><!--l. 23--><p class="noindent" >Since the second derivative contains so much useful information, we would like to
+come up with a way to define second derivatives for multivariable functions! At first,
+this might seem simple: just take the derivative of the derivative. But when we
+                                                                  
+
+                                                                  
+took the total derivative of a multivariable function <script type="math/tex">f:\mathbb {R}^m\rightarrow \mathbb {R}^n</script>, we got a matrix of
+partial derivatives, and it’s not at all clear how we would differentiate a
+matrix.
+</p><!--l. 25--><p class="noindent" >For now, we’ll settle for defining second order partial derivatives, and we’ll have to
+wait until later in the course to define more general second order derivatives.
+Fortunately, second order partial derivatives work exactly like you’d expect: you
+simply take the partial derivative of a partial derivative.
+</p>
+<div class="theorem-like problem-environment example" id="problem1"><a 
+ id="x1-1001r1"></a>Consider the function <script type="math/tex">f(x,y) = 2x^2+4xy-7y^2</script>. We’ll start by computing the first order partial derivatives of <script type="math/tex">f</script>,
+with respect to <script type="math/tex">x</script> and <script type="math/tex">y</script>. <script type="math/tex; mode=display"> \begin{align*} 
+f_x(x,y) &= \answer{6x+4y}\\
+f_y(x,y) &= \answer{4x-14y}
+\end{align*}</script>
+<!--l. 33--><p class="noindent" >We can then compute the second order partial derivatives <script type="math/tex">f_{xx}</script> and <script type="math/tex">f_{yy}</script> by differentiating
+with respect to <script type="math/tex">x</script> again, and with respect to <script type="math/tex">y</script> again. </p><script type="math/tex; mode=display"> \begin{align*} 
+f_{xx}(x,y) &= \answer{6}\\
+f_{yy}(x,y) &= \answer{-14}
+\end{align*}</script>
+<!--l. 38--><p class="noindent" >However, this isn’t the only way that we could take second order partial derivatives!
+We could differentiate with respect to <script type="math/tex">x</script> first, and with respect to <script type="math/tex">y</script> second, to get <script type="math/tex">f_{xy}</script>. We
+could also differentiate with respect to <script type="math/tex">y</script> first, and with respect to <script type="math/tex">x</script> second, to get <script type="math/tex">f_{yx}</script>.
+</p><script type="math/tex; mode=display"> \begin{align*} 
+f_{xy}(x,y) &= \answer{4}\\
+f_{yx}(x,y) &= \answer{4}
+\end{align*}</script>
+<!--l. 43--><p class="noindent" >Notice that we got the same result for <script type="math/tex">f_{xy}</script> and <script type="math/tex">f_{yx}</script>, so it didn’t end up mattering what
+order we took these derivatives in. In turns out that this is not a coincidence, and it’s
+a consequence of Clairaut’s Theorem, which we’ll talk about in the next
+section.
+</div>
+</p><!--l. 46--><p class="noindent" >There are a few different ways that we can denote second order partials. We can
+denote the second order partial of <script type="math/tex">f</script> that we get by differentiating with respect to <script type="math/tex">x</script>
+twice as any of the following. <script type="math/tex; mode=display"> f_{xx}(x,y)\hspace {1cm}\frac {\partial }{\partial x}\left (\frac {\partial f}{\partial x}\right )\hspace {1cm} \frac {\partial ^2 f}{\partial x^2} </script> For the second order partial of <script type="math/tex">f</script> that we get by
+differentiating with respect to <script type="math/tex">x</script> first, then differentiating with respect to <script type="math/tex">y</script>, we denote
+this as below. <script type="math/tex; mode=display"> f_{xy}(x,y)\hspace {1cm}\frac {\partial }{\partial y}\left (\frac {\partial f}{\partial x}\right )\hspace {1cm} \frac {\partial ^2 f}{\partial y\partial x} </script> To remember what order to take these derivatives for all
+of these notations, start with the variable closest to <script type="math/tex">f</script>, and work your way
+out.
+</p><!--l. 56--><p class="noindent" >We can similarly define and compute third order partials, fourth order partials, and
+so on.
+</p>
+                                                                  
+
+                                                                  
+<div class="theorem-like problem-environment example" id="problem2"><a 
+ id="x1-1002r2"></a>COMPUTE SOME PARTIAL DERIVATIVES
+</div>
+<h3 class="sectionHead"><a 
+ id="x1-2000"></a>Clairaut’s Theorem</h3>
+<!--l. 64--><p class="noindent" >In previous examples, we’ve seen that it doesn’t matter what order you use to take
+higher order partial derivatives, you seem to wind up with the same answer no
+matter what. This isn’t an amazing coincidence where we randomly chose functions
+that happened to have this property; this turns out to be true for many functions.
+Clairaut’s Theorem gives us this result.
+</p>
+<div class="theorem-like problem-environment theorem" id="problem3"><a 
+ id="x1-2001r3"></a>(Clairaut’s Theorem) Suppose we have a function <script type="math/tex">f:D\subset \mathbb {R}^n\rightarrow \mathbb {R}</script>. Suppose further that <em>all</em> of the
+second order mixed partial derivatives of <script type="math/tex">f(x_1,...,x_n)</script> exist and are continuous on an open disc
+around <script type="math/tex">\mathbf {a}\in D</script>. Then, for any <script type="math/tex">x_i</script> and <script type="math/tex">x_j</script>, <script type="math/tex; mode=display"> f_{x_ix_j}(\mathbf {a})=f_{x_jx_i}(\mathbf {a}). </script>
+</div>
+<!--l. 73--><p class="noindent" >
+</p>
+<div class="proof">
+<!--l. 74--><p class="noindent" ><span class="head">
+</p><dl class="trivlist"><dt class="trivlist">
+Proof   </dt><dd 
+class="trivlist"></span>prove things                                                                           <script type="math/tex">\blacksquare </script></dd></dl>
+</div>
+<!--l. 77--><p class="noindent" >We can prove a similar result for even higher order partial derivatives. Before we do
+that, we’ll introduce a new definition to make it easier to describe how “nice”
+functions are.
+</p>
+<div class="theorem-like problem-environment definition" id="problem4"><a 
+ id="x1-2002r4"></a>A function <script type="math/tex">f:\mathbb {R}^n\rightarrow \mathbb {R}^m</script> is of class <script type="math/tex">\mathcal {C}^k</script> if all of the partial derivatives of <script type="math/tex">f</script> up to and including the <script type="math/tex">k</script>th
+order exist and are continuous.
+<!--l. 82--><p class="noindent" >If <script type="math/tex">f</script> is of class <script type="math/tex">\mathcal {C}^k</script> for all <script type="math/tex">k</script>, then we say <script type="math/tex">f</script> is of class <script type="math/tex">\mathcal {C}^\infty </script>.
+</p><!--l. 84--><p class="noindent" >If <script type="math/tex">f</script> is continuous, we say <script type="math/tex">f</script> is of class <script type="math/tex">\mathcal {C}^0</script>.
+</div>
+</p><!--l. 87--><p class="noindent" >We’ll often write this as <script type="math/tex">f\in \mathcal {C}^3</script> and say ”<script type="math/tex">f</script> is <script type="math/tex">\mathcal {C}</script> three,” for example, if <script type="math/tex">f</script> is of class
+<script type="math/tex">\mathcal {C}^3</script>.
+</p>
+<div role="article" class="problem-environment problem" id="problem5"><a 
+ id="x1-2003r5"></a> If <script type="math/tex">f(x,y) = x^2+y^2+2xy</script>, which of the following are true? Select all that apply. <div class="select-all" id="problem6"><a 
+ id="x1-2004r6"></a> <span class="choice correct "   id="choice1"><script type="math/tex">f</script> is <script type="math/tex">\mathcal {C}^0</script>.</span> <span class="choice correct "   id="choice2"><script type="math/tex">f</script> is <script type="math/tex">\mathcal {C}^1</script>.</span> <span class="choice correct "   id="choice3"><script type="math/tex">f</script> is <script type="math/tex">\mathcal {C}^2</script>.</span> <span class="choice correct "   id="choice4"><script type="math/tex">f</script> is <script type="math/tex">\mathcal {C}^3</script>.</span> <span class="choice correct " 
+id="choice5"><script type="math/tex">f</script> is <script type="math/tex">\mathcal {C}^\infty </script>.</span>
+</div>
+</div>
+<!--l. 100--><p class="noindent" >We can generalize Clairaut’s Theorem to <script type="math/tex">k</script>th order derivatives for <script type="math/tex">\mathcal {C}^k</script> functions.
+</p>
+                                                                  
+
+                                                                  
+<div class="theorem-like problem-environment theorem" id="problem7"><a 
+ id="x1-2005r7"></a>If <script type="math/tex">f</script> is <script type="math/tex">\mathcal {C}^k</script>, then the <script type="math/tex">k</script>th order mixed partials can be computed in any order.
+</div>
+<!--l. 106--><p class="noindent" >For example, if <script type="math/tex">f</script> is <script type="math/tex">\mathcal {C}^{12}</script>, we have </p><script type="math/tex; mode=display"> \begin{align*} 
+f_{xyxyzyzzxyxz}&=f_{xxxxyyyyzzzz}\\
+&=f_{xyzxyzxyzxyz}.
+\end{align*}</script>
+<div role="article" class="problem-environment problem" id="problem8"><a 
+ id="x1-2006r8"></a> If <script type="math/tex">f</script> is <script type="math/tex">\mathcal {C}^5</script>, which of the following are guaranteed to be equal to <script type="math/tex">f_{zzyzx}</script>? Select all that apply, <div class="select-all" id="problem9"><a 
+ id="x1-2007r9"></a> <span class="choice  " 
+id="choice6"><script type="math/tex">f_{xxzxy}</script></span> <span class="choice correct "   id="choice7"><script type="math/tex">f_{xyzzz}</script></span> <span class="choice correct "   id="choice8"><script type="math/tex">f_{xzzzy}</script></span> <span class="choice correct "   id="choice9"><script type="math/tex">f_{zzxzy}</script></span> <span class="choice  "   id="choice10"><script type="math/tex">f_{yyzyx}</script></span>
+</div>
+</div>
+<h3 class="sectionHead"><a 
+ id="x1-3000"></a>Geometric Significance</h3>
+<!--l. 125--><p class="noindent" >Remembering back to single variable calculus, we could use the first and second
+derivatives of a function to figure out the shape of the graph.
+</p><!--l. 127--><p class="noindent" >More precisely, we used the first derivative to determine where a function
+was increasing and where it was decreasing. If <script type="math/tex">f'(x)>0</script> on some interval, then <script type="math/tex">f(x)</script> is
+increasing on that interval. If <script type="math/tex">f'(x)<0</script> on some interval, then <script type="math/tex">f(x)</script> is decreasing on that
+interval.
+</p><!--l. 129--><p class="noindent" >PICTURE
+</p><!--l. 131--><p class="noindent" >We used the second derivative to determine the concavity of a function. If <script type="math/tex">f''(x)>0</script> on an
+interval, then <script type="math/tex">f(x)</script> is concave up on that interval. If <script type="math/tex">f''(x)<0</script> on an interval, then <script type="math/tex">f(x)</script> is concave down
+on that interval.
+</p><!--l. 133--><p class="noindent" >PICTURE
+</p><!--l. 135--><p class="noindent" >Partial derivatives can give us similar information about the graph of a multivariable
+function, although the situation is a bit more nuanced. Let’s consider a function <script type="math/tex">f:\mathbb {R}^2\rightarrow \mathbb {R}</script>, so
+we can visualize its graph. We’ve already seen that the partial derivative with respect
+to <script type="math/tex">x</script> tells us how <script type="math/tex">f</script> changes as <script type="math/tex">x</script> changes.
+</p><!--l. 137--><p class="noindent" >More specifically, suppose <script type="math/tex">f_x(x,y_0)>0</script> for <script type="math/tex">x</script> in some open interval containing <script type="math/tex">x_0</script>. Then <script type="math/tex">f(x,y)</script> is increasing
+as we move <em>in the positive <script type="math/tex">x</script>-direction</em> from the point <script type="math/tex">(x_0,y_0)</script>.
+</p><!--l. 139--><p class="noindent" >PICTURE
+</p><!--l. 141--><p class="noindent" >Similarly, suppose <script type="math/tex">f_x(x,y_0)<0</script> for <script type="math/tex">x</script> in some open interval constaining <script type="math/tex">x_0</script>. Then <script type="math/tex">f(x,y)</script> is increasing as we
+move in the positive <script type="math/tex">x</script>-direction from the point <script type="math/tex">(x_0,y_0)</script>.
+</p><!--l. 143--><p class="noindent" >PICTURE
+</p><!--l. 145--><p class="noindent" >Suppose <script type="math/tex">f_x(x,y_0)=0</script> for <script type="math/tex">x</script> in some open interval constaining <script type="math/tex">x_0</script>. Then <script type="math/tex">f(x,y)</script> is constant as we move in the
+positive <script type="math/tex">x</script>-direction from the point <script type="math/tex">(x_0,y_0)</script>.
+</p><!--l. 147--><p class="noindent" >PICTURE
+</p><!--l. 149--><p class="noindent" >The partial derivative with respect to <script type="math/tex">y</script>, <script type="math/tex">f_y</script>, can tell us where <script type="math/tex">f</script> is increasing, decreasing,
+or constant as we move in the positive <script type="math/tex">y</script> direction.
+                                                                  
+
+                                                                  
+</p><!--l. 151--><p class="noindent" >PICTURE
+</p><!--l. 153--><p class="noindent" >Now, let’s look at what the second-order partial derivatives tell us about the graph of
+the function <script type="math/tex">f(x,y)</script>. It shouldn’t be too surprising that the sign of <script type="math/tex">f_{xx}</script> tells us about the
+concavity of <script type="math/tex">f</script> as we move in the positive <script type="math/tex">x</script> direction.
+</p><!--l. 155--><p class="noindent" >PICTURE
+</p><!--l. 157--><p class="noindent" >Similarly, the sign of <script type="math/tex">f_{yy}</script> tells us about the concavity of <script type="math/tex">f</script> as we move in the positive <script type="math/tex">y</script>
+direction.
+</p><!--l. 159--><p class="noindent" >PICTURE
+</p><!--l. 161--><p class="noindent" >But what do the mixed partials, <script type="math/tex">f_{xy}</script> and <script type="math/tex">f_{yx}</script>, tell us about the graph of <script type="math/tex">f</script>? Let’s consider <script type="math/tex">f_{xy}</script>,
+which is the partial derivative of <script type="math/tex">f_x</script> with respect to <script type="math/tex">y</script>. The partial derivative <script type="math/tex">f_x</script> tells us the
+rate of change of <script type="math/tex">f</script> as we move in the positive <script type="math/tex">x</script> direction. Then, the partial derivative
+of <script type="math/tex">f_x</script> with respect to <script type="math/tex">y</script> tells us how <script type="math/tex">f_x</script> changes as we move in the positive <script type="math/tex">y</script> direction. That
+is, we look at how the rate of change in the <script type="math/tex">x</script> direction changes as we move in the <script type="math/tex">y</script>
+direction. This is a lot to unravel!
+</p><!--l. 163--><p class="noindent" >PICTURE/VIDEO/INTERACTIVE
+</p><!--l. 165--><p class="noindent" >We can similarly think of <script type="math/tex">f_{yx}</script> as the change in <script type="math/tex">f_y</script> as we move in the positive <script type="math/tex">x</script>
+direction.
+</p><!--l. 167--><p class="noindent" >PICTURE/VIDEO/INTERACTIVE
+</p>
+<h3 class="sectionHead"><a 
+ id="x1-4000"></a>Conclusion</h3>
+<!--l. 171--><p class="noindent" >In this activity, we considered higher order partial derivatives, and found that the
+order of differentiation doesn’t matter for “nice” functions using Clairaut’s theorem.
+We also considered the geometric information carried by second order partial
+derivatives.
+</body> 
+ 
+</html>
+                                                                  
+
+                                                                  
+                                                                  
+
+

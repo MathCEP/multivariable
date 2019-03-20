@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  18 DEC 2018 17:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  19 MAR 2019 20:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -999,19 +999,19 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 2.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [2
 
-] [3]
-[4] [5])
+] [3])
 \tf@toc=\write10
 \openout10 = `multivariable.toc'.
 
- [6] (./auto_generated_text/Week0Review/ch0_vectors.tex
+
+[4] (./content/00_1_vectors/vectors.tex
 
 LaTeX Warning: No \author given.
 
-[7
+[5
 
 
-] [8] [9] [10] [11] [12]
+] [6] [7] [8] [9] [10]
 Overfull \hbox (5.77017pt too wide) in paragraph at lines 368--369
 [][]\OT1/cmr/bx/n/10 Definition 6. []\OT1/cmr/m/it/10 The vec-tors $[] \OT1/cmr
 /m/n/10 = (1\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 ; :::\OT1/cmr/
@@ -1021,13 +1021,13 @@ m/n/10 0)$\OT1/cmr/m/it/10 , ..., $[] \OT1/cmr/m/n/10 = (0\OML/cmm/m/it/10 ; ::
 :; \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1)$
  []
 
-) [13] [14] (./auto_generated_text/Week0Review/ch0_dotProd.tex
+) [11] (./content/00_2_dot_product/dot_product.tex
 
 LaTeX Warning: No \author given.
 
-[15
+[12
 
-] [16]) [17] (./auto_generated_text/Week0Review/ch0_crossProd.tex
+] [13]) [14] (./content/00_3_cross_product/cross_product.tex
 
 LaTeX Warning: No \author given.
 
@@ -1036,7 +1036,7 @@ Overfull \hbox (11.66574pt too wide) detected at line 42
 []
  []
 
-[18
+[15
 
 ]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 66.
@@ -1045,12 +1045,12 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 66.
- [19]
-[20] [21]) [22] (./auto_generated_text/Week0Review/ch0_matrices.tex
+ [16]
+[17] [18]) [19] (./content/00_4_matrices/matrices.tex
 
 LaTeX Warning: No \author given.
 
-[23
+[20
 
 ]
 Overfull \hbox (24.78291pt too wide) in paragraph at lines 71--72
@@ -1066,10 +1066,10 @@ es $\OML/cmm/m/it/10 A \OT1/cmr/m/n/10 = []$ \OT1/cmr/m/it/10 and $\OML/cmm/m/i
 t/10 B \OT1/cmr/m/n/10 = []$\OT1/cmr/m/it/10 ,
  []
 
-[24]
+[21]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 140.
- [25]
+ [22]
 Overfull \hbox (175.37045pt too wide) detected at line 170
 \OML/cmm/m/it/10 AB \OT1/cmr/m/n/10 = [] \OML/cmm/m/it/10 :
  []
@@ -1081,7 +1081,7 @@ t $\OML/cmm/m/it/10 AB$ \OT1/cmr/m/it/10 of the ma-tri-ces $\OML/cmm/m/it/10 A
 \OT1/cmr/m/n/10 = []$
  []
 
-[26] [27] [28]
+[23] [24] [25]
 Overfull \hbox (11.37776pt too wide) detected at line 281
 []
  []
@@ -1091,7 +1091,7 @@ Overfull \hbox (61.0876pt too wide) detected at line 348
 []
  []
 
-[29] [30]
+[26] [27]
 Overfull \hbox (295.00049pt too wide) detected at line 384
 []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 A\OT1/cmr/m/n/10 ) = (\OMS/cmsy/m/n/10 ^^@\
 OT1/cmr/m/n/10 1)[](4)[] [] + (\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 1)[](0)[] []
@@ -1109,47 +1109,17 @@ Overfull \hbox (308.3335pt too wide) detected at line 398
 []
  []
 
-[31] [32] [33] [34]) [35] (./auto_generated_text/Week0Review/ch0_planes.tex
+[28] [29] [30] [31]) [32] (./content/00_5_planes/planes.tex
 
 LaTeX Warning: No \author given.
 
-[36
+[33
 
-]) [37] (./auto_generated_text/Week0Review/all_problems.tex
-
-LaTeX Warning: No \author given.
-
-\c@depthICount=\count198
-[38
-
-] [39] [40]
-Overfull \hbox (30.88945pt too wide) in paragraph at lines 156--157
-[]\OT1/cmr/m/sl/10 Compute the an-gle be-tween the vec-tors $\OT1/cmr/m/n/10 (2
-\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 3\OML/cm
-m/m/it/10 ; \OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1)$ \OT1/cmr/m/
-sl/10 and $\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 3\OML/cmm/m/it/
-10 ; \OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; \O
-T1/cmr/m/n/10 1\OML/cmm/m/it/10 ; \OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 2)$
- []
-
-[41]
-
-LaTeX Font Warning: Font shape `OT1/cmss/bx/sl' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 183.
-
-\c@depthIICount=\count199
-[42]
-Overfull \hbox (3.3619pt too wide) in paragraph at lines 242--243
-[]\OT1/cmr/m/sl/10 Compute the vol-ume of the par-al-lelepiped de-ter-mined by 
-$\OT1/cmr/m/n/10 (1\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 6\OML/cmm/m/it/10 ; \OT1/
-cmr/m/n/10 2)$\OT1/cmr/m/sl/10 ,
- []
-
-[43] [44]) [45] (./auto_generated_text/Week1CoordinateSystems/review.tex
+]) [34] (./content/01_1_review/review.tex
 
 LaTeX Warning: No \author given.
 
-[46
+[35
 
 ]
 Overfull \hbox (2.73442pt too wide) in paragraph at lines 47--48
@@ -1158,361 +1128,258 @@ cmm/m/it/10 r$\OT1/cmr/m/n/10 -coordinate and a $\OML/cmm/m/it/10 ^^R$\OT1/cmr/
 m/n/10 -coordinate.
  []
 
-[47] [48] [49] [50] [51]
+[36]
+\c@depthICount=\count198
+ [37] [38] [39] [40] [41]
 LaTeX Font Info:    Try loading font information for U+euf on input line 248.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
-) [52] [53]
-[54]) [55] (./auto_generated_text/Week1CoordinateSystems/cylindrical_coords.tex
+) [42] [43]
+[44]) [45] (./content/01_2_cylindrical_coords/cylindrical_coords.tex
 
 LaTeX Warning: No \author given.
 
-[56
+[46
 
-] [57] [58]
-<./auto_generated_text/Week1CoordinateSystems/graphics/theta_constant.pdf, id=1
-049, 253.1775pt x 230.55865pt>
-File: ./auto_generated_text/Week1CoordinateSystems/graphics/theta_constant.pdf 
-Graphic file (type pdf)
-<use ./auto_generated_text/Week1CoordinateSystems/graphics/theta_constant.pdf>
-Package pdftex.def Info: ./auto_generated_text/Week1CoordinateSystems/graphics/
-theta_constant.pdf  used on input line 133.
-(pdftex.def)             Requested size: 253.17688pt x 230.55809pt.
- [59 <./auto_generated_text/Week1CoordinateSystems/graphics/theta_constant.pdf>
-]
-<./auto_generated_text/Week1CoordinateSystems/graphics/z_constant.pdf, id=1062,
- 277.59894pt x 203.12659pt>
-File: ./auto_generated_text/Week1CoordinateSystems/graphics/z_constant.pdf Grap
-hic file (type pdf)
-<use ./auto_generated_text/Week1CoordinateSystems/graphics/z_constant.pdf>
-Package pdftex.def Info: ./auto_generated_text/Week1CoordinateSystems/graphics/
-z_constant.pdf  used on input line 144.
-(pdftex.def)             Requested size: 277.59825pt x 203.12607pt.
-<./auto_generated_text/Week1CoordinateSystems/graphics/half_sphere.pdf, id=1063
-, 289.64178pt x 211.44104pt>
-File: ./auto_generated_text/Week1CoordinateSystems/graphics/half_sphere.pdf Gra
-phic file (type pdf)
-<use ./auto_generated_text/Week1CoordinateSystems/graphics/half_sphere.pdf>
-Package pdftex.def Info: ./auto_generated_text/Week1CoordinateSystems/graphics/
-half_sphere.pdf  used on input line 176.
-(pdftex.def)             Requested size: 289.64107pt x 211.4405pt.
- [60 <./auto_generated_text/Week1CoordinateSystems/graphics/z_constant.pdf>]
-<./auto_generated_text/Week1CoordinateSystems/graphics/cylinder_100.pdf, id=107
-7, 239.23303pt x 204.9784pt>
-File: ./auto_generated_text/Week1CoordinateSystems/graphics/cylinder_100.pdf Gr
-aphic file (type pdf)
-<use ./auto_generated_text/Week1CoordinateSystems/graphics/cylinder_100.pdf>
-Package pdftex.def Info: ./auto_generated_text/Week1CoordinateSystems/graphics/
-cylinder_100.pdf  used on input line 216.
-(pdftex.def)             Requested size: 239.23244pt x 204.97789pt.
- [61 <./auto_generated_text/Week1CoordinateSystems/graphics/half_sphere.pdf>]) 
-[62 <./auto_generated_text/Week1CoordinateSystems/graphics/cylinder_100.pdf>] (
-./auto_generated_text/Week1CoordinateSystems/spherical_coords.tex
+] [47]
+Overfull \hbox (2.05637pt too wide) in paragraph at lines 70--72
+[]\OT1/cmr/m/sl/10 Which of the fol-low-ing, writ-ten in cylin-dri-cal co-or-di
+-nates, is equiv-
+ []
 
-LaTeX Warning: No \author given.
-
-<./auto_generated_text/Week1CoordinateSystems/graphics/spherical.pdf, id=1106, 
-213.52151pt x 193.40526pt>
-File: ./auto_generated_text/Week1CoordinateSystems/graphics/spherical.pdf Graph
-ic file (type pdf)
-<use ./auto_generated_text/Week1CoordinateSystems/graphics/spherical.pdf>
-Package pdftex.def Info: ./auto_generated_text/Week1CoordinateSystems/graphics/
-spherical.pdf  used on input line 24.
-(pdftex.def)             Requested size: 213.52098pt x 193.40477pt.
-<./auto_generated_text/Week1CoordinateSystems/graphics/011.pdf, id=1107, 220.75
-72pt x 200.48491pt>
-File: ./auto_generated_text/Week1CoordinateSystems/graphics/011.pdf Graphic fil
+[48]
+<./content/01_2_cylindrical_coords/graphics/theta_constant.pdf, id=627, 253.177
+5pt x 230.55865pt>
+File: ./content/01_2_cylindrical_coords/graphics/theta_constant.pdf Graphic fil
 e (type pdf)
-<use ./auto_generated_text/Week1CoordinateSystems/graphics/011.pdf>
-Package pdftex.def Info: ./auto_generated_text/Week1CoordinateSystems/graphics/
-011.pdf  used on input line 34.
-(pdftex.def)             Requested size: 220.75665pt x 200.4844pt.
-[63
-
- <./auto_generated_text/Week1CoordinateSystems/graphics/spherical.pdf>]
-[64 <./auto_generated_text/Week1CoordinateSystems/graphics/011.pdf>]
-<./auto_generated_text/Week1CoordinateSystems/graphics/rho_constant.pdf, id=113
-7, 280.54442pt x 251.6363pt>
-File: ./auto_generated_text/Week1CoordinateSystems/graphics/rho_constant.pdf Gr
-aphic file (type pdf)
-<use ./auto_generated_text/Week1CoordinateSystems/graphics/rho_constant.pdf>
-Package pdftex.def Info: ./auto_generated_text/Week1CoordinateSystems/graphics/
-rho_constant.pdf  used on input line 91.
-(pdftex.def)             Requested size: 280.54372pt x 251.63568pt.
- [65]
-File: ./auto_generated_text/Week1CoordinateSystems/graphics/theta_constant.pdf 
-Graphic file (type pdf)
-<use ./auto_generated_text/Week1CoordinateSystems/graphics/theta_constant.pdf>
-Package pdftex.def Info: ./auto_generated_text/Week1CoordinateSystems/graphics/
-theta_constant.pdf  used on input line 100.
+<use ./content/01_2_cylindrical_coords/graphics/theta_constant.pdf>
+Package pdftex.def Info: ./content/01_2_cylindrical_coords/graphics/theta_const
+ant.pdf  used on input line 133.
 (pdftex.def)             Requested size: 253.17688pt x 230.55809pt.
+ [49 <./content/01_2_cylindrical_coords/graphics/theta_constant.pdf>]
+<./content/01_2_cylindrical_coords/graphics/z_constant.pdf, id=641, 277.59894pt
+ x 203.12659pt>
+File: ./content/01_2_cylindrical_coords/graphics/z_constant.pdf Graphic file (t
+ype pdf)
+<use ./content/01_2_cylindrical_coords/graphics/z_constant.pdf>
+Package pdftex.def Info: ./content/01_2_cylindrical_coords/graphics/z_constant.
+pdf  used on input line 144.
+(pdftex.def)             Requested size: 277.59825pt x 203.12607pt.
+<./content/01_2_cylindrical_coords/graphics/half_sphere.pdf, id=642, 289.64178p
+t x 211.44104pt>
+File: ./content/01_2_cylindrical_coords/graphics/half_sphere.pdf Graphic file (
+type pdf)
+<use ./content/01_2_cylindrical_coords/graphics/half_sphere.pdf>
+Package pdftex.def Info: ./content/01_2_cylindrical_coords/graphics/half_sphere
+.pdf  used on input line 176.
+(pdftex.def)             Requested size: 289.64107pt x 211.4405pt.
 
-[66 <./auto_generated_text/Week1CoordinateSystems/graphics/rho_constant.pdf>]
-<./auto_generated_text/Week1CoordinateSystems/graphics/phi_constant.pdf, id=115
-8, 562.72177pt x 197.002pt>
-File: ./auto_generated_text/Week1CoordinateSystems/graphics/phi_constant.pdf Gr
-aphic file (type pdf)
-<use ./auto_generated_text/Week1CoordinateSystems/graphics/phi_constant.pdf>
-Package pdftex.def Info: ./auto_generated_text/Week1CoordinateSystems/graphics/
-phi_constant.pdf  used on input line 111.
+[50 <./content/01_2_cylindrical_coords/graphics/z_constant.pdf>]
+<./content/01_2_cylindrical_coords/graphics/cylinder_100.pdf, id=656, 239.23303
+pt x 204.9784pt>
+File: ./content/01_2_cylindrical_coords/graphics/cylinder_100.pdf Graphic file 
+(type pdf)
+<use ./content/01_2_cylindrical_coords/graphics/cylinder_100.pdf>
+Package pdftex.def Info: ./content/01_2_cylindrical_coords/graphics/cylinder_10
+0.pdf  used on input line 216.
+(pdftex.def)             Requested size: 239.23244pt x 204.97789pt.
+ [51 <./content/01_2_cylindrical_coords/graphics/half_sphere.pdf>]) [52 <./cont
+ent/01_2_cylindrical_coords/graphics/cylinder_100.pdf>]
+(./content/01_3_spherical_coords/spherical_coords.tex
+
+LaTeX Warning: No \author given.
+
+<./content/01_3_spherical_coords/graphics/spherical.pdf, id=684, 213.52151pt x 
+193.40526pt>
+File: ./content/01_3_spherical_coords/graphics/spherical.pdf Graphic file (type
+ pdf)
+<use ./content/01_3_spherical_coords/graphics/spherical.pdf>
+Package pdftex.def Info: ./content/01_3_spherical_coords/graphics/spherical.pdf
+  used on input line 24.
+(pdftex.def)             Requested size: 213.52098pt x 193.40477pt.
+<./content/01_3_spherical_coords/graphics/011.pdf, id=685, 220.7572pt x 200.484
+91pt>
+File: ./content/01_3_spherical_coords/graphics/011.pdf Graphic file (type pdf)
+<use ./content/01_3_spherical_coords/graphics/011.pdf>
+Package pdftex.def Info: ./content/01_3_spherical_coords/graphics/011.pdf  used
+ on input line 34.
+(pdftex.def)             Requested size: 220.75665pt x 200.4844pt.
+[53
+
+ <./content/01_3_spherical_coords/graphics/spherical.pdf>] [54 <./content/01_3_
+spherical_coords/graphics/011.pdf>]
+<./content/01_3_spherical_coords/graphics/rho_constant.pdf, id=715, 280.54442pt
+ x 251.6363pt>
+File: ./content/01_3_spherical_coords/graphics/rho_constant.pdf Graphic file (t
+ype pdf)
+<use ./content/01_3_spherical_coords/graphics/rho_constant.pdf>
+Package pdftex.def Info: ./content/01_3_spherical_coords/graphics/rho_constant.
+pdf  used on input line 91.
+(pdftex.def)             Requested size: 280.54372pt x 251.63568pt.
+ [55]
+<./content/01_3_spherical_coords/graphics/theta_constant.pdf, id=725, 253.1775p
+t x 230.55865pt>
+File: ./content/01_3_spherical_coords/graphics/theta_constant.pdf Graphic file 
+(type pdf)
+<use ./content/01_3_spherical_coords/graphics/theta_constant.pdf>
+Package pdftex.def Info: ./content/01_3_spherical_coords/graphics/theta_constan
+t.pdf  used on input line 100.
+(pdftex.def)             Requested size: 253.17688pt x 230.55809pt.
+ [56 <./content/01_3_spherical_coords/graphics/rho_constant.pdf> <./content/01_
+3_spherical_coords/graphics/theta_constant.pdf>]
+<./content/01_3_spherical_coords/graphics/phi_constant.pdf, id=746, 562.72177pt
+ x 197.002pt>
+File: ./content/01_3_spherical_coords/graphics/phi_constant.pdf Graphic file (t
+ype pdf)
+<use ./content/01_3_spherical_coords/graphics/phi_constant.pdf>
+Package pdftex.def Info: ./content/01_3_spherical_coords/graphics/phi_constant.
+pdf  used on input line 111.
 (pdftex.def)             Requested size: 562.7204pt x 197.00151pt.
-<./auto_generated_text/Week1CoordinateSystems/graphics/cone.pdf, id=1159, 197.6
-0349pt x 209.84286pt>
-File: ./auto_generated_text/Week1CoordinateSystems/graphics/cone.pdf Graphic fi
-le (type pdf)
-<use ./auto_generated_text/Week1CoordinateSystems/graphics/cone.pdf>
-Package pdftex.def Info: ./auto_generated_text/Week1CoordinateSystems/graphics/
-cone.pdf  used on input line 120.
+<./content/01_3_spherical_coords/graphics/cone.pdf, id=747, 197.60349pt x 209.8
+4286pt>
+File: ./content/01_3_spherical_coords/graphics/cone.pdf Graphic file (type pdf)
+
+<use ./content/01_3_spherical_coords/graphics/cone.pdf>
+Package pdftex.def Info: ./content/01_3_spherical_coords/graphics/cone.pdf  use
+d on input line 120.
 (pdftex.def)             Requested size: 197.603pt x 209.84235pt.
-
-[67 <./auto_generated_text/Week1CoordinateSystems/graphics/phi_constant.pdf> <.
-/auto_generated_text/Week1CoordinateSystems/graphics/cone.pdf>]
-<./auto_generated_text/Week1CoordinateSystems/graphics/elliptic_hyper.pdf, id=1
-182, 258.02199pt x 229.74332pt>
-File: ./auto_generated_text/Week1CoordinateSystems/graphics/elliptic_hyper.pdf 
-Graphic file (type pdf)
-<use ./auto_generated_text/Week1CoordinateSystems/graphics/elliptic_hyper.pdf>
-Package pdftex.def Info: ./auto_generated_text/Week1CoordinateSystems/graphics/
-elliptic_hyper.pdf  used on input line 149.
+ [57 <./content/01_3_spherical_coords/graphics/phi_constant.pdf> <./content/01_
+3_spherical_coords/graphics/cone.pdf>]
+<./content/01_3_spherical_coords/graphics/elliptic_hyper.pdf, id=769, 258.02199
+pt x 229.74332pt>
+File: ./content/01_3_spherical_coords/graphics/elliptic_hyper.pdf Graphic file 
+(type pdf)
+<use ./content/01_3_spherical_coords/graphics/elliptic_hyper.pdf>
+Package pdftex.def Info: ./content/01_3_spherical_coords/graphics/elliptic_hype
+r.pdf  used on input line 149.
 (pdftex.def)             Requested size: 258.02135pt x 229.74274pt.
- [68 <./auto_generated_text/Week1CoordinateSystems/graphics/elliptic_hyper.pdf>
-]
-<./auto_generated_text/Week1CoordinateSystems/graphics/ice_cream.pdf, id=1196, 
-231.30133pt x 225.29599pt>
-File: ./auto_generated_text/Week1CoordinateSystems/graphics/ice_cream.pdf Graph
-ic file (type pdf)
-<use ./auto_generated_text/Week1CoordinateSystems/graphics/ice_cream.pdf>
-Package pdftex.def Info: ./auto_generated_text/Week1CoordinateSystems/graphics/
-ice_cream.pdf  used on input line 179.
+ [58 <./content/01_3_spherical_coords/graphics/elliptic_hyper.pdf>]
+<./content/01_3_spherical_coords/graphics/ice_cream.pdf, id=783, 231.30133pt x 
+225.29599pt>
+File: ./content/01_3_spherical_coords/graphics/ice_cream.pdf Graphic file (type
+ pdf)
+<use ./content/01_3_spherical_coords/graphics/ice_cream.pdf>
+Package pdftex.def Info: ./content/01_3_spherical_coords/graphics/ice_cream.pdf
+  used on input line 179.
 (pdftex.def)             Requested size: 231.30077pt x 225.29543pt.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 183.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 183.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 183.
-
-) [69 <./auto_generated_text/Week1CoordinateSystems/graphics/ice_cream.pdf>]
-[70] (./auto_generated_text/Week1CoordinateSystems/all_problems.tex
+) [59 <./content/01_3_spherical_coords/graphics/ice_cream.pdf>] (./content/01_4
+_functions/functions.tex
 
 LaTeX Warning: No \author given.
 
-[71
+[60
 
-]
-<./auto_generated_text/Week1CoordinateSystems/graphics/cylinder_wedge.pdf, id=1
-223, 169.41634pt x 170.5846pt>
-File: ./auto_generated_text/Week1CoordinateSystems/graphics/cylinder_wedge.pdf 
-Graphic file (type pdf)
-<use ./auto_generated_text/Week1CoordinateSystems/graphics/cylinder_wedge.pdf>
-Package pdftex.def Info: ./auto_generated_text/Week1CoordinateSystems/graphics/
-cylinder_wedge.pdf  used on input line 93.
-(pdftex.def)             Requested size: 169.41591pt x 170.58417pt.
- [72] [73 <./auto_generated_text/Week1CoordinateSystems/graphics/cylinder_wedge
-.pdf, page is rotated 180 degrees>] [74]
-<./auto_generated_text/Week1CoordinateSystems/graphics/sphere_wedge.pdf, id=126
-3, 167.46265pt x 193.85759pt>
-File: ./auto_generated_text/Week1CoordinateSystems/graphics/sphere_wedge.pdf Gr
-aphic file (type pdf)
-<use ./auto_generated_text/Week1CoordinateSystems/graphics/sphere_wedge.pdf>
-Package pdftex.def Info: ./auto_generated_text/Week1CoordinateSystems/graphics/
-sphere_wedge.pdf  used on input line 210.
-(pdftex.def)             Requested size: 167.46222pt x 193.8571pt.
- [75] [76 <./auto_generated_text/Week1CoordinateSystems/graphics/sphere_wedge.p
-df, page is rotated 180 degrees>]
-[77] [78] [79]) [80]
-(./auto_generated_text/Week2MultivariableFunctionsandGraphing/functions.tex
+] [61] [62]) [63] (./content/01_5_graphing/graphing.tex
 
 LaTeX Warning: No \author given.
 
-[81
+[64
 
-] [82] [83]) [84]
-(./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphing.tex
-
-LaTeX Warning: No \author given.
-
-[85
-
-] [86] [87]) [88]
-(./auto_generated_text/Week2MultivariableFunctionsandGraphing/quadric_surfaces.
-tex
+] [65] [66]) [67] (./content/01_6_quadric_surfaces/quadric_surfaces.tex
 
 LaTeX Warning: No \author given.
 
-<./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/conics.p
-df, id=1397, 587.21967pt x 165.90663pt>
-File: ./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/con
-ics.pdf Graphic file (type pdf)
-<use ./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/coni
-cs.pdf>
-Package pdftex.def Info: ./auto_generated_text/Week2MultivariableFunctionsandGr
-aphing/graphics/conics.pdf  used on input line 23.
+<./content/01_6_quadric_surfaces/graphics/conics.pdf, id=874, 587.21967pt x 165
+.90663pt>
+File: ./content/01_6_quadric_surfaces/graphics/conics.pdf Graphic file (type pd
+f)
+<use ./content/01_6_quadric_surfaces/graphics/conics.pdf>
+Package pdftex.def Info: ./content/01_6_quadric_surfaces/graphics/conics.pdf  u
+sed on input line 23.
 (pdftex.def)             Requested size: 587.21823pt x 165.9062pt.
-<./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/ellipsoi
-d.pdf, id=1398, 179.78648pt x 144.69919pt>
-File: ./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/ell
-ipsoid.pdf Graphic file (type pdf)
-<use ./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/elli
-psoid.pdf>
-Package pdftex.def Info: ./auto_generated_text/Week2MultivariableFunctionsandGr
-aphing/graphics/ellipsoid.pdf  used on input line 51.
+<./content/01_6_quadric_surfaces/graphics/ellipsoid.pdf, id=875, 179.78648pt x 
+144.69919pt>
+File: ./content/01_6_quadric_surfaces/graphics/ellipsoid.pdf Graphic file (type
+ pdf)
+<use ./content/01_6_quadric_surfaces/graphics/ellipsoid.pdf>
+Package pdftex.def Info: ./content/01_6_quadric_surfaces/graphics/ellipsoid.pdf
+  used on input line 51.
 (pdftex.def)             Requested size: 179.78604pt x 144.69882pt.
-[89
+[68
 
- <./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/conics.
-pdf, page is rotated 180 degrees>]
-<./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/parabolo
-id.pdf, id=1415, 183.01524pt x 161.9892pt>
-File: ./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/par
-aboloid.pdf Graphic file (type pdf)
-<use ./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/para
-boloid.pdf>
-Package pdftex.def Info: ./auto_generated_text/Week2MultivariableFunctionsandGr
-aphing/graphics/paraboloid.pdf  used on input line 70.
+ <./content/01_6_quadric_surfaces/graphics/conics.pdf, page is rotated 180 degr
+ees>]
+<./content/01_6_quadric_surfaces/graphics/paraboloid.pdf, id=892, 183.01524pt x
+ 161.9892pt>
+File: ./content/01_6_quadric_surfaces/graphics/paraboloid.pdf Graphic file (typ
+e pdf)
+<use ./content/01_6_quadric_surfaces/graphics/paraboloid.pdf>
+Package pdftex.def Info: ./content/01_6_quadric_surfaces/graphics/paraboloid.pd
+f  used on input line 70.
 (pdftex.def)             Requested size: 183.01479pt x 161.98878pt.
- [90 <./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/ell
-ipsoid.pdf, page is rotated 180 degrees> <./auto_generated_text/Week2Multivaria
-bleFunctionsandGraphing/graphics/paraboloid.pdf, page is rotated 180 degrees>]
-<./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/hyperbol
-ic_paraboloid.pdf, id=1437, 216.63852pt x 187.661pt>
-File: ./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/hyp
-erbolic_paraboloid.pdf Graphic file (type pdf)
-<use ./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/hype
-rbolic_paraboloid.pdf>
-Package pdftex.def Info: ./auto_generated_text/Week2MultivariableFunctionsandGr
-aphing/graphics/hyperbolic_paraboloid.pdf  used on input line 87.
+ [69 <./content/01_6_quadric_surfaces/graphics/ellipsoid.pdf, page is rotated 1
+80 degrees> <./content/01_6_quadric_surfaces/graphics/paraboloid.pdf, page is r
+otated 180 degrees>]
+<./content/01_6_quadric_surfaces/graphics/hyperbolic_paraboloid.pdf, id=914, 21
+6.63852pt x 187.661pt>
+File: ./content/01_6_quadric_surfaces/graphics/hyperbolic_paraboloid.pdf Graphi
+c file (type pdf)
+<use ./content/01_6_quadric_surfaces/graphics/hyperbolic_paraboloid.pdf>
+Package pdftex.def Info: ./content/01_6_quadric_surfaces/graphics/hyperbolic_pa
+raboloid.pdf  used on input line 87.
 (pdftex.def)             Requested size: 216.63799pt x 187.66054pt.
-<./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/elliptic
-_cone.pdf, id=1438, 189.94774pt x 168.601pt>
-File: ./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/ell
-iptic_cone.pdf Graphic file (type pdf)
-<use ./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/elli
-ptic_cone.pdf>
-Package pdftex.def Info: ./auto_generated_text/Week2MultivariableFunctionsandGr
-aphing/graphics/elliptic_cone.pdf  used on input line 104.
+<./content/01_6_quadric_surfaces/graphics/elliptic_cone.pdf, id=915, 189.94774p
+t x 168.601pt>
+File: ./content/01_6_quadric_surfaces/graphics/elliptic_cone.pdf Graphic file (
+type pdf)
+<use ./content/01_6_quadric_surfaces/graphics/elliptic_cone.pdf>
+Package pdftex.def Info: ./content/01_6_quadric_surfaces/graphics/elliptic_cone
+.pdf  used on input line 104.
 (pdftex.def)             Requested size: 189.94727pt x 168.60057pt.
- [91 <./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/hyp
-erbolic_paraboloid.pdf, page is rotated 180 degrees> <./auto_generated_text/Wee
-k2MultivariableFunctionsandGraphing/graphics/elliptic_cone.pdf, page is rotated
- 180 degrees>]
-<./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/hyperbol
-oid_one_sheet.pdf, id=1462, 213.11139pt x 203.90462pt>
-File: ./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/hyp
-erboloid_one_sheet.pdf Graphic file (type pdf)
-<use ./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/hype
-rboloid_one_sheet.pdf>
-Package pdftex.def Info: ./auto_generated_text/Week2MultivariableFunctionsandGr
-aphing/graphics/hyperboloid_one_sheet.pdf  used on input line 121.
+ [70 <./content/01_6_quadric_surfaces/graphics/hyperbolic_paraboloid.pdf, page 
+is rotated 180 degrees> <./content/01_6_quadric_surfaces/graphics/elliptic_cone
+.pdf, page is rotated 180 degrees>]
+<./content/01_6_quadric_surfaces/graphics/hyperboloid_one_sheet.pdf, id=938, 21
+3.11139pt x 203.90462pt>
+File: ./content/01_6_quadric_surfaces/graphics/hyperboloid_one_sheet.pdf Graphi
+c file (type pdf)
+<use ./content/01_6_quadric_surfaces/graphics/hyperboloid_one_sheet.pdf>
+Package pdftex.def Info: ./content/01_6_quadric_surfaces/graphics/hyperboloid_o
+ne_sheet.pdf  used on input line 121.
 (pdftex.def)             Requested size: 213.11086pt x 203.90411pt.
-<./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/hyperbol
-oid_two_sheet.pdf, id=1463, 200.40482pt x 222.2263pt>
-File: ./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/hyp
-erboloid_two_sheet.pdf Graphic file (type pdf)
-<use ./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/hype
-rboloid_two_sheet.pdf>
-Package pdftex.def Info: ./auto_generated_text/Week2MultivariableFunctionsandGr
-aphing/graphics/hyperboloid_two_sheet.pdf  used on input line 138.
+<./content/01_6_quadric_surfaces/graphics/hyperboloid_two_sheet.pdf, id=939, 20
+0.40482pt x 222.2263pt>
+File: ./content/01_6_quadric_surfaces/graphics/hyperboloid_two_sheet.pdf Graphi
+c file (type pdf)
+<use ./content/01_6_quadric_surfaces/graphics/hyperboloid_two_sheet.pdf>
+Package pdftex.def Info: ./content/01_6_quadric_surfaces/graphics/hyperboloid_t
+wo_sheet.pdf  used on input line 138.
 (pdftex.def)             Requested size: 200.40431pt x 222.22575pt.
- [92 <./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/hyp
-erboloid_one_sheet.pdf, page is rotated 180 degrees>] [93 <./auto_generated_tex
-t/Week2MultivariableFunctionsandGraphing/graphics/hyperboloid_two_sheet.pdf, pa
-ge is rotated 180 degrees>])
-[94] [95]
-(./auto_generated_text/Week2MultivariableFunctionsandGraphing/all_problems.tex
+ [71 <./content/01_6_quadric_surfaces/graphics/hyperboloid_one_sheet.pdf, page 
+is rotated 180 degrees>] [72 <./content/01_6_quadric_surfaces/graphics/hyperbol
+oid_two_sheet.pdf, page is rotated 180 degrees>]) [73] [74]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 28.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 28.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 28.
+
+(./content/02_1_parametric_curves/parametric_curves.tex
 
 LaTeX Warning: No \author given.
 
-[96
+[75
 
-] [97] [98] [99]
-<./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/quadric_
-options.pdf, id=1573, 559.35623pt x 145.58891pt>
-File: ./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/qua
-dric_options.pdf Graphic file (type pdf)
-<use ./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/quad
-ric_options.pdf>
-Package pdftex.def Info: ./auto_generated_text/Week2MultivariableFunctionsandGr
-aphing/graphics/quadric_options.pdf  used on input line 176.
-(pdftex.def)             Requested size: 559.35486pt x 145.58855pt.
- [100 <./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/qu
-adric_options.pdf, page is rotated 180 degrees>] [101]
-<./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/wedge_op
-tions.pdf, id=1625, 577.3523pt x 137.42863pt>
-File: ./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/wed
-ge_options.pdf Graphic file (type pdf)
-<use ./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/wedg
-e_options.pdf>
-Package pdftex.def Info: ./auto_generated_text/Week2MultivariableFunctionsandGr
-aphing/graphics/wedge_options.pdf  used on input line 239.
-(pdftex.def)             Requested size: 577.35088pt x 137.42828pt.
-
-[102 <./auto_generated_text/Week2MultivariableFunctionsandGraphing/graphics/wed
-ge_options.pdf, page is rotated 180 degrees>] [103] [104]) [105]
-(./auto_generated_text/Week3ParametricCurves/parametric_curves.tex
-
-LaTeX Warning: No \author given.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 13.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 13.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 13.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 37.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 37.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 37.
-
-[106
-
-] [107]
+] [76]
 Overfull \hbox (11.97978pt too wide) in paragraph at lines 119--121
 \OT1/cmr/m/it/10 We can ap-ply this to the parametriza-tion for the unit cir-cl
 e, in or-der to parametriza-
  []
 
-[108]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 163.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 163.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 163.
-
-[109]) [110]
-(./auto_generated_text/Week3ParametricCurves/velocity_and_speed.tex
+[77] [78]) [79] (./content/02_2_velocity_and_speed/velocity_and_speed.tex
 
 LaTeX Warning: No \author given.
 
-[111
+[80
 
-] [112]
+] [81]
 Overfull \hbox (8.02846pt too wide) in paragraph at lines 123--124
 []\OT1/cmr/m/it/10 Consider the path $[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1
 /cmr/m/n/10 ) = ([](\OML/cmm/m/it/10 t[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; []\
@@ -1521,7 +1388,7 @@ OT1/cmr/m/n/10 0 \OMS/cmsy/m/n/10 ^^T \OML/cmm/m/it/10 t \OMS/cmsy/m/n/10 ^^T [
 ]$\OT1/cmr/m/it/10 . This also parametrizes
  []
 
-[113]) [114] (./auto_generated_text/Week3ParametricCurves/properties.tex
+[82]) [83] (./content/02_3_properties/properties.tex
 
 LaTeX Warning: No \author given.
 
@@ -1534,77 +1401,234 @@ m/it/10 x[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/m/it/10
  ; :::; x[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ))$
  []
 
+[84
+
+]) [85] (./content/02_4_curve_length/curve_length.tex
+
+LaTeX Warning: No \author given.
+
+[86
+
+]
+Overfull \hbox (6.53818pt too wide) in paragraph at lines 58--59
+[][]\OT1/cmr/bx/n/10 Example 47. []\OT1/cmr/m/it/10 Con-sider the path $[] \OT1
+/cmr/m/n/10 : [0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 2\OML/cmm/m/it/10 ^^Y\OT1/cm
+r/m/n/10 ] \OMS/cmsy/m/n/10 ! \U/msb/m/n/10 R[]$ \OT1/cmr/m/it/10 de-fined by $
+[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) = ([](\OML/cmm/m/it/10 t
+\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/c
+mr/m/n/10 ))$\OT1/cmr/m/it/10 . 
+ []
+
+
+Overfull \hbox (14.5937pt too wide) in paragraph at lines 74--75
+[][]\OT1/cmr/bx/n/10 Example 48. []\OT1/cmr/m/it/10 Con-sider the path $[] \OT1
+/cmr/m/n/10 : [0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 3\OML/cmm/m/it/10 ^^Y\OT1/cm
+r/m/n/10 ] \OMS/cmsy/m/n/10 ! \U/msb/m/n/10 R[]$ \OT1/cmr/m/it/10 de-fined by $
+[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) = ([](\OML/cmm/m/it/10 t
+\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/c
+mr/m/n/10 )\OML/cmm/m/it/10 ; t\OT1/cmr/m/n/10 )$\OT1/cmr/m/it/10 . 
+ []
+
+[87] [88]) [89] (./content/02_5_arclength_function/arclength_function.tex
+
+LaTeX Warning: No \author given.
+
+[90
+
+] [91]
+Overfull \hbox (11.7645pt too wide) in paragraph at lines 80--81
+[]\OT1/cmr/m/n/10 Let's sup-pose we ob-tain the ar-clength parametriza-tion $[]
+(\OML/cmm/m/it/10 s\OT1/cmr/m/n/10 )$ from some parametriza-
+ []
+
+) [92] (./content/02_6_curvature/curvature.tex
+
+LaTeX Warning: No \author given.
+
+
+Overfull \hbox (6.66727pt too wide) in paragraph at lines 43--44
+[]\OT1/cmr/m/n/10 Unfortunately, as we've seen, it's not al-ways easy to find a
+n ar-clength parametriza-
+ []
+
+[93
+
+]
+Overfull \hbox (11.56859pt too wide) in paragraph at lines 63--64
+[][]\OT1/cmr/bx/n/10 Example 50. []\OT1/cmr/m/it/10 We'll com-pute the cur-va-t
+ure of a cir-cle of ra-dius $\OML/cmm/m/it/10 a > \OT1/cmr/m/n/10 0$\OT1/cmr/m/
+it/10 , parametrized
+ []
+
+
+Overfull \hbox (7.39142pt too wide) in paragraph at lines 93--94
+[][]\OT1/cmr/bx/n/10 Example 51. []\OT1/cmr/m/it/10 We'll com-pute the cur-va-t
+ure of the path $[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) = (\OML
+/cmm/m/it/10 t []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/m
+/it/10 ; t []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/m/it/
+10 ; t[]\OT1/cmr/m/n/10 )$\OT1/cmr/m/it/10 ,
+ []
+
+[94]) [95] (./content/02_7_tnb_frames/tnb_frames.tex
+
+LaTeX Warning: No \author given.
+
+[96
+
+] [97] [98]) [99] (./content/02_8_more_tnb/more_tnb.tex
+
+LaTeX Warning: No \author given.
+
+
+Overfull \hbox (11.00528pt too wide) in paragraph at lines 39--40
+[][]\OT1/cmr/bx/n/10 Example 52. []\OT1/cmr/m/it/10 We'll com-pute the mov-ing 
+frame for the path $[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) = ([
+](\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; []\OT1/cmr/m/n/10 (\OML
+/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; t\OT1/cmr/m/n/10 )$
+ []
+
+[100
+
+] [101] [102]) [103]
+(./content/02_9_acceleration_decomp/acceleration_decomp.tex
+
+LaTeX Warning: No \author given.
+
+[104
+
+] [105] [106]
+Underfull \hbox (badness 10000) in paragraph at lines 147--148
+
+ []
+
+[107] [108]) [109] (./content/03_01_limits/limits.tex
+
+LaTeX Warning: No \author given.
+
+[110
+
+] [111] [112]) [113] [114]
+(./content/03_02_evaluating_limits/evaluating_limits.tex
+
+LaTeX Warning: No \author given.
+
 [115
 
-]) [116] (./auto_generated_text/Week3ParametricCurves/all_problems.tex
+]
+Overfull \hbox (19.60815pt too wide) in paragraph at lines 94--95
+[]\OT1/cmr/m/n/10 (I'M NOT SURE THIS IS AC-TU-ALLY WORTH-WHILE...SO I STOPPED
+ []
+
+[116]
+Overfull \hbox (5.34549pt too wide) in paragraph at lines 96--97
+[]\OT1/cmr/m/n/10 In this proof, we'll han-dle the case where both lim-its ex-i
+st. Sup-pose $[] \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 ([](\OML/cmm/m/it/10 t\OT1/c
+mr/m/n/10 )) =
+ []
+
+[117]
+Overfull \hbox (66.16162pt too wide) in paragraph at lines 138--139
+[][]\OT1/cmr/bx/n/10 Example 58. []\OT1/cmr/m/it/10 We will use spher-i-cal co-
+or-di-nates to eval-u-ate the limit $[] []$.
+ []
+
+[118] [119]
+Overfull \hbox (13.1952pt too wide) detected at line 200
+[]
+ []
+
+) [120] (./content/03_03_continuity/continuity.tex
 
 LaTeX Warning: No \author given.
 
-[117
+[121
 
-] [118] [119] [120] [121]) [122] [123]
-(./auto_generated_text/Week9PropertiesofDerivatives/higher_order_partials.tex
+] [122]
+Overfull \hbox (62.59529pt too wide) in paragraph at lines 100--101
+[][]\OT1/cmr/bx/n/10 Definition 42. []\OT1/cmr/m/it/10 Sup-pose we have a func-
+tion $[] \OT1/cmr/m/n/10 : \U/msb/m/n/10 R[] \OMS/cmsy/m/n/10 ! \U/msb/m/n/10 R
+[]$ \OT1/cmr/m/it/10 with $[]\OT1/cmr/m/n/10 ([]) = (\OML/cmm/m/it/10 f[]\OT1/c
+mr/m/n/10 ([])\OML/cmm/m/it/10 ; f[]\OT1/cmr/m/n/10 ([])\OML/cmm/m/it/10 ; :::;
+ f[]\OT1/cmr/m/n/10 ([]))$\OT1/cmr/m/it/10 .
+ []
+
+[123]) [124] (./content/03_04_partials_def/partials_def.tex
 
 LaTeX Warning: No \author given.
 
-[124
+[125
 
-] [125] [126] [127]) [128] [129]
-(./auto_generated_text/Week9PropertiesofDerivatives/differentiation_rules.tex
+] [126] [127]) [128] (./content/03_05_partials_geo/partials_geo.tex
 
 LaTeX Warning: No \author given.
 
-[130
+[129
+
+]) [130] (./content/03_06_tangent_plane/tangent_plane.tex
+
+LaTeX Warning: No \author given.
+
+[131
+
+] [132] [133] [134]) [135]
+(./content/03_10_higher_order_partials/higher_order_partials.tex
+
+LaTeX Warning: No \author given.
+
+[136
+
+] [137] [138] [139]) [140] [141]
+(./content/03_11_differentiation_rules/differentiation_rules.tex
+
+LaTeX Warning: No \author given.
+
+[142
 
 ]
 Overfull \hbox (17.74678pt too wide) detected at line 82
 []
  []
 
-[131] [132] [133]) [134]
-(./auto_generated_text/Week9PropertiesofDerivatives/chain_rule.tex
+[143] [144] [145]) [146] (./content/03_12_chain_rule/chain_rule.tex
 
 LaTeX Warning: No \author given.
 
-[135
+[147
 
-]) [136]
-(./auto_generated_text/Week9PropertiesofDerivatives/all_problems.tex
+] [148] [149]
+Overfull \hbox (18.48401pt too wide) in paragraph at lines 139--140
+[][]\OT1/cmr/bx/n/10 Example 79. []\OT1/cmr/m/it/10 Con-sider the func-tion $\O
+ML/cmm/m/it/10 g \OT1/cmr/m/n/10 : \U/msb/m/n/10 R[] \OMS/cmsy/m/n/10 ! \U/msb/
+m/n/10 R[]$\OT1/cmr/m/it/10 , given by $\OT1/cmr/bx/n/10 g\OT1/cmr/m/n/10 (\OML
+/cmm/m/it/10 r; ^^R\OT1/cmr/m/n/10 ) = (\OML/cmm/m/it/10 r [] ^^R; r [] ^^R\OT1
+/cmr/m/n/10 )$\OT1/cmr/m/it/10 .
+ []
+
+[150]
+Overfull \hbox (82.57805pt too wide) detected at line 171
+[]
+ []
+
+) [151] (./content/05_01_vector_fields/vector_fields.tex
 
 LaTeX Warning: No \author given.
 
+[152
 
-Overfull \hbox (6.11653pt too wide) in paragraph at lines 17--18
-[]\OT1/cmr/m/sl/10 Find all second-order par-tial deriva-tives of the func-tion
- $\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y\OT1/cmr/m/n/10 ) =
- []
+]) [153] (./content/05_07_topology/topology.tex [154
 
+]
 
-Overfull \hbox (5.22646pt too wide) in paragraph at lines 21--22
-[]\OT1/cmr/m/sl/10 Find all second-order par-tial deriva-tives of the func-tion
- $\OML/cmm/m/it/10 g\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 u; v\OT1/cmr/m/n/10 ) =
- []
+LaTeX Font Warning: Font shape `OT1/cmss/bx/sl' undefined
+(Font)              using `OT1/cmss/bx/n' instead on input line 153.
 
+\c@depthIICount=\count199
+[155] [156] [157] [158] [159] [160] [161] [162] [163] [164]) [165]
+(./content/05_08_FTLI/FTLI.tex [166
 
-Overfull \hbox (15.44057pt too wide) in paragraph at lines 25--26
-[]\OT1/cmr/m/sl/10 Find all second-order par-tial deriva-tives of the func-tion
- $\OML/cmm/m/it/10 h\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 ) 
-=
- []
-
-[137
-
-] [138]) [139]
-(./auto_generated_text/Week27ConservativeVectorFieldsandTopology/topology.tex
-[140
-
-] [141] [142] [143] [144] [145] [146] [147] [148] [149] [150]) [151]
-(./auto_generated_text/Week27ConservativeVectorFieldsandTopology/cons_vf_top.te
-x [152
-
-] [153] [154] [155] [156] [157]
+] [167] [168] [169] [170] [171]
 Overfull \hbox (10.04654pt too wide) in paragraph at lines 238--239
-[][]\OT1/cmr/bx/n/10 Example 58. []\OT1/cmr/m/it/10 Let $[]\OT1/cmr/m/n/10 (\OM
+[][]\OT1/cmr/bx/n/10 Example 87. []\OT1/cmr/m/it/10 Let $[]\OT1/cmr/m/n/10 (\OM
 L/cmm/m/it/10 x; y\OT1/cmr/m/n/10 ) = (2\OML/cmm/m/it/10 xy[]; \OT1/cmr/m/n/10 
 2\OML/cmm/m/it/10 x[]y\OT1/cmr/m/n/10 )$\OT1/cmr/m/it/10 , and con-sider $[]\OT
 1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) = (2 [](\OML/cmm/m/it/10 ^^Yt
@@ -1617,35 +1641,31 @@ Overfull \hbox (28.51959pt too wide) detected at line 247
 []
  []
 
-[158] [159]) [160]
-(./auto_generated_text/Week27ConservativeVectorFieldsandTopology/cons_vf.tex
-[161
+[172] [173]) [174] (./content/05_09_potential_functions/potential_functions.tex
+[175
 
 ]
 Overfull \hbox (3.72144pt too wide) in paragraph at lines 73--74
-[][]\OT1/cmr/bx/n/10 Example 60. []\OT1/cmr/m/it/10 Find a po-ten-tial func-tio
+[][]\OT1/cmr/bx/n/10 Example 89. []\OT1/cmr/m/it/10 Find a po-ten-tial func-tio
 n for the vec-tor field $\OT1/cmr/bx/n/10 F\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x;
  y; z\OT1/cmr/m/n/10 ) = (2\OML/cmm/m/it/10 xy; x[] \OT1/cmr/m/n/10 +
  []
 
-[162] [163] [164] [165] [166]) [167]
-(./auto_generated_text/Week27ConservativeVectorFieldsandTopology/all_problems.t
-ex [168
-
-]) [169] (./auto_generated_text/Week29Curl/curl_comp.tex [170
+[176] [177] [178] [179] [180]) [181] (./content/07_01_curl_comp/curl_comp.tex
+[182
 
 ]
 \c@depthIIICount=\count266
 \c@depthIVCount=\count267
 
-Overfull \hbox (22.83394pt too wide) in paragraph at lines 55--56
+Overfull \hbox (17.33391pt too wide) in paragraph at lines 55--56
 []\OT1/cmr/m/sl/10 From this, we can de-duce that $\OMS/cmsy/m/n/10 r$ \OT1/cmr
 /m/sl/10 should mean $[]$.
  []
 
-[171]
+[183]
 Overfull \hbox (107.87029pt too wide) in paragraph at lines 96--97
-[][]\OT1/cmr/bx/n/10 Definition 42. []\OT1/cmr/m/it/10 The \OT1/cmr/m/n/10 curl
+[][]\OT1/cmr/bx/n/10 Definition 60. []\OT1/cmr/m/it/10 The \OT1/cmr/m/n/10 curl
  \OT1/cmr/m/it/10 of a three-dimensional vec-tor field $\OT1/cmr/bx/n/10 F\OT1/
 cmr/m/n/10 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 ) = (\OML/cmm/m/it/10 M\OT1
 /cmr/m/n/10 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; N\OT1/
@@ -1653,7 +1673,7 @@ cmr/m/n/10 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; P\OT1/c
 mr/m/n/10 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 ))$
  []
 
-[172] [173]
+[184] [185]
 Overfull \hbox (34.7304pt too wide) in paragraph at lines 183--184
 []\OT1/cmr/m/n/10 For a three-dimensional vec-tor field, $\OT1/cmr/bx/n/10 F\OT
 1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 ) = (\OML/cmm/m/it/10 M\O
@@ -1662,16 +1682,16 @@ T1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; N\OT
 /cmr/m/n/10 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 ))$,
  []
 
-) [174] (./auto_generated_text/Week29Curl/curl_geo.tex [175
+) [186] (./content/07_02_curl_geo/curl_geo.tex [187
 
-] [176]
+] [188]
 Overfull \hbox (1.66492pt too wide) in paragraph at lines 176--177
 []\OT1/cmr/m/n/10 Note that this cor-re-sponds to a larger value of $\OML/cmm/m
 /it/10 N[]$ \OT1/cmr/m/n/10 (the change in the $\OML/cmm/m/it/10 y$\OT1/cmr/m/n
 /10 -component
  []
 
-[177] [178]
+[189] [190]
 Overfull \hbox (1.5896pt too wide) in paragraph at lines 223--223
 |\OT1/cmr/bx/n/14.4 Geometric Sig-nif-i-cance of Three-dimensional Curl| 
  []
@@ -1682,110 +1702,44 @@ Overfull \hbox (1.33823pt too wide) detected at line 238
  []
 
 
-Overfull \hbox (28.86298pt too wide) in paragraph at lines 252--253
+Overfull \hbox (23.36295pt too wide) in paragraph at lines 252--253
 []\OT1/cmr/m/sl/10 Consider the vec-tor field $\OT1/cmr/bx/n/10 F\OT1/cmr/m/n/1
 0 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 ) = []$\OT1/cmr/m/sl/10 .
  []
 
-[179] [180]) [181] (./auto_generated_text/Week29Curl/curl_connect.tex
+[191] [192]) [193] (./content/07_03_curl_connect/curl_connect.tex
 Overfull \hbox (2.06386pt too wide) in paragraph at lines 35--36
 []\OT1/cmr/m/n/10 Now, we will use Clairaut's The-o-rem to sim-plify this vec-t
 or. Since $\OT1/cmr/bx/n/10 F \OT1/cmr/m/n/10 = (\OML/cmm/m/it/10 M; N; P\OT1/c
 mr/m/n/10 )$
  []
 
-[182
+[194
 
-] [183]) [184] (./auto_generated_text/Week29Curl/all_problems.tex
-Overfull \hbox (18.39633pt too wide) in paragraph at lines 45--46
-[]\OT1/cmr/m/sl/10 Compute the curl of the vec-tor field $\OT1/cmr/bx/n/10 F\OT
-1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 ) = ([](\OML/cmm/m/it/10 
-x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 y\OT1/
-cmr/m/n/10 )\OML/cmm/m/it/10 ; xy\OT1/cmr/m/n/10 )$\OT1/cmr/m/sl/10 . 
- []
-
-[185
+] [195]) [196] [197
 
 ]
-Overfull \hbox (4.93805pt too wide) in paragraph at lines 59--60
-[]\OT1/cmr/m/sl/10 Compute the curl of the vec-tor field $\OT1/cmr/bx/n/10 F\OT
-1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 ) = (\OML/cmm/m/it/10 e[]
-; []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 z\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; e[]\
-OT1/cmr/m/n/10 )$\OT1/cmr/m/sl/10 . 
- []
-
-[186] [187]
-Overfull \hbox (2.69038pt too wide) in paragraph at lines 146--147
-[]\OT1/cmr/m/sl/10 Find the 2-dimensional curl of the vec-tor field $\OT1/cmr/b
-x/n/10 F\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y\OT1/cmr/m/n/10 ) = (\OMS/cmsy/m/
-n/10 ^^@\OML/cmm/m/it/10 y; x\OT1/cmr/m/n/10 )$\OT1/cmr/m/sl/10 .
- []
-
-[188]
-Overfull \hbox (62.28526pt too wide) in paragraph at lines 191--192
-[]\OT1/cmr/m/sl/10 Compute the curl of the vec-tor field $\OT1/cmr/bx/n/10 F\OT
-1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 ) = (\OMS/cmsy/m/n/10 ^^@
-\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 y []\OT1/cmr/m/n/10 (3\OML/cmm/m/it/10 x\OT1/
-cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 3\OML/cmm/m/it/10 x []\OT1/cmr/m
-/n/10 (\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 y\OT1/cmr/m/n/10 )
-\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 0)$\OT1/cmr/m/sl/10 . 
- []
-
-[189]
-Overfull \hbox (70.45428pt too wide) in paragraph at lines 211--212
-[]\OT1/cmr/m/sl/10 Compute the curl of the vec-tor field $\OT1/cmr/bx/n/10 F\OT
-1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 ) = (\OML/cmm/m/it/10 ze[
-] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 z []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT
-1/cmr/m/n/10 )\OML/cmm/m/it/10 ; xe[]; \OMS/cmsy/m/n/10 ^^@ []\OT1/cmr/m/n/10 (
-\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ))$\OT1/cmr/m/sl/10 . 
- []
-
-[190]
-Overfull \hbox (27.09312pt too wide) in paragraph at lines 271--272
-[]\OT1/cmr/m/sl/10 Compute the curl of the vec-tor field $\OT1/cmr/bx/n/10 F\OT
-1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y\OT1/cmr/m/n/10 ) = (\OMS/cmsy/m/n/10 ^^@\OT
-1/cmr/m/n/10 4\OML/cmm/m/it/10 x \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 y []\OT1/cm
-r/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; []\OT1/cmr/m/n/
-10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ))$\OT1/cmr/m/sl/10 . 
- []
-
-[191] [192]
-Overfull \hbox (61.38022pt too wide) in paragraph at lines 337--338
-[]\OT1/cmr/m/sl/10 Compute the curl of the vec-tor field $\OT1/cmr/bx/n/10 F\OT
-1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 ) = (\OML/cmm/m/it/10 ye[
-] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 z []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT
-1/cmr/m/n/10 )\OML/cmm/m/it/10 ; xe[]; []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT
-1/cmr/m/n/10 ))$\OT1/cmr/m/sl/10 . 
- []
-
-[193] [194]) [195]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 61.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 61.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 80.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 80.
  (./multivariable.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 61.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 61.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 80.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 80.
+Package rerunfilecheck Info: File `multivariable.out' has not changed.
+(rerunfilecheck)             Checksum: CAB3A4823A25421BFDDC10C7844CB0C7;3445.
 
-
-Package rerunfilecheck Warning: File `multivariable.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `multivariable.out':
-(rerunfilecheck)             Before: 23AA672EA568B24BBEA2617F94EE08FB;7732
-(rerunfilecheck)             After:  174F7C6892CE2AC9A06700765621FD98;8763.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 61.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 80.
  ) 
 Here is how much of TeX's memory you used:
- 31126 strings out of 492649
- 719596 string characters out of 6129622
- 879186 words of memory out of 5000000
- 33270 multiletter control sequences out of 15000+600000
- 22674 words of font info for 82 fonts, out of 8000000 for 9000
+ 30829 strings out of 492649
+ 714258 string characters out of 6129622
+ 877361 words of memory out of 5000000
+ 33200 multiletter control sequences out of 15000+600000
+ 24862 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,20n,100p,890b,978s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 75i,20n,100p,877b,937s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></
@@ -1795,26 +1749,28 @@ sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></
 usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
 sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></u
 sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
-r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/
-local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/lo
-cal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loca
-l/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/t
-exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texl
-ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive
-/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/texlive/
-2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive
-/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/
-2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/20
-18/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/201
-8/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2018
-/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/20
-18/texmf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb></usr/local/texlive/2
-018/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texli
-ve/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on multivariable.pdf (195 pages, 5550241 bytes).
+r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr
+/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/l
+ocal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/loc
+al/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local
+/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/t
+exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texl
+ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive
+/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/20
+18/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/texlive/201
+8/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/20
+18/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/201
+8/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2018/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2018/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2018/te
+xmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2018/
+texmf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb></usr/local/texlive/2018
+/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/
+2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on multivariable.pdf (197 pages, 4866790 bytes).
 PDF statistics:
- 2790 PDF objects out of 2984 (max. 8388607)
- 2474 compressed objects within 25 object streams
- 1056 named destinations out of 1200 (max. 500000)
- 1117 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2179 PDF objects out of 2487 (max. 8388607)
+ 1874 compressed objects within 19 object streams
+ 779 named destinations out of 1000 (max. 500000)
+ 558 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,564 @@
+\documentclass{ximera}  
+
+\title{Matrices}  
+
+\begin{document}  
+\begin{abstract}  
+%abstract
+\end{abstract}  
+\maketitle 
+
+In this section, we review matrices, including the determinant and the linear transformation represented by a matrix.
+
+\section*{Matrices}
+
+We begin with the definition of a matrix.
+
+\begin{definition}
+An $m\times n$ \emph{matrix} $A$ is a rectangular array of numbers $a_{ij}$, with $m$ rows and $n$ columns:
+\[
+A = \left(\begin{array}{cccc}
+a_{11}& a_{12} & \cdots & a_{1n}\\
+a_{21}& a_{22} & \cdots & a_{2n}\\
+\vdots & \vdots & & \vdots\\
+a_{m1}& a_{m2} & \cdots & a_{mn}\\
+\end{array}\right), 
+\]
+where the $a_{ij}$ are real numbers for $i$ and $j$ integers with $1\leq i \leq m$ and $1\leq j\leq n$.
+
+The numbers $a_{ij}$ are called the \emph{entries} of the matrix $A$.
+\end{definition}
+
+Note that for an entry $a_{ij}$, the subscript $ij$ describes the location of $a_{ij}$ in the matrix $A$: $i$ gives the row, and $j$ gives the column.
+
+We can also think of a matrix as a ``vector of vectors'' in two different ways. If we imagine that the columns of $A$ are vectors in $\mathbb{R}^n$, then the matrix of $A$ can be viewed as a vector of column vectors. If we imagine that the rows of $A$ are vectors in $\mathbb{R}^n$, then the matrix $A$ can be viewed as a vector of row vectors.
+
+\section*{Matrix Operations}
+
+Here, we'll define matrix addition and matrix multiplication.
+
+In order to be able to add two matrices, they need to have the exact same dimensions. That is, they both need to be $m\times n$ matrices for some fixed values of $m$ and $n$. When we have two matrices with the same dimensions, we define their sum component-wise or entry-wise.
+
+\begin{definition}
+Let $A$ and $B$ be two $m\times n$ matrices, with 
+\begin{align*}
+A &= \left(\begin{array}{cccc}
+a_{11}& a_{12} & \cdots & a_{1n}\\
+a_{21}& a_{22} & \cdots & a_{2n}\\
+\vdots & \vdots & & \vdots\\
+a_{m1}& a_{m2} & \cdots & a_{mn}\\
+\end{array}\right), \\
+B &= \left(\begin{array}{cccc}
+b_{11}& b_{12} & \cdots & b_{1n}\\
+b_{21}& b_{22} & \cdots & b_{2n}\\
+\vdots & \vdots & & \vdots\\
+b_{m1}& b_{m2} & \cdots & b_{mn}\\
+\end{array}\right).
+\end{align*}
+Then we define the \emph{matrix sum} $A+B$ to be
+\[
+A+B = \left(\begin{array}{cccc}
+a_{11}+b_{11}& a_{12}+b_{12} & \cdots & a_{1n}+b_{1n}\\
+a_{21}+b_{21}& a_{22}+b_{22} & \cdots & a_{2n}+b_{2n}\\
+\vdots & \vdots & & \vdots\\
+a_{m1}+b_{m1}& a_{m2}+b_{m2} & \cdots & a_{mn}+b_{mn}.\\
+\end{array}\right), 
+\]
+That is, $A+B$ is the $m\times n$ matrix obtained by adding the corresponding entries of $A$ and $B$.
+\end{definition}
+
+\begin{example}
+We can add the matrices $A = \left(\begin{array}{ccc}1&2&3\\4&5&6\end{array}\right)$ and $B=\left(\begin{array}{ccc}7&8&9\\10&11&12\end{array}\right)$ as follows:
+\begin{align*}
+A+B &= \left(\begin{array}{ccc}1&2&3\\4&5&6\end{array}\right) + \left(\begin{array}{ccc}7&8&9\\10&11&12\end{array}\right)\\
+&= \left(\begin{array}{ccc}1+7&2+8&3+9\\4+10&5+11&6+12\end{array}\right)\\
+&= \left(\begin{array}{ccc}8&10&12\\14&16&18\end{array}\right)
+\end{align*}
+\end{example}
+
+\begin{example}
+We cannot add the matrices $A = \left(\begin{array}{ccc}1&2&3\\4&5&6\end{array}\right)$ and $B=\left(\begin{array}{cc}7&8\\10&11\end{array}\right)$, because their dimensions don't match.
+\end{example}
+
+As you might expect, matrix addition has some nice properties which are inherited from addition of real numbers. We list some of them here.
+
+\begin{proposition}
+Let $A$, $B$, and $C$ be $m\times n$ matrices. Then we have
+\begin{enumerate}
+\item $A+B = B+A$ (matrix addition is \emph{commutative});
+\item $A+(B+C)=(A+B)+C$ (matrix addition is \emph{associative}).
+\end{enumerate}
+Furthermore, there is an $m\times n$ matrix $O$, called the \emph{zero matrix}, such that $A+O = A$ for any $m\times n$ matrix $A$. All of the entries of the zero matrix are the real number $0$.
+\end{proposition}
+
+We've seen that matrix addition works in a very natural way, and multiplying a matrix by a scalar (or real number) is similarly nice. We now define scalar multiplication for matrices.
+
+\begin{definition}
+Let
+\[
+A = \left(\begin{array}{cccc}
+a_{11}& a_{12} & \cdots & a_{1n}\\
+a_{21}& a_{22} & \cdots & a_{2n}\\
+\vdots & \vdots & & \vdots\\
+a_{m1}& a_{m2} & \cdots & a_{mn}\\
+\end{array}\right)
+\]
+be an $m\times n$ matrix, and let $k\in\mathbb{R}$ be a scalar. Then the \emph{scalar product} of $k$ and $A$, denoted $kA$, is
+\[
+kA = \left(\begin{array}{cccc}
+ka_{11}& ka_{12} & \cdots & ka_{1n}\\
+ka_{21}& ka_{22} & \cdots & ka_{2n}\\
+\vdots & \vdots & & \vdots\\
+ka_{m1}& ka_{m2} & \cdots & ka_{mn}\\
+\end{array}\right).
+\]
+That is, we obtain the scalar product by multiplying each entry in $A$ by the scalar $k$.
+\end{definition}
+
+\begin{example}
+We can compute the scalar product of $2$ and the matrix $A = \left(\begin{array}{ccc}1&2&3\\4&5&6\end{array}\right)$ as follows:
+\begin{align*}
+2A &= 2\left(\begin{array}{ccc}1&2&3\\4&5&6\end{array}\right)\\
+&= \left(\begin{array}{ccc}2\cdot1&2\cdot2&2\cdot3\\2\cdot4&2\cdot5&2\cdot6\end{array}\right)\\
+&= \left(\begin{array}{ccc}2&4&6\\8&10&12\end{array}\right).
+\end{align*}
+\end{example}
+
+We now list some nice properties of scalar multiplication.
+
+\begin{proposition}
+Let $A$ and $B$ be $m\times n$ matrices, and let $k$ and $l$ be scalars in $\mathbb{R}$. Then
+\begin{enumerate}
+\item $(k+l)A = kA+lA$ (scalar multiplication is \emph{distributive} over scalar addition);
+\item $k(A+B)=kA+kB$ (scalar multiplication is \emph{distributive} over matrix addition);
+\item $k(lA)=(kl)A = l(kA)$.
+\end{enumerate}
+\end{proposition}
+
+We'll now define matrix multiplication, which can be a bit trickier to work with than matrix addition or scalar multiplication. Here are some important things to remember about matrix multiplication:
+\begin{itemize}
+\item Not all matrices can be multiplied. In order to compute the product $AB$ of two matrices $A$ and $B$, the number of columns in $A$ needs to be the same as the number of rows in $B$.
+\item Matrix multiplication is \emph{not} commutative. In fact, its possible that the matrix product $AB$ exists but the product $BA$ does not.
+\end{itemize}
+
+\begin{definition}
+Let $A$ be an $m\times n$ matrix, and let $B$ be an $n\times p$ matrix, with  
+\begin{align*}
+A &= \left(\begin{array}{cccc}
+a_{11}& a_{12} & \cdots & a_{1n}\\
+a_{21}& a_{22} & \cdots & a_{2n}\\
+\vdots & \vdots & & \vdots\\
+a_{m1}& a_{m2} & \cdots & a_{mn}\\
+\end{array}\right), \\
+B &= \left(\begin{array}{cccc}
+b_{11}& b_{12} & \cdots & b_{1p}\\
+b_{21}& b_{22} & \cdots & b_{2p}\\
+\vdots & \vdots & & \vdots\\
+b_{n1}& b_{n2} & \cdots & b_{np}\\
+\end{array}\right).
+\end{align*}
+Note that we are assuming the number of columns in $A$ is the same as the number of rows in $B$.
+
+We define the \emph{matrix product} of $A$ and $B$, denoted $AB$, to be the $m\times p$ matrix
+\[
+AB = \left(\begin{array}{cccc}
+a_{11}b_{11} + a_{12}b_{21}+\cdots + a_{1n}b_{n1}& a_{11}b_{12} + a_{12}b_{22}+\cdots + a_{1n}b_{n2} & \cdots & a_{11}b_{1p} + a_{12}b_{2p}+\cdots + a_{1n}b_{np}\\
+a_{21}b_{11} + a_{22}b_{21}+\cdots + a_{2n}b_{n1}& a_{21}b_{12} + a_{22}b_{22}+\cdots + a_{2n}b_{n2} & \cdots & a_{21}b_{1p} + a_{22}b_{2p}+\cdots + a_{2n}b_{np}\\
+\vdots & \vdots & & \vdots\\
+a_{m1}b_{11} + a_{m2}b_{21}+\cdots + a_{mn}b_{n1}& a_{m1}b_{12} + a_{m2}b_{22}+\cdots + a_{mn}b_{n2} & \cdots & a_{m1}b_{1p} + a_{m2}b_{2p}+\cdots + a_{mn}b_{np}\\
+\end{array}\right).
+\] 
+Equivalently, we could define the $ij$th entry of $AB$ to be the dot product of the $i$th row of $A$ with the $j$th column of $B$. This makes sense, since the number of columns in $A$ is the same as the number of rows in $B$ (both $n$), which ensures that the $i$th row of $A$ and the $j$th column of $B$ are both vectors in $\mathbb{R}^n$.
+\end{definition}
+
+This definition can seem a bit convoluted, and it's easier to understand how matrix multiplication works by going through an example.
+
+\begin{example}
+We can compute the product $AB$ of the matrices $A = \left(\begin{array}{ccc}1&2&3\\4&5&6\end{array}\right)$ and $B=\left(\begin{array}{cc}7&8\\9&10\\11&12\end{array}\right)$ as follows:
+\begin{align*}
+AB &= \left(\begin{array}{ccc}1&2&3\\4&5&6\end{array}\right)\left(\begin{array}{cc}7&8\\9&10\\11&12\end{array}\right),\\
+&= \left(\begin{array}{cc}1\cdot 7+ 2\cdot 9 + 3\cdot 11 & 1\cdot 8+ 2\cdot 10 + 3\cdot 12\\
+4\cdot 7+ 5\cdot 9 + 6\cdot 11 & 4\cdot 8+ 5\cdot 10 + 6\cdot 12\end{array}\right),\\
+&= \left(\begin{array}{cc}58 & 64\\
+139 & 154\end{array}\right).\\
+\end{align*}
+Note that we multiplied a $2\times 3$ matrix by a $3\times 2$ matrix, and we obtained a $2\times 2$ matrix.
+
+We can also compute the product $BA$ for the same matrices as above.
+\begin{align*}
+BA &= \left(\begin{array}{cc}7&8\\9&10\\11&12\end{array}\right)\left(\begin{array}{ccc}1&2&3\\4&5&6\end{array}\right),\\
+&= \left(\begin{array}{ccc}7\cdot 1 + 8\cdot 4 & 7\cdot 2 + 8\cdot 5 & 7\cdot 3 + 8\cdot 6\\
+9\cdot 1 + 10\cdot 4 & 9\cdot 2 + 10\cdot 5 & 9\cdot 3 + 10\cdot 6\\
+11\cdot 1 + 12\cdot 4 & 11\cdot 2 + 12\cdot 5 & 11\cdot 3 + 12\cdot 6\end{array}\right),\\
+&= \left(\begin{array}{ccc}39 & 54 & 69\\
+49 & 68 & 81\\
+59 & 82 & 105\end{array}\right).
+\end{align*}
+Note that we multiplied a $3\times 2$ matrix by a $2\times 3$ matrix, and we obtained a $3\times 3$ matrix.
+
+Note that in this case $AB\neq BA$; matrix multiplication is not commutative, so the order of the matrices matters!
+\end{example}
+
+Although matrix multiplication is not commutative, it still has some nice algebraic properties. We list some of them here.
+
+\begin{proposition}
+Let $A$, $B$, and $C$ be matrices of dimensions such that the following operations are defined, and let $k$ be a scalar. Then
+\begin{enumerate}
+\item $A(BC) = (AB)C$ (matrix multiplication is \emph{associative});
+\item $k(AB) = (kA)B = A(kB)$;
+\item $A(B+C) = AB+AC$;
+\item $(A+B)C = AC+BC$ (with the previous property, matrix multiplication is \emph{distributive} over matrix addition).
+\end{enumerate}
+\end{proposition}
+
+\section*{Determinants}
+
+When we have a square matrix (meaning an $n\times n$ matrix, where the number of rows and number of columns are the same), we can compute an important number, called the determinant of the matrix. It turns out that this single number can tell us some important things about the matrix!
+
+We begin by defining the determinant of a $2\times 2$ matrix.
+
+\begin{definition}
+Consider the $2\times 2$ matrix $A=\left(\begin{array}{cc}a & b \\ c & d\\\end{array}\right)$. We define the \emph{determinant} of the matrix $A$ to be
+\[
+\textrm{det}(A) = ad-bc.
+\]
+We also sometimes use the notation $|A|$ for the determinant of the matrix $A$.
+\end{definition}
+
+Note that the determinate of a $2\times 2$ matrix is just a number, not a matrix. We compute the determinant in a couple of examples.
+
+\begin{example}
+We'll compute the determinant of the matrix $A = \left(\begin{array}{cc}1 & 2 \\ 3 & 4\\\end{array}\right)$.
+\begin{align*}
+\textrm{det}(A) &= 1\cdot 4 - 2\cdot 3\\
+&= -2.
+\end{align*}
+\end{example}
+
+We've defined the determinant of $2\times 2$ matrices, but we haven't defined the determinant of a larger square matrix yet. It turns out that the determinant is defined \emph{inductively}. This means that the determinant of a $3\times 3$ matrix is defined using determinants of $2\times 2$ matrices, the determinant of a $4\times 4$ matrix is defined using determinants of $3\times 3$ matrices, the determinant of a $5\times 5$ matrix is defined using determinants of $4\times 4$ matrices, and so on. This means in order to compute the determinant of a large square matrix, we often need to compute the determinants of many smaller matrices.
+
+We now give the definition of the determinant of an $n\times n$ matrix.
+
+\begin{definition}
+Let $A$ be an $n\times n$ matrix, with entries $a_{ij}$. We defined the \emph{determinant} of $A$ to be the number computed by
+\[
+\textrm{det}(A) = (-1)^{1+1}a_{11}\textrm{det}(A_{11}) + (-1)^{1+2}a_{12}\textrm{det}(A_{12}) + \cdots + (-1)^{1+n}a_{1n}\textrm{det}(A_{1n}),
+\]
+where $A_{ij}$ is the $(n-1)\times (n-1)$ submatrix of $A$ which we obtain by deleting the $i$th row and $j$the column from $A$.
+\end{definition}
+
+This definition is pretty confusing if you read through it without seeing an example, but this actually follows a nice pattern. This pattern is easier to see with an example.
+
+\begin{example}
+We compute the determinant of the $4\times 4$ matrix,
+\[
+A = \left(\begin{array}{cccc}
+1 & 4 & 2 & -1\\
+0 & 0 & -2 & 1\\
+-3 & 0 & 1 & 0\\
+0 & 0 & 0 & 1\\
+\end{array}\right).
+\]
+Note that we begin by writing this in terms of determinants of $3\times 3$ matrices. But in order to compute the determinant of each $3\times 3$ matrix, we write it in terms of $2\times 2$ matrices! This winds up being a lot of determinants to compute.
+\begin{align*}
+\textrm{det}(A) = (-1&)^{1+1}1\textrm{det}\left(\begin{array}{ccc}
+0&-2&1\\
+0&1&0\\
+0&0&1
+\end{array}\right) + (-1)^{1+2}4\textrm{det}\left(\begin{array}{ccc}
+0&-2&1\\
+-3&1&0\\
+0&0&1
+\end{array}\right)\\ &+ (-1)^{1+3}2\textrm{det}\left(\begin{array}{ccc}
+0&0&1\\
+-3&0&0\\
+0&0&1 
+\end{array}\right)+ (-1)^{1+4}(-1)\textrm{det}\left(\begin{array}{ccc}
+0&0&-2\\
+-3&0&1\\
+0&0&0
+\end{array}\right)
+\end{align*}
+We now compute the determinant of each of the $3\times 3$ submatrices, which we compute using determinants of $2\times 2$ matrices.
+\begin{align*}
+\textrm{det}\left(\begin{array}{ccc}
+0&-2&1\\
+0&1&0\\
+0&0&1
+\end{array}\right) &= (-1)^{1+1}0\textrm{det}\left(\begin{array}{cc}
+1&0\\
+0&1
+\end{array}\right) + (-1)^{1+2}(-2)\textrm{det}\left(\begin{array}{cc}
+0&0\\
+0&1
+\end{array}\right)\\ &\phantom{ihuegrhiuehuir}+ (-1)^{1+3}1\textrm{det}\left(\begin{array}{cc}
+0&1\\
+0&0
+\end{array}\right)\\
+&= 1\cdot 0\cdot (1\cdot 1 - 0\cdot 0) + -1\cdot (-2)\cdot (0\cdot 1 - 0\cdot 0) + 1\cdot 1\cdot (0\cdot 0 - 1\cdot 0)\\
+&= 0\\
+\textrm{det}\left(\begin{array}{ccc}
+0&-2&1\\
+-3&1&0\\
+0&0&1
+\end{array}\right) &= (-1)^{1+1}0\textrm{det}\left(\begin{array}{cc}
+1&0\\
+0&1
+\end{array}\right) + (-1)^{1+2}(-2)\textrm{det}\left(\begin{array}{cc}
+-3&0\\
+0&1
+\end{array}\right)\\ &\phantom{ihuegrhiuehuir}+ (-1)^{1+3}1\textrm{det}\left(\begin{array}{cc}
+-3&1\\
+0&0
+\end{array}\right)\\
+&= 1\cdot 0\cdot (1\cdot 1 - 0\cdot 0) + -1\cdot (-2)\cdot (-3\cdot 1 - 0\cdot 0) + 1\cdot 1\cdot (-3\cdot 0 - 1\cdot 0)\\
+&= 6\\
+\textrm{det}\left(\begin{array}{ccc}
+0&0&1\\
+-3&0&0\\
+0&0&1
+\end{array}\right) &= (-1)^{1+1}0\textrm{det}\left(\begin{array}{cc}
+0&0\\
+0&1
+\end{array}\right) + (-1)^{1+2}0\textrm{det}\left(\begin{array}{cc}
+-3&0\\
+0&1
+\end{array}\right)\\ &\phantom{ihuegrhiuehuir}+ (-1)^{1+3}1\textrm{det}\left(\begin{array}{cc}
+-3&0\\
+0&0
+\end{array}\right)\\
+&= 1\cdot 0\cdot (0\cdot 1 - 0\cdot 0) + -1\cdot 0\cdot (-3\cdot 1 - 0\cdot 0) + 1\cdot 1\cdot (-3\cdot 0 - 0\cdot 0)\\
+&= 0\\
+\textrm{det}\left(\begin{array}{ccc}
+0&0&-2\\
+-3&0&1\\
+0&0&0
+\end{array}\right) &= (-1)^{1+1}0\textrm{det}\left(\begin{array}{cc}
+0&1\\
+0&0
+\end{array}\right) + (-1)^{1+2}0\textrm{det}\left(\begin{array}{cc}
+-3&1\\
+0&0
+\end{array}\right)\\ &\phantom{ihuegrhiuehuir}+ (-1)^{1+3}(-2)\textrm{det}\left(\begin{array}{cc}
+-3&0\\
+0&0
+\end{array}\right)\\
+&= 1\cdot 0\cdot (0\cdot 0 - 1\cdot 0) + -1\cdot 0\cdot (-3\cdot 0 - 1\cdot 0) + 1\cdot (-2)\cdot (-3\cdot 0 - 0\cdot 0)\\
+&= 0\\
+\end{align*}
+Substituting these in to our computation of the determinant of $A$, we then obtain
+\begin{align*}
+\textrm{det}(A) &= 1\cdot1\cdot 0 + (-1)\cdot 4\cdot (6) + 1\cdot 2\cdot 0+ (-1)\cdot (-1)\cdot 0\\
+&= -24.
+\end{align*}
+\end{example}
+
+We sometimes call this method of computing a determinant as ``expanding along the first row.'' This is because we can also compute the determinant of a matrix by similarly expanding along a different row, or even a column.
+
+\begin{proposition}
+We can similarly compute the determinant of an $n\times n$ matrix $A$ by expanding along any row or column. Expanding along the $i$th row, we have
+\[
+\textrm{det}(A)=(-1)^{i+1}a_{i1}\textrm{det}(A_{i1}) + (-1)^{i+2}a_{i2}\textrm{det}(A_{i2}) +\cdots + (-1)^{i+n}a_{in}\textrm{det}(A_{in}).
+\]
+Expanding along the $j$th column, we have
+\[
+\textrm{det}(A) = (-1)^{1+j}a_{1j}\textrm{det}(A_{1j}) + (-1)^{2+j}a_{2j}\textrm{det}(A_{2j})+\cdots+(-1)^{n+j}a_{nj}\textrm{det}(A_{nj}).
+\]
+Once again, $A_{ij}$ is the $(n-1)\times(n-1)$ submatrix obtained from $A$ by deleting the $i$th row and $j$th column.
+\end{proposition}
+
+It can be useful to think about which row or column will be easiest to expand along. In particular, choosing a row or column with a lot of zeros greatly simplifies computation.
+
+\begin{example}
+We'll once again compute the determinant of the $4\times 4$ matrix \[
+A = \left(\begin{array}{cccc}
+1 & 4 & 2 & -1\\
+0 & 0 & -2 & 1\\
+-3 & 0 & 1 & 0\\
+0 & 0 & 0 & 1\\
+\end{array}\right),
+\]
+this time by expanding along the second column. Note that this column is a good choice, since there's only one nonzero element. We have
+\[
+\textrm{det}(A) = (-1)^{1+2}(4)\textrm{det}\left(\begin{array}{ccc}0&-2&1\\-3&1&0\\0&0&1\\\end{array}\right) + (-1)^{2+2}(0)\textrm{det}\left(\begin{array}{ccc}1&2&-1\\-3&1&0\\0&0&1\\\end{array}\right)+(-1)^{3+2}(0)\textrm{det}\left(\begin{array}{ccc}1&2&-1\\0&-2&1\\0&0&1\\\end{array}\right)+(-1)^{4+2}(0)\textrm{det}\left(\begin{array}{ccc}1&2&-1\\0&-2&1\\-3&1&0\\\end{array}\right).
+\]
+We'll only compute the determinant of the submatrix $\left(\begin{array}{ccc}0&-2&1\\-3&1&0\\0&0&1\\\end{array}\right)$; we won't bother computing the others since their determinants will be multiplied by $0$. 
+\begin{align*}
+\textrm{det}\left(\begin{array}{ccc}0&-2&1\\-3&1&0\\0&0&1\\\end{array}\right) &= (-1)^{3+1}(0)\textrm{det}\left(\begin{array}{cc}-2&1\\1&0\end{array}\right) + (-1)^{3+2}(0)\textrm{det}\left(\begin{array}{cc}0&1\\-3&0\end{array}\right) + (-1)^{3+3}(1)\textrm{det}\left(\begin{array}{cc}0&-2\\-3&1\end{array}\right),\\
+&= 0 + 0 + (1)(1)(0\cdot 1- (-2)\cdot (-3)),\\
+&= -6.
+\end{align*}
+Once again, we don't bother computing the determinants which will be multiplied by zero. Note that we chose to expand across the last row, since it had two zeroes. Expanding along the first column would also have been a reasonable choice.
+
+Returning to our computation of the determinant of $A$, we have
+\begin{align*}
+\textrm{det}(A) &= (-1)^{1+2}(4)\textrm{det}\left(\begin{array}{ccc}0&-2&1\\-3&1&0\\0&0&1\\\end{array}\right) + (-1)^{2+2}(0)\textrm{det}\left(\begin{array}{ccc}1&2&-1\\-3&1&0\\0&0&1\\\end{array}\right)+(-1)^{3+2}(0)\textrm{det}\left(\begin{array}{ccc}1&2&-1\\0&-2&1\\0&0&1\\\end{array}\right)+(-1)^{4+2}(0)\textrm{det}\left(\begin{array}{ccc}1&2&-1\\0&-2&1\\-3&1&0\\\end{array}\right),\\
+&= (-1)(4)(-6) + 0 + 0 + 0,\\
+&= 24.
+\end{align*}
+Notice that this matching our previous computation, expanding along the first row.
+\end{example}
+
+One of the most powerful uses of the determinant is to tell us whether or not a matrix is invertible. Recall that an $n\times n$ matrix $A$ is \emph{invertible} if there is a matrix $B$ such that $AB=BA = I_n$, where $I_n$ is the $n\times n$ identity matrix.
+
+\begin{proposition}
+An $n\times n$ matrix $A$ is invertible if and only if its determinant is nonzero.
+\end{proposition}
+
+This gives us a convenient way to test if a matrix is invertible, without needing to produce an explicit inverse.
+
+\begin{example}
+We found that the determinant of the matrix
+\[
+A = \left(\begin{array}{cccc}
+1 & 4 & 2 & -1\\
+0 & 0 & -2 & 1\\
+-3 & 0 & 1 & 0\\
+0 & 0 & 0 & 1\\
+\end{array}\right)
+\]
+is $24$. Since this is nonzero, the matrix $A$ is invertible.
+
+On the other hand, you can verify that the determinant of the matrix
+\[
+B = \left(\begin{array}{cccc}
+1 & 2 & 3 & 4\\
+1 & 0 & -1 & -2\\
+-3 & 1 & -1 & 0\\
+-1 & 3 & 1 & 2\\
+\end{array}\right)
+\]
+is $0$. Thus, the matrix $B$ is not invertible.
+\end{example}
+
+\section*{Linear Transformations}
+
+One of the most important uses of matrices is to represent linear transformations. Recall the definition of a linear transformation.
+
+\begin{definition}
+A function $T$ from $\mathbb{R}^n$ to $\mathbb{R}^n$ is a linear transformation if for all vectors $\vec{v}$ and $\vec{w}$ in $\mathbb{R}^n$ and all scalars $k\in\mathbb{R}$, we have
+\begin{enumerate}
+\item $T(\vec{v}+\vec{w}) = T(\vec{v})+T(\vec{w})$;
+\item  $T(k\vec{v}) = kT(\vec{v})$.
+\end{enumerate}
+\end{definition}
+
+We can view an $m\times n$ matrix $A$ as representing a linear transformation from $\mathbb{R}^n$ to $\mathbb{R}^m$ as follows. We write vectors as column vectors, or, equivalently, $n\times 1$ or $m\times 1$ matrices. For an input column vector $\vec{v}$ in $\mathbb{R}^n$, we multiply $\vec{v}$ by $A$ on the left, using matrix multiplication. This produces an $m\times 1$ matrix, or, equivalently, a column vector in $\mathbb{R}^m$. Thus, we can define a function
+\[
+T_A(\vec{v}) = A\vec{v}.
+\]
+Using properties of matrix multiplication, we have that this is a linear transformation. Thus, we have the linear transformation associated to a matrix.
+
+\begin{example}
+Consider the linear transformation $T_A$ from $\mathbb{R}^3$ to $\mathbb{R}^2$ corresponding to the $2\times 3$ matrix
+\[
+A = \left(\begin{array}{ccc}
+1 & -5 & 3\\
+2 & 0 & -1
+\end{array}\right).
+\]
+Let investigate the images of several vectors in $\mathbb{R}^3$ under the linear transformation $T_A$.
+\begin{align*}
+T_A((1,2,3)) &= \left(\begin{array}{ccc}
+1 & -5 & 3\\
+2 & 0 & -1
+\end{array}\right)\left(\begin{array}{c} 1\\2\\3\end{array}\right)\\
+& = \left(\begin{array}{c} 
+1\cdot 1 + -5\cdot 2 + 3\cdot 3\\
+2\cdot 1 + 0\cdot 2 + -1\cdot 3\\
+\end{array}\right)\\
+& = \left(\begin{array}{c} 
+0\\
+-1\\
+\end{array}\right)
+\end{align*}
+\begin{align*}
+T_A((1,-1,2)) &= \left(\begin{array}{ccc}
+1 & -5 & 3\\
+2 & 0 & -1
+\end{array}\right)\left(\begin{array}{c} 1\\-1\\1\end{array}\right)\\
+& = \left(\begin{array}{c} 
+1\cdot 1 + -5\cdot -1 + 3\cdot 1\\
+2\cdot 1 + 0\cdot -1 + -1\cdot 1\\
+\end{array}\right)\\
+& = \left(\begin{array}{c} 
+9\\
+1\\
+\end{array}\right)
+\end{align*}
+\begin{align*}
+T_A((1,0,0)) &= \left(\begin{array}{ccc}
+1 & -5 & 3\\
+2 & 0 & -1
+\end{array}\right)\left(\begin{array}{c} 1\\0\\0\end{array}\right)\\
+& = \left(\begin{array}{c} 
+1\cdot 1 + -5\cdot 0 + 3\cdot 0\\
+2\cdot 1 + 0\cdot 0 + -1\cdot 0\\
+\end{array}\right)\\
+& = \left(\begin{array}{c} 
+1\\
+2\\
+\end{array}\right)
+\end{align*}
+\begin{align*}
+T_A((0,1,0)) &= \left(\begin{array}{ccc}
+1 & -5 & 3\\
+2 & 0 & -1
+\end{array}\right)\left(\begin{array}{c} 0\\1\\0\end{array}\right)\\
+& = \left(\begin{array}{c} 
+1\cdot 0 + -5\cdot 1 + 3\cdot 0\\
+2\cdot 0 + 0\cdot 1 + -1\cdot 0\\
+\end{array}\right)\\
+& = \left(\begin{array}{c} 
+-5\\
+0\\
+\end{array}\right)
+\end{align*}
+\begin{align*}
+T_A((0,0,1)) &= \left(\begin{array}{ccc}
+1 & -5 & 3\\
+2 & 0 & -1
+\end{array}\right)\left(\begin{array}{c} 0\\0\\1\end{array}\right)\\
+& = \left(\begin{array}{c} 
+1\cdot 0 + -5\cdot 0 + 3\cdot 1\\
+2\cdot 0 + 0\cdot 0 + -1\cdot 1\\
+\end{array}\right)\\
+& = \left(\begin{array}{c} 
+3\\
+-1\\
+\end{array}\right)
+\end{align*}
+\end{example}
+
+Notice that when we apply the linear transformation to the standard unit vectors $\vec{e}_1$, $\vec{e}_2$, and $\vec{e}_3$, we obtain the columns of $A$ as the output vector. This observation can be used to reconstruct a matrix from a given linear transformation.
+
+\begin{proposition}
+Given any linear transformation $T$ from $\mathbb{R}^n$ to $\mathbb{R}^m$, there is an $m\times n$ matrix such that $T = T_A$.
+
+Furthermore, the columns of $A$ can be obtained by applying $T$ to the standard unit vectors. More specifically, the $j$th column of $A$ is given by $T(\vec{e}_j)$.
+\end{proposition}
+
+We can see how this is useful through an example.
+
+\begin{example}
+Consider the linear transformation $T$ from $\mathbb{R}^2$ to $\mathbb{R}^2$ that rotates a vector by $30^\circ$ counterclockwise. We can see geometrically that, for the standard unit vectors $\vec{e}_1$ and $\vec{e}_2$ in $\mathbb{R}^2$, we have
+\begin{align*}
+T((1,0)) &= \left(\frac{\sqrt{3}}{2}, \frac{1}{2}\right),\\
+T((0,1)) &= \left(-\frac{1}{2}, \frac{\sqrt{3}}{2}\right).\\
+\end{align*}
+These tell us the columns of the matrix corresponding to the linear transformation, so we then know that the rotation can be represented by the matrix
+\[
+A = \left(\begin{array}{cc}
+\frac{\sqrt{3}}{2} & -\frac{1}{2}\\
+\frac{1}{2} & \frac{\sqrt{3}}{2}
+\end{array}\right).
+\]
+\end{example}
+
+\section*{Summary}
+
+In this section, we reviewed matrix operations and properties, determinants, and linear transformations.
+
+Although we've reviewed some of the most important concepts from linear algebra, there is still a lot of material that we weren't able to include here. Make sure you refer back to your linear algebra textbook if there's anything else you need to review!
+
+\end{document}

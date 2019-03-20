@@ -1,0 +1,127 @@
+\documentclass{ximera}
+
+\graphicspath{{./graphics/}}
+
+\title{Partial Derivatives}
+\begin{document}
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+Now that we've defined limits of multivariable function, we're ready to begin to explore how multivariable functions change, using derivatives. Let's recall how we found derivatives in single variable calculus, where they gave us a way to compute the instantaneous rate of change of a function.
+
+We defined the \emph{derivative} of a function $f$ at $a$ to be
+\[
+f'(a) = \lim_{h\rightarrow 0}\frac{f(a+h)-f(a)}{h}.
+\]
+This definition arose out of geometric considerations. The instantaneous rate of change of a function at a point can be found as the slope of the tangent line to the graph of the function at that point. Our key insight was that, as we get very close to $a$, the slope of secant lines will approach the slope of the tangent line. This lead us to our limit definition for the derivative. The quotient $\frac{f(a+h)-f(a)}{h}$ gives us the slope of the secant line between the points $(a,f(a))$ and $(a+h, f(a+h))$. As we take $h\rightarrow 0$, these points get closer together, and the slope of the secant line approaches the slope of the tangent line.
+
+VISUAL
+
+We're beginning to study how multivariable functions change, and we'd like to do this using derivatives. With multivariable functions, it's not clear what this should mean. For single variable functions the question was simple: if we change $x$, what happens to $y$? But with multivariable functions, we have multiple inputs, and we could change them in a variety of ways.
+
+For example, consider the function $f(x,y) = x^2+y$ at $(x,y)=(1,1)$. We could look at how this function changes if we increase $x$ by a little bit, and leave $y=1$. We could also look at how this function changes if we increase $y$ by a little bit, and leave $x=1$. We could also look at how this function changes if we increase $x$ and $y$ by the same amount, or increase $y$ by twice as much as $x$, or infinitely many other ways.
+
+Because of the breadth of possibilities, it's hard to decide what a multivariable derivative should be. We'll revisit this question later, but for now, we'll see how a function $f:\mathbb{R}^n\rightarrow \mathbb{R}$ changes with respect to one input variable at a time.
+
+\section*{Definition of Partial Derivatives}
+
+In order to study how a function $f:\mathbb{R}^n\rightarrow \mathbb{R}$ changes with respect to one input variable, we keep the other variables constant, and change only that variable. This leads us to our definition of partial derivatives. For clarity, we'll begin with the $n=2$ case, before introducing more general partial derivatives.
+
+\begin{definition}
+Consider the function $f:\mathbb{R}^2\rightarrow\mathbb{R}$.
+
+We define the \emph{partial derivative of $f$ with respect to $x$} to be
+\[
+f_x(x,y)=\lim_{h\rightarrow 0}\frac{f(x+h,y)-f(x,y)}{h},
+\]
+provided this limit exists.
+
+We define the \emph{partial derivative of $f$ with respect to $y$} to be
+\[
+f_y(x,y)=\lim_{h\rightarrow 0}\frac{f(x,y+h)-f(x,y)}{h},
+\]
+provided this limit exists.
+\end{definition}
+
+Note that these are single variable limits, so we haven't taken advantage of our new multivariable limits yet.
+
+Let's look at how we can compute partial derivatives, similarly to how we computed single variable derivatives using limits.
+
+\begin{example}
+We'll compute the partial derivatives of the function $f(x,y) = x^2+xy+y$ at the point $(1,2)$.
+
+\begin{align*}
+f_x(1,2) &= \lim_{h\rightarrow 0}\frac{f(1+h,2)-f(1,2)}{h}\\
+&= \lim_{h\rightarrow 0}\frac{((1+h)^2+(1+h)\cdot 2 + 2)-(1^2+1\cdot 2 + 2)}{h}\\
+&= \lim_{h\rightarrow 0}\frac{((1+2h+h^2)+(2+2h)+2)-5}{h}\\
+&=\lim_{h\rightarrow 0}\frac{h^2+4h}{h}\\
+&=\lim_{h\rightarrow 0}(h+4)\\
+&= 4
+\end{align*}
+
+\begin{align*}
+f_y(1,2) &= \lim_{h\rightarrow 0}\frac{f(1,2+h)-f(1,2)}{h}\\
+&= \lim_{h\rightarrow 0}\frac{(1^2+1\cdot(2+h)+(2+h))-(1^2+1\cdot 2+2)}{h}\\
+&= \lim_{h\rightarrow 0}\frac{2h}{h}\\
+&= \lim_{h\rightarrow 0}2\\
+&= 2
+\end{align*}
+\end{example}
+
+More generally, for functions $f:\mathbb{R}^n\rightarrow \mathbb{R}$, partial derivatives are defined similarly.
+
+\begin{definition}
+Consider a function $f:\mathbb{R}^n\rightarrow\mathbb{R}$. For $1\leq i\leq n$, we define the \emph{partial derivative of $f$ with respect to $x_i$} to be
+\[
+f_{x_i}(x_1,...,x_n) = \lim_{h\rightarrow 0}\frac{f(x_1,...,x_{i-1}, x_i+h, x_{i+1},...,x_n)-f(x_1,...,x_n)}{h},
+\]
+provided this limit exists.
+\end{definition}
+
+ADD PIECEWISE EXAMPLE
+
+\section*{Computing Partial Derivatives}
+
+When we compute partial derivatives, we're really just taking all but one of the input variables to be constant, and computing a single variable derivative with respect to the remaining variable. Because of this, all of the differentiation rules that we learned in single variable calculus will also apply to partial derivatives. This greatly simplifies computation of partial derivatives.
+
+\begin{example}
+We'll compute the partial derivatives of $f(x,y) = x^2+xy+y$. 
+
+Thinking of $y$ as a constant and differentiating with respect to $x$, we obtain the partial derivative with respect to $x$:
+\[
+f_x(x,y) = 2x+y.
+\]
+
+Thinking of $x$ as a constant and differentiating with respect to $y$, we obtain the partial derivative with respect to $y$:
+\[
+f_y(x,y) = x+1.
+\]
+\end{example}
+
+\begin{example}
+For each of the following functions, compute the partial derivatives.
+
+$f(x,y) = x^2y^2 + x^2 + y^2$
+\begin{align*}
+f_x(x,y) &= \answer{2xy^2+2x}\\
+f_y(x,y) &= \answer{2x^2y+2y}
+\end{align*}
+
+$g(x,y) = \sin(xy)$
+\begin{align*}
+g_x(x,y) &= \answer{y\cos(xy)}\\
+g_y(x,y) &= \answer{x\cos(xy)}
+\end{align*}
+
+$h(x,y,z) = xyz + xe^{xy}$
+\begin{align*}
+h_x(x,y,z) &= \answer{yz} + e^{xy} + xye^{xy}\\
+h_y(x,y,z) &= \answer{xz} + x^2e^{xy}\\
+h_z(x,y,z) &= \answer{xy}
+\end{align*}
+\end{example}
+
+
+
+\end{document}

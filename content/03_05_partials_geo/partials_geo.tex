@@ -1,0 +1,48 @@
+\documentclass{ximera}
+
+\graphicspath{{./graphics/}}
+
+\title{Geometric Interpretation of Partial Derivatives}
+\begin{document}
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+We've defined the partial derivatives of a function as follows.
+
+\begin{definition}
+Consider a function $f:\mathbb{R}^n\rightarrow\mathbb{R}$. For $1\leq i\leq n$, we define the \emph{partial derivative of $f$ with respect to $x_i$} to be
+\[
+f_{x_i}(x_1,...,x_n) = \lim_{h\rightarrow 0}\frac{f(x_1,...,x_{i-1}, x_i+h, x_{i+1},...,x_n)-f(x_1,...,x_n)}{h},
+\]
+provided this limit exists.
+\end{definition}
+
+In other words, if we treat all variables except for $x_i$ as constants, and differentiate with respect to $x_i$, we get the partial derivative with respect to $x_i$. 
+
+When computing a partial derivative with respect to $x_i$, we're looking at the instantaneous rate of change of $f$ with respect to $x_i$, if we keep the rest of the variables constant. Roughly speaking, we're asking: how does increasing $x_i$ a tiny bit affect the value of $f$?
+
+We can see the partial derivatives reflected in the shape of the graph of $f$. So that we can visualize the graph of $f$, we'll focus on a function $f:\mathbb{R}^2\rightarrow\mathbb{R}$, so we're considering the partial derivative of $f$ with respect to $x$, and with respect to $y$.
+
+Suppose at the point $(1,2)$, we have that $f_x(1,2)>0$ and $f_y(1,2)>0$. Then, around the point $(1,2)$, if we move a tiny amount in the positive $x$ direction, the value of $f$ will increase. If we move a tiny amount in the positive $y$ direction, the value of $f$ will increase as well.
+
+INTERACTIVE
+
+Similarly, suppose at the point $(1,2)$, we have that $f_x(1,2)<0$ and $f_y(1,2)<0$. Then, around the point $(1,2)$, if we move a tiny amount in the positive $x$ direction, the value of $f$ will decrease. If we move a tiny amount in the positive $y$ direction, the value of $f$ will decrease as well.
+
+INTERACTIVE
+
+Now, let's consider the case where $f_x(1,2)>0$ and $f_y(1,2)<0$. Then, around the point $(1,2)$, if we move a tiny amount in the positive $x$ direction, the value of $f$ will increase. But, if we move a tiny amount in the positive $y$ direction, the value of $f$ will decrease.
+
+INTERACTIVE
+
+Next, let's suppose that $f_x(1,2)>0$ and $f_y(1,2) =0$. As expected, $f$ increases as we move a tiny amount in the positive $x$ direction. On the other hand, the graph of $f$ has flattened out as we move in the $y$ direction. However, this doesn't mean that it's constant! It's just the instantaneous rate of change that's $0$ at that one point.
+
+INTERACTIVE
+
+Now, let's look at a case where $f_x(1,2)=0$ and $f_y(1,2)=0$. As before, this does not mean that $f$ is constant. This just means that the rates of change are both instantaneously $0$. Points with this property will be important later in the course, when we study optimization.
+
+INTERACTIVE
+
+
+\end{document}
