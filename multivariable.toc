@@ -1,11 +1,50 @@
-\contentsline {part}{I\hspace {1em}Review}{3}{part.1}
-\contentsline {part}{II\hspace {1em}Coordinate Systems and Functions}{4}{part.2}
-\contentsline {part}{III\hspace {1em}Curves in $\mathbb {R}^n$}{4}{part.3}
-\contentsline {part}{IV\hspace {1em}Limits and Derivatives}{4}{part.4}
-\contentsline {part}{V\hspace {1em}Optimization}{4}{part.5}
-\contentsline {part}{VI\hspace {1em}Vector Fields and Line Integrals}{4}{part.6}
-\contentsline {part}{VII\hspace {1em}Double Integrals}{4}{part.7}
-\contentsline {part}{VIII\hspace {1em}Curl and Divergence}{4}{part.8}
-\contentsline {part}{IX\hspace {1em}Surface Integrals}{4}{part.9}
-\contentsline {part}{X\hspace {1em}Triple Integrals}{4}{part.10}
+\contentsline {part}{I\hspace {1em}Review}{4}{part.1}
+\contentsline {section}{Vectors}{4}{section*.1}
+\contentsline {section}{The Dot Product}{11}{section*.2}
+\contentsline {section}{The Cross Product}{14}{section*.3}
+\contentsline {section}{Matrices}{19}{section*.4}
+\contentsline {section}{Representations of Lines and Planes}{32}{section*.5}
+\contentsline {part}{II\hspace {1em}Coordinate Systems and Functions}{34}{part.2}
+\contentsline {section}{Review of Coordinate Systems}{34}{section*.6}
+\contentsline {section}{Cylindrical Coordinates}{45}{section*.7}
+\contentsline {section}{Spherical Coordinates}{52}{section*.8}
+\contentsline {section}{Functions}{59}{section*.9}
+\contentsline {section}{Graphing Functions}{63}{section*.10}
+\contentsline {section}{Quadric Surfaces}{67}{section*.11}
+\contentsline {part}{III\hspace {1em}Curves in $\mathbb {R}^n$}{74}{part.3}
+\contentsline {section}{Parametric Curves}{74}{section*.12}
+\contentsline {section}{Velocity and Speed}{79}{section*.13}
+\contentsline {section}{Properties of Velocity and Speed}{83}{section*.14}
+\contentsline {section}{The Length of a Curve}{85}{section*.15}
+\contentsline {section}{Arclength Function}{89}{section*.16}
+\contentsline {section}{Curvature}{92}{section*.17}
+\contentsline {section}{Defining the Moving Frame}{95}{section*.18}
+\contentsline {section}{Moving Frame Computations}{99}{section*.19}
+\contentsline {section}{Decomposition of Acceleration}{103}{section*.20}
+\contentsline {part}{IV\hspace {1em}Limits and Derivatives}{109}{part.4}
+\contentsline {section}{Introduction to Limits}{109}{section*.21}
+\contentsline {section}{Evaluating Limits}{114}{section*.22}
+\contentsline {section}{Continuity and Limits in General}{120}{section*.23}
+\contentsline {section}{Partial Derivatives}{124}{section*.24}
+\contentsline {section}{Geometric Interpretation of Partial Derivatives}{128}{section*.25}
+\contentsline {section}{Geometry of Differentiability}{130}{section*.26}
+\contentsline {section}{Differentiability of Functions of Two Variables}{135}{section*.27}
+\contentsline {section}{The Gradient}{138}{section*.28}
+\contentsline {section}{Differentiability in General}{142}{section*.29}
+\contentsline {section}{Higher Order Partial Derivatives}{146}{section*.30}
+\contentsline {section}{Differentiation Properties}{152}{section*.31}
+\contentsline {section}{Chain Rule}{157}{section*.32}
+\contentsline {part}{V\hspace {1em}Optimization}{162}{part.5}
+\contentsline {part}{VI\hspace {1em}Vector Fields and Line Integrals}{162}{part.6}
+\contentsline {section}{Vector Fields}{162}{section*.33}
+\contentsline {section}{Topology}{164}{section*.34}
+\contentsline {section}{Path Independence and FTLI}{176}{section*.35}
+\contentsline {section}{Conservative Vector Fields}{185}{section*.36}
+\contentsline {part}{VII\hspace {1em}Double Integrals}{192}{part.7}
+\contentsline {part}{VIII\hspace {1em}Curl and Divergence}{192}{part.8}
+\contentsline {section}{Curl of a Vector Field}{192}{section*.37}
+\contentsline {section}{Geometric Significance of Curl}{197}{section*.38}
+\contentsline {section}{Connections of Curl with Older Material}{204}{section*.39}
+\contentsline {part}{IX\hspace {1em}Surface Integrals}{207}{part.9}
+\contentsline {part}{X\hspace {1em}Triple Integrals}{207}{part.10}
 \contentsfinish 

@@ -1,0 +1,119 @@
+\documentclass{ximera}
+
+\graphicspath{{./graphics/}}
+
+\title{Differentiability of Functions of Two Variables}
+\begin{document}
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+So far, we have an informal definition of differentiability for functions $f\mathbb{R}^2\rightarrow \mathbb{R}$: if the graph of $f$ ``looks like'' a plane near a point, then $f$ is differentiable at that point.
+
+\begin{definition}
+(Informal Definition) Consider a function $f:\mathbb{R}^2\rightarrow \mathbb{R}$. Suppose for some point $(a,b)$ in $\mathbb{R}^2$, if we zoom in on the graph of $f$ near the point $(a,b)$, the graph of $f$ looks like a plane. Then $f$ is differentiable at $(a,b)$.
+\end{definition}
+
+In the case where a function is differentiable at a point, we defined the tangent plane at that point.
+
+\begin{definition}
+If $f:\mathbb{R}^2\rightarrow\mathbb{R}$ is differentiable at $(a,b)$, then the \emph{tangent plane} to the graph of $f$ at $(a,b)$ is defined by the equation
+\[
+z=f(a,b)+f_x(a,b)(x-a)+f_y(a,b)(y-b).
+\]
+\end{definition}
+
+We would like a formal, precise definition of differentiability. The key idea behind this definition is that a function should be differentiable if the plane above is a ``good'' linear approximation. To see what this means, let's revisit the single variable case.
+
+In single variable calculus, a function $f:\mathbb{R}\rightarrow\mathbb{R}$ is differentiable at $x=a$ if the following limit exists:
+\[
+f'(a) = \lim_{x\rightarrow a}\frac{f(x)-f(a)}{x-a}.
+\]
+This limit exists if and only if
+\[
+\lim_{x\rightarrow a}\left(\frac{f(x)-f(a)}{x-a} - f'(a)\right) = 0.
+\]
+In turn, this is true if and only if
+\[
+\lim_{x\rightarrow a}\frac{f(x)-f(a)-f'(a)(x-a)}{x-a} = 0.
+\]
+If we let $L(x) = f(a) + f'(a)(x-a)$, this is equivalent to
+\[
+\lim_{x\rightarrow a}\frac{f(x)-L(x)}{x-a} = 0.
+\]
+Recall that $L(x)$, as defined above, is the linear approximation to $f$ at $x=a$. This is also a function whose graph is the tangent line to $f$ at $x=a$. So, roughly speaking, we have shown that a single variable function is differentiable if and only the difference between $f(x)$ and its linear approximation goes to $0$ quickly as $x$ approaches $a$.
+
+This idea will inform our definition for differentiability of multivariable functions: a function will be differentiable at a point if it has a good linear approximation, which will mean that the difference between the function and the linear approximation gets small quickly as we approach the point.
+
+\section*{Formal definition of differentiability}
+
+We are now in position to give our formal definition of differentiability for a function $f:\mathbb{R}^2\rightarrow\mathbb{R}$. We'll make our definition so that a function is differentiable at a point if the difference between the function and the linear approximation
+\[
+h(x,y) = f(a,b) + f_x(a,b)(x-a)+f_y(a,b)(y-b)
+\]
+gets small ``quickly''. Here, ``quickly'' is relative to how $\vec{x}$ is approaching $\vec{a}$, so relative to the distance $\|\vec{x}-\vec{a}\|$ between these points.
+
+Notice that the function $h(x,y)$ matches the equation for the tangent plane, when the function $f$ is differentiable.
+
+\begin{definition}
+Consider the function $f:\mathbb{R}^2\rightarrow\mathbb{R}$, and suppose that the partial derivatives $f_x$ and $f_y$ are defined at the point $(x,y)=(a,b)$. Define the linear function
+\[
+h(x,y) = f(a,b) + f_x(a,b)(x-a)+f_y(a,b)(y-b).
+\]
+We say that $f$ is \emph{differentiable} at $(x,y) = (a,b)$ if
+\[
+\lim_{(x,y)\rightarrow (a,b)}\frac{f(x,y) - h(x,y)}{\|(x,y)-(a,b)\|} = 0.
+\]
+If either of the partial derivatives $f_x(a,b)$ and $f_y(a,b)$ do not exist, or the above limit does not exist or is not $0$, then $f$ is not differentiable at $(a,b)$.
+\end{definition}
+
+We had previously used our informal definition of differentiability to determine that the function $f(x,y) = xy+2x+y$ is differentiable at $(0,0)$. Let's verify this using our new, formal definition of differentiability.
+
+\begin{example}
+We'll show that the function $f(x,y) = xy+2x+y$ is differentiable at $(0,0)$. In order to do this, we first need to find the function $h(x,y)$. This repeats earlier work, where we found the tangent plane to $f(x,y) = xy+2x+y$ at $(0,0)$.
+
+We begin by finding the partial derivatives with respect to $x$ and $y$.
+\begin{align*}
+f_x(x,y) &= \answer{y+2}\\
+f_y(x,y) &= \answer{x+1}
+\end{align*} 
+At $(0,0)$, we have
+\begin{align*}
+f_x(0,0) &= \answer{2},\\
+f_y(0,0) &= \answer{1}.
+\end{align*} 
+Finding the value of $f$ at $(0,0)$, we have
+\[
+f(0,0) = \answer{0}.
+\]
+Putting all of this together, we obtain an equation for the function $h(x,y)$.
+\begin{align*}
+h(x,y) &=f(a,b)+f_x(a,b)(x-a)+f_y(a,b)(y-b)\\
+&= \answer{2x+y}
+\end{align*}
+
+Now, we show that $f$ is differentiable at $(a,b)=(0,0)$, by evaluating the limit
+\begin{align*}
+\lim_{(x,y)\rightarrow (a,b)}\frac{f(x,y) - h(x,y)}{\|(x,y)-(a,b)\|}  &= \lim_{(x,y)\rightarrow (0,0)}\frac{(xy+2x+y) - (2x+y)}{\sqrt{(x-0)^2+(y-0)^2}}\\
+&= \lim_{(x,y)\rightarrow (0,0)}\frac{xy}{\sqrt{x^2+y^2}}.
+\end{align*}
+Switching to polar coordinates, we have
+\begin{align*}
+\lim_{(x,y)\rightarrow (0,0)}\frac{xy}{\sqrt{x^2+y^2}} &= \lim_{r\rightarrow 0}\frac{r\cos\theta\cdot r\sin\theta}{\sqrt{r^2}}\\
+&=  \lim_{r\rightarrow 0}\frac{r^2\cos\theta\sin\theta}{|r|}.
+\end{align*}
+Since $-1\leq \cos\theta\sin\theta \leq 1$, we have
+\[
+-|r|\leq \frac{r^2\cos\theta\sin\theta}{|r|} \leq |r|.
+\]
+Since $\lim_r\rightarrow 0 -|r| = \lim_r\rightarrow 0 |r| = 0$, by the squeeze theorem, we have
+\[
+\lim_{r\rightarrow}\frac{r^2\cos\theta\sin\theta}{|r|} = 0.
+\]
+Thus, we have shown that $\lim_{(x,y)\rightarrow (0,0)}\frac{f(x,y) - h(x,y)}{\|(x,y)-(0,0)\|}=0$, showing that $f$ is differentiable at $(0,0)$. 
+\end{example}
+
+
+
+
+\end{document}
