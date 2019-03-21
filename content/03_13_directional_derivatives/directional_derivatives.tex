@@ -1,0 +1,64 @@
+\documentclass{ximera}
+
+\graphicspath{{./graphics/}}
+
+\title{Directional Derivatives}
+\begin{document}
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+In order to find how a function $f:\mathbb{R}^n\rightarrow\mathbb{R}$ changes with each of the input variables, we defined the partial derivatives of $f$. For example, when $n=2$, we defined the partial derivative of $f$ with respect to $x$ to be
+\[
+f_x(x,y)=\lim_{h\rightarrow 0}\frac{f(x+h,y)-f(x,y)}{h}.
+\]
+Here, we thought of $y$ as a constant, which made $f$ only a function of $x$, and reduced us to a single variable derivative. This told us how a small change in $x$ would after the value of $f$, if we kept $y$ constant. In other words, the partial derivatives described how the function $f$ was changing in the positive $x$-direction and in the positive $y$-direction.
+
+PICTURE
+
+But what if we want to find how $f$ changes if we change both $x$ and $y$? One possible way to do this would be to change $x$ and $y$ by the same amount, which would be equivalent to finding how $f$ changes as we move along the line $y=x$.
+
+PICTURE
+
+Alternatively, we could change $y$ by twice as much as $x$. This would be equivalent to finding how $f$ changes as we move along the line $y=2x$.
+
+PICTURE
+
+As you can see, there are many different ways that we can change $x$ and $y$, corresponding to different directions in the $xy$-plane. In order to determine how $f$ changes as we move in all of these different directions, we will now define directional derivatives.
+
+\section*{Directional derivatives}
+
+We would like to compute the instantaneous rate of change of a function $f:\mathbb{R}^n\rightarrow\mathbb{R}$ as we move in some given direction in $\mathbb{R}^n$. We will model our definition after partial derivatives and single variable derivatives, and use a unit vector $\vec{v}$ to describe the direction.
+
+\begin{definition}
+Consider a function $f:\mathbb{R}^n\rightarrow\mathbb{R}$, a point $\vec{a}\in\mathbb{R}^n$, and a direction given by a unit vector $\vec{v}\in\mathbb{R}^n$. Then we define the \emph{directional derivative} of $f$ at $\vec{a}$ in the direction of $\vec{v}$ to be
+\[
+D_{\vec{v}}f(\vec{a}) = \lim_{h\rightarrow 0}\frac{f(\vec{a}+h\vec{v})-f(\vec{a})}{h},
+\]
+provided this limit exists.
+\end{definition}
+
+Noticing that by looking at $f(\vec{a}+h\vec{v})$, we are finding the value of $f$ when we move a small distance, $h$, in the direction of $\vec{v}$ from the point $\vec{a}$.
+
+VISUAL
+
+When computing directional derivatives, it's important to remember that the direction must be given by a \emph{unit} vector. Otherwise, the length of the vector will change the value of the limit above. If you'd like to find a directional derivative in a direction given by a non-unit vector $\vec{w}$, you should normalize $\vec{w}$ to unit length.
+
+\begin{example}
+We'll compute the directional derivative of $f(x,y) = x^2y+y^2$ at $\vec{a}=(2,0)$, in the direction of $(3,4)$.
+
+Since $(3,4)$ isn't a unit vector, we need to normalize it. Since $\|(3,4)\| = \sqrt{3^2+4^2}=5$, we'll use the vector $\vec{v}=\left(\frac{3}{5},\frac{4}{5}\right)$ to compute our desired directional derivative.
+\begin{align*}
+D_{\vec{v}}f(\vec{a}) &= \lim_{h\rightarrow 0}\frac{f(\vec{a}+h\vec{v})-f(\vec{a})}{h}\\
+&= \lim_{h\rightarrow 0}\frac{f\left((2,0) + h\left(\frac{3}{5},\frac{4}{5}\right)\right)-f(2,3)}{h}\\
+&= \lim_{h\rightarrow 0}\frac{f\left(2+\frac{3}{5}h,\frac{4}{5}h \right)-f(2,0)}{h}\\
+&= \lim_{h\rightarrow 0}\frac{\left(2+\frac{3}{5}h\right)^2\cdot \frac{4}{5}h + \left(\frac{4}{5}h\right)^2-0}{h}\\
+&= \lim_{h\rightarrow 0}\left(2+\frac{3}{5}h\right)^2\cdot \frac{4}{5} + \left(\frac{4}{5}\right)^2h\\
+&= 4\cdot \frac{4}{5}\\
+&= \frac{16}{5}.
+\end{align*}
+\end{example}
+
+Fortunately, we won't always need to resort to evaluating directional derivatives using the limit definition. We'll soon see how we can use the gradient to compute directional derivatives.
+
+\end{document}

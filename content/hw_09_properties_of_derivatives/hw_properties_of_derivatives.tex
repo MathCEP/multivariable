@@ -1,0 +1,99 @@
+\documentclass{ximera}
+\graphicspath{{./content/hw_09_properties_of_derivatives/graphics/}{./graphics/}}
+\title{Homework 9: Properties of Derivatives}
+\begin{document}
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\section*{Graded Problems}
+
+
+
+\begin{problem} \begin{enumerate}
+\item Suppose $f:\mathbb{R}^3\rightarrow\mathbb{R}$ is a smooth function. Prove that $f_{xyzx} = f_{zxxy}$, where these are fourth-order partial derivatives. You are free to use Theorem 4.3 for this problem, but not Theorem 4.5.
+\item Verify the result of (a) for the function $f(x,y,z) = x^3y^2z$.
+\end{enumerate}
+\end{problem}
+
+\begin{problem} Suppose we have differentiable functions $\mathbf{f}:\mathbb{R}^2\rightarrow\mathbb{R}^2$ and $\mathbf{g}:\mathbb{R}^2\rightarrow\mathbb{R}^2$ such that
+\begin{align*}
+\mathbf{g}(1,2) &= (3,0),\\
+D\mathbf{f}(x,y) &= \left(\begin{array}{cc} xe^y & x^2y \\ 0 & yx^2+1\end{array}\right),\\
+D(\mathbf{f}\circ\mathbf{g})(1,2) &= \left(\begin{array}{cc} 1 & 4 \\ 2 & -1\end{array}\right).
+\end{align*}
+Find $D\mathbf{g}(1,2)$.
+\end{problem}
+
+\section*{Professional Problem}
+
+\begin{problem} \begin{enumerate}
+\item Consider differentiable functions $g:\mathbb{R}\rightarrow\mathbb{R}$ and $f:\mathbb{R}^2\rightarrow \mathbb{R}$ such that $f(x,y)=0$ when $y=g(x)$. Prove that if $\partial f/\partial y\neq 0$, then
+\[
+\frac{dg}{dx} = -\frac{\partial f/\partial x}{\partial f/\partial y}.
+\]
+\item Consider the equation $\sin(x) + \cos(y) = 0$.
+Make a suitable choice of $f$, and use the result of (a) to compute $\frac{dy}{dx}$ in terms of $x$ and $y$.
+\item Use implicit differentiation to verify your answer to (b).
+\end{enumerate}
+\end{problem}
+
+\section*{Completion Packet}
+
+\begin{problem}
+ Consider the functions $\mathbf{f}(x,y) = (x^2+y, xy-\sin(xy))$ and $\mathbf{g}(x,y) = (e^{xy}, x^2y)$. Compute $D(\mathbf{f} + \mathbf{g})$ in two ways:
+\begin{enumerate}
+\item By computing the derivative of $\mathbf{f} + \mathbf{g}$
+\item By computing the derivatives of $\mathbf{f}$ and $\mathbf{g}$, and using the sum rule.
+\end{enumerate}
+\end{problem}
+
+\begin{problem}
+Consider the functions $f(x,y,z) = xy^2z^3$ and $g(x,y,z) = xyz$.
+\begin{enumerate}
+\item Verify that \[D(fg)(\mathbf{a})=g(\mathbf{a})Df(\mathbf{a})+f(\mathbf{a})Dg(\mathbf{a}).\]
+\item Verify that \[D(f/g)(\mathbf{a})=\frac{g(\mathbf{a})Df(\mathbf{a})-f(\mathbf{a})Dg(\mathbf{a})}{g(\mathbf{a})^2}.\]
+\end{enumerate}
+\end{problem}
+
+\begin{problem}
+ Find all second-order partial derivatives of the function $f(x,y) = \ln(xy)$.
+ \end{problem}
+
+\begin{problem}
+ Find all second-order partial derivatives of the function $g(u, v) = e^{u^2+v^2}$.
+ \end{problem}
+
+\begin{problem}
+Find all second-order partial derivatives of the function $h(x,y,z) = xy^2z^3$.
+\end{problem}
+
+\begin{problem}
+Consider the functions $y(s,t) = e^s + e^{st} + e^t$ and $\mathbf{x}(t) = (t, t^2)$. Compute $D(\mathbf{x}\circ y)$ in two ways:
+\begin{enumerate}
+\item Determining a formula for the composition $\mathbf{x}\circ y$, then computing the total derivative.
+\item Computing total derivatives of $\mathbf{x}$ and $y$, and using the chain rule.
+\end{enumerate}
+\end{problem}
+
+\begin{problem}
+ Consider functions $\mathbf{f}:\mathbb{R}^3\rightarrow\mathbb{R}^2$ and $\mathbf{g}:\mathbb{R}^2\rightarrow\mathbb{R}^3$ such that $\mathbf{f}(x,y,z) = (x^2y+e^z, e^x+y)$ and $D\mathbf{g}(x,y) = \left(\begin{array}{ccc}y&x\\0&1\\0&xy\end{array}\right)$. For each of the given total derivatives, either explain why they do not exist, compute them, or explain what additional information we would need to compute them.
+\begin{enumerate}
+\item $D(\mathbf{f}\circ\mathbf{g})$
+\item $D(\mathbf{g}\circ\mathbf{f})$
+\end{enumerate}
+\end{problem}
+
+\begin{problem} Consider functions $\mathbf{f}:\mathbb{R}^3\rightarrow\mathbb{R}^2$ and $\mathbf{g}:\mathbb{R}^2\rightarrow\mathbb{R}^2$ such that $\mathbf{f}(x,y,z) = (\sin(xyz),\cos(xyz))$ and $D\mathbf{g}(x,y) = \left(\begin{array}{ccc}e^{xy}&0\\0&e^{xy}\end{array}\right)$. For each of the given total derivatives, either explain why they do not exist, compute them, or explain what additional information we would need to compute them.
+\begin{enumerate}
+\item $D(\mathbf{f}\circ\mathbf{g})$
+\item $D(\mathbf{g}\circ\mathbf{f})$
+\end{enumerate}
+\end{problem}
+
+\begin{problem}
+ Consider the function $\mathbf{g}:\mathbb{R}^3\rightarrow\mathbb{R}^3$ given by $\mathbf{g}(\rho, \theta, \phi) = (\rho\cos\theta\sin\phi, \rho\sin\theta\sin\phi,\rho\cos\phi)$, which changes spherical coordinates to Cartesian coordinates. For any differentiable function $f:\mathbb{R}^3\rightarrow\mathbb{R}$, compute $\partial f/\partial\rho$, $\partial f/\partial\theta$, and $\partial f/\partial\phi$ in terms of $\partial f/\partial x$, $\partial f/\partial y$, and $\partial f/\partial z$.
+ \end{problem}
+
+
+\end{document}

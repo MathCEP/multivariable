@@ -1,0 +1,136 @@
+<!doctype html> 
+<html lang="en"> 
+<head> <title>Differentiability of Functions of Two
+Variables</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<!-- charset=utf-8,-css,html,htex4ht,xhtml --> 
+<meta name="src" content="differentiability_in_R2.tex" /> 
+<meta name="author" content="" /> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
+<meta name="ximera" content="version 0.0.1" /> 
+<link href="https://ximera.osu.edu/public/stylesheets/standalone.css" rel="stylesheet" media="screen"/> 
+<script type="text/javascript" async src="https://ximera.osu.edu/public/javascripts/standalone.min.js"></script> 
+</head><body> 
+<div class="preamble"><script type="math/tex">\newenvironment {prompt}{}{}
+\newcommand {\DeclareMathOperator }[2]{\@OldDeclareMathOperator {##1}{##2}\immediate \write \myfile {\unexpanded {\DeclareMathOperator }{\unexpanded {##1}}{\unexpanded {##2}}}}
+\newcommand {\ungraded }[0]{}
+\newcommand {\reserved@a }[2]{}
+\newcommand {\HyperFirstAtBeginDocument }[0]{\AtBeginDocument }
+\newcommand {\reserved@a }[1]{}
+\newcommand {\reserved@a }[2]{}
+\newcommand {\vnameref  }[1]{\unskip ~\nameref {##1}\@vpageref [\unskip ]{##1}}
+\newcommand {\ref  }[0]{\@ifstar \@refstar \T@ref }
+\newcommand {\pageref  }[0]{\@ifstar \@pagerefstar \T@pageref }
+\newcommand {\nameref  }[0]{\@ifstar \@namerefstar \T@nameref }
+\newcommand {\reserved@a }[2]{}
+\newcommand {\reserved@a }[0]{\AtBeginDocument }
+\newcommand {\reserved@a }[1]{}
+\newcommand {\reserved@a }[2]{}                                                                                                                                                 </script><script type="text/javascript"> 
+</script> 
+</div>
+<div 
+class="abstract" 
+>
+</div>   <div class="maketitle"></div>
+<!--l. 11--><p class="noindent" >So far, we have an informal definition of differentiability for functions <script type="math/tex">f\mathbb {R}^2\rightarrow \mathbb {R}</script>: if the
+graph of <script type="math/tex">f</script> “looks like” a plane near a point, then <script type="math/tex">f</script> is differentiable at that
+point.
+</p>
+<div class="theorem-like problem-environment definition" id="problem1"><a 
+ id="x1-17r1"></a>(Informal Definition) Consider a function <script type="math/tex">f:\mathbb {R}^2\rightarrow \mathbb {R}</script>. Suppose for some point <script type="math/tex">(a,b)</script> in <script type="math/tex">\mathbb {R}^2</script>, if we zoom in
+on the graph of <script type="math/tex">f</script> near the point <script type="math/tex">(a,b)</script>, the graph of <script type="math/tex">f</script> looks like a plane. Then <script type="math/tex">f</script> is
+differentiable at <script type="math/tex">(a,b)</script>.
+</div>
+<!--l. 17--><p class="noindent" >In the case where a function is differentiable at a point, we defined the tangent plane
+at that point.
+</p>
+<div class="theorem-like problem-environment definition" id="problem2"><a 
+ id="x1-18r2"></a>If <script type="math/tex">f:\mathbb {R}^2\rightarrow \mathbb {R}</script> is differentiable at <script type="math/tex">(a,b)</script>, then the <em>tangent plane</em> to the graph of <script type="math/tex">f</script> at <script type="math/tex">(a,b)</script> is defined by the
+equation <script type="math/tex; mode=display"> z=f(a,b)+f_x(a,b)(x-a)+f_y(a,b)(y-b). </script>
+</div>
+<!--l. 26--><p class="noindent" >We would like a formal, precise definition of differentiability. The key idea behind
+this definition is that a function should be differentiable if the plane above is a “good”
+linear approximation. To see what this means, let’s revisit the single variable
+case.
+</p><!--l. 28--><p class="noindent" >In single variable calculus, a function <script type="math/tex">f:\mathbb {R}\rightarrow \mathbb {R}</script> is differentiable at <script type="math/tex">x=a</script> if the following limit exists:
+<script type="math/tex; mode=display"> f'(a) = \lim _{x\rightarrow a}\frac {f(x)-f(a)}{x-a}. </script> This limit exists if and only if <script type="math/tex; mode=display"> \lim _{x\rightarrow a}\left (\frac {f(x)-f(a)}{x-a} - f'(a)\right ) = 0. </script> In turn, this is true if and only if <script type="math/tex; mode=display"> \lim _{x\rightarrow a}\frac {f(x)-f(a)-f'(a)(x-a)}{x-a} = 0. </script> If we let <script type="math/tex">L(x) = f(a) + f'(a)(x-a)</script>, this is
+equivalent to <script type="math/tex; mode=display"> \lim _{x\rightarrow a}\frac {f(x)-L(x)}{x-a} = 0. </script> Recall that <script type="math/tex">L(x)</script>, as defined above, is the linear approximation to <script type="math/tex">f</script> at <script type="math/tex">x=a</script>. This
+is also a function whose graph is the tangent line to <script type="math/tex">f</script> at <script type="math/tex">x=a</script>. So, roughly speaking, we
+have shown that a single variable function is differentiable if and only the
+difference between <script type="math/tex">f(x)</script> and its linear approximation goes to <script type="math/tex">0</script> quickly as <script type="math/tex">x</script> approaches
+<script type="math/tex">a</script>.
+                                                                  
+
+                                                                  
+</p><!--l. 46--><p class="noindent" >This idea will inform our definition for differentiability of multivariable functions: a
+function will be differentiable at a point if it has a good linear approximation, which
+will mean that the difference between the function and the linear approximation gets
+small quickly as we approach the point.
+<a 
+ id="Q1-1-1"></a>
+</p>
+<h3 class="likesectionHead"><a 
+ id="x1-1000"></a>Formal definition of differentiability</h3>
+<!--l. 50--><p class="noindent" >We are now in position to give our formal definition of differentiability for a function <script type="math/tex">f:\mathbb {R}^2\rightarrow \mathbb {R}</script>.
+We’ll make our definition so that a function is differentiable at a point if the
+difference between the function and the linear approximation <script type="math/tex; mode=display"> h(x,y) = f(a,b) + f_x(a,b)(x-a)+f_y(a,b)(y-b) </script> gets small “quickly”.
+Here, “quickly” is relative to how <script type="math/tex">\vec {x}</script> is approaching <script type="math/tex">\vec {a}</script>, so relative to the distance <script type="math/tex">\|\vec {x}-\vec {a}\|</script>
+between these points.
+</p><!--l. 56--><p class="noindent" >Notice that the function <script type="math/tex">h(x,y)</script> matches the equation for the tangent plane, when the
+function <script type="math/tex">f</script> is differentiable.
+</p>
+<div class="theorem-like problem-environment definition" id="problem3"><a 
+ id="x1-1001r3"></a>Consider the function <script type="math/tex">f:\mathbb {R}^2\rightarrow \mathbb {R}</script>, and suppose that the partial derivatives <script type="math/tex">f_x</script> and <script type="math/tex">f_y</script> are defined at
+the point <script type="math/tex">(x,y)=(a,b)</script>. Define the linear function <script type="math/tex; mode=display"> h(x,y) = f(a,b) + f_x(a,b)(x-a)+f_y(a,b)(y-b). </script> We say that <script type="math/tex">f</script> is <em>differentiable</em> at <script type="math/tex">(x,y) = (a,b)</script> if <script type="math/tex; mode=display"> \lim _{(x,y)\rightarrow (a,b)}\frac {f(x,y) - h(x,y)}{\|(x,y)-(a,b)\|} = 0. </script> If either of
+the partial derivatives <script type="math/tex">f_x(a,b)</script> and <script type="math/tex">f_y(a,b)</script> do not exist, or the above limit does not exist or is not <script type="math/tex">0</script>,
+then <script type="math/tex">f</script> is not differentiable at <script type="math/tex">(a,b)</script>.
+</div>
+<!--l. 70--><p class="noindent" >We had previously used our informal definition of differentiability to determine that
+the function <script type="math/tex">f(x,y) = xy+2x+y</script> is differentiable at <script type="math/tex">(0,0)</script>. Let’s verify this using our new, formal definition of
+differentiability.
+</p>
+<div class="theorem-like problem-environment example" id="problem4"><a 
+ id="x1-1002r4"></a>We’ll show that the function <script type="math/tex">f(x,y) = xy+2x+y</script> is differentiable at <script type="math/tex">(0,0)</script>. In order to do this, we first need to
+find the function <script type="math/tex">h(x,y)</script>. This repeats earlier work, where we found the tangent plane to <script type="math/tex">f(x,y) = xy+2x+y</script> at
+<script type="math/tex">(0,0)</script>.
+<!--l. 75--><p class="noindent" >We begin by finding the partial derivatives with respect to <script type="math/tex">x</script> and <script type="math/tex">y</script>.
+</p><script type="math/tex; mode=display"> \begin{align*} 
+f_x(x,y) &= \answer{y+2}\\
+f_y(x,y) &= \answer{x+1}
+\end{align*}</script>
+<!--l. 80--><p class="noindent" >At <script type="math/tex">(0,0)</script>, we have </p><script type="math/tex; mode=display"> \begin{align*} 
+f_x(0,0) &= \answer{2},\\
+f_y(0,0) &= \answer{1}.
+\end{align*}</script>
+<!--l. 85--><p class="noindent" >Finding the value of <script type="math/tex">f</script> at <script type="math/tex">(0,0)</script>, we have <script type="math/tex; mode=display"> f(0,0) = \answer {0}. </script> Putting all of this together, we obtain an equation
+for the function <script type="math/tex">h(x,y)</script>. </p><script type="math/tex; mode=display"> \begin{align*} 
+h(x,y) &=f(a,b)+f_x(a,b)(x-a)+f_y(a,b)(y-b)\\
+                                                                  
+
+                                                                  
+&= \answer{2x+y}
+\end{align*}</script>
+<!--l. 95--><p class="noindent" >Now, we show that <script type="math/tex">f</script> is differentiable at <script type="math/tex">(a,b)=(0,0)</script>, by evaluating the limit
+</p><script type="math/tex; mode=display"> \begin{align*} 
+\lim_{(x,y)\rightarrow (a,b)}\frac{f(x,y) - h(x,y)}{\|(x,y)-(a,b)\|}  &= \lim_{(x,y)\rightarrow (0,0)}\frac{(xy+2x+y) - (2x+y)}{\sqrt{(x-0)^2+(y-0)^2}}\\
+&= \lim_{(x,y)\rightarrow (0,0)}\frac{xy}{\sqrt{x^2+y^2}}.
+\end{align*}</script>
+<!--l. 100--><p class="noindent" >Switching to polar coordinates, we have
+</p><script type="math/tex; mode=display"> \begin{align*} 
+\lim_{(x,y)\rightarrow (0,0)}\frac{xy}{\sqrt{x^2+y^2}} &= \lim_{r\rightarrow 0}\frac{r\cos\theta\cdot r\sin\theta}{\sqrt{r^2}}\\
+&=  \lim_{r\rightarrow 0}\frac{r^2\cos\theta\sin\theta}{|r|}.
+\end{align*}</script>
+<!--l. 105--><p class="noindent" >Since <script type="math/tex">-1\leq \cos \theta \sin \theta \leq 1</script>, we have <script type="math/tex; mode=display"> -|r|\leq \frac {r^2\cos \theta \sin \theta }{|r|} \leq |r|. </script> Since <script type="math/tex">\lim _r\rightarrow 0 -|r| = \lim _r\rightarrow 0 |r| = 0</script>, by the squeeze theorem, we have <script type="math/tex; mode=display"> \lim _{r\rightarrow }\frac {r^2\cos \theta \sin \theta }{|r|} = 0. </script> Thus, we have shown that <script type="math/tex">\lim _{(x,y)\rightarrow (0,0)}\frac {f(x,y) - h(x,y)}{\|(x,y)-(0,0)\|}=0</script>,
+showing that <script type="math/tex">f</script> is differentiable at <script type="math/tex">(0,0)</script>.
+</div>
+</body> 
+ 
+</html>
+                                                                  
+
+                                                                  
+                                                                  
+
+

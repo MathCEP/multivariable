@@ -1,0 +1,105 @@
+\documentclass{ximera}
+\graphicspath{{./content/hw_11_taylors_theorem/graphics/}{./graphics/}}
+\title{Homework 11: Taylor's Theorem}
+\begin{document}
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\section*{Graded Problems}
+
+\begin{problem} Give a $2\times 2$ matrix  $A=\left[ \begin{array}{cc}
+a & b  \\
+c & d \end{array} \right]$ with $a > 0$ and $\det(A) >0$ for which the quadratic form $p(\mathbf{x})=\mathbf{x}^TA\mathbf{x}$ is \textbf{NOT} positive definite.  Does this mean the theorem in problem~6 is incorrect?
+
+\end{problem}
+
+\begin{problem} Prove the following theorem: Let $A=\left[ \begin{array}{cc}
+a & b  \\
+b & c \end{array} \right]$ be a symmetric $2\times 2$ matrix.   If det$(A)<0$, then the quadratic form $p(\mathbf{x})=\mathbf{x}^TA\mathbf{x}$ is indefinite, regardless of the value of $a$.\\ 
+
+(Hint: think about the cases $a>0$, $a=0$ and $a<0$.  In two cases you can apply Sylvester's Theorem.  In the third case, you'll have to do some work by hand to show $p(x,y)$ can have both positive and negative values.)
+
+\end{problem}
+
+\section*{Professional Problem}
+
+\begin{problem} Complete the online peer review form posted on moodle.
+\end{problem}
+
+\section*{Completion Packet}
+
+\begin{problem}
+Find the symmetric matrix that represents each quadratic form.
+
+\begin{enumerate}
+
+\item $r(x_1,x_2,x_3,x_4)=x_3^2-x_2x_3+x_1x_4$\\
+
+\item $t(\mathbf{x})=\mathbf{x}^T\left[ \begin{array}{cccc}
+6 & 1 & 8 & -2 \\
+0 & 5 & 1 & 9 \\
+0 & 0 & -2 & 0 \\
+0 & 0 & 0 & 0 \end{array} \right]\mathbf{x}$\\
+\end{enumerate}
+\end{problem}
+
+\begin{problem}
+Prove the following theorem \emph{without} using Sylvester's theorem: Let $A=\left[ \begin{array}{cc}
+a & b  \\
+b & c \end{array} \right]$ be a symmetric $2\times 2$ matrix.   If $a>0$ and $\det(A)>0$, then the quadratic form $p(\mathbf{x})=\mathbf{x}^TA\mathbf{x}$ is positive definite.\\
+
+(Hint: Write out $p$ in terms of the variables $x$ and $y$, then complete the square with respect to $x$ and collect the remaining terms.)
+\end{problem}
+
+\begin{problem}
+ \begin{enumerate}
+\item Write the Taylor series for $f(x) = \sin(x)$ centered at $x = 0$.
+\item Find the second-order Taylor approximation for $f(x,y) = \sin(xy)$ centered at $(0,0)$, using your answer to part (a).
+\item Verify your answer to part (b), by computing the second-order Taylor approximation for $f(x,y) = \sin(xy)$ directly.
+\end{enumerate}
+\end{problem}
+
+\begin{problem} \begin{enumerate}
+\item Write the Taylor series for $f(x) = e^{x}$ centered at $x = 0$.
+\item Find the second-order Taylor approximation for $f(x,y) = e^{x^2+y^2}$ centered at $(0,0)$, using your answer to part (a).
+\item Verify your answer to part (b), by computing the second-order Taylor approximation for $f(x,y) = e^{x^2+y^2}$ directly.
+\end{enumerate}
+\end{problem}
+
+\begin{problem}
+Compute the Hessian matrix for each function at the given point.
+
+\begin{enumerate}
+
+\item $f(x,y) = \sqrt{xy}$ at $(1,1)$
+
+\item $f(x,y) = \cos(x) + x^2\sin(y)$ at $(0, \pi)$
+
+\item $f(x,y,z) = \frac{1}{x^2+y^2+z^2+1}$ at $(0,0,0)$
+\end{enumerate}
+\end{problem}
+
+\begin{problem}
+Consider the function $f(x,y) = \frac{x}{x+y}$ and the point $\mathbf{a}=(1,2)$.
+\begin{enumerate}
+\item Find the first-order Taylor polynomial of $f$ at $\mathbf{a}$.
+\item Find the second-order Taylor polynomial of $f$ at $\mathbf{a}$.
+\item Express the second-order Taylor polynomial using the derivative matrix and the Hessian matrix, as in formula (10) of section 4.1 of the textbook.
+\end{enumerate}
+\end{problem}
+
+\begin{problem}
+Consider the function $f(x,y) = x^2e^{y}$ and the point $\mathbf{a}=(1,0)$.
+\begin{enumerate}
+\item Find the first-order Taylor polynomial of $f$ at $\mathbf{a}$.
+\item Find the second-order Taylor polynomial of $f$ at $\mathbf{a}$.
+\item Express the second-order Taylor polynomial using the derivative matrix and the Hessian matrix, as in formula (10) of section 4.1 of the textbook.
+\end{enumerate}
+\end{problem}
+
+
+
+
+
+\end{document}

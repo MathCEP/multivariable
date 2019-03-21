@@ -1,0 +1,164 @@
+\documentclass{ximera}
+
+\graphicspath{{./graphics/}}
+
+\title{The Gradient and Level Sets}
+\begin{document}
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+We've defined the directional derivatives of a function, which allow us to determine how a function is changing in various directions.
+
+\begin{definition}
+Consider a function $f:\mathbb{R}^n\rightarrow\mathbb{R}$, a point $\vec{a}\in\mathbb{R}^n$, and a direction given by a unit vector $\vec{v}\in\mathbb{R}^n$. Then we define the \emph{directional derivative} of $f$ at $\vec{a}$ in the direction of $\vec{v}$ to be
+\[
+D_{\vec{v}}f(\vec{a}) = \lim_{h\rightarrow 0}\frac{f(\vec{a}+h\vec{v})-f(\vec{a})}{h},
+\]
+provided this limit exists.
+\end{definition}
+
+However, we would like an easier way to evaluate directional derivatives, that doesn't require the limit definition.
+
+Such a method will require use of the gradient of the function. Recall our definition of the gradient of a function $f:\mathbb{R}^n\rightarrow\mathbb{R}$.
+
+\begin{definition}
+Consider a function $f:\mathbb{R}^n\rightarrow\mathbb{R}$. The \emph{gradient} of $f$ is the function $\nabla f:\mathbb{R}^n\rightarrow\mathbb{R}^n$, defined by
+\[
+\nabla f = \left(\frac{\partial f}{\partial x_1},\frac{\partial f}{\partial x_2},...,\frac{\partial f}{\partial x_n}\right).
+\]
+\end{definition}
+
+We'll see that this vector turns out to be closely related to directional derivatives.
+
+\section*{The gradient and directional derivatives}
+
+Let's suppose we have a differentiable function $f:\mathbb{R}^n\rightarrow\mathbb{R}$, and consider our definition of the directional derivative a function $f$ at $\vec{a}$ in the direction of a unit vector $\vec{v}$, which was
+\[
+D_{\vec{v}}f(\vec{a}) = \lim_{h\rightarrow 0}\frac{f(\vec{a}+h\vec{v})-f(\vec{a})}{h}.
+\]
+We'll rewrite this definition by considering another function, $F(h) = f(\vec{a}+h\vec{v})$. Notice that $F$ is a single variable function, and when we rewrite the directional derivative, we have
+\begin{align*}
+D_{\vec{v}}f(\vec{a})& = \lim_{h\rightarrow 0}\frac{f(\vec{a}+h\vec{v})-f(\vec{a})}{h}\\
+&= \lim_{h\rightarrow 0 }\frac{F(h)-F(0)}{h-0}\\
+&= F'(0).
+\end{align*}
+So, the directional derivative is just the derivative of this single variable function $F(h)$ evaluated at $0$. Revisiting our definition of $F(h)$, we can use the chain rule to find the derivative of $F$.
+\begin{align*}
+\frac{d}{dh}F(h) &= \nabla f(\vec{a}+h\vec{v})\cdot\frac{d}{dh}(\vec{a}+h\vec{v})\\
+&= \nabla f(\vec{a}+h\vec{v})\cdot\vec{v}\\
+\end{align*}
+Evaluating at $h=0$, we have
+\begin{align*}
+D_{\vec{v}}f(\vec{a}) &= F'(0)\\
+&= \nabla f(\vec{a})\cdot \vec{v}.
+\end{align*}
+
+Thus, we have arrived at the following result.
+
+\begin{theorem}
+Suppose $f:\mathbb{R}^n\rightarrow\mathbb{R}$ is differentiable at $\vec{a}\in\mathbb{R}^n$. Then $D_{\vec{v}}f(\vec{a})$ exists for all unit vectors $\vec{v}\in\mathbb{R}^n$, and 
+\[
+D_{\vec{v}}f(\vec{a}) = \nabla f(\vec{a})\cdot \vec{v}.
+\]
+\end{theorem}
+
+Let's use this result to compute some directional derivatives.
+
+\begin{example}
+We'll compute the directional derivative of $f(x,y) = x^2y+y^2$ at $\vec{a}=(2,0)$, in the direction of $(3,4)$. (We previously computed this directional derivative using the limit definition.)
+
+Since $(3,4)$ isn't a unit vector, we need to normalize it. Since $\|(3,4)\| = \sqrt{3^2+4^2}=5$, we'll use the vector $\vec{v}=\left(\frac{3}{5},\frac{4}{5}\right)$ to compute our desired directional derivative.
+
+Next, we'll need the gradient of $f$.
+\[
+\nabla f(x,y) = (2xy, x^2+2y)
+\]
+Since the partial derivatives of $f$ are polynomials, they are continuous, so $f$ is differentiable. Thus, we can use the above theorem to compute the directional derivative.
+
+Then, we can compute the directional derivative as
+\begin{align*}
+D_{\vec{v}}f(\vec{a}) &= \nabla f(\vec{a})\cdot \vec{v}\\
+&= \nabla f(2,0)\cdot \left(\frac{3}{5},\frac{4}{5}\right)\\
+&= (0,4)\cdot \left(\frac{3}{5},\frac{4}{5}\right)\\
+&= \frac{16}{5}.
+\end{align*}
+
+This matches what we had previously computed using the definition of directional derivatives.
+\end{example}
+
+\begin{problem}
+Compute the directional derivative of $f(x,y,z) = 3xy+xz^2$ at $\vec{a}=(2,0,1)$, in the direction of $(2, 2, 1)$.
+\[
+D_{\vec{v}}f(\vec{a}) = \answer{6}
+\]
+
+Compute the directional derivative of $f(x,y,z) = 3xy+xz^2$ at $\vec{a}=(2,0,1)$, in the direction of $(-2,1,-1)$.
+\[
+D_{\vec{v}}f(\vec{a}) = \answer{0}
+\]
+\end{problem}
+
+\section*{The gradient and level sets}
+
+We've shown that for a differentiable function $f:\mathbb{R}^n\rightarrow\mathbb{R}$, we can compute directional derivatives as
+\[
+D_{\vec{v}}f(\vec{a}) = \nabla f(\vec{a})\cdot \vec{v}.
+\]
+What does this mean for the possible values for a directional derivative? Recall that the dot product can be computed as
+\[
+\nabla f(\vec{a})\cdot \vec{v} = \|\nabla f(\vec{a})\|\;\|\vec{v}\|\cos\theta,
+\]
+Where $\theta$ is the angle between the two vectors. Since $\vec{v}$ is a unit vector, we have
+\[
+\|\nabla f(\vec{a})\|\;\|\vec{v}\|\cos\theta = \|\nabla f(\vec{a})\|\cos\theta.
+\]
+Since $-1\leq \cos\theta \leq 1$, we have that
+\[
+-\|\nabla f(\vec{a})\|\leq D_{\vec{v}}f(\vec{a})\leq \|\nabla f(\vec{a})\|.
+\]
+In particular, the largest that $D_{\vec{v}}f(\vec{a})$ can be is $\|\nabla f(\vec{a})\|$, and this occurs when $\vec{v}$ points in the same direction as $\nabla f(\vec{a})$ (so $\theta = 0$). Thus, the gradient points in the direction of greatest increase.
+
+VISUAL
+
+On the other hand, the minimum value that $D_{\vec{v}}f(\vec{a})$ can have is $-\|\nabla f(\vec{a})\|$, and this occurs when $\vec{v}$ points in the opposite direction from $\nabla f(\vec{a})$, in the direction of $-\nabla f(\vec{a})$. Thus, $-\nabla f(\vec{a})$ points in the direction of greatest decrease.
+
+VISUAL
+
+Additionally, from $D_{\vec{v}}f(\vec{a}) = \nabla f(\vec{a})\cdot \vec{v}$, we can see that  $\vec{v}$ is perpendicular to $\nabla f(\vec{a})$ if and only if $D_{\vec{v}}f(\vec{a})=0$. But what does it mean for $D_{\vec{v}}f(\vec{a})$? This means that there is no instantaneous change in $f$ in the direction of $\vec{v}$, which means that $\vec{v}$ will be a tangent vector to a level curve.
+
+VISUAL
+
+We'll state this observation more formally, and prove that the gradient is perpendicular to the level curves.
+
+\begin{theorem}
+Consider a function $f:\mathbb{R}^n\rightarrow\mathbb{R}$, and suppose $f$ is of class $\mathcal{C}^1$. For some constant $c$, consider the level set
+\[
+S = \{\vec{x}\in\mathbb{R}^n\;:\;f(\vec{x})=c\}.
+\]
+Then, for any point $\vec{x}_0$ in $S$, the gradient $\nabla f(\vec{x}_0)$ is perpendicular to $S$.
+\end{theorem} 
+
+\begin{proof}
+Let $\vec{x}(t)$ be a parametrization of $S$, and let $\vec{x}_0=\vec{x}(t_0)$. In order to show that $\nabla f(\vec{x}_0)$ is perpendicular to $S$, we will show that the gradient $\nabla f(\vec{x}_0)$ is perpendicular to the velocity vector $\vec{x}'(t_0)$. By the definition of $S$,
+\[
+f(\vec{x}(t))=c,
+\]
+for all $t$. Differentiating both sides of this identity, and using the chain rule on the left side, we obtain
+\[
+\nabla f(\vec{x}(t))\cdot \vec{x}'(t) = 0.
+\]
+Plugging in $t=t_0$, this gives us
+\[
+\nabla f(\vec{x}(t_0))\cdot \vec{x}'(t_0) = 0,
+\]
+which we can rewrite as
+\[
+\nabla f(\vec{x}_0)\cdot \vec{x}'(t_0) = 0.
+\]
+Thus, we have shown that $\nabla f(\vec{x}_0)$ is perpendicular to the level set $S$.
+
+THIS PROOF ONLY WORKS WHEN IT'S A LEVEL CURVE, NOT A LEVEL SURFACE ETC.
+\end{proof}
+
+\end{document}
