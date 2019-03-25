@@ -1,0 +1,7 @@
+\expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{Q1-1-1}{}{Graded Problems}}{1}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-1000}{QQ2-1-2}{Graded Problems}}{1}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{Q1-1-3}{}{Professional Problem}}{1}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-2000}{QQ2-1-4}{Professional Problem}}{1}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{Q1-1-5}{}{Completion Packet}}{2}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-3000}{QQ2-1-6}{Completion Packet}}{2}\relax 

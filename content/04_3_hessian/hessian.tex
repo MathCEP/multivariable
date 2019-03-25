@@ -1,0 +1,108 @@
+\documentclass{ximera}
+
+\graphicspath{{./graphics/}}
+
+\title{The Hessian Matrix}
+\begin{document}
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+We've been working towards defining some sort of ``second derivative'' for multivariable functions, which can tell us about the second-order behavior of functions. It will also enable us to define degree two Taylor polynomials, and we'll later see how it can be used to classify critical points in optimization. 
+
+\section*{The Hessian Matrix}
+
+Suppose we have a differentiable function $f:\mathbb{R}^n\rightarrow\mathbb{R}$. We can take the gradient of this function.
+\[
+\nabla f = \left(\frac{\partial f}{\partial x_1}, \frac{\partial f}{\partial x_2}, \frac{\partial f}{\partial x_3},..., \frac{\partial f}{\partial x_n} \right)
+\]
+We can think of the gradient as a function $\nabla f: \mathbb{R}^n\rightarrow\mathbb{R}^n$. Assuming all of the partial derivatives exist, we can then take the derivative matrix of $\nabla f$. This gives us a square $n\times n$ matrix, which we call the Hessian of $f$.
+
+\begin{definition}
+The \emph{Hessian Matrix} of $f:\mathbb{R}^n\rightarrow \mathbb{R}$ is the $n\times n$ matrix
+\[
+Hf = \begin{pmatrix}
+\frac{\partial ^2 f}{\partial x_1^2} & \frac{\partial ^2 f}{\partial x_2\partial x_1} & \cdots & \frac{\partial ^2 f}{\partial x_n\partial x_1}\\
+\frac{\partial ^2 f}{\partial x_1x_2} & \frac{\partial ^2 f}{\partial x_2^2} & \cdots & \frac{\partial ^2 f}{\partial x_n\partial x_2}\\
+\vdots & \vdots &\ddots & \vdots\\
+\frac{\partial ^2 f}{\partial x_1x_n} & \frac{\partial ^2 f}{\partial x_2x_n} & \cdots & \frac{\partial ^2 f}{\partial x_n^2}\\
+\end{pmatrix}.
+\]
+\end{definition}
+
+Notice that if $f$ has continuous first and second order partial derivatives, then the Hessian matrix will be symmetric by Clairaut's Theorem.
+
+\begin{example}
+Consider the function $f(x,y) = x + 2xy + 3y^3$. We'll compute the Hessian of $f$. First, we find the gradient of $f$.
+\[
+\nabla f = \answer{(1+2y, 2x+9y^2)}
+\]
+Taking the derivative matrix of the gradient, we obtain the Hessian of $f$.
+\[
+Hf = \begin{pmatrix}
+\answer{0} & \answer{2}\\
+\answer{2} & \answer{18y}
+\end{pmatrix}
+\]
+
+Consider the function $g(x,y,z) = e^{xyz}$. We'll compute the Hessian of $g$. First, we find the gradient of $g$.
+\[
+\nabla g = \answer{(yze^{xyz}, xze^{xyz}, xye^{xyz})}
+\]
+Taking the derivative matrix of the gradient we obtain the Hessian of $f$.
+\[
+Hf = \begin{pmatrix}
+\answer{y^2z^2e^{xyz}} & \answer{z(xyz+1)e^{xyz}} & \answer{y(xyz+1)e^{xyz}}\\
+\answer{z(xyz+1)e^{xyz}} & \answer{x^2z^2e^{xyz}} & \answer{x(xyz+1)e^{xyz}}\\
+\answer{y(xyz+1)e^{xyz}} & \answer{x(xyz+1)e^{xyz}} & \answer{x^2y^2e^{xyz}}
+\end{pmatrix}
+\]
+\end{example}
+
+\section*{Taylor Polynomials}
+
+We're now in position to define the second-order Taylor polynomial of a function $f:\mathbb{R}^n\rightarrow \mathbb{R}$, using the Hessian matrix to find the degree two terms.
+
+\begin{definition}
+Consider a function $f:\mathbb{R}^n\rightarrow\mathbb{R}$. The degree two Taylor polynomial of $f$ centered at $\vec{a}$ is
+\[
+p(\vec{x}) = f(\vec{a}) + \nabla f(\vec{a})\cdot (\vec{x}-\vec{a}) + \frac{1}{2} (\vec{x}-\vec{a})^T Hf(\vec{a})(\vec{x}-\vec{a}).
+\]
+\end{definition}
+
+\begin{example}
+We'll compute the degree two Taylor polynomial of the function $f(x,y) = x^2+2xy+3y^3$ centered at $(2,1)$. We previously found that the gradient and Hessian of this function were
+\begin{align*}
+\nabla f(x,y) &= \answer{(1+2y, 2x+9y^2)},\\
+Hf(x,y) &= \begin{pmatrix}
+\answer{0} & \answer{2}\\
+\answer{2} & \answer{18y}
+\end{pmatrix}.
+\end{align*}
+Plugging in the point $(2,1)$, we have
+\begin{align*}
+\nabla f(2,1) &= \answer{(3, 13)},\\
+Hf(x,y) &= \begin{pmatrix}
+\answer{0} & \answer{2}\\
+\answer{2} & \answer{18}
+\end{pmatrix}.
+\end{align*}
+Then, the degree 2 Taylor polynomial of $f$ centered at $(2,1)$ is
+\begin{align*}
+p_2(x,y) &= f(2,1) + \nabla f(2,1)\cdot (x-2,y-1) + \frac{1}{2} (x-2,y-1)^T Hf(2,1)(x-2,y-1)\\
+&= 11+ (3,13)\cdot (x-2,y-1) + \frac{1}{2} \begin{pmatrix}x-2 & y-1\end{pmatrix}\begin{pmatrix}
+0 & 2\\
+2 & 18
+\end{pmatrix}\begin{pmatrix}x-2 \\ y-1\end{pmatrix}
+&= 11 + 3(x-2)+ 13(y-1) + \frac{1}{2}(4(x-2)(y-1)+18(y-1)^2)\\
+&= 5 + x -9y + 2xy + 9y^2.
+\end{align*}
+\end{example}
+
+Notice that the order two part of the Taylor polynomial,
+\[
+\frac{1}{2} (\vec{x}-\vec{a})^T Hf(\vec{a})(\vec{x}-\vec{a}),
+\]
+will be a quadratic form when $\vec{a} = \vec{0}$. We will soon make use of our classification of quadratic forms in order to use the Hessian matrix to determine the order two behavior of a function, which will be useful for optimizing multivariable functions.
+
+\end{document}

@@ -1,0 +1,107 @@
+<!doctype html> 
+<html lang="en"> 
+<head> <title>Implicit Curves and Surfaces</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<!-- charset=utf-8,-css,html,htex4ht,xhtml --> 
+<meta name="src" content="tangent_planes.tex" /> 
+<meta name="author" content="" /> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
+<meta name="ximera" content="version 0.0.1" /> 
+<link href="https://ximera.osu.edu/public/stylesheets/standalone.css" rel="stylesheet" media="screen"/> 
+<script type="text/javascript" async src="https://ximera.osu.edu/public/javascripts/standalone.min.js"></script> 
+</head><body> 
+<div class="preamble"><script type="math/tex">\newenvironment {prompt}{}{}
+\newcommand {\DeclareMathOperator }[2]{\@OldDeclareMathOperator {##1}{##2}\immediate \write \myfile {\unexpanded {\DeclareMathOperator }{\unexpanded {##1}}{\unexpanded {##2}}}}
+\newcommand {\ungraded }[0]{}
+\newcommand {\reserved@a }[2]{}
+\newcommand {\HyperFirstAtBeginDocument }[0]{\AtBeginDocument }
+\newcommand {\reserved@a }[1]{}
+\newcommand {\reserved@a }[2]{}
+\newcommand {\vnameref  }[1]{\unskip ~\nameref {##1}\@vpageref [\unskip ]{##1}}
+\newcommand {\ref  }[0]{\@ifstar \@refstar \T@ref }
+\newcommand {\pageref  }[0]{\@ifstar \@pagerefstar \T@pageref }
+\newcommand {\nameref  }[0]{\@ifstar \@namerefstar \T@nameref }
+\newcommand {\reserved@a }[2]{}
+\newcommand {\reserved@a }[0]{\AtBeginDocument }
+\newcommand {\reserved@a }[1]{}
+\newcommand {\reserved@a }[2]{}                                                                                                                                                 </script><script type="text/javascript"> 
+</script> 
+</div>
+<div 
+class="abstract" 
+>
+</div>   <div class="maketitle"></div>
+<!--l. 11--><p class="noindent" >By studying directional derivatives and their relationship to the gradient, we
+observed that the gradient of a function is always perpendicular to its level curves.
+That is, we proved the following theorem.
+</p>
+<div class="theorem-like problem-environment theorem" id="problem1"><a 
+ id="x1-17r1"></a>Consider a function <script type="math/tex">f:\mathbb {R}^n\rightarrow \mathbb {R}</script>, and suppose <script type="math/tex">f</script> is of class <script type="math/tex">\mathcal {C}^1</script>. For some constant <script type="math/tex">c</script>, consider
+the level set <script type="math/tex; mode=display"> S = \{\vec {x}\in \mathbb {R}^n\;:\;f(\vec {x})=c\}. </script> Then, for any point <script type="math/tex">\vec {x}_0</script> in <script type="math/tex">S</script>, the gradient <script type="math/tex">\nabla f(\vec {x}_0)</script> is perpendicular to
+<script type="math/tex">S</script>.
+</div>
+<!--l. 21--><p class="noindent" >Now, suppose we have a curve defined implicitly. For example, the <em>Folium of
+Descartes</em> is the curve defined by the equation <script type="math/tex; mode=display"> x^3+y^3=3xy. </script>
+</p><!--l. 26--><p class="noindent" >PICTURE
+</p><!--l. 28--><p class="noindent" >Suppose we wanted to find an equation for the tangent line to this curve at the point
+<script type="math/tex">\left (\frac {2}{3}, \frac {4}{3}\right )</script>. There are a couple ways we could approach this problem. We could try to solve for <script type="math/tex">y</script>
+in terms of <script type="math/tex">x</script>, and use the standard single variable methods to find an equation for the
+tangent line. We could also use implicit differentiation, and find an equation for the
+tangent line that way.
+</p><!--l. 30--><p class="noindent" >We will now introduce a new method for finding an equation for the tangent line to
+this curve, that will use our above observations about the gradient of a function and
+level sets.
+<a 
+ id="Q1-1-1"></a>
+</p>
+<h3 class="likesectionHead"><a 
+ id="x1-1000"></a>Tangent lines</h3>
+<div class="theorem-like problem-environment example" id="problem2"><a 
+ id="x1-1001r2"></a>Consider the Folium of Descartes, <script type="math/tex">C</script>, defined by <script type="math/tex">x^3+y^3=3xy</script>. We will find an equation for the
+                                                                  
+
+                                                                  
+tangent line to this curve at the point <script type="math/tex">\left (\frac {2}{3}, \frac {4}{3}\right )</script>.
+<!--l. 37--><p class="noindent" >PICTURE
+</p><!--l. 39--><p class="noindent" >If we define a function <script type="math/tex">f(x,y) = x^3+y^3-3xy</script>, then the curve <script type="math/tex">C</script> is a level set of <script type="math/tex">f</script>. In particular, it’s the level
+set <script type="math/tex">f(x,y)=0</script>. Then the gradient of <script type="math/tex">f</script> will always be perpendicular to <script type="math/tex">C</script>. This means
+that the tangent line to <script type="math/tex">C</script> at the point <script type="math/tex">\left (\frac {2}{3}, \frac {4}{3}\right )</script> will be perpendicular to <script type="math/tex">\nabla f\left (\frac {2}{3}, \frac {4}{3}\right )</script>. In order to
+take advantage of this fact, we’ll compute the gradient of <script type="math/tex">f</script>. <script type="math/tex; mode=display"> \nabla f(x,y) = (3x^2-3y,3y^2-3x) </script> At the point <script type="math/tex">\left (\frac {2}{3}, \frac {4}{3}\right )</script>, <script type="math/tex; mode=display"> \nabla f\left (\frac {2}{3}, \frac {4}{3}\right ) = \left (-\frac {8}{3},\frac {10}{3}\right ). </script>
+Suppose we have a point <script type="math/tex">\vec {x} = (x,y)</script> in the tangent plane. Since <script type="math/tex">\vec {a} = \left (\frac {2}{3}, \frac {4}{3}\right )</script> is also in the tangent
+plane, the vector between these points, <script type="math/tex">\vec {x}-\vec {a}</script>, will be contained in the tangent
+plane.
+</p><!--l. 49--><p class="noindent" >PICTURE
+</p><!--l. 51--><p class="noindent" >Thus, <script type="math/tex">\vec {x}-\vec {a}</script> must be perpendicular to <script type="math/tex">\nabla f\left (\frac {2}{3}, \frac {4}{3}\right )</script>. That is, we must have <script type="math/tex; mode=display"> \nabla f\left (\frac {2}{3}, \frac {4}{3}\right )\cdot (\vec {x}-\vec {a}) = 0, </script> which we can rewrite as <script type="math/tex; mode=display"> \left (-\frac {8}{3},\frac {10}{3}\right ) \cdot \left (x - \frac {2}{3}, y-\frac {4}{3}\right )=0. </script>
+Expanding the dot product, we obtain the equation, <script type="math/tex; mode=display"> \frac {8}{3}\left (x-\frac {2}{3}\right )+\frac {10}{3}\left (y-\frac {4}{3}\right )=0, </script> which is an equation for the
+tangent line to <script type="math/tex">C</script> at the point <script type="math/tex">\left (\frac {2}{3}, \frac {4}{3}\right )</script>.
+</div>
+<a 
+ id="Q1-1-3"></a>
+</p>
+<h3 class="likesectionHead"><a 
+ id="x1-2000"></a>Tangent planes</h3>
+<!--l. 68--><p class="noindent" >We can use a similar method to find equation for tangent planes to surfaces.
+</p>
+<div class="theorem-like problem-environment example" id="problem3"><a 
+ id="x1-2001r3"></a>We’ll find the tangent plane to the surface <script type="math/tex">S</script> defined by the equation <script type="math/tex">z^2 +yz = x^2+xy</script> in <script type="math/tex">\mathbb {R}^3</script>, at the point
+<script type="math/tex">(1,1,1)</script>.
+<!--l. 73--><p class="noindent" >PICTURE
+</p><!--l. 75--><p class="noindent" >Notice that we can think of <script type="math/tex">S</script> as a level set of the function <script type="math/tex; mode=display"> f(x,y,z) = z^2+yz-x^2-xy. </script> In particular, <script type="math/tex">S</script> is the level
+set <script type="math/tex">f(x,y,z) = \answer {0}</script>.
+</p><!--l. 81--><p class="noindent" >Knowing that the tangent plane will be perpendicular to the gradient of <script type="math/tex">f</script>, we
+compute <script type="math/tex; mode=display"> \nabla f(x,y,z) = \answer {(-2x-y,z-x,2z+y)}. </script> At the point <script type="math/tex">(1,1,1)</script>, <script type="math/tex; mode=display"> \nabla f(1,1,1) = \answer {(-3, 0, 3)}. </script>
+</p><!--l. 90--><p class="noindent" >So, the tangent plane will be the plane perpendicular to <script type="math/tex">(-3,0,3)</script>, which passes through the
+point <script type="math/tex">(1,1,1)</script>. This plane is defined by the equation <script type="math/tex; mode=display"> (-3,0,3)\cdot (x-1, y-1, z-1) = 0, </script> Which can be expanded to
+<script type="math/tex; mode=display"> -3(x-1)+3(z-1) = 0. </script>
+</div>
+</body> 
+ 
+</html>
+                                                                  
+
+                                                                  
+                                                                  
+
+

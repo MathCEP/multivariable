@@ -1,0 +1,150 @@
+\documentclass{ximera}
+
+\graphicspath{{./graphics/}}
+
+\title{Review of Taylor Polynomials}
+\begin{document}
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+In single variable calculus, we were able to use derivatives to approximate functions through Taylor polynomials. We were able to do this because derivatives encode significant information about the behavior of a function. In the best situations, a function is completely determined (up to a constant) by its derivatives. Approximating functions with polynomial is incredibly useful for applications and computations, since computations involving polynomials are typically much simpler than computations involving arbitrary functions. 
+
+We would like to do something similar in multivariable calculus, and we will use derivatives to investigate the behavior of functions. Before we embark towards this goal, we'll begin by reviewing Taylor polynomials in single variable calculus, and see how we can immediately extend these to multivariable functions in some special cases.
+
+\section*{Review of Taylor polynomials}
+
+In single variable calculus, we defined Taylor polynomials using the derivatives of a function $f$. The idea behind this definition is to define a polynomial that will have the same derivatives as $f$, up to the degree of the polynomial.
+
+\begin{definition}
+Let $f:\mathbb{R}\rightarrow\mathbb{R}$ be a function that the derivatives $f'(a),f''(a),...,f^{(n)}(a)$ exist for given $a\in\mathbb{R}$ (up to and including the $n$th derivative). Then we define the $n$th degree Taylor polynomial of $f$ centered at $a$ to be
+\[
+p_n(x)=f(a) + f'(a)(x-a) + \frac{f''(a)}{2}(x-a)^2+\cdots + \frac{f^{(n)}(a)}{n!}(x-a)^n.
+\]
+Note that the $k$th term of this polynomial is
+\[
+\frac{f^{(k)}(a)}{k!}(x-a)^k.
+\]
+\end{definition}
+
+We'll show that the first and second derivatives of $f(x)$ and $p_n(x)$ at $a$ are the same for $n\geq 2$, and we'll leave this verification for higher derivatives as an exercise. Taking the first derivative of $p_n(x)$, we obtain
+\begin{align*}
+p_n'(x) &=\frac{d}{dx}\left(f(a) + f'(a)(x-a) + \frac{f''(a)}{2}(x-a)^2+\cdots + \frac{f^{(n)}(a)}{n!}(x-a)^n\right)\\
+&= 0 + f'(a) + f''(a)(x-a) + \frac{f'''(a)}{2}(x-a)^2 + \cdots + \frac{f^{(n)}(a)}{(n-1)!}(x-a)^{n-1}.
+\end{align*}
+Plugging in $x=a$, we have
+\begin{align*}
+p_n'(a) &= f'(a) + f'(a)(a-a) + \frac{f'''(a)}{2}(a-a)^2 + \cdots + \frac{f^{(n)}(a)}{(n-1)!}(a-a)^{n-1}\\
+&= f'(a),
+\end{align*}
+so we see that $p_n'(a) = f'(a)$. Now let's check the second derivatives. Differentiating $p_n'(x)$, we obtain
+\[
+p_n''(x) = 0 + f''(a) + f'''(a)(x-a) + \cdots + \frac{f^{(n)}(a)}{(n-2)!}(x-a)^{n-2}.
+\]
+Plugging in $x=a$, we have
+\begin{align*}
+p_n''(a) &=f''(a) + f'''(a)(a-a) + \cdots + \frac{f^{(n)}(a)}{(n-2)!}(a-a)^{n-2}\\
+&= f''(a).
+\end{align*}
+So we see that the second derivatives match as well, and hopefully the pattern is clear enough to believe that higher order derivatives will match as well.
+
+We'll do an example of computation a Taylor polynomial, and then review some important Taylor polynomials.
+
+\begin{example}
+We'll find the fifth degree Taylor polynomial of $f(x) = \sin(x)$ centered at $x = 0$. First, we compute the first five derivatives of $f$.
+\begin{align*}
+f'(x) &= \answer{\cos(x)}\\
+f''(x) &= \answer{-\sin(x)}\\
+f'''(x) &= \answer{-\cos(x)}\\
+f^{(4)}(x) &= \answer{\sin(x)}\\
+f^{(5)}(x) &= \answer{\cos(x)}\\
+\end{align*}
+Plugging in $x = 0$, we have
+\begin{align*}
+f'(0) &= \answer{1}\\
+f''(0) &= \answer{0}\\
+f'''(0) &= \answer{-1}\\
+f^{(4)}(0) &= \answer{0}\\
+f^{(5)}(0) &= \answer{1}.\\
+\end{align*}
+From this, we can find the fifth degree Taylor polynomial of $f(x)$ centered at $0$ as
+\begin{align*}
+p_5(x) &= f(0) + f'(0)(x-0) + \frac{f''(0)}{2}(x-0)^2+ \frac{f'''(0)}{3!}(x-0)^3 +  \frac{f^{(4)}(0)}{4!}(x-0)^4 +  \frac{f^{(5)}(0)}{5!}(x-0)^5\\
+&= \answer{x -\frac{1}{6}x^3+\frac{1}{120}x^5}.
+\end{align*}
+\end{example}
+
+\begin{proposition}
+The $n$th degree Taylor polynomial of $f(x) = \frac{1}{1-x}$ centered at $0$ is
+\begin{align*}
+p_n(x) &= 1 + x + x^2 + \cdots + x^n\\
+&= \sum_{k=0}^n x^k.
+\end{align*}
+
+The $n$th degree Taylor polynomial of $f(x) = e^x$ centered at $0$ is
+\begin{align*}
+p_n(x) &= 1 + x + \frac{x^2}{2!} +\frac{x^3}{3!} + \cdots + \frac{x^n}{n!}\\
+&= \sum_{k=0}^{n}\frac{x^k}{k!}.
+\end{align*}
+
+The $2n$th degree Taylor polynomial of $f(x) = \cos(x)$ centered at $0$ is
+\begin{align*}
+p_n(x) &= 1 - \frac{x^2}{2!} +\frac{x^4}{4!} - \frac{x^6}{6!} + \cdots + (-1)^n\frac{x^{2n}}{(2n)!}\\
+&= \sum_{k=0}^{n} (-1)^k\frac{x^{2k}}{(2k)!}.
+\end{align*}
+
+The $(2n-1)$th degree Taylor polynomial of $f(x) = \sin(x)$ centered at $0$ is
+\begin{align*}
+p_n(x) &= x - \frac{x^3}{3!} +\frac{x^5}{5!} - \frac{x^7}{7!} + \cdots + (-1)^{n-1}\frac{x^{2n-1}}{(2n-1)!}\\
+&= \sum_{k=0}^{n} (-1)^{k-1}\frac{x^{2k-1}}{(2k-1)!}.
+\end{align*}
+
+The $n$th degree Taylor polynomial of $f(x) = \ln(x+1)$ centered at $0$ is
+\begin{align*}
+p_n(x) &= x - \frac{x^2}{2} +\frac{x^3}{3!} - \frac{x^4}{4} + \frac{x^5}{5} - \cdots + (-1)^{n-1}\frac{x^n}{n}\\
+&= \sum_{k=0}^{n}(-1)^{k-1}\frac{x^k}{k}.
+\end{align*}
+
+The $(2n-1)$th degree Taylor polynomial of $f(x) = \arctan(x)$ centered at $0$ is
+\begin{align*}
+p_n(x) &= x - \frac{x^3}{3} +\frac{x^5}{5} - \frac{x^7}{7} + \frac{x^9}{9} - \cdots + (-1)^{n-1}\frac{x^{2n-1}}{2n-1}\\
+&= \sum_{k=0}^{n}(-1)^{k-1}\frac{x^{2k-1}}{2k-1}.
+\end{align*}
+\end{proposition}
+
+\section*{Taylor polynomials of multivariable functions}
+
+We'll now turn our attention to multivariable functions. In order to define Taylor polynomials for multivariable functions, we need to be able to take higher order derivatives of multivariable functions. For the first derivative, we have the derivative matrix giving the total derivative of a multivariable function. However, we haven't defined any analogous ``second order total derivative,'' much less higher order derivatives! We will need to do this before we can give any sort of definition of Taylor polynomials beyond degree one.
+
+For now, we can think of the Taylor polynomial as giving the best polynomial approximation for a function, and use our knowledge about single variable Taylor polynomials in order to find Taylor polynomials of some special multivariable functions.
+
+\begin{example}
+We will find the fifth degree Taylor polynomial of $f(x,y) = \sin (x+y)$ centered at the origin. Notice that if we let $u=x+y$, we can make use of the fifth degree Taylor polynomial of $g(u) = \sin(u)$, which we found to be
+\[
+p_5(u) = u-\frac{1}{6}u^3+\frac{1}{120}u^5.
+\]
+When we substitute $u = x+y$, we obtain
+\[
+p_5(x,y) = (x+y)-\frac{1}{6}(x+y)^3+\frac{1}{120}(x+y)^5.
+\]
+This is a fifth degree polynomial in $x$ and $y$, and it is the fifth degree Taylor polynomial of $f(x,y) = \sin(x+y)$.
+\end{example}
+
+\begin{example}
+We will find the fourth degree Taylor polynomial of $f(x,y) = e^{xy}$ centered at the origin. Letting $u=xy$, we'll use the fourth degree Taylor polynomial of $e^u$:
+\[
+p_4(u) = 1 + u + \frac{u^2}{2!} +\frac{u^3}{3!} + \frac{u^4}{4!}.
+\]
+Substituting $u=xy$, we obtain
+\[
+1 + xy + \frac{(xy)^2}{2!} +\frac{(xy)^3}{3!} + \frac{(xy)^4}{4!}.
+\]
+However, this is not a fourth degree polynomial in $x$ and $y$! Since $(xy)^4$ has total degree $8$, we have terms of to large of a degree. Taking only terms of degree $4$ or less, we find the fourth degree Taylor polynomial of $f(x,y) = e^{xy}$.
+\[
+p_4(x,y) = 1 + xy + \frac{(xy)^2}{2!}
+\]
+\end{example}
+
+
+
+\end{document}
