@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="288.559pt" height="210.651pt" viewBox="0 0 288.559 210.651">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="238.339pt" height="204.212pt" viewBox="0 0 238.339 204.212">
 <clipPath id="cp0">
-<path transform="matrix(1,0,0,-1,-300.346,559.254)" d="M 300.3465 348.6032 L 588.9062 348.6032 L 588.9062 559.2543 L 300.3465 559.2543 Z "/>
+<path transform="matrix(1,0,0,-1,-13.382,340.549)" d="M 13.38153 136.3375 L 251.7208 136.3375 L 251.7208 340.5501 L 13.38153 340.5501 Z "/>
 </clipPath>
 <g clip-path="url(#cp0)">
 <clipPath id="cp1">
-<path transform="matrix(1,0,0,-1,-300.346,559.254)" d="M 0 0 L 612 0 L 612 792 L 0 792 Z "/>
+<path transform="matrix(1,0,0,-1,-13.382,340.549)" d="M 0 0 L 612 0 L 612 792 L 0 792 Z "/>
 </clipPath>
 <g clip-path="url(#cp1)">
-<g transform="matrix(.35999999,0,0,.36,-300.346,-232.74597)">
+<g transform="matrix(.35999999,0,0,.36,-13.382,-451.451)">
 <symbol id="im2" viewBox="0 0 1700 2200">
 <image width="1700" height="2200" xlink:href="data:image/jpeg;base64,
 /9j/4AAQSkZJRgABAQAAyADIAAD/4QCMRXhpZgAATU0AKgAAAAgABQESAAMAAAAB

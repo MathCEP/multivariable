@@ -1,0 +1,257 @@
+<!doctype html> 
+<html lang="en"> 
+<head> <title>Quadratic Forms</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<!-- charset=utf-8,-css,html,htex4ht,xhtml --> 
+<meta name="src" content="quadratic_forms.tex" /> 
+<meta name="author" content="" /> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
+<meta name="ximera" content="version 0.0.1" /> 
+<link href="https://ximera.osu.edu/public/stylesheets/standalone.css" rel="stylesheet" media="screen"/> 
+<script type="text/javascript" async src="https://ximera.osu.edu/public/javascripts/standalone.min.js"></script> 
+</head><body> 
+<div class="preamble"><script type="math/tex">\newenvironment {prompt}{}{}
+\newcommand {\DeclareMathOperator }[2]{\@OldDeclareMathOperator {##1}{##2}\immediate \write \myfile {\unexpanded {\DeclareMathOperator }{\unexpanded {##1}}{\unexpanded {##2}}}}
+\newcommand {\ungraded }[0]{}
+\newcommand {\reserved@a }[2]{}
+\newcommand {\HyperFirstAtBeginDocument }[0]{\AtBeginDocument }
+\newcommand {\reserved@a }[1]{}
+\newcommand {\reserved@a }[2]{}
+\newcommand {\vnameref  }[1]{\unskip ~\nameref {##1}\@vpageref [\unskip ]{##1}}
+\newcommand {\ref  }[0]{\@ifstar \@refstar \T@ref }
+\newcommand {\pageref  }[0]{\@ifstar \@pagerefstar \T@pageref }
+\newcommand {\nameref  }[0]{\@ifstar \@namerefstar \T@nameref }
+\newcommand {\reserved@a }[2]{}
+\newcommand {\reserved@a }[0]{\AtBeginDocument }
+\newcommand {\reserved@a }[1]{}
+\newcommand {\reserved@a }[2]{}                                                                                                                                                 </script><script type="text/javascript"> 
+</script> 
+</div>
+<div 
+class="abstract" 
+>
+</div>   <div class="maketitle"></div>
+<!--l. 11--><p class="noindent" >In order to better understand the behavior of multivariable functions, we would like
+to define some sort of second derivative for multivariable functions. For first
+derivatives, we have the gradient and derivative matrix filling the roles of derivatives
+for scalar-valued and vector-valued functions, respectively. Before we define
+the second derivative, we will try to understand second-order behavior in
+multivariable functions specifically. That is, we’ll consider polynomials in
+<script type="math/tex">n</script>-variables that only terms of degree <script type="math/tex">2</script>, and determine how these polynomials
+behave.
+</p><!--l. 13--><p class="noindent" >Polynomials with the property are very important throughout mathematics, and they
+are called quadratic forms. You’ve frequently seen a quadratic form which arises from
+the length of a vector <script type="math/tex">\vec {x} = (x_1,...,x_n)</script>, <script type="math/tex; mode=display"> \|\vec {x}\|^2 = x_1^2 + x_2^2 + \cdots + x_n^2. </script>
+<a 
+ id="Q1-1-1"></a>
+</p>
+<h3 class="likesectionHead"><a 
+ id="x1-1000"></a>Quadratic Forms</h3>
+<div class="theorem-like problem-environment definition" id="problem1"><a 
+ id="x1-1001r1"></a>A <em>quadratic form</em> in <script type="math/tex">\mathbb {R}^n</script> is a polynomial <script type="math/tex">p:\mathbb {R}^n\rightarrow \mathbb {R}</script> in which each term has total degree <script type="math/tex">2</script>. That is, it has the form
+<script type="math/tex; mode=display"> \begin{align*} 
+p(x_1,...,x_n) &= c_{11}x_1^2+c_{12}x_1x_2+c_{13}x_1x_3 + \cdots + c_{1n}x_1x_n\\
+&\phantom{= c_{11}x_1^2}+c_{22}x_2^2\phantom{x_2}+c_{23}x_2x_3 + \cdots + c_{2n}x_2x_n\\
+&\phantom{= c_{11}x_1^2+c_{12}x_1x_2}+c_{33}x_3^2\phantom{x_3} + \cdots + c_{3n}x_3x_n\\
+&\phantom{= c_{11}x_1^2+c_{12}x_1x_2+c_{13}x_1x_3 +} \ddots \phantom{+} \vdots\\
+&\phantom{= c_{11}x_1^2+c_{12}x_1x_2+c_{13}x_1x_3 + \cdots }+ c_{nn}x_n^2
+\end{align*}</script>
+                                                                  
+
+                                                                  
+<!--l. 29--><p class="noindent" ></div>
+</p>
+<div class="theorem-like problem-environment example" id="problem2"><a 
+ id="x1-1002r2"></a>For example, the polynomials <script type="math/tex">x^2+2xy+y^2</script> and <script type="math/tex">xy+yz-xz</script> are quadratic forms.
+<!--l. 34--><p class="noindent" >On the other hand, <script type="math/tex">\sin (x^2)</script> and <script type="math/tex">\frac {x^3}{y}</script> are not quadratic forms, since they’re not polynomials.
+Also, the polynomials <script type="math/tex">x^2+y^2-1</script> and <script type="math/tex">(x+1)^2</script> are not quadratic forms, since they include terms of
+degrees other than <script type="math/tex">2</script>
+</div>
+</p><!--l. 37--><p class="noindent" >For  any  quadratic  form
+</p><script type="math/tex; mode=display"> \begin{align*} 
+p(x_1,...,x_n) &= c_{11}x_1^2+c_{12}x_1x_2+c_{13}x_1x_3 + \cdots + c_{1n}x_1x_n\\
+&\phantom{= c_{11}x_1^2}+c_{22}x_2^2\phantom{x_2}+c_{23}x_2x_3 + \cdots + c_{2n}x_2x_n\\
+&\phantom{= c_{11}x_1^2+c_{12}x_1x_2}+c_{33}x_3^2\phantom{x_3} + \cdots + c_{3n}x_3x_n\\
+&\phantom{= c_{11}x_1^2+c_{12}x_1x_2+c_{13}x_1x_3 +} \ddots \phantom{+} \vdots\\
+&\phantom{= c_{11}x_1^2+c_{12}x_1x_2+c_{13}x_1x_3 + \cdots }+ c_{nn}x_n^2,
+\end{align*}</script>
+<!--l. 44--><p class="noindent" >we can write <script type="math/tex; mode=display"> p(x_1,...,x_n) = \begin {pmatrix} x_1 & x_2 & \cdots & x_n \end {pmatrix} \begin {pmatrix} c_{11} & c_{12} & \cdots & c_{1n}\\ 0 & c_{22} & \cdots & c_{2n}\\ \vdots & \ddots & \ddots & \vdots \\ 0 & \cdots & 0 & c_{nn} \end {pmatrix} \begin {pmatrix} x_1 \\ x_2 \\ \vdots \\ x_n \end {pmatrix}. </script> Thus, we can represent the quadratic form with the matrix
+<script type="math/tex; mode=display"> \begin {pmatrix} c_{11} & c_{12} & \cdots & c_{1n}\\ 0 & c_{22} & \cdots & c_{2n}\\ \vdots & \ddots & \ddots & \vdots \\ 0 & \cdots & 0 & c_{nn} \end {pmatrix}. </script>
+</p>
+<div class="theorem-like problem-environment example" id="problem3"><a 
+ id="x1-1003r3"></a>For example, the quadratic form corresponding to the matrix <script type="math/tex">\begin {pmatrix}1 & 2\\ 0 & 3\end {pmatrix}</script> is
+<script type="math/tex; mode=display"> \begin{align*} 
+p(x,y) &= \begin{pmatrix} x & y\end{pmatrix}\begin{pmatrix}1 & 2\\ 0 & 3\end{pmatrix}\begin{pmatrix} x \\ y\end{pmatrix}\\
+&= \begin{pmatrix} x & y\end{pmatrix}\begin{pmatrix} x+2y \\ 3y\end{pmatrix}
+&= x^2+2xy+3y^2.
+\end{align*}</script>
+<!--l. 72--><p class="noindent" >The quadratic form corresponding to the matrix <script type="math/tex">\begin {pmatrix}1 & 2 & 3\\0 & 4 & 5\\0 & 0 & 6\end {pmatrix}</script> is
+</p><script type="math/tex; mode=display"> \begin{align*} 
+p(x,y) &= \begin{pmatrix} x & y & z\end{pmatrix}\begin{pmatrix}1 & 2 & 3\\0 & 4 & 5\\0 & 0 & 6\end{pmatrix}\begin{pmatrix} x \\ y\\ z\end{pmatrix}\\
+&= \answer{x^2+4xy+8xz+5z^2+6yz+7z^2}.
+\end{align*}</script>
+<!--l. 77--><p class="noindent" >The quadratic form corresponding to the matrix <script type="math/tex">\begin {pmatrix}1 & 0 & 0\\2 & 4 & 0\\3 & 5 & 6\end {pmatrix}</script> is
+</p><script type="math/tex; mode=display"> \begin{align*} 
+p(x,y) &= \begin{pmatrix} x & y & z\end{pmatrix}\begin{pmatrix}1 & 0 & 0\\2 & 4 & 0\\3 & 5 & 6\end{pmatrix}\begin{pmatrix} x \\ y\\ z\end{pmatrix}\\
+&= \answer{x^2+4xy+8xz+5z^2+6yz+7z^2}.
+\end{align*}</script>
+<!--l. 82--><p class="noindent" ></div>
+</p><!--l. 84--><p class="noindent" >Notice in the previous example, there were two different matrices that gave rise to
+the same quadratic form. In general, there will be many different matrices
+                                                                  
+
+                                                                  
+corresponding to the same quadratic form. However, if we add the condition that a
+matrix be <em>symmetric</em>, then we do have uniqueness.
+</p>
+<div class="theorem-like problem-environment theorem" id="problem4"><a 
+ id="x1-1004r4"></a>For any quadratic form <script type="math/tex">p</script>, there is a unique symmetric matrix <script type="math/tex">A</script> such that <script type="math/tex; mode=display"> p(\vec {x}) = \vec {x}^T A \vec {x}. </script>
+In particular, the symmetric matrix <script type="math/tex; mode=display"> A = \begin {pmatrix} c_{11} & \frac {1}{2}c_{12} & \cdots & \frac {1}{2}c_{1n}\\ \frac {1}{2}c_{12} & c_{22} & \cdots & \frac {1}{2}c_{2n}\\ \vdots & \ddots & \ddots & \vdots \\ \frac {1}{2}c_{1n} & \cdots & \frac {1}{2}c_{(n-1)n} & c_{nn} \end {pmatrix} </script> corresponds to the quadratic form
+<script type="math/tex; mode=display"> \begin{align*} 
+p(x_1,...,x_n) &= c_{11}x_1^2+c_{12}x_1x_2+c_{13}x_1x_3 + \cdots + c_{1n}x_1x_n\\
+&\phantom{= c_{11}x_1^2}+c_{22}x_2^2\phantom{x_2}+c_{23}x_2x_3 + \cdots + c_{2n}x_2x_n\\
+&\phantom{= c_{11}x_1^2+c_{12}x_1x_2}+c_{33}x_3^2\phantom{x_3} + \cdots + c_{3n}x_3x_n\\
+&\phantom{= c_{11}x_1^2+c_{12}x_1x_2+c_{13}x_1x_3 +} \ddots \phantom{+} \vdots\\
+&\phantom{= c_{11}x_1^2+c_{12}x_1x_2+c_{13}x_1x_3 + \cdots }+ c_{nn}x_n^2.
+\end{align*}</script>
+<!--l. 108--><p class="noindent" ></div>
+<a 
+ id="Q1-1-3"></a>
+</p>
+<h3 class="likesectionHead"><a 
+ id="x1-2000"></a>Categorizing Quadratic Forms</h3>
+<!--l. 112--><p class="noindent" >We can categorize quadratic forms according their behavior. This behavior tells us
+about the shape of their graphs, and these observations will be important when we
+transition to studying the behavior of more general functions.
+</p>
+<div class="theorem-like problem-environment definition" id="problem5"><a 
+ id="x1-2001r5"></a>A quadratic form <script type="math/tex">p(\vec {x})</script> is...
+     <ul class="itemize1">
+     <li class="itemize"><em>positive definite</em> if <script type="math/tex">p(\vec {x})>0</script> for all <script type="math/tex">\vec {x}\neq 0</script>.
+     </li>
+     <li class="itemize"><em>negative definite</em> if <script type="math/tex">p(\vec {x})<0</script> for all <script type="math/tex">\vec {x}\neq 0</script>.
+     </li>
+     <li class="itemize"><em>positive semi-definite</em> if it is not positive definite, and <script type="math/tex">p(\vec {x})\geq 0</script> for all <script type="math/tex">\vec {x})</script>.
+     </li>
+     <li class="itemize"><em>negative semi-definite</em> if it is not positive definite, and <script type="math/tex">p(\vec {x})\geq 0</script> for all <script type="math/tex">\vec {x})</script>.
+     </li>
+     <li class="itemize"><em>indefinite</em> if it is none of the above. That is, there exist <script type="math/tex">\vec {x}_1,\vec {x}_2\neq \vec {0}</script> such that <script type="math/tex">p(\vec {x}_1) <0</script> and <script type="math/tex">p(\vec {x}_2)>0</script>.</li></ul>
+<!--l. 127--><p class="noindent" ></div>
+</p>
+<div class="theorem-like problem-environment example" id="problem6"><a 
+ id="x1-2002r6"></a>The quadratic form <script type="math/tex">p(x,y) = x^2+y^2</script> is positive definite. Its graph is pictured below.
+<!--l. 132--><p class="noindent" >PICTURE
+                                                                  
+
+                                                                  
+</p><!--l. 134--><p class="noindent" >The graphs of other positive definite quadratic forms look similar, though they may
+be stretched in various directions. Notice that for a positive definite quadratic form,
+there is always a strict minimum at the origin.
+</p><!--l. 136--><p class="noindent" >The quadratic form <script type="math/tex">p(x,y) = -x^2-y^2</script> is negative definite. Its graph is pictured below.
+</p><!--l. 138--><p class="noindent" >PICTURE
+</p><!--l. 140--><p class="noindent" >The graphs of other negative definite quadratic forms look similar, though they may
+be stretched in various directions. Notice that for a negative definite quadratic form,
+there is always a strict maximum at the origin.
+</p><!--l. 142--><p class="noindent" >The quadratic form <script type="math/tex">p(x,y) = x^2</script> is positive semi-definite. Its graph is pictured below.
+</p><!--l. 144--><p class="noindent" >PICTURE
+</p><!--l. 146--><p class="noindent" >The graphs of other positive semi-definite quadratic forms look similar, though they
+may be stretched in various directions.
+</p><!--l. 148--><p class="noindent" >The quadratic form <script type="math/tex">p(x,y) = -x^2</script> is negative semi-definite. Its graph is pictured below.
+</p><!--l. 150--><p class="noindent" >PICTURE
+</p><!--l. 152--><p class="noindent" >The graphs of other negative semi-definite quadratic forms look similar, though they
+may be stretched in various directions.
+</p><!--l. 154--><p class="noindent" >The quadratic form <script type="math/tex">p(x,y) = x^2-y^2</script> is indefinite. Its graph is pictured below.
+</p><!--l. 156--><p class="noindent" >PICTURE
+</p><!--l. 158--><p class="noindent" >The graphs of other indefinite quadratic forms look similar, though they may be
+stretched in various directions. Notice the behavior of the graph around the origin;
+because of its shape, this is called a <em>saddle point</em>.
+</p><!--l. 160--><p class="noindent" ></div>
+<a 
+ id="Q1-1-5"></a>
+</p>
+<h3 class="likesectionHead"><a 
+ id="x1-3000"></a>Sylvester’s Theorem</h3>
+<!--l. 164--><p class="noindent" >We can use the symmetric matrix representing a quadratic form to classify the
+quadratic form, by looking at a sequence of determinants.
+</p>
+<div class="theorem-like problem-environment theorem" id="problem7"><a 
+ id="x1-3001r7"></a>(Sylvester’s Theorem) Let <script type="math/tex">p(\vec {x}) = \vec {x}^TA\vec {x}</script>, where <script type="math/tex">A</script> is a symmetric matrix, <script type="math/tex; mode=display"> A = \begin {pmatrix} a_{11} & a_{12} & a_{13} & \cdots & a_{1n}\\ a_{12} & a_{22} & a_{23} & \cdots & a_{2n}\\ a_{13} & a_{23} & a_{33} & \cdots & a_{1n}\\ \vdots & \vdots & \vdots & \ddots & \vdots \\ a_{1n} & a_{2n} & a_{3n} & \cdots & a_{nn}\\ \end {pmatrix}. </script> Consider the sequence of
+determinants <script type="math/tex; mode=display"> d_1 = a_{11}, d_2 = \text {det}\begin {pmatrix}a_{11} & a_{12}\\ a_{12} & a_{22}\end {pmatrix}, d_3 = \text {det}\begin {pmatrix}a_{11} & a_{12} & a_{13}\\ a_{12} & a_{22} & a_{23}\\ a_{13} & a_{23} & a_{33}\end {pmatrix},...,d_n = \text {det}\begin {pmatrix} a_{11} & a_{12} & a_{13} & \cdots & a_{1n}\\ a_{12} & a_{22} & a_{23} & \cdots & a_{2n}\\ a_{13} & a_{23} & a_{33} & \cdots & a_{1n}\\ \vdots & \vdots & \vdots & \ddots & \vdots \\ a_{1n} & a_{2n} & a_{3n} & \cdots & a_{nn}\\ \end {pmatrix}. </script>
+     <ul class="itemize1">
+     <li class="itemize">If all of the determinants are positive, so <script type="math/tex">d_i>0</script> for all <script type="math/tex">i</script>, then <script type="math/tex">p</script> is positive definite.
+     </li>
+     <li class="itemize">If <script type="math/tex">d_1 < 0</script>, and the signed of the determinants alternate (so the odd numbered
+     determinants  are  negative,  and  the  even  numbered  determinants  are
+     positive), then <script type="math/tex">p</script> is negative definite.
+     </li>
+                                                                  
+
+                                                                  
+     <li class="itemize">If all of the determinants are nonzero, but don’t follow the above patterns,
+     then <script type="math/tex">p</script> is indefinite.</li></ul>
+<!--l. 192--><p class="noindent" ></div>
+</p><!--l. 194--><p class="noindent" >Notice that this theorem requires that <script type="math/tex">A</script> be a symmetric matrix. Also, in the case
+where one or more of the determinants is zero, we can’t use this theorem to classify
+the quadratic form.
+</p>
+<div class="theorem-like problem-environment example" id="problem8"><a 
+ id="x1-3002r8"></a>Consider the quadratic form <script type="math/tex">p(\vec {x}) = \vec {x}^T A\vec {x}</script> for <script type="math/tex">A = \begin {pmatrix} -1 & 1 & -2\\ 1 & -5 & 1 \\ -2 & 1 & -10\end {pmatrix}</script>. Notice that <script type="math/tex">A</script> is symmetric, so we’ll be
+able to use Sylvester’s Theorem. Let’s find the sequence of determinants.
+<script type="math/tex; mode=display"> \begin{align*} 
+d_1 &= -1\\
+d_2 &= \text{det}\begin{pmatrix} -1 & 1\\1 & -5\end{pmatrix}\\
+&= \answer{3}\\
+d_3 &= \text{det}\begin{pmatrix} -1 & 1 & -2\\ 1 & -5 & 1 \\ -2 & 1 & -10\end{pmatrix}\\
+&= \answer{-23}
+\end{align*}</script>
+<!--l. 205--><p class="noindent" >Based on this sequence of determinants, and using Sylvester’s Theorem, we have </p><div class="multiple-choice" id="problem9"><span class="choice  "   id="choice1"><script type="math/tex">p</script> is
+positive definite.</span> <span class="choice correct "   id="choice2"><script type="math/tex">p</script> is negative definite.</span> <span class="choice  "   id="choice3"><script type="math/tex">p</script> is indefinite.</span> <span class="choice  "   id="choice4">We cannot use Sylvester’s
+Theorem to categorize this quadratic form.</span> </div>
+</div>
+<div class="theorem-like problem-environment example" id="problem10"><a 
+ id="x1-3003r9"></a>Consider the quadratic form <script type="math/tex">p(\vec {x}) = \vec {x}^T A\vec {x}</script> for <script type="math/tex">A = \begin {pmatrix} 1 & 11\\ 11 & 121\end {pmatrix}</script>. Notice that <script type="math/tex">A</script> is symmetric, so we’ll be
+able to use Sylvester’s Theorem. Let’s find the sequence of determinants.
+<script type="math/tex; mode=display"> \begin{align*} 
+d_1 &= \answer{1}\\
+d_2 &= \text{det}\begin{pmatrix} 1 & 11\\11 & 121\end{pmatrix}\\
+&= \answer{0}
+\end{align*}</script>
+<!--l. 221--><p class="noindent" >Based on this sequence of determinants, and using Sylvester’s Theorem, we have </p><div class="multiple-choice" id="problem11"><span class="choice  "   id="choice5"><script type="math/tex">p</script> is
+positive definite.</span> <span class="choice  "   id="choice6"><script type="math/tex">p</script> is negative definite.</span> <span class="choice  "   id="choice7"><script type="math/tex">p</script> is indefinite.</span> <span class="choice correct "   id="choice8">We cannot use Sylvester’s
+Theorem to categorize this quadratic form.</span> </div>
+</div>
+<div class="theorem-like problem-environment example" id="problem12"><a 
+ id="x1-3004r10"></a>Consider the quadratic form <script type="math/tex">p(\vec {x}) = \vec {x}^T A\vec {x}</script> for <script type="math/tex">A = \begin {pmatrix} -1 & 2 & 0\\ 0 & -4 & 0 \\ -2 & 0 & 3\end {pmatrix}</script>. Notice that <script type="math/tex">A</script> is symmetric, so we
+won’t immediately be able to use Sylvester’s Theorem. First, we’ll need
+to find the symmetric matrix representing <script type="math/tex">p</script>. Expanding <script type="math/tex">p</script>, we have
+<script type="math/tex; mode=display"> \begin{align*} 
+p(x,y,z) &= \begin{pmatrix} x & y & z\end{pmatrix}\begin{pmatrix} -1 & 2 & 0\\0 & -4 & 0\\-2 & 0 & 3\end{pmatrix}\begin{pmatrix} x \\ y\\ z\end{pmatrix}\\
+&= \answer{-x^2 + 2xy - 4y^2 - 2xz + 3z^2}.
+                                                                  
+
+                                                                  
+\end{align*}</script>
+<!--l. 236--><p class="noindent" >From this, we can find the symmetric matrix representing <script type="math/tex">p</script> to be <script type="math/tex; mode=display"> \begin {pmatrix} -1 & 1 & -1\\ 1 & -4 & 0 \\ -1 & 0 & 3\end {pmatrix}. </script>
+</p><!--l. 241--><p class="noindent" >We now find the sequence of determinants for the symmetric matrix above.
+</p><script type="math/tex; mode=display"> \begin{align*} 
+d_1 &= -1\\
+d_2 &= \text{det}\begin{pmatrix} -1 & 1\\1 & -4\end{pmatrix}\\
+&= \answer{3}\\
+d_3 &= \text{det}\begin{pmatrix} -1 & 1 & -1\\ 1 & -4 & 0 \\ -1 & 0 & 3\end{pmatrix}\\
+&= \answer{-23}
+\end{align*}</script>
+<!--l. 249--><p class="noindent" >Based on this sequence of determinants, and using Sylvester’s Theorem, we have </p><div class="multiple-choice" id="problem13"><span class="choice  "   id="choice9"><script type="math/tex">p</script> is
+positive definite.</span> <span class="choice  "   id="choice10"><script type="math/tex">p</script> is negative definite.</span> <span class="choice correct "   id="choice11"><script type="math/tex">p</script> is indefinite.</span> <span class="choice  "   id="choice12">We cannot use Sylvester’s
+Theorem to categorize this quadratic form.</span> </div>
+</div>
+</body> 
+ 
+</html>
+                                                                  
+
+                                                                  
+                                                                  
+
+

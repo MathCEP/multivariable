@@ -113,6 +113,8 @@
 \newcommand {\document }[0]{\let \input \otherinput }
 \newcommand {\input }[1]{}
 \newcommand {\document }[0]{\let \input \otherinput }
+\newcommand {\input }[1]{}
+\newcommand {\document }[0]{\let \input \otherinput }
 \newcommand {\reserved@a }[2]{}
 \newcommand {\reserved@a }[0]{\AtBeginDocument }
 \newcommand {\reserved@a }[1]{}

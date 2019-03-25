@@ -1,0 +1,188 @@
+<!doctype html> 
+<html lang="en"> 
+<head> <title>Local Extrema</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<!-- charset=utf-8,-css,html,htex4ht,xhtml --> 
+<meta name="src" content="local_extrema.tex" /> 
+<meta name="author" content="" /> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
+<meta name="ximera" content="version 0.0.1" /> 
+<link href="https://ximera.osu.edu/public/stylesheets/standalone.css" rel="stylesheet" media="screen"/> 
+<script type="text/javascript" async src="https://ximera.osu.edu/public/javascripts/standalone.min.js"></script> 
+</head><body> 
+<div class="preamble"><script type="math/tex">\newenvironment {prompt}{}{}
+\newcommand {\DeclareMathOperator }[2]{\@OldDeclareMathOperator {##1}{##2}\immediate \write \myfile {\unexpanded {\DeclareMathOperator }{\unexpanded {##1}}{\unexpanded {##2}}}}
+\newcommand {\ungraded }[0]{}
+\newcommand {\reserved@a }[2]{}
+\newcommand {\HyperFirstAtBeginDocument }[0]{\AtBeginDocument }
+\newcommand {\reserved@a }[1]{}
+\newcommand {\reserved@a }[2]{}
+\newcommand {\vnameref  }[1]{\unskip ~\nameref {##1}\@vpageref [\unskip ]{##1}}
+\newcommand {\ref  }[0]{\@ifstar \@refstar \T@ref }
+\newcommand {\pageref  }[0]{\@ifstar \@pagerefstar \T@pageref }
+\newcommand {\nameref  }[0]{\@ifstar \@namerefstar \T@nameref }
+\newcommand {\reserved@a }[2]{}
+\newcommand {\reserved@a }[0]{\AtBeginDocument }
+\newcommand {\reserved@a }[1]{}
+\newcommand {\reserved@a }[2]{}                                                                                                                                                 </script><script type="text/javascript"> 
+</script> 
+</div>
+<div 
+class="abstract" 
+>
+</div>   <div class="maketitle"></div>
+<!--l. 11--><p class="noindent" >Now that we’ve defined the Hessian matrix and studied quadratic forms, we’re in
+position to find local extrema of multivariable function. This process will closely
+resemble the process that we following in single variable calculus, so we’ll begin by
+reviewing that case.
+</p><!--l. 13--><p class="noindent" >Recall that we say <script type="math/tex">f(x)</script> has a local maximum at <script type="math/tex">x=a</script> if <script type="math/tex">f(x)\leq f(a)</script> for all <script type="math/tex">x</script> near <script type="math/tex">a</script>. Similarly, <script type="math/tex">f(x)</script> has a local
+minimum at <script type="math/tex">x=a</script> if <script type="math/tex">f(a)\leq f(x)</script> for all <script type="math/tex">x</script> near <script type="math/tex">a</script>. We can state these definitions more precisely, as
+below.
+</p>
+<div class="theorem-like problem-environment definition" id="problem1"><a 
+ id="x1-17r1"></a>We say that <script type="math/tex">f(x)</script> has a <em>local maximum</em> at <script type="math/tex">x=a</script> if there exists <script type="math/tex">r>0</script> such that <script type="math/tex">|x-a|<r</script> implies
+<script type="math/tex">f(x)\leq f(a)</script>.
+<!--l. 18--><p class="noindent" >We say that <script type="math/tex">f(x)</script> has a <em>local minimum</em> at <script type="math/tex">x=a</script> if there exists <script type="math/tex">r>0</script> such that <script type="math/tex">|x-a|<r</script> implies
+<script type="math/tex">f(x)\geq f(a)</script>.
+</div>
+</p><!--l. 21--><p class="noindent" >In single variable calculus, we found local extrema by finding critical points, and then
+classifying them using the first or second derivative test.
+</p>
+<div class="theorem-like problem-environment definition" id="problem2"><a 
+ id="x1-18r2"></a>The point <script type="math/tex">x=a</script> is a <em>critical point</em> of <script type="math/tex">f(x)</script> if <script type="math/tex">f'(a)=0</script>, or if <script type="math/tex">f'(a)</script> does not exist.
+</div>
+<div class="theorem-like problem-environment proposition" id="problem3"><a 
+ id="x1-19r3"></a>If <script type="math/tex">f(x)</script> has a local minimum or maximum at <script type="math/tex">x=a</script>, then <script type="math/tex">a</script> is a critical point of <script type="math/tex">f(x)</script>.
+<!--l. 30--><p class="noindent" >If <script type="math/tex">a</script> is a critical point of <script type="math/tex">f(x)</script> and <script type="math/tex">f''(a)<0</script>, then <script type="math/tex">f(x)</script> has a local maximum at <script type="math/tex">x=a</script>.
+</p><!--l. 32--><p class="noindent" >If <script type="math/tex">a</script> is a critical point of <script type="math/tex">f(x)</script> and <script type="math/tex">f''(a)>0</script>, then <script type="math/tex">f(x)</script> has a local minimum at <script type="math/tex">x=a</script>.
+</p><!--l. 34--><p class="noindent" >If <script type="math/tex">a</script> is a critical point of <script type="math/tex">f(x)</script> and <script type="math/tex">f''(a)=0</script> or <script type="math/tex">f''(a)</script> does not exist, then <script type="math/tex">f(x)</script> could have a local maximum at
+<script type="math/tex">a</script>, a local minimum at <script type="math/tex">a</script>, or neither.
+</div>
+                                                                  
+
+                                                                  
+</p>
+<div class="theorem-like problem-environment example" id="problem4"><a 
+ id="x1-20r4"></a>As an example, we’ll find the local extrema of the function <script type="math/tex">f(x) = x^3+3x^2-9x+1</script>. Differentiating, we have <script type="math/tex; mode=display"> f'(x) = \answer {3x^2+6x-9}. </script>
+Solving <script type="math/tex">f'(x)=0</script> for <script type="math/tex">x</script>, we see that there are two critical points, <script type="math/tex">x=-3</script> and <script type="math/tex">x=1</script>.
+<!--l. 44--><p class="noindent" >We’ll classify these critical points using the second derivative test. We find the second
+derivative of <script type="math/tex">f(x)</script>. <script type="math/tex; mode=display"> f''(x) = \answer {6x+6} </script> Plugging in <script type="math/tex">x=-3</script>, we have <script type="math/tex; mode=display"> f''(-3) = \answer {-12}. </script> This tells us that at <script type="math/tex">x=-3</script>, <script type="math/tex">f(x)</script> has a </p><div class="multiple-choice" id="problem5"><span class="choice correct "   id="choice1">local maximum.</span> <span class="choice 
+"  id="choice2">local minimum.</span> <span class="choice  "   id="choice3">neither.</span> </div>
+Plugging in <script type="math/tex">x=1</script>, we have <script type="math/tex; mode=display"> f''(1) = \answer {12}. </script> This tells us that at <script type="math/tex">x=1</script>, <script type="math/tex">f(x)</script> has a <div class="multiple-choice" id="problem6"><span class="choice  "   id="choice4">local maximum.</span> <span class="choice correct "   id="choice5">local
+minimum.</span> <span class="choice  "   id="choice6">neither.</span> </div>
+</div>
+<a 
+ id="Q1-1-1"></a>
+<h3 class="likesectionHead"><a 
+ id="x1-1000"></a>Local extrema for multivariable functions</h3>
+<!--l. 72--><p class="noindent" >We begin by defining local minima and local maxima for multivariable functions.
+These follow the same idea as in the single variable case. For example, <script type="math/tex">f</script> has a local
+minimum at <script type="math/tex">\vec {x}=\vec {a}</script> if <script type="math/tex">f(\vec {a})\leq f(\vec {x})</script> for <script type="math/tex">\vec {x}</script> “near” <script type="math/tex">a</script>. Now, we need to decide what “near” means. This means
+that we can find some distance <script type="math/tex">r>0</script> such that for <script type="math/tex">\vec {x}</script> within distance <script type="math/tex">r</script> from <script type="math/tex">\vec {a}</script>, we must have <script type="math/tex">f(\vec {a})\leq f(\vec {x})</script>.
+We restate this more formally.
+</p>
+<div class="theorem-like problem-environment definition" id="problem7"><a 
+ id="x1-1001r5"></a>We say that <script type="math/tex">f:\mathbb {R}^n\rightarrow \mathbb {R}</script> has a <em>local minimum</em> at <script type="math/tex">\vec {x}=\vec {a}</script> if there exists <script type="math/tex">r>0</script> such that for all <script type="math/tex">\vec {x}</script> with <script type="math/tex">\|\vec {x}-\vec {a}\|<r</script>, we have
+<script type="math/tex">f(\vec {a})\leq f(\vec {x})</script>.
+<!--l. 77--><p class="noindent" >We say that <script type="math/tex">f:\mathbb {R}^n\rightarrow \mathbb {R}</script> has a <em>local maximum</em> at <script type="math/tex">\vec {x}=\vec {a}</script> if there exists <script type="math/tex">r>0</script> such that for all <script type="math/tex">\vec {x}</script> with <script type="math/tex">\|\vec {x}-\vec {a}\|<r</script>, we have
+<script type="math/tex">f(\vec {a})\geq f(\vec {x})</script>.
+</div>
+</p><!--l. 80--><p class="noindent" >In some cases, we can determine local extrema using our knowledge about functions,
+and without using Calculus.
+</p>
+<div class="theorem-like problem-environment example" id="problem8"><a 
+ id="x1-1002r6"></a>Consider the function <script type="math/tex">f(x,y)= (x-1)^2 + (y+2)^2</script>. Since the terms <script type="math/tex">(x-1)^2</script> and <script type="math/tex">(y+2)^2</script> are always nonnegative, we
+can see that <script type="math/tex">f(x,y)</script> will always be nonnegative. Since <script type="math/tex">f(1,-2)=0</script>, and <script type="math/tex">0\leq f(x,y)</script> for all <script type="math/tex">(x,y)</script>, this means
+that <script type="math/tex">f(x,y)</script> has a local minimum at <script type="math/tex">(1,-2)</script>. (This local minimum is also an absolute
+maximum.)
+<!--l. 85--><p class="noindent" >Consider the function <script type="math/tex">g(x,y,z) = 1-\sqrt {x^2+y^2+z^2}</script>. Since <script type="math/tex">\sqrt {x^2+y^2+z^2}\geq 0</script>, we’ll always have <script type="math/tex">g(x,y,z) \leq 1</script>. Then, since <script type="math/tex">g(0,0,0)=1</script>, <script type="math/tex">g</script> has a local maximum
+at <script type="math/tex">(0,0,0)</script>.
+</div>
+<a 
+ id="Q1-1-3"></a>
+</p>
+<h3 class="likesectionHead"><a 
+ id="x1-2000"></a>Critical points</h3>
+<!--l. 90--><p class="noindent" >Our definition of critical points of multivariable functions is also very similar to the
+definition from single variable calculus. Here, the gradient vector replaces the
+                                                                  
+
+                                                                  
+derivative.
+</p>
+<div class="theorem-like problem-environment definition" id="problem9"><a 
+ id="x1-2001r7"></a>We say that <script type="math/tex">f:\mathbb {R}^n\rightarrow \mathbb {R}</script> has a <em>critical point</em> at <script type="math/tex">\vec {x}=\vec {a}</script> if <script type="math/tex">\nabla f(\vec {a})=\vec {0}</script>, or <script type="math/tex">\nabla f(\vec {a})</script> does not exist.
+</div>
+<!--l. 96--><p class="noindent" >For functions <script type="math/tex">f:\mathbb {R}^2\rightarrow \mathbb {R}</script>, we can visualize critical points as points where the tangent plane is
+either horizontal, or undefined.
+</p><!--l. 98--><p class="noindent" >PICTURES
+</p><!--l. 100--><p class="noindent" >As in single variable calculus, if a function has local extrema, they will occur at
+critical points.
+</p>
+<div class="theorem-like problem-environment proposition" id="problem10"><a 
+ id="x1-2002r8"></a>If <script type="math/tex">f:\mathbb {R}^n\rightarrow \mathbb {R}</script> has a local maximum or local minimum at <script type="math/tex">\vec {x}=\vec {a}</script>, then <script type="math/tex">\vec {a}</script> is a critical point of
+<script type="math/tex">f</script>.
+</div>
+<div class="theorem-like problem-environment example" id="problem11"><a 
+ id="x1-2003r9"></a>We’ll find the critical points of the function <script type="math/tex">f(x,y) = x^3+x^2y-y^2-4y</script>. The gradient of <script type="math/tex">f</script> is <script type="math/tex; mode=display"> \nabla f(x,y) = (3x^2+2xy, x^2-2y-4). </script> This is defined at all
+points in <script type="math/tex">\mathbb {R}^2</script>, so the critical points will satisfy <script type="math/tex">\nabla f(x,y)=(0,0)</script>. In order to find the critical points, we
+solve the system of equations <script type="math/tex; mode=display">\begin {cases} 3x^2+2xy=0\\ x^2-2y-4=0 \end {cases}.</script> Factoring the first equation, we have <script type="math/tex">x(3x+2y)=0</script>, giving us the
+cases <script type="math/tex">x=0</script> or <script type="math/tex">3x+2y=0</script>.
+<!--l. 118--><p class="noindent" >If <script type="math/tex">x=0</script>, the second equation gives us <script type="math/tex">y=-2</script>. So <script type="math/tex">(0,-2)</script> is a critical point.
+</p><!--l. 120--><p class="noindent" >If <script type="math/tex">3x+2y=0</script>, plugging <script type="math/tex">y=\frac {-3}{2} x</script> into the second equation gives us <script type="math/tex">x^2+3x-4=0</script>, so <script type="math/tex">x=1</script> or <script type="math/tex">x=-4</script>. This gives us the critical
+points <script type="math/tex">(1,-3/2)</script> and <script type="math/tex">(-4,6)</script>.
+</p><!--l. 122--><p class="noindent" >Thus, the critical points of <script type="math/tex">f</script> are <script type="math/tex">(0,-2)</script>, <script type="math/tex">(1,-3/2)</script>, and <script type="math/tex">(-4,6)</script>.
+</div>
+<a 
+ id="Q1-1-5"></a>
+</p>
+<h3 class="likesectionHead"><a 
+ id="x1-3000"></a>Classifying critical points</h3>
+<!--l. 127--><p class="noindent" >We can use the Hessian matrix to classify critical points in some cases.
+</p>
+<div class="theorem-like problem-environment proposition" id="problem12"><a 
+ id="x1-3001r10"></a>Suppose <script type="math/tex">f:\mathbb {R}^n\rightarrow \mathbb {R}</script> has continuous second order partial derivatives (so <script type="math/tex">f</script> has <script type="math/tex">\mathcal {C}^2</script>) at and near a
+critical point <script type="math/tex">\vec {a}\in U</script>.
+     <ul class="itemize1">
+     <li class="itemize">If <script type="math/tex">Hf(\vec {a})</script> is positive definite, then <script type="math/tex">f</script> has a <em>local minimum</em> at <script type="math/tex">\vec {x}=\vec {a}</script>.
+     </li>
+     <li class="itemize">If <script type="math/tex">Hf(\vec {a})</script> is negative definite, then <script type="math/tex">f</script> has a <em>local maximum</em> at <script type="math/tex">\vec {x}=\vec {a}</script>.
+     </li>
+     <li class="itemize">If <script type="math/tex">Hf(\vec {a})</script> is indefinite, then <script type="math/tex">f</script> has a saddle point at <script type="math/tex">\vec {x}=\vec {a}</script>.</li></ul>
+<!--l. 136--><p class="noindent" ></div>
+</p>
+                                                                  
+
+                                                                  
+<div class="theorem-like problem-environment example" id="problem13"><a 
+ id="x1-3002r11"></a>Consider again the function <script type="math/tex">f(x,y) = x^3+x^2y-y^2-4y</script>. Earlier, we found the critical points of this function,
+which are <script type="math/tex">(0,-2)</script>, <script type="math/tex">(1,-3/2)</script>, and <script type="math/tex">(-4,6)</script>. In order to classify these critical points, we find the Hessian matrix
+of <script type="math/tex">f</script>. <script type="math/tex; mode=display"> Hf(x,y) = \begin {pmatrix} \answer {6x+2y} & \answer {2x}\\ \answer {2x} & \answer {-2} \end {pmatrix} </script> Plugging in the point <script type="math/tex">(0,-2)</script>, we have <script type="math/tex; mode=display"> Hf(0,-2) = \begin {pmatrix} \answer {-4} & \answer {0}\\ \answer {0} & \answer {-2} \end {pmatrix}. </script> Using Sylvester’s Theorem, we can see that <script type="math/tex">Hf(0,-2)</script> is <div class="multiple-choice" id="problem14"><span class="choice  " 
+id="choice7">positive definite.</span> <span class="choice correct "   id="choice8">negative definite.</span> <span class="choice  "   id="choice9">indefinite.</span> <span class="choice  "   id="choice10">we cannot determine this using
+Sylvester’s Theorem.</span> </div>
+This means that, at <script type="math/tex">(0,-2)</script>, <script type="math/tex">f(x,y)</script> has a <div class="multiple-choice" id="problem15"><span class="choice correct "   id="choice11">local maximum.</span> <span class="choice  "   id="choice12">local minimum.</span> <span class="choice  "   id="choice13">saddle point.</span> <span class="choice  " 
+id="choice14">none of the above.</span> </div>
+Next, we’ll classify the critical point <script type="math/tex">(1,-3/2)</script>. We find the Hessian matrix at this point, <script type="math/tex; mode=display"> Hf(1,-3/2) = \begin {pmatrix} \answer {3} & \answer {2}\\ \answer {2} & \answer {-2} \end {pmatrix}. </script>
+Using Sylvester’s Theorem, we can see that <script type="math/tex">Hf(1,-3/2)</script> is <div class="multiple-choice" id="problem16"><span class="choice  "   id="choice15">positive definite.</span> <span class="choice  "   id="choice16">negative
+definite.</span> <span class="choice correct "   id="choice17">indefinite.</span> <span class="choice  "   id="choice18">we cannot determine this using Sylvester’s Theorem.</span>
+</div>
+This means that, at <script type="math/tex">(1,-3/2)</script>, <script type="math/tex">f(x,y)</script> has a <div class="multiple-choice" id="problem17"><span class="choice  "   id="choice19">local maximum.</span> <span class="choice  "   id="choice20">local minimum.</span> <span class="choice correct "   id="choice21">saddle point.</span> <span class="choice  " 
+id="choice22">none of the above.</span> </div>
+Finally, we’ll classify the critical point <script type="math/tex">(-4,6)</script>. We find the Hessian matrix at this point, <script type="math/tex; mode=display"> Hf(-4,6) = \begin {pmatrix} \answer {-12} & \answer {-8}\\ \answer {-8} & \answer {-2} \end {pmatrix}. </script>
+Using Sylvester’s Theorem, we can see that <script type="math/tex">Hf(-4,6)</script> is <div class="multiple-choice" id="problem18"><span class="choice  "   id="choice23">positive definite.</span> <span class="choice  "   id="choice24">negative
+definite.</span> <span class="choice correct "   id="choice25">indefinite.</span> <span class="choice  "   id="choice26">we cannot determine this using Sylvester’s Theorem.</span>
+</div>
+This means that, at <script type="math/tex">(-4,6)</script>, <script type="math/tex">f(x,y)</script> has a <div class="multiple-choice" id="problem19"><span class="choice  "   id="choice27">local maximum.</span> <span class="choice  "   id="choice28">local minimum.</span> <span class="choice correct "   id="choice29">saddle point.</span> <span class="choice  " 
+id="choice30">none of the above.</span> </div>
+</div>
+</body> 
+ 
+</html>
+                                                                  
+
+                                                                  
+                                                                  
+
+
