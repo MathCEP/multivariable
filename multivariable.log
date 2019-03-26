@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  26 MAR 2019 13:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  26 MAR 2019 16:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1149,7 +1149,7 @@ Overfull \hbox (2.05637pt too wide) in paragraph at lines 70--72
  []
 
 [48]
-<./content/01_2_cylindrical_coords/graphics/theta_constant.pdf, id=646, 253.177
+<./content/01_2_cylindrical_coords/graphics/theta_constant.pdf, id=651, 253.177
 5pt x 230.55865pt>
 File: ./content/01_2_cylindrical_coords/graphics/theta_constant.pdf Graphic fil
 e (type pdf)
@@ -1158,7 +1158,7 @@ Package pdftex.def Info: ./content/01_2_cylindrical_coords/graphics/theta_const
 ant.pdf  used on input line 129.
 (pdftex.def)             Requested size: 253.17688pt x 230.55809pt.
  [49 <./content/01_2_cylindrical_coords/graphics/theta_constant.pdf>]
-<./content/01_2_cylindrical_coords/graphics/z_constant.pdf, id=660, 277.59894pt
+<./content/01_2_cylindrical_coords/graphics/z_constant.pdf, id=665, 277.59894pt
  x 203.12659pt>
 File: ./content/01_2_cylindrical_coords/graphics/z_constant.pdf Graphic file (t
 ype pdf)
@@ -1166,7 +1166,7 @@ ype pdf)
 Package pdftex.def Info: ./content/01_2_cylindrical_coords/graphics/z_constant.
 pdf  used on input line 141.
 (pdftex.def)             Requested size: 277.59825pt x 203.12607pt.
-<./content/01_2_cylindrical_coords/graphics/half_sphere.pdf, id=661, 289.64178p
+<./content/01_2_cylindrical_coords/graphics/half_sphere.pdf, id=666, 289.64178p
 t x 211.44104pt>
 File: ./content/01_2_cylindrical_coords/graphics/half_sphere.pdf Graphic file (
 type pdf)
@@ -1176,7 +1176,7 @@ Package pdftex.def Info: ./content/01_2_cylindrical_coords/graphics/half_sphere
 (pdftex.def)             Requested size: 289.64107pt x 211.4405pt.
 
 [50 <./content/01_2_cylindrical_coords/graphics/z_constant.pdf>]
-<./content/01_2_cylindrical_coords/graphics/cylinder_100.pdf, id=675, 239.23303
+<./content/01_2_cylindrical_coords/graphics/cylinder_100.pdf, id=680, 239.23303
 pt x 204.9784pt>
 File: ./content/01_2_cylindrical_coords/graphics/cylinder_100.pdf Graphic file 
 (type pdf)
@@ -1190,7 +1190,7 @@ ent/01_2_cylindrical_coords/graphics/cylinder_100.pdf>]
 
 LaTeX Warning: No \author given.
 
-<./content/01_3_spherical_coords/graphics/spherical.pdf, id=703, 213.52151pt x 
+<./content/01_3_spherical_coords/graphics/spherical.pdf, id=708, 213.52151pt x 
 193.40526pt>
 File: ./content/01_3_spherical_coords/graphics/spherical.pdf Graphic file (type
  pdf)
@@ -1198,7 +1198,7 @@ File: ./content/01_3_spherical_coords/graphics/spherical.pdf Graphic file (type
 Package pdftex.def Info: ./content/01_3_spherical_coords/graphics/spherical.pdf
   used on input line 24.
 (pdftex.def)             Requested size: 213.52098pt x 193.40477pt.
-<./content/01_3_spherical_coords/graphics/011.pdf, id=704, 220.7572pt x 200.484
+<./content/01_3_spherical_coords/graphics/011.pdf, id=709, 220.7572pt x 200.484
 91pt>
 File: ./content/01_3_spherical_coords/graphics/011.pdf Graphic file (type pdf)
 <use ./content/01_3_spherical_coords/graphics/011.pdf>
@@ -1209,7 +1209,7 @@ Package pdftex.def Info: ./content/01_3_spherical_coords/graphics/011.pdf  used
 
  <./content/01_3_spherical_coords/graphics/spherical.pdf>] [54 <./content/01_3_
 spherical_coords/graphics/011.pdf>]
-<./content/01_3_spherical_coords/graphics/rho_constant.pdf, id=734, 280.54442pt
+<./content/01_3_spherical_coords/graphics/rho_constant.pdf, id=739, 280.54442pt
  x 251.6363pt>
 File: ./content/01_3_spherical_coords/graphics/rho_constant.pdf Graphic file (t
 ype pdf)
@@ -1218,7 +1218,7 @@ Package pdftex.def Info: ./content/01_3_spherical_coords/graphics/rho_constant.
 pdf  used on input line 91.
 (pdftex.def)             Requested size: 280.54372pt x 251.63568pt.
  [55]
-<./content/01_3_spherical_coords/graphics/theta_constant.pdf, id=744, 253.1775p
+<./content/01_3_spherical_coords/graphics/theta_constant.pdf, id=749, 253.1775p
 t x 230.55865pt>
 File: ./content/01_3_spherical_coords/graphics/theta_constant.pdf Graphic file 
 (type pdf)
@@ -1228,7 +1228,7 @@ t.pdf  used on input line 100.
 (pdftex.def)             Requested size: 253.17688pt x 230.55809pt.
  [56 <./content/01_3_spherical_coords/graphics/rho_constant.pdf> <./content/01_
 3_spherical_coords/graphics/theta_constant.pdf>]
-<./content/01_3_spherical_coords/graphics/phi_constant.pdf, id=765, 562.72177pt
+<./content/01_3_spherical_coords/graphics/phi_constant.pdf, id=770, 562.72177pt
  x 197.002pt>
 File: ./content/01_3_spherical_coords/graphics/phi_constant.pdf Graphic file (t
 ype pdf)
@@ -1236,7 +1236,7 @@ ype pdf)
 Package pdftex.def Info: ./content/01_3_spherical_coords/graphics/phi_constant.
 pdf  used on input line 111.
 (pdftex.def)             Requested size: 562.7204pt x 197.00151pt.
-<./content/01_3_spherical_coords/graphics/cone.pdf, id=766, 197.60349pt x 209.8
+<./content/01_3_spherical_coords/graphics/cone.pdf, id=771, 197.60349pt x 209.8
 4286pt>
 File: ./content/01_3_spherical_coords/graphics/cone.pdf Graphic file (type pdf)
 
@@ -1246,7 +1246,7 @@ d on input line 120.
 (pdftex.def)             Requested size: 197.603pt x 209.84235pt.
  [57 <./content/01_3_spherical_coords/graphics/phi_constant.pdf> <./content/01_
 3_spherical_coords/graphics/cone.pdf>]
-<./content/01_3_spherical_coords/graphics/elliptic_hyper.pdf, id=788, 258.02199
+<./content/01_3_spherical_coords/graphics/elliptic_hyper.pdf, id=793, 258.02199
 pt x 229.74332pt>
 File: ./content/01_3_spherical_coords/graphics/elliptic_hyper.pdf Graphic file 
 (type pdf)
@@ -1255,7 +1255,7 @@ Package pdftex.def Info: ./content/01_3_spherical_coords/graphics/elliptic_hype
 r.pdf  used on input line 149.
 (pdftex.def)             Requested size: 258.02135pt x 229.74274pt.
  [58 <./content/01_3_spherical_coords/graphics/elliptic_hyper.pdf>]
-<./content/01_3_spherical_coords/graphics/ice_cream.pdf, id=802, 231.30133pt x 
+<./content/01_3_spherical_coords/graphics/ice_cream.pdf, id=807, 231.30133pt x 
 225.29599pt>
 File: ./content/01_3_spherical_coords/graphics/ice_cream.pdf Graphic file (type
  pdf)
@@ -1280,7 +1280,7 @@ LaTeX Warning: No \author given.
 
 LaTeX Warning: No \author given.
 
-<./content/01_6_quadric_surfaces/graphics/conics.pdf, id=893, 587.21967pt x 165
+<./content/01_6_quadric_surfaces/graphics/conics.pdf, id=898, 587.21967pt x 165
 .90663pt>
 File: ./content/01_6_quadric_surfaces/graphics/conics.pdf Graphic file (type pd
 f)
@@ -1288,7 +1288,7 @@ f)
 Package pdftex.def Info: ./content/01_6_quadric_surfaces/graphics/conics.pdf  u
 sed on input line 23.
 (pdftex.def)             Requested size: 587.21823pt x 165.9062pt.
-<./content/01_6_quadric_surfaces/graphics/ellipsoid.pdf, id=894, 179.78648pt x 
+<./content/01_6_quadric_surfaces/graphics/ellipsoid.pdf, id=899, 179.78648pt x 
 144.69919pt>
 File: ./content/01_6_quadric_surfaces/graphics/ellipsoid.pdf Graphic file (type
  pdf)
@@ -1300,7 +1300,7 @@ Package pdftex.def Info: ./content/01_6_quadric_surfaces/graphics/ellipsoid.pdf
 
  <./content/01_6_quadric_surfaces/graphics/conics.pdf, page is rotated 180 degr
 ees>]
-<./content/01_6_quadric_surfaces/graphics/paraboloid.pdf, id=911, 183.01524pt x
+<./content/01_6_quadric_surfaces/graphics/paraboloid.pdf, id=916, 183.01524pt x
  161.9892pt>
 File: ./content/01_6_quadric_surfaces/graphics/paraboloid.pdf Graphic file (typ
 e pdf)
@@ -1311,7 +1311,7 @@ f  used on input line 70.
  [69 <./content/01_6_quadric_surfaces/graphics/ellipsoid.pdf, page is rotated 1
 80 degrees> <./content/01_6_quadric_surfaces/graphics/paraboloid.pdf, page is r
 otated 180 degrees>]
-<./content/01_6_quadric_surfaces/graphics/hyperbolic_paraboloid.pdf, id=933, 21
+<./content/01_6_quadric_surfaces/graphics/hyperbolic_paraboloid.pdf, id=938, 21
 6.63852pt x 187.661pt>
 File: ./content/01_6_quadric_surfaces/graphics/hyperbolic_paraboloid.pdf Graphi
 c file (type pdf)
@@ -1319,7 +1319,7 @@ c file (type pdf)
 Package pdftex.def Info: ./content/01_6_quadric_surfaces/graphics/hyperbolic_pa
 raboloid.pdf  used on input line 87.
 (pdftex.def)             Requested size: 216.63799pt x 187.66054pt.
-<./content/01_6_quadric_surfaces/graphics/elliptic_cone.pdf, id=934, 189.94774p
+<./content/01_6_quadric_surfaces/graphics/elliptic_cone.pdf, id=939, 189.94774p
 t x 168.601pt>
 File: ./content/01_6_quadric_surfaces/graphics/elliptic_cone.pdf Graphic file (
 type pdf)
@@ -1330,7 +1330,7 @@ Package pdftex.def Info: ./content/01_6_quadric_surfaces/graphics/elliptic_cone
  [70 <./content/01_6_quadric_surfaces/graphics/hyperbolic_paraboloid.pdf, page 
 is rotated 180 degrees> <./content/01_6_quadric_surfaces/graphics/elliptic_cone
 .pdf, page is rotated 180 degrees>]
-<./content/01_6_quadric_surfaces/graphics/hyperboloid_one_sheet.pdf, id=957, 21
+<./content/01_6_quadric_surfaces/graphics/hyperboloid_one_sheet.pdf, id=962, 21
 3.11139pt x 203.90462pt>
 File: ./content/01_6_quadric_surfaces/graphics/hyperboloid_one_sheet.pdf Graphi
 c file (type pdf)
@@ -1338,7 +1338,7 @@ c file (type pdf)
 Package pdftex.def Info: ./content/01_6_quadric_surfaces/graphics/hyperboloid_o
 ne_sheet.pdf  used on input line 121.
 (pdftex.def)             Requested size: 213.11086pt x 203.90411pt.
-<./content/01_6_quadric_surfaces/graphics/hyperboloid_two_sheet.pdf, id=958, 20
+<./content/01_6_quadric_surfaces/graphics/hyperboloid_two_sheet.pdf, id=963, 20
 0.40482pt x 222.2263pt>
 File: ./content/01_6_quadric_surfaces/graphics/hyperboloid_two_sheet.pdf Graphi
 c file (type pdf)
@@ -1750,7 +1750,14 @@ LaTeX Warning: No \author given.
 
 [198
 
-] [199] [200]) [201] (./content/hw_02_graphing/hw_graphing.tex
+] [199] [200]) [201]
+(./content/04_7_lagrange_multipliers/lagrange_multipliers.tex
+
+LaTeX Warning: No \author given.
+
+[202
+
+] [203] [204]) [205] (./content/hw_02_graphing/hw_graphing.tex
 
 LaTeX Warning: No \author given.
 
@@ -1759,10 +1766,10 @@ LaTeX Font Warning: Font shape `OT1/cmss/bx/sl' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 36.
 
 \c@depthIICount=\count199
-[202
+[206
 
-] [203] [204] [205]
-<./content/hw_02_graphing/graphics/quadric_options.pdf, id=2000, 559.35623pt x 
+] [207] [208] [209]
+<./content/hw_02_graphing/graphics/quadric_options.pdf, id=2032, 559.35623pt x 
 145.58891pt>
 File: ./content/hw_02_graphing/graphics/quadric_options.pdf Graphic file (type 
 pdf)
@@ -1770,9 +1777,9 @@ pdf)
 Package pdftex.def Info: ./content/hw_02_graphing/graphics/quadric_options.pdf 
  used on input line 176.
 (pdftex.def)             Requested size: 559.35486pt x 145.58855pt.
- [206 <./content/hw_02_graphing/graphics/quadric_options.pdf, page is rotated 1
-80 degrees>] [207]
-<./content/hw_02_graphing/graphics/wedge_options.pdf, id=2054, 577.3523pt x 137
+ [210 <./content/hw_02_graphing/graphics/quadric_options.pdf, page is rotated 1
+80 degrees>] [211]
+<./content/hw_02_graphing/graphics/wedge_options.pdf, id=2086, 577.3523pt x 137
 .42863pt>
 File: ./content/hw_02_graphing/graphics/wedge_options.pdf Graphic file (type pd
 f)
@@ -1780,37 +1787,37 @@ f)
 Package pdftex.def Info: ./content/hw_02_graphing/graphics/wedge_options.pdf  u
 sed on input line 239.
 (pdftex.def)             Requested size: 577.35088pt x 137.42828pt.
- [208 <./content/hw_02_graphing/graphics/wedge_options.pdf, page is rotated 180
- degrees>] [209] [210]) [211]
+ [212 <./content/hw_02_graphing/graphics/wedge_options.pdf, page is rotated 180
+ degrees>] [213] [214]) [215]
 (./content/hw_03_parametrized_curves/hw_parametrized_curves.tex
 
 LaTeX Warning: No \author given.
 
-[212
+[216
 
-] [213] [214] [215] [216]) [217] [218]
+] [217] [218] [219] [220]) [221] [222]
 (./content/hw_08_differentiability/hw_differentiability.tex
 
 LaTeX Warning: No \author given.
 
-[219
+[223
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 88--89
 
  []
 
-[220]
+[224]
 Underfull \hbox (badness 10000) in paragraph at lines 90--91
 
  []
 
-) [221]
+) [225]
 (./content/hw_09_properties_of_derivatives/hw_properties_of_derivatives.tex
 
 LaTeX Warning: No \author given.
 
-[222
+[226
 
 ]
 Overfull \hbox (0.6165pt too wide) in paragraph at lines 60--61
@@ -1825,7 +1832,7 @@ Overfull \hbox (9.94054pt too wide) in paragraph at lines 68--69
 =
  []
 
-[223]
+[227]
 Overfull \hbox (106.94435pt too wide) in paragraph at lines 95--96
 []\OT1/cmr/m/sl/10 Consider the func-tion $\OT1/cmr/bx/n/10 g \OT1/cmr/m/n/10 :
  \U/msb/m/n/10 R[] \OMS/cmsy/m/n/10 ! \U/msb/m/n/10 R[]$ \OT1/cmr/m/sl/10 given
@@ -1834,11 +1841,11 @@ m/n/10 ) = (\OML/cmm/m/it/10 ^^Z [] ^^R [] ^^^; ^^Z [] ^^R [] ^^^; ^^Z [] ^^^\O
 T1/cmr/m/n/10 )$\OT1/cmr/m/sl/10 ,
  []
 
-) [224] (./content/hw_10_directional_derivatives/hw_directional_derivatives.tex
+) [228] (./content/hw_10_directional_derivatives/hw_directional_derivatives.tex
 
 LaTeX Warning: No \author given.
 
-[225
+[229
 
 ]
 Overfull \hbox (5.86195pt too wide) in paragraph at lines 60--61
@@ -1846,7 +1853,7 @@ Overfull \hbox (5.86195pt too wide) in paragraph at lines 60--61
 en Pmytmu
  []
 
-[226]) [227] (./content/hw_11_taylors_theorem/hw_taylors_theorem.tex
+[230]) [231] (./content/hw_11_taylors_theorem/hw_taylors_theorem.tex
 
 LaTeX Warning: No \author given.
 
@@ -1865,33 +1872,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--44
 
  []
 
-[228
+[232
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 48--51
 
  []
 
-[229]) [230] (./content/hw_12_extrema/hw_extrema.tex
+[233]) [234] (./content/hw_12_extrema/hw_extrema.tex
 
 LaTeX Warning: No \author given.
 
-[231
+[235
 
-]) [232]
+]) [236]
 (./content/hw_13_substitution_lagrange/hw_substitution_lagrange.tex
 
 LaTeX Warning: No \author given.
 
-) [233
+) [237
 
 ] (./content/pp_00_review/review.tex
 
 LaTeX Warning: No \author given.
 
-[234
+[238
 
-] [235] [236]
+] [239] [240]
 Overfull \hbox (36.38948pt too wide) in paragraph at lines 156--157
 []\OT1/cmr/m/sl/10 Compute the an-gle be-tween the vec-tors $\OT1/cmr/m/n/10 (2
 \OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 3\OML/cm
@@ -1901,21 +1908,21 @@ sl/10 and $\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 3\OML/cmm/m/it/
 T1/cmr/m/n/10 1\OML/cmm/m/it/10 ; \OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 2)$
  []
 
-[237] [238]
+[241] [242]
 Overfull \hbox (8.86192pt too wide) in paragraph at lines 242--243
 []\OT1/cmr/m/sl/10 Compute the vol-ume of the par-al-lelepiped de-ter-mined by 
 $\OT1/cmr/m/n/10 (1\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 6\OML/cmm/m/it/10 ; \OT1/
 cmr/m/n/10 2)$\OT1/cmr/m/sl/10 ,
  []
 
-[239] [240]) [241] (./content/pp_01_coordinates/coordinates.tex
+[243] [244]) [245] (./content/pp_01_coordinates/coordinates.tex
 
 LaTeX Warning: No \author given.
 
-[242
+[246
 
 ]
-<./content/pp_01_coordinates/graphics/cylinder_wedge.pdf, id=2447, 169.41634pt 
+<./content/pp_01_coordinates/graphics/cylinder_wedge.pdf, id=2479, 169.41634pt 
 x 170.5846pt>
 File: ./content/pp_01_coordinates/graphics/cylinder_wedge.pdf Graphic file (typ
 e pdf)
@@ -1923,9 +1930,9 @@ e pdf)
 Package pdftex.def Info: ./content/pp_01_coordinates/graphics/cylinder_wedge.pd
 f  used on input line 93.
 (pdftex.def)             Requested size: 169.41591pt x 170.58417pt.
- [243] [244 <./content/pp_01_coordinates/graphics/cylinder_wedge.pdf, page is r
-otated 180 degrees>] [245]
-<./content/pp_01_coordinates/graphics/sphere_wedge.pdf, id=2486, 167.46265pt x 
+ [247] [248 <./content/pp_01_coordinates/graphics/cylinder_wedge.pdf, page is r
+otated 180 degrees>] [249]
+<./content/pp_01_coordinates/graphics/sphere_wedge.pdf, id=2518, 167.46265pt x 
 193.85759pt>
 File: ./content/pp_01_coordinates/graphics/sphere_wedge.pdf Graphic file (type 
 pdf)
@@ -1933,27 +1940,27 @@ pdf)
 Package pdftex.def Info: ./content/pp_01_coordinates/graphics/sphere_wedge.pdf 
  used on input line 210.
 (pdftex.def)             Requested size: 167.46222pt x 193.8571pt.
- [246] [247 <./content/pp_01_coordinates/graphics/sphere_wedge.pdf, page is rot
-ated 180 degrees>] [248] [249] [250]) [251]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 111.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 111.
+ [250] [251 <./content/pp_01_coordinates/graphics/sphere_wedge.pdf, page is rot
+ated 180 degrees>] [252] [253] [254]) [255]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 112.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 112.
 
 (./multivariable.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 111.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 111.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 112.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 112.
 Package rerunfilecheck Info: File `multivariable.out' has not changed.
-(rerunfilecheck)             Checksum: AC30ED6ED9C73363663A1140D85B192D;3819.
+(rerunfilecheck)             Checksum: FA2136EF18231895B4FB184BB218F9E3;3883.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 111.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 112.
  ) 
 Here is how much of TeX's memory you used:
- 31253 strings out of 492649
- 720786 string characters out of 6129622
- 878363 words of memory out of 5000000
- 33190 multiletter control sequences out of 15000+600000
+ 31271 strings out of 492649
+ 721104 string characters out of 6129622
+ 877363 words of memory out of 5000000
+ 33191 multiletter control sequences out of 15000+600000
  22506 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,20n,100p,877b,922s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1981,10 +1988,10 @@ ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive
 018/texmf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb></usr/local/texlive/
 2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texl
 ive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on multivariable.pdf (251 pages, 5876650 bytes).
+Output written on multivariable.pdf (255 pages, 5888001 bytes).
 PDF statistics:
- 2866 PDF objects out of 2984 (max. 8388607)
- 2493 compressed objects within 25 object streams
- 1149 named destinations out of 1200 (max. 500000)
- 604 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2903 PDF objects out of 2984 (max. 8388607)
+ 2525 compressed objects within 26 object streams
+ 1162 named destinations out of 1200 (max. 500000)
+ 612 words of extra memory for PDF output out of 10000 (max. 10000000)
 
