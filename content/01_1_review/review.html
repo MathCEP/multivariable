@@ -33,11 +33,11 @@
 class="abstract" 
 >
 </div>   <div class="maketitle"></div>
-<!--l. 11--><p class="noindent" >When describing graphs or points in <script type="math/tex">\mathbb {R}^n</script>, we commonly use some type of coordinate
+<!--l. 13--><p class="noindent" >When describing graphs or points in <script type="math/tex">\mathbb {R}^n</script>, we commonly use some type of coordinate
 system. The coordinates that you’re probably most comfortable with are standard
 two-dimensional coordinates, also called the Cartesian coordinate system on the
 plane.
-</p><!--l. 13--><p class="noindent" >In Cartesian coordinates, we describe a point using an <script type="math/tex">x</script>-coordinate and a <script type="math/tex">y</script>-coordinate.
+</p><!--l. 15--><p class="noindent" >In Cartesian coordinates, we describe a point using an <script type="math/tex">x</script>-coordinate and a <script type="math/tex">y</script>-coordinate.
 We write a point as <script type="math/tex">(x,y)</script>, where the <script type="math/tex">x</script>-coordinate describes the horizontal displacement of
 the point, and the <script type="math/tex">y</script>-coordinate describes the vertical displacement of the
 point.
@@ -49,12 +49,12 @@ src="./graphics/CalcPlot3D-2d_coords.png" alt="PIC"
  id="Q1-1-1"></a>
 <h3 class="likesectionHead"><a 
  id="x1-1000"></a>Polar Coordinates</h3>
-<!--l. 21--><p class="noindent" >You’ve probably also worked with polar coordinates in <script type="math/tex">\mathbb {R}^2</script>.
-</p><!--l. 23--><p class="noindent" >In polar coordinates, we describe a point with an <script type="math/tex">r</script>-coordinate and a <script type="math/tex">\theta </script>-coordinate. The <script type="math/tex">r</script>
+<!--l. 23--><p class="noindent" >You’ve probably also worked with polar coordinates in <script type="math/tex">\mathbb {R}^2</script>.
+</p><!--l. 25--><p class="noindent" >In polar coordinates, we describe a point with an <script type="math/tex">r</script>-coordinate and a <script type="math/tex">\theta </script>-coordinate. The <script type="math/tex">r</script>
 coordinate gives the distance between the point and the origin, and the <script type="math/tex">\theta </script>-coordinate
 gives the angle (in radians) between the positive <script type="math/tex">x</script>-axis and the segment connecting
 the origin and the point.
-</p><!--l. 25--><p class="noindent" >We can switch between cartesian and polar coordinates using the equations
+</p><!--l. 27--><p class="noindent" >We can switch between cartesian and polar coordinates using the equations
 </p><script type="math/tex; mode=display"> \begin{align*} 
 x&=r\cos\theta,\\
 y&=r\sin\theta.
@@ -75,37 +75,37 @@ points <script type="math/tex">(x,y)</script> satisfying <script type="math/tex;
 <div class="image-environment" role="img" aria-labelledby="image-alt-3"><img 
 src="./graphics/CalcPlot3D-circle_2.png" alt="PIC"  
  /> </div>
-<!--l. 56--><p class="noindent" >We would like to write describe this circle using polar coordinates.
-</p><!--l. 58--><p class="noindent" >By definition, the circle of radius <script type="math/tex">2</script> centered at the origin consists of the points which
+<!--l. 58--><p class="noindent" >We would like to write describe this circle using polar coordinates.
+</p><!--l. 60--><p class="noindent" >By definition, the circle of radius <script type="math/tex">2</script> centered at the origin consists of the points which
 are distance <script type="math/tex">2</script> from the origin. Because of this, for the polar coordinates <script type="math/tex">(r,\theta )</script> of any point
 on the circle, we have <script type="math/tex; mode=display"> r = \answer {2}. </script> There are points on the circle making every possible angle
 with the positive <script type="math/tex">x</script>-axis, so we don’t need any restrictions on <script type="math/tex">\theta </script>. If, however, we
 only wanted part of the circle, we would accomplish this by restricting <script type="math/tex">\theta </script>. For
 example, to get the top half of the circle, we would make the restriction
 <script type="math/tex">0\leq \theta \leq \pi </script>.
-</p><!--l. 64--><p class="noindent" >Thus, in polar coordinates, the circle of radius <script type="math/tex">2</script> centered at the origin can be
+</p><!--l. 66--><p class="noindent" >Thus, in polar coordinates, the circle of radius <script type="math/tex">2</script> centered at the origin can be
 described as the set of points <script type="math/tex">(r,\theta )</script> such that <script type="math/tex; mode=display"> r = 2. </script>
 </div>
-</p><!--l. 70--><p class="noindent" >There’s an important difference between Cartesian coordinates and polar coordinates:
+</p><!--l. 72--><p class="noindent" >There’s an important difference between Cartesian coordinates and polar coordinates:
 Cartesian coordinates are <em>unique</em>, while polar coordinates are not. This means that,
 given a point <script type="math/tex">P</script> in the plane, there’s only one way to describe this point as <script type="math/tex">(x,y)</script> using
 Cartesian coordinates. However, there are many ways to write the point as <script type="math/tex">(r,\theta )</script>, using
 polar coordinates.
-</p><!--l. 72--><p class="noindent" >Take, for example, the point <script type="math/tex">(1,0)</script>, written in Cartesian coordinates.
+</p><!--l. 74--><p class="noindent" >Take, for example, the point <script type="math/tex">(1,0)</script>, written in Cartesian coordinates.
 </p>
 <div class="image-environment" role="img" aria-labelledby="image-alt-4"><img 
 src="./graphics/CalcPlot3D-pt_10.png" alt="PIC"  
  /> </div>
-<!--l. 78--><p class="noindent" >This point is on the <script type="math/tex">x</script>-axis and is distance <script type="math/tex">1</script> from the origin. Thus, perhaps the most
+<!--l. 80--><p class="noindent" >This point is on the <script type="math/tex">x</script>-axis and is distance <script type="math/tex">1</script> from the origin. Thus, perhaps the most
 obvious way to represent this point in polar coordinates is as <script type="math/tex">(r,\theta ) = (1,0)</script> (coincidentally, the
 same as in Cartesian coordinates). But we could also describe the angle as <script type="math/tex">2\pi </script>,
 <script type="math/tex">4\pi </script>, <script type="math/tex">-2\pi </script>, etc. So, we could also write the point in polar coordinates as <script type="math/tex">(r,\theta ) = (1,2\pi )</script>, and so
 on.
-</p><!--l. 80--><p class="noindent" >Perhaps more surprisingly, we can describe this point as <script type="math/tex">(-1,\pi )</script>. Imagine making an angle of
+</p><!--l. 82--><p class="noindent" >Perhaps more surprisingly, we can describe this point as <script type="math/tex">(-1,\pi )</script>. Imagine making an angle of
 <script type="math/tex">\pi </script> with the positive <script type="math/tex">x</script>-axis (so we’re on the negative <script type="math/tex">x</script>-axis), then going backwards past
 the origin. This also gets you to our point. Using equivalent angles, we can also
 represent the point as <script type="math/tex">(-1,3\pi )</script>, <script type="math/tex">(-1, -\pi )</script>, and so on.
-</p><!--l. 82--><p class="noindent" >There are some times in working with polar coordinates when we would like to be
+</p><!--l. 84--><p class="noindent" >There are some times in working with polar coordinates when we would like to be
 able to represent points uniquely, and in these situations, we often make
 restrictions <script type="math/tex; mode=display"> \begin {array}{c} 0\leq r,\\ 0\leq \theta < 2\pi . \end {array} </script> However, even with these restrictions, there still is a point that has
                                                                   
@@ -113,7 +113,7 @@ restrictions <script type="math/tex; mode=display"> \begin {array}{c} 0\leq r,\\
                                                                   
 multiple representations! Namely, the origin can be written as <script type="math/tex">(r,\theta ) = (0,\theta )</script> for any angle
 <script type="math/tex">\theta </script>.
-</p><!--l. 91--><p class="noindent" >Depending on the situation and context, different people may use different
+</p><!--l. 93--><p class="noindent" >Depending on the situation and context, different people may use different
 restrictions or conventions for their ranges for <script type="math/tex">r</script> and <script type="math/tex">\theta </script>. For this reason, it’s good to
 specify what values you’re allowing, to avoid being misunderstood!
 </p>
@@ -123,17 +123,17 @@ that <script type="math/tex">y=x</script>. We’ll figure out how to describe th
 <div class="image-environment" role="img" aria-labelledby="image-alt-5"><img 
 src="./graphics/CalcPlot3D-y_equals_x.png" alt="PIC"  
  /> </div>
-<!--l. 100--><p class="noindent" >Let’s restrict our polar coordinates to <script type="math/tex">0\leq r</script> and <script type="math/tex">0\leq \theta <2\pi </script>. Perhaps your first guess is to
+<!--l. 102--><p class="noindent" >Let’s restrict our polar coordinates to <script type="math/tex">0\leq r</script> and <script type="math/tex">0\leq \theta <2\pi </script>. Perhaps your first guess is to
 describe the line as the points <script type="math/tex">(r,\theta )</script> such that <script type="math/tex; mode=display"> \theta = \pi /4 . </script> Which shape does this describe? </p><div class="multiple-choice" id="problem4"><span class="choice  "   id="choice1">A
 point.</span> <span class="choice correct "   id="choice2">Half of the line.</span> <span class="choice  "   id="choice3">The whole line.</span> <span class="choice  "   id="choice4">A different line.</span> <span class="choice  "   id="choice5">A circle.</span> </div>
-<!--l. 113--><p class="noindent" >Describing the line as <script type="math/tex">\theta = \pi /4</script> is a reasonable first guess, as we can see that many of the
+<!--l. 115--><p class="noindent" >Describing the line as <script type="math/tex">\theta = \pi /4</script> is a reasonable first guess, as we can see that many of the
 points make an angle <script type="math/tex">\pi /4</script> with the positive <script type="math/tex">x</script>-axis. However, with the restriction that <script type="math/tex">r\geq 0</script>,
 this leaves out half of the line! In order to describe the entire line, we have a couple of
 options. One option would be to relax our restriction on <script type="math/tex">r</script>, and allow negative values
 as well. This would certainly give us the whole line. If, however, we would like to keep
 this restriction that <script type="math/tex">r\geq 0</script>, we could also include points with <script type="math/tex">\theta = 5\pi /4</script>, which will give us the other
 half of the line.
-</p><!--l. 115--><p class="noindent" >Which of the following describe the line <script type="math/tex">y=x</script> in polar coordinates? Select all
+</p><!--l. 117--><p class="noindent" >Which of the following describe the line <script type="math/tex">y=x</script> in polar coordinates? Select all
 that work. </p><div class="select-all" id="problem5"><a 
  id="x1-1004r4"></a> <span class="choice  "   id="choice6">The points <script type="math/tex">(r,\theta )</script> such that <script type="math/tex">\theta = \pi /4</script>, where <script type="math/tex">r\geq 0</script>.</span> <span class="choice correct "   id="choice7">The points <script type="math/tex">(r,\theta )</script> such that <script type="math/tex">\theta = \pi /4</script>,
 where <script type="math/tex">r</script> can be any real number.</span> <span class="choice  "   id="choice8">The points <script type="math/tex">(r,\theta )</script> such that <script type="math/tex">\theta = \pi /4</script> or <script type="math/tex">\theta = -\pi /4</script>, where <script type="math/tex">r\geq 0</script>.</span> <span class="choice  " 
@@ -141,13 +141,13 @@ id="choice9">The points <script type="math/tex">(r,\theta )</script> such that <
 such that <script type="math/tex">\theta = \pi /4</script> or <script type="math/tex">\theta = 5\pi /4</script>, where <script type="math/tex">r\geq 0</script>.</span> <span class="choice correct "   id="choice11">The points <script type="math/tex">(r,\theta )</script> such that <script type="math/tex">\theta = \pi /4</script> or <script type="math/tex">\theta = 5\pi /4</script>, where <script type="math/tex">r</script> can be any real
 number.</span>
 </div>
-<!--l. 125--><p class="noindent" ></div>
-</p><!--l. 127--><p class="noindent" >Recall that the relationship between Cartesian and polar coordinates:
+<!--l. 127--><p class="noindent" ></div>
+</p><!--l. 129--><p class="noindent" >Recall that the relationship between Cartesian and polar coordinates:
 </p><script type="math/tex; mode=display"> \begin{align*} 
 x &= \answer{r\cos\theta},\\
 y &= \answer{r\sin\theta}.
 \end{align*}</script>
-<!--l. 133--><p class="noindent" >The following equations also describe the relationship between Cartesian and polar
+<!--l. 135--><p class="noindent" >The following equations also describe the relationship between Cartesian and polar
 coordinates, and they can be useful for converting between these two coordinate
 systems. </p><script type="math/tex; mode=display"> \begin{align*} 
 x &= r\cos\theta\\
@@ -161,39 +161,39 @@ r^2 &= x^2 +y^2\\
 <div class="theorem-like problem-environment example" id="problem6"><a 
  id="x1-1005r5"></a>Consider the set of points <script type="math/tex">(r,\theta )</script> such that <script type="math/tex">r = 2\cos \theta </script>. What does this set of points look
 like?
-<!--l. 144--><p class="noindent" >It’s not very clear from the equation <script type="math/tex">r=2\cos \theta </script> what shape this is describing, so let’s try
+<!--l. 146--><p class="noindent" >It’s not very clear from the equation <script type="math/tex">r=2\cos \theta </script> what shape this is describing, so let’s try
 converting this to Cartesian coordinates, and see if we get something we
 recognize.
-</p><!--l. 146--><p class="noindent" >From the conversion equations above, we have that <script type="math/tex">r^2 = \answer {x^2+y^2}</script>, and <script type="math/tex">\cos \theta = \frac {x}{r}</script>. Making substitutions
+</p><!--l. 148--><p class="noindent" >From the conversion equations above, we have that <script type="math/tex">r^2 = \answer {x^2+y^2}</script>, and <script type="math/tex">\cos \theta = \frac {x}{r}</script>. Making substitutions
 using these facts, we have: </p><script type="math/tex; mode=display"> \begin{align*} 
 r &= 2\cos\theta\\
 r &= 2\frac{x}{r}\\
 r^2 &= 2x\\
 x^2+y^2 &= 2x\\
 \end{align*}</script>
-<!--l. 154--><p class="noindent" >We now have an equation solely in terms of <script type="math/tex">x</script> and <script type="math/tex">y</script>, but maybe it isn’t quite
+<!--l. 156--><p class="noindent" >We now have an equation solely in terms of <script type="math/tex">x</script> and <script type="math/tex">y</script>, but maybe it isn’t quite
 recognizable yet. But if we do a bit more algebra... </p><script type="math/tex; mode=display"> \begin{align*} 
 x^2 + y^2 &= 2x\\
 (x^2-2x+1) + y^2 &= 1\\
 (x-1)^2 + y^2 &=1
 \end{align*}</script>
-<!--l. 161--><p class="noindent" >Now, we can see that this is a circle of radius <script type="math/tex">\answer {1}</script> centered at <script type="math/tex">\answer {(1,0)}</script>.
+<!--l. 163--><p class="noindent" >Now, we can see that this is a circle of radius <script type="math/tex">\answer {1}</script> centered at <script type="math/tex">\answer {(1,0)}</script>.
 </p>
 <div class="image-environment" role="img" aria-labelledby="image-alt-6"><img 
 src="./graphics/CalcPlot3D-circle_10.png" alt="PIC"  
  /> </div>
-<!--l. 167--><p class="noindent" ></div>
+<!--l. 169--><p class="noindent" ></div>
 <a 
  id="Q1-1-3"></a>
 </p>
 <h3 class="likesectionHead"><a 
  id="x1-2000"></a>Linear Change of Coordinates</h3>
-<!--l. 171--><p class="noindent" >In Linear Algebra, we saw how different coordinate systems arose through
+<!--l. 173--><p class="noindent" >In Linear Algebra, we saw how different coordinate systems arose through
 linear change of coordinates. You may remember this referred to as “slanty
 space.”
-</p><!--l. 173--><p class="noindent" >When we write a point in Cartesian coordinates as <script type="math/tex">(x,y)</script>, we can think of this as a linear
+</p><!--l. 175--><p class="noindent" >When we write a point in Cartesian coordinates as <script type="math/tex">(x,y)</script>, we can think of this as a linear
 combination of the standard basis vectors: <script type="math/tex; mode=display"> (x,y) = x(1,0) + y(0,1). </script>
-</p><!--l. 178--><p class="noindent" >Of course, we can just as well write a point as a linear combination of vectors from a
+</p><!--l. 180--><p class="noindent" >Of course, we can just as well write a point as a linear combination of vectors from a
 different basis, say <script type="math/tex">(3,1)</script> and <script type="math/tex">(1, -1)</script>. Let’s call this basis <script type="math/tex">\mathfrak {B}</script>. For example, we can write the vector <script type="math/tex">(9,-1)</script>
 as <script type="math/tex; mode=display"> (9,-1) = 2(3,1)+3(1,-1). </script> Taking the coefficients, in <script type="math/tex">\mathfrak {B}</script>-coordinates, we would write this point as
                                                                   
@@ -204,41 +204,41 @@ as <script type="math/tex; mode=display"> (9,-1) = 2(3,1)+3(1,-1). </script> Tak
 <div class="image-environment" role="img" aria-labelledby="image-alt-7"><img 
 src="./graphics/CalcPlot3D-slanty_space.png" alt="PIC"  
  /> </div>
-<!--l. 191--><p class="noindent" >With linear changes of coordinates, it’s easy to make a mistake and forget which
+<!--l. 193--><p class="noindent" >With linear changes of coordinates, it’s easy to make a mistake and forget which
 coordinates you’re using. Make sure to keep careful track!
 <a 
  id="Q1-1-5"></a>
 </p>
 <h3 class="likesectionHead"><a 
  id="x1-3000"></a>Three-Dimensional Coordinates</h3>
-<!--l. 195--><p class="noindent" >In Linear Algebra, we also worked in three-dimensional Cartesian coordinates, <script type="math/tex">(x,y,z)</script> in
+<!--l. 197--><p class="noindent" >In Linear Algebra, we also worked in three-dimensional Cartesian coordinates, <script type="math/tex">(x,y,z)</script> in
 <script type="math/tex">\mathbb {R}^3</script>.
 </p>
 <div class="image-environment" role="img" aria-labelledby="image-alt-8"><img 
 src="./graphics/CalcPlot3D-3d_coords.png" alt="PIC"  
  /> </div>
-<!--l. 201--><p class="noindent" >It’s important to remember that the <script type="math/tex">x</script>, <script type="math/tex">y</script>, and <script type="math/tex">z</script> axes follow the right hand rule.
+<!--l. 203--><p class="noindent" >It’s important to remember that the <script type="math/tex">x</script>, <script type="math/tex">y</script>, and <script type="math/tex">z</script> axes follow the right hand rule.
 That is, if you take your right hand, and point your pointer finger in the
 direction of the positive <script type="math/tex">x</script>-axis, point your middle finger in the direction of
 the positive <script type="math/tex">y</script>-axis, then your thumb points in the direction of the positive
 <script type="math/tex">z</script>-axis.
-</p><!--l. 203--><p class="noindent" >Another way to say this is that if you point the fingers of your right hand in the
+</p><!--l. 205--><p class="noindent" >Another way to say this is that if you point the fingers of your right hand in the
 direction of the positive <script type="math/tex">x</script>-axis and curl them to point in the direction of the positive
 <script type="math/tex">y</script>-axis, your thumb points in the direction of the positive <script type="math/tex">z</script>-axis.
-</p><!--l. 206--><p class="noindent" >We’ll often refer to the <em>coordinate planes</em> in <script type="math/tex">\mathbb {R}^3</script>. These are the three planes we obtain by
+</p><!--l. 208--><p class="noindent" >We’ll often refer to the <em>coordinate planes</em> in <script type="math/tex">\mathbb {R}^3</script>. These are the three planes we obtain by
 setting each of the coordinates to be zero.
-</p><!--l. 208--><p class="noindent" >The <script type="math/tex">xy</script>-plane is the set of points <script type="math/tex">(x,y,0)</script>. </p><div class="image-environment" role="img" aria-labelledby="image-alt-9"><img 
+</p><!--l. 210--><p class="noindent" >The <script type="math/tex">xy</script>-plane is the set of points <script type="math/tex">(x,y,0)</script>. </p><div class="image-environment" role="img" aria-labelledby="image-alt-9"><img 
 src="./graphics/CalcPlot3D-xy_plane.png" alt="PIC"  
  /> </div>
-<!--l. 213--><p class="noindent" >The <script type="math/tex">yz</script>-plane is the set of points <script type="math/tex">(0,y,z)</script>. </p><div class="image-environment" role="img" aria-labelledby="image-alt-10"><img 
+<!--l. 215--><p class="noindent" >The <script type="math/tex">yz</script>-plane is the set of points <script type="math/tex">(0,y,z)</script>. </p><div class="image-environment" role="img" aria-labelledby="image-alt-10"><img 
 src="./graphics/CalcPlot3D-yz_plane.png" alt="PIC"  
  /> </div>
-<!--l. 218--><p class="noindent" >The <script type="math/tex">xz</script>-plane is the set of points <script type="math/tex">(x,0,z)</script>. </p><div class="image-environment" role="img" aria-labelledby="image-alt-11"><img 
+<!--l. 220--><p class="noindent" >The <script type="math/tex">xz</script>-plane is the set of points <script type="math/tex">(x,0,z)</script>. </p><div class="image-environment" role="img" aria-labelledby="image-alt-11"><img 
 src="./graphics/CalcPlot3D-xz_plane.png" alt="PIC"  
  /> </div>
-<!--l. 223--><p class="noindent" >More precisely, the <script type="math/tex">xy</script>-plane is the set of points <script type="math/tex">(x,y,z)</script> such that <script type="math/tex">z = 0</script>, the <script type="math/tex">yz</script>-plane is the set of
+<!--l. 225--><p class="noindent" >More precisely, the <script type="math/tex">xy</script>-plane is the set of points <script type="math/tex">(x,y,z)</script> such that <script type="math/tex">z = 0</script>, the <script type="math/tex">yz</script>-plane is the set of
 points such that <script type="math/tex">x = 0</script>, and the <script type="math/tex">xz</script>-plane is the set of points such that <script type="math/tex">y = 0</script>.
-</p><!--l. 225--><p class="noindent" >Similarly to in the plane, we can describe sets of points in <script type="math/tex">\mathbb {R}^3</script> using equations.
+</p><!--l. 227--><p class="noindent" >Similarly to in the plane, we can describe sets of points in <script type="math/tex">\mathbb {R}^3</script> using equations.
 </p>
 <div class="theorem-like problem-environment example" id="problem7"><a 
  id="x1-3001r6"></a>The set of points <script type="math/tex">(x,y,z)</script> such that <script type="math/tex">x^2+y^2+z^2 = 1</script> is the sphere of radius 1 centered at the origin in
@@ -249,10 +249,12 @@ src="./graphics/CalcPlot3D-unit_sphere.png" alt="PIC"
                                                                   
 
                                                                   
-<!--l. 234--><p class="noindent" ></div>
-</p><!--l. 236--><p class="noindent" >We’ll soon see how we describe points in <script type="math/tex">\mathbb {R}^3</script> using different coordinate systems, by
+<!--l. 236--><p class="noindent" ></div>
+</p><!--l. 238--><p class="noindent" >We’ll soon see how we describe points in <script type="math/tex">\mathbb {R}^3</script> using different coordinate systems, by
 generalizing the idea of polar coordinate systems in a couple of different
 ways.
+</p><!--l. 240--><p class="noindent" ><em>Images were generated using <a 
+href="https://www.monroecc.edu/faculty/paulseeburger/calcnsf/CalcPlot3D/" >CalcPlot3D</a>.</em>
 </body> 
  
 </html>
