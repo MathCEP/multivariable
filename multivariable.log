@@ -1,11 +1,16 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  29 MAR 2019 12:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=latex 2018.4.16)  29 MAR 2019 13:46
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
-**multivariable.tex
+**\makeatletter\def\HCode{\futurelet\HCode\HChar}\def\HChar{\ifx"\HCode\def\HCo
+de"##1"{\Link##1}\expandafter\HCode\else\expandafter\Link\fi}\def\Link#1.a.b.c.
+{\g@addto@macro\@documentclasshook{\RequirePackage[#1,html]{tex4ht}}\let\HCode\
+documentstyle\def\documentstyle{\let\documentstyle\HCode\expandafter\def\csname
+ tex4ht\endcsname{#1,html}\def\HCode####1{\documentstyle[tex4ht,}\@ifnextchar[{
+\HCode}{\documentstyle[tex4ht]}}}\makeatother\HCode ximera,charset=utf-8,-css.a
+.b.c.\input  multivariable.tex
 (./multivariable.tex
-LaTeX2e <2018-04-01> patch level 2
-Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (/Users/Melissa/Library/texmf/tex/latex/ximeraLatex/xourse.cls
 Document Class: xourse 2018/10/28 v1.00 Combining Ximera activities into Xourse
 s
@@ -83,10 +88,10 @@ Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Driver file: dvips.def on input line 225.
 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/dvips.def
+File: dvips.def 2017/06/20 v3.1d Graphics/color driver for dvips
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
@@ -106,7 +111,6 @@ Package: array 2018/04/07 v2.4g Tabular extension package (FMi)
 )
 \rownum=\count89
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1364.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
 Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
@@ -152,7 +156,7 @@ Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 99.
+Package graphics Info: Driver file: dvips.def on input line 99.
 )
 \Gin@req@height=\dimen114
 \Gin@req@width=\dimen115
@@ -189,21 +193,29 @@ ode.tex
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
-Driver file for pgf: pgfsys-pdftex.def
+Driver file for pgf: pgfsys-tex4ht.def
 
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.d
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-tex4ht.d
 ef
-File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
+File: pgfsys-tex4ht.def 2013/08/06  (rcs-revision 1.25)
 
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-p
-df.def
-File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
-)))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-s
+vg.def
+File: pgfsys-common-svg.def 2013/08/28  (rcs-revision 1.24)
+\pgf@sys@svg@objectcount=\count94
+\pgf@sys@svg@scopecount=\count95
+)
+\pgf@sys@svg@picnum=\count96
+\pgf@sys@svg@nodenum=\count97
+\pgfsys@foreignobject@Box=\box31
+\pgf@s=\dimen124
+\pgf@t=\dimen125
+))
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
 code.tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count94
-\pgfsyssoftpath@bigbuffer@items=\count95
+\pgfsyssoftpath@smallbuffer@items=\count98
+\pgfsyssoftpath@bigbuffer@items=\count99
 )
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
 code.tex
@@ -215,9 +227,9 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen124
-\pgfmath@count=\count96
-\pgfmath@box=\box31
+\pgfmath@dimen=\dimen126
+\pgfmath@count=\count100
+\pgfmath@box=\box32
 \pgfmath@toks=\toks27
 \pgfmath@stack@operand=\toks28
 \pgfmath@stack@operation=\toks29
@@ -241,57 +253,57 @@ code.tex)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
 erarithmetics.code.tex)))
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count97
+\c@pgfmathroundto@lastzeros=\count101
 ))
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
 de.tex
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen125
-\pgf@picmaxx=\dimen126
-\pgf@picminy=\dimen127
-\pgf@picmaxy=\dimen128
-\pgf@pathminx=\dimen129
-\pgf@pathmaxx=\dimen130
-\pgf@pathminy=\dimen131
-\pgf@pathmaxy=\dimen132
-\pgf@xx=\dimen133
-\pgf@xy=\dimen134
-\pgf@yx=\dimen135
-\pgf@yy=\dimen136
-\pgf@zx=\dimen137
-\pgf@zy=\dimen138
+\pgf@picminx=\dimen127
+\pgf@picmaxx=\dimen128
+\pgf@picminy=\dimen129
+\pgf@picmaxy=\dimen130
+\pgf@pathminx=\dimen131
+\pgf@pathmaxx=\dimen132
+\pgf@pathminy=\dimen133
+\pgf@pathmaxy=\dimen134
+\pgf@xx=\dimen135
+\pgf@xy=\dimen136
+\pgf@yx=\dimen137
+\pgf@yy=\dimen138
+\pgf@zx=\dimen139
+\pgf@zy=\dimen140
 )
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconst
 ruct.code.tex
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen139
-\pgf@path@lasty=\dimen140
+\pgf@path@lastx=\dimen141
+\pgf@path@lasty=\dimen142
 )
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage
 .code.tex
 File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
-\pgf@shorten@end@additional=\dimen141
-\pgf@shorten@start@additional=\dimen142
+\pgf@shorten@end@additional=\dimen143
+\pgf@shorten@start@additional=\dimen144
 )
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
 de.tex
 File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
-\pgfpic=\box32
-\pgf@hbox=\box33
-\pgf@layerbox@main=\box34
-\pgf@picture@serial@count=\count98
+\pgfpic=\box33
+\pgf@hbox=\box34
+\pgf@layerbox@main=\box35
+\pgf@picture@serial@count=\count102
 )
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
 ate.code.tex
 File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
-\pgflinewidth=\dimen143
+\pgflinewidth=\dimen145
 )
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransform
 ations.code.tex
 File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
-\pgf@pt@x=\dimen144
-\pgf@pt@y=\dimen145
-\pgf@pt@temp=\dimen146
+\pgf@pt@x=\dimen146
+\pgf@pt@y=\dimen147
+\pgf@pt@temp=\dimen148
 )
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.cod
 e.tex
@@ -308,13 +320,13 @@ File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.co
 de.tex
 File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
-\pgfarrowsep=\dimen147
+\pgfarrowsep=\dimen149
 )
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.cod
 e.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen148
-\pgf@sys@shading@range@num=\count99
+\pgf@max=\dimen150
+\pgf@sys@shading@range@num=\count103
 )
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
 e.tex
@@ -323,7 +335,7 @@ File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.
 code.tex
 File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
-\pgfexternal@startupbox=\box35
+\pgfexternal@startupbox=\box36
 ))
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.co
 de.tex
@@ -340,7 +352,7 @@ File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
 e.tex
 File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
-\pgfnodeparttextbox=\box36
+\pgfnodeparttextbox=\box37
 )
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
 tex
@@ -349,8 +361,753 @@ File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 (/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
 -0-65.sty
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen149
-\pgf@nodesepend=\dimen150
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:190: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.190   \pgfusepathqfill}
+                         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:190: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.190   \pgfusepathqfill}
+                         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:190: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.190   \pgfusepathqfill}
+                         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:190: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.190   \pgfusepathqfill}
+                         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:190: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.190   \pgfusepathqfill}
+                         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:209: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.209   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:209: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.209   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:209: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.209   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:209: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.209   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:209: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.209   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:209: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.209   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:209: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.209   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:209: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.209   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:209: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.209   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:209: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.209   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:209: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.209   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:209: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.209   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:209: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.209   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:214: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.214   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:214: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.214   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:214: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.214   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:214: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.214   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:214: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.214   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:214: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.214   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:214: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.214   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:221: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.221   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:221: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.221   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:221: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.221   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:221: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.221   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:221: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.221   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:221: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.221   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:221: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.221   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:226: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.226   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:226: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.226   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:226: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.226   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:226: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.226   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:226: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.226   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:226: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.226   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:226: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.226   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:232: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.232   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:232: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.232   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:232: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.232   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:232: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.232   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:232: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.232   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:232: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.232   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:232: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.232   \pgfusepathqstroke}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:237: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.237   \pgfusepathqfillstroke}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:237: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.237   \pgfusepathqfillstroke}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:237: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.237   \pgfusepathqfillstroke}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:237: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.237   \pgfusepathqfillstroke}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:237: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.237   \pgfusepathqfillstroke}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:237: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.237   \pgfusepathqfillstroke}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:237: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.237   \pgfusepathqfillstroke}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:237: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.237   \pgfusepathqfillstroke}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:237: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.237   \pgfusepathqfillstroke}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:245: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.245   \pgfusepathqfillstroke}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:245: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.245   \pgfusepathqfillstroke}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:245: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.245   \pgfusepathqfillstroke}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:245: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.245   \pgfusepathqfillstroke}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:245: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.245   \pgfusepathqfillstroke}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:245: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.245   \pgfusepathqfillstroke}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty:245: Undefined control sequence.
+\pgfsys@svg@newline ->\Hnewline 
+                                
+l.245   \pgfusepathqfillstroke}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\pgf@nodesepstart=\dimen151
+\pgf@nodesepend=\dimen152
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
 -1-18.sty
@@ -365,8 +1122,8 @@ Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
 Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen151
-\pgffor@skip=\dimen152
+\pgffor@iter=\dimen153
+\pgffor@skip=\dimen154
 \pgffor@stack=\toks30
 \pgffor@toks=\toks31
 ))
@@ -377,32 +1134,32 @@ Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
 dlers.code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count100
-\pgfplotmarksize=\dimen153
+\pgf@plot@mark@count=\count104
+\pgfplotmarksize=\dimen155
 )
-\tikz@lastx=\dimen154
-\tikz@lasty=\dimen155
-\tikz@lastxsaved=\dimen156
-\tikz@lastysaved=\dimen157
-\tikzleveldistance=\dimen158
-\tikzsiblingdistance=\dimen159
-\tikz@figbox=\box37
-\tikz@figbox@bg=\box38
-\tikz@tempbox=\box39
-\tikz@tempbox@bg=\box40
-\tikztreelevel=\count101
-\tikznumberofchildren=\count102
-\tikznumberofcurrentchild=\count103
-\tikz@fig@count=\count104
+\tikz@lastx=\dimen156
+\tikz@lasty=\dimen157
+\tikz@lastxsaved=\dimen158
+\tikz@lastysaved=\dimen159
+\tikzleveldistance=\dimen160
+\tikzsiblingdistance=\dimen161
+\tikz@figbox=\box38
+\tikz@figbox@bg=\box39
+\tikz@tempbox=\box40
+\tikz@tempbox@bg=\box41
+\tikztreelevel=\count105
+\tikznumberofchildren=\count106
+\tikznumberofcurrentchild=\count107
+\tikz@fig@count=\count108
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
 e.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count105
-\pgfmatrixcurrentcolumn=\count106
-\pgf@matrix@numberofcolumns=\count107
+\pgfmatrixcurrentrow=\count109
+\pgfmatrixcurrentcolumn=\count110
+\pgf@matrix@numberofcolumns=\count111
 )
-\tikz@expandcount=\count108
+\tikz@expandcount=\count112
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarytopaths.code.tex
@@ -416,9 +1173,9 @@ Package: pgfplots 2018/03/28 v1.16 Data Visualization (1.16)
 \t@pgfplots@toka=\toks32
 \t@pgfplots@tokb=\toks33
 \t@pgfplots@tokc=\toks34
-\pgfplots@tmpa=\dimen160
-\c@pgfplots@coordindex=\count109
-\c@pgfplots@scanlineindex=\count110
+\pgfplots@tmpa=\dimen162
+\c@pgfplots@coordindex=\count113
+\c@pgfplots@scanlineindex=\count114
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric
 .code.tex))
@@ -434,7 +1191,7 @@ Package pgfplots: loading complementary arithmetics for your pgf version...
 soldpgfsupp_pgflibraryfpu.code.tex)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplot
 soldpgfsupp_pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count111
+\c@pgfmathroundto@lastzeros=\count115
 )
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplot
 soldpgfsupp_leq.code.tex))
@@ -446,13 +1203,13 @@ liststructure.code.tex)
 liststructureext.code.tex)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
 array.code.tex
-\c@pgfplotsarray@tmp=\count112
+\c@pgfplotsarray@tmp=\count116
 )
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
 matrix.code.tex)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstable
 shared.code.tex
-\c@pgfplotstable@counta=\count113
+\c@pgfplotstable@counta=\count117
 \t@pgfplotstable@a=\toks35
 )
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
@@ -465,10 +1222,8 @@ ta.code.tex))
 .code.tex)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplot
 s.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count114
-
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots
-.surfshading.pgfsys-pdftex.def)))
+\c@pgfplotslibrarysurf@no=\count118
+))
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.
 code.tex
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.cod
@@ -497,16 +1252,16 @@ x)
 s/tikzlibrarydecorations.code.tex
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmoduledecoration
 s.code.tex
-\pgfdecoratedcompleteddistance=\dimen161
-\pgfdecoratedremainingdistance=\dimen162
-\pgfdecoratedinputsegmentcompleteddistance=\dimen163
-\pgfdecoratedinputsegmentremainingdistance=\dimen164
-\pgf@decorate@distancetomove=\dimen165
-\pgf@decorate@repeatstate=\count115
-\pgfdecorationsegmentamplitude=\dimen166
-\pgfdecorationsegmentlength=\dimen167
+\pgfdecoratedcompleteddistance=\dimen163
+\pgfdecoratedremainingdistance=\dimen164
+\pgfdecoratedinputsegmentcompleteddistance=\dimen165
+\pgfdecoratedinputsegmentremainingdistance=\dimen166
+\pgf@decorate@distancetomove=\dimen167
+\pgf@decorate@repeatstate=\count119
+\pgfdecorationsegmentamplitude=\dimen168
+\pgfdecorationsegmentlength=\dimen169
 )
-\tikz@lib@dec@box=\box41
+\tikz@lib@dec@box=\box42
 )
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarydecorations.pathmorphing.code.tex
@@ -516,13 +1271,13 @@ brarydecorations.pathmorphing.code.tex))
 s/tikzlibrarydecorations.pathreplacing.code.tex
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/libraries/decorations/pgfli
 brarydecorations.pathreplacing.code.tex))
-\pgfplots@numplots=\count116
-\pgfplots@xmin@reg=\dimen168
-\pgfplots@xmax@reg=\dimen169
-\pgfplots@ymin@reg=\dimen170
-\pgfplots@ymax@reg=\dimen171
-\pgfplots@zmin@reg=\dimen172
-\pgfplots@zmax@reg=\dimen173
+\pgfplots@numplots=\count120
+\pgfplots@xmin@reg=\dimen170
+\pgfplots@xmax@reg=\dimen171
+\pgfplots@ymin@reg=\dimen172
+\pgfplots@ymax@reg=\dimen173
+\pgfplots@zmin@reg=\dimen174
+\pgfplots@zmax@reg=\dimen175
 )
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibraryplotmarks.code.tex
@@ -534,9 +1289,9 @@ File: pgflibraryplotmarks.code.tex 2015/08/03 v3.0.1a (rcs-revision 1.14)
 )))
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplo
 ts.groupplots.code.tex
-\pgfplots@group@current@plot=\count117
-\pgfplots@group@current@row=\count118
-\pgfplots@group@current@column=\count119
+\pgfplots@group@current@plot=\count121
+\pgfplots@group@current@row=\count122
+\pgfplots@group@current@column=\count123
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarycalc.code.tex
@@ -547,11 +1302,11 @@ Package: fancyvrb 2008/02/07
 
 Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
 <2008/02/07> (tvz)
-\FV@CodeLineNo=\count120
+\FV@CodeLineNo=\count124
 \FV@InFile=\read2
-\FV@TabBox=\box42
-\c@FancyVerbLine=\count121
-\FV@StepNumber=\count122
+\FV@TabBox=\box43
+\c@FancyVerbLine=\count125
+\FV@StepNumber=\count126
 \FV@OutFile=\write4
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/forloop/forloop.sty
@@ -590,46 +1345,46 @@ Package: amstext 2000/06/29 v2.01 AMS text
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks38
-\ex@=\dimen174
+\ex@=\dimen176
 ))
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen175
+\pmbraise@=\dimen177
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count123
+\inf@bad=\count127
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count124
-\leftroot@=\count125
+\uproot@=\count128
+\leftroot@=\count129
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count126
-\DOTSCASE@=\count127
+\classnum@=\count130
+\DOTSCASE@=\count131
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
-\Mathstrutbox@=\box43
-\strutbox@=\box44
-\big@size=\dimen176
+\Mathstrutbox@=\box44
+\strutbox@=\box45
+\big@size=\dimen178
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count128
-\c@MaxMatrixCols=\count129
+\macc@depth=\count132
+\c@MaxMatrixCols=\count133
 \dotsspace@=\muskip11
-\c@parentequation=\count130
-\dspbrk@lvl=\count131
+\c@parentequation=\count134
+\dspbrk@lvl=\count135
 \tag@help=\toks39
-\row@=\count132
-\column@=\count133
-\maxfields@=\count134
+\row@=\count136
+\column@=\count137
+\maxfields@=\count138
 \andhelp@=\toks40
-\eqnshift@=\dimen177
-\alignsep@=\dimen178
-\tagshift@=\dimen179
-\tagwidth@=\dimen180
-\totwidth@=\dimen181
-\lineht@=\dimen182
+\eqnshift@=\dimen179
+\alignsep@=\dimen180
+\tagshift@=\dimen181
+\tagwidth@=\dimen182
+\totwidth@=\dimen183
+\lineht@=\dimen184
 \@envbody=\toks41
 \multlinegap=\skip53
 \multlinetaggap=\skip54
@@ -654,15 +1409,15 @@ Package: xifthen 2015/11/05 v1.4.0 Extended ifthen features
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count135
-\calc@Bcount=\count136
-\calc@Adimen=\dimen183
-\calc@Bdimen=\dimen184
+\calc@Acount=\count139
+\calc@Bcount=\count140
+\calc@Adimen=\dimen185
+\calc@Bdimen=\dimen186
 \calc@Askip=\skip58
 \calc@Bskip=\skip59
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count137
+\calc@Ccount=\count141
 \calc@Cskip=\skip60
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/ifmtarg/ifmtarg.sty
@@ -674,31 +1429,31 @@ Package: multido 2004/05/17 package wrapper for PSTricks `multido.tex', (HV/RN)
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/multido/multido.tex
  v1.42, 2010/05/14 <tvz>
-\multido@count=\count138
-\multidocount=\count139
+\multido@count=\count142
+\multidocount=\count143
 \multido@stuff=\toks49
 )
 File: multido.tex 2010/05/14 v1.42 `multido' (tvz,hv)
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count140
-\lst@gtempboxa=\box45
+\lst@mode=\count144
+\lst@gtempboxa=\box46
 \lst@token=\toks50
-\lst@length=\count141
-\lst@currlwidth=\dimen185
-\lst@column=\count142
-\lst@pos=\count143
-\lst@lostspace=\dimen186
-\lst@width=\dimen187
-\lst@newlines=\count144
-\lst@lineno=\count145
-\lst@maxwidth=\dimen188
+\lst@length=\count145
+\lst@currlwidth=\dimen187
+\lst@column=\count146
+\lst@pos=\count147
+\lst@lostspace=\dimen188
+\lst@width=\dimen189
+\lst@newlines=\count148
+\lst@lineno=\count149
+\lst@maxwidth=\dimen190
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count146
-\lst@skipnumbers=\count147
-\lst@framebox=\box46
+\c@lstnumber=\count150
+\lst@skipnumbers=\count151
+\lst@framebox=\box47
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2015/06/04 1.6 listings configuration
@@ -713,7 +1468,7 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@toks=\toks51
 \XKV@tempa@toks=\toks52
 )
-\XKV@depth=\count148
+\XKV@depth=\count152
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (/usr/local/texlive/2018/texmf-dist/tex/latex/comment/comment.sty
@@ -753,7 +1508,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/refcount.sty
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 )
-\c@section@level=\count149
+\c@section@level=\count153
 LaTeX Info: Redefining \ref on input line 355.
 LaTeX Info: Redefining \pageref on input line 355.
 )
@@ -779,19 +1534,17 @@ Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
+Package pdftexcmds Info: \pdfdraftmode is ignored in DVI mode.
 )
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-38.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 456.
 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-)))
+Package epstopdf Warning: Drivers other than `pdftex' and `luatex' are not supp
+orted.
+
+))
+(/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/frontendlayer/libraries/tikzl
+ibraryexternal.code.tex
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzexternalshared.code.tex))
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
 
@@ -835,21 +1588,20 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
-\@linkdim=\dimen189
-\Hy@linkcounter=\count150
-\Hy@pagecounter=\count151
+\@linkdim=\dimen191
+\Hy@linkcounter=\count154
+\Hy@pagecounter=\count155
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count152
+\Hy@SavedSpaceFactor=\count156
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Option `pdfpagelabels' set `true' on input line 4383.
 Package hyperref Info: Option `colorlinks' set `true' on input line 4383.
 Package hyperref Info: Hyper figures OFF on input line 4509.
 Package hyperref Info: Link nesting OFF on input line 4514.
@@ -858,12 +1610,13 @@ Package hyperref Info: Plain pages OFF on input line 4524.
 Package hyperref Info: Backreferencing OFF on input line 4529.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4762.
-\c@Hy@tempcnt=\count153
+\c@Hy@tempcnt=\count157
 LaTeX Info: Redefining \url on input line 5115.
-\XeTeXLinkMargin=\dimen190
-\Fld@menulength=\count154
-\Field@Width=\dimen191
-\Fld@charsize=\dimen192
+\XeTeXLinkMargin=\dimen192
+\Fld@menulength=\count158
+\Field@Width=\dimen193
+\Fld@charsize=\dimen194
+\Field@toks=\toks53
 Package hyperref Info: Hyper figures OFF on input line 6369.
 Package hyperref Info: Link nesting OFF on input line 6374.
 Package hyperref Info: Hyper index ON on input line 6377.
@@ -873,27 +1626,27 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6394.
 Package hyperref Info: PDF/A mode OFF on input line 6399.
 LaTeX Info: Redefining \ref on input line 6439.
 LaTeX Info: Redefining \pageref on input line 6443.
-\Hy@abspage=\count155
-\c@Item=\count156
-\c@Hfootnote=\count157
-)
-Package hyperref Info: Driver (autodetected): hpdftex.
+\Hy@abspage=\count159
 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
-\Fld@listcount=\count158
-\c@bookmark@seq@number=\count159
 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
-Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
-82.
-)
-\Hy@SectionHShift=\skip61
-)
-\outcomefile=\write6
-\openout6 = `multivariable.oc'.
+Package hyperref Message: Stopped early.
 
+)
+Package hyperref Info: Driver: htex4ht.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/htex4ht.def
+File: htex4ht.def 2018/02/06 v6.86b Hyperref driver for TeX4ht
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/tex4ht.sty
+version 2018-03-29-15:50
+Package: tex4ht 
+--------------------------------------
+--- Note --- for _ at preamble, use the command line option `early_'
+--------------------------------------
+--------------------------------------
+--- Note --- for ^ at preamble, use the command line option `early^'
+--------------------------------------
+\tmp:toks=\toks54
+))
 \c@theorem=\count160
 \c@algorithm=\count161
 \c@axiom=\count162
@@ -925,1073 +1678,720 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \c@hintLevel=\count188
 \c@titlenumber=\count189
 \c@sectiontitlenumber=\count190
-\idfile=\write7
-\openout7 = `multivariable.ids'.
-
-\myfile=\write8
-\openout8 = `multivariable.jax'.
-
 ))
-(./multivariable.aux)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/usepackage.4ht
+l.21 --- TeX4ht warning --- \usepackage{tex4ht} again? ---
+l.30 --- TeX4ht warning --- if \RequirePackage[tex4ht]{hyperref} or \usepackage
+[tex4ht]{hyperref} was used try instead, repectively, \RequirePackage{hyperref}
+ or \usepackage{hyperref} ---
+) (/Users/Melissa/Library/texmf/tex/latex/ximeraLatex/ximera.cfg
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/tex4ht.4ht
+version 2017-05-09-09:21
+--------------------------------------
+--- Note --- for additional information, use the command line option `info'
+--------------------------------------
+
+::::::::::::::::::::::::::::::::::::::::::
+ TeX4ht info is available in the log file 
+::::::::::::::::::::::::::::::::::::::::::
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/tex4ht.sty
+version 2018-03-29-15:50
+
+--- needs --- tex4ht multivariable ---
+\tmp:cnt=\count191
+\openout15 = `multivariable.tmp'.
+
+(./multivariable.tmp)
+\tmp:dim=\skip61
+ (./multivariable.xref)
+\:refout=\write6
+\openout6 = `multivariable.xref'.
+
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+--------------------------------------
+--- Note --- to remove the <?xml version=...?> processing instruction use the c
+ommand line option `no-VERSION'
+--------------------------------------
+--------------------------------------
+--- Note --- to remove the DOCTYPE declaration use the command line option `no-
+DOCTYPE'
+--------------------------------------
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+)
+--------------------------------------
+--- Note --- for marking of the base font, use the command line option `fonts+'
+
+--------------------------------------
+--------------------------------------
+--- Note --- for non active _, use the command line option `no_'
+--------------------------------------
+--------------------------------------
+--- Note --- for _ of catcode 13, use the command line option `_13'
+--------------------------------------
+--------------------------------------
+--- Note --- for non active ^, use the command line option `no^'
+--------------------------------------
+--------------------------------------
+--- Note --- for ^ of catcode 13, use the command line option `^13'
+--------------------------------------
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+--------------------------------------
+--- Note --- to ignore CSS font decoration, use the `NoFonts' command line opti
+on
+--------------------------------------
+--------------------------------------
+--- Note --- for jpg bitmaps of pictures, use the `jpg' command line option. (C
+haracter bitmaps are controled only by `g' records of tex4ht.env and `-g' switc
+hes of tex4ht.c) 
+--------------------------------------
+--------------------------------------
+--- Note --- for gif bitmaps of pictures, use the `gif' command line option. (C
+haracter bitmaps are controled only by `g' records of tex4ht.env and `-g' switc
+hes of tex4ht.c) 
+--------------------------------------
+--------------------------------------
+--- Note --- for content and toc in 2 frames, use the command line option `fram
+es'
+--------------------------------------
+--------------------------------------
+--- Note --- for content, toc, and footnotes in 3 frames, use the command line 
+option `frames-fn'
+--------------------------------------
+--------------------------------------
+--- Note --- for file extension name xht, use the command line option `xht'
+--------------------------------------
+TeX4ht package options: charset=utf-8,-css,html,htex4ht,xhtml
+--------------------------------------
+--- Note --- To print a timestamp, use the command line option timestamp
+--------------------------------------
+--------------------------------------
+--- Note --- for pop ups on mouse over, use the command line option `mouseover'
+
+--------------------------------------
+--------------------------------------
+--- Note --- for addressing images in a subdirectory, use the command line opti
+on `imgdir:.../'
+--------------------------------------
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+)
+\:tokwrite=\toks55
+\:tokpage=\toks56
+--------------------------------------
+--- Note --- for back links to toc, use the command line option `sections+'
+--------------------------------------
+--------------------------------------
+--- Note --- for linear crosslinks of pages, use the command line option `next'
+
+--------------------------------------
+\openout15 = `multivariable.4ct'.
+
+\:tocout=\write7
+\openout7 = `multivariable.4tc'.
+
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/latex.4ht
+version 2018-01-12-14:38
+LaTeX Info: Redefining \_ on input line 168.
+--------------------------------------
+--- Note --- for links into captions, instead of float heads, use the command l
+ine option `refcaption'
+--------------------------------------
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+--------------------------------------
+--- Note --- For mini tocs immediately aftter the header use the command line o
+ption `minitoc<'
+--------------------------------------
+--------------------------------------
+--- Note --- for enumerated list elements with valued data, use the command lin
+e option `enumerate+'
+--------------------------------------
+--------------------------------------
+--- Note --- for enumerated list elements li's with value attributes, use the c
+ommand line option `enumerate-'
+--------------------------------------
+--------------------------------------
+--- Note --- for CSS2 code, use the command line option `css2'
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial tabular, use the command line option `pic-tabular'
+--------------------------------------
+--------------------------------------
+--- Note --- for bitmap fbox'es, use the command line option `pic-fbox'
+--------------------------------------
+--------------------------------------
+--- Note --- for bitmap framebox'es, use the command line option `pic-framebox'
+
+--------------------------------------
+--------------------------------------
+--- Note --- for inline footnotes use command line option `fn-in'
+--------------------------------------
+--------------------------------------
+--- Note --- for tracing of latex font commands, use the command line option `f
+onts'
+--------------------------------------
+--------------------------------------
+--- Note --- for width specifications of tabular p entries, use the `p-width' c
+ommand line option or a configuration similar to \Configure{HColWidth}{\HCode{ 
+style="width:\HColWidth"}}
+--------------------------------------
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+--------------------------------------
+--- Note --- for pictorial eqnarray, use the command line option `pic-eqnarray'
+
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial array, use the command line option `pic-array'
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial $...$ environments, use the command line option `pic
+-m' (not recommended!!)
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial $...$ and $$...$$ environments with latex alt, use t
+he command line option `pic-m+' (not safe!!)
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial array, use the command line option `pic-array'
+--------------------------------------
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/fontmath.4ht
+version 2009-05-21-09:32
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/array.4ht
+version 2009-05-21-09:32
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+--------------------------------------
+--- Note --- for pictorial array, use the command line option `pic-array'
+--------------------------------------
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/color.4ht
+version 2009-05-21-09:32
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/colortbl.4ht
+version 2016-12-14-16:54
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/Users/Melissa/Library/texmf/tex/latex/ximeraLatex/xourse.4ht
+\c@ximera@part=\count192
+
+/Users/Melissa/Library/texmf/tex/latex/ximeraLatex/xourse.4ht:65: Too many }'s.
+l.65 }
+      
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/Users/Melissa/Library/texmf/tex/latex/ximeraLatex/ximera.4ht
+(/usr/local/texlive/2018/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2018/01/14 v2.7a Micro-typographical refinements (RS)
+\MT@toks=\toks57
+\MT@count=\count193
+LaTeX Info: Redefining \textls on input line 793.
+\MT@outer@kern=\dimen195
+LaTeX Info: Redefining \textmicrotypecontext on input line 1339.
+\MT@listname@count=\count194
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+File: microtype-pdftex.def 2018/01/14 v2.7a Definitions specific to pdftex (RS)
+
+LaTeX Info: Redefining \lsstyle on input line 913.
+LaTeX Info: Redefining \lslig on input line 913.
+\MT@outer@space=\skip62
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2018/01/14 v2.7a microtype main configuration file (RS)
+))
+
+/Users/Melissa/Library/texmf/tex/latex/ximeraLatex/ximera.4ht:51: LaTeX Error: 
+Environment html undefined in `ximera.cfg'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.51 \Configure
+               {@HEAD}{\HCode{<meta name="author" content="}\@author\HCode{"...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+\c@identification=\count195
+
+/Users/Melissa/Library/texmf/tex/latex/ximeraLatex/ximera.4ht:69: LaTeX Error: 
+Environment xarmaBoost undefined in `ximera.cfg'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.69 ...figureQuestionEnv{xarmaBoost}{xarma-boost}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+/Users/Melissa/Library/texmf/tex/latex/ximeraLatex/ximera.4ht:71: LaTeX Error: 
+Environment shuffle undefined in `ximera.cfg'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.71 \ConfigureQuestionEnv{shuffle}{shuffle}
+                                            
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+\c@imagealt=\count196
+\c@choiceId=\count197
+/Users/Melissa/Library/texmf/tex/latex/ximeraLatex/ximera.4ht:234: Illegal para
+meter number in definition of \desmos.
+<to be read again> 
+                   c
+l.234 ...not support embedded elements.</iframe>}}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+/Users/Melissa/Library/texmf/tex/latex/ximeraLatex/ximera.4ht:266: LaTeX Error:
+ Environment sagesilent undefined in `ximera.cfg'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.266 \renewenvironment{sagesilent}
+                                   {\NoFonts}{\EndNoFonts}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+/Users/Melissa/Library/texmf/tex/latex/ximeraLatex/ximera.4ht:272: Too many }'s
+.
+l.272 }
+       
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/article.4ht
+version 2009-05-21-09:32
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+--------------------------------------
+--- Note --- for automatic sectioning pagination, use the command line option `
+1', `2', `3', '4', '5', '6', or '7'
+--------------------------------------
+--------------------------------------
+--- Note --- for files named derived from section titles, use the command line 
+option `sec-filename'
+--------------------------------------
+--------------------------------------
+--- Note --- for i-columns index, use the command line option `index=i' (e.g., 
+index=2)
+--------------------------------------
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/enumitem.4ht
+version 2009-05-21-09:32
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/titlesec.4ht
+version 2014-07-14-17:09
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/url.4ht
+version 2009-05-21-09:32
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+--------------------------------------
+--- Note --- for URL encoding within href use the command line option `url-enc'
+
+--------------------------------------
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/xcolor.4ht
+version 2017-04-28-08:47
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/color.4ht
+version 2009-05-21-09:32
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/dvips.4ht
+version 2009-05-21-09:32
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/pgf.4ht
+version 2009-05-21-09:32
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/everyshi.4ht
+version 2009-05-21-09:32
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/graphicx.4ht
+version 2017-10-21-16:16
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/graphics.4ht
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+--------------------------------------
+--- Note --- if included graphics are of degraded quality, try the command line
+ options `graphics-num' or `graphics-'. The `num' should provide the density of
+ pixels in the bitmaps (e.g., 110). 
+--------------------------------------
+--------------------------------------
+--- Note --- for key dimensions try the option `Gin-dim'; for key dimensions wh
+en bounding box is unavailable try `Gin-dim+'; neither is recommended
+--------------------------------------
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/fancyvrb.4ht
+version 2009-05-21-09:32
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/ifthen.4ht
+version 2009-05-21-09:32
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/amssymb.4ht
+version 2009-05-21-09:32
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/amsfonts.4ht
+version 2009-05-21-09:32
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/amsmath.4ht
+version 2009-05-21-09:32
+\tmp:muskip=\muskip12
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/amstext.4ht
+version 2009-05-21-09:32
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/amsbsy.4ht
+version 2009-05-21-09:32
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/amsopn.4ht
+version 2009-05-21-09:32
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/amsthm.4ht
+version 2009-05-21-09:32
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/listings.4ht
+version 2017-04-22-16:03
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+--------------------------------------
+--- Note --- to ensure proper alignments use fixed size fonts (see listings.dtx
+)
+--------------------------------------
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/nameref.4ht
+version 2017-11-27-09:16
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/hyperref.4ht
+version 2016-01-12-16:05
+LaTeX Info: Redefining \autoref on input line 95.
+\Hy@SectionHShift=\skip63
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/pd1enc.4ht
+version 2009-05-21-09:32
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+runsystem(sed -i "/@/d" multivariable.jax)...executed.
+
+runsystem(sed -i "s/##\\([0-9]\\)/#\\1/g" multivariable.jax)...executed.
+
+
+l.53 --- TeX4ht warning --- \Configure{verbatiminput}? ---
+\eqtoks=\toks58
+(./multivariable.oc) (./multivariable.aux)
 \openout1 = `multivariable.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 158.
+LaTeX Font Info:    ... okay on input line 158.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 158.
+LaTeX Font Info:    ... okay on input line 158.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 158.
+LaTeX Font Info:    ... okay on input line 158.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 158.
+LaTeX Font Info:    ... okay on input line 158.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 158.
+LaTeX Font Info:    ... okay on input line 158.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 158.
+LaTeX Font Info:    ... okay on input line 158.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 158.
+LaTeX Font Info:    ... okay on input line 158.
 
-(/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count191
-\scratchdimen=\dimen193
-\scratchbox=\box47
-\nofMPsegments=\count192
-\nofMParguments=\count193
-\everyMPshowfont=\toks53
-\MPscratchCnt=\count194
-\MPscratchDim=\dimen194
-\MPnumerator=\count195
-\makeMPintoPDFobject=\count196
-\everyMPtoPDFconversion=\toks54
-) ABD: EveryShipout initializing macros
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.16} into 
 your preamble.
- on input line 4.
+ on input line 158.
 
-\c@lstlisting=\count197
+\c@lstlisting=\count198
 \AtBeginShipoutBox=\box48
-Package hyperref Info: Link coloring ON on input line 4.
-LaTeX Info: Redefining \ref on input line 4.
-LaTeX Info: Redefining \pageref on input line 4.
-LaTeX Info: Redefining \nameref on input line 4.
-(./multivariable.out) (./multivariable.out)
-\@outlinefile=\write9
-\openout9 = `multivariable.out'.
-
+Package hyperref Info: Link coloring ON on input line 158.
+LaTeX Info: Redefining \ref on input line 158.
+LaTeX Info: Redefining \pageref on input line 158.
+LaTeX Info: Redefining \nameref on input line 158.
+LaTeX Info: Redefining \microtypecontext on input line 158.
+Package microtype Info: Generating DVI output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: No font expansion.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
+)
+/Users/Melissa/Library/texmf/tex/latex/ximeraLatex/ximera.cfg:159: Undefined co
+ntrol sequence.
+\a:@HEAD ...ame="og:image" content="}\xourse@logo 
+                                                  \HCode {" />\Hnewline }\HC...
+l.159 \EndPreamble
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 
 LaTeX Warning: No \author given.
+
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmtt' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+)
+
+./multivariable.tex:5: LaTeX Error: Environment abstract undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 \begin{abstract}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./multivariable.tex:7: LaTeX Error: \begin{document} ended by \end{abstract}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 \end{abstract}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
 [1
 
-{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./multivariable.toc
-LaTeX Font Info:    Try loading font information for U+msa on input line 2.
-
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 2.
-
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [2
-
-] [3])
-\tf@toc=\write10
-\openout10 = `multivariable.toc'.
-
-
-[4] (./content/00_1_vectors/vectors.tex
-
-LaTeX Warning: No \author given.
-
-[5
-
-
-] [6] [7] [8] [9] [10]
-Overfull \hbox (5.77017pt too wide) in paragraph at lines 368--369
-[][]\OT1/cmr/bx/n/10 Definition 6. []\OT1/cmr/m/it/10 The vec-tors $[] \OT1/cmr
-/m/n/10 = (1\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 ; :::\OT1/cmr/
-m/n/10 0)$\OT1/cmr/m/it/10 , $[] \OT1/cmr/m/n/10 = (0\OML/cmm/m/it/10 ; \OT1/cm
-r/m/n/10 1\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 ; :::; \OT1/cmr/
-m/n/10 0)$\OT1/cmr/m/it/10 , ..., $[] \OT1/cmr/m/n/10 = (0\OML/cmm/m/it/10 ; ::
-:; \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1)$
- []
-
-) [11] (./content/00_2_dot_product/dot_product.tex
-
-LaTeX Warning: No \author given.
-
-[12
-
-] [13]) [14] (./content/00_3_cross_product/cross_product.tex
-
-LaTeX Warning: No \author given.
-
-
-Overfull \hbox (11.66574pt too wide) detected at line 42
-[]
- []
-
-[15
-
-]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 66.
- (/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 66.
- [16]
-[17] [18]) [19] (./content/00_4_matrices/matrices.tex
-
-LaTeX Warning: No \author given.
-
-[20
-
-]
-Overfull \hbox (24.78291pt too wide) in paragraph at lines 71--72
-[][]\OT1/cmr/bx/n/10 Example 11. []\OT1/cmr/m/it/10 We can add the ma-tri-ces $
-\OML/cmm/m/it/10 A \OT1/cmr/m/n/10 = []$ \OT1/cmr/m/it/10 and $\OML/cmm/m/it/10
- B \OT1/cmr/m/n/10 = []$
- []
-
-
-Overfull \hbox (21.905pt too wide) in paragraph at lines 80--81
-[][]\OT1/cmr/bx/n/10 Example 12. []\OT1/cmr/m/it/10 We can-not add the ma-tri-c
-es $\OML/cmm/m/it/10 A \OT1/cmr/m/n/10 = []$ \OT1/cmr/m/it/10 and $\OML/cmm/m/i
-t/10 B \OT1/cmr/m/n/10 = []$\OT1/cmr/m/it/10 ,
- []
-
-[21]
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 140.
- [22]
-Overfull \hbox (175.37045pt too wide) detected at line 170
-\OML/cmm/m/it/10 AB \OT1/cmr/m/n/10 = [] \OML/cmm/m/it/10 :
- []
-
-
-Overfull \hbox (6.96571pt too wide) in paragraph at lines 177--178
-[][]\OT1/cmr/bx/n/10 Example 14. []\OT1/cmr/m/it/10 We can com-pute the prod-uc
-t $\OML/cmm/m/it/10 AB$ \OT1/cmr/m/it/10 of the ma-tri-ces $\OML/cmm/m/it/10 A 
-\OT1/cmr/m/n/10 = []$
- []
-
-[23] [24] [25]
-Overfull \hbox (11.37776pt too wide) detected at line 281
-[]
- []
-
-
-Overfull \hbox (61.0876pt too wide) detected at line 348
-[]
- []
-
-[26] [27]
-Overfull \hbox (295.00049pt too wide) detected at line 384
-[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 A\OT1/cmr/m/n/10 ) = (\OMS/cmsy/m/n/10 ^^@\
-OT1/cmr/m/n/10 1)[](4)[] [] + (\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 1)[](0)[] []
- + (\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 1)[](0)[] [] + (\OMS/cmsy/m/n/10 ^^@\OT
-1/cmr/m/n/10 1)[](0)[] [] \OML/cmm/m/it/10 :
- []
-
-
-Overfull \hbox (143.18903pt too wide) detected at line 390
-[]
- []
-
-
-Overfull \hbox (308.3335pt too wide) detected at line 398
-[]
- []
-
-[28] [29] [30] [31]) [32] (./content/00_5_planes/planes.tex
-
-LaTeX Warning: No \author given.
-
-[33
-
-]) [34] (./content/01_1_review/review.tex
-
-LaTeX Warning: No \author given.
-
-[35
-
-]
-Overfull \hbox (2.73442pt too wide) in paragraph at lines 47--48
-[]\OT1/cmr/m/n/10 In po-lar co-or-di-nates, we de-scribe a point with an $\OML/
-cmm/m/it/10 r$\OT1/cmr/m/n/10 -coordinate and a $\OML/cmm/m/it/10 ^^R$\OT1/cmr/
-m/n/10 -coordinate.
- []
-
-[36]
-\c@depthICount=\count198
- [37] [38] [39] [40] [41]
-LaTeX Font Info:    Try loading font information for U+euf on input line 248.
-
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/ueuf.fd
-File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
-) [42] [43]
-[44]) [45] (./content/01_2_cylindrical_coords/cylindrical_coords.tex
-
-LaTeX Warning: No \author given.
-
-[46
-
-] [47]
-Overfull \hbox (2.05637pt too wide) in paragraph at lines 70--72
-[]\OT1/cmr/m/sl/10 Which of the fol-low-ing, writ-ten in cylin-dri-cal co-or-di
--nates, is equiv-
- []
-
-[48]
-<./content/01_2_cylindrical_coords/graphics/theta_constant.pdf, id=651, 253.177
-5pt x 230.55865pt>
-File: ./content/01_2_cylindrical_coords/graphics/theta_constant.pdf Graphic fil
-e (type pdf)
-<use ./content/01_2_cylindrical_coords/graphics/theta_constant.pdf>
-Package pdftex.def Info: ./content/01_2_cylindrical_coords/graphics/theta_const
-ant.pdf  used on input line 129.
-(pdftex.def)             Requested size: 253.17688pt x 230.55809pt.
- [49 <./content/01_2_cylindrical_coords/graphics/theta_constant.pdf>]
-<./content/01_2_cylindrical_coords/graphics/z_constant.pdf, id=665, 277.59894pt
- x 203.12659pt>
-File: ./content/01_2_cylindrical_coords/graphics/z_constant.pdf Graphic file (t
-ype pdf)
-<use ./content/01_2_cylindrical_coords/graphics/z_constant.pdf>
-Package pdftex.def Info: ./content/01_2_cylindrical_coords/graphics/z_constant.
-pdf  used on input line 141.
-(pdftex.def)             Requested size: 277.59825pt x 203.12607pt.
-<./content/01_2_cylindrical_coords/graphics/half_sphere.pdf, id=666, 289.64178p
-t x 211.44104pt>
-File: ./content/01_2_cylindrical_coords/graphics/half_sphere.pdf Graphic file (
-type pdf)
-<use ./content/01_2_cylindrical_coords/graphics/half_sphere.pdf>
-Package pdftex.def Info: ./content/01_2_cylindrical_coords/graphics/half_sphere
-.pdf  used on input line 173.
-(pdftex.def)             Requested size: 289.64107pt x 211.4405pt.
-
-[50 <./content/01_2_cylindrical_coords/graphics/z_constant.pdf>]
-<./content/01_2_cylindrical_coords/graphics/cylinder_100.pdf, id=680, 239.23303
-pt x 204.9784pt>
-File: ./content/01_2_cylindrical_coords/graphics/cylinder_100.pdf Graphic file 
-(type pdf)
-<use ./content/01_2_cylindrical_coords/graphics/cylinder_100.pdf>
-Package pdftex.def Info: ./content/01_2_cylindrical_coords/graphics/cylinder_10
-0.pdf  used on input line 213.
-(pdftex.def)             Requested size: 239.23244pt x 204.97789pt.
- [51 <./content/01_2_cylindrical_coords/graphics/half_sphere.pdf>]) [52 <./cont
-ent/01_2_cylindrical_coords/graphics/cylinder_100.pdf>]
-(./content/01_3_spherical_coords/spherical_coords.tex
-
-LaTeX Warning: No \author given.
-
-<./content/01_3_spherical_coords/graphics/spherical.pdf, id=708, 213.52151pt x 
-193.40526pt>
-File: ./content/01_3_spherical_coords/graphics/spherical.pdf Graphic file (type
- pdf)
-<use ./content/01_3_spherical_coords/graphics/spherical.pdf>
-Package pdftex.def Info: ./content/01_3_spherical_coords/graphics/spherical.pdf
-  used on input line 24.
-(pdftex.def)             Requested size: 213.52098pt x 193.40477pt.
-<./content/01_3_spherical_coords/graphics/011.pdf, id=709, 220.7572pt x 200.484
-91pt>
-File: ./content/01_3_spherical_coords/graphics/011.pdf Graphic file (type pdf)
-<use ./content/01_3_spherical_coords/graphics/011.pdf>
-Package pdftex.def Info: ./content/01_3_spherical_coords/graphics/011.pdf  used
- on input line 34.
-(pdftex.def)             Requested size: 220.75665pt x 200.4844pt.
-[53
-
- <./content/01_3_spherical_coords/graphics/spherical.pdf>] [54 <./content/01_3_
-spherical_coords/graphics/011.pdf>]
-<./content/01_3_spherical_coords/graphics/rho_constant.pdf, id=739, 280.54442pt
- x 251.6363pt>
-File: ./content/01_3_spherical_coords/graphics/rho_constant.pdf Graphic file (t
-ype pdf)
-<use ./content/01_3_spherical_coords/graphics/rho_constant.pdf>
-Package pdftex.def Info: ./content/01_3_spherical_coords/graphics/rho_constant.
-pdf  used on input line 91.
-(pdftex.def)             Requested size: 280.54372pt x 251.63568pt.
- [55]
-<./content/01_3_spherical_coords/graphics/theta_constant.pdf, id=749, 253.1775p
-t x 230.55865pt>
-File: ./content/01_3_spherical_coords/graphics/theta_constant.pdf Graphic file 
-(type pdf)
-<use ./content/01_3_spherical_coords/graphics/theta_constant.pdf>
-Package pdftex.def Info: ./content/01_3_spherical_coords/graphics/theta_constan
-t.pdf  used on input line 100.
-(pdftex.def)             Requested size: 253.17688pt x 230.55809pt.
- [56 <./content/01_3_spherical_coords/graphics/rho_constant.pdf> <./content/01_
-3_spherical_coords/graphics/theta_constant.pdf>]
-<./content/01_3_spherical_coords/graphics/phi_constant.pdf, id=770, 562.72177pt
- x 197.002pt>
-File: ./content/01_3_spherical_coords/graphics/phi_constant.pdf Graphic file (t
-ype pdf)
-<use ./content/01_3_spherical_coords/graphics/phi_constant.pdf>
-Package pdftex.def Info: ./content/01_3_spherical_coords/graphics/phi_constant.
-pdf  used on input line 111.
-(pdftex.def)             Requested size: 562.7204pt x 197.00151pt.
-<./content/01_3_spherical_coords/graphics/cone.pdf, id=771, 197.60349pt x 209.8
-4286pt>
-File: ./content/01_3_spherical_coords/graphics/cone.pdf Graphic file (type pdf)
-
-<use ./content/01_3_spherical_coords/graphics/cone.pdf>
-Package pdftex.def Info: ./content/01_3_spherical_coords/graphics/cone.pdf  use
-d on input line 120.
-(pdftex.def)             Requested size: 197.603pt x 209.84235pt.
- [57 <./content/01_3_spherical_coords/graphics/phi_constant.pdf> <./content/01_
-3_spherical_coords/graphics/cone.pdf>]
-<./content/01_3_spherical_coords/graphics/elliptic_hyper.pdf, id=793, 258.02199
-pt x 229.74332pt>
-File: ./content/01_3_spherical_coords/graphics/elliptic_hyper.pdf Graphic file 
-(type pdf)
-<use ./content/01_3_spherical_coords/graphics/elliptic_hyper.pdf>
-Package pdftex.def Info: ./content/01_3_spherical_coords/graphics/elliptic_hype
-r.pdf  used on input line 149.
-(pdftex.def)             Requested size: 258.02135pt x 229.74274pt.
- [58 <./content/01_3_spherical_coords/graphics/elliptic_hyper.pdf>]
-<./content/01_3_spherical_coords/graphics/ice_cream.pdf, id=807, 231.30133pt x 
-225.29599pt>
-File: ./content/01_3_spherical_coords/graphics/ice_cream.pdf Graphic file (type
- pdf)
-<use ./content/01_3_spherical_coords/graphics/ice_cream.pdf>
-Package pdftex.def Info: ./content/01_3_spherical_coords/graphics/ice_cream.pdf
-  used on input line 179.
-(pdftex.def)             Requested size: 231.30077pt x 225.29543pt.
-) [59 <./content/01_3_spherical_coords/graphics/ice_cream.pdf>] (./content/01_4
-_functions/functions.tex
-
-LaTeX Warning: No \author given.
-
-[60
-
-] [61] [62]) [63] (./content/01_5_graphing/graphing.tex
-
-LaTeX Warning: No \author given.
-
-[64
-
-] [65] [66]) [67] (./content/01_6_quadric_surfaces/quadric_surfaces.tex
-
-LaTeX Warning: No \author given.
-
-<./content/01_6_quadric_surfaces/graphics/conics.pdf, id=898, 587.21967pt x 165
-.90663pt>
-File: ./content/01_6_quadric_surfaces/graphics/conics.pdf Graphic file (type pd
-f)
-<use ./content/01_6_quadric_surfaces/graphics/conics.pdf>
-Package pdftex.def Info: ./content/01_6_quadric_surfaces/graphics/conics.pdf  u
-sed on input line 23.
-(pdftex.def)             Requested size: 587.21823pt x 165.9062pt.
-<./content/01_6_quadric_surfaces/graphics/ellipsoid.pdf, id=899, 179.78648pt x 
-144.69919pt>
-File: ./content/01_6_quadric_surfaces/graphics/ellipsoid.pdf Graphic file (type
- pdf)
-<use ./content/01_6_quadric_surfaces/graphics/ellipsoid.pdf>
-Package pdftex.def Info: ./content/01_6_quadric_surfaces/graphics/ellipsoid.pdf
-  used on input line 51.
-(pdftex.def)             Requested size: 179.78604pt x 144.69882pt.
-[68
-
- <./content/01_6_quadric_surfaces/graphics/conics.pdf, page is rotated 180 degr
-ees>]
-<./content/01_6_quadric_surfaces/graphics/paraboloid.pdf, id=916, 183.01524pt x
- 161.9892pt>
-File: ./content/01_6_quadric_surfaces/graphics/paraboloid.pdf Graphic file (typ
-e pdf)
-<use ./content/01_6_quadric_surfaces/graphics/paraboloid.pdf>
-Package pdftex.def Info: ./content/01_6_quadric_surfaces/graphics/paraboloid.pd
-f  used on input line 70.
-(pdftex.def)             Requested size: 183.01479pt x 161.98878pt.
- [69 <./content/01_6_quadric_surfaces/graphics/ellipsoid.pdf, page is rotated 1
-80 degrees> <./content/01_6_quadric_surfaces/graphics/paraboloid.pdf, page is r
-otated 180 degrees>]
-<./content/01_6_quadric_surfaces/graphics/hyperbolic_paraboloid.pdf, id=938, 21
-6.63852pt x 187.661pt>
-File: ./content/01_6_quadric_surfaces/graphics/hyperbolic_paraboloid.pdf Graphi
-c file (type pdf)
-<use ./content/01_6_quadric_surfaces/graphics/hyperbolic_paraboloid.pdf>
-Package pdftex.def Info: ./content/01_6_quadric_surfaces/graphics/hyperbolic_pa
-raboloid.pdf  used on input line 87.
-(pdftex.def)             Requested size: 216.63799pt x 187.66054pt.
-<./content/01_6_quadric_surfaces/graphics/elliptic_cone.pdf, id=939, 189.94774p
-t x 168.601pt>
-File: ./content/01_6_quadric_surfaces/graphics/elliptic_cone.pdf Graphic file (
-type pdf)
-<use ./content/01_6_quadric_surfaces/graphics/elliptic_cone.pdf>
-Package pdftex.def Info: ./content/01_6_quadric_surfaces/graphics/elliptic_cone
-.pdf  used on input line 104.
-(pdftex.def)             Requested size: 189.94727pt x 168.60057pt.
- [70 <./content/01_6_quadric_surfaces/graphics/hyperbolic_paraboloid.pdf, page 
-is rotated 180 degrees> <./content/01_6_quadric_surfaces/graphics/elliptic_cone
-.pdf, page is rotated 180 degrees>]
-<./content/01_6_quadric_surfaces/graphics/hyperboloid_one_sheet.pdf, id=962, 21
-3.11139pt x 203.90462pt>
-File: ./content/01_6_quadric_surfaces/graphics/hyperboloid_one_sheet.pdf Graphi
-c file (type pdf)
-<use ./content/01_6_quadric_surfaces/graphics/hyperboloid_one_sheet.pdf>
-Package pdftex.def Info: ./content/01_6_quadric_surfaces/graphics/hyperboloid_o
-ne_sheet.pdf  used on input line 121.
-(pdftex.def)             Requested size: 213.11086pt x 203.90411pt.
-<./content/01_6_quadric_surfaces/graphics/hyperboloid_two_sheet.pdf, id=963, 20
-0.40482pt x 222.2263pt>
-File: ./content/01_6_quadric_surfaces/graphics/hyperboloid_two_sheet.pdf Graphi
-c file (type pdf)
-<use ./content/01_6_quadric_surfaces/graphics/hyperboloid_two_sheet.pdf>
-Package pdftex.def Info: ./content/01_6_quadric_surfaces/graphics/hyperboloid_t
-wo_sheet.pdf  used on input line 138.
-(pdftex.def)             Requested size: 200.40431pt x 222.22575pt.
- [71 <./content/01_6_quadric_surfaces/graphics/hyperboloid_one_sheet.pdf, page 
-is rotated 180 degrees>] [72 <./content/01_6_quadric_surfaces/graphics/hyperbol
-oid_two_sheet.pdf, page is rotated 180 degrees>]) [73] [74]
-(./content/02_1_parametric_curves/parametric_curves.tex
-
-LaTeX Warning: No \author given.
-
-[75
-
-] [76]
-Overfull \hbox (11.97978pt too wide) in paragraph at lines 119--121
-\OT1/cmr/m/it/10 We can ap-ply this to the parametriza-tion for the unit cir-cl
-e, in or-der to parametriza-
- []
-
-[77] [78]) [79] (./content/02_2_velocity_and_speed/velocity_and_speed.tex
-
-LaTeX Warning: No \author given.
-
-[80
-
-] [81]
-Overfull \hbox (8.02846pt too wide) in paragraph at lines 123--124
-[]\OT1/cmr/m/it/10 Consider the path $[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1
-/cmr/m/n/10 ) = ([](\OML/cmm/m/it/10 t[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; []\
-OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t[]\OT1/cmr/m/n/10 ))$ \OT1/cmr/m/it/10 for $\
-OT1/cmr/m/n/10 0 \OMS/cmsy/m/n/10 ^^T \OML/cmm/m/it/10 t \OMS/cmsy/m/n/10 ^^T [
-]$\OT1/cmr/m/it/10 . This also parametrizes
- []
-
-[82]) [83] (./content/02_3_properties/properties.tex
-
-LaTeX Warning: No \author given.
-
-
-Overfull \hbox (2.46915pt too wide) in paragraph at lines 31--32
-[]\OT1/cmr/m/n/10 Suppose $\OML/cmm/m/it/10 t$ \OT1/cmr/m/n/10 is such that bot
-h $[](\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )$ and $[](\OML/cmm/m/it/10 t\OT1/cmr/m
-/n/10 )$ ex-ist, and write $[](\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) = (\OML/cmm/
-m/it/10 x[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/m/it/10
- ; :::; x[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ))$
- []
-
-[84
-
-]) [85] (./content/02_4_curve_length/curve_length.tex
-
-LaTeX Warning: No \author given.
-
-[86
-
-]
-Overfull \hbox (6.53818pt too wide) in paragraph at lines 58--59
-[][]\OT1/cmr/bx/n/10 Example 47. []\OT1/cmr/m/it/10 Con-sider the path $[] \OT1
-/cmr/m/n/10 : [0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 2\OML/cmm/m/it/10 ^^Y\OT1/cm
-r/m/n/10 ] \OMS/cmsy/m/n/10 ! \U/msb/m/n/10 R[]$ \OT1/cmr/m/it/10 de-fined by $
-[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) = ([](\OML/cmm/m/it/10 t
-\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/c
-mr/m/n/10 ))$\OT1/cmr/m/it/10 . 
- []
-
-
-Overfull \hbox (14.5937pt too wide) in paragraph at lines 74--75
-[][]\OT1/cmr/bx/n/10 Example 48. []\OT1/cmr/m/it/10 Con-sider the path $[] \OT1
-/cmr/m/n/10 : [0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 3\OML/cmm/m/it/10 ^^Y\OT1/cm
-r/m/n/10 ] \OMS/cmsy/m/n/10 ! \U/msb/m/n/10 R[]$ \OT1/cmr/m/it/10 de-fined by $
-[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) = ([](\OML/cmm/m/it/10 t
-\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/c
-mr/m/n/10 )\OML/cmm/m/it/10 ; t\OT1/cmr/m/n/10 )$\OT1/cmr/m/it/10 . 
- []
-
-[87] [88]) [89] (./content/02_5_arclength_function/arclength_function.tex
-
-LaTeX Warning: No \author given.
-
-[90
-
-] [91]
-Overfull \hbox (11.7645pt too wide) in paragraph at lines 80--81
-[]\OT1/cmr/m/n/10 Let's sup-pose we ob-tain the ar-clength parametriza-tion $[]
-(\OML/cmm/m/it/10 s\OT1/cmr/m/n/10 )$ from some parametriza-
- []
-
-) [92] (./content/02_6_curvature/curvature.tex
-
-LaTeX Warning: No \author given.
-
-
-Overfull \hbox (6.66727pt too wide) in paragraph at lines 43--44
-[]\OT1/cmr/m/n/10 Unfortunately, as we've seen, it's not al-ways easy to find a
-n ar-clength parametriza-
- []
-
-[93
-
-]
-Overfull \hbox (11.56859pt too wide) in paragraph at lines 63--64
-[][]\OT1/cmr/bx/n/10 Example 50. []\OT1/cmr/m/it/10 We'll com-pute the cur-va-t
-ure of a cir-cle of ra-dius $\OML/cmm/m/it/10 a > \OT1/cmr/m/n/10 0$\OT1/cmr/m/
-it/10 , parametrized
- []
-
-
-Overfull \hbox (7.39142pt too wide) in paragraph at lines 93--94
-[][]\OT1/cmr/bx/n/10 Example 51. []\OT1/cmr/m/it/10 We'll com-pute the cur-va-t
-ure of the path $[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) = (\OML
-/cmm/m/it/10 t []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/m
-/it/10 ; t []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/m/it/
-10 ; t[]\OT1/cmr/m/n/10 )$\OT1/cmr/m/it/10 ,
- []
-
-[94]) [95] (./content/02_7_tnb_frames/tnb_frames.tex
-
-LaTeX Warning: No \author given.
-
-[96
-
-] [97] [98]) [99] (./content/02_8_more_tnb/more_tnb.tex
-
-LaTeX Warning: No \author given.
-
-
-Overfull \hbox (11.00528pt too wide) in paragraph at lines 39--40
-[][]\OT1/cmr/bx/n/10 Example 52. []\OT1/cmr/m/it/10 We'll com-pute the mov-ing 
-frame for the path $[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) = ([
-](\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; []\OT1/cmr/m/n/10 (\OML
-/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; t\OT1/cmr/m/n/10 )$
- []
-
-[100
-
-] [101] [102]) [103]
-(./content/02_9_acceleration_decomp/acceleration_decomp.tex
-
-LaTeX Warning: No \author given.
-
-[104
-
-] [105] [106]
-Underfull \hbox (badness 10000) in paragraph at lines 147--148
-
- []
-
-[107] [108]) [109] (./content/03_01_limits/limits.tex
-
-LaTeX Warning: No \author given.
-
-[110
-
-] [111] [112]) [113] [114]
-(./content/03_02_evaluating_limits/evaluating_limits.tex
-
-LaTeX Warning: No \author given.
-
-[115
-
-]
-Overfull \hbox (19.60815pt too wide) in paragraph at lines 94--95
-[]\OT1/cmr/m/n/10 (I'M NOT SURE THIS IS AC-TU-ALLY WORTH-WHILE...SO I STOPPED
- []
-
-[116]
-Overfull \hbox (5.34549pt too wide) in paragraph at lines 96--97
-[]\OT1/cmr/m/n/10 In this proof, we'll han-dle the case where both lim-its ex-i
-st. Sup-pose $[] \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 ([](\OML/cmm/m/it/10 t\OT1/c
-mr/m/n/10 )) =
- []
-
-[117]
-Overfull \hbox (66.16162pt too wide) in paragraph at lines 138--139
-[][]\OT1/cmr/bx/n/10 Example 58. []\OT1/cmr/m/it/10 We will use spher-i-cal co-
-or-di-nates to eval-u-ate the limit $[] []$.
- []
-
-[118] [119]
-Overfull \hbox (13.1952pt too wide) detected at line 200
-[]
- []
-
-) [120] (./content/03_03_continuity/continuity.tex
-
-LaTeX Warning: No \author given.
-
-[121
-
-] [122]
-Overfull \hbox (62.59529pt too wide) in paragraph at lines 100--101
-[][]\OT1/cmr/bx/n/10 Definition 42. []\OT1/cmr/m/it/10 Sup-pose we have a func-
-tion $[] \OT1/cmr/m/n/10 : \U/msb/m/n/10 R[] \OMS/cmsy/m/n/10 ! \U/msb/m/n/10 R
-[]$ \OT1/cmr/m/it/10 with $[]\OT1/cmr/m/n/10 ([]) = (\OML/cmm/m/it/10 f[]\OT1/c
-mr/m/n/10 ([])\OML/cmm/m/it/10 ; f[]\OT1/cmr/m/n/10 ([])\OML/cmm/m/it/10 ; :::;
- f[]\OT1/cmr/m/n/10 ([]))$\OT1/cmr/m/it/10 .
- []
-
-[123]) [124] (./content/03_04_partials_def/partials_def.tex
-
-LaTeX Warning: No \author given.
-
-[125
-
-] [126] [127]) [128] (./content/03_05_partials_geo/partials_geo.tex
-
-LaTeX Warning: No \author given.
-
-[129
-
-]) [130] (./content/03_06_tangent_plane/tangent_plane.tex
-
-LaTeX Warning: No \author given.
-
-[131
-
-] [132] [133] [134]) [135]
-(./content/03_07_differentiability_in_R2/differentiability_in_R2.tex
-
-LaTeX Warning: No \author given.
-
-[136
-
-] [137]) [138]
-(./content/03_08_differentiability_in_Rn/differentiability_in_Rn.tex
-
-LaTeX Warning: No \author given.
-
-[139
-
-] [140]
-Overfull \hbox (17.39723pt too wide) detected at line 132
-[]
- []
-
-
-Overfull \hbox (219.60315pt too wide) detected at line 143
-[]
- []
-
-[141]) [142]
-(./content/03_09_differentiability_in_general/differentiability_in_general.tex
-
-LaTeX Warning: No \author given.
-
-[143
-
-] [144] [145]) [146]
-(./content/03_10_higher_order_partials/higher_order_partials.tex
-
-LaTeX Warning: No \author given.
-
-[147
-
-] [148] [149] [150]) [151] [152]
-(./content/03_11_differentiation_rules/differentiation_rules.tex
-
-LaTeX Warning: No \author given.
-
-[153
-
-]
-Overfull \hbox (17.74678pt too wide) detected at line 82
-[]
- []
-
-[154] [155] [156]) [157] (./content/03_12_chain_rule/chain_rule.tex
-
-LaTeX Warning: No \author given.
-
-[158
-
-] [159] [160]
-Overfull \hbox (18.48401pt too wide) in paragraph at lines 139--140
-[][]\OT1/cmr/bx/n/10 Example 84. []\OT1/cmr/m/it/10 Con-sider the func-tion $\O
-ML/cmm/m/it/10 g \OT1/cmr/m/n/10 : \U/msb/m/n/10 R[] \OMS/cmsy/m/n/10 ! \U/msb/
-m/n/10 R[]$\OT1/cmr/m/it/10 , given by $\OT1/cmr/bx/n/10 g\OT1/cmr/m/n/10 (\OML
-/cmm/m/it/10 r; ^^R\OT1/cmr/m/n/10 ) = (\OML/cmm/m/it/10 r [] ^^R; r [] ^^R\OT1
-/cmr/m/n/10 )$\OT1/cmr/m/it/10 .
- []
-
-[161]
-Overfull \hbox (82.57805pt too wide) detected at line 171
-[]
- []
-
-) [162] (./content/03_13_directional_derivatives/directional_derivatives.tex
-
-LaTeX Warning: No \author given.
-
-[163
-
-]) [164] (./content/03_14_gradient/gradient.tex
-
-LaTeX Warning: No \author given.
-
-[165
-
-] [166] [167]) [168] (./content/03_15_tangent_planes/tangent_planes.tex
-
-LaTeX Warning: No \author given.
-
-[169
-
-] [170]) [171]
-(./content/04_1_sv_taylor_polynomials/sv_taylor_polynomials.tex
-
-LaTeX Warning: No \author given.
-
-
-Overfull \hbox (28.79529pt too wide) in paragraph at lines 20--21
-[][]\OT1/cmr/bx/n/10 Definition 61. []\OT1/cmr/m/it/10 Let $\OML/cmm/m/it/10 f 
-\OT1/cmr/m/n/10 : \U/msb/m/n/10 R \OMS/cmsy/m/n/10 ! \U/msb/m/n/10 R$ \OT1/cmr/
-m/it/10 be a func-tion that the deriva-tives $\OML/cmm/m/it/10 f[]\OT1/cmr/m/n/
-10 (\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; f[]\OT1/cmr/m/n/10 (\
-OML/cmm/m/it/10 a\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; :::; f[]\OT1/cmr/m/n/10 (\
-OML/cmm/m/it/10 a\OT1/cmr/m/n/10 )$
- []
-
-[172
-
-] [173]
-Overfull \hbox (82.8811pt too wide) detected at line 74
-[]
- []
-
-[174] [175]) [176] (./content/04_2_quadratic_forms/quadratic_forms.tex
-
-LaTeX Warning: No \author given.
-
-[177
-
-] [178] [179]
-Overfull \hbox (3.64012pt too wide) in paragraph at lines 134--135
-\OT1/cmr/m/it/10 may be stretched in var-i-ous di-rec-tions. No-tice that for a
- pos-i-tive def-i-nite quadratic
- []
-
-
-Overfull \hbox (6.19563pt too wide) in paragraph at lines 140--141
-\OT1/cmr/m/it/10 may be stretched in var-i-ous di-rec-tions. No-tice that for a
- neg-a-tive def-i-nite quadratic
- []
-
-[180]
-Overfull \hbox (100.66534pt too wide) detected at line 186
-\OML/cmm/m/it/10 d[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 a[]; d[] \OT1/cmr/m/n/1
-0 = [] [] \OML/cmm/m/it/10 ; d[] \OT1/cmr/m/n/10 = [] [] \OML/cmm/m/it/10 ; :::
-; d[] \OT1/cmr/m/n/10 = [] [] \OML/cmm/m/it/10 :
- []
-
-
-Overfull \hbox (22.02264pt too wide) in paragraph at lines 197--198
-[][]\OT1/cmr/bx/n/10 Example 95. []\OT1/cmr/m/it/10 Con-sider the quadratic for
-m $\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 ([]) = []\OML/cmm/m/it/10 A[]$ \OT1/cmr/m/
-it/10 for $\OML/cmm/m/it/10 A \OT1/cmr/m/n/10 = []$\OT1/cmr/m/it/10 .
- []
-
-[181]
-Overfull \hbox (9.24483pt too wide) in paragraph at lines 231--232
-[][]\OT1/cmr/bx/n/10 Example 97. []\OT1/cmr/m/it/10 Con-sider the quadratic for
-m $\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 ([]) = []\OML/cmm/m/it/10 A[]$ \OT1/cmr/m/
-it/10 for $\OML/cmm/m/it/10 A \OT1/cmr/m/n/10 = []$\OT1/cmr/m/it/10 .
- []
-
-[182]) [183] (./content/04_3_hessian/hessian.tex
-
-LaTeX Warning: No \author given.
-
-[184
-
-]
-Overfull \hbox (302.71097pt too wide) detected at line 99
-[]
- []
-
-[185]) [186] (./content/04_4_local_extrema/local_extrema.tex
-
-LaTeX Warning: No \author given.
-
-[187
-
-] [188] [189] [190] [191]) [192]
-(./content/04_5_compact_region/compact_region.tex
-
-LaTeX Warning: No \author given.
-
-[193
-
-]
-Overfull \hbox (1.94525pt too wide) in paragraph at lines 64--65
-[]\OT1/cmr/m/sl/10 Sketch each re-gion, and de-ter-mine if it is closed, bounde
-d, and/or
- []
-
-[194] [195]
-Overfull \hbox (10.51672pt too wide) in paragraph at lines 121--122
-[][]\OT1/cmr/bx/n/10 Example 105. []\OT1/cmr/m/it/10 We'll find the ab-so-lute 
-max-i-mum and min-i-mum val-ues of $\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm
-/m/it/10 x; y\OT1/cmr/m/n/10 ) =
- []
-
-[196]) [197] (./content/04_6_substitution/substitution.tex
-
-LaTeX Warning: No \author given.
-
-[198
-
-] [199] [200]) [201]
-(./content/04_7_lagrange_multipliers/lagrange_multipliers.tex
-
-LaTeX Warning: No \author given.
-
-[202
-
-] [203] [204]) [205] (./content/hw_02_graphing/hw_graphing.tex
-
-LaTeX Warning: No \author given.
-
-
-LaTeX Font Warning: Font shape `OT1/cmss/bx/sl' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 36.
-
-\c@depthIICount=\count199
-[206
-
-] [207] [208] [209]
-<./content/hw_02_graphing/graphics/quadric_options.pdf, id=2032, 559.35623pt x 
-145.58891pt>
-File: ./content/hw_02_graphing/graphics/quadric_options.pdf Graphic file (type 
-pdf)
-<use ./content/hw_02_graphing/graphics/quadric_options.pdf>
-Package pdftex.def Info: ./content/hw_02_graphing/graphics/quadric_options.pdf 
- used on input line 176.
-(pdftex.def)             Requested size: 559.35486pt x 145.58855pt.
- [210 <./content/hw_02_graphing/graphics/quadric_options.pdf, page is rotated 1
-80 degrees>] [211]
-<./content/hw_02_graphing/graphics/wedge_options.pdf, id=2086, 577.3523pt x 137
-.42863pt>
-File: ./content/hw_02_graphing/graphics/wedge_options.pdf Graphic file (type pd
-f)
-<use ./content/hw_02_graphing/graphics/wedge_options.pdf>
-Package pdftex.def Info: ./content/hw_02_graphing/graphics/wedge_options.pdf  u
-sed on input line 239.
-(pdftex.def)             Requested size: 577.35088pt x 137.42828pt.
- [212 <./content/hw_02_graphing/graphics/wedge_options.pdf, page is rotated 180
- degrees>] [213] [214]) [215]
-(./content/hw_03_parametrized_curves/hw_parametrized_curves.tex
-
-LaTeX Warning: No \author given.
-
-[216
-
-] [217] [218] [219] [220]) [221] [222]
-(./content/hw_08_differentiability/hw_differentiability.tex
-
-LaTeX Warning: No \author given.
-
-[223
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 88--89
-
- []
-
-[224]
-Underfull \hbox (badness 10000) in paragraph at lines 90--91
-
- []
-
-) [225]
-(./content/hw_09_properties_of_derivatives/hw_properties_of_derivatives.tex
-
-LaTeX Warning: No \author given.
-
-[226
-
-]
-Overfull \hbox (0.6165pt too wide) in paragraph at lines 60--61
-[]\OT1/cmr/m/sl/10 Find all second-order par-tial deriva-tives of the func-tion
- $\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y\OT1/cmr/m/n/10 ) =
- []
-
-
-Overfull \hbox (9.94054pt too wide) in paragraph at lines 68--69
-[]\OT1/cmr/m/sl/10 Find all second-order par-tial deriva-tives of the func-tion
- $\OML/cmm/m/it/10 h\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 ) 
-=
- []
-
-[227]
-Overfull \hbox (106.94435pt too wide) in paragraph at lines 95--96
-[]\OT1/cmr/m/sl/10 Consider the func-tion $\OT1/cmr/bx/n/10 g \OT1/cmr/m/n/10 :
- \U/msb/m/n/10 R[] \OMS/cmsy/m/n/10 ! \U/msb/m/n/10 R[]$ \OT1/cmr/m/sl/10 given
- by $\OT1/cmr/bx/n/10 g\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^Z; ^^R; ^^^\OT1/cmr/
-m/n/10 ) = (\OML/cmm/m/it/10 ^^Z [] ^^R [] ^^^; ^^Z [] ^^R [] ^^^; ^^Z [] ^^^\O
-T1/cmr/m/n/10 )$\OT1/cmr/m/sl/10 ,
- []
-
-) [228] (./content/hw_10_directional_derivatives/hw_directional_derivatives.tex
-
-LaTeX Warning: No \author given.
-
-[229
-
-]
-Overfull \hbox (5.86195pt too wide) in paragraph at lines 60--61
-[]\OT1/cmr/m/sl/10 Through a se-ries of un-for-tu-nate events, the un-lucky ali
-en Pmytmu
- []
-
-[230]) [231] (./content/hw_11_taylors_theorem/hw_taylors_theorem.tex
-
-LaTeX Warning: No \author given.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 17--20
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 37--38
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 39--44
-
- []
-
-[232
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 48--51
-
- []
-
-[233]) [234] (./content/hw_12_extrema/hw_extrema.tex
-
-LaTeX Warning: No \author given.
-
-[235
-
-]) [236]
-(./content/hw_13_substitution_lagrange/hw_substitution_lagrange.tex
-
-LaTeX Warning: No \author given.
-
-) [237
-
-] (./content/pp_00_review/review.tex
-
-LaTeX Warning: No \author given.
-
-[238
-
-] [239] [240]
-Overfull \hbox (36.38948pt too wide) in paragraph at lines 156--157
-[]\OT1/cmr/m/sl/10 Compute the an-gle be-tween the vec-tors $\OT1/cmr/m/n/10 (2
-\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 3\OML/cm
-m/m/it/10 ; \OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1)$ \OT1/cmr/m/
-sl/10 and $\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 3\OML/cmm/m/it/
-10 ; \OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; \O
-T1/cmr/m/n/10 1\OML/cmm/m/it/10 ; \OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 2)$
- []
-
-[241] [242]
-Overfull \hbox (8.86192pt too wide) in paragraph at lines 242--243
-[]\OT1/cmr/m/sl/10 Compute the vol-ume of the par-al-lelepiped de-ter-mined by 
-$\OT1/cmr/m/n/10 (1\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 6\OML/cmm/m/it/10 ; \OT1/
-cmr/m/n/10 2)$\OT1/cmr/m/sl/10 ,
- []
-
-[243] [244]) [245] (./content/pp_01_coordinates/coordinates.tex
-
-LaTeX Warning: No \author given.
-
-[246
-
-]
-<./content/pp_01_coordinates/graphics/cylinder_wedge.pdf, id=2479, 169.41634pt 
-x 170.5846pt>
-File: ./content/pp_01_coordinates/graphics/cylinder_wedge.pdf Graphic file (typ
-e pdf)
-<use ./content/pp_01_coordinates/graphics/cylinder_wedge.pdf>
-Package pdftex.def Info: ./content/pp_01_coordinates/graphics/cylinder_wedge.pd
-f  used on input line 93.
-(pdftex.def)             Requested size: 169.41591pt x 170.58417pt.
- [247] [248 <./content/pp_01_coordinates/graphics/cylinder_wedge.pdf, page is r
-otated 180 degrees>] [249]
-<./content/pp_01_coordinates/graphics/sphere_wedge.pdf, id=2518, 167.46265pt x 
-193.85759pt>
-File: ./content/pp_01_coordinates/graphics/sphere_wedge.pdf Graphic file (type 
-pdf)
-<use ./content/pp_01_coordinates/graphics/sphere_wedge.pdf>
-Package pdftex.def Info: ./content/pp_01_coordinates/graphics/sphere_wedge.pdf 
- used on input line 210.
-(pdftex.def)             Requested size: 167.46222pt x 193.8571pt.
- [250] [251 <./content/pp_01_coordinates/graphics/sphere_wedge.pdf, page is rot
-ated 180 degrees>] [252] [253] [254]) [255]
+] [2]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 112.
+ [3]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 112.
-
-(./multivariable.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 112.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 112.
-Package rerunfilecheck Info: File `multivariable.out' has not changed.
-(rerunfilecheck)             Checksum: FA2136EF18231895B4FB184BB218F9E3;3883.
-
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
+ (./multivariable.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 112.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 112.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 112.
  ) 
 Here is how much of TeX's memory you used:
- 31271 strings out of 492649
- 721104 string characters out of 6129622
- 877363 words of memory out of 5000000
- 33191 multiletter control sequences out of 15000+600000
- 22506 words of font info for 81 fonts, out of 8000000 for 9000
+ 34853 strings out of 492650
+ 772653 string characters out of 6129648
+ 1098981 words of memory out of 5000000
+ 37981 multiletter control sequences out of 15000+600000
+ 3834 words of font info for 16 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,20n,100p,877b,922s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></
-usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></us
-r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxsl10.pfb></u
-sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></
-usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
-sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></u
-sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
-r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/
-local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/lo
-cal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loca
-l/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/t
-exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texl
-ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive
-/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/texlive/
-2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive
-/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/
-2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/20
-18/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/201
-8/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2
-018/texmf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb></usr/local/texlive/
-2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texl
-ive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on multivariable.pdf (255 pages, 5888035 bytes).
-PDF statistics:
- 2903 PDF objects out of 2984 (max. 8388607)
- 2525 compressed objects within 26 object streams
- 1162 named destinations out of 1200 (max. 500000)
- 612 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 75i,5n,100p,1257b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 
+Output written on multivariable.dvi (3 pages, 14616 bytes).

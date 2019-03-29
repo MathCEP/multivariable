@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  29 MAR 2019 13:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  29 MAR 2019 13:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1012,53 +1012,45 @@ File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 File: ./graphics/CalcPlot3D-xy_plane.png Graphic file (type png)
 <use ./graphics/CalcPlot3D-xy_plane.png>
 Package pdftex.def Info: ./graphics/CalcPlot3D-xy_plane.png  used on input line
- 337.
+ 338.
 (pdftex.def)             Requested size: 345.0pt x 243.68385pt.
 <./graphics/CalcPlot3D-yz_plane.png, id=81, 1551.7975pt x 1096.095pt>
 File: ./graphics/CalcPlot3D-yz_plane.png Graphic file (type png)
 <use ./graphics/CalcPlot3D-yz_plane.png>
 Package pdftex.def Info: ./graphics/CalcPlot3D-yz_plane.png  used on input line
- 342.
+ 343.
 (pdftex.def)             Requested size: 345.0pt x 243.68385pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 <./graphics/CalcPlot3D-xz_plane.png, id=82, 1551.7975pt x 1096.095pt>
 File: ./graphics/CalcPlot3D-xz_plane.png Graphic file (type png)
 <use ./graphics/CalcPlot3D-xz_plane.png>
 Package pdftex.def Info: ./graphics/CalcPlot3D-xz_plane.png  used on input line
- 347.
+ 348.
 (pdftex.def)             Requested size: 345.0pt x 243.68385pt.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<./graphics/CalcPlot3D-unit_sphere.png, id=83, 1551.7975pt x 1096.095pt>
+[9 <./graphics/CalcPlot3D-xy_plane.png> <./graphics/CalcPlot3D-yz_plane.png>]
+<./graphics/CalcPlot3D-unit_sphere.png, id=89, 1551.7975pt x 1096.095pt>
 File: ./graphics/CalcPlot3D-unit_sphere.png Graphic file (type png)
 <use ./graphics/CalcPlot3D-unit_sphere.png>
 Package pdftex.def Info: ./graphics/CalcPlot3D-unit_sphere.png  used on input l
 ine 359.
 (pdftex.def)             Requested size: 345.0pt x 243.68385pt.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[9 <./graphics/CalcPlot3D-xy_plane.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 366.
- [10 <./graphics/CalcPlot3D-yz_plane.png> <./graphics/CalcPlot3D-xz_plane.png>]
- [11 <./graphics/CalcPlot3D-unit_sphere.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 366.
+[10 <./graphics/CalcPlot3D-xz_plane.png> <./graphics/CalcPlot3D-unit_sphere.png
+>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 365.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 365.
  (./review.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 366.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 366.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 365.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 365.
 Package rerunfilecheck Info: File `review.out' has not changed.
 (rerunfilecheck)             Checksum: 5965371F81C1EA1E430750C40FC5A6D2;64.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 366.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 365.
  ) 
 Here is how much of TeX's memory you used:
- 29575 strings out of 492649
- 693313 string characters out of 6129622
+ 29569 strings out of 492649
+ 693263 string characters out of 6129622
  862499 words of memory out of 5000000
- 32872 multiletter control sequences out of 15000+600000
+ 32871 multiletter control sequences out of 15000+600000
  13299 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,13n,98p,734b,772s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1078,10 +1070,10 @@ texlive/2018/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/loca
 l/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb></usr/loc
 al/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr
 /local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on review.pdf (11 pages, 795184 bytes).
+Output written on review.pdf (10 pages, 794829 bytes).
 PDF statistics:
- 166 PDF objects out of 1000 (max. 8388607)
- 127 compressed objects within 2 object streams
- 34 named destinations out of 1000 (max. 500000)
+ 157 PDF objects out of 1000 (max. 8388607)
+ 119 compressed objects within 2 object streams
+ 29 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

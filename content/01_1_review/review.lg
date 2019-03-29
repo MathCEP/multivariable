@@ -16,8 +16,10 @@ File: @base.svg
 File: @base.svg
 File: @base.svg
 File: @base.svg
-File: @base.svg
-File: @base.svg
+File: ./graphics/CalcPlot3D-xy_plane.png
+File: ./graphics/CalcPlot3D-yz_plane.png
+File: ./graphics/CalcPlot3D-xz_plane.png
+File: ./graphics/CalcPlot3D-unit_sphere.png
 --- characters ---
 Font("cmr","10","10","100")
 Font("cmtt","10","10","100")
