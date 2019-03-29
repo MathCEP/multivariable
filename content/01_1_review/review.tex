@@ -13,30 +13,7 @@ When describing graphs or points in $\mathbb{R}^n$, we commonly use some type of
 In Cartesian coordinates, we describe a point using an $x$-coordinate and a $y$-coordinate. We write a point as $(x,y)$, where the $x$-coordinate describes the horizontal displacement of the point, and the $y$-coordinate describes the vertical displacement of the point.
 
 \begin{image}
-\begin{tikzpicture}
-\draw[<->] (-1,0) -- (3,0);
-\draw[<->] (0,-1) -- (0,3);
-\foreach \x in  {1,2}
-\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt);
-\foreach \x in {1,2}
-\draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below] 
-{$\x$};
-\foreach \y in  {1,2}
-\draw[shift={(0,\y)},color=black] (3pt,0pt) -- (-3pt,0pt);
-\foreach \y in {1,2}
-\draw[shift={(0,\y)},color=black] (0pt,0pt) -- (-3pt,0pt) node[left] 
-{$\y$};
-
-\foreach \x in  {1,2}
-\draw[dashed] (\x,0) -- (\x,2.5);
-\foreach \y in  {1,2}
-\draw[dashed] (0,\y) -- (2.5,\y);
-
-\node[draw, circle, thick, fill=black, minimum size=1mm, inner sep=0] at (2,1) {};
-
-\node at (2.5, 1.25) {(2,1)};
-
-\end{tikzpicture}
+\includegraphics[width=\textwidth]{CalcPlot3D-2d_coords}
 \end{image}
 
 \section*{Polar Coordinates}
@@ -52,20 +29,7 @@ y&=r\sin\theta.
 \end{align*}
 
 \begin{image}
-\begin{tikzpicture}
-\draw[<->] (-1,0) -- (3,0);
-\draw[<->] (0,-1) -- (0,3);
-
-\node[draw, circle, thick, fill=black, minimum size=1mm, inner sep=0] at (2,2) {};
-
-\draw[dashed] (0,0) -- (2,2);
-\draw[black] (0.4,0) arc (0 : 45 : 0.4);
-
-\node at (2.5, 2.25) {$(r,\theta)$};
-\node at (.9, 1.1) {$r$};
-\node at (0.6, 0.2) {$\theta$};
-
-\end{tikzpicture}
+\includegraphics[width=\textwidth]{CalcPlot3D-polar}
 \end{image}
 
 \begin{problem}
@@ -86,15 +50,7 @@ x^2+y^2 = 4.
 \]
 
 \begin{image}
-\begin{tikzpicture}
-\draw[<->] (-2,0) -- (2,0);
-\draw[<->] (0,-2) -- (0,2);
-
-\draw (0,0) circle (1.5);
-
-\node at (1.6, 0.2) {$2$};
-
-\end{tikzpicture}
+\includegraphics[width=\textwidth]{CalcPlot3D-circle_2}
 \end{image}
 
 We would like to write describe this circle using polar coordinates.
@@ -116,16 +72,7 @@ There's an important difference between Cartesian coordinates and polar coordina
 Take, for example, the point $(1,0)$, written in Cartesian coordinates.
 
 \begin{image}
-\begin{tikzpicture}
-\draw[<->] (-1,0) -- (3,0);
-\draw[<->] (0,-1) -- (0,3);
-
-\node[draw, circle, thick, fill=black, minimum size=1mm, inner sep=0] at (1.5,0) {};
-
-
-\node at (1.5, 0.2) {$(1,0)$};
-
-\end{tikzpicture}
+\includegraphics[width=\textwidth]{CalcPlot3D-pt_10}
 \end{image}
 
 This point is on the $x$-axis and is distance $1$ from the origin. Thus, perhaps the most obvious way to represent this point in polar coordinates is as $(r,\theta) = (1,0)$ (coincidentally, the same as in Cartesian coordinates). But we could also describe the angle as $2\pi$, $4\pi$, $-2\pi$, etc. So, we could also write the point in polar coordinates as $(r,\theta) = (1,2\pi)$, and so on.
@@ -147,15 +94,7 @@ Depending on the situation and context, different people may use different restr
 Let's consider the line described in Cartesian coordinates as the set of points $(x,y)$ such that $y=x$. We'll figure out how to describe this line in polar coordinates.
 
 \begin{image}
-\begin{tikzpicture}
-\draw[<->] (-2,0) -- (2,0);
-\draw[<->] (0,-2) -- (0,2);
-
-\draw[<->, very thick] (-1.75,-1.75) -- (1.75,1.75);
-
-\node at (1, 1.6) {$y=x$};
-
-\end{tikzpicture}
+\includegraphics[width=\textwidth]{CalcPlot3D-y_equals_x}
 \end{image}
 
 Let's restrict our polar coordinates to $0\leq r$ and $0\leq \theta <2\pi$. Perhaps your first guess is to describe the line as the points $(r,\theta)$ such that
@@ -222,15 +161,7 @@ x^2 + y^2 &= 2x\\
 Now, we can see that this is a circle of radius $\answer{1}$ centered at $\answer{(1,0)}$.
 
 \begin{image}
-\begin{tikzpicture}
-\draw[<->] (-1,0) -- (3,0);
-\draw[<->] (0,-2) -- (0,2);
-
-\draw (1,0) circle (1);
-
-\node at (2.2, 0.2) {$2$};
-
-\end{tikzpicture}
+\includegraphics[width=\textwidth]{CalcPlot3D-circle_10}
 \end{image}
 
 \end{example}
@@ -254,42 +185,7 @@ Taking the coefficients, in $\mathfrak{B}$-coordinates, we would write this poin
 \]
 
 \begin{image}
-\begin{tikzpicture}
-\draw[<->] (-2,0) -- (10,0);
-\draw[<->] (0,-2) -- (0,5);
-\foreach \x in  {5}
-\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt);
-\foreach \x in {5}
-\draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below] 
-{$\x$};
-\foreach \y in  {4}
-\draw[shift={(0,\y)},color=black] (3pt,0pt) -- (-3pt,0pt);
-\foreach \y in {4}
-\draw[shift={(0,\y)},color=black] (0pt,0pt) -- (-3pt,0pt) node[left] 
-{$\y$};
-
-\draw[->, very thick] (0,0) -- (3,1);
-\draw[->, very thick] (0,0) -- (1,-1);
-
-\draw[dashed] (-2,-2/3) -- (10, 10/3);
-\draw[dashed] (-2,-2) -- (10, 2);
-\draw[dashed] (2,-2) -- (10, 2/3);
-\draw[dashed] (6,-2) -- (10, -2/3);
-\draw[dashed] (-2,2/3) -- (10, 14/3);
-\draw[dashed] (-2,2) -- (7,5);
-\draw[dashed] (-2,10/3) -- (3,5);
-\draw[dashed] (-2,14/3) -- (-1,5);
-
-\draw[dashed] (-2,2) -- (2,-2);
-\draw[dashed] (-1,5) -- (6,-2);
-\draw[dashed] (3,5) -- (10,-2);
-\draw[dashed] (7,5) -- (10,2);
-
-\node[draw, circle, thick, fill=black, minimum size=1mm, inner sep=0] at (9,-1) {};
-
-\node at (9, -.75) {$(2,3)_\mathfrak{B}$};
-
-\end{tikzpicture}
+\includegraphics[width=\textwidth]{CalcPlot3D-slanty_space}
 \end{image}
 
 With linear changes of coordinates, it's easy to make a mistake and forget which coordinates you're using. Make sure to keep careful track!
@@ -299,30 +195,7 @@ With linear changes of coordinates, it's easy to make a mistake and forget which
 In Linear Algebra, we also worked in three-dimensional Cartesian coordinates, $(x,y,z)$ in $\mathbb{R}^3$.
 
 \begin{image}
-\begin{tikzpicture}
-\draw[<->] (-5,0) -- (5,0);
-\draw[<->] (0,-5) -- (0,5);
-\draw[<->] (-4,-3) -- (4,3);
-
-
-\draw[dashed] (-2,-3/2) -- (1,-3/2);
-\draw[dashed] (-2,-3/2) -- (-2,1/2);
-\draw[dashed] (-2,1/2) -- (0,2);
-\draw[dashed] (0,2) -- (3,2);
-\draw[dashed] (-2,1/2) -- (1,1/2);
-\draw[dashed] (3,2) -- (3,0);
-\draw[dashed] (3,2) -- (1,1/2);
-\draw[dashed] (1,1/2) -- (1,-3/2);
-\draw[dashed] (3,0) -- (1,-3/2);
-
-\node[draw, circle, thick, fill=black, minimum size=1mm, inner sep=0] at (1,1/2) {};
-
-\node at (5, -.25) {$y$};
-\node at (-.3, 5) {$z$};
-\node at (-4, -3.25) {$x$};
-\node at (1.7, .25) {$(x,y,z)$};
-
-\end{tikzpicture}
+\includegraphics[width=\textwidth]{CalcPlot3D-3d_coords}
 \end{image}
 
 It's important to remember that the $x$, $y$, and $z$ axes follow the right hand rule. That is, if you take your right hand, and point your pointer finger in the direction of the positive $x$-axis, point your middle finger in the direction of the positive $y$-axis, then your thumb points in the direction of the positive $z$-axis.
