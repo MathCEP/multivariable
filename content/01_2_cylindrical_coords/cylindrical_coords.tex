@@ -8,15 +8,15 @@
 \end{abstract}
 \maketitle
 
-In this activity, we introduce cylindrical coordinates, a new coordinate system on $\mathbb{R}^3$. We also discuss how to convert between cylindrical and Cartesian coordinates.
+We've seen how points in $\mathbb{R}^2$ can be written using polar coordinates, and we've seen how polar coordinates can be useful for describing some shapes that are difficult to describe in Cartesian coordinates.
 
-\section*{Cylindrical Coordinates}
+We'd now like to extend this idea to $\mathbb{R}^3$, using a coordinate system called \emph{cylindrical coordinates}. Like polar coordinates, cylindrical coordinates will be useful for describing shapes in $\mathbb{R}^3$ that are difficult to describe using Cartesian coordinates. Later in the course, we will also see how cylindrical coordinates can be useful in calculus, when evaluating limits or integrating in Cartesian coordinates is very difficult.
 
-We've seen how points in $\mathbb{R}^2$ can be written using polar coordinates. Polar coordinates can be useful for describing shapes that are difficult to describe in Cartesian coordinates.
+\section*{Cylindrical coordinates}
 
-We'd now like to extend this idea to $\mathbb{R}^3$, using a coordinate system called \emph{cylindrical coordinates}. Like polar coordinates, cylindrical coordinates will be useful for describing shapes in $\mathbb{R}^3$ that are difficult to describe using Cartesian coordinates. Later in the course, we will also see how cylindrical coordinates can be useful in multivariable Calculus, when differentiating or integrating in Cartesian coordinates is difficult or impossible.
+Cylindrical coordinates are really just an extension of polar coordinates. For points in the $xy$-plane, we describe them using $r$ and $\theta$, where $r$ is the distance from the origin and $\theta$ is the angle with the positive $x$-axis. We then append a $z$-coordinate, which tells us the vertical displacement of the point.
 
-Cylindrical coordinates are really just a simple extension of polar coordinates. For points in the $xy$-plane, we describe them using $r$ and $\theta$, where $r$ is the distance from the origin and $\theta$ is the angle with the positive $x$-axis. We then tack on a $z$-coordinate, the exact same as the $z$-coordinate in Cartesian coordinates, which tells us the vertical displacement of the point.
+In other words, for a point $(x,y,z)$ given in Cartesian coordinates, we consider its projection onto the $xy$-plane, which gives us the point $(x,y)$ in $\mathbb{R}^2$. We find the polar coordinates $(r,\theta)$ of the point $(x,y)$, and then we write our original point $(x,y,z)$ in cylindrical coordinates as $(r,\theta, z)$.
 
 \begin{image}
 \includegraphics[width = \textwidth]{CalcPlot3D-cylindrical}
@@ -25,7 +25,7 @@ Cylindrical coordinates are really just a simple extension of polar coordinates.
 \begin{example}
 We'll convert the point $(x,y,z) = (1,1,1)$ to cylindrical coordinates.
 
-We can figure out $r$ and $\theta$ by just considering the $x$- and $y$-coordinates of the point, $(1,1)$. Then this becomes equivalent to representing the point in polar coordinates, so we have
+We can figure out $r$ and $\theta$ by projecting our point onto the $xy$-plane, giving us the point $(1,1)$ in $\mathbb{R}^2$. Then we represent $(1,1)$ in polar coordinates, so we have
 \[
 (r,\theta) = \answer{(\sqrt{2}, \pi/4)}.
 \]
@@ -35,9 +35,7 @@ For last coordinate, $z$, notice that this is telling us the height of the point
 \]
 \end{example}
 
-You may use the applet below to experiment with how changing the different coordinates changes the point given in cylindrical coordinates.
-
-\href{https://mathinsight.org/cylindrical_coordinates}{MATH INSIGHT APPLET}
+You may use this \href{https://mathinsight.org/cylindrical_coordinates}{applet} to experiment with how changing the different coordinates changes the point given in cylindrical coordinates.
 
 \section*{Uniqueness}
 
@@ -57,9 +55,9 @@ Which of the following, written in cylindrical coordinates, is equivalent to the
 \end{selectAll}
 \end{problem}
 
-As with polar coordinates, in situations where uniqueness is important, we will often make the restrictions $r\geq 0$ and $0\leq\theta<2\pi$. 
+As with polar coordinates, in situations where uniqueness is important, we will often make the restrictions $r\geq 0$ and $0\leq\theta<2\pi$. Unfortunately, this restriction does not completely eliminate the issues with uniqueness, as there are still infinitely ways to describe the origin.
 
-\section*{Constant-Coordinate Surfaces}
+\section*{Constant-coordinate surfaces}
 
 Let's look at what happens in cylindrical coordinates when we set each of the coordinates $r,\theta,z$ to be constant, with the standard restrictions that $0\leq r$ and $0\leq \theta\leq \pi/2$. This can give us insight to how cylindrical coordinates behave.
 
@@ -115,7 +113,13 @@ keeping in mind that $z\geq 0$.
 \end{example}
 
 \begin{example}
-We'll convert $(x-2)^2 + y^2 = 1$ (where $z$ can be anything) to cylindrical coordinates. Note that this is the cylinder of radius 1, centered at the vertical line through $(2,0,0)$.
+Consider the surface in $\mathbb{R}^3$ described by the equation $(x-2)^2 + y^2 = 1$. Note that $z$ has no restrictions. This surface is the cylinder of radius $1$ centered at the vertical line through the point $(1,0,0)$.
+
+\begin{image}
+\includegraphics[width=\textwidth]{CalcPlot3D-cylinder_100}
+\end{image}
+
+We'll determine how to describe this cylinder in cylindrical coordinates, by converting the equation to cylindrical coordinates.
 
 Expanding the expression, we have
 \[
@@ -145,14 +149,37 @@ r = 4\cos(0) = 0,
 \]
 so the origin is already included in the surface $r = 4\cos\theta$.
 
-\begin{image}
-\includegraphics[width=\textwidth]{CalcPlot3D-cylinder_100}
-\end{image}
-
 \end{example}
 
-\section*{Conclusion}
+\begin{problem}
+For each of the following equations in cylindrical coordinates, select the type of shape they define.
 
-We introduced cylindrical coordinates and how to convert between cylindrical coordinates and Cartesian coordinates, and we discussed the uniqueness of cylindrical coordinates.
+$r = \cos\theta$
+\begin{multipleChoice}
+\choice{plane}
+\choice[correct]{cylinder}
+\choice{sphere}
+\choice{other}
+\end{multipleChoice}
+
+$z = r\cos\theta$
+\begin{multipleChoice}
+\choice[correct]{plane}
+\choice{cylinder}
+\choice{sphere}
+\choice{other}
+\end{multipleChoice}
+
+$z = -r$
+\begin{multipleChoice}
+\choice{plane}
+\choice{cylinder}
+\choice{sphere}
+\choice[correct]{other}
+\end{multipleChoice}
+\end{problem}
+
+
+\textit{Images were generated using \href{https://www.monroecc.edu/faculty/paulseeburger/calcnsf/CalcPlot3D/}{CalcPlot3D}.}
 
 \end{document}

@@ -8,11 +8,12 @@ Font_Css("12"): .htf-calligraphy {font-family:cursive}
 Font_Css("14"): .htf-italic {font-style: italic;}
 Font_Css("16"): .htf-bold {font-weight: bold;}
 Font_Css("12"): .htf-calligraphy-bold {font-family:cursive ; font-weight: bold; }
-File: @base.svg
-File: @base.svg
-File: @base.svg
-File: @base.svg
-File: @base.svg
+File: ./graphics/CalcPlot3D-cylindrical.png
+File: ./graphics/CalcPlot3D-r_constant.png
+File: ./graphics/CalcPlot3D-theta_constant.png
+File: ./graphics/CalcPlot3D-z_constant.png
+File: ./graphics/CalcPlot3D-half_sphere.png
+File: ./graphics/CalcPlot3D-cylinder_100.png
 --- characters ---
 Font("cmr","10","10","100")
 Font("cmtt","10","10","100")

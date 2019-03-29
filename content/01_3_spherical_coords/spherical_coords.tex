@@ -8,20 +8,20 @@
 \end{abstract}
 \maketitle
 
-In this activity, we introduce spherical coordinates, a new coordinate system on $\mathbb{R}^3$. We also discuss how to convert between spherical and Cartesian coordinates.
+We've seen how to express points in $\mathbb{R}^3$ using Cartesian coordinates and using cylindrical coordinates. We'll now introduce an alternative to cylindrical coordinates, called \emph{spherical coordinates}. Spherical coordinates are also used to describe points and regions in $\mathbb{R}^3$, and they can be thought of as an alternative extension of polar coordinates.
 
-\section*{Spherical Coordinates}
+\section*{Spherical coordinates}
 
-We've seen how to express points in $\mathbb{R}^3$ using Cartesian coordinates and using cylindrical coordinates. We'll now introduce a new coordinate system, called \emph{spherical coordinates}.
-
-Given a point $P$ in $\mathbb{R}^3$, imagine drawing a line segment from the origin to $P$. In spherical coordinates, we write $P$ as $(\rho, \theta, \phi)$. Here, $\rho$ is the length of the segment (also the distance between $P$ and the origin). The second coordinate, $\theta$, is angle between the positive $x$-axis and the projection of the segment onto the $xy$-plane. The third coordinate, $\phi$, is the angle between the segment and the positive $z$-axis.
+Given a point $P$ in $\mathbb{R}^3$, we'll write $P$ in spherical coordinates as $(\rho, \theta, \phi)$. Imagine drawing a line segment from the origin to $P$. Here, $\rho$ is the length of the segment, which is also the distance between $P$ and the origin. The second coordinate, $\theta$, is angle between the positive $x$-axis and the projection of the segment onto the $xy$-plane. The third coordinate, $\phi$, is the angle between the segment and the positive $z$-axis.
 
 \begin{image}
 \includegraphics[width=\textwidth]{CalcPlot3D-spherical_coords}
 \end{image}
 
+Note that $\theta$ in spherical coordinates is the same as $\theta$ in cylindrical coordinates.
+
 \begin{example}
-We'll write the point $P$ in spherical coordinates, where $P$ is given by $(x,y,z) = (0,1,1)$ in Cartesian coordinates.
+Consider the point $P=(0,1,1)$, written in Cartesian coordinates. We'll write $P$ in spherical coordinates.
 
 \begin{image}
 \includegraphics[width=\textwidth]{CalcPlot3D-011}
@@ -47,7 +47,7 @@ Although we will be consistent with our definitions of $\theta$ and $\phi$ as ab
 
 As with polar and cylindrical coordinates, there are issues of uniqueness with spherical coordinates that we do not encounter in Cartesian coordinates.
 
-Let's take for the example the point $(x,y,z) = (0,1,1)$, written in Cartesian coordinates. We've seen the canonical way to write this point in spherical coordinates, as $(\sqrt{2}, \pi/2, \pi/4)$. However, we could also write this as $(\sqrt{2}, 5\pi/2, \pi/4)$, $(\sqrt{2}, -3\pi/2, \pi/4)$, or even $(-\sqrt{2}, 3\pi/2, 5\pi/4)$.
+Let's take for the example the point $(x,y,z) = (0,1,1)$, written in Cartesian coordinates. We've seen the most typical way to write this point in spherical coordinates, as $(\sqrt{2}, \pi/2, \pi/4)$. However, we could also write this as $(\sqrt{2}, 5\pi/2, \pi/4)$, $(\sqrt{2}, -3\pi/2, \pi/4)$, or even $(-\sqrt{2}, 3\pi/2, 5\pi/4)$.
 
 Because of this issue, we'll commonly use the restrictions
 \begin{align*}
@@ -67,13 +67,11 @@ Which of the following represent the origin in spherical coordinates? Select all
 \end{selectAll}
 \end{problem}
 
-You may use the following applet to experiment with how the different coordinates change a point written in spherical coordinates.
-
-\href{https://mathinsight.org/spherical_coordinates}{MATH INSIGHT APPLET}
+You may use this \href{https://mathinsight.org/spherical_coordinates}{applet} to experiment with how the different coordinates change a point written in spherical coordinates.
 
 \section*{Constant-Coordinate Surfaces}
 
-As we did with cylindrical coordinates, we'll see what happens when we set each of the coordinates to be constant.
+As we did with cylindrical coordinates, we'll see what happens when we set each of the coordinates to be constant. Throughout this exploration, we'll use the restrictions $0\leq \rho$, $0\leq \theta<2\pi$, and $0\leq \phi\leq\pi$.
 
 Consider the set of points $(\rho, \theta, \phi)$, where $\rho = C$ is constant. This means that the distance between the origin and any such point is $C$. Varying the angles $\theta$ and $\phi$ gives us all such points, which make a sphere of radius $C$.
 
@@ -112,13 +110,11 @@ Looking at the surfaces when $C>\pi/2$ or $C<\pi/2$, we would commonly call thes
 \includegraphics[width=\textwidth]{CalcPlot3D-double_cone}
 \end{image}
 
-Note that if you relax the restriction $\rho\geq 0$, you'll get cone (or double cone) above when $C\neq 0$.
+Note that if you relax the restriction $\rho\geq 0$, you'll get the (double) cone above when $C\neq 0$.
 
 It may seem strange that mathematicians prefer this double cone to the seemingly simpler cones that you're used to. However, it turns out that the double cone is easier to describe algebraically.
 
-You can use the following applet to see what happens when you vary the value of the constant $C$ for each of the constant-coordinate surfaces above:
-
-\href{https://mathinsight.org/spherical_coordinates}{MATH INSIGHT APPLET}
+You can use this \href{https://mathinsight.org/spherical_coordinates}{applet} to see what happens when you vary the value of the constant $C$ for each of the constant-coordinate surfaces above.
 
 \section*{Converting Between Spherical and Cartesian Coordinates}
 
@@ -167,15 +163,26 @@ The condition $0\leq \rho\leq 1$ means that we'll have only points within distan
 
 \end{example}
 
-\section*{Spherical coordinates in $\mathbb{R}^n$ [OPTIONAL]}
+\begin{problem}
+Consider the surface described in Cartesian coordinates by
+\[
+2z^2 = x^2 +y^2.
+\]
+Describe this surface with an equation in spherical coordinates, of the form $0=f(\rho, \theta, \phi)$.
+\[
+0=\answer{\rho^2\sin^2\phi - 2\cos^2\phi}
+\]
 
-Since we've seen polar coordinates in $\mathbb{R}^2$, and cylindrical and spherical coordinates in $\mathbb{R}^3$, you might be wondering if there are similar coordinate systems in $\mathbb{R}^4$, $\mathbb{R}^5$, and so on.
+What type of shape is this?
+\begin{multipleChoice}
+\choice{Plane}
+\choice{Cylinder}
+\choice{Sphere}
+\choice[correct]{Cone}
+\choice{Other}
+\end{multipleChoice}
+\end{problem}
 
-It is possible to define spherical coordinates in $\mathbb{R}^n$ for any $n$, and you can find a description \href{https://en.wikipedia.org/wiki/N-sphere#Spherical_coordinates
-}{here}. 
-
-\section*{Conclusion}
-
-We introduced spherical coordinates and how to convert between spherical coordinates and Cartesian coordinates, and we discussed the uniqueness of spherical coordinates.
+\textit{Images were generated using \href{https://www.monroecc.edu/faculty/paulseeburger/calcnsf/CalcPlot3D/}{CalcPlot3D}.}
 
 \end{document}
