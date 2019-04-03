@@ -33,144 +33,241 @@
 class="abstract" 
 >
 </div>   <div class="maketitle"></div>
-<!--l. 8--><p class="noindent" >In this activity, we give the formal definition of the graph of a function <script type="math/tex">f:\mathbb {R}^2\rightarrow \mathbb {R}</script>. We discuss
-strategies for figuring out the shapes of the graph of such functions, using contour
-curves, level curves, and sections.
+<!--l. 9--><p class="noindent" >In this section, we’ll cover some approaches for graphing multivariable functions <script type="math/tex">\mathbb {R}^n\rightarrow \mathbb {R}</script>,
+focusing on the case where <script type="math/tex">n=2</script>. Before we define the graph of such a function, let’s think
+about how we graph a single variable function.
+</p><!--l. 11--><p class="noindent" >Consider the function <script type="math/tex">f(x) = x^2</script>, which is a function <script type="math/tex">f:\mathbb {R}\rightarrow \mathbb {R}</script>. The graph of this function is the set of
+all points <script type="math/tex">(x,x^2)</script> in the <script type="math/tex">xy</script>-plane, and we draw this graph below.
+</p><!--l. 14--><p class="noindent" >We get this set of points by taking each possible input, <script type="math/tex">x\in \mathbb {R}</script>, with its corresponding
+output, <script type="math/tex">x^2\in \mathbb {R}</script>. We then plot this point in the <script type="math/tex">xy</script>-plane. So the graph will include points <script type="math/tex">(1,1), (2,4), (\sqrt {pi}, \pi )</script>, and
+so on. Notice that for this function, which has domain <script type="math/tex">\mathbb {R}</script> and codomain <script type="math/tex">\mathbb {R}</script>, the graph is a
+subset of <script type="math/tex">\mathbb {R}^2</script>. We’ll keep this in mind as we turn our attention to multivariable
+functions.
 <a 
  id="Q1-1-1"></a>
 </p>
 <h3 class="likesectionHead"><a 
  id="x1-1000"></a>Definition of the Graph of a Function</h3>
-<!--l. 12--><p class="noindent" >You might already have an intuitive idea of what the graph of a function <script type="math/tex">f:X\subset \mathbb {R}^2\rightarrow \mathbb {R}</script> should be,
+<!--l. 18--><p class="noindent" >You might already have an intuitive idea of what the graph of a function <script type="math/tex">f:X\subset \mathbb {R}^2\rightarrow \mathbb {R}</script> should be,
 but perhaps don’t know the formal definition, or how to figure out what the graph of
 an arbitrary function looks like. We’ll begin with the definition of the graph, before
 discussing how to actually produce graphs.
 </p>
 <div class="theorem-like problem-environment definition" id="problem1"><a 
- id="x1-1001r1"></a>Let <script type="math/tex">f:X\subset \mathbb {R}^2\rightarrow \mathbb {R}</script> be a function. The <em>graph</em> of <script type="math/tex">f</script> is the set of points <script type="math/tex; mode=display"> \textrm {Graph }f = \{(\vec {x},f(\vec {x})\,:\,\vec {x}\in X\} </script> in <script type="math/tex">\mathbb {R}^3</script>.
-<!--l. 21--><p class="noindent" >We typically visualize a point in the graph as lying over the point <script type="math/tex">\vec {x}</script> in the plane at a
-height <script type="math/tex">f(\vec {x})</script>.
+ id="x1-1001r1"></a>Let <script type="math/tex">f:X\subset \mathbb {R}^n\rightarrow \mathbb {R}</script> be a function. The <em>graph</em> of <script type="math/tex">f</script> is the set of points <script type="math/tex; mode=display"> \textrm {Graph }f = \{(\vec {x},f(\vec {x})\,:\,\vec {x}\in X\} </script> in <script type="math/tex">\mathbb {R}^{n+1}</script>.
+<!--l. 27--><p class="noindent" >When <script type="math/tex">n=2</script>, we typically visualize a point in the graph as lying over the point <script type="math/tex">\vec {x}</script> in the
+plane at a height <script type="math/tex">f(\vec {x})</script>.
 </div>
-</p><!--l. 24--><p class="noindent" >Note that this is similar to the graph of a function from a subset of <script type="math/tex">\mathbb {R}</script> to <script type="math/tex">\mathbb {R}</script>. The graph of
-a function <script type="math/tex">X\subset \mathbb {R}^n\rightarrow \mathbb {R}</script> can be defined similarly, but this tends to be less useful once <script type="math/tex">n\geq 3</script>, since it’s
-hard to visualize four or more dimensions!
-<a 
- id="Q1-1-3"></a>
-</p>
-<h3 class="likesectionHead"><a 
- id="x1-2000"></a>Strategies for Graphing</h3>
-<!--l. 28--><p class="noindent" >It can be much trickier to sketch the graph of a function <script type="math/tex">f:X\subset \mathbb {R}^2\rightarrow \mathbb {R}</script> than it was to sketch the
+</p><!--l. 30--><p class="noindent" >Note that this is similar to the graph of a function from a subset of <script type="math/tex">\mathbb {R}</script> to <script type="math/tex">\mathbb {R}</script>: for each
                                                                   
 
                                                                   
-graphs of functions <script type="math/tex">\mathbb {R}\rightarrow \mathbb {R}</script>. One common strategy that people will initially try is plotting
+input in <script type="math/tex">\mathbb {R}^n</script>, we group it with its output (which is a point in <script type="math/tex">\mathbb {R}</script>), to obtain a point in
+<script type="math/tex">\mathbb {R}^{n+1}</script>.
+</p>
+<div class="theorem-like problem-environment example" id="problem2"><a 
+ id="x1-1002r2"></a>Consider the function <script type="math/tex">f:\mathbb {R}^2\rightarrow \mathbb {R}</script> defined by <script type="math/tex">f(x,y) = x^2</script>. The graph of this function is the following surface
+in <script type="math/tex">\mathbb {R}^3</script>.
+<div class="image-environment" role="img" aria-labelledby="image-alt-1"><img 
+src="./graphics/CalcPlot3D-x2.png" alt="PIC"  
+ /> </div>
+</div>
+<a 
+ id="Q1-1-3"></a>
+<h3 class="likesectionHead"><a 
+ id="x1-2000"></a>Strategies for Graphing</h3>
+<!--l. 42--><p class="noindent" >For now, we’ll focus on graphing functions <script type="math/tex">f:X\subset \mathbb {R}^2\rightarrow \mathbb {R}</script>. It can be much trickier to sketch
+the graph of such a function than it was to sketch the graphs of functions <script type="math/tex">\mathbb {R}\rightarrow \mathbb {R}</script>,
+especially since we’ll often be trying to represent a three-dimensional object in a
+two-dimensional image. One common strategy that people will initially try is plotting
 individual points to try to get a sense of the graph. However, for graphs in <script type="math/tex">\mathbb {R}^3</script>, you
-would need a lot of points to get a representative sample of the plane. For this reason,
+would need a lot of points to get a representative sample of points. For this reason,
 <em>plotting points alone is not an effective strategy</em>. However, plotting a single point here
 or there can be helpful.
-</p><!--l. 30--><p class="noindent" >We’ve now told you what doesn’t work for graphing functions in <script type="math/tex">\mathbb {R}^3</script>, so now we should
-probably tell you what does work. The essential idea of all of these strategies is that
-we know you’re pretty comfortable graphing in <script type="math/tex">\mathbb {R}^2</script>, so we’re going to take advantage of
-that experience.
-</p><!--l. 32--><p class="noindent" >We’ll begin with contour curves, which are obtained by setting the <script type="math/tex">z</script>-coordinate to be
+</p><!--l. 44--><p class="noindent" >We’ve now told you what doesn’t work for graphing functions in <script type="math/tex">\mathbb {R}^3</script>, so now we should
+probably figure out what does work. The essential idea of all of these strategies is
+that we know you’re pretty comfortable graphing single variable functions in <script type="math/tex">\mathbb {R}^2</script>, so
+we’re going to take advantage of that experience.
+</p><!--l. 46--><p class="noindent" >We’ll begin with contour curves, which are obtained by setting the <script type="math/tex">z</script>-coordinate to be
 constant. Think of this as taking horizontal slices of the graph.
 </p>
-<div class="theorem-like problem-environment definition" id="problem2"><a 
- id="x1-2001r2"></a>Let <script type="math/tex">f:X\subset \mathbb {R}^2\rightarrow \mathbb {R}</script> be a function. The <em>contour curve</em> of the function <script type="math/tex">f</script> at height <script type="math/tex">C</script> is the set of
+<div class="theorem-like problem-environment definition" id="problem3"><a 
+ id="x1-2001r3"></a>Let <script type="math/tex">f:X\subset \mathbb {R}^2\rightarrow \mathbb {R}</script> be a function. The <em>contour curve</em> of the function <script type="math/tex">f</script> at height <script type="math/tex">C</script> is the set of
 points in <script type="math/tex">\mathbb {R}^3</script> obtained by taking the intersection of the graph of <script type="math/tex">f</script> with the plane
 <script type="math/tex">z=C</script>.
 </div>
-<!--l. 38--><p class="noindent" >PICTURE/VIDEO EXAMPLE
-</p><!--l. 40--><p class="noindent" >We can also consider the level curves of a function, which are closely related to
+<div class="theorem-like problem-environment example" id="problem4"><a 
+ id="x1-2002r4"></a>Consider the function <script type="math/tex">f(x,y) = x^2+y^2</script>. We’ll find the contour curves of this function at heights <script type="math/tex">-1</script>, <script type="math/tex">0</script>, <script type="math/tex">1</script>, <script type="math/tex">2</script>, <script type="math/tex">3</script>,
+and <script type="math/tex">4</script>.
+<!--l. 55--><p class="noindent" >At height <script type="math/tex">-1</script>, we have the set of points <script type="math/tex">(x,y,-1)</script> such that <script type="math/tex">x^2+y^2=-1</script>. Since squares are always
+nonnegative, there are no such points. So, the contour curve at height <script type="math/tex">-1</script> is the empty
+set.
+</p><!--l. 57--><p class="noindent" >At height <script type="math/tex">0</script>, we have the set of points <script type="math/tex">(x,y,0)</script>, such that <script type="math/tex">x^2+y^2=0</script>. This only happens when <script type="math/tex">x=y=0</script>.
+So the contour curve at height <script type="math/tex">0</script> is just the set consisting of a single point,
+<script type="math/tex">(0,0,0)</script>.
+</p><!--l. 59--><p class="noindent" >At height <script type="math/tex">1</script>, we have the set of points <script type="math/tex">(x,y,1)</script> such that <script type="math/tex">x^2+y^2=1</script>. We can recognize this as a circle of
+radius <script type="math/tex">1</script>.
+</p><!--l. 61--><p class="noindent" >At height <script type="math/tex">2</script>, we have the set of points <script type="math/tex">(x,y,2)</script> such that <script type="math/tex">x^2+y^2=2</script>. We can recognize this as a circle of
+                                                                  
+
+                                                                  
+radius <script type="math/tex">\sqrt {2}</script>.
+</p><!--l. 63--><p class="noindent" >At height <script type="math/tex">3</script>, we have the set of points <script type="math/tex">(x,y,3)</script> such that <script type="math/tex">x^2+y^2=3</script>. We can recognize this as a circle of
+radius <script type="math/tex">\sqrt {3}</script>.
+</p><!--l. 65--><p class="noindent" >At height <script type="math/tex">4</script>, we have the set of points <script type="math/tex">(x,y,4)</script> such that <script type="math/tex">x^2+y^2=4</script>. We can recognize this as a circle of
+radius <script type="math/tex">2</script>.
+</p><!--l. 67--><p class="noindent" >We plot all of these contour curves below.
+</p>
+<div class="image-environment" role="img" aria-labelledby="image-alt-2"><img 
+src="./graphics/CalcPlot3D-contour.png" alt="PIC"  
+ /> </div>
+<!--l. 73--><p class="noindent" >Notice how these give us a sense of the graph of the function, included below.
+</p>
+<div class="image-environment" role="img" aria-labelledby="image-alt-3"><img 
+src="./graphics/CalcPlot3D-x2plusy2.png" alt="PIC"  
+ /> </div>
+</div>
+<!--l. 80--><p class="noindent" >We can also consider the level curves of a function, which are closely related to
 contour curves.
 </p>
-<div class="theorem-like problem-environment definition" id="problem3"><a 
- id="x1-2002r3"></a>Let <script type="math/tex">f:X\subset \mathbb {R}^2\rightarrow \mathbb {R}</script> be a function. The <em>level curve</em> of the function <script type="math/tex">f</script>at height <script type="math/tex">C</script> is the set of points in <script type="math/tex">\mathbb {R}^2</script>
+<div class="theorem-like problem-environment definition" id="problem5"><a 
+ id="x1-2003r5"></a>Let <script type="math/tex">f:X\subset \mathbb {R}^2\rightarrow \mathbb {R}</script> be a function. The <em>level curve</em> of the function <script type="math/tex">f</script>at height <script type="math/tex">C</script> is the set of points in <script type="math/tex">\mathbb {R}^2</script>
 satisfying <script type="math/tex">C = f(x,y)</script>.
 </div>
-<!--l. 46--><p class="noindent" >After reading this definition, you’re probably thinking “hey, aren’t contour curves
+<!--l. 86--><p class="noindent" >After reading this definition, you’re probably thinking “Hey, aren’t contour curves
 and level curves the exact same thing?” They’re certainly closely related. The key
 difference is that level curves exist in the plane, <script type="math/tex">\mathbb {R}^2</script>, while contour curves exist in
 three-space, <script type="math/tex">\mathbb {R}^3</script>. Since they’re in the plane, level curves are usually easier to draw.
 However, contour curves are more useful for figuring out the shape of a graph. For
 these reasons, it can be useful to go back and forth between level curves and contour
 curves.
-</p><!--l. 48--><p class="noindent" >PICTURE/VIDEO EXAMPLE
-</p><!--l. 50--><p class="noindent" >We can think of contour curves as taking slices of the graph where <script type="math/tex">z</script> is constant. It can
-also be useful to take slices of the graph where <script type="math/tex">x</script> or <script type="math/tex">y</script> is constant. We call these slices
-sections of the graph.
 </p>
-<div class="theorem-like problem-environment definition" id="problem4"><a 
- id="x1-2003r4"></a>Let <script type="math/tex">f:X\subset \mathbb {R}^2\rightarrow \mathbb {R}</script> be a function, and let <script type="math/tex">C</script> be a constant.
-<!--l. 55--><p class="noindent" >The <em>section</em> of the graph of <script type="math/tex">f</script> by <script type="math/tex">x=C</script> is the set of points <script type="math/tex; mode=display"> \{(C,y,z)\in \mathbb {R}^3\,:\,z = f(C,y)\} </script>
-</p><!--l. 60--><p class="noindent" >The <em>section</em> of the graph of <script type="math/tex">f</script> by <script type="math/tex">y=C</script> is the set of points <script type="math/tex; mode=display"> \{(x,C,z)\in \mathbb {R}^3\,:\,z = f(x,C)\} </script>
-</div>
-</p><!--l. 66--><p class="noindent" >Note that, like contour curves, sections exist in <script type="math/tex">\mathbb {R}^3</script>.
+<div class="theorem-like problem-environment example" id="problem6"><a 
+ id="x1-2004r6"></a>Consider the function <script type="math/tex">f(x,y) = x^2+y^2</script>. We’ll find the level curves of this function at heights <script type="math/tex">-1</script>, <script type="math/tex">0</script>, <script type="math/tex">1</script>, <script type="math/tex">2</script>, <script type="math/tex">3</script>,
+and <script type="math/tex">4</script>.
+<!--l. 91--><p class="noindent" >At height <script type="math/tex">-1</script>, we have the set of points <script type="math/tex">(x,y)</script> such that <script type="math/tex">x^2+y^2=-1</script>. Since squares are always
+nonnegative, there are no such points. So, the contour curve at height <script type="math/tex">-1</script> is the empty
+set.
+</p><!--l. 93--><p class="noindent" >At height <script type="math/tex">0</script>, we have the set of points <script type="math/tex">(x,y)</script>, such that <script type="math/tex">x^2+y^2=0</script>. This only happens when <script type="math/tex">x=y=0</script>.
+So the contour curve at height <script type="math/tex">0</script> is just the set consisting of a single point,
+<script type="math/tex">(0,0,0)</script>.
+</p><!--l. 95--><p class="noindent" >At height <script type="math/tex">1</script>, we have the set of points <script type="math/tex">(x,y)</script> such that <script type="math/tex">x^2+y^2=1</script>. We can recognize this as a circle of
+radius <script type="math/tex">1</script>.
+</p><!--l. 97--><p class="noindent" >At height <script type="math/tex">2</script>, we have the set of points <script type="math/tex">(x,y)</script> such that <script type="math/tex">x^2+y^2=2</script>. We can recognize this as a circle of
+radius <script type="math/tex">\sqrt {2}</script>.
                                                                   
 
                                                                   
-</p><!--l. 68--><p class="noindent" >PICTURE/VIDEO EXAMPLE
-</p><!--l. 70--><p class="noindent" >EXTRA EXAMPLE
+</p><!--l. 99--><p class="noindent" >At height <script type="math/tex">3</script>, we have the set of points <script type="math/tex">(x,y)</script> such that <script type="math/tex">x^2+y^2=3</script>. We can recognize this as a circle of
+radius <script type="math/tex">\sqrt {3}</script>.
+</p><!--l. 101--><p class="noindent" >At height <script type="math/tex">4</script>, we have the set of points <script type="math/tex">(x,y)</script> such that <script type="math/tex">x^2+y^2=4</script>. We can recognize this as a circle of
+radius <script type="math/tex">2</script>.
+</p><!--l. 103--><p class="noindent" >We plot all of these level curves below.
+</p>
+<div class="image-environment" role="img" aria-labelledby="image-alt-4"><img 
+src="./graphics/CalcPlot3D-level_sets.png" alt="PIC"  
+ /> </div>
+<!--l. 109--><p class="noindent" >Notice that we’ve labeled each level curve with its height, to help us keep track of
+how these curves relate to the graph of the function <script type="math/tex">f</script>.
+</div>
+</p><!--l. 112--><p class="noindent" >We can think of contour curves as taking slices of the graph where <script type="math/tex">z</script> is constant. It can
+also be useful to take slices of the graph where <script type="math/tex">x</script> or <script type="math/tex">y</script> is constant. We call these slices
+sections of the graph.
+</p>
+<div class="theorem-like problem-environment definition" id="problem7"><a 
+ id="x1-2005r7"></a>Let <script type="math/tex">f:X\subset \mathbb {R}^2\rightarrow \mathbb {R}</script> be a function, and let <script type="math/tex">C</script> be a constant.
+<!--l. 117--><p class="noindent" >The <em>section</em> of the graph of <script type="math/tex">f</script> by <script type="math/tex">x=C</script> is the set of points <script type="math/tex; mode=display"> \{(C,y,z)\in \mathbb {R}^3\,:\,z = f(C,y)\}. </script>
+</p><!--l. 122--><p class="noindent" >The <em>section</em> of the graph of <script type="math/tex">f</script> by <script type="math/tex">y=C</script> is the set of points <script type="math/tex; mode=display"> \{(x,C,z)\in \mathbb {R}^3\,:\,z = f(x,C)\}. </script>
+</div>
+</p><!--l. 128--><p class="noindent" >Note that, like contour curves, sections exist in <script type="math/tex">\mathbb {R}^3</script>.
+</p>
+<div class="theorem-like problem-environment example" id="problem8"><a 
+ id="x1-2006r8"></a>Consider again the function <script type="math/tex">f(x,y) = x^2+y^2</script>.
+<!--l. 133--><p class="noindent" >We’ll find the sections by <script type="math/tex">x=-1</script>, <script type="math/tex">x=0</script>, and <script type="math/tex">x=1</script>, and by <script type="math/tex">y=-1</script>, <script type="math/tex">y=0</script>, and <script type="math/tex">y=1</script>.
+</p><!--l. 135--><p class="noindent" >For the section by <script type="math/tex">x=-1</script>, we have the set of points <script type="math/tex">(-1,y,z)</script>, where <script type="math/tex">z=(-1)^2+y^2=y^2+1</script>. We can recognize this as a
+parabola with vertex <script type="math/tex">(-1,0,1)</script>.
+</p><!--l. 137--><p class="noindent" >For the section by <script type="math/tex">x=0</script>, we have the set of points <script type="math/tex">(0,y,z)</script>, where <script type="math/tex">z=(0)^2+y^2=y^2</script>. We can recognize this as a
+parabola with vertex <script type="math/tex">(0,0,0)</script>.
+</p><!--l. 139--><p class="noindent" >For the section by <script type="math/tex">x=1</script>, we have the set of points <script type="math/tex">(1,y,z)</script>, where <script type="math/tex">z=(1)^2+y^2=y^2+1</script>. We can recognize this as a
+parabola with vertex <script type="math/tex">(1,0,1)</script>.
+</p><!--l. 141--><p class="noindent" >We graph these three sections below.
+</p>
+<div class="image-environment" role="img" aria-labelledby="image-alt-5"><img 
+src="./graphics/CalcPlot3D-x_sections.png" alt="PIC"  
+ /> </div>
+<!--l. 147--><p class="noindent" >For the section by <script type="math/tex">y=-1</script>, we have the set of points <script type="math/tex">(x,-1,z)</script>, where <script type="math/tex">z=x^2+(-1)^2=x^2+1</script>. We can recognize this as a
+parabola with vertex <script type="math/tex">(0,-1,1)</script>.
+</p><!--l. 149--><p class="noindent" >For the section by <script type="math/tex">y=0</script>, we have the set of points <script type="math/tex">(x,0,z)</script>, where <script type="math/tex">z=x^2+(0)^2=x^2</script>. We can recognize this as a
+parabola with vertex <script type="math/tex">(0,0,0)</script>.
+</p><!--l. 151--><p class="noindent" >For the section by <script type="math/tex">y=1</script>, we have the set of points <script type="math/tex">(x,1,z)</script>, where <script type="math/tex">z=x^2+(1)^2=x^2+1</script>. We can recognize this as a
+                                                                  
+
+                                                                  
+parabola with vertex <script type="math/tex">(0,1,1)</script>.
+</p><!--l. 153--><p class="noindent" >We graph these three sections below.
+</p>
+<div class="image-environment" role="img" aria-labelledby="image-alt-6"><img 
+src="./graphics/CalcPlot3D-y_sections.png" alt="PIC"  
+ /> </div>
+<!--l. 159--><p class="noindent" ></div>
 <a 
  id="Q1-1-5"></a>
 </p>
 <h3 class="likesectionHead"><a 
  id="x1-3000"></a>Level Surfaces</h3>
-<!--l. 74--><p class="noindent" >So far, we have focused on graphing functions from subsets of <script type="math/tex">\mathbb {R}^2</script> to <script type="math/tex">\mathbb {R}</script>, so the graphs are
+<!--l. 163--><p class="noindent" >So far, we have focused on graphing functions from subsets of <script type="math/tex">\mathbb {R}^2</script> to <script type="math/tex">\mathbb {R}</script>, so the graphs are
 in <script type="math/tex">\mathbb {R}^3</script>.
-</p><!--l. 76--><p class="noindent" >We now turn our attention to the graphs of functions from subsets of <script type="math/tex">\mathbb {R}^3</script> to <script type="math/tex">\mathbb {R}</script>. Note that
+</p><!--l. 165--><p class="noindent" >We now turn our attention to the graphs of functions from subsets of <script type="math/tex">\mathbb {R}^3</script> to <script type="math/tex">\mathbb {R}</script>. Note that
 the graph of such a function will exist in <script type="math/tex">\mathbb {R}^4</script>. Since the world we live in only has three
 physical dimensions, it can be very difficult to visualize a four dimensional
 object! Fortunately, there are various tricks that can be used to get some
 sense of what a four dimensional object looks like. We cover one of them
 here.
-</p><!--l. 78--><p class="noindent" >When we had a function <script type="math/tex">f:D\subset \mathbb {R}^2\rightarrow \mathbb {R}</script>, we could get a sense of the graph by looking at its level
+</p><!--l. 167--><p class="noindent" >When we had a function <script type="math/tex">f:D\subset \mathbb {R}^2\rightarrow \mathbb {R}</script>, we could get a sense of the graph by looking at its level
 curves, which were curves in the same plane.
-</p><!--l. 80--><p class="noindent" >For a function <script type="math/tex">f:D\subset \mathbb {R}^3\rightarrow \mathbb {R}</script>, we can adopt a similar approach. We can once again consider the
+</p><!--l. 169--><p class="noindent" >For a function <script type="math/tex">f:D\subset \mathbb {R}^3\rightarrow \mathbb {R}</script>, we can adopt a similar approach. We can once again consider the
 level sets, which are obtained by taking the output to be some constant: <script type="math/tex; mode=display"> f(x,y,z) = C. </script> In this case,
 the level sets will be level surfaces, which live in <script type="math/tex">\mathbb {R}^3</script>. By graphing several level surfaces,
 we can see what a slice of the graph of <script type="math/tex">f</script> looks like at various heights, giving us
 some sense of how the overall graph behaves. Of course, because this graph
 exists in four dimensions, we still probably won’t be able to visualize this
 perfectly.
-</p><!--l. 86--><p class="noindent" >To see how this can help us visualize the four-dimensional graph of a function <script type="math/tex">f:\mathbb {R}^3\rightarrow \mathbb {R}</script>, we
+</p><!--l. 175--><p class="noindent" >To see how this can help us visualize the four-dimensional graph of a function <script type="math/tex">f:\mathbb {R}^3\rightarrow \mathbb {R}</script>, we
 give an example.
 </p>
-<div class="theorem-like problem-environment example" id="problem5"><a 
- id="x1-3001r5"></a>Consider the function <script type="math/tex; mode=display"> f(x,y,z) = \sqrt {x^2 + y^2 + z^2}. </script> Find the level surfaces at heights <script type="math/tex">-1</script>, <script type="math/tex">0</script>, <script type="math/tex">1</script>, <script type="math/tex">2</script>, and <script type="math/tex">3</script>. Use these level
+<div class="theorem-like problem-environment example" id="problem9"><a 
+ id="x1-3001r9"></a>Consider the function <script type="math/tex; mode=display"> f(x,y,z) = \sqrt {x^2 + y^2 + z^2}. </script> Find the level surfaces at heights <script type="math/tex">-1</script>, <script type="math/tex">0</script>, <script type="math/tex">1</script>, <script type="math/tex">2</script>, and <script type="math/tex">3</script>. Use these level
 surfaces to describe the graph of <script type="math/tex">f</script>.
-<!--l. 95--><p class="noindent" >We’ll begin with the level surface at height <script type="math/tex">-1</script>. This is the set of points <script type="math/tex">(x,y,z)</script> in <script type="math/tex">\mathbb {R}^3</script> such
+<!--l. 184--><p class="noindent" >We’ll begin with the level surface at height <script type="math/tex">-1</script>. This is the set of points <script type="math/tex">(x,y,z)</script> in <script type="math/tex">\mathbb {R}^3</script> such
 that <script type="math/tex; mode=display"> -1 = \sqrt {x^2+y^2+z^2}. </script> There are no points that satisfy this equation, so the level surface is
 empty.
-</p><!--l. 101--><p class="noindent" >Now we’ll consider the level surface at height <script type="math/tex">0</script>. This is the set of points <script type="math/tex">(x,y,z)</script> in <script type="math/tex">\mathbb {R}^3</script> such that <script type="math/tex; mode=display"> 0 = \sqrt {x^2+y^2+z^2}. </script>
+</p><!--l. 190--><p class="noindent" >Now we’ll consider the level surface at height <script type="math/tex">0</script>. This is the set of points <script type="math/tex">(x,y,z)</script> in <script type="math/tex">\mathbb {R}^3</script> such that <script type="math/tex; mode=display"> 0 = \sqrt {x^2+y^2+z^2}. </script>
 The only point which satisfies this equation is the origin, so the level “surface” is the
 single point <script type="math/tex">(0,0,0)</script>.
-</p><!--l. 107--><p class="noindent" >Let’s look at the level surface at height <script type="math/tex">1</script>. This is the set of points <script type="math/tex">(x,y,z)</script> in <script type="math/tex">\mathbb {R}^3</script> such that <script type="math/tex; mode=display"> 1 = \sqrt {x^2+y^2+z^2}. </script>
+</p><!--l. 196--><p class="noindent" >Let’s look at the level surface at height <script type="math/tex">1</script>. This is the set of points <script type="math/tex">(x,y,z)</script> in <script type="math/tex">\mathbb {R}^3</script> such that <script type="math/tex; mode=display"> 1 = \sqrt {x^2+y^2+z^2}. </script>
 Squaring both sides, we can rewriting this as <script type="math/tex; mode=display"> 1 = x^2+y^2+z^2. </script> The graph of this equation is the
-sphere of radius <script type="math/tex">1</script> centered at the origin, which is our level surface.
-</p><!--l. 117--><p class="noindent" >Let’s look at the level surface at height <script type="math/tex">2</script>. This is the set of points <script type="math/tex">(x,y,z)</script> in <script type="math/tex">\mathbb {R}^3</script> such that <script type="math/tex; mode=display"> 2 = \sqrt {x^2+y^2+z^2}. </script>
-Squaring both sides, we can rewriting this as <script type="math/tex; mode=display"> 4 = x^2+y^2+z^2. </script> The graph of this equation is the
-sphere of radius <script type="math/tex">2</script> centered at the origin, which is our level surface.
                                                                   
 
                                                                   
-</p><!--l. 127--><p class="noindent" >Let’s look at the level surface at height <script type="math/tex">3</script>. This is the set of points <script type="math/tex">(x,y,z)</script> in <script type="math/tex">\mathbb {R}^3</script> such that <script type="math/tex; mode=display"> 3 = \sqrt {x^2+y^2+z^2}. </script>
+sphere of radius <script type="math/tex">1</script> centered at the origin, which is our level surface.
+</p><!--l. 206--><p class="noindent" >Let’s look at the level surface at height <script type="math/tex">2</script>. This is the set of points <script type="math/tex">(x,y,z)</script> in <script type="math/tex">\mathbb {R}^3</script> such that <script type="math/tex; mode=display"> 2 = \sqrt {x^2+y^2+z^2}. </script>
+Squaring both sides, we can rewriting this as <script type="math/tex; mode=display"> 4 = x^2+y^2+z^2. </script> The graph of this equation is the
+sphere of radius <script type="math/tex">2</script> centered at the origin, which is our level surface.
+</p><!--l. 216--><p class="noindent" >Let’s look at the level surface at height <script type="math/tex">3</script>. This is the set of points <script type="math/tex">(x,y,z)</script> in <script type="math/tex">\mathbb {R}^3</script> such that <script type="math/tex; mode=display"> 3 = \sqrt {x^2+y^2+z^2}. </script>
 Squaring both sides, we can rewriting this as <script type="math/tex; mode=display"> 9 = x^2+y^2+z^2. </script> The graph of this equation is the
 sphere of radius <script type="math/tex">3</script> centered at the origin, which is our level surface.
-</p><!--l. 137--><p class="noindent" >We graph our level surfaces below.
-</p><!--l. 139--><p class="noindent" >PICTURE
-</p><!--l. 141--><p class="noindent" >We can see that the level surfaces are spheres whose radii increase linearly with the
+</p><!--l. 226--><p class="noindent" >In the image below, we take advantage of graphing software, and use some
+transparency to view these as nested spheres. In many cases, it’s more clear to graph
+level surfaces individually. This is especially true if you’re drawing the surfaces by
+hand.
+</p>
+<div class="image-environment" role="img" aria-labelledby="image-alt-7"><img 
+src="./graphics/CalcPlot3D-nested_level_surfaces.png" alt="PIC"  
+ /> </div>
+<!--l. 232--><p class="noindent" >We can see that the level surfaces are spheres whose radii increase linearly with the
 height. So, we can describe the graph of <script type="math/tex">f</script> as some sort of four-dimensional
 cone.
-</p><!--l. 143--><p class="noindent" ></div>
-<a 
- id="Q1-1-7"></a>
-</p>
-<h3 class="likesectionHead"><a 
- id="x1-4000"></a>Conclusion</h3>
-<!--l. 148--><p class="noindent" >In this activity, we gave the formal definition of the graph of a function <script type="math/tex">f:\mathbb {R}^2\rightarrow \mathbb {R}</script>. We
-discussed strategies for figuring out the shapes of the graph of such functions, using
-contour curves, level curves, and sections.
+</p><!--l. 234--><p class="noindent" ></div>
 </body> 
  
 </html>

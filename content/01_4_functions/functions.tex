@@ -1,4 +1,7 @@
 \documentclass{ximera}
+
+\usetikzlibrary{hobby}
+
 \title{Functions}
 \begin{document}
 \begin{abstract}
@@ -45,7 +48,49 @@ We call $X$ the \emph{domain} of $f$, and $Y$ the \emph{codomain} of $f$.
 
 You might have seen some sort of ``blob'' diagram like the one below, showing that each element of $X$ gets mapped to some element of $Y$.
 
-BLOB DIAGRAM
+\begin{image}
+\begin{tikzpicture}
+%% domain
+\path[draw,use Hobby shortcut,closed=true]
+(0,0) .. (0,2) .. (2,2) .. (1.5,1.5) .. (2,0);
+\node at (-.2,-.2) {$X$};
+%% codomain
+\begin{scope}[xshift=4cm]
+\node at (-.2,-.2) {$Y$};
+\path[draw,use Hobby shortcut,closed=true]
+(0,0) .. (.25,.25) .. (0,2) .. (2,3) .. (1.75,2) .. (2,0);
+\end{scope}
+%% arrow
+\node at (2.8,3.4) {$f$};
+\path[draw]
+(1.7, 2.9) edge[out=30,in=150,-stealth] (3.9,2.9);
+%% X points
+\node at (1.25,.5) (x1){};
+\fill (1.25,.5) circle(1pt);
+\node at (.75,1) (x2){};
+\fill (.75,1) circle(1pt);
+\node at (1.25,1.75) (x3){};
+\fill (1.25,1.75) circle(1pt);
+%% Y points
+\begin{scope}[xshift=4cm]
+\node at (1.25,.5) (y1){};
+\fill (1.25,.5) circle(1pt);
+\node at (.75,1) (y2){};
+\fill (.75,1) circle(1pt);
+\node at (1.25,1.75) (y3){};
+\fill (1.25,1.75) circle(1pt);
+\node at (.75,2.25) (y4){};
+\fill (.75,2.25) circle(1pt);
+\end{scope}
+%% arrows
+\path[draw]
+(x1) edge[out=-15,in=195,-stealth] (y1);
+\path[draw]
+(x2) edge[out=-15,in=195,-stealth] (y2);
+\path[draw]
+(x3) edge[out=5,in=150,-stealth] (y2);
+\end{tikzpicture}
+\end{image}
 
 \begin{example}
 We can define a function $f:\mathbb{R}^2\rightarrow\mathbb{R}$ by $f(x,y) = xy$.
@@ -78,7 +123,55 @@ The \emph{range} of a function $f:X\rightarrow Y$ is the set of elements $y\in Y
 \]
 \end{definition}
 
-BLOB DIAGRAM
+We can visualize the range as a smaller set contained within the codomain.
+
+\begin{image}
+\begin{tikzpicture}
+%% domain
+\path[draw,use Hobby shortcut,closed=true]
+(0,0) .. (0,2) .. (2,2) .. (1.5,1.5) .. (2,0);
+\node at (-.2,-.2) {$X$};
+%% codomain
+\begin{scope}[xshift=4cm]
+\node at (-.2,-.2) {$Y$};
+\path[draw,use Hobby shortcut,closed=true]
+(0,0) .. (.25,.25) .. (0,2) .. (2,3) .. (1.75,2) .. (2,0);
+%% range
+\node at (2.3,.25) {Range$(f)$};
+\path[draw,use Hobby shortcut,closed=true]
+(.5,.25) .. (.75,.5) .. (.5,1.25) .. (1.5,1.25) .. (1.5,.25);
+\end{scope}
+%% arrow
+\node at (2.8,3.4) {$f$};
+\path[draw]
+(1.7, 2.9) edge[out=30,in=150,-stealth] (3.9,2.9);
+%% X points
+\node at (1.25,.5) (x1){};
+\fill (1.25,.5) circle(1pt);
+\node at (.75,1) (x2){};
+\fill (.75,1) circle(1pt);
+\node at (1.25,1.75) (x3){};
+\fill (1.25,1.75) circle(1pt);
+%% Y points
+\begin{scope}[xshift=4cm]
+\node at (1.25,.5) (y1){};
+\fill (1.25,.5) circle(1pt);
+\node at (.75,1) (y2){};
+\fill (.75,1) circle(1pt);
+\node at (1.25,1.75) (y3){};
+\fill (1.25,1.75) circle(1pt);
+\node at (.75,2.25) (y4){};
+\fill (.75,2.25) circle(1pt);
+\end{scope}
+%% arrows
+\path[draw]
+(x1) edge[out=-15,in=195,-stealth] (y1);
+\path[draw]
+(x2) edge[out=-15,in=195,-stealth] (y2);
+\path[draw]
+(x3) edge[out=5,in=150,-stealth] (y2);
+\end{tikzpicture}
+\end{image}
 
 \begin{example}
 Consider the function $f:\mathbb{R}^2\rightarrow\mathbb{R}$ defined by $f(x,y) = xy$. For any real number $r$, $r = f(1,r)$, so $r$ is in the range of $f$. Thus, the range of $f$ is all real numbers, $\mathbb{R}$.
@@ -125,7 +218,59 @@ Y = \textrm{Range }f.
 \]
 \end{definition}
 
-BLOB DIAGRAM
+We can visualize this as every element of $Y$ getting mapped to by some element of $X$, and possibly more than one element.
+
+\begin{image}
+\begin{tikzpicture}
+%% domain
+\path[draw,use Hobby shortcut,closed=true]
+(0,0) .. (0,2) .. (2,2) .. (1.5,1.5) .. (2,0);
+\node at (-.2,-.2) {$X$};
+%% codomain
+\begin{scope}[xshift=4cm]
+\node at (-.2,-.2) {$Y$};
+\path[draw,use Hobby shortcut,closed=true]
+(0,0) .. (.25,.25) .. (0,2) .. (2,3) .. (1.75,2) .. (2,0);
+\end{scope}
+%% arrow
+\node at (2.8,3.4) {$f$};
+\path[draw]
+(1.7, 2.9) edge[out=30,in=150,-stealth] (3.9,2.9);
+%% X points
+\node at (1.25,.5) (x1){};
+\fill (1.25,.5) circle(1pt);
+\node at (.75,1) (x2){};
+\fill (.75,1) circle(1pt);
+\node at (1.25,1.75) (x3){};
+\fill (1.25,1.75) circle(1pt);
+\node at (1,2) (x4){};
+\fill (1,2) circle(1pt);
+\node at (1.1,2.25) (x5){};
+\fill (1.1,2.25) circle(1pt);
+%% Y points
+\begin{scope}[xshift=4cm]
+\node at (1.25,.5) (y1){};
+\fill (1.25,.5) circle(1pt);
+\node at (.75,1) (y2){};
+\fill (.75,1) circle(1pt);
+\node at (1.25,1.75) (y3){};
+\fill (1.25,1.75) circle(1pt);
+\node at (.75,2.25) (y4){};
+\fill (.75,2.25) circle(1pt);
+\end{scope}
+%% arrows
+\path[draw]
+(x1) edge[out=-15,in=195,-stealth] (y1);
+\path[draw]
+(x2) edge[out=-15,in=195,-stealth] (y2);
+\path[draw]
+(x3) edge[out=5,in=150,-stealth] (y2);
+\path[draw]
+(x4) edge[out=15,in=150,-stealth] (y3);
+\path[draw]
+(x5) edge[out=15,in=150,-stealth] (y4);
+\end{tikzpicture}
+\end{image}
 
 \begin{example}
 Consider the function $f:\mathbb{R}^2\rightarrow\mathbb{R}$ defined by $f(x,y) = xy$. We previously showed that $\text{Range }f=\mathbb{R}$, so $f$ is onto.
@@ -149,9 +294,55 @@ Another important type of function is a one-to-one, or injective, function. For 
 A function $f:X\rightarrow Y$ is \emph{one-to-one}, or \emph{injective}, if whenever $f(x_1) = f(x_2)$ for $x_1,x_2\in X$, then we must have $x_1 = x_2$.
 
 Another way to say this is that whenever $x_1\neq x_2$, we have $f(x_1)\neq f(x_2)$.
+
+
+\begin{image}
+\begin{tikzpicture}
+%% domain
+\path[draw,use Hobby shortcut,closed=true]
+(0,0) .. (0,2) .. (2,2) .. (1.5,1.5) .. (2,0);
+\node at (-.2,-.2) {$X$};
+%% codomain
+\begin{scope}[xshift=4cm]
+\node at (-.2,-.2) {$Y$};
+\path[draw,use Hobby shortcut,closed=true]
+(0,0) .. (.25,.25) .. (0,2) .. (2,3) .. (1.75,2) .. (2,0);
+\end{scope}
+%% arrow
+\node at (2.8,3.4) {$f$};
+\path[draw]
+(1.7, 2.9) edge[out=30,in=150,-stealth] (3.9,2.9);
+%% X points
+\node at (1.25,.5) (x1){};
+\fill (1.25,.5) circle(1pt);
+\node at (.75,1) (x2){};
+\fill (.75,1) circle(1pt);
+\node at (1.25,1.75) (x3){};
+\fill (1.25,1.75) circle(1pt);
+%% Y points
+\begin{scope}[xshift=4cm]
+\node at (1.25,.5) (y1){};
+\fill (1.25,.5) circle(1pt);
+\node at (.75,1) (y2){};
+\fill (.75,1) circle(1pt);
+\node at (1.25,1.75) (y3){};
+\fill (1.25,1.75) circle(1pt);
+\node at (.75,2.25) (y4){};
+\fill (.75,2.25) circle(1pt);
+\end{scope}
+%% arrows
+\path[draw]
+(x1) edge[out=-15,in=195,-stealth] (y1);
+\path[draw]
+(x2) edge[out=-15,in=195,-stealth] (y2);
+\path[draw]
+(x3) edge[out=5,in=165,-stealth] (y3);
+\end{tikzpicture}
+\end{image}
+
 \end{definition}
 
-BLOB DIAGRAM
+We can visualize this as no two elements of $X$ getting mapped to the same element of $Y$.
 
 \begin{example}
 Consider the function $f:\mathbb{R}^2\rightarrow\mathbb{R}$ defined by $f(x,y) = xy$. We have that $f(0,1) = 0$ and $f(1,0)=0$, so $f$ is not one-to-one.

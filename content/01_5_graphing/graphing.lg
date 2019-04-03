@@ -8,6 +8,13 @@ Font_Css("12"): .htf-calligraphy {font-family:cursive}
 Font_Css("14"): .htf-italic {font-style: italic;}
 Font_Css("16"): .htf-bold {font-weight: bold;}
 Font_Css("12"): .htf-calligraphy-bold {font-family:cursive ; font-weight: bold; }
+File: ./graphics/CalcPlot3D-x2.png
+File: ./graphics/CalcPlot3D-contour.png
+File: ./graphics/CalcPlot3D-x2plusy2.png
+File: ./graphics/CalcPlot3D-level_sets.png
+File: ./graphics/CalcPlot3D-x_sections.png
+File: ./graphics/CalcPlot3D-y_sections.png
+File: ./graphics/CalcPlot3D-nested_level_surfaces.png
 --- characters ---
 Font("cmr","10","10","100")
 Font("cmtt","10","10","100")
