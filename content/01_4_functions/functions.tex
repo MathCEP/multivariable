@@ -5,10 +5,6 @@
 \end{abstract}
 \maketitle
 
-In this activity, we cover the definition of a function. We also cover several important definitions and properties of functions, including domain, codomain, range, surjective and injective functions, and component functions.
-
-\section*{Definition of a Function}
-
 You've certainly seen many functions before. For example, you've worked with linear functions, such as
 \[
 f(x) = 3x+2,
@@ -37,15 +33,31 @@ y
 
 Not surprisingly, in multivariable calculus, we'll be studying functions of more than one variable. Before starting to work with these functions, we now cover some of the fundamental definitions and properties related to functions in general, beginning with the definition of a function.
 
+\section*{Definition of a Function}
+
+Although we'll often think of a function as some rule, such as $f(x) = x^2$. However, a function really consists of three pieces: a domain, a codomain, and some sort of assignment. This assignment could be given by a simple rule, like $f(x) = x^2$, or could be much more difficult to describe.
+
 \begin{definition}
 For sets $X$ and $Y$, a \emph{function} $f:X\rightarrow Y$ from $X$ to $Y$ assigns an element of $Y$ to each element of $X$.
 
 We call $X$ the \emph{domain} of $f$, and $Y$ the \emph{codomain} of $f$.
 \end{definition}
 
-VIDEO
+You might have seen some sort of ``blob'' diagram like the one below, showing that each element of $X$ gets mapped to some element of $Y$.
 
-We commonly think of $X$ as giving the set of inputs to a function, and $Y$ as containing the outputs. Each input coming from the set $X$ has to have some corresponding output, but some elements of $Y$ might not actually occur as outputs of the function.
+BLOB DIAGRAM
+
+\begin{example}
+We can define a function $f:\mathbb{R}^2\rightarrow\mathbb{R}$ by $f(x,y) = xy$.
+
+We can define a function $g:\mathbb{R}^2\rightarrow\mathbb{R}^3$ by $g(x,y) = (x+y, x-y, xy)$.
+
+For $U = \{(x,y,z)\neq (0,0,0)\}\in\mathbb{R}^3$, we can define a function $h:U\rightarrow \mathbb{R}^2$ by $h(x,y,z) = \left(\frac{x}{x^2+y^2+z^2}, \frac{y}{x^2+y^2+z^2}\right)$.
+
+\end{example}
+
+
+We can think of $X$ as the set of inputs to a function, and $Y$ as the set containing the outputs. Each input coming from the set $X$ has to have some corresponding output, but some elements of $Y$ might not actually occur as outputs of the function.
 
 \begin{problem}
 Which of the following are functions? Select All that apply.
@@ -66,7 +78,13 @@ The \emph{range} of a function $f:X\rightarrow Y$ is the set of elements $y\in Y
 \]
 \end{definition}
 
-VIDEO
+BLOB DIAGRAM
+
+\begin{example}
+Consider the function $f:\mathbb{R}^2\rightarrow\mathbb{R}$ defined by $f(x,y) = xy$. For any real number $r$, $r = f(1,r)$, so $r$ is in the range of $f$. Thus, the range of $f$ is all real numbers, $\mathbb{R}$.
+
+We can define a function $g:\mathbb{R}^2\rightarrow\mathbb{R}^3$ by $g(x,y) = (x+y, x-y, xy)$. In this case, the range of $g$ is the set $\{(x+y,x-y,xy)\;:\;x,y\in\mathbb{R}\}$, and it's somewhat difficult to find a simpler way to describe the range. However, we can see that the range of $g$ is not all of $\mathbb{R}^3$, since $(1,2,0)$ is not in the range of $g$. We can see this by writing $(1,2,0) = (x+y,x-y,xy)$, and trying to solve for $x$ and $y$. Here, $0=xy$ implies that we must have $x=0$ or $y=0$. If $x=0$, the first and second components give us $y=1$ and $y=-2$, a contradiction. If $y=0$, the first and second components give us $x=1$ and $x=2$, also a contradiction. Thus, $(1,2,0)$ is not in the range of $g$.
+\end{example}
 
 \begin{problem}
 What is the range of the function $f:\mathbb{R}\rightarrow \mathbb{R}^2$ defined by $f(x) = (x,x)$?
@@ -83,6 +101,8 @@ Sometimes we work with functions that aren't defined on all of $\mathbb{R}^n$. W
 f:D\subset\mathbb{R}^n\rightarrow\mathbb{R}^m.
 \]
 When we're working with functions on subsets of $\mathbb{R}^n$, we'll frequently want to work with the largest possible set that the function is defined on. We call this the \emph{natural domain} of the function.
+
+Often, we'll define a function just by giving a ``rule'' determining its assignment, and in this case, you should assume that the domain is the natural domain.
 
 \begin{problem}
 What is the natural domain of the function $f(x,y) = \dfrac{x}{x-y}$?
@@ -105,7 +125,13 @@ Y = \textrm{Range }f.
 \]
 \end{definition}
 
-VIDEO
+BLOB DIAGRAM
+
+\begin{example}
+Consider the function $f:\mathbb{R}^2\rightarrow\mathbb{R}$ defined by $f(x,y) = xy$. We previously showed that $\text{Range }f=\mathbb{R}$, so $f$ is onto.
+
+Consider the function $g:\mathbb{R}^2\rightarrow\mathbb{R}^3$ defined by $g(x,y) = (x+y, x-y, xy)$. We previously showed that $\text{Range }g=\mathbb{R}^3$, so $g$ is not onto.
+\end{example}
 
 \begin{problem}
 Which of the following functions are onto? Select all that apply.
@@ -125,7 +151,24 @@ A function $f:X\rightarrow Y$ is \emph{one-to-one}, or \emph{injective}, if when
 Another way to say this is that whenever $x_1\neq x_2$, we have $f(x_1)\neq f(x_2)$.
 \end{definition}
 
-VIDEO
+BLOB DIAGRAM
+
+\begin{example}
+Consider the function $f:\mathbb{R}^2\rightarrow\mathbb{R}$ defined by $f(x,y) = xy$. We have that $f(0,1) = 0$ and $f(1,0)=0$, so $f$ is not one-to-one.
+
+Consider the function $g:\mathbb{R}^2\rightarrow\mathbb{R}^3$ defined by $g(x,y) = (x+y, x-y, xy)$. We'll show that $g$ is one-to-one, by showing that if two inputs map to the same output, they must have been the same input. That is, suppose we have $g(x_1,y_1) = g(x_2,y_2)$. Then
+\[
+(x_1+y_1, x_1-y_1, x_1y_1) = (x_2+y_2, x_2-y_2, x_2y_2).
+\]
+In order to show that $x_1=x_2$ and $y_1=y_2$, we actually only need to look at the first two components, which give us the system of equations
+\[
+\begin{cases}
+x_1+y_1 = x_2+y_2\\
+x_1-y_1 = x_2-y_2\\
+\end{cases}.
+\]
+Adding these two equations together, we obtain $2x_1 = 2x_2$, which implies $x_1 = x_2$. Substituting this into the first equation, we then also get that $y_1=y_2$. So, we have shown that $g$ is one-to-one.
+\end{example}
 
 \begin{problem}
 Which of the following functions are injective? Select all that apply.
@@ -148,8 +191,14 @@ f(\vec{x}) = (f_1(\vec{x}),f_2(\vec{x}),...,f_m(\vec{x})).
 \]
 \end{definition}
 
-\section*{Conclusion}
-
-We covered the definition of a function. We also covered several important definitions and properties of functions, including domain, codomain, range, surjective and injective functions, and component functions.
+\begin{example}
+Consider the function $g:\mathbb{R}^2\rightarrow\mathbb{R}^3$ defined by $g(x,y) = (x+y, x-y, xy)$. The component functions of $g$ are
+\begin{align*}
+g_1(x,y) &= x+y,\\
+g_2(x,y) &= x-y,\\
+g_3(x,y) &= xy.
+\end{align*}
+Notice that each of these is a function $\mathbb{R}^2\rightarrow\mathbb{R}$.
+\end{example}
 
 \end{document}
