@@ -116,7 +116,7 @@ f_2(x_1,x_2,x_3) &= \answer{-2x_1 + x_3}
 \begin{problem}
 Consider the function
 \[
-f(x,y) = xy.
+f(x,y) = -xy.
 \]
 What is the shape of the level curve at height $0$ of $f$?
 \begin{multipleChoice}
@@ -168,12 +168,12 @@ What is the shape of the level curve at height $2$ of $f$?
 
 Which of the following is the graph of $f$?
 
-\begin{image}
-\begin{tikzpicture}
-\node[inner sep=0pt] at (0,0)
-    {\includegraphics{quadric_options}};
-\end{tikzpicture}
-\end{image}
+\begin{multipleChoice}
+\choice{\begin{image}\includegraphics[width=\textwidth]{CalcPlot3D-quadric_options_incorrect1}\end{image}}
+\choice[correct]{\begin{image}\includegraphics[width=\textwidth]{CalcPlot3D-quadric_options_correct}\end{image}}
+\choice{\begin{image}\includegraphics[width=\textwidth]{CalcPlot3D-quadric_options_incorrect2}\end{image}}
+\choice{\begin{image}\includegraphics[width=\textwidth]{CalcPlot3D-quadric_options_incorrect3}\end{image}}
+\end{multipleChoice}
 \end{problem}
 
 \begin{problem}
@@ -231,12 +231,12 @@ What is the shape of the level curve at height $2$ of $f$?
 
 Which of the following is the graph of $f$?
 
-\begin{image}
-\begin{tikzpicture}
-\node[inner sep=0pt] at (0,0)
-    {\includegraphics{wedge_options}};
-\end{tikzpicture}
-\end{image}
+\begin{multipleChoice}
+\choice{\begin{image}\includegraphics[width=\textwidth]{CalcPlot3D-abs_incorrect1}\end{image}}
+\choice[correct]{\begin{image}\includegraphics[width=\textwidth]{CalcPlot3D-abs_correct}\end{image}}
+\choice{\begin{image}\includegraphics[width=\textwidth]{CalcPlot3D-abs_incorrect2}\end{image}}
+\choice{\begin{image}\includegraphics[width=\textwidth]{CalcPlot3D-abs_incorrect3}\end{image}}
+\end{multipleChoice}
 \end{problem}
 
 \begin{problem}
@@ -246,9 +246,9 @@ Which of the following is the graph of the ellipsoid
 \]
 
 \begin{multipleChoice}
-\choice[correct]{\includegraphics[width=.5\textwidth]{CalcPlot3D-correct_ellipse}}
-\choice{\includegraphics[width=.5\textwidth]{CalcPlot3D-incorrect_ellipse1}}
-\choice{\includegraphics[width=.5\textwidth]{CalcPlot3D-incorrect_ellipse2}}
+\choice[correct]{\begin{image}\includegraphics[width=.5\textwidth]{CalcPlot3D-correct_ellipse}\end{image}}
+\choice{\begin{image}\includegraphics[width=.5\textwidth]{CalcPlot3D-incorrect_ellipse1}\end{image}}
+\choice{\begin{image}\includegraphics[width=.5\textwidth]{CalcPlot3D-incorrect_ellipse2}\end{image}}
 \end{multipleChoice}
 
 Is there a function $f(x,y)$ such that the graph of $f$ is the ellipsoid above?
@@ -290,10 +290,10 @@ It is centered at the point $\answer{(0,-1,0)}$.
 Which of the following is the graph of the quadric surface given above?
 
 \begin{multipleChoice}
-\choice{\includegraphics[width=.5\textwidth]{CalcPlot3D-incorrect_shifted_ellipse1}}
-\choice[correct]{\includegraphics[width=.5\textwidth]{CalcPlot3D-correct_shifted_ellipse}}
-\choice{\includegraphics[width=.5\textwidth]{CalcPlot3D-incorrect_shifted_ellipse2}}
-\choice{\includegraphics[width=.5\textwidth]{CalcPlot3D-incorrect_shifted_ellipse3}}
+\choice{\begin{image}\includegraphics[width=.5\textwidth]{CalcPlot3D-incorrect_shifted_ellipse1}\end{image}}
+\choice[correct]{\begin{image}\includegraphics[width=.5\textwidth]{CalcPlot3D-correct_shifted_ellipse}\end{image}}
+\choice{\begin{image}\includegraphics[width=.5\textwidth]{CalcPlot3D-incorrect_shifted_ellipse2}\end{image}}
+\choice{\begin{image}\includegraphics[width=.5\textwidth]{CalcPlot3D-incorrect_shifted_ellipse3}\end{image}}
 \end{multipleChoice}
 \end{problem}
 
@@ -321,10 +321,10 @@ It is centered at the point $\answer{(0,2,-4)}$.
 Which of the following is the graph of the quadric surface given above?
 
 \begin{multipleChoice}
-\choice{\includegraphics[width=.5\textwidth]{CalcPlot3D-incorrect_paraboloid1}}
-\choice{\includegraphics[width=.5\textwidth]{CalcPlot3D-incorrect_paraboloid2}}
-\choice{\includegraphics[width=.5\textwidth]{CalcPlot3D-incorrect_paraboloid3}}
-\choice[correct]{\includegraphics[width=.5\textwidth]{CalcPlot3D-correct_paraboloid}}
+\choice{\begin{image}\includegraphics[width=.5\textwidth]{CalcPlot3D-incorrect_paraboloid1}\end{image}}
+\choice{\begin{image}\includegraphics[width=.5\textwidth]{CalcPlot3D-incorrect_paraboloid2}\end{image}}
+\choice{\begin{image}\includegraphics[width=.5\textwidth]{CalcPlot3D-incorrect_paraboloid3}\end{image}}
+\choice[correct]{\begin{image}\includegraphics[width=.5\textwidth]{CalcPlot3D-correct_paraboloid}\end{image}}
 \end{multipleChoice}
 \end{problem}
 
@@ -371,5 +371,7 @@ Use level curves and/or sections to justify why your drawing is correct.
 \item Suppose we have a surface such that the level sets at $z=C$ are always given by $g(x,y)=1$, for some function $g$ of $x$ and $y$. Describe this surface, and draw the surface for some ``generic'' function $g$. 
 \end{enumerate}
 \end{problem}
+
+\textit{Images were generated using \href{https://www.monroecc.edu/faculty/paulseeburger/calcnsf/CalcPlot3D/}{CalcPlot3D}.}
 
 \end{document}

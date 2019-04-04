@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  3 APR 2019 16:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  4 APR 2019 15:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1000,43 +1000,95 @@ LaTeX Font Warning: Font shape `OT1/cmss/bx/sl' undefined
 
 ]
 [2] [3] [4]
-<./graphics/quadric_options.pdf, id=96, 559.35623pt x 145.58891pt>
-File: ./graphics/quadric_options.pdf Graphic file (type pdf)
-<use ./graphics/quadric_options.pdf>
-Package pdftex.def Info: ./graphics/quadric_options.pdf  used on input line 176
-.
-(pdftex.def)             Requested size: 559.35486pt x 145.58855pt.
- [5 <./graphics/quadric_options.pdf, page is rotated 180 degrees>]
-[6]
-<./graphics/wedge_options.pdf, id=148, 577.3523pt x 137.42863pt>
-File: ./graphics/wedge_options.pdf Graphic file (type pdf)
-<use ./graphics/wedge_options.pdf>
-Package pdftex.def Info: ./graphics/wedge_options.pdf  used on input line 239.
-(pdftex.def)             Requested size: 577.35088pt x 137.42828pt.
-<./graphics/CalcPlot3D-correct_ellipse.png, id=149, 1551.7975pt x 1096.095pt>
+<./graphics/CalcPlot3D-quadric_options_incorrect1.png, id=96, 1555.8125pt x 103
+7.8775pt>
+File: ./graphics/CalcPlot3D-quadric_options_incorrect1.png Graphic file (type p
+ng)
+<use ./graphics/CalcPlot3D-quadric_options_incorrect1.png>
+Package pdftex.def Info: ./graphics/CalcPlot3D-quadric_options_incorrect1.png  
+used on input line 172.
+(pdftex.def)             Requested size: 345.0pt x 230.13914pt.
+ [5]
+<./graphics/CalcPlot3D-quadric_options_correct.png, id=118, 1551.7975pt x 1096.
+095pt>
+File: ./graphics/CalcPlot3D-quadric_options_correct.png Graphic file (type png)
+
+<use ./graphics/CalcPlot3D-quadric_options_correct.png>
+Package pdftex.def Info: ./graphics/CalcPlot3D-quadric_options_correct.png  use
+d on input line 173.
+(pdftex.def)             Requested size: 345.0pt x 243.68385pt.
+<./graphics/CalcPlot3D-quadric_options_incorrect2.png, id=119, 1551.7975pt x 10
+96.095pt>
+File: ./graphics/CalcPlot3D-quadric_options_incorrect2.png Graphic file (type p
+ng)
+<use ./graphics/CalcPlot3D-quadric_options_incorrect2.png>
+Package pdftex.def Info: ./graphics/CalcPlot3D-quadric_options_incorrect2.png  
+used on input line 174.
+(pdftex.def)             Requested size: 345.0pt x 243.68385pt.
+<./graphics/CalcPlot3D-quadric_options_incorrect3.png, id=120, 1551.7975pt x 10
+96.095pt>
+File: ./graphics/CalcPlot3D-quadric_options_incorrect3.png Graphic file (type p
+ng)
+<use ./graphics/CalcPlot3D-quadric_options_incorrect3.png>
+Package pdftex.def Info: ./graphics/CalcPlot3D-quadric_options_incorrect3.png  
+used on input line 175.
+(pdftex.def)             Requested size: 345.0pt x 243.68385pt.
+ [6 <./graphics/CalcPlot3D-quadric_options_incorrect1.png> <./graphics/CalcPlot
+3D-quadric_options_correct.png> <./graphics/CalcPlot3D-quadric_options_incorrec
+t2.png>] [7 <./graphics/CalcPlot3D-quadric_options_incorrect3.png>]
+<./graphics/CalcPlot3D-abs_incorrect1.png, id=150, 1551.7975pt x 1096.095pt>
+File: ./graphics/CalcPlot3D-abs_incorrect1.png Graphic file (type png)
+<use ./graphics/CalcPlot3D-abs_incorrect1.png>
+Package pdftex.def Info: ./graphics/CalcPlot3D-abs_incorrect1.png  used on inpu
+t line 235.
+(pdftex.def)             Requested size: 345.0pt x 243.68385pt.
+ [8]
+<./graphics/CalcPlot3D-abs_correct.png, id=176, 1551.7975pt x 1096.095pt>
+File: ./graphics/CalcPlot3D-abs_correct.png Graphic file (type png)
+<use ./graphics/CalcPlot3D-abs_correct.png>
+Package pdftex.def Info: ./graphics/CalcPlot3D-abs_correct.png  used on input l
+ine 236.
+(pdftex.def)             Requested size: 345.0pt x 243.68385pt.
+<./graphics/CalcPlot3D-abs_incorrect2.png, id=177, 1551.7975pt x 1096.095pt>
+File: ./graphics/CalcPlot3D-abs_incorrect2.png Graphic file (type png)
+<use ./graphics/CalcPlot3D-abs_incorrect2.png>
+Package pdftex.def Info: ./graphics/CalcPlot3D-abs_incorrect2.png  used on inpu
+t line 237.
+(pdftex.def)             Requested size: 345.0pt x 243.68385pt.
+<./graphics/CalcPlot3D-abs_incorrect3.png, id=178, 1551.7975pt x 1096.095pt>
+File: ./graphics/CalcPlot3D-abs_incorrect3.png Graphic file (type png)
+<use ./graphics/CalcPlot3D-abs_incorrect3.png>
+Package pdftex.def Info: ./graphics/CalcPlot3D-abs_incorrect3.png  used on inpu
+t line 238.
+(pdftex.def)             Requested size: 345.0pt x 243.68385pt.
+ [9 <./graphics/CalcPlot3D-abs_incorrect1.png> <./graphics/CalcPlot3D-abs_corre
+ct.png> <./graphics/CalcPlot3D-abs_incorrect2.png>]
+<./graphics/CalcPlot3D-correct_ellipse.png, id=189, 1551.7975pt x 1096.095pt>
 File: ./graphics/CalcPlot3D-correct_ellipse.png Graphic file (type png)
 <use ./graphics/CalcPlot3D-correct_ellipse.png>
 Package pdftex.def Info: ./graphics/CalcPlot3D-correct_ellipse.png  used on inp
 ut line 249.
 (pdftex.def)             Requested size: 172.5pt x 121.84192pt.
- [7 <./graphics/wedge_options.pdf, page is rotated 180 degrees>]
-<./graphics/CalcPlot3D-incorrect_ellipse1.png, id=178, 1551.7975pt x 1096.095pt
+<./graphics/CalcPlot3D-incorrect_ellipse1.png, id=190, 1551.7975pt x 1096.095pt
 >
 File: ./graphics/CalcPlot3D-incorrect_ellipse1.png Graphic file (type png)
 <use ./graphics/CalcPlot3D-incorrect_ellipse1.png>
 Package pdftex.def Info: ./graphics/CalcPlot3D-incorrect_ellipse1.png  used on 
 input line 250.
 (pdftex.def)             Requested size: 172.5pt x 121.84192pt.
-<./graphics/CalcPlot3D-incorrect_ellipse2.png, id=179, 1551.7975pt x 1096.095pt
+ [10 <./graphics/CalcPlot3D-abs_incorrect3.png> <./graphics/CalcPlot3D-correct_
+ellipse.png>]
+<./graphics/CalcPlot3D-incorrect_ellipse2.png, id=199, 1551.7975pt x 1096.095pt
 >
 File: ./graphics/CalcPlot3D-incorrect_ellipse2.png Graphic file (type png)
 <use ./graphics/CalcPlot3D-incorrect_ellipse2.png>
 Package pdftex.def Info: ./graphics/CalcPlot3D-incorrect_ellipse2.png  used on 
 input line 251.
 (pdftex.def)             Requested size: 172.5pt x 121.84192pt.
- [8 <./graphics/CalcPlot3D-correct_ellipse.png> <./graphics/CalcPlot3D-incorrec
-t_ellipse1.png> <./graphics/CalcPlot3D-incorrect_ellipse2.png>]
-<./graphics/CalcPlot3D-incorrect_shifted_ellipse1.png, id=193, 1551.7975pt x 10
+
+[11 <./graphics/CalcPlot3D-incorrect_ellipse1.png> <./graphics/CalcPlot3D-incor
+rect_ellipse2.png>]
+<./graphics/CalcPlot3D-incorrect_shifted_ellipse1.png, id=214, 1551.7975pt x 10
 96.095pt>
 File: ./graphics/CalcPlot3D-incorrect_shifted_ellipse1.png Graphic file (type p
 ng)
@@ -1044,7 +1096,7 @@ ng)
 Package pdftex.def Info: ./graphics/CalcPlot3D-incorrect_shifted_ellipse1.png  
 used on input line 293.
 (pdftex.def)             Requested size: 172.5pt x 121.84192pt.
-<./graphics/CalcPlot3D-correct_shifted_ellipse.png, id=194, 1551.7975pt x 1096.
+<./graphics/CalcPlot3D-correct_shifted_ellipse.png, id=215, 1551.7975pt x 1096.
 095pt>
 File: ./graphics/CalcPlot3D-correct_shifted_ellipse.png Graphic file (type png)
 
@@ -1052,8 +1104,8 @@ File: ./graphics/CalcPlot3D-correct_shifted_ellipse.png Graphic file (type png)
 Package pdftex.def Info: ./graphics/CalcPlot3D-correct_shifted_ellipse.png  use
 d on input line 294.
 (pdftex.def)             Requested size: 172.5pt x 121.84192pt.
- [9 <./graphics/CalcPlot3D-incorrect_shifted_ellipse1.png>]
-<./graphics/CalcPlot3D-incorrect_shifted_ellipse2.png, id=210, 1551.7975pt x 10
+ [12 <./graphics/CalcPlot3D-incorrect_shifted_ellipse1.png>]
+<./graphics/CalcPlot3D-incorrect_shifted_ellipse2.png, id=228, 1551.7975pt x 10
 96.095pt>
 File: ./graphics/CalcPlot3D-incorrect_shifted_ellipse2.png Graphic file (type p
 ng)
@@ -1061,7 +1113,7 @@ ng)
 Package pdftex.def Info: ./graphics/CalcPlot3D-incorrect_shifted_ellipse2.png  
 used on input line 295.
 (pdftex.def)             Requested size: 172.5pt x 121.84192pt.
-<./graphics/CalcPlot3D-incorrect_shifted_ellipse3.png, id=211, 1551.7975pt x 10
+<./graphics/CalcPlot3D-incorrect_shifted_ellipse3.png, id=229, 1551.7975pt x 10
 96.095pt>
 File: ./graphics/CalcPlot3D-incorrect_shifted_ellipse3.png Graphic file (type p
 ng)
@@ -1069,62 +1121,62 @@ ng)
 Package pdftex.def Info: ./graphics/CalcPlot3D-incorrect_shifted_ellipse3.png  
 used on input line 296.
 (pdftex.def)             Requested size: 172.5pt x 121.84192pt.
- [10 <./graphics/CalcPlot3D-correct_shifted_ellipse.png> <./graphics/CalcPlot3D
--incorrect_shifted_ellipse2.png> <./graphics/CalcPlot3D-incorrect_shifted_ellip
-se3.png>]
-<./graphics/CalcPlot3D-incorrect_paraboloid1.png, id=223, 1551.7975pt x 1096.09
+[13 <./graphics/CalcPlot3D-correct_shifted_ellipse.png> <./graphics/CalcPlot3D-
+incorrect_shifted_ellipse2.png> <./graphics/CalcPlot3D-incorrect_shifted_ellips
+e3.png>]
+<./graphics/CalcPlot3D-incorrect_paraboloid1.png, id=241, 1551.7975pt x 1096.09
 5pt>
 File: ./graphics/CalcPlot3D-incorrect_paraboloid1.png Graphic file (type png)
 <use ./graphics/CalcPlot3D-incorrect_paraboloid1.png>
 Package pdftex.def Info: ./graphics/CalcPlot3D-incorrect_paraboloid1.png  used 
 on input line 324.
 (pdftex.def)             Requested size: 172.5pt x 121.84192pt.
-<./graphics/CalcPlot3D-incorrect_paraboloid2.png, id=224, 1551.7975pt x 1096.09
+<./graphics/CalcPlot3D-incorrect_paraboloid2.png, id=242, 1551.7975pt x 1096.09
 5pt>
 File: ./graphics/CalcPlot3D-incorrect_paraboloid2.png Graphic file (type png)
 <use ./graphics/CalcPlot3D-incorrect_paraboloid2.png>
 Package pdftex.def Info: ./graphics/CalcPlot3D-incorrect_paraboloid2.png  used 
 on input line 325.
 (pdftex.def)             Requested size: 172.5pt x 121.84192pt.
-<./graphics/CalcPlot3D-incorrect_paraboloid3.png, id=225, 1551.7975pt x 1096.09
+ [14 <./graphics/CalcPlot3D-incorrect_paraboloid1.png>]
+<./graphics/CalcPlot3D-incorrect_paraboloid3.png, id=255, 1551.7975pt x 1096.09
 5pt>
 File: ./graphics/CalcPlot3D-incorrect_paraboloid3.png Graphic file (type png)
 <use ./graphics/CalcPlot3D-incorrect_paraboloid3.png>
 Package pdftex.def Info: ./graphics/CalcPlot3D-incorrect_paraboloid3.png  used 
 on input line 326.
 (pdftex.def)             Requested size: 172.5pt x 121.84192pt.
- [11 <./graphics/CalcPlot3D-incorrect_paraboloid1.png> <./graphics/CalcPlot3D-i
-ncorrect_paraboloid2.png>]
-<./graphics/CalcPlot3D-correct_paraboloid.png, id=239, 1551.7975pt x 1096.095pt
+<./graphics/CalcPlot3D-correct_paraboloid.png, id=256, 1551.7975pt x 1096.095pt
 >
 File: ./graphics/CalcPlot3D-correct_paraboloid.png Graphic file (type png)
 <use ./graphics/CalcPlot3D-correct_paraboloid.png>
 Package pdftex.def Info: ./graphics/CalcPlot3D-correct_paraboloid.png  used on 
 input line 327.
 (pdftex.def)             Requested size: 172.5pt x 121.84192pt.
- [12 <./graphics/CalcPlot3D-incorrect_paraboloid3.png> <./graphics/CalcPlot3D-c
-orrect_paraboloid.png>] [13]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 375.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 375.
- (./hw_graphing.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 375.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 375.
+ [15 <./graphics/CalcPlot3D-incorrect_paraboloid2.png> <./graphics/CalcPlot3D-i
+ncorrect_paraboloid3.png> <./graphics/CalcPlot3D-correct_paraboloid.png>] [16]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 377.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 377.
+
+(./hw_graphing.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 377.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 377.
 Package rerunfilecheck Info: File `hw_graphing.out' has not changed.
 (rerunfilecheck)             Checksum: 33C51A25FE7BDC4C12A303974FCB1EA8;56.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 375.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 377.
  ) 
 Here is how much of TeX's memory you used:
- 29622 strings out of 492649
- 693866 string characters out of 6129622
+ 29634 strings out of 492649
+ 694650 string characters out of 6129622
  863520 words of memory out of 5000000
- 32796 multiletter control sequences out of 15000+600000
+ 32791 multiletter control sequences out of 15000+600000
  14427 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 69i,13n,98p,803b,740s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 69i,13n,98p,803b,708s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxsl10.pf
 b></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
@@ -1135,12 +1187,13 @@ usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr
 cal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/loc
 al/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/lo
 cal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loc
-al/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr
-/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on hw_graphing.pdf (13 pages, 1794984 bytes).
+al/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/loca
+l/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/
+local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on hw_graphing.pdf (16 pages, 3045845 bytes).
 PDF statistics:
- 334 PDF objects out of 1000 (max. 8388607)
- 276 compressed objects within 3 object streams
- 153 named destinations out of 1000 (max. 500000)
- 86 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 359 PDF objects out of 1000 (max. 8388607)
+ 287 compressed objects within 3 object streams
+ 164 named destinations out of 1000 (max. 500000)
+ 116 words of extra memory for PDF output out of 10000 (max. 10000000)
 

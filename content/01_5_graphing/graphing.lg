@@ -14,6 +14,11 @@ File: ./graphics/CalcPlot3D-x2plusy2.png
 File: ./graphics/CalcPlot3D-level_sets.png
 File: ./graphics/CalcPlot3D-x_sections.png
 File: ./graphics/CalcPlot3D-y_sections.png
+File: ./graphics/CalcPlot3D-cone.png
+File: ./graphics/CalcPlot3D-hyper_para1.png
+File: ./graphics/CalcPlot3D-hyper_para2.png
+File: ./graphics/CalcPlot3D-hyperboloid1.png
+File: ./graphics/CalcPlot3D-hyperboloid2.png
 File: ./graphics/CalcPlot3D-nested_level_surfaces.png
 --- characters ---
 Font("cmr","10","10","100")

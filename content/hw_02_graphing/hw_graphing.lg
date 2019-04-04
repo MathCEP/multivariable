@@ -9,6 +9,17 @@ Font_Css("16"): .htf-bold {font-weight: bold;}
 Font_Css("12"): .htf-calligraphy-bold {font-family:cursive ; font-weight: bold; }
 File: @base.svg
 File: @base.svg
+File: ./graphics/CalcPlot3D-correct_ellipse.png
+File: ./graphics/CalcPlot3D-incorrect_ellipse1.png
+File: ./graphics/CalcPlot3D-incorrect_ellipse2.png
+File: ./graphics/CalcPlot3D-incorrect_shifted_ellipse1.png
+File: ./graphics/CalcPlot3D-correct_shifted_ellipse.png
+File: ./graphics/CalcPlot3D-incorrect_shifted_ellipse2.png
+File: ./graphics/CalcPlot3D-incorrect_shifted_ellipse3.png
+File: ./graphics/CalcPlot3D-incorrect_paraboloid1.png
+File: ./graphics/CalcPlot3D-incorrect_paraboloid2.png
+File: ./graphics/CalcPlot3D-incorrect_paraboloid3.png
+File: ./graphics/CalcPlot3D-correct_paraboloid.png
 --- characters ---
 Font("cmr","10","10","100")
 Font("cmtt","10","10","100")
