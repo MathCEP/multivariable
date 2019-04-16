@@ -8,11 +8,14 @@
 \end{abstract}
 \maketitle
 
-In this activity, we explore some important properties of the velocity and speed of a parametrized curve.
+In single variable calculus, we used the product rule to differentiate products of functions. For example, for $f(x) = x^2$ and $g(x) = \sin(x)$, we can find the derivative of $(fg)(x) = x^2\sin(x)$ as
+\begin{align*}
+(fg)'(x) &= f'(x)g(x)+f(x)g'(x)\\
+&= 2x\sin(x)+x^2\cos(x).
+\end{align*}
+Although we can't take the product of two vectors in general, we do have the dot product and cross product, and we would like to understand how differentiation interacts with these products. Fortunately, they turn out to be very similar to the product rule from single variable calculus. 
 
-\section*{Differentiation Laws}
-
-In single variable calculus, we used the product rule to differentiate products of functions. Although we can't take the product of two vectors in general, we do have the dot product and cross product, and we would like to understand how differentiation interacts with these products. Fortunately, they turn out to be very similar to the product rule from single variable calculus. 
+\section*{Product rules}
 
 \begin{proposition}
 Consider paths $\vec{x}$ and $\vec{y}$ in $\mathbb{R}^n$. For $t$ such that $\vec{x}'(t)$ and $\vec{y}'(t)$ both exist, we have
@@ -45,22 +48,58 @@ Notice that the left summand is $\vec{x}'(t)\cdot\vec{y}(t)$ and the right summa
 \end{proof}
 
 
-\section*{Constant Speed Path}
+\section*{Paths on spheres}
 
-To finish up our unit on parametrized paths, we consider the special case where a path is constant distance from the origin. In this case, the path $\vec{x}$ is always perpendicular to its derivative. This makes sense intuitively, if you imagine a particle on the path moving in the direction of its velocity vector. If the velocity vector $\vec{v}$ were not perpendicular to $\vec{x}$, a particle moving a tiny distance along the path would have to move either closer to the origin or farther from the origin.
+Dot products can be used to tell us important information about the geometry of vectors. In particular, two vectors $\vec{v}$ and $\vec{w}$ in $\mathbb{R}^n$ are perpendicular if and only if $\vec{v}\cdot\vec{w}=\answer{0}$. Furthermore, the length of a vector $\vec{v}$ can be computed using the dot product, as $\|\vec{v}\| =\sqrt{\vec{v}\cdot\vec{v}}$.
 
-PICTURE
+We'll use these observations to determine the behavior of paths in a special case: when we have a curve which lies on a sphere.
 
-\begin{proposition}
-If $\vec{x}(t)$ has constant length, then $\vec{x}(t)$ is perpendicular to $\vec{x}'(t)$, for all $t$ such that $\vec{x}'(t)$ is defined.
-\end{proposition}
+Suppose $\vec{x}(t)$ lies on a sphere of radius $C$. In this case, for the position vector $\vec{x}(t)$, we have $\|\vec{x}(t)\|=C$. We can rewrite this in terms of dot products as $\vec{x}(t)\cdot\vec{x}(t)=C^2$. Differentiating this equation and using our above observations about dot products, it can be shown that $\vec{x}(t)$ and $\vec{x}'(t)$ are perpendicular.
 
-We leave the proof of this proposition as an exercise. It's helpful to think about how the dot product $\vec{x}(t)\cdot\vec{x}(t)$ relates to the length of $\vec{x}(t)$.
+Thus, for any parametrization of a curve which lies on a sphere, the velocity vector will always be perpendicular to the position vector.
+
+\begin{example}
+Let's verify this result for the path $\vec{x}(t) = (\cos(t^3+t)\sin(t), \sin(t^3+t)\sin(t), \cos(t)$ in $\mathbb{R}^3$, which lies on the unit sphere. Since this path lies on a sphere, we'd expect that
+\begin{multipleChoice}
+\choice{$\vec{x}(t)$ and $\vec{x}'(t)$ are parallel.}
+\choice[correct]{$\vec{x}(t)$ and $\vec{x}'(t)$ are perpendicular.}
+\choice{$\vec{x}'(t)$ is the zero vector.}
+\choice{$\vec{x}'(t)$ also lies on the sphere.}
+\end{multipleChoice}
+
+First, we'll verify that this path lies on the sphere of radius $1$ by computing $\|\vec{x}(t)\|$. Repeatedly using the Pythagorean identity $\sin^2(x)+\cos^2(x)=1$, we have
+\begin{align*}
+\|\vec{x}(t)\| &= \sqrt{\cos^2(t^3+t)\sin^2(t) + \sin^2(t^3+t)\sin^2(t) + \cos^2(t)}\\
+&= \sqrt{(\cos^2(t^3+t) + \sin^2(t^3+t))\sin^2(t) + \cos^2(t)}\\
+&= \sqrt{1\cdot\sin^2(t) + \cos^2(t)}\\
+&= \sqrt{1}\\
+&= 1.
+\end{align*}
+Now, let's compute the velocity vector $\vec{x}'(t)$. Using the product rule and chain rule, we have
+\[
+\vec{x}'(t) = (-\sin(t^3+t)(3t^2+1)\sin(t) + \cos(t^3+t)\cos(t), \cos(t^3+t)(3t^2+1)\sin(t) + \sin(t^3+t)\cos(t), -\sin(t)).
+\]
+To check that $\vec{x}'(t)$ is perpendicular to $\vec{x}(t)$, we compute their dot product,
+\begin{align*}
+\vec{x}(t)\cdot \vec{x}'(t) =& \left(\cos(t^3+t)\sin(t)\right)\left(-\sin(t^3+t)(3t^2+1)\sin(t) + \cos(t^3+t)\cos(t)\right)\\
+& + \left(\sin(t^3+t)\sin(t)\right)\left(\cos(t^3+t)(3t^2+1)\sin(t) + \sin(t^3+t)\cos(t)\right) + \left(\cos(t)\right)\left(-\sin(t)\right).
+\end{align*}
+Incredibly, this unwieldy expression simplifies very nicely.
+\begin{align*}
+\vec{x}(t)\cdot \vec{x}'(t) =& -(3t^2+1)\cos(t^3+t)\sin(t^3+t)\cos(t)\sin(t) + \cos^2(t^3+t)\cos(t)\sin(t)\\
+&+ (3t^2+1)\cos(t^3+t)\sin(t^3+t)\cos(t)\sin(t) + \sin^2(t^3+t)\cos(t)\sin(t)-\cos(t)\sin(t)\\
+=& \cos^2(t^3+t)\cos(t)\sin(t) +  \sin^2(t^3+t)\cos(t)\sin(t)-\cos(t)\sin(t)\\
+=& \cos(t)\sin(t)-\cos(t)\sin(t)\\
+=& 0.
+\end{align*}
+Thus, we have verifies that $\vec{x}(t)$ and $\vec{x}'(t)$ are perpendicular.
+
+The path is graphed below for $-2\leq t\leq 2$, and we show how the velocity vector changes as $t$ increases. The position vector is shown in blue, and the velocity vector in black. Note that they are always perpendicular.
+
+\youtube{BZ78A01v5yk}
+
+\end{example}
 
 
-
-\section*{Conclusion}
-
-In this activity, we explore some important properties of the velocity and speed of a parametrized curve.
 
 \end{document}
