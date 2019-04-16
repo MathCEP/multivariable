@@ -1,9 +1,5 @@
 \expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi
-\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{Q1-1-1}{}{Review of Parametrizations in $\mathbb  {R}^2$}}{1}\relax 
-\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-1000}{QQ2-1-2}{Review of Parametrizations in $\mathbb  {R}^2$}}{1}\relax 
-\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{Q1-1-3}{}{Parametrizing Curves in $\mathbb  {R}^n$}}{2}\relax 
-\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-2000}{QQ2-1-4}{Parametrizing Curves in $\mathbb  {R}^n$}}{2}\relax 
-\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{Q1-1-5}{}{Examples in $\mathbb  {R}^3$}}{4}\relax 
-\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-3000}{QQ2-1-6}{Examples in $\mathbb  {R}^3$}}{4}\relax 
-\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{Q1-1-7}{}{Conclusion}}{5}\relax 
-\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-4000}{QQ2-1-8}{Conclusion}}{5}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{Q1-1-1}{}{Parametric Curves in $\mathbb  {R}^n$}}{2}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-1000}{QQ2-1-2}{Parametric Curves in $\mathbb  {R}^n$}}{2}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{Q1-1-3}{}{Examples in $\mathbb  {R}^3$}}{4}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-2000}{QQ2-1-4}{Examples in $\mathbb  {R}^3$}}{4}\relax 

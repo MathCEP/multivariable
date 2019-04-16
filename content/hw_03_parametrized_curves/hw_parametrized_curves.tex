@@ -6,93 +6,34 @@
 \end{abstract}
 \maketitle
 \section*{Online Problems}
-\begin{problem}
-Two ants are running on the top of a table. Their paths are described by
-\[
-\vec{x}(t) = (t^2+1,2t-1)
-\]
-and
-\[
-\vec{y}(t) = (\sqrt{t+3}, t),
-\]
-with coordinates in inches, for $t\geq 0$ in seconds.
-
-At what time do the ants collide?
-\[
-t = \answer{1}
-\]
-
-Where do the ants collide?
-\[
-(x,y) = \answer{(2,1)}
-\]
-
-\end{problem}
 
 \begin{problem}
-Several parametrized curves are graphed below, and the arrow indicates the direction in which the parameter increases.
-
-PICTURE
-
-Which is the graph of the path $\vec{x}(t) = (4-t, 2t+1)$, for $-1\leq t\leq 1$?
+Several parametrized curves are graphed below, and the arrow indicates the direction in which the parameter increases. Which is the graph of the path $\vec{x}(t) = (4-t, 2t+1)$, for $-1\leq t\leq 1$?
 \begin{multipleChoice}
-\choice{(a)}
-\choice{(b)}
-\choice{(c)}
-\choice{(d)}
-\choice{(e)}
+\choice{\begin{image}\includegraphics[width =\textwidth]{CalcPlot3D-line_incorrect1}\end{image}}
+\choice[correct]{\begin{image}\includegraphics[width =\textwidth]{CalcPlot3D-line_correct}\end{image}}
+\choice{\begin{image}\includegraphics[width =\textwidth]{CalcPlot3D-line_incorrect2}\end{image}}
+\choice{\begin{image}\includegraphics[width =\textwidth]{CalcPlot3D-line_incorrect3}\end{image}}
+\choice{\begin{image}\includegraphics[width =\textwidth]{CalcPlot3D-line_incorrect4}\end{image}}
+\choice{\begin{image}\includegraphics[width =\textwidth]{CalcPlot3D-line_incorrect5}\end{image}}
 \end{multipleChoice}
 \end{problem}
 
 \begin{problem}
-Several parametrized curves are graphed below, and the arrow indicates the direction in which the parameter increases.
-
-PICTURE
-
-Which is the graph of the path $\vec{x}(t) = (3\sin(t), 2\cos(t))$, for $0\leq t\leq \pi$?
+Several parametrized curves are graphed below, and the arrow indicates the direction in which the parameter increases. Which is the graph of the path $\vec{x}(t) = (t^2, t^3)$, for $-1\leq t\leq 1$?
 \begin{multipleChoice}
-\choice{(a)}
-\choice{(b)}
-\choice{(c)}
-\choice{(d)}
-\choice{(e)}
-\end{multipleChoice}
-\end{problem}
-
-\begin{problem}
-Several parametrized curves are graphed below, and the arrow indicates the direction in which the parameter increases.
-
-PICTURE
-
-Which is the graph of the path $\vec{x}(t) = (t^2, t^3)$, for $-1\leq t\leq 1$?
-\begin{multipleChoice}
-\choice{(a)}
-\choice{(b)}
-\choice{(c)}
-\choice{(d)}
-\choice{(e)}
-\end{multipleChoice}
-\end{problem}
-
-\begin{problem}
-Several parametrized curves are graphed below, and the arrow indicates the direction in which the parameter increases.
-
-PICTURE
-
-Which is the graph of the path $\vec{x}(t) = (e^t, t)$, for $-1\leq t\leq 1$?
-\begin{multipleChoice}
-\choice{(a)}
-\choice{(b)}
-\choice{(c)}
-\choice{(d)}
-\choice{(e)}
+\choice[correct]{\begin{image}\includegraphics[width =\textwidth]{CalcPlot3D-cusp_correct}\end{image}}
+\choice{\begin{image}\includegraphics[width =\textwidth]{CalcPlot3D-cusp_incorrect1}\end{image}}
+\choice{\begin{image}\includegraphics[width =\textwidth]{CalcPlot3D-cusp_incorrect2}\end{image}}
+\choice{\begin{image}\includegraphics[width =\textwidth]{CalcPlot3D-cusp_incorrect3}\end{image}}
+\choice{\begin{image}\includegraphics[width =\textwidth]{CalcPlot3D-cusp_incorrect4}\end{image}}
 \end{multipleChoice}
 \end{problem}
 
 \begin{problem}
 Consider the curve below.
 
-PICTURE
+\begin{image}\includegraphics[width =\textwidth]{CalcPlot3D-half_circle}\end{image}
 
 Which of the following are parametrizations for the curve? Select all that apply.
 \begin{selectAll}
@@ -111,7 +52,7 @@ Which of the following are parametrizations for the curve? Select all that apply
 \begin{problem}
 Consider the curve below.
 
-PICTURE
+\begin{image}\includegraphics[width =\textwidth]{CalcPlot3D-sine_curve}\end{image}
 
 Which of the following are parametrizations for the curve? Select all that apply.
 \begin{selectAll}
@@ -136,19 +77,31 @@ Compute the speed of $\vec{x}$.
 \[
 \|\vec{x}'(t)\| = \answer{\sqrt{13}}
 \]
-
+Compute the acceleration of $\vec{x}$.
+\[
+\vec{a}(t) = \answer{(-3\cos(t), 2\cos(t))}
+\]
 \end{problem}
 
 \begin{problem}
-Consider the path $\vec{x}(t) = (\cos(t^4), \sin(t^4), \frac{1}{2}t^4)$, for $t \geq 0$.
-
-Compute the velocity.
+Two ants are running on the top of a table. Their paths are described by
 \[
-\vec{v}(t) = \answer{(-4t^3\sin(t^4), 4t^3\cos(t^2), 2t^3)}
+\vec{x}(t) = (t^2+1,2t-1)
 \]
-Compute the speed.
+and
 \[
-\|\vec{x}'(t)\| = \answer{\sqrt{20t^3}}
+\vec{y}(t) = (\sqrt{t+3}, t),
+\]
+with coordinates in inches, for $t\geq 0$ in seconds.
+
+At what time do the ants collide?
+\[
+t = \answer{1}
+\]
+
+Where do the ants collide?
+\[
+(x,y) = \answer{(2,1)}
 \]
 \end{problem}
 
@@ -164,7 +117,10 @@ Compute the speed.
 \[
 \|\vec{x}'(t)\| = \answer{4}
 \]
-
+Compute the acceleration.
+\[
+\vec{a}(t) = \answer{(0,0)}
+\]
 \end{problem}
 
 \begin{problem}
@@ -227,13 +183,6 @@ L(t) = \answer{(0,0,1) + t(1,1,0)}
 \end{problem}
 
 \begin{problem}
-\begin{enumerate}
-\item Graph the surface $1 = x^2 + y^2 + z^2$ and the curve $\vec{x}(t) = (\cos(8t)\sin(t),\sin(8t)\sin(t), \cos(t) )$ for $0\leq t\leq \pi$.
-\item Verify algebraically that the curve lies on the surface.
-\end{enumerate}
-\end{problem}
-
-\begin{problem}
 Prove the following product rule for cross products.
 
 Let $\vec{x}$ and $\vec{y}$ be paths in $\mathbb{R}^3$, then 
@@ -243,23 +192,15 @@ Let $\vec{x}$ and $\vec{y}$ be paths in $\mathbb{R}^3$, then
 for $t$ such that $x'(t)$ and $y'(t)$ exist.
 \end{problem}
 
+\section*{Professional Problem}
+
 \begin{problem}
-Consider the path $\vec{x}(t) = (3t-3^3, 3t^2)$, for $t\in\mathbb{R}$.
 \begin{enumerate}
-\item Graph $\vec{x}$.
-\item Find the point $P$ where $\vec{x}$ intersects itself.
-\item There are two tangent vectors $\vec{x}$ at $P$, one for each time the path passes through this point. Find the angle between these two vectors.
+\item Let $\vec{x}(t)$ be a curve lying on a sphere in $\mathbb{R}^n$ of radius $C$. Prove that $\vec{x}(t)$ and $\vec{x}'(t)$ are perpendicular. 
+\item For the curve $\vec{x}(t) = (\cos(t), \sin^2(t), \cos(t)\sin(t))$, verify computationally that $\vec{x}(t)$ lies on the sphere, and that $\vec{x}'(t)$ is perpendicular to $\vec{x}(t)$.
 \end{enumerate}
 \end{problem}
 
-\begin{problem}
-Consider the unit circle $x^2+y^2=1$ in $\mathbb{R}^2$, and consider all lines $l_t$ passing through the point $(1,0)$, indexed by their slopes $t$. For the line of slope $t$, let $\vec{x}(t)$ be the point (other than $(0,1)$) where the line $l_t$ intersects the unit circle.
-\begin{enumerate}
-\item Find $\vec{x}(0)$, $\vec{x}(1)$, and $\vec{x}(-1)$.
-\item Find an equation for $l_t$.
-\item Use your equation for $l_t$ and the equation for the unit circle to find $\vec{x}(t)$ in terms of only $t$.
-\item Consider the path $\vec{x}(t)$, for $t\in\mathbb{R}$, given by your answer to (c). What curve does this path parametrize? Are there any ``missing'' points?
-\end{enumerate}
-\end{problem}
+
 
 \end{document}

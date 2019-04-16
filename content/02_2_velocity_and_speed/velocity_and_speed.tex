@@ -2,7 +2,7 @@
 
 \graphicspath{{./content/02_2_velocity_and_speed/graphics/}{./graphics/}}
 
-\title{Velocity and Speed}
+\title{Velocity, Speed, and Acceleration}
 \begin{document}
 \begin{abstract}
 \end{abstract}
@@ -178,6 +178,26 @@ And the speed of this path is
 \|\vec{v}(t)\| = \answer{\sqrt{2}}.
 \]
 \end{example}
+
+\section*{Acceleration}
+
+Given a path $\vec{x}(t)$ in $\mathbb{R}^n$ defined on an interval $I$, we've seen that we can compute it's velocity, $\vec{v}(t) = \vec{x}'(t)$. We can view the velocity as a function from $I$ to $\mathbb{R}^n$, which gives us another path in $\mathbb{R}^n$. We can then differentiate $\vec{v}(t)$, giving us a sort of ``second derivative'' of our original path $\vec{x}(t)$. We call this the \emph{acceleration} of $\vec{x}(t)$, and denote it by $\vec{x}''(t)$ or $\vec{a}(t)$.
+
+\begin{example}
+We'll compute the acceleration of the path $\vec{x}(t) = (t,t^2,t^3)$ in $\mathbb{R}^3$.
+
+First, we compute the velocity, by differentiating the given path.
+\[
+\vec{x}'(t) = \answer{(1,2t,3t^3)}
+\]
+Then, we differentiate again, to find the acceleration.
+\[
+\vec{x}''(t) = \answer{(0,2,9t)}
+\]
+\end{example}
+
+
+\section*{Parametrizing the tangent line}
 
 Consider a path $\vec{x}:I\subset\mathbb{R}\rightarrow\mathbb{R}^n$. The velocity of this path gives us a vector $\vec{x}'(t)$ tangent to the curve at $\vec{x}(t)$. The tangent line to $\vec{x}$ at $\vec{x}(t)$ passes through the point $\vec{x}(t)$ and is parallel to the vector $\vec{x}'(t)$. This allows us to parametrize the tangent line, however we need to be very careful to distinguish between the parameter for the \emph{line} and the parameter for the \emph{path}. We do this by taking the parameter for our curve to be $t_0$ at our chosen point, so we are working with the point $\vec{x}(t_0)$ and the tangent vector $\vec{x}'(t_0)$.
 

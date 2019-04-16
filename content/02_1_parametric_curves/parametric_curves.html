@@ -33,13 +33,7 @@
 class="abstract" 
 >
 </div>   <div class="maketitle"></div>
-<!--l. 11--><p class="noindent" >In this activity, we parametrize curves in <script type="math/tex">\mathbb {R}^n</script>, focusing on the cases <script type="math/tex">n=2</script> and <script type="math/tex">n=3</script>.
-<a 
- id="Q1-1-1"></a>
-</p>
-<h3 class="likesectionHead"><a 
- id="x1-1000"></a>Review of Parametrizations in <script type="math/tex">\mathbb {R}^2</script></h3>
-<!--l. 15--><p class="noindent" >We’ve dealt with several ways to describe curves in <script type="math/tex">\mathbb {R}^2</script>: </p>
+<!--l. 12--><p class="noindent" >We’ve dealt with several ways to describe curves in <script type="math/tex">\mathbb {R}^2</script>: </p>
      <ul class="itemize1">
      <li class="itemize">As the graph of a function. For example, <script type="math/tex">f(x) = x^2</script>.
      </li>
@@ -48,88 +42,107 @@ class="abstract"
      </li>
      <li class="itemize">As the set of points satisfying an equation in another coordinate system.
      For example, <script type="math/tex">r = \sin (\theta )</script> in polar coordinates.</li></ul>
-<!--l. 22--><p class="noindent" >Another way that we can describe a curve is using <em>parametric equations</em>. In
-parametric equations, we define <script type="math/tex">x</script> and <script type="math/tex">y</script> in terms of a third variable, usually <script type="math/tex">t</script>, called the
-<em>parameter</em>. This gives us another way to describe curves in <script type="math/tex">\mathbb {R}^2</script>, and potentially describe
-some new and strange curves.
-</p>
-<div class="theorem-like problem-environment example" id="problem1"><a 
- id="x1-1001r1"></a>We can describe the unit circle in <script type="math/tex">\mathbb {R}^2</script> with the parametric equations <script type="math/tex; mode=display"> \begin{align*} 
+<!--l. 19--><p class="noindent" >Another way that we can describe a curve is using <em>parametric equations</em>. When
+describing a curve using parametric equations, we define <script type="math/tex">x</script> and <script type="math/tex">y</script> in terms of a third
+variable, often <script type="math/tex">t</script>, called the <em>parameter</em>. We often think about <script type="math/tex">t</script> as representing time,
+and imagine the curve being drawn out as <script type="math/tex">t</script> increases. This gives us another
+way to describe curves in <script type="math/tex">\mathbb {R}^2</script>, and potentially describe some new and strange
+curves.
+</p><!--l. 21--><p class="noindent" >We can describe the unit circle in <script type="math/tex">\mathbb {R}^2</script> with the parametric equations </p><script type="math/tex; mode=display"> \begin{align*} 
 x & = \cos(t),\\
 y & = \sin(t),
 \end{align*}</script>
+<!--l. 26--><p class="noindent" >for <script type="math/tex">0\leq t \leq 2\pi </script>.
+</p>
+<div class="image-environment" role="img" aria-labelledby="image-alt-1"><img 
+src="./graphics/CalcPlot3D-unit_circle.png" alt="PIC"  
+ /> </div>
                                                                   
 
                                                                   
-<!--l. 30--><p class="noindent" >for <script type="math/tex">0\leq t \leq 2\pi </script>.
-</p><!--l. 32--><p class="noindent" >PICTURE
-</p><!--l. 34--><p class="noindent" >We can think of <script type="math/tex">t</script> as giving the angle that a point makes with the positive axis. It can
+<!--l. 32--><p class="noindent" >We can think of <script type="math/tex">t</script> as giving the angle that a point makes with the positive axis. It can
 also be helpful to imagine <script type="math/tex">t</script> as representing time, and the parametric equations tracing
 out the circle as time passes.
-</div>
-<a 
- id="Q1-1-3"></a>
 </p>
-<h3 class="likesectionHead"><a 
- id="x1-2000"></a>Parametrizing Curves in <script type="math/tex">\mathbb {R}^n</script></h3>
-<!--l. 39--><p class="noindent" >Consider the parametric equations for the unit circle in <script type="math/tex">\mathbb {R}^2</script>: </p><script type="math/tex; mode=display"> \begin{align*} 
+<div class="video youtube-player" data-youtube="1J6bT8RE3so">_</div>
+<!--l. 36--><p class="noindent" >Consider the parametric equations for the unit circle in <script type="math/tex">\mathbb {R}^2</script>: </p><script type="math/tex; mode=display"> \begin{align*} 
 x & = \cos(t),\\
 y & = \sin(t),
 \end{align*}</script>
-<!--l. 44--><p class="noindent" >for <script type="math/tex">0\leq t \leq 2\pi </script>.
-</p><!--l. 46--><p class="noindent" >We can combine these equations into a single vector, <script type="math/tex; mode=display"> \vec {x}(t) = (\cos (t), \sin (t))\textrm { for }0\leq t\leq 2\pi . </script>
-</p><!--l. 51--><p class="noindent" >This defines a function <script type="math/tex">\vec {x}</script> from the interval <script type="math/tex">[0,2\pi ]\subset \mathbb {R}</script> to <script type="math/tex">\mathbb {R}^2</script>, and is the motivation behind our
-definition for paths.
+<!--l. 41--><p class="noindent" >for <script type="math/tex">0\leq t \leq 2\pi </script>.
+</p><!--l. 43--><p class="noindent" >We can combine these equations into a single vector, <script type="math/tex; mode=display"> \vec {x}(t) = (\cos (t), \sin (t))\textrm { for }0\leq t\leq 2\pi . </script>
+</p><!--l. 48--><p class="noindent" >We can visualize the vectors <script type="math/tex">\vec {x}(t)</script> tracing out the unit circle as <script type="math/tex">t</script> goes from <script type="math/tex">0</script> to
+<script type="math/tex">2\pi </script>.
 </p>
-<div class="theorem-like problem-environment definition" id="problem2"><a 
- id="x1-2001r2"></a>A <em>path</em> in <script type="math/tex">\mathbb {R}^n</script> is a continuous function <script type="math/tex; mode=display"> \vec {x}:I\subset \mathbb {R}\rightarrow \mathbb {R}^n, </script> where <script type="math/tex">I\subset \mathbb {R}</script> is an interval.
-<!--l. 60--><p class="noindent" >This is also called a <em>parametrized curve</em> or <em>parametric curve</em>.
+<div class="video youtube-player" data-youtube="sYYekBSL4cg">_</div>
+<!--l. 52--><p class="noindent" >Notice that we are blurring the distinction between vectors and points. Although we
+can think of <script type="math/tex">vec{x}(t)</script> as a position vector, we would more commonly think of <script type="math/tex">\vec {x}(t)</script> as a point on
+a curve. Although this might seem a bit sloppy, it will prove very useful
+throughout the course. Although intuitively we might prefer to use points, a lot of
+the computations tools that we’ll require are more appropriately used with
+vectors.
+</p><!--l. 54--><p class="noindent" >We have defined a function <script type="math/tex">\vec {x}</script> from the interval <script type="math/tex">[0,2\pi ]\subset \mathbb {R}</script> to <script type="math/tex">\mathbb {R}^2</script>, and this idea provides the
+motivation behind our definition for paths.
+<a 
+ id="Q1-1-1"></a>
+</p>
+<h3 class="likesectionHead"><a 
+ id="x1-1000"></a>Parametric Curves in <script type="math/tex">\mathbb {R}^n</script></h3>
+<div class="theorem-like problem-environment definition" id="problem1"><a 
+ id="x1-1001r1"></a>A <em>path</em> in <script type="math/tex">\mathbb {R}^n</script> is a continuous function <script type="math/tex; mode=display"> \vec {x}:I\subset \mathbb {R}\rightarrow \mathbb {R}^n, </script> where <script type="math/tex">I\subset \mathbb {R}</script> is an interval.
+<!--l. 65--><p class="noindent" >This is also called a <em>parametrized curve</em> or <em>parametric curve</em>. When we wish to
+emphasize that <script type="math/tex">\vec {x}(t)</script> is a vector, we’ll call it the <em>position vector</em>.
 </div>
-</p><!--l. 63--><p class="noindent" >We’ll focus on the cases <script type="math/tex">n=2</script> and <script type="math/tex">n=3</script> in this course.
-</p><!--l. 65--><p class="noindent" >We defined a path as a continuous function, however, we haven’t said what it means
+</p><!--l. 68--><p class="noindent" >We’ll focus on the cases <script type="math/tex">n=2</script> and <script type="math/tex">n=3</script> in this course.
+</p><!--l. 70--><p class="noindent" >We defined a path as a continuous function, however, we haven’t said what it means
 for a multivariable function to be continuous. We’ll come back to this later, and
 we’ll give a rigorous definition for continuity. For now, this should fit with
 your intuition: you can draw the path without lifting your pencil from the
 paper.
-</p><!--l. 67--><p class="noindent" >Sometimes we can more about the image of a path than how the path is drawn out,
-and then we refer to a curve.
-</p>
-<div class="theorem-like problem-environment definition" id="problem3"><a 
- id="x1-2002r3"></a>A <em>curve</em> in <script type="math/tex">\mathbb {R}^n</script> is the image of a path <script type="math/tex">\vec {x}:I\subset \mathbb {R}\rightarrow \mathbb {R}^n</script>.
-<!--l. 72--><p class="noindent" >We say that <script type="math/tex">\vec {x}</script> is a <em>parametrization</em> for the curve.
-</div>
-</p><!--l. 75--><p class="noindent" >The difference between a curve and a path is largely a matter of perspective: when
-working with a curve, we pay attention to <em>what</em> is drawn; when working with a path,
-we care about <em>how</em> it is drawn.
-</p>
+</p><!--l. 72--><p class="noindent" >Sometimes we care more about the image of a path than how the path is drawn out,
                                                                   
 
                                                                   
-<div class="theorem-like problem-environment example" id="problem4"><a 
- id="x1-2003r4"></a>There are many different parametrizations for a given curve.
-<!--l. 80--><p class="noindent" >Consider again the unit circle <script type="math/tex">C</script> in <script type="math/tex">\mathbb {R}^2</script>. Which of the following are parametrizations for <script type="math/tex">C</script>? </p><div class="select-all" id="problem5"><a 
- id="x1-2004r5"></a> <span class="choice correct
+and then we refer to a curve.
+</p>
+<div class="theorem-like problem-environment definition" id="problem2"><a 
+ id="x1-1002r2"></a>A <em>curve</em> <script type="math/tex">C</script> in <script type="math/tex">\mathbb {R}^n</script> is the image of some path <script type="math/tex">\vec {x}:I\subset \mathbb {R}\rightarrow \mathbb {R}^n</script>.
+<!--l. 77--><p class="noindent" >In this case, we say that <script type="math/tex">\vec {x}</script> is a <em>parametrization</em> for the curve <script type="math/tex">C</script>.
+</div>
+</p><!--l. 80--><p class="noindent" >The difference between a curve and a path is largely a matter of perspective: when
+working with a curve, we pay attention to <em>what</em> is drawn; when working with a path,
+we care about <em>how</em> it is drawn.
+</p>
+<div class="theorem-like problem-environment example" id="problem3"><a 
+ id="x1-1003r3"></a>There are many different parametrizations for a given curve.
+<!--l. 85--><p class="noindent" >Consider again the unit circle <script type="math/tex">C</script> in <script type="math/tex">\mathbb {R}^2</script>. Which of the following are parametrizations for <script type="math/tex">C</script>? </p><div class="select-all" id="problem4"><a 
+ id="x1-1004r4"></a> <span class="choice correct
 "  id="choice1"><script type="math/tex">\vec {x}(t) = (\cos (t),\sin (t))</script> for <script type="math/tex">0\leq t\leq 2\pi </script></span> <span class="choice  "   id="choice2"><script type="math/tex">\vec {x}(t) = (\sin (t),\cos (t))</script> for <script type="math/tex">0\leq t\leq \pi </script></span> <span class="choice  "   id="choice3"><script type="math/tex">\vec {x}(t) = (t, \pm \sqrt {1-t^2})</script> for <script type="math/tex">-1\leq t\leq 1</script></span> <span class="choice correct "   id="choice4"><script type="math/tex">\vec {x}(t) = (\sin (2\pi t),\cos (2\pi t))</script> for <script type="math/tex">0\leq t\leq 1</script></span> <span class="choice correct "   id="choice5"><script type="math/tex">\vec {x}(t) = (\cos (t),\sin (t))</script> for <script type="math/tex">-10\leq t\leq 10</script></span>
 </div>
 </div>
-<div class="theorem-like problem-environment example" id="problem6"><a 
- id="x1-2005r6"></a>In this example, we review how to parametrize the line through points <script type="math/tex">\vec {a}</script> and <script type="math/tex">\vec {b}</script> in
+<div class="theorem-like problem-environment example" id="problem5"><a 
+ id="x1-1005r5"></a>In this example, we review a parametrization for the line through points <script type="math/tex">\vec {a}</script> and <script type="math/tex">\vec {b}</script> in
 <script type="math/tex">\mathbb {R}^n</script>.
-<!--l. 93--><p class="noindent" >Given points <script type="math/tex">\vec {a}</script> and <script type="math/tex">\vec {b}</script> in <script type="math/tex">\mathbb {R}^n</script>, we obtain a vector starting at <script type="math/tex">\vec {a}</script> and ending at <script type="math/tex">\vec {b}</script> by taking <script type="math/tex">\vec {b}-\vec {a}</script>. This
+<!--l. 98--><p class="noindent" >Given points <script type="math/tex">\vec {a}</script> and <script type="math/tex">\vec {b}</script> in <script type="math/tex">\mathbb {R}^n</script>, we obtain a vector starting at <script type="math/tex">\vec {a}</script> and ending at <script type="math/tex">\vec {b}</script> by taking <script type="math/tex">\vec {b}-\vec {a}</script>. This
 vector is parallel to the line through <script type="math/tex">\vec {a}</script> and <script type="math/tex">\vec {b}</script>. Then, taking scalar multiples <script type="math/tex">t(\vec {b} - \vec {a})</script> for <script type="math/tex">t\in \mathbb {R}</script>, we
 have a line parallel to the line through <script type="math/tex">\vec {a}</script> and <script type="math/tex">\vec {b}</script>. Finally, we add one of the points, <script type="math/tex">\vec {a}</script>, to
 ensure that our line passes through these two points. Thus, we arrive at our
 parametrization, <script type="math/tex; mode=display"> \vec {l}(t) = \vec {a} + t(\vec {b}-\vec {a})\textrm { for }t\in \mathbb {R}. </script>
-</p><!--l. 98--><p class="noindent" >PICTURE
-</div>
 </p>
-<div class="theorem-like problem-environment example" id="problem7"><a 
- id="x1-2006r7"></a>In this example, we see how we can obtain new transformations from old ones, using
+<div class="image-environment" role="img" aria-labelledby="image-alt-2"><img 
+src="./graphics/CalcPlot3D-line_para.png" alt="PIC"  
+ /> </div>
+</div>
+<div class="theorem-like problem-environment example" id="problem6"><a 
+ id="x1-1006r6"></a>In this example, we see how we can obtain new transformations from old ones, using
 linear algebra and simple transformations.
-<!--l. 104--><p class="noindent" >Recall the parametrization for the unit circle in <script type="math/tex">\mathbb {R}^2</script>, <script type="math/tex; mode=display"> \vec {x}(t) = (\cos (t), \sin (t))\textrm { for }0\leq t\leq 2\pi . </script>
-</p><!--l. 109--><p class="noindent" >Now, consider the ellipse below.
-</p><!--l. 111--><p class="noindent" >PICTURE
-</p><!--l. 113--><p class="noindent" >We can think of this ellipse as the result of stretching the unit circle horizontally by a
+<!--l. 111--><p class="noindent" >Recall the parametrization for the unit circle in <script type="math/tex">\mathbb {R}^2</script>, <script type="math/tex; mode=display"> \vec {x}(t) = (\cos (t), \sin (t))\textrm { for }0\leq t\leq 2\pi . </script>
+</p><!--l. 116--><p class="noindent" >Now, consider the ellipse below.
+</p>
+<div class="image-environment" role="img" aria-labelledby="image-alt-3"><img 
+src="./graphics/CalcPlot3D-ellipse.png" alt="PIC"  
+ /> </div>
+<!--l. 122--><p class="noindent" >We can think of this ellipse as the result of stretching the unit circle horizontally by a
 factor of <script type="math/tex">3</script> and vertically by a factor of <script type="math/tex">2</script>. That is, we are applying the linear
 transformation <script type="math/tex; mode=display"> \left (\begin {array}{cc} 3 & 0\\ 0 & 2 \end {array}\right ). </script> We can apply this to the parametrization for the unit circle, in order
 to parametrization for the ellipse. </p><script type="math/tex; mode=display"> \begin{align*} 
@@ -137,82 +150,87 @@ to parametrization for the ellipse. </p><script type="math/tex; mode=display"> \
 3 & 0\\
 0 & 2
 \end{array}\right)\left(\begin{array}{c}\cos(t)\\\sin(t)\end{array}\right),\\
-&= (3\cos(t), 2\sin(t)).
-\end{align*}</script>
-<!--l. 128--><p class="noindent" >Thus, we have a parametrization for the ellipse given by <script type="math/tex; mode=display"> \vec {y}(t) = (3\cos (t), 2\sin (t))\textrm { for }0\leq t\leq 2\pi . </script>
-</p><!--l. 133--><p class="noindent" >Next, consider the following ellipse.
-</p><!--l. 135--><p class="noindent" >PICTURE
-</p><!--l. 137--><p class="noindent" >We can obtain this from our previous ellipse by counterclockwise rotation of <script type="math/tex">\pi /4</script>.
-The matrix for this linear transformation is <script type="math/tex; mode=display"> \left (\begin {array}{cc} \cos (\pi /4) & -\sin (\pi /4)\\ \sin (\pi /4) & \cos (\pi /4) \end {array}\right ) = \left (\begin {array}{cc} \answer {1/\sqrt {2}} & \answer {-1/\sqrt {2}}\\ \answer {1/\sqrt {2}} & \answer {1/\sqrt {2}} \end {array}\right ). </script> Applying this rotation to our
-parametrization for the previous ellipse, we obtain a parametrization for our new
-ellipse. <script type="math/tex; mode=display"> \vec {z}(t) = \answer {(3/\sqrt {2}\cos (t) -2/\sqrt {2}\sin (t), 3/\sqrt {2}\cos (t) + 2/\sqrt {2}\sin (t))}\textrm { for }0\leq t\leq 2\pi </script>
-</p><!--l. 153--><p class="noindent" >Finally, we consider an ellipse in <script type="math/tex">\mathbb {R}^3</script>, shown below.
                                                                   
 
                                                                   
-</p><!--l. 155--><p class="noindent" >PICTURE
-</p><!--l. 157--><p class="noindent" >This ellipse is parallel to the <script type="math/tex">xy</script>-plane, and will have constant <script type="math/tex">z</script>-coordinate. Note the
+&= (3\cos(t), 2\sin(t)).
+\end{align*}</script>
+<!--l. 137--><p class="noindent" >Thus, we have a parametrization for the ellipse given by <script type="math/tex; mode=display"> \vec {y}(t) = (3\cos (t), 2\sin (t))\textrm { for }0\leq t\leq 2\pi . </script>
+</p><!--l. 142--><p class="noindent" >Next, consider the following ellipse.
+</p>
+<div class="image-environment" role="img" aria-labelledby="image-alt-4"><img 
+src="./graphics/CalcPlot3D-ellipse_rot.png" alt="PIC"  
+ /> </div>
+<!--l. 148--><p class="noindent" >We can obtain this from our previous ellipse by counterclockwise rotation of <script type="math/tex">\pi /4</script>.
+The matrix for this linear transformation is <script type="math/tex; mode=display"> \left (\begin {array}{cc} \cos (\pi /4) & -\sin (\pi /4)\\ \sin (\pi /4) & \cos (\pi /4) \end {array}\right ) = \left (\begin {array}{cc} \answer {1/\sqrt {2}} & \answer {-1/\sqrt {2}}\\ \answer {1/\sqrt {2}} & \answer {1/\sqrt {2}} \end {array}\right ). </script> Applying this rotation to our
+parametrization for the previous ellipse, we obtain a parametrization for our new
+ellipse. <script type="math/tex; mode=display"> \vec {z}(t) = \answer {(3/\sqrt {2}\cos (t) -2/\sqrt {2}\sin (t), 3/\sqrt {2}\cos (t) + 2/\sqrt {2}\sin (t))}\textrm { for }0\leq t\leq 2\pi </script>
+</p><!--l. 164--><p class="noindent" >Finally, we consider an ellipse in <script type="math/tex">\mathbb {R}^3</script>, shown below.
+</p>
+<div class="image-environment" role="img" aria-labelledby="image-alt-5"><img 
+src="./graphics/CalcPlot3D-ellipse_3D.png" alt="PIC"  
+ /> </div>
+<!--l. 170--><p class="noindent" >This ellipse is parallel to the <script type="math/tex">xy</script>-plane, and will have constant <script type="math/tex">z</script>-coordinate of <script type="math/tex">1</script>. Note the
 similarity to the first ellipse we considered. A parametrization for this ellipse can be
 obtained by taking the parametrization <script type="math/tex">\vec {y}</script> for our first ellipse in <script type="math/tex">\mathbb {R}^2</script>, and appending the
-constant <script type="math/tex">z</script>-coordinate. <script type="math/tex; mode=display"> \vec {a}(t) = \answer {(3\cos (t), 2\sin (t))}\textrm { for }0\leq t\leq 2\pi </script>
+constant <script type="math/tex">z</script>-coordinate. <script type="math/tex; mode=display"> \vec {a}(t) = \answer {(3\cos (t), 2\sin (t),1)}\textrm { for }0\leq t\leq 2\pi </script>
 </div>
 <a 
- id="Q1-1-5"></a>
+ id="Q1-1-3"></a>
 </p>
 <h3 class="likesectionHead"><a 
- id="x1-3000"></a>Examples in <script type="math/tex">\mathbb {R}^3</script></h3>
-<!--l. 165--><p class="noindent" >In this section, we give examples of parametrizations of a couple of more
+ id="x1-2000"></a>Examples in <script type="math/tex">\mathbb {R}^3</script></h3>
+<!--l. 178--><p class="noindent" >In this section, we give examples of parametrizations of a couple of more
 complicated curves in <script type="math/tex">\mathbb {R}^3</script>, taking advantage of our previous experience with cylindrical
 coordinates.
 </p>
-<div class="theorem-like problem-environment example" id="problem8"><a 
- id="x1-3001r8"></a>We’ll parametrize the intersection of the cylinder <script type="math/tex">x^2 + y^2 = 4</script> and the plane <script type="math/tex">z = 7-3x</script> in <script type="math/tex">\mathbb {R}^3</script>, pictured
+<div class="theorem-like problem-environment example" id="problem7"><a 
+ id="x1-2001r7"></a>We’ll parametrize the intersection of the cylinder <script type="math/tex">x^2 + y^2 = 4</script> and the plane <script type="math/tex">z = 7-3x</script> in <script type="math/tex">\mathbb {R}^3</script>, pictured
 below.
-<!--l. 170--><p class="noindent" >PICTURE
-</p><!--l. 172--><p class="noindent" >Our <script type="math/tex">x</script> and <script type="math/tex">y</script> coordinates must satisfy <script type="math/tex">x^2 + y^2 = 4</script>, which would define a circle, if we were in <script type="math/tex">\mathbb {R}^2</script>.
+<div class="image-environment" role="img" aria-labelledby="image-alt-6"><img 
+src="./graphics/CalcPlot3D-cyl_plane.png" alt="PIC"  
+ /> </div>
+<div class="image-environment" role="img" aria-labelledby="image-alt-7"><img 
+src="./graphics/CalcPlot3D-cyl_plane_curve.png" alt="PIC"  
+ /> </div>
+<!--l. 192--><p class="noindent" >Our <script type="math/tex">x</script> and <script type="math/tex">y</script> coordinates must satisfy <script type="math/tex">x^2 + y^2 = 4</script>, which would define a circle, if we were in <script type="math/tex">\mathbb {R}^2</script>.
 Recalling our parametrizations for circles, these coordinates can be written as
 </p><script type="math/tex; mode=display"> \begin{align*} 
 x(t) &= 2\cos(t)\\
 y(t) &= 2\sin(t)
-\end{align*}</script>
-<!--l. 177--><p class="noindent" >for <script type="math/tex">0\leq t\leq 2\pi </script>.
-</p><!--l. 179--><p class="noindent" >It remains to write the <script type="math/tex">z</script>-coordinate in terms of the parameter <script type="math/tex">t</script>. Turning our attention
-to the equation for the plane, <script type="math/tex">z = 7-3x</script>, we have <script type="math/tex">z</script> expressed in terms of <script type="math/tex">x</script>. Since we have
-expressed <script type="math/tex">x</script> in terms of <script type="math/tex">t</script>, we can make this substitution to describe <script type="math/tex">z</script> in terms of <script type="math/tex">t</script>,
-<script type="math/tex; mode=display"> z(t) = \answer {7-6\cos (t)}. </script>
-</p><!--l. 184--><p class="noindent" >Putting all of this together, we have a parametrization for this intersection given by
-<script type="math/tex; mode=display"> \vec {x}(t) = \answer {(2\cos (t),2\sin (t),7-6\cos (t))} \textrm { for } 0\leq t\leq 2\pi . </script>
-</p><!--l. 189--><p class="noindent" ><iframe scrolling="no" src="https://tube.geogebra.org/material/iframe/id/dxywtu7x/width/100/height//border/888888/rc/false/ai/false/sdz/false/smb/false/stb/false/stbh/false/ld/false/sri/false/at/auto" width="100px" height="px" style="border:0px;"> </iframe>
-</div>
-</p>
-<div class="theorem-like problem-environment example" id="problem9"><a 
- id="x1-3002r9"></a>Consider the curve below, which lies on the cone <script type="math/tex">z^2 = x^2 + y^2</script>, and makes five rotations
-around the <script type="math/tex">z</script>-axis as the height ranges from <script type="math/tex">0</script> to <script type="math/tex">1</script>. We’ll refer to this curve as a
-“tornado.”
-<!--l. 195--><p class="noindent" >PICTURE
-</p><!--l. 197--><p class="noindent" >We’ll parametrize this curve by thinking about it in cylindrical coordinates, using the
-height as the parameter.
                                                                   
 
                                                                   
-</p><!--l. 199--><p class="noindent" >First, let’s consider what’s happening with the <script type="math/tex">z</script>-coordinate. Since the height of the
+\end{align*}</script>
+<!--l. 197--><p class="noindent" >for <script type="math/tex">0\leq t\leq 2\pi </script>.
+</p><!--l. 199--><p class="noindent" >It remains to write the <script type="math/tex">z</script>-coordinate in terms of the parameter <script type="math/tex">t</script>. Turning our attention
+to the equation for the plane, <script type="math/tex">z = 7-3x</script>, we have <script type="math/tex">z</script> expressed in terms of <script type="math/tex">x</script>. Since we have
+expressed <script type="math/tex">x</script> in terms of <script type="math/tex">t</script>, we can make this substitution to describe <script type="math/tex">z</script> in terms of <script type="math/tex">t</script>,
+<script type="math/tex; mode=display"> z(t) = \answer {7-6\cos (t)}. </script>
+</p><!--l. 204--><p class="noindent" >Putting all of this together, we have a parametrization for this intersection given by
+<script type="math/tex; mode=display"> \vec {x}(t) = \answer {(2\cos (t),2\sin (t),7-6\cos (t))} \textrm { for } 0\leq t\leq 2\pi . </script>
+</p><!--l. 209--><p class="noindent" ></div>
+</p>
+<div class="theorem-like problem-environment example" id="problem8"><a 
+ id="x1-2002r8"></a>Consider the curve below, which lies on the cone <script type="math/tex">z^2 = x^2 + y^2</script>, and makes five rotations
+around the <script type="math/tex">z</script>-axis as the height ranges from <script type="math/tex">0</script> to <script type="math/tex">1</script>. We’ll refer to this curve as a
+“tornado.”
+<div class="image-environment" role="img" aria-labelledby="image-alt-8"><img 
+src="./graphics/CalcPlot3D-tornado.png" alt="PIC"  
+ /> </div>
+<!--l. 218--><p class="noindent" >We’ll parametrize this curve by thinking about it in cylindrical coordinates, using the
+height as the parameter.
+</p><!--l. 220--><p class="noindent" >First, let’s consider what’s happening with the <script type="math/tex">z</script>-coordinate. Since the height of the
 tornado rangers from <script type="math/tex">0</script> to <script type="math/tex">1</script>, so will <script type="math/tex">z</script>. We’ll set <script type="math/tex">z = t</script>, with <script type="math/tex">0\leq t\leq 1</script>, and express <script type="math/tex">x</script> and <script type="math/tex">y</script> in terms of <script type="math/tex">t</script> as
 well.
-</p><!--l. 201--><p class="noindent" >Now, we turn our attention to the angle <script type="math/tex">\theta </script>. As the height ranges from <script type="math/tex">0</script> to <script type="math/tex">1</script>, the tornado
+</p><!--l. 222--><p class="noindent" >Now, we turn our attention to the angle <script type="math/tex">\theta </script>. As the height ranges from <script type="math/tex">0</script> to <script type="math/tex">1</script>, the tornado
 makes five revolutions, so <script type="math/tex">\theta </script> should range from <script type="math/tex">0</script> to <script type="math/tex">10\pi </script>. Thus, expressing <script type="math/tex">\theta </script> in terms of <script type="math/tex">t</script>, we
 let <script type="math/tex">\theta = 10\pi t</script>.
-</p><!--l. 203--><p class="noindent" >Next, we consider the radius <script type="math/tex">r</script>. Since we are on the cone <script type="math/tex">z^2 = x^2 + y^2</script>, we have <script type="math/tex">z^2 = r^2</script>. Since <script type="math/tex">z\geq 0</script>, we have <script type="math/tex">z = r</script>.
+</p><!--l. 224--><p class="noindent" >Next, we consider the radius <script type="math/tex">r</script>. Since we are on the cone <script type="math/tex">z^2 = x^2 + y^2</script>, we have <script type="math/tex">z^2 = r^2</script>. Since <script type="math/tex">z\geq 0</script>, we have <script type="math/tex">z = r</script>.
 Thus, we can write <script type="math/tex">r</script> in terms of <script type="math/tex">t</script> as <script type="math/tex">r = t</script>.
-</p><!--l. 205--><p class="noindent" >Finally, putting all of this together with <script type="math/tex">x = r\cos \theta </script> and <script type="math/tex">y = r\sin \theta </script>, we have a parametrization for the
-tornado given by <script type="math/tex; mode=display"> \vec {x}(t) = \answer {(t\cos (10\pi \theta ), t\sin (10\pi \theta ), t)} \textrm { for } t\in [0,1]. </script>
-</p><!--l. 210--><p class="noindent" ><iframe scrolling="no" src="https://tube.geogebra.org/material/iframe/id/tdmnpcg5/width/100/height//border/888888/rc/false/ai/false/sdz/false/smb/false/stb/false/stbh/false/ld/false/sri/false/at/auto" width="100px" height="px" style="border:0px;"> </iframe>
-</div>
-<a 
- id="Q1-1-7"></a>
-</p>
-<h3 class="likesectionHead"><a 
- id="x1-4000"></a>Conclusion</h3>
-<!--l. 215--><p class="noindent" >In this activity, we parametrized curves in <script type="math/tex">\mathbb {R}^n</script>, focusing on the cases <script type="math/tex">n=2</script> and <script type="math/tex">n=3</script>.
+</p><!--l. 226--><p class="noindent" >Finally, putting all of this together with <script type="math/tex">x = r\cos \theta </script> and <script type="math/tex">y = r\sin \theta </script>, we have a parametrization for the
+tornado given by <script type="math/tex; mode=display"> \vec {x}(t) = \answer {(t\cos (10\pi t), t\sin (10\pi t), t)} \textrm { for } t\in [0,1]. </script>
+</p><!--l. 231--><p class="noindent" ></div>
 </body> 
  
 </html>

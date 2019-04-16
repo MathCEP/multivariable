@@ -34,69 +34,100 @@ Speed</title>
 class="abstract" 
 >
 </div>   <div class="maketitle"></div>
-<!--l. 11--><p class="noindent" >In this activity, we explore some important properties of the velocity and speed of a
-parametrized curve.
+<!--l. 11--><p class="noindent" >In single variable calculus, we used the product rule to differentiate products
+of functions. For example, for <script type="math/tex">f(x) = x^2</script> and <script type="math/tex">g(x) = \sin (x)</script>, we can find the derivative of <script type="math/tex">(fg)(x) = x^2\sin (x)</script> as
+</p><script type="math/tex; mode=display"> \begin{align*} 
+(fg)'(x) &= f'(x)g(x)+f(x)g'(x)\\
+&= 2x\sin(x)+x^2\cos(x).
+\end{align*}</script>
+<!--l. 16--><p class="noindent" >Although we can’t take the product of two vectors in general, we do have the dot
+product and cross product, and we would like to understand how differentiation
+interacts with these products. Fortunately, they turn out to be very similar to the
+product rule from single variable calculus.
 <a 
  id="Q1-1-1"></a>
 </p>
 <h3 class="likesectionHead"><a 
- id="x1-1000"></a>Differentiation Laws</h3>
-<!--l. 15--><p class="noindent" >In single variable calculus, we used the product rule to differentiate products of
-functions. Although we can’t take the product of two vectors in general, we do have
-the dot product and cross product, and we would like to understand how
-differentiation interacts with these products. Fortunately, they turn out to be very
-similar to the product rule from single variable calculus.
-</p>
+ id="x1-1000"></a>Product rules</h3>
 <div class="theorem-like problem-environment proposition" id="problem1"><a 
  id="x1-1001r1"></a>Consider paths <script type="math/tex">\vec {x}</script> and <script type="math/tex">\vec {y}</script> in <script type="math/tex">\mathbb {R}^n</script>. For <script type="math/tex">t</script> such that <script type="math/tex">\vec {x}'(t)</script> and <script type="math/tex">\vec {y}'(t)</script> both exist, we have <script type="math/tex; mode=display"> (\vec {x}\cdot \vec {y})'(t) = \vec {x}'(t)\cdot \vec {y}(t) + \vec {x}(t)\cdot \vec {y}'(t). </script> If <script type="math/tex">n=3</script>, we also have
 <script type="math/tex; mode=display"> (\vec {x}\times \vec {y})'(t) = \vec {x}'(t)\times \vec {y}(t) + \vec {x}(t)\times \vec {y}'(t). </script>
 </div>
-<!--l. 28--><p class="noindent" >
+<!--l. 31--><p class="noindent" >
 </p>
 <div class="proof">
-<!--l. 29--><p class="noindent" ><span class="head">
+<!--l. 32--><p class="noindent" ><span class="head">
 </p><dl class="trivlist"><dt class="trivlist">
-Proof   </dt><dd 
-class="trivlist"></span>We prove this result for the dot product, and leave the proof for the
-cross product as an exercise.
-<!--l. 31--><p class="noindent" >Suppose <script type="math/tex">t</script> is such that both <script type="math/tex">\vec {x}'(t)</script> and <script type="math/tex">\vec {y}'(t)</script> exist, and write <script type="math/tex">\vec {x}(t) = (x_1(t),...,x_n(t))</script> and <script type="math/tex">\vec {y}(t) = (y_1(t),...,y_n(t))</script>. Then we
                                                                   
 
                                                                   
+Proof   </dt><dd 
+class="trivlist"></span>We prove this result for the dot product, and leave the proof for the
+cross product as an exercise.
+<!--l. 34--><p class="noindent" >Suppose <script type="math/tex">t</script> is such that both <script type="math/tex">\vec {x}'(t)</script> and <script type="math/tex">\vec {y}'(t)</script> exist, and write <script type="math/tex">\vec {x}(t) = (x_1(t),...,x_n(t))</script> and <script type="math/tex">\vec {y}(t) = (y_1(t),...,y_n(t))</script>. Then we
 have <script type="math/tex; mode=display"> (\vec {x}\cdot \vec {y})(t) = x_1(t)y_1(t) + \cdots + x_n(t)y_n(t). </script> Using the single variable product rule and regrouping, we have
 </p><script type="math/tex; mode=display"> \begin{align*} 
 (\vec{x}\cdot\vec{y})'(t) & = \frac{d}{dt}\left(x_1(t)y_1(t) + \cdots + x_n(t)y_n(t)\right),\\
 & = x_1'(t) y_1(t) + x_1(t)y_1'(t) +\cdots+x_n'(t) y_n(t) + x_n(t)y_n'(t),\\
 & = \left(x_1'(t) y_1(t) + \cdots + x_n'(t) y_n(t)\right) + \left(x_1(t) y_1'(t) + \cdots + x_n(t) y_n'(t)\right).
 \end{align*}</script>
-<!--l. 41--><p class="noindent" >Notice that the left summand is <script type="math/tex">\vec {x}'(t)\cdot \vec {y}(t)</script> and the right summand is <script type="math/tex">\vec {x}(t)\cdot \vec {y}'(t)</script>. Thus, we arrive at our
+<!--l. 44--><p class="noindent" >Notice that the left summand is <script type="math/tex">\vec {x}'(t)\cdot \vec {y}(t)</script> and the right summand is <script type="math/tex">\vec {x}(t)\cdot \vec {y}'(t)</script>. Thus, we arrive at our
 result, <script type="math/tex; mode=display"> (\vec {x}\cdot \vec {y})'(t) = \vec {x}'(t)\cdot \vec {y}(t) + \vec {x}(t)\cdot \vec {y}'(t). </script>                                                                                              <script type="math/tex">\blacksquare </script></p></dd></dl>
 </div>
 <a 
  id="Q1-1-3"></a>
 <h3 class="likesectionHead"><a 
- id="x1-2000"></a>Constant Speed Path</h3>
-<!--l. 50--><p class="noindent" >To finish up our unit on parametrized paths, we consider the special case where a
-path is constant distance from the origin. In this case, the path <script type="math/tex">\vec {x}</script> is always
-perpendicular to its derivative. This makes sense intuitively, if you imagine a particle
-on the path moving in the direction of its velocity vector. If the velocity
-vector <script type="math/tex">\vec {v}</script> were not perpendicular to <script type="math/tex">\vec {x}</script>, a particle moving a tiny distance along
-the path would have to move either closer to the origin or farther from the
-origin.
-</p><!--l. 52--><p class="noindent" >PICTURE
+ id="x1-2000"></a>Paths on spheres</h3>
+<!--l. 53--><p class="noindent" >Dot products can be used to tell us important information about the geometry of
+vectors. In particular, two vectors <script type="math/tex">\vec {v}</script> and <script type="math/tex">\vec {w}</script> in <script type="math/tex">\mathbb {R}^n</script> are perpendicular if and only if <script type="math/tex">\vec {v}\cdot \vec {w}=\answer {0}</script>.
+Furthermore, the length of a vector <script type="math/tex">\vec {v}</script> can be computed using the dot product, as
+<script type="math/tex">\|\vec {v}\| =\sqrt {\vec {v}\cdot \vec {v}}</script>.
+</p><!--l. 55--><p class="noindent" >We’ll use these observations to determine the behavior of paths in a special case:
+when we have a curve which lies on a sphere.
+</p><!--l. 57--><p class="noindent" >Suppose <script type="math/tex">\vec {x}(t)</script> lies on a sphere of radius <script type="math/tex">C</script>. In this case, for the position vector <script type="math/tex">\vec {x}(t)</script>, we have <script type="math/tex">\|\vec {x}(t)\|=C</script>.
+We can rewrite this in terms of dot products as <script type="math/tex">\vec {x}(t)\cdot \vec {x}(t)=C^2</script>. Differentiating this equation and
+using our above observations about dot products, it can be shown that <script type="math/tex">\vec {x}(t)</script> and <script type="math/tex">\vec {x}'(t)</script> are
+perpendicular.
+</p><!--l. 59--><p class="noindent" >Thus, for any parametrization of a curve which lies on a sphere, the velocity vector
+will always be perpendicular to the position vector.
 </p>
-<div class="theorem-like problem-environment proposition" id="problem2"><a 
- id="x1-2001r2"></a>If <script type="math/tex">\vec {x}(t)</script> has constant length, then <script type="math/tex">\vec {x}(t)</script> is perpendicular to <script type="math/tex">\vec {x}'(t)</script>, for all <script type="math/tex">t</script> such that <script type="math/tex">\vec {x}'(t)</script> is defined.
-</div>
-<!--l. 58--><p class="noindent" >We leave the proof of this proposition as an exercise. It’s helpful to think about how
-the dot product <script type="math/tex">\vec {x}(t)\cdot \vec {x}(t)</script> relates to the length of <script type="math/tex">\vec {x}(t)</script>.
-<a 
- id="Q1-1-5"></a>
+<div class="theorem-like problem-environment example" id="problem2"><a 
+ id="x1-2001r2"></a>Let’s verify this result for the path <script type="math/tex">\vec {x}(t) = (\cos (t^3+t)\sin (t), \sin (t^3+t)\sin (t), \cos (t)</script> in <script type="math/tex">\mathbb {R}^3</script>, which lies on the unit sphere. Since this path
+lies on a sphere, we’d expect that <div class="multiple-choice" id="problem3"><span class="choice  "   id="choice1"><script type="math/tex">\vec {x}(t)</script> and <script type="math/tex">\vec {x}'(t)</script> are parallel.</span> <span class="choice correct "   id="choice2"><script type="math/tex">\vec {x}(t)</script> and <script type="math/tex">\vec {x}'(t)</script> are perpendicular.</span> <span class="choice  "   id="choice3"><script type="math/tex">\vec {x}'(t)</script>
+is the zero vector.</span> <span class="choice  "   id="choice4"><script type="math/tex">\vec {x}'(t)</script> also lies on the sphere.</span> </div>
+<!--l. 70--><p class="noindent" >First, we’ll verify that this path lies on the sphere of radius <script type="math/tex">1</script> by
+computing <script type="math/tex">\|\vec {x}(t)\|</script>. Repeatedly using the Pythagorean identity <script type="math/tex">\sin ^2(x)+\cos ^2(x)=1</script>, we have
+</p><script type="math/tex; mode=display"> \begin{align*} 
+\|\vec{x}(t)\| &= \sqrt{\cos^2(t^3+t)\sin^2(t) + \sin^2(t^3+t)\sin^2(t) + \cos^2(t)}\\
+&= \sqrt{(\cos^2(t^3+t) + \sin^2(t^3+t))\sin^2(t) + \cos^2(t)}\\
+&= \sqrt{1\cdot\sin^2(t) + \cos^2(t)}\\
+&= \sqrt{1}\\
+                                                                  
+
+                                                                  
+&= 1.
+\end{align*}</script>
+<!--l. 78--><p class="noindent" >Now, let’s compute the velocity vector <script type="math/tex">\vec {x}'(t)</script>. Using the product rule and chain rule, we
+have <script type="math/tex; mode=display"> \vec {x}'(t) = (-\sin (t^3+t)(3t^2+1)\sin (t) + \cos (t^3+t)\cos (t), \cos (t^3+t)(3t^2+1)\sin (t) + \sin (t^3+t)\cos (t), -\sin (t)). </script> To check that <script type="math/tex">\vec {x}'(t)</script> is perpendicular to <script type="math/tex">\vec {x}(t)</script>, we compute their dot product,
+</p><script type="math/tex; mode=display"> \begin{align*} 
+\vec{x}(t)\cdot \vec{x}'(t) =& \left(\cos(t^3+t)\sin(t)\right)\left(-\sin(t^3+t)(3t^2+1)\sin(t) + \cos(t^3+t)\cos(t)\right)\\
+& + \left(\sin(t^3+t)\sin(t)\right)\left(\cos(t^3+t)(3t^2+1)\sin(t) + \sin(t^3+t)\cos(t)\right) + \left(\cos(t)\right)\left(-\sin(t)\right).
+\end{align*}</script>
+<!--l. 87--><p class="noindent" >Incredibly, this unwieldy expression simplifies very nicely.
+</p><script type="math/tex; mode=display"> \begin{align*} 
+\vec{x}(t)\cdot \vec{x}'(t) =& -(3t^2+1)\cos(t^3+t)\sin(t^3+t)\cos(t)\sin(t) + \cos^2(t^3+t)\cos(t)\sin(t)\\
+&+ (3t^2+1)\cos(t^3+t)\sin(t^3+t)\cos(t)\sin(t) + \sin^2(t^3+t)\cos(t)\sin(t)-\cos(t)\sin(t)\\
+=& \cos^2(t^3+t)\cos(t)\sin(t) +  \sin^2(t^3+t)\cos(t)\sin(t)-\cos(t)\sin(t)\\
+=& \cos(t)\sin(t)-\cos(t)\sin(t)\\
+=& 0.
+\end{align*}</script>
+<!--l. 95--><p class="noindent" >Thus, we have verifies that <script type="math/tex">\vec {x}(t)</script> and <script type="math/tex">\vec {x}'(t)</script> are perpendicular.
+</p><!--l. 97--><p class="noindent" >The path is graphed below for <script type="math/tex">-2\leq t\leq 2</script>, and we show how the velocity vector changes as <script type="math/tex">t</script>
+increases. The position vector is shown in blue, and the velocity vector in black. Note
+that they are always perpendicular.
 </p>
-<h3 class="likesectionHead"><a 
- id="x1-3000"></a>Conclusion</h3>
-<!--l. 64--><p class="noindent" >In this activity, we explore some important properties of the velocity and speed of a
-parametrized curve.
+<div class="video youtube-player" data-youtube="BZ78A01v5yk">_</div>
+<!--l. 101--><p class="noindent" ></div>
 </body> 
  
 </html>

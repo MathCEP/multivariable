@@ -13,7 +13,7 @@
 \contentsline {section}{Quadric Surfaces}{76}{section*.11}
 \contentsline {part}{III\hspace {1em}Curves}{86}{part.3}
 \contentsline {section}{Parametric Curves}{86}{section*.12}
-\contentsline {section}{Velocity and Speed}{94}{section*.13}
+\contentsline {section}{Velocity, Speed, and Acceleration}{94}{section*.13}
 \contentsline {section}{Properties of Velocity and Speed}{101}{section*.14}
 \contentsline {section}{The Length of a Curve}{104}{section*.15}
 \contentsline {section}{Arclength Function}{108}{section*.16}
@@ -49,13 +49,13 @@
 \contentsline {section}{Homework 1: Coordinates}{224}{section*.43}
 \contentsline {section}{Homework 2: Graphing}{228}{section*.44}
 \contentsline {section}{Homework 3: Parametrized Curves}{244}{section*.45}
-\contentsline {section}{Homework 8: Differentiability}{251}{section*.46}
-\contentsline {section}{Homework 9: Properties of Derivatives}{254}{section*.47}
-\contentsline {section}{Homework 10: Directional Derivatives}{257}{section*.48}
-\contentsline {section}{Homework 11: Taylor's Theorem}{260}{section*.49}
-\contentsline {section}{Homework 12: Extrema}{263}{section*.50}
-\contentsline {section}{Winter Assignment: Substitution and Lagrange Multipliers}{265}{section*.51}
-\contentsline {part}{VII\hspace {1em}Practice Problems}{266}{part.7}
-\contentsline {section}{Practice Problems: Review}{266}{section*.52}
-\contentsline {section}{Practice Problems: Coordinate Systems}{274}{section*.53}
+\contentsline {section}{Homework 8: Differentiability}{253}{section*.46}
+\contentsline {section}{Homework 9: Properties of Derivatives}{256}{section*.47}
+\contentsline {section}{Homework 10: Directional Derivatives}{259}{section*.48}
+\contentsline {section}{Homework 11: Taylor's Theorem}{262}{section*.49}
+\contentsline {section}{Homework 12: Extrema}{265}{section*.50}
+\contentsline {section}{Winter Assignment: Substitution and Lagrange Multipliers}{267}{section*.51}
+\contentsline {part}{VII\hspace {1em}Practice Problems}{268}{part.7}
+\contentsline {section}{Practice Problems: Review}{268}{section*.52}
+\contentsline {section}{Practice Problems: Coordinate Systems}{276}{section*.53}
 \contentsfinish 
