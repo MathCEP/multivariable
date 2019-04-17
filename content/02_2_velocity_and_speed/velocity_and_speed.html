@@ -1,6 +1,6 @@
 <!doctype html> 
 <html lang="en"> 
-<head> <title>Velocity and Speed</title> 
+<head> <title>Velocity, Speed, and Acceleration</title> 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
 <meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
 <meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
@@ -185,7 +185,30 @@ speed increases as it travels around the circle.
  id="x1-2003r8"></a>Consider the path <script type="math/tex">\vec {x}(t)=(\cos (t),\sin (t),t)</script> in <script type="math/tex">\mathbb {R}^3</script>. The velocity vector of this path is <script type="math/tex; mode=display"> \vec {v}(t) = \answer {(-\sin (t),\cos (t),1)}, </script> And the speed of this path
 is <script type="math/tex; mode=display"> \|\vec {v}(t)\| = \answer {\sqrt {2}}. </script>
 </div>
-<!--l. 182--><p class="noindent" >Consider a path <script type="math/tex">\vec {x}:I\subset \mathbb {R}\rightarrow \mathbb {R}^n</script>. The velocity of this path gives us a vector <script type="math/tex">\vec {x}'(t)</script> tangent to the curve at <script type="math/tex">\vec {x}(t)</script>.
+<a 
+ id="Q1-1-5"></a>
+<h3 class="likesectionHead"><a 
+ id="x1-3000"></a>Acceleration</h3>
+<!--l. 184--><p class="noindent" >Given a path <script type="math/tex">\vec {x}(t)</script> in <script type="math/tex">\mathbb {R}^n</script> defined on an interval <script type="math/tex">I</script>, we’ve seen that we can compute it’s
+velocity, <script type="math/tex">\vec {v}(t) = \vec {x}'(t)</script>. We can view the velocity as a function from <script type="math/tex">I</script> to <script type="math/tex">\mathbb {R}^n</script>, which gives us another
+path in <script type="math/tex">\mathbb {R}^n</script>. We can then differentiate <script type="math/tex">\vec {v}(t)</script>, giving us a sort of “second derivative” of
+our original path <script type="math/tex">\vec {x}(t)</script>. We call this the <em>acceleration</em> of <script type="math/tex">\vec {x}(t)</script>, and denote it by <script type="math/tex">\vec {x}''(t)</script> or
+<script type="math/tex">\vec {a}(t)</script>.
+</p>
+<div class="theorem-like problem-environment example" id="problem9"><a 
+ id="x1-3001r9"></a>We’ll compute the acceleration of the path <script type="math/tex">\vec {x}(t) = (t,t^2,t^3)</script> in <script type="math/tex">\mathbb {R}^3</script>.
+<!--l. 189--><p class="noindent" >First, we compute the velocity, by differentiating the given path. <script type="math/tex; mode=display"> \vec {x}'(t) = \answer {(1,2t,3t^3)} </script> Then, we
+differentiate again, to find the acceleration. <script type="math/tex; mode=display"> \vec {x}''(t) = \answer {(0,2,9t)} </script>
+                                                                  
+
+                                                                  
+</div>
+<a 
+ id="Q1-1-7"></a>
+</p>
+<h3 class="likesectionHead"><a 
+ id="x1-4000"></a>Parametrizing the tangent line</h3>
+<!--l. 202--><p class="noindent" >Consider a path <script type="math/tex">\vec {x}:I\subset \mathbb {R}\rightarrow \mathbb {R}^n</script>. The velocity of this path gives us a vector <script type="math/tex">\vec {x}'(t)</script> tangent to the curve at <script type="math/tex">\vec {x}(t)</script>.
 The tangent line to <script type="math/tex">\vec {x}</script> at <script type="math/tex">\vec {x}(t)</script> passes through the point <script type="math/tex">\vec {x}(t)</script> and is parallel to the vector <script type="math/tex">\vec {x}'(t)</script>.
 This allows us to parametrize the tangent line, however we need to be very
 careful to distinguish between the parameter for the <em>line</em> and the parameter
@@ -193,24 +216,21 @@ for the <em>path</em>. We do this by taking the parameter for our curve to be <s
 our chosen point, so we are working with the point <script type="math/tex">\vec {x}(t_0)</script> and the tangent vector
 <script type="math/tex">\vec {x}'(t_0)</script>.
 </p>
-<div class="theorem-like problem-environment proposition" id="problem9"><a 
- id="x1-2004r9"></a>Consider a path <script type="math/tex">\vec {x}:I\subset \mathbb {R}\rightarrow \mathbb {R}^n</script>. We can parametrize the line tangent to <script type="math/tex">\vec {x}</script> at <script type="math/tex">\vec {x}(t_0)</script> as <script type="math/tex; mode=display"> \vec {l}(t) = \vec {x}(t_0) + t\vec {x}'(t_0) \textrm { for } -\infty < t < \infty . </script>
+<div class="theorem-like problem-environment proposition" id="problem10"><a 
+ id="x1-4001r10"></a>Consider a path <script type="math/tex">\vec {x}:I\subset \mathbb {R}\rightarrow \mathbb {R}^n</script>. We can parametrize the line tangent to <script type="math/tex">\vec {x}</script> at <script type="math/tex">\vec {x}(t_0)</script> as <script type="math/tex; mode=display"> \vec {l}(t) = \vec {x}(t_0) + t\vec {x}'(t_0) \textrm { for } -\infty < t < \infty . </script>
 </div>
-<!--l. 191--><p class="noindent" >Note that it’s particularly important to allow the parameter <script type="math/tex">t</script> to be any real number,
+<!--l. 211--><p class="noindent" >Note that it’s particularly important to allow the parameter <script type="math/tex">t</script> to be any real number,
 otherwise we will be missing part of the line.
 </p>
-                                                                  
-
-                                                                  
-<div class="theorem-like problem-environment example" id="problem10"><a 
- id="x1-2005r10"></a>As an example, we’ll find a parametrization for the tangent line to the path <script type="math/tex">\vec {x}(t)=(\cos (t),\sin (t),t)</script>, when <script type="math/tex">t=0</script>.
+<div class="theorem-like problem-environment example" id="problem11"><a 
+ id="x1-4002r11"></a>As an example, we’ll find a parametrization for the tangent line to the path <script type="math/tex">\vec {x}(t)=(\cos (t),\sin (t),t)</script>, when <script type="math/tex">t=0</script>.
 The derivative is <script type="math/tex; mode=display"> \vec {x}'(t) = \answer {(-\sin (t),\cos (t),1)}. </script> When <script type="math/tex">t=0</script>, this is <script type="math/tex; mode=display"> \vec {x}'(0) = \answer {(0,1,1)}. </script> When <script type="math/tex">t=0</script>, we have <script type="math/tex; mode=display"> \vec {x}(0) = \answer {(1,0,0)}. </script> Parametrizing the tangent line, we
 have <script type="math/tex; mode=display"> \begin{align*} 
 \vec{l}(t) &= \vec{x}(0) + t\vec{x}'(0)\\
 &= \answer{(1,t,t)},
 \end{align*}</script>
-<!--l. 211--><p class="noindent" >for <script type="math/tex">-\infty < t < \infty </script>.
-</p><!--l. 213--><p class="noindent" >Below, we have the graph of the curve parametrized by <script type="math/tex">\vec {x}(t)</script>, along with its tangent line
+<!--l. 231--><p class="noindent" >for <script type="math/tex">-\infty < t < \infty </script>.
+</p><!--l. 233--><p class="noindent" >Below, we have the graph of the curve parametrized by <script type="math/tex">\vec {x}(t)</script>, along with its tangent line
 when <script type="math/tex">t=0</script>.
 </p>
 <div class="image-environment" role="img" aria-labelledby="image-alt-5"><img 
