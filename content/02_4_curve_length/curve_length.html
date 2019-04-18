@@ -33,79 +33,99 @@
 class="abstract" 
 >
 </div>   <div class="maketitle"></div>
-<!--l. 11--><p class="noindent" >In this activity, we learn how to compute the length of a curve given a smooth
-parametrization.
+<!--l. 11--><p class="noindent" >We’ve defined paths and curves, and we’ve begun to study the behavior of
+paths through its velocity, speed, and acceleration. For curves, we would
+like to be able to quantify their inherent geometry, independent of their
+parametrization. That is, ignoring how we traverse a curve, how can we describe its
+shape?
+</p><!--l. 13--><p class="noindent" >We’ll begin with a characteristic of a curve which should clearly be independent of
+parametrization: its length.
 <a 
  id="Q1-1-1"></a>
 </p>
 <h3 class="likesectionHead"><a 
  id="x1-1000"></a>The Length of a Path</h3>
-<!--l. 15--><p class="noindent" >Suppose we have a path <script type="math/tex">\vec {x}:I\rightarrow \mathbb {R}^n</script>, where <script type="math/tex">I</script> is the interval <script type="math/tex">[a,b]</script>, and suppose we want to find the
+<!--l. 17--><p class="noindent" >Suppose we have a path <script type="math/tex">\vec {x}:I\rightarrow \mathbb {R}^n</script>, where <script type="math/tex">I</script> is the interval <script type="math/tex">[a,b]</script>, and suppose we want to find the
 length of the corresponding curve <script type="math/tex">C</script>.
-</p><!--l. 17--><p class="noindent" >PICTURE
-</p><!--l. 19--><p class="noindent" >We can approximate the curve with a lot of short line segments, and then
+</p>
+<div class="image-environment" role="img" aria-labelledby="image-alt-1">  <img 
+src="./curve_length-figure0.svg" alt=""  
+ />
+</div>
+<!--l. 29--><p class="noindent" >We can approximate the curve with a lot of short line segments, and then
 compute the total length of the line segments to estimate the length of the
 curve.
-</p><!--l. 21--><p class="noindent" >PICTURE
-</p><!--l. 23--><p class="noindent" >One way that we can do this is by subdividing the interval <script type="math/tex">[a,b]</script> into <script type="math/tex">n</script> subintervals <script type="math/tex">[t_{i-1},t_i]</script> of
-equal length, and then take the line segments connecting <script type="math/tex">\vec {x}(t_{i-1})</script> and <script type="math/tex">\vec {x}(t_i)</script>.
-</p><!--l. 25--><p class="noindent" >PICTURE
-</p><!--l. 27--><p class="noindent" >As <script type="math/tex">n</script> increases, our line segments get shorter and shorter, giving us a more accurate
-approximation of the length of the curve. If <script type="math/tex">\vec {x}</script> is a smooth parametrization of <script type="math/tex">C</script>, when
-we take the limit as <script type="math/tex">n\rightarrow \infty </script>, we will find the exact length of the curve.
-</p><!--l. 29--><p class="noindent" >PICTURE
-</p><!--l. 31--><p class="noindent" >Let’s use this idea to find a formula for the length of a curve parametrized
-by a smooth path <script type="math/tex">\vec {x}(t)</script>. The length of the segment connecting <script type="math/tex">\vec {x}(t_{i-1})</script> and <script type="math/tex">\vec {x}(t_i)</script>
-can be computed as <script type="math/tex">\|\vec {x}(t_i)-\vec {x}(t_{i-1})\|</script>, so we have that the length of the curve is
+</p>
+<div class="image-environment" role="img" aria-labelledby="image-alt-2">  <img 
+src="./curve_length-figure1.svg" alt=""  
+ />
+</div>
                                                                   
 
                                                                   
+<!--l. 51--><p class="noindent" >One way that we can do this is by subdividing the interval <script type="math/tex">[a,b]</script> into <script type="math/tex">n</script> subintervals <script type="math/tex">[t_{i-1},t_i]</script> of
+equal length, and then take the line segments connecting <script type="math/tex">\vec {x}(t_{i-1})</script> and <script type="math/tex">\vec {x}(t_i)</script>.
+</p>
+<div class="image-environment" role="img" aria-labelledby="image-alt-3">  <img 
+src="./curve_length-figure2.svg" alt=""  
+ />
+</div>
+<!--l. 80--><p class="noindent" >As <script type="math/tex">n</script> increases, our line segments get shorter and shorter, giving us a more accurate
+approximation of the length of the curve. If <script type="math/tex">\vec {x}</script> is a smooth parametrization of <script type="math/tex">C</script>, when
+we take the limit as <script type="math/tex">n\rightarrow \infty </script>, we will find the exact length of the curve.
+</p><!--l. 82--><p class="noindent" >Let’s use this idea to find a formula for the length of a curve parametrized
+by a smooth path <script type="math/tex">\vec {x}(t)</script>. The length of the segment connecting <script type="math/tex">\vec {x}(t_{i-1})</script> and <script type="math/tex">\vec {x}(t_i)</script>
+can be computed as <script type="math/tex">\|\vec {x}(t_i)-\vec {x}(t_{i-1})\|</script>, so we have that the length of the curve is
 </p><script type="math/tex; mode=display"> \begin{align*} 
 L(\vec{x}) &\approx \sum_{i=1}^n\|\vec{x}(t_i)-\vec{x}(t_{i-1})\|\\
-&=\sum_{i=1}^n\|\frac{\vec{x}(t_i)-\vec{x}(t_{i-1})}{\delta t}\|\delta t,
+&=\sum_{i=1}^n\|\frac{\vec{x}(t_i)-\vec{x}(t_{i-1})}{\Delta t}\|\Delta t,
 \end{align*}</script>
-<!--l. 36--><p class="noindent" >where we both multiply and divide by <script type="math/tex">\delta t</script>, the length of each subinterval.
-</p><!--l. 38--><p class="noindent" >As <script type="math/tex">n\rightarrow \infty </script>, the length of the subintervals, <script type="math/tex">\delta t</script>, goes to <script type="math/tex">0</script>, and <script type="math/tex">\frac {\vec {x}(t_i)-\vec {x}(t_{i-1})}{\delta t}</script> goes to <script type="math/tex">\vec {x}'(t_i)</script>. This gives us <script type="math/tex; mode=display"> L(\vec {x})=\lim _{n\rightarrow \infty }\sum _{i=1}^n \|\vec {x}'(t_i)\|\delta . </script>
+<!--l. 87--><p class="noindent" >where we both multiply and divide by <script type="math/tex">\Delta t</script>, the length of each subinterval.
+</p><!--l. 89--><p class="noindent" >As <script type="math/tex">n\rightarrow \infty </script>, the length of the subintervals, <script type="math/tex">\Delta t</script>, goes to <script type="math/tex">0</script>, and <script type="math/tex">\frac {\vec {x}(t_i)-\vec {x}(t_{i-1})}{\Delta t}</script> goes to <script type="math/tex">\vec {x}'(t_i)</script>. This gives us <script type="math/tex; mode=display"> L(\vec {x})=\lim _{n\rightarrow \infty }\sum _{i=1}^n \|\vec {x}'(t_i)\|\Delta . </script>
 Recognizing this as an integral, we arrive at <script type="math/tex; mode=display"> L(\vec {x}) = \int _a^b\|\vec {x}'(t)\|dt. </script> Although we started with the goal of
-finding the length of a <em>curve</em>, however the result that we came up with could depend
-on the choice of parametrization <script type="math/tex">\vec {x}(t)</script> of the curve. So, for now, we will use this idea to
-define the length of a path.
+finding the length of a <em>curve</em>, the result that we came up with could depend on the
+choice of parametrization <script type="math/tex">\vec {x}(t)</script> of the curve. So, for now, we will use this idea to define the
+length of a path.
 </p>
 <div class="theorem-like problem-environment definition" id="problem1"><a 
  id="x1-1001r1"></a>Let <script type="math/tex">\vec {x}:I\rightarrow \mathbb {R}^n</script> be a <script type="math/tex">C^1</script> path defined on the interval <script type="math/tex">I=[a,b]</script>. The <em>length</em> of the path <script type="math/tex">\vec {x}</script> is <script type="math/tex; mode=display"> L(\vec {x}) = \int _a^b\|\vec {x}'(t)\|dt. </script>
 </div>
-<!--l. 55--><p class="noindent" >In the next section, we will explore how the choice of the parametrization affects the
+<!--l. 106--><p class="noindent" >In the next section, we will explore how the choice of the parametrization affects the
 computation of the length of the corresponding curve. For now, we’ll compute the
 length of paths in a couple of examples.
 </p>
 <div class="theorem-like problem-environment example" id="problem2"><a 
  id="x1-1002r2"></a>Consider the path <script type="math/tex">\vec {x}:[0,2\pi ]\rightarrow \mathbb {R}^2</script> defined by <script type="math/tex">\vec {x}(t) = (\cos (t),\sin (t))</script>.
-<!--l. 60--><p class="noindent" >PICTURE
-</p><!--l. 62--><p class="noindent" >We compute the length of this path. </p><script type="math/tex; mode=display"> \begin{align*} 
+<div class="image-environment" role="img" aria-labelledby="image-alt-4"><img 
+src="./graphics/CalcPlot3D-unit_circle.png" alt="PIC"  
+ /> </div>
+<!--l. 115--><p class="noindent" >We compute the length of this path. </p><script type="math/tex; mode=display"> \begin{align*} 
 L(\vec{x}) &= \int_a^b\|\vec{x}'(t)\|dt\\
 &= \int_{0}^{2\pi}\|(-\sin(t),\cos(t))\|dt\\
 &= \int_{0}^{2\pi} \sqrt{(-\sin(t))^2 + (\cos(t))^2}\;dt\\
 &= \int_{0}^{2\pi} \answer{1}dt\\
-& = \answer{2pi}
+& = \answer{2\pi}
 \end{align*}</script>
-<!--l. 70--><p class="noindent" >Remembering that this is a parametrization for the unit circle, this matches with
+                                                                  
+
+                                                                  
+<!--l. 123--><p class="noindent" >Remembering that this is a parametrization for the unit circle, this matches with
 what we know to be the circumference of the circle.
 </div>
 </p>
 <div class="theorem-like problem-environment example" id="problem3"><a 
  id="x1-1003r3"></a>Consider the path <script type="math/tex">\vec {x}:[0,3\pi ]\rightarrow \mathbb {R}^3</script> defined by <script type="math/tex">\vec {x}(t) = (\cos (t),\sin (t),t)</script>.
-<!--l. 76--><p class="noindent" >PICTURE
-</p><!--l. 78--><p class="noindent" >We compute the length of this path. </p><script type="math/tex; mode=display"> \begin{align*} 
+<div class="image-environment" role="img" aria-labelledby="image-alt-5"><img 
+src="./graphics/CalcPlot3D-spiral.png" alt="PIC"  
+ /> </div>
+<!--l. 133--><p class="noindent" >We compute the length of this path. </p><script type="math/tex; mode=display"> \begin{align*} 
 L(\vec{x}) &= \int_a^b\|\vec{x}'(t)\|dt\\
 &= \int_{0}^{3\pi} \|\answer{(-\sin(t),\cos(t),1)}\|dt\\
 &= \int_{0}^{3\pi} \answer{\sqrt{2}}dt\\
 &= \answer{3\sqrt{2}\pi}
-                                                                  
-
-                                                                  
 \end{align*}</script>
-<!--l. 85--><p class="noindent" ></div>
-</p><!--l. 87--><p class="noindent" >Because of the square roots that appear when we take the magnitude of <script type="math/tex">\vec {x}'(t)</script>, arclength
+<!--l. 140--><p class="noindent" ></div>
+</p><!--l. 142--><p class="noindent" >Because of the square roots that appear when we take the magnitude of <script type="math/tex">\vec {x}'(t)</script>, arclength
 integrals for arbitrary curves are often messy to compute. However, in these
 cases, at least we can write down an integral representing the length of the
 curve, and perhaps use technology to either evaluate or approximate the
@@ -115,44 +135,54 @@ integral.
 </p>
 <h3 class="likesectionHead"><a 
  id="x1-2000"></a>The Length of a Curve</h3>
-<!--l. 91--><p class="noindent" >In one of the previous examples, we found the length of the path <script type="math/tex">\vec {x}(t) = (\cos (t),\sin (t))</script> for <script type="math/tex">t\in [0,2\pi ]</script>. we found that
+<!--l. 146--><p class="noindent" >In one of the previous examples, we found the length of the path <script type="math/tex">\vec {x}(t) = (\cos (t),\sin (t))</script> for <script type="math/tex">t\in [0,2\pi ]</script>. we found that
 <script type="math/tex">L(\vec {x}) = 2\pi </script>, matching what we know to be the circumference of the circle of radius
 <script type="math/tex">1</script>.
-</p><!--l. 93--><p class="noindent" >PICTURE
-</p><!--l. 95--><p class="noindent" >Let’s see what happens when we take a different parametrization for the
+</p>
+<div class="image-environment" role="img" aria-labelledby="image-alt-6"><img 
+src="./graphics/CalcPlot3D-unit_circle.png" alt="PIC"  
+ /> </div>
+<!--l. 152--><p class="noindent" >Let’s see what happens when we take a different parametrization for the
 same curve, this time computing the length of <script type="math/tex">\vec {y}(t) = (\cos (t),\sin (t))</script> for <script type="math/tex">t\in [0,4\pi ]</script>. In this case, we get
 </p><script type="math/tex; mode=display"> \begin{align*} 
 L(\vec{x}) &= \int_a^b\|\vec{x}'(t)\|dt\\
 &= \int_{0}^{4\pi}\|(-\sin(t),\cos(t))\|dt\\
 &= \int_{0}^{4\pi} \sqrt{(-\sin(t))^2 + (\cos(t))^2}\;dt\\
 &= \int_{0}^{4\pi} 1\;dt\\
-& = \answer{4pi}.
+& = \answer{4\pi}.
 \end{align*}</script>
-<!--l. 103--><p class="noindent" >Although <script type="math/tex">\vec {y}</script> is another <script type="math/tex">C^1</script> parametrization of the unit circle, we get a different result for
-the length of the path!
-</p><!--l. 105--><p class="noindent" >The issue here is that while <script type="math/tex">\vec {x}</script> traces around the unit circle once, the path <script type="math/tex">\vec {y}</script> traces
-around the unit circle twice. When we are computing <script type="math/tex">L(\vec {y})</script>, we are really computing the
-distance traced by the path <script type="math/tex">\vec {y}</script>, which is why we get twice the length of the actual
-curve.
-</p><!--l. 107--><p class="noindent" >Because of this, if we want to compute the length of a curve, we need to be careful
-with our choice of parametrization, to make sure that we are only tracing over the
-curve once.
-</p><!--l. 109--><p class="noindent" >The proof of the following theorem is left as an exercise. A curve is <em>simple</em> if it does
-not intersect itself.
-</p>
-<div class="theorem-like problem-environment theorem" id="problem4"><a 
- id="x1-2001r4"></a>Let <script type="math/tex">\vec {x}(t)</script>, <script type="math/tex">a\leq t\leq b</script>, and <script type="math/tex">\vec {y}(s)</script>, <script type="math/tex">c\leq s\leq d</script> be smooth and simple parametrizations of the same curve <script type="math/tex">C</script>. Then
-<script type="math/tex">L(\vec {x}) = L(\vec {y})</script>.
                                                                   
 
                                                                   
-<!--l. 114--><p class="noindent" >In this case, we define the length of <script type="math/tex">C</script> to be <script type="math/tex; mode=display"> L(C) = L(\vec {x}) = L(\vec {y}). </script>
+<!--l. 160--><p class="noindent" >Although <script type="math/tex">\vec {y}</script> is another <script type="math/tex">C^1</script> parametrization of the unit circle, we get a different result for
+the length of the path!
+</p><!--l. 162--><p class="noindent" >The issue here is that while <script type="math/tex">\vec {x}</script> traces around the unit circle once, the path <script type="math/tex">\vec {y}</script> traces
+around the unit circle twice. When we are computing <script type="math/tex">L(\vec {y})</script>, we are really computing the
+distance traced by the path <script type="math/tex">\vec {y}</script>, which is why we get twice the length of the actual
+curve.
+</p><!--l. 164--><p class="noindent" >Because of this, if we want to compute the length of a curve, we need to be careful
+with our choice of parametrization, to make sure that we are only tracing over the
+curve once.
+</p><!--l. 166--><p class="noindent" >Fortunately, as long as we do not retrace our path, the length of a curve is
+independent of the parametrization. In order for this to be true, we require that a
+curve be <em>simple</em>, which means that it does not intersect itself. More precisely, if <script type="math/tex">t_1\neq t_2</script>, then
+<script type="math/tex">\vec {x}(t_1)\neq \vec {x}(t_2)</script>.
+</p><!--l. 168--><p class="noindent" >The proof of the following theorem is left as an exercise.
+</p>
+<div class="theorem-like problem-environment theorem" id="problem4"><a 
+ id="x1-2001r4"></a>Let <script type="math/tex">\vec {x}(t)</script>, for <script type="math/tex">a\leq t\leq b</script>, and <script type="math/tex">\vec {y}(s)</script>, for <script type="math/tex">c\leq s\leq d</script>, be smooth and simple parametrizations of the same curve <script type="math/tex">C</script>. Then
+<script type="math/tex">L(\vec {x}) = L(\vec {y})</script>.
+<!--l. 173--><p class="noindent" >In this case, we define the length of <script type="math/tex">C</script> to be <script type="math/tex; mode=display"> L(C) = L(\vec {x}) = L(\vec {y}). </script>
 </div>
-</p><!--l. 120--><p class="noindent" >We also might encounter a situation where we want to compute the length of
+</p><!--l. 179--><p class="noindent" >We also might encounter a situation where we want to compute the length of
 a curve which is not <script type="math/tex">C^1</script>, but is piecewise <script type="math/tex">C^1</script>. In this case, we can compute the
 length of the curve by computing the lengths of the pieces, and adding them
 together.
-</p><!--l. 122--><p class="noindent" >PICTURE
+</p>
+<div class="image-environment" role="img" aria-labelledby="image-alt-7">  <img 
+src="./curve_length-figure3.svg" alt=""  
+ />
+</div>
 </body> 
  
 </html>
