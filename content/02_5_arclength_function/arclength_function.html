@@ -33,22 +33,43 @@
 class="abstract" 
 >
 </div>   <div class="maketitle"></div>
-<!--l. 11--><p class="noindent" >In this activity, we introduce the arclength function, and parametrize a curve with
-respect to arclength.
+<!--l. 11--><p class="noindent" >In our quest to understand the inherent geometry of curves, we’ve determined how to
+find the length of a curve. In order to compute the length of a curve, we
+needed to chose a smooth and simple parametrization for the curve. As it
+turned out, the length was independent of this choice of parametrization, so
+we didn’t need to worry about different parametrizations yielding different
+lengths.
+</p><!--l. 13--><p class="noindent" >Looking ahead in our study of the inherent geometry of curves, we would like to find
+a way to quantify how ”curvy” a curve is. In order to do this, we’ll need a
+standardized parametrization, to avoid getting different measures of curviness for
+different parametrizations. This special parametrization will be one that traverses the
+path at a constant speed of <script type="math/tex">1</script>. In order to define this parametrization, we again
+turn our attention to arclength, this time defining a function that computes
+arclength at varying points on a curve. We will later see how the arclength
+function can be used to find the standardized parametrization which we
+require.
 <a 
  id="Q1-1-1"></a>
 </p>
 <h3 class="likesectionHead"><a 
  id="x1-1000"></a>The Arclength Function</h3>
-<!--l. 15--><p class="noindent" >Suppose we’re considering the arclength of some curve <script type="math/tex">\vec {x}(t)</script>. Let’s fix some starting point
+<!--l. 17--><p class="noindent" >Suppose we’re considering the arclength of some curve <script type="math/tex">\vec {x}(t)</script>. Let’s fix some starting point
 at time <script type="math/tex">t=a</script>, but instead of fixing the endpoint as well, we’ll let that vary, so we’ll think
-of it as a variable. For each choice of endpoint, we can compute the arclength
-along the curve from our fixed start point to the endpoint. This gives us a
-special function, which we call the <em>arclength function</em>: <script type="math/tex; mode=display"> s(t) = \int _a^t \|\vec {x}'(\tau )\|d\tau . </script> Note that we’re using <script type="math/tex">\tau </script>
+of it as a variable. For each choice of endpoint, we can compute the arclength along
+the curve from our fixed start point to the endpoint. This gives us a special function,
+which we call the <em>arclength function</em>: <script type="math/tex; mode=display"> s(t) = \int _a^t \|\vec {x}'(\tau )\|d\tau . </script> Note that we’re using <script type="math/tex">\tau </script>, pronounced “tau,”
 for the variable of integration, to avoid confusion with the <script type="math/tex">t</script> used for the
-endpoint.
-</p><!--l. 21--><p class="noindent" >COOL INTERACTIVE
-</p><!--l. 23--><p class="noindent" >Let’s see what happens when we differentiate the arclength function. First, recall part
+endpoint. We’ll commonly use <script type="math/tex">s</script> to denote arclength, often omitting the variable
+                                                                  
+
+                                                                  
+<script type="math/tex">t</script>.
+</p>
+<div class="image-environment" role="img" aria-labelledby="image-alt-1">  <img 
+src="./arclength_function-figure0.svg" alt=""  
+ />
+</div>
+<!--l. 39--><p class="noindent" >Let’s see what happens when we differentiate the arclength function. First, recall part
 of the Fundamental Theorem of Calculus: if <script type="math/tex">f</script> is a continuous function, and we define <script type="math/tex">F(x) = \int _a^x f(u)\;du</script>,
 then <script type="math/tex; mode=display"> F'(x) = \answer {f(x)}. </script> Applying this to the arclength function, <script type="math/tex">s(t) = \int _a^t \|\vec {x}'(\tau )\|\;d\tau </script>, we have <script type="math/tex; mode=display"> s'(t) = \|\vec {x}'(t)\|. </script> This means that the
 derivative of the arclength function is the <em>speed</em> of the parametrization, or the speed
@@ -58,18 +79,20 @@ should be speed.
 <a 
  id="Q1-1-3"></a>
 </p>
-                                                                  
-
-                                                                  
 <h3 class="likesectionHead"><a 
  id="x1-2000"></a>Parametrization with Respect to Arclength</h3>
-<!--l. 36--><p class="noindent" >One of the most important uses of the arclength function is to reparametrize a curve
+<!--l. 52--><p class="noindent" >One of the most important uses of the arclength function is to reparametrize a curve
 according to <em>arclength</em>. This means that we find a special parametrization <script type="math/tex">\vec {x}(s)</script> for <script type="math/tex">0\leq s\leq L</script>,
 where <script type="math/tex">L</script> is the length of the curve. This parametrization has the property that <script type="math/tex">\vec {x}(s)</script> is
 always the point distance <script type="math/tex">s</script> along the curve.
-</p><!--l. 38--><p class="noindent" >We’ll see that the arclength parametrization is very useful, but unfortunately it is
-often computationally difficult to find. The process for reparametrizating with
-respect to arclength is:
+</p>
+<div class="image-environment" role="img" aria-labelledby="image-alt-2">  <img 
+src="./arclength_function-figure1.svg" alt=""  
+ />
+</div>
+<!--l. 70--><p class="noindent" >We’ll see that the arclength parametrization is very useful for understanding the
+geometry of a curve, but unfortunately it is often computationally difficult to find.
+The process for reparametrizating with respect to arclength is:
      </p><dl class="enumerate-enumitem"><dt class="enumerate-enumitem">
  (a) </dt><dd 
 class="enumerate-enumitem">Find a parametrization <script type="math/tex">\vec {x}(t)</script> for the curve.
@@ -84,14 +107,19 @@ class="enumerate-enumitem">Invert the arclength function. That is, write the par
  (d) </dt><dd 
 class="enumerate-enumitem">Substitute the expression for <script type="math/tex">t</script> into the original parametrization <script type="math/tex">\vec {x}(t)</script>, which
      gives you a parametrization for the curve with respect to arclength, <script type="math/tex">s</script>.</dd></dl>
-<!--l. 46--><p class="noindent" >These steps sound simple enough, but are complicated by the fact that arclength
+<!--l. 78--><p class="noindent" >These steps sound simple enough, but are complicated by the fact that arclength
 integrals rarely simplify nicely, so it can be difficult to write down an inverse. Below,
 we work through an example where arclength can be simplified nicely.
+                                                                  
+
+                                                                  
 </p>
 <div class="theorem-like problem-environment example" id="problem1"><a 
  id="x1-2005r1"></a>Consider the helix <script type="math/tex">\vec {x}(t) = (3\cos (t), 3\sin (t), 4t)</script> for <script type="math/tex">0\leq t \leq 8\pi </script>. We’ll reparametrize this helix with respect to arclength.
-<!--l. 51--><p class="noindent" >GRAPH
-</p><!--l. 53--><p class="noindent" >We’re already given a parametrization for the curve, so we’ll begin by finding
+<div class="image-environment" role="img" aria-labelledby="image-alt-3"><img 
+src="./graphics/CalcPlot3D-arclength_ex.png" alt="PIC"  
+ /> </div>
+<!--l. 87--><p class="noindent" >We’re already given a parametrization for the curve, so we’ll begin by finding
 the arclength function <script type="math/tex">s(t) = \int _0^t \|\vec {x}'(\tau )\|\;d\tau </script>. First, we’ll find the velocity. <script type="math/tex; mode=display"> \vec {x}'(t) = \answer {(-3\sin (t),3\cos (t), 4)} </script> Then, we can find
 the speed. <script type="math/tex; mode=display"> \|\vec {x}'(t)\| = \answer {5} </script> Now, we find the arclength function by integrating speed.
 </p><script type="math/tex; mode=display"> \begin{align*} 
@@ -99,19 +127,16 @@ s(t) &= \int_0^t \|\vec{x}'(\tau)\|\;d\tau\\
 &= \int_0^t 5d\tau\\
 &= \answer{5t}
 \end{align*}</script>
-<!--l. 67--><p class="noindent" >We now find the inverse of the arclength function, to find the parameter <script type="math/tex">t</script> in terms
-of arclength <script type="math/tex">s</script>. Working for <script type="math/tex">s=5t</script>, we have <script type="math/tex; mode=display"> t = \answer {s/5}. </script> We substitute this into our original
+<!--l. 101--><p class="noindent" >We now find the inverse of the arclength function, to find the parameter <script type="math/tex">t</script> in terms of
+arclength <script type="math/tex">s</script>. Working from <script type="math/tex">s=5t</script>, we have <script type="math/tex; mode=display"> t = \answer {s/5}. </script> We substitute this into our original
 parametrization, and we have <script type="math/tex; mode=display"> \vec {x}(s) = \answer {(3\cos (s/5), 3\sin (s/5), \frac {4}{5}s)}. </script> This gives us the parametrization with respect to
 arclength.
 </div>
-                                                                  
-
-                                                                  
-</p><!--l. 78--><p class="noindent" >We will soon see that the arclength parametrization can be used to examine the
+</p><!--l. 112--><p class="noindent" >We will soon see that the arclength parametrization can be used to examine the
 inherent geometry of the curve, independent of how quickly or slowly a given path
 traverses the curve. This is because the arclength parametrization always has unit
 speed. Let’s investigate why this is true.
-</p><!--l. 80--><p class="noindent" >Let’s suppose we obtain the arclength parametrization <script type="math/tex">\vec {x}(s)</script> from some parametrization <script type="math/tex">\vec {x}(t)</script>.
+</p><!--l. 114--><p class="noindent" >Let’s suppose we obtain the arclength parametrization <script type="math/tex">\vec {x}(s)</script> from some parametrization <script type="math/tex">\vec {x}(t)</script>.
 Since <script type="math/tex">s</script> is a function of <script type="math/tex">t</script>, we can use the chain rule to find the velocity of <script type="math/tex">\vec {x}(t)</script>. In
 particular, <script type="math/tex; mode=display"> \vec {x}'(t) = \vec {x}'(s)\cdot s'(t). </script> Earlier, we found that <script type="math/tex">s'(t) = \|\vec {x}'(t)\|</script>. Substituting, we have <script type="math/tex; mode=display"> \vec {x}'(t) = \vec {x}'(s)\|\vec {x}'(t)\|. </script> Taking the magnitude of
 both sides, we have <script type="math/tex; mode=display"> \|\vec {x}'(t)\| = \|\vec {x}'(s)\|\cdot \|\vec {x}'(t)\|. </script> From this, we see that <script type="math/tex; mode=display"> \|\vec {x}'(s)\| = 1. </script> So, the speed of the arclength

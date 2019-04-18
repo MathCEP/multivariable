@@ -1,6 +1,6 @@
 \documentclass{ximera}
 
-\graphicspath{{./graphics/}}
+\graphicspath{{./content/02_6_curvature/graphics/}{./graphics/}}
 
 \title{Curvature}
 \begin{document}
@@ -8,19 +8,39 @@
 \end{abstract}
 \maketitle
 
-In this activity, we define the curvature of a path and discuss its geometric significance.
+We have an intuitive idea for what it means for a curve to be ``curvy.'' Intuitively, we would probably describe the following curves as ``not very curvy.''
 
-\section*{Definition of Curvature}
+\begin{image}
+\begin{tikzpicture}
+\draw  (0,0) to[out=55,in=215] (2,2);
+\draw  (3,2) to[out=-55,in=125] (5,0);
+\draw  (6,1) -- (8,1);
+\end{tikzpicture}
+\end{image}
 
-We have an intuitive idea for what it means for a curve to be ``curvy.''
+On the other hand, we'd probably describe the next group of curves as ``very curvy.''
 
-EXAMPLES OF VERY CURVY AND NOT VERY CURVY CURVES
+\begin{image}
+\begin{tikzpicture}
+\draw  (0,0) to[out=175,in=185] (0,2);
+\draw  (0,2) to[out=5,in=-5] (2,0);
+\draw  (2,0) to[out =175,in=175] (1,1);
 
-However, we don't yet have a way to represent ``curviness'' mathematically. In this section, we'll define the \emph{curvature} of a curve, which will allow us to quantify ``curviness.''
+\draw  (4,0) to[out=90,in=180] (4.5,2);
+\draw  (4.5,2) to[out=0,in=90] (5,1);
+\draw  (5,1) to[out=270,in=180] (5.5,0);
+\draw  (5.5,0) to[out=0,in=180] (6,2);
+\draw  (6,2) to[out=0,in=180] (8,0);
+\end{tikzpicture}
+\end{image}
+
+However, we don't yet have a way to represent ``curviness'' mathematically. In this section, we'll define the \emph{curvature} of a curve, which will allow us to quantify ``curviness.'' 
 
 In order to ensure that our definition is independent of the parametrization, we'll need to work with the arclength parametrization $\vec{x}(s)$. Recall that this parametrization traverses the curve at unit speed.
 
-Let's look at the behavior of the unit tangent vector as we traverse various curves. Recall that the unit tangent vector is the velocity divided by the speed, so
+\section*{Definition of Curvature}
+
+Let's look at the behavior of the unit tangent vector as we traverse various curves. The unit tangent vector is the velocity divided by the speed, so
 \[
 \vec{T}(t) = \frac{\vec{x}'(t)}{\|\vec{x}'(t)\|}.
 \]
@@ -29,7 +49,7 @@ Since the arclength parametrization has unit speed, we have
 \vec{T}(s) = \vec{x}'(s).
 \]
 
-SUPER AWESOME INTERACTIVE
+\youtube{h6NFSX12Zpw}
 
 We see that the unit tangent vector changes very quickly when we're curving sharply, and the unit tangent vector doesn't change when we're going straight. So, we'll use the change in the unit tangent vector to measure ``curviness.''
 
@@ -86,7 +106,9 @@ Finally, we compute the curvature at time $t$.
 \]
 Note that the curvature is independent of the time $t$, so independent of our position on the circle. This matches with the symmetry of the circle.
 
-PICTURE
+\begin{image}
+\includegraphics[width=\textwidth]{CalcPlot3D-generic_circle}
+\end{image}
 \end{example}
 
 \begin{example}
@@ -120,7 +142,9 @@ Finally, we compute the curvature at time $t$.
 
 In a previous example, we found that the curvature of the circle of radius $a$ is constant, and $\kappa = \frac{1}{a}$. Another way to say this is that the radius of the circle is ``one over the curvature,'' or $a = \frac{1}{\kappa}$. We can extend this idea to other curves as well: given $\vec{x}(t)$, $r = \frac{1}{\kappa(t)}$ is the radius of the circle which ``best fits'' the graph at time $t$. We call this circle the \emph{osculating circle} at that point.
 
-PICTURE/INTERACTIVE
+In the following video, you can see how the osculating circle changes as we traverse a curve.
+
+\youtube{VkTSpo8e4Mc}
 
 
 \end{document}

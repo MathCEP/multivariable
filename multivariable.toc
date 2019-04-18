@@ -1,8 +1,61 @@
-\contentsline {part}{I\hspace {1em}Review}{3}{part.1}
-\contentsline {part}{II\hspace {1em}Coordinate Systems and Functions}{3}{part.2}
-\contentsline {part}{III\hspace {1em}Curves}{3}{part.3}
-\contentsline {part}{IV\hspace {1em}Limits and Derivatives}{3}{part.4}
-\contentsline {part}{V\hspace {1em}Behavior of Functions}{3}{part.5}
-\contentsline {part}{VI\hspace {1em}Homework}{3}{part.6}
-\contentsline {part}{VII\hspace {1em}Practice Problems}{3}{part.7}
+\contentsline {part}{I\hspace {1em}Review}{5}{part.1}
+\contentsline {section}{Vectors}{5}{section*.1}
+\contentsline {section}{The Dot Product}{12}{section*.2}
+\contentsline {section}{The Cross Product}{15}{section*.3}
+\contentsline {section}{Matrices}{20}{section*.4}
+\contentsline {section}{Representations of Lines and Planes}{33}{section*.5}
+\contentsline {part}{II\hspace {1em}Coordinate Systems and Functions}{35}{part.2}
+\contentsline {section}{Review of Coordinate Systems}{35}{section*.6}
+\contentsline {section}{Cylindrical Coordinates}{45}{section*.7}
+\contentsline {section}{Spherical Coordinates}{52}{section*.8}
+\contentsline {section}{Functions}{60}{section*.9}
+\contentsline {section}{Graphing Functions}{67}{section*.10}
+\contentsline {section}{Quadric Surfaces}{78}{section*.11}
+\contentsline {part}{III\hspace {1em}Curves}{88}{part.3}
+\contentsline {section}{Parametric Curves}{88}{section*.12}
+\contentsline {section}{Velocity, Speed, and Acceleration}{96}{section*.13}
+\contentsline {section}{Properties of Velocity and Speed}{103}{section*.14}
+\contentsline {section}{The Length of a Curve}{106}{section*.15}
+\contentsline {section}{Arclength Function}{111}{section*.16}
+\contentsline {section}{Curvature}{115}{section*.17}
+\contentsline {section}{Defining the Moving Frame}{119}{section*.18}
+\contentsline {section}{Moving Frame Computations}{123}{section*.19}
+\contentsline {section}{Decomposition of Acceleration}{127}{section*.20}
+\contentsline {part}{IV\hspace {1em}Limits and Derivatives}{133}{part.4}
+\contentsline {section}{Introduction to Limits}{133}{section*.21}
+\contentsline {section}{Evaluating Limits}{138}{section*.22}
+\contentsline {section}{Continuity and Limits in General}{144}{section*.23}
+\contentsline {section}{Partial Derivatives}{148}{section*.24}
+\contentsline {section}{Geometric Interpretation of Partial Derivatives}{152}{section*.25}
+\contentsline {section}{Geometry of Differentiability}{154}{section*.26}
+\contentsline {section}{Differentiability of Functions of Two Variables}{159}{section*.27}
+\contentsline {section}{The Gradient}{162}{section*.28}
+\contentsline {section}{Differentiability in General}{166}{section*.29}
+\contentsline {section}{Higher Order Partial Derivatives}{170}{section*.30}
+\contentsline {section}{Differentiation Properties}{176}{section*.31}
+\contentsline {section}{Chain Rule}{181}{section*.32}
+\contentsline {section}{Directional Derivatives}{186}{section*.33}
+\contentsline {section}{The Gradient and Level Sets}{188}{section*.34}
+\contentsline {section}{Implicit Curves and Surfaces}{192}{section*.35}
+\contentsline {part}{V\hspace {1em}Behavior of Functions}{195}{part.5}
+\contentsline {section}{Review of Taylor Polynomials}{195}{section*.36}
+\contentsline {section}{Quadratic Forms}{200}{section*.37}
+\contentsline {section}{The Hessian Matrix}{207}{section*.38}
+\contentsline {section}{Local Extrema}{210}{section*.39}
+\contentsline {section}{Absolute Extrema}{216}{section*.40}
+\contentsline {section}{Optimization with Constraints}{221}{section*.41}
+\contentsline {section}{Lagrange Multipliers}{225}{section*.42}
+\contentsline {part}{VI\hspace {1em}Homework}{229}{part.6}
+\contentsline {section}{Homework 1: Coordinates}{229}{section*.43}
+\contentsline {section}{Homework 2: Graphing}{233}{section*.44}
+\contentsline {section}{Homework 3: Parametrized Curves}{249}{section*.45}
+\contentsline {section}{Homework 8: Differentiability}{258}{section*.46}
+\contentsline {section}{Homework 9: Properties of Derivatives}{261}{section*.47}
+\contentsline {section}{Homework 10: Directional Derivatives}{264}{section*.48}
+\contentsline {section}{Homework 11: Taylor's Theorem}{267}{section*.49}
+\contentsline {section}{Homework 12: Extrema}{270}{section*.50}
+\contentsline {section}{Winter Assignment: Substitution and Lagrange Multipliers}{272}{section*.51}
+\contentsline {part}{VII\hspace {1em}Practice Problems}{273}{part.7}
+\contentsline {section}{Practice Problems: Review}{273}{section*.52}
+\contentsline {section}{Practice Problems: Coordinate Systems}{281}{section*.53}
 \contentsfinish 
