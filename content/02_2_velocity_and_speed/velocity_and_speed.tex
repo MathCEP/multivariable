@@ -32,7 +32,20 @@ We use the same idea for a path $\vec{x}$ in $\mathbb{R}^n$. We consider secant 
 \includegraphics[width=\textwidth]{CalcPlot3D-curve_deriv}
 \end{image}
 
-Scaling these vectors to account for the change in the parameter and taking a limit, we arrive at the definition of the derivative.
+To define the derivative, we will scale these vectors to account for the change in the parameter and then take a limit.
+
+Later, we will see that limits for multivariable functions are difficult to define and compute in general. Fortunately, for paths, limits are fairly simple: we just take the limit of the components. We now define limits along paths, along with continuous paths.
+
+\begin{definition}
+Let $\vec{x}:I\rightarrow\mathbb{R}^n$ be a path in $\mathbb{R}^n$, defined on an interval $[a,b]$. Let $x_1,...,x_n$ be the component functions of $\vec{x}$, so that $\vec{x}(t)=(x_1(t),...,x_n(t))$. For $t_0\in (a,b)$, we define the \emph{limit} of $\vec{x}$ as $t$ approaches $t_0$ to be
+\[
+\lim_{t\rightarrow t_0}\vec{x}(t) = \left(\lim_{t\rightarrow t_0}x_1(t),...,\lim_{t\rightarrow t_0}x_n(t)\right).
+\]
+
+A path $\vec{x}:I\rightarrow\mathbb{R}^n$ is \emph{continuous} at $t_0\in I$ if $\lim_{t\rightarrow t_0}\vec{x}(t) = \vec{x}(t_0)$.
+\end{definition}
+
+Now that we've defined limits of paths, we are ready to define the derivative of a path as a limit of secant vectors.
 
 \begin{definition}
 Let $\vec{x}:I\subset\mathbb{R}\rightarrow\mathbb{R}^n$ be a path in $\mathbb{R}^n$. We define the derivative of $\vec{x}$ at $t$ to be
@@ -71,7 +84,6 @@ Dividing through by the scalar $h$ and bringing the limit inside of the vector, 
 \vec{x}'(t) &= \lim_{h\rightarrow 0}\left(\frac{x_1(t+h) - x_1(t)}{h},...,\frac{x_n(t+h) - x_1(t)}{h}\right),\\
 &= \left(\lim_{h\rightarrow 0}\frac{x_1(t+h) - x_1(t)}{h},...,\lim_{h\rightarrow 0}\frac{x_n(t+h) - x_1(t)}{h}\right).
 \end{align*}
-At this point you should be somewhat skeptical. We haven't defined limits of vectors, much less described how to manipulate them. We'll come back to this in a few weeks in much more detail. For now, hopefully it makes sense that looking at what a vector approaches depends on what its components approach, and you'll allow us this sleight of hand.
 
 Looking at the limits inside of the components, they should look familiar. They're derivatives of single variable functions! That is, we now have 
 \[
@@ -195,6 +207,14 @@ Then, we differentiate again, to find the acceleration.
 \vec{x}''(t) = \answer{(0,2,9t)}
 \]
 \end{example}
+
+As you can imagine, we could continue to take higher and higher derivatives of our path. In most cases, the velocity and acceleration will provide the most useful information about the path, so we'll typically stop there. However, some theorems will have requirements about differentiability, so we'll classify functions based on how differentiable they are.
+
+\begin{definition}
+Let $\vec{x}:I\rightarrow\mathbb{R}^n$ be a path in $\mathbb{R}^n$. We say that $\vec{x}(t)$ is \emph{of class} $C^k$ if the $k$th derivative of $\vec{x}(t)$ exists and is continuous.
+
+If $\vec{x}(t)$ has continuous derivatives of all orders, then we say that $\vec{x}(t)$ is \emph{of class} $C^{\infty}$. In this case, we also say that $\vec{x}(t)$ is \emph{smooth}.
+\end{definition}
 
 
 \section*{Parametrizing the tangent line}
