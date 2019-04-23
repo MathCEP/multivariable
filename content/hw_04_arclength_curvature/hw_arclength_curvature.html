@@ -1,0 +1,182 @@
+<!doctype html> 
+<html lang="en"> 
+<head> <title>Homework  4:  Arclength  and
+Curvature</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<!-- charset=utf-8,-css,html,htex4ht,xhtml --> 
+<meta name="src" content="hw_arclength_curvature.tex" /> 
+<meta name="author" content="" /> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
+<meta name="ximera" content="version 0.0.1" /> 
+<link href="https://ximera.osu.edu/public/stylesheets/standalone.css" rel="stylesheet" media="screen"/> 
+<script type="text/javascript" async src="https://ximera.osu.edu/public/javascripts/standalone.min.js"></script> 
+</head><body> 
+<div class="preamble"><script type="math/tex">\newenvironment {prompt}{}{}
+\newcommand {\DeclareMathOperator }[2]{\@OldDeclareMathOperator {##1}{##2}\immediate \write \myfile {\unexpanded {\DeclareMathOperator }{\unexpanded {##1}}{\unexpanded {##2}}}}
+\newcommand {\ungraded }[0]{}
+\newcommand {\reserved@a }[2]{}
+\newcommand {\HyperFirstAtBeginDocument }[0]{\AtBeginDocument }
+\newcommand {\reserved@a }[1]{}
+\newcommand {\reserved@a }[2]{}
+\newcommand {\vnameref  }[1]{\unskip ~\nameref {##1}\@vpageref [\unskip ]{##1}}
+\newcommand {\ref  }[0]{\@ifstar \@refstar \T@ref }
+\newcommand {\pageref  }[0]{\@ifstar \@pagerefstar \T@pageref }
+\newcommand {\nameref  }[0]{\@ifstar \@namerefstar \T@nameref }
+\newcommand {\reserved@a }[2]{}
+\newcommand {\reserved@a }[0]{\AtBeginDocument }
+\newcommand {\reserved@a }[1]{}
+\newcommand {\reserved@a }[2]{}                                                                                                                                                 </script><script type="text/javascript"> 
+</script> 
+</div>
+<div 
+class="abstract" 
+>
+</div>   <div class="maketitle"></div>
+<!--l. 9--><p class="noindent" >SOME PROBLEMS COPIED FROM HANDOUTS - NOT SURE OF THEIR
+SOURCE
+<a 
+ id="Q1-1-1"></a>
+</p>
+<h3 class="likesectionHead"><a 
+ id="x1-1000"></a>Online Problems/Completion Packet</h3>
+<div role="article" class="problem-environment problem" id="problem1"><a 
+ id="x1-1001r1"></a> Compute the length of the path <script type="math/tex">\vec {x}(t)=\left (2,t^2,\frac {1}{3}t^3\right )</script> for <script type="math/tex">-2\leq t\leq 2</script>.
+</div>
+<div role="article" class="problem-environment problem" id="problem2"><a 
+ id="x1-1002r2"></a> Compute the length of the path <script type="math/tex">\vec {x}(t) = \left (t, 4\sqrt (t), 2\ln (t)\right )</script> for <script type="math/tex">1\leq t\leq 4</script>.
+</div>
+<div role="article" class="problem-environment problem" id="problem3"><a 
+ id="x1-1003r3"></a> In single variable calculus, you learned the formula <script type="math/tex">L=\int _a^b\sqrt {1+(f'(x))2}dx</script> for the length of the curve
+defined by <script type="math/tex">y=f(x)</script> for <script type="math/tex">a\leq x\leq b</script>. In this problem, you will show that our new definition for arclength
+coincides with this single variable formula.
+<!--l. 24--><p class="noindent" >The curve <script type="math/tex">y=f(x)</script>, for <script type="math/tex">a\leq x\leq b</script>, can be parametrized as <script type="math/tex">\vec {x}(t) = (t,f(t))</script> for <script type="math/tex">a\leq t\leq b</script>. Prove that the the length of <script type="math/tex">\vec {x}(t)</script> is
+<script type="math/tex">\int _a^b\sqrt {1+(f'(x))2}dx</script>.
+</p></div>
+<div role="article" class="problem-environment problem" id="problem4"><a 
+ id="x1-1004r4"></a> Consider the path <script type="math/tex; mode=display"> \vec {x}(t) = \begin {cases} (t,0) & 0\leq t\leq 1\\ (1,t-1) & 1\leq t\leq 2\\ (3-t, 1) & 2\leq t\leq 3\\ (0, 4-t) & 3\leq t\leq 4 \end {cases}. </script>
+     <dl class="enumerate-enumitem"><dt class="enumerate-enumitem">
+ (a) </dt><dd 
+class="enumerate-enumitem">Sketch this path.
+     </dd><dt class="enumerate-enumitem">
+ (b) </dt><dd 
+class="enumerate-enumitem">Is this path <script type="math/tex">C^1</script>? Explain.
+     </dd><dt class="enumerate-enumitem">
+                                                                  
+
+                                                                  
+ (c) </dt><dd 
+class="enumerate-enumitem">Find the length of the path.</dd></dl>
+</div>
+<div role="article" class="problem-environment problem" id="problem5"><a 
+ id="x1-1008r5"></a> Consider the path <script type="math/tex">\vec {x}(t) = \left (\frac {\cos (t)}{t^2},\frac {\sin (t)}{t^2}\right )</script> for <script type="math/tex">t\in [1,\infty )</script>.
+     <dl class="enumerate-enumitem"><dt class="enumerate-enumitem">
+ (a) </dt><dd 
+class="enumerate-enumitem">Sketch this path.
+     </dd><dt class="enumerate-enumitem">
+ (b) </dt><dd 
+class="enumerate-enumitem">Compute <script type="math/tex">\int _1^\infty \|\vec {x}'(t)\|\;dt</script>.
+     </dd><dt class="enumerate-enumitem">
+ (c) </dt><dd 
+class="enumerate-enumitem">Explain why we consider this path to have finite length, even though the
+     parameter is unbounded.</dd></dl>
+</div>
+<div role="article" class="problem-environment problem" id="problem6"><a 
+ id="x1-1012r6"></a> Find the curvature of <script type="math/tex">\mathbf {x}(t)=(t,t^{2},t^{3})</script> at the point <script type="math/tex">(1,1,1)</script>.
+</div>
+<div role="article" class="problem-environment problem" id="problem7"><a 
+ id="x1-1013r7"></a> Consider the curve <script type="math/tex">C</script> shown below. <div class="image-environment" role="img" aria-labelledby="image-alt-1"> </div>
+     <dl class="enumerate-enumitem"><dt class="enumerate-enumitem">
+ (a) </dt><dd 
+class="enumerate-enumitem">Is the curvature of the curve <script type="math/tex">C</script> greater at <script type="math/tex">P</script> or at <script type="math/tex">Q</script>? Explain.
+     </dd><dt class="enumerate-enumitem">
+ (b) </dt><dd 
+class="enumerate-enumitem">Estimate the curvature at <script type="math/tex">P</script> and at <script type="math/tex">Q</script> by sketching the osculating circles at
+     those points.</dd></dl>
+</div>
+<div role="article" class="problem-environment problem" id="problem8"><a 
+ id="x1-1016r8"></a> Each of the graphs below has two curves, <script type="math/tex">a</script> and <script type="math/tex">b</script>. In each case one of the curves is a
+graph of the curvature of the other. Identify which is the original curve and which is
+the graph of the curvature. Explain your answers <div class="image-environment" role="img" aria-labelledby="image-alt-2"> </div>
+</div>
+<div role="article" class="problem-environment problem" id="problem9"><a 
+ id="x1-1017r9"></a> Find an equation of a parabola that has curvature 4 at the origin. Use the definition
+of curvature given in class. Make sure to justify your answer with pictures,
+calculations, and other explanations. Hint: it will help to simplify your calculations
+at each point. For example, <script type="math/tex">\mathbf {T}'(t)</script> and <script type="math/tex">\mathbf {T}'(t) \cdot \mathbf {T}'(t)</script> may appear messy, but can be greatly
+simplified.
+</div>
+<a 
+ id="Q1-1-3"></a>
+<h3 class="likesectionHead"><a 
+ id="x1-2000"></a>Written Problems</h3>
+<div role="article" class="problem-environment problem" id="problem10"><a 
+ id="x1-2001r10"></a> Compute the length of the path <script type="math/tex">\vec {x}(t) = (2t^3,3t^2)</script> for <script type="math/tex">0\leq t\leq 5</script>.
+</div>
+                                                                  
+
+                                                                  
+<div role="article" class="problem-environment problem" id="problem11"><a 
+ id="x1-2002r11"></a>
+     <dl class="enumerate-enumitem"><dt class="enumerate-enumitem">
+ (a) </dt><dd 
+class="enumerate-enumitem">Parametrize the graph of <script type="math/tex">y = \ln x</script>. At what point does the curve have maximum
+     curvature? What happens to the curvature as <script type="math/tex">x \to \infty </script>?
+     </dd><dt class="enumerate-enumitem">
+ (b) </dt><dd 
+class="enumerate-enumitem">Parametrize the graph of <script type="math/tex">y = e^{x}</script>. <em>Without calculating <script type="math/tex">\kappa (t)</script>, answer these questions:</em>
+     At what point does the curve have maximum curvature? What happens
+     to the curvature as <script type="math/tex">x \to \infty </script>? (Hint: Use the geometric relationship between the
+     functions in parts a and b.)</dd></dl>
+</div>
+<a 
+ id="Q1-1-5"></a>
+<h3 class="likesectionHead"><a 
+ id="x1-3000"></a>Professional Problem</h3>
+<div role="article" class="problem-environment problem" id="problem12"><a 
+ id="x1-3001r12"></a> In this problem you will prove that the value of the integral used to compute
+arclength is independent of parametrization. First prove the following version of the
+chain rule, which will be needed later. Your proof will be evaluated as part of your
+solution to the professional problem. <div class="theorem-like problem-environment proposition" id="problem13"><a 
+ id="x1-3002r13"></a>Let <script type="math/tex">\vec {x}:I \to \mathbb {R}^n</script> be a smooth path, and <script type="math/tex">f(t)</script> a differentiable
+function from <script type="math/tex">\mathbb {R}</script> to <script type="math/tex">\mathbb {R}</script>. Then <script type="math/tex; mode=display"> \frac {d}{dt} \vec {x}\left ( f(t) \right ) = \vec {x}'\left ( f(t) \right ) f'(t). </script>
+</div>
+<!--l. 107--><p class="noindent" >Next, prove the following theorem.
+</p>
+<div class="theorem-like problem-environment theorem" id="problem14"><a 
+ id="x1-3003r14"></a>Let <script type="math/tex">\vec {x}: [a,b] \to C</script> and <script type="math/tex">\vec {y}: [c,d] \to C</script> be two smooth and simple (that is, not self-intersecting) parametrizations
+of a curve <script type="math/tex">C</script> in <script type="math/tex">\mathbb {R}^n</script> with the same starting and ending points, so <script type="math/tex">\vec {x}(a)=\vec {y}(c)</script> and <script type="math/tex">\vec {x}(b)=\vec {y}(d)</script>. Then
+<script type="math/tex; mode=display"> \int _a^b || \mathbf {x}'(t) || \, dt = \int _c^d || \mathbf {y}'(s) || \, ds. </script>
+</div>
+<!--l. 125--><p class="noindent" ><em>Hints: </p>
+     <ul class="itemize1">
+     <li class="itemize">Define a new function, <script type="math/tex">f(t) = \vec {y}^{-1} \left ( \vec {x}(t) \right )</script>.
+     </li>
+    <li class="itemize">Write out the arclength integral in terms of <script type="math/tex">\vec {x}</script>, rewrite <script type="math/tex">\vec {x}(t)</script> as <script type="math/tex">\vec {y}\left ( f(t) \right )</script>, and use the
+     above proposition and <script type="math/tex">u</script>-substitution to transform the left side into the right
+     side.
+     </li>
+     <li class="itemize"><script type="math/tex">\vec {y}^{-1}</script> exists, so the definition for <script type="math/tex">f</script> makes sense. (You’ll need to justify this
+     statement.)
+     </li>
+     <li class="itemize"><script type="math/tex">f:[a,b] \to [c,d]</script>, <script type="math/tex">f(a) = c</script> and <script type="math/tex">f(b)=d</script>. (You’ll need to justify this statement.)
+     </li>
+     <li class="itemize"><script type="math/tex">f</script> is strictly increasing. (You’ll need to justify this statement.)
+                                                                  
+
+                                                                  
+     </li>
+     <li class="itemize"><script type="math/tex">\vec {x}(t) = \vec {y}\left ( f(t) \right )</script>. (You’ll need to justify this statement.)</li></ul>
+<!--l. 125--><p class="noindent" ></em>
+</p>
+</div>
+</body> 
+ 
+</html>
+                                                                  
+
+                                                                  
+                                                                  
+
+

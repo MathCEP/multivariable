@@ -31,7 +31,7 @@ $\vec{B}$ is the \emph{unit binormal vector},
 The moving frame is also called the \emph{TNB frame}.
 \end{definition}
 
-Throughout our study of paths, we've found a lot of ways that we can describe the behavior of the path, in addition to the moving frame:
+Throughout our study of paths, we've found a lot of ways that we can describe the behavior of the path, in addition to the moving frame.
 \begin{itemize}
 \item The velocity vector, $\vec{v}(t)= \vec{x}'(t)$.
 \item The speed, $s'(t) = \|\vec{x}'(t)\|$.
@@ -39,7 +39,7 @@ Throughout our study of paths, we've found a lot of ways that we can describe th
 \item The arclength function, $s(t) = \int_a^t \|\vec{x}'(\tau)\|d\tau$.
 \item The parametrization with respect to arclength, $\vec{x}(s)$.
 \item The curvature, $\kappa(t) = \|\vec{T}'(s)\| = \frac{\|\vec{T}'(t)\|}{\|\vec{x}'(t)\|}$.
-\item The osculating circle and osculating plane (DID I EVER DEFINE THIS?).
+\item The osculating circle and osculating plane.
 \end{itemize}
 
 We'll now explore the connections between these concepts. In particular, we'll derive a useful decomposition of the acceleration vector as a linear combination of the unit tangent and unit normal vectors.
@@ -207,7 +207,7 @@ $ s(t) = \int_a^t ||\vec{x}'(u)|| \, du $.
 \textbf{Curvature}
 \begin{itemize}
 \item Notation: $\kappa$
-\item Measures how quickly a curve ``turns'' at a given point: $\kappa = \left|| \frac{d\vec{T}}{ds} \right||$.  
+\item Measures how quickly a curve ``turns'' at a given point: $\kappa = \left\| \frac{d\vec{T}}{ds} \right\|$.  
 \item Using the chain rule we can write $\kappa$ as a function of $t$:
 
 \[ \kappa(t) = \left| \left| \frac{d\vec{T}}{ds} \right| \right| = \left| \left| \frac{d\vec{T}}{dt} \frac{dt}{ds} \right| \right| = 
@@ -230,6 +230,26 @@ The second equation comes from rewriting $\vec{N}(t) = \vec{T}'(t) / ||\vec{T}'(
 
 I COPIED THIS FROM THE HANDOUT (except for formatting, some notation, and a little rewriting)... HOPEFULLY THAT'S FINE?
 
-SOME SORT OF RANDOMIZED NOTATION QUIZ?
+\begin{problem}
+Which of the following give the speed of a path? Select all that apply.
+\begin{selectAll}
+\choice{$\|\vec{x}(t)\|$}
+\choice[correct]{$\|\vec{x}'(t)\|$}
+\choice[correct]{$\|\vec{v}(t)\|$}
+\choice{$\|\vec{v}'(t)\|$}
+\choice{$s(t)$}
+\choice[correct]{$s'(t)$}
+\end{selectAll}
+
+Which of the following vectors are always containing in the osculating plane? Select all that apply.
+\begin{selectAll}
+\choice{$\vec{x}(t)$}
+\choice[correct]{$\vec{v}(t)$}
+\choice[correct]{$\vec{a}(t)$}
+\choice[correct]{$\vec{T}(t)$}
+\choice[correct]{$\vec{N}(t)$}
+\choice{$\vec{B}(t)$}
+\end{selectAll}
+\end{problem}
 
 \end{document}

@@ -15,6 +15,8 @@
 \newcommand {\hobby@processpt }[1]{##1\pgfmathsetmacro \hobby@x {\the \pgf@x /1cm}\pgfmathsetmacro \hobby@y {\the \pgf@y /1cm}\ifx \hobby@initial@pt \pgfutil@empty \xdef \hobby@initial@pt {x = \hobby@x , y = \hobby@y }\fi \expandafter \hobbyaddpoint \expandafter {\hobby@point@options ,x = \hobby@x , y = \hobby@y }\def \hobby@point@options {}\let \tikz@scan@point@options =\pgfutil@empty \pgfutil@ifnextchar \relax {\expandafter \hobbysetparams \expandafter {\hobby@this@opts }\ifhobby@externalise \ifx \hobby@path@name \pgfutil@empty \hobbygenusepath \else \hobbygenuseifnecpath {\hobby@path@name }\fi \else \hobbygenusepath \fi \ifx \hobby@path@name \pgfutil@empty \else \hobbysavepath {\hobby@path@name }\fi \global \let \hobby@path@name =\pgfutil@empty }{\pgfutil@ifnextchar .{\hobby@swallowdots }{\tikz@scan@one@point \hobby@processpt }}}
 \newcommand {\reserved@a }[2]{}
 \newcommand {\HyperFirstAtBeginDocument }[0]{\AtBeginDocument }
+\newcommand {\reserved@a }[1]{}
+\newcommand {\reserved@a }[2]{}
 \newcommand {\vnameref  }[1]{\unskip ~\nameref {##1}\@vpageref [\unskip ]{##1}}
 \newcommand {\ref  }[0]{\@ifstar \@refstar \T@ref }
 \newcommand {\pageref  }[0]{\@ifstar \@pagerefstar \T@pageref }

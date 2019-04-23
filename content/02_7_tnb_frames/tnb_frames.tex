@@ -1,6 +1,6 @@
 \documentclass{ximera}
 
-\graphicspath{{./graphics/}}
+\graphicspath{{./content/02_7_tnb_frames/graphics/}{./graphics/}}
 
 \title{Defining the Moving Frame}
 \begin{document}
@@ -8,15 +8,15 @@
 \end{abstract}
 \maketitle
 
-In this section, we introduce the moving frame of a path, which is also called the TNB frame. This is a set of three mutually perpendicular unit vectors (an orthonormal set) which provide a consistent reference frame for a particle moving along a path.
+In this section, we introduce the moving frame of a path in $\mathbb{R}^3$, which is also called the TNB frame. This is a set of three mutually perpendicular unit vectors (an orthonormal set) which provide a consistent reference frame for a particle moving along a path.
 
 Imagine yourself walking around, and think about the following three directions:
 \begin{itemize}
-\item the direction that you're looking (``ahead')
-\item the direction that your head is pointing (``up'')
-\item the direction to your right (``right'')
+\item the direction that you're looking (``ahead''),
+\item the direction that your head is pointing (``up''),
+\item the direction to your right (``right'').
 \end{itemize}
-Together, the directions ahead, up, and right define your own, personal reference frame. You can describe locations relative to your reference frame:
+Together, the directions ``ahead,'' ``up,'' and ``right'' define your own, personal reference frame. You can describe locations relative to your reference frame:
 \begin{center}
 ``the classroom is up a floor, three doors ahead, and on the right.'' 
 \end{center}
@@ -24,7 +24,7 @@ However, relative to the rest of the universe, these directions change as you wa
 
 Our goal is to define a similar reference frame for a particle moving along a path in $\mathbb{R}^3$, which will consist of three orthonormal vectors. 
 
-\section*{Defining the mooving frame}
+\section*{Defining the moving frame}
 
 Suppose we have a path $\vec{x}(t)$ in $\mathbb{R}^3$, and we want to define a reasonable reference frame for a particle moving along this path, which will consist of three mutually orthogonal unit vectors, hence an orthonormal basis for $\mathbb{R}^3$. We'll construct this reference frame one vector at a time, thinking about how we can encode the motion of a particle along the path.
 
@@ -33,7 +33,9 @@ The first vector of our moving frame will match the ``ahead'' direction of our a
 \vec{T}(t) = \dfrac{\vec{x}'(t)}{\|\vec{x}'(t)\|}.
 \]
 
-VIDEO/INTERACTIVE
+In the video below, you can see how the unit tangent vector changes as we traverse a curve. Notice that the unit tangent vector is always pointing in the direction of motion.
+
+\youtube{PFYJcjdn35o}
 
 For the second vector of our moving frame, we'd like to give the direction in which a particle moving along the path is turning. This doesn't quite match up with the direction ``right'' from our analogy, since you might be turning to either the left or the right. Thinking back to our definition of curvature, we were able to see how a particle was turning by looking at the change in the unit tangent vector. That is, we considered $\vec{T}'(t)$. As it turns out, $\vec{T}'(t)$ will always be perpendicular to $\vec{T}(t)$.
 
@@ -66,7 +68,11 @@ This means that $T'(t)$ and $T(t)$ are perpendicular for all $t$.
  \vec{N}(t) = \dfrac{\vec{T}'(t)}{\|\vec{T}'(t)\|}.
  \]
  
- VIDEO/INTERACTIVE
+In the video below, you can see how the unit tangent vector and unit normal vector change as we traverse a curve. Notice that the unit normal vector is always perpendicular to the unit tangent vector, and that the unit normal vector points in the direction that we're curving.
+
+\youtube{IRpyE1_YCT8}
+
+Together, the unit tangent vector and unit normal vector span a plane, which we call the \emph{osculating plane}. The osculating circle will always lie in the osculating plane.
  
  So far we have the first two vectors of our moving frame, so we just need to find the third. Let's think about how many potential candidates there are for the last vector in our moving frame.
  
@@ -81,7 +87,15 @@ This means that $T'(t)$ and $T(t)$ are perpendicular for all $t$.
  
  We'll choose the third and final vector $\vec{B}$ in our moving frame so that respects the right hand rule with the first two vectors.
  
- PICTURE/GIF
+That is, if you take your right hand, point your fingers in the direction of $\vec{T}$, and curl your fingers in the direction of $\vec{N}$, then your thumb will be pointing in the direction of $\vec{B}$.
+
+\youtube{7f0JAqyAsnU}
+
+Another way to describe the right hand rule is that if you take your right hand, point your index finger in the direction of $\vec{T}$, and point your middle finger in the direction of $\vec{T}$, then your thumb will be pointing in the direction of $\vec{B}$.
+
+\begin{image}
+\includegraphics[width = \textwidth]{right_hand_rule}
+\end{image}
  
 In order to do this, we define the \emph{unit binormal vector} to be
 \[
@@ -95,11 +109,13 @@ What is the relationship between $\vec{T}(t)\times\vec{N}(t)$ and $\vec{N}(t)\ti
 \choice[correct]{They point in opposite directions.}
 \choice[correct]{One is $-1$ times the other.}
 \end{selectAll}
-So, we need to be careful about the order of this cross product, in order to choose our unit binormal vector consistently.
+So, we need to be careful about the order of this cross product, so that we choose our unit binormal vector consistently.
 
 Together, $\vec{T}$, $\vec{N}$ and $\vec{B}$ are three mutually perpendicular unit vectors. They form an orthonormal basis for $\mathbb{R}^3$, which changes as we move along the path.
 
-VIDEO/INTERACTIVE
+In the video below, you can see how the unit tangent vector, unit normal vector, and unit binormal vector change as we traverse a curve. Notice that the unit binormal is always perpendicular to the unit tangent and unit normal vectors, and that it respects the right hand rule.
+
+\youtube{8sqA5OfrpCQ}
 
 We now summarize the above derivations in our definition of the moving frame.
 
@@ -124,5 +140,6 @@ $\vec{B}$ is the \emph{unit binormal vector},
 The moving frame is also called the \emph{TNB frame}.
 \end{definition}
 
+\textit{Images were generated using \href{https://www.monroecc.edu/faculty/paulseeburger/calcnsf/CalcPlot3D/}{CalcPlot3D}.}
 
 \end{document}
