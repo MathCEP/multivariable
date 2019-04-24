@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=latex 2018.4.16)  18 APR 2019 15:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=latex 2018.4.16)  23 APR 2019 15:34
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -2401,13 +2401,13 @@ l.84 --- TeX4ht warning --- Cannot determine size of graphic in "./graphics/Cal
 cPlot3D-arclength_ex.xbb" (no BoundingBox) ---
 l. 84 --- needs --- ./graphics/CalcPlot3D-arclength_ex.png ---
 [3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 133.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 134.
  [4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 133.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 134.
  (./arclength_function.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 133.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 133.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 133.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 134.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 134.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 134.
  ) 
 Here is how much of TeX's memory you used:
  34958 strings out of 492650
@@ -2418,4 +2418,4 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  69i,6n,98p,1251b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on arclength_function.dvi (4 pages, 16252 bytes).
+Output written on arclength_function.dvi (4 pages, 16524 bytes).

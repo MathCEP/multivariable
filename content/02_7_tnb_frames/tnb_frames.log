@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  23 APR 2019 15:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  23 APR 2019 15:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -999,25 +999,25 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
  [1{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ] [2]
-<./graphics/right_hand_rule.jpg, id=42, 4047.12pt x 3035.34pt>
-File: ./graphics/right_hand_rule.jpg Graphic file (type jpg)
-<use ./graphics/right_hand_rule.jpg>
-Package pdftex.def Info: ./graphics/right_hand_rule.jpg  used on input line 98.
+<./graphics/right_hand_rule.pdf, id=42, 794.97pt x 614.295pt>
+File: ./graphics/right_hand_rule.pdf Graphic file (type pdf)
+<use ./graphics/right_hand_rule.pdf>
+Package pdftex.def Info: ./graphics/right_hand_rule.pdf  used on input line 98.
 
-(pdftex.def)             Requested size: 345.0pt x 258.71838pt.
- [3] [4 <./graphics/right_hand_rule.jpg>] [5]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 144.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 144.
+(pdftex.def)             Requested size: 345.0pt x 266.59752pt.
+ [3] [4 <./graphics/right_hand_rule.pdf, page is rotated 90 degrees>] [5]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 145.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 145.
  (./tnb_frames.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 144.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 144.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 145.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 145.
 Package rerunfilecheck Info: File `tnb_frames.out' has not changed.
 (rerunfilecheck)             Checksum: D2DBC9B4A645E08307C6AE1665DB6098;61.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 144.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 145.
  ) 
 Here is how much of TeX's memory you used:
- 29397 strings out of 492649
- 689201 string characters out of 6129622
+ 29395 strings out of 492649
+ 689217 string characters out of 6129622
  859520 words of memory out of 5000000
  32712 multiletter control sequences out of 15000+600000
  12422 words of font info for 48 fonts, out of 8000000 for 9000
@@ -1038,10 +1038,10 @@ xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/tex
 live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texl
 ive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/
 texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on tnb_frames.pdf (5 pages, 1473680 bytes).
+Output written on tnb_frames.pdf (5 pages, 1478346 bytes).
 PDF statistics:
- 122 PDF objects out of 1000 (max. 8388607)
- 98 compressed objects within 1 object stream
+ 134 PDF objects out of 1000 (max. 8388607)
+ 107 compressed objects within 2 object streams
  21 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

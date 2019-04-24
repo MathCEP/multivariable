@@ -1,0 +1,101 @@
+\documentclass{ximera}
+\graphicspath{{./content/hw_05_tnb_accleration/graphics/}{./graphics/}}
+\title{Homework 5: Moving Frames and Acceleration}
+\begin{document}
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+SOME PROBLEMS COPIED FROM HANDOUTS - NOT SURE OF THEIR SOURCE
+
+\section*{Completion Packet}
+
+\begin{problem}
+%copied from handout
+Find the velocity, acceleration and speed of a particle with the position function $\mathbf{x}(t) = (t, t^{2}, 2)$. Sketch the path of the particle \emph{by hand}, and draw the velocity and acceleration vectors on your graph for  $t=1$.
+\end{problem}
+
+\begin{problem}
+%copied from handout
+Find the velocity, acceleration and speed of a particle with the position function $\mathbf{x}(t) = (t, 2 \cos{t}, \sin{t})$. Sketch the path of the particle \emph{by hand}, and draw the velocity and acceleration vectors on your graph for  $t=0$.
+\end{problem}
+
+\begin{problem}
+Find the moving frame for the path $\vec{x}(t) = (2t, 6\sin(3t), -6\cos(3t))$.
+\end{problem}
+
+\begin{problem}
+Find the the acceleration of the path $\vec{x}(t) = (t,t^2)$, and express it as a linear combination of the unit tangent vector and the unit normal vector.
+\end{problem}
+
+\begin{problem}
+Find the the acceleration of the path $\vec{x}(t) = (e^t, t)$, and express it as a linear combination of the unit tangent vector and the unit normal vector.
+\end{problem}
+
+\begin{problem}
+Suppose we have a path $\vec{x}(t)$ and a point $\vec{c}$ in $\mathbb{R}^3$ such that 
+$\|\vec{x}(t)-\vec{c}\|=R$ for some constant $R$ and for all $t$.
+\begin{enumerate}
+\item Geometrically, what can you say about this path?
+\item Prove that $\vec{v}(t)$ is perpendicular to $\vec{x}(t)-\vec{c}$.
+\item If $\vec{x}(t)$ has constant speed, show that $\kappa(t)$ is nonzero for all $t$.
+\end{enumerate}
+\end{problem}
+
+\begin{problem}
+%copied from handout
+Prove that if a particle moves with constant speed, then the velocity and acceleration vectors are orthogonal.
+\end{problem}
+
+\begin{problem}
+%copied from handout
+Find the tangential and normal components of the acceleration vector for $\mathbf{x}(t)=(1+t,t^{2}-2t)$.
+\end{problem}
+
+\begin{problem}
+%copied from handout
+Find the tangential and normal components of the acceleration vector for $\mathbf{x}(t)=(t, t^{2}, 3t)$.
+\end{problem}
+
+\begin{problem}
+%copied from handout
+Compute the following limits. Show all work. (``Wolfram Alpha" is not work.)
+\begin{enumerate}
+\item $\displaystyle \lim_{x\to 3} \cfrac{x^2-9}{x^2+2x-3}$
+\item $\displaystyle \lim_{x\to \pi^-} \ln(\sin{x})$
+\item $\displaystyle \lim_{v\to 4^+} \frac{4-v}{|4-v|}$
+\item $\displaystyle \lim_{x\to \infty} (\sqrt{x^2+4x+1} - x)$ 
+\item $\displaystyle \lim_{x\to \infty} e^{x-x^2}$
+\item $\displaystyle \lim_{x\to 0} \frac{\sin{2x}}{x}$ 
+\end{enumerate}
+\end{problem}
+
+\section*{Graded Problems}
+
+\begin{problem}
+Find the moving frame for the path $\vec{x}(t) = (e^t\cos(t), e^t\sin(t), 5)$.
+\end{problem}
+
+\begin{problem}
+Prove that 
+\[\frac{|(\vec{v}\times\vec{a})\cdot \vec{a}'|}{\|\vec{v}\times\vec{a}\|^2} = \frac{\left\|d\vec{B}/dt\right\|}{|ds/dt|}.\]
+\end{problem}
+
+\section*{Professional Problem}
+
+\begin{problem}
+\begin{enumerate}
+%copied from handout
+\item Beginning with the formula $\mathbf{a}=s'' \mathbf{T} + (s')^{2}\kappa \mathbf{N}$, cross both sides with the velocity vector $\mathbf{v}=s'\mathbf{T}$ and derive the formula
+\[ \kappa = \frac{||\mathbf{v} \times \mathbf{a}||}{(s')^{3}}. \]
+Make sure to write your solution in your own words!
+
+\item Let $y=f(x)$.  The graph of $y=f(x)$ is therefore a plane curve.  Assuming $f \in C^2$ (that is, it is twice differentiable and its second derivatives are continuous), use the formula from (a) to prove the following well-known formula for the curvature of such a curve:
+\[ \kappa(x) = \dfrac{|f''(x)|}{ \left[ 1 + (f'(x))^2 \right]^{3/2}}. \]
+
+\end{enumerate}
+\end{problem}
+
+
+
+\end{document}

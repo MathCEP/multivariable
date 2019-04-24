@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  23 APR 2019 15:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  24 APR 2019 14:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1365,7 +1365,7 @@ LaTeX Warning: No \author given.
 
 LaTeX Warning: No \author given.
 
-<./content/01_1_review/graphics/CalcPlot3D-2d_coords.png, id=564, 1690.315pt x 
+<./content/01_1_review/graphics/CalcPlot3D-2d_coords.png, id=569, 1690.315pt x 
 1232.605pt>
 File: ./content/01_1_review/graphics/CalcPlot3D-2d_coords.png Graphic file (typ
 e png)
@@ -1383,7 +1383,7 @@ m/n/10 -coordinate.
 [35
 
  <./content/01_1_review/graphics/CalcPlot3D-2d_coords.png>]
-<./content/01_1_review/graphics/CalcPlot3D-polar.png, id=573, 1690.315pt x 1232
+<./content/01_1_review/graphics/CalcPlot3D-polar.png, id=578, 1690.315pt x 1232
 .605pt>
 File: ./content/01_1_review/graphics/CalcPlot3D-polar.png Graphic file (type pn
 g)
@@ -1392,7 +1392,7 @@ Package pdftex.def Info: ./content/01_1_review/graphics/CalcPlot3D-polar.png  u
 sed on input line 35.
 (pdftex.def)             Requested size: 345.0pt x 251.57599pt.
 \c@depthICount=\count359
-<./content/01_1_review/graphics/CalcPlot3D-circle_2.png, id=574, 1690.315pt x 1
+<./content/01_1_review/graphics/CalcPlot3D-circle_2.png, id=579, 1690.315pt x 1
 232.605pt>
 File: ./content/01_1_review/graphics/CalcPlot3D-circle_2.png Graphic file (type
  png)
@@ -1401,7 +1401,7 @@ Package pdftex.def Info: ./content/01_1_review/graphics/CalcPlot3D-circle_2.png
   used on input line 56.
 (pdftex.def)             Requested size: 345.0pt x 251.57599pt.
  [36 <./content/01_1_review/graphics/CalcPlot3D-polar.png>]
-<./content/01_1_review/graphics/CalcPlot3D-pt_10.png, id=582, 1690.315pt x 1232
+<./content/01_1_review/graphics/CalcPlot3D-pt_10.png, id=588, 1690.315pt x 1232
 .605pt>
 File: ./content/01_1_review/graphics/CalcPlot3D-pt_10.png Graphic file (type pn
 g)
@@ -1410,7 +1410,7 @@ Package pdftex.def Info: ./content/01_1_review/graphics/CalcPlot3D-pt_10.png  u
 sed on input line 78.
 (pdftex.def)             Requested size: 345.0pt x 251.57599pt.
  [37 <./content/01_1_review/graphics/CalcPlot3D-circle_2.png>]
-<./content/01_1_review/graphics/CalcPlot3D-y_equals_x.png, id=590, 1690.315pt x
+<./content/01_1_review/graphics/CalcPlot3D-y_equals_x.png, id=595, 1690.315pt x
  1232.605pt>
 File: ./content/01_1_review/graphics/CalcPlot3D-y_equals_x.png Graphic file (ty
 pe png)
@@ -1420,7 +1420,7 @@ ng  used on input line 100.
 (pdftex.def)             Requested size: 345.0pt x 251.57599pt.
  [38 <./content/01_1_review/graphics/CalcPlot3D-pt_10.png>] [39 <./content/01_1
 _review/graphics/CalcPlot3D-y_equals_x.png>] [40]
-<./content/01_1_review/graphics/CalcPlot3D-circle_10.png, id=619, 1690.315pt x 
+<./content/01_1_review/graphics/CalcPlot3D-circle_10.png, id=624, 1690.315pt x 
 1232.605pt>
 File: ./content/01_1_review/graphics/CalcPlot3D-circle_10.png Graphic file (typ
 e png)
@@ -1433,7 +1433,7 @@ LaTeX Font Info:    Try loading font information for U+euf on input line 180.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
-<./content/01_1_review/graphics/CalcPlot3D-slanty_space.png, id=620, 1690.315pt
+<./content/01_1_review/graphics/CalcPlot3D-slanty_space.png, id=625, 1690.315pt
  x 1232.605pt>
 File: ./content/01_1_review/graphics/CalcPlot3D-slanty_space.png Graphic file (
 type png)
@@ -1442,7 +1442,7 @@ Package pdftex.def Info: ./content/01_1_review/graphics/CalcPlot3D-slanty_space
 .png  used on input line 191.
 (pdftex.def)             Requested size: 345.0pt x 251.57599pt.
  [41 <./content/01_1_review/graphics/CalcPlot3D-circle_10.png>]
-<./content/01_1_review/graphics/CalcPlot3D-3d_coords.png, id=628, 1690.315pt x 
+<./content/01_1_review/graphics/CalcPlot3D-3d_coords.png, id=633, 1690.315pt x 
 1232.605pt>
 File: ./content/01_1_review/graphics/CalcPlot3D-3d_coords.png Graphic file (typ
 e png)
@@ -1452,7 +1452,7 @@ g  used on input line 201.
 (pdftex.def)             Requested size: 345.0pt x 251.57599pt.
  [42 <./content/01_1_review/graphics/CalcPlot3D-slanty_space.png> <./content/01
 _1_review/graphics/CalcPlot3D-3d_coords.png>]
-<./content/01_1_review/graphics/CalcPlot3D-xy_plane.png, id=635, 1551.7975pt x 
+<./content/01_1_review/graphics/CalcPlot3D-xy_plane.png, id=640, 1551.7975pt x 
 1096.095pt>
 File: ./content/01_1_review/graphics/CalcPlot3D-xy_plane.png Graphic file (type
  png)
@@ -1460,7 +1460,7 @@ File: ./content/01_1_review/graphics/CalcPlot3D-xy_plane.png Graphic file (type
 Package pdftex.def Info: ./content/01_1_review/graphics/CalcPlot3D-xy_plane.png
   used on input line 213.
 (pdftex.def)             Requested size: 345.0pt x 243.68385pt.
-<./content/01_1_review/graphics/CalcPlot3D-yz_plane.png, id=636, 1551.7975pt x 
+<./content/01_1_review/graphics/CalcPlot3D-yz_plane.png, id=641, 1551.7975pt x 
 1096.095pt>
 File: ./content/01_1_review/graphics/CalcPlot3D-yz_plane.png Graphic file (type
  png)
@@ -1468,7 +1468,7 @@ File: ./content/01_1_review/graphics/CalcPlot3D-yz_plane.png Graphic file (type
 Package pdftex.def Info: ./content/01_1_review/graphics/CalcPlot3D-yz_plane.png
   used on input line 218.
 (pdftex.def)             Requested size: 345.0pt x 243.68385pt.
-<./content/01_1_review/graphics/CalcPlot3D-xz_plane.png, id=637, 1551.7975pt x 
+<./content/01_1_review/graphics/CalcPlot3D-xz_plane.png, id=642, 1551.7975pt x 
 1096.095pt>
 File: ./content/01_1_review/graphics/CalcPlot3D-xz_plane.png Graphic file (type
  png)
@@ -1478,7 +1478,7 @@ Package pdftex.def Info: ./content/01_1_review/graphics/CalcPlot3D-xz_plane.png
 (pdftex.def)             Requested size: 345.0pt x 243.68385pt.
  [43 <./content/01_1_review/graphics/CalcPlot3D-xy_plane.png> <./content/01_1_r
 eview/graphics/CalcPlot3D-yz_plane.png>]
-<./content/01_1_review/graphics/CalcPlot3D-unit_sphere.png, id=645, 1551.7975pt
+<./content/01_1_review/graphics/CalcPlot3D-unit_sphere.png, id=650, 1551.7975pt
  x 1096.095pt>
 File: ./content/01_1_review/graphics/CalcPlot3D-unit_sphere.png Graphic file (t
 ype png)
@@ -1492,7 +1492,7 @@ review/graphics/CalcPlot3D-unit_sphere.png>] (./content/01_2_cylindrical_coords
 
 LaTeX Warning: No \author given.
 
-<./content/01_2_cylindrical_coords/graphics/CalcPlot3D-cylindrical.png, id=656,
+<./content/01_2_cylindrical_coords/graphics/CalcPlot3D-cylindrical.png, id=661,
  1690.315pt x 1232.605pt>
 File: ./content/01_2_cylindrical_coords/graphics/CalcPlot3D-cylindrical.png Gra
 phic file (type png)
@@ -1509,7 +1509,7 @@ Overfull \hbox (2.05637pt too wide) in paragraph at lines 47--49
  []
 
 [46]
-<./content/01_2_cylindrical_coords/graphics/CalcPlot3D-r_constant.png, id=676, 
+<./content/01_2_cylindrical_coords/graphics/CalcPlot3D-r_constant.png, id=681, 
 1690.315pt x 1232.605pt>
 File: ./content/01_2_cylindrical_coords/graphics/CalcPlot3D-r_constant.png Grap
 hic file (type png)
@@ -1518,7 +1518,7 @@ Package pdftex.def Info: ./content/01_2_cylindrical_coords/graphics/CalcPlot3D-
 r_constant.png  used on input line 68.
 (pdftex.def)             Requested size: 345.0pt x 251.57599pt.
 <./content/01_2_cylindrical_coords/graphics/CalcPlot3D-theta_constant.png, id=6
-77, 1690.315pt x 1232.605pt>
+82, 1690.315pt x 1232.605pt>
 File: ./content/01_2_cylindrical_coords/graphics/CalcPlot3D-theta_constant.png 
 Graphic file (type png)
 <use ./content/01_2_cylindrical_coords/graphics/CalcPlot3D-theta_constant.png>
@@ -1526,7 +1526,7 @@ Package pdftex.def Info: ./content/01_2_cylindrical_coords/graphics/CalcPlot3D-
 theta_constant.png  used on input line 74.
 (pdftex.def)             Requested size: 345.0pt x 251.57599pt.
  [47 <./content/01_2_cylindrical_coords/graphics/CalcPlot3D-r_constant.png>]
-<./content/01_2_cylindrical_coords/graphics/CalcPlot3D-z_constant.png, id=684, 
+<./content/01_2_cylindrical_coords/graphics/CalcPlot3D-z_constant.png, id=689, 
 1690.315pt x 1232.605pt>
 File: ./content/01_2_cylindrical_coords/graphics/CalcPlot3D-z_constant.png Grap
 hic file (type png)
@@ -1536,7 +1536,7 @@ z_constant.png  used on input line 82.
 (pdftex.def)             Requested size: 345.0pt x 251.57599pt.
  [48 <./content/01_2_cylindrical_coords/graphics/CalcPlot3D-theta_constant.png>
  <./content/01_2_cylindrical_coords/graphics/CalcPlot3D-z_constant.png>]
-<./content/01_2_cylindrical_coords/graphics/CalcPlot3D-half_sphere.png, id=691,
+<./content/01_2_cylindrical_coords/graphics/CalcPlot3D-half_sphere.png, id=696,
  1690.315pt x 1232.605pt>
 File: ./content/01_2_cylindrical_coords/graphics/CalcPlot3D-half_sphere.png Gra
 phic file (type png)
@@ -1544,7 +1544,7 @@ phic file (type png)
 Package pdftex.def Info: ./content/01_2_cylindrical_coords/graphics/CalcPlot3D-
 half_sphere.png  used on input line 111.
 (pdftex.def)             Requested size: 345.0pt x 251.57599pt.
-<./content/01_2_cylindrical_coords/graphics/CalcPlot3D-cylinder_100.png, id=692
+<./content/01_2_cylindrical_coords/graphics/CalcPlot3D-cylinder_100.png, id=697
 , 1690.315pt x 1232.605pt>
 File: ./content/01_2_cylindrical_coords/graphics/CalcPlot3D-cylinder_100.png Gr
 aphic file (type png)
@@ -1560,14 +1560,14 @@ cylinder_100.png  used on input line 120.
 LaTeX Warning: No \author given.
 
 <./content/01_3_spherical_coords/graphics/CalcPlot3D-spherical_coords.png, id=7
-25, 1690.315pt x 1232.605pt>
+30, 1690.315pt x 1232.605pt>
 File: ./content/01_3_spherical_coords/graphics/CalcPlot3D-spherical_coords.png 
 Graphic file (type png)
 <use ./content/01_3_spherical_coords/graphics/CalcPlot3D-spherical_coords.png>
 Package pdftex.def Info: ./content/01_3_spherical_coords/graphics/CalcPlot3D-sp
 herical_coords.png  used on input line 19.
 (pdftex.def)             Requested size: 345.0pt x 251.57599pt.
-<./content/01_3_spherical_coords/graphics/CalcPlot3D-011.png, id=726, 1690.315p
+<./content/01_3_spherical_coords/graphics/CalcPlot3D-011.png, id=731, 1690.315p
 t x 1232.605pt>
 File: ./content/01_3_spherical_coords/graphics/CalcPlot3D-011.png Graphic file 
 (type png)
@@ -1579,7 +1579,7 @@ Package pdftex.def Info: ./content/01_3_spherical_coords/graphics/CalcPlot3D-01
 
  <./content/01_3_spherical_coords/graphics/CalcPlot3D-spherical_coords.png>] [5
 3 <./content/01_3_spherical_coords/graphics/CalcPlot3D-011.png>]
-<./content/01_3_spherical_coords/graphics/CalcPlot3D-rho_constant.png, id=741, 
+<./content/01_3_spherical_coords/graphics/CalcPlot3D-rho_constant.png, id=747, 
 1690.315pt x 1232.605pt>
 File: ./content/01_3_spherical_coords/graphics/CalcPlot3D-rho_constant.png Grap
 hic file (type png)
@@ -1588,7 +1588,7 @@ Package pdftex.def Info: ./content/01_3_spherical_coords/graphics/CalcPlot3D-rh
 o_constant.png  used on input line 80.
 (pdftex.def)             Requested size: 345.0pt x 251.57599pt.
  [54 <./content/01_3_spherical_coords/graphics/CalcPlot3D-rho_constant.png>]
-<./content/01_3_spherical_coords/graphics/CalcPlot3D-theta_constant.png, id=752
+<./content/01_3_spherical_coords/graphics/CalcPlot3D-theta_constant.png, id=757
 , 1690.315pt x 1232.605pt>
 File: ./content/01_3_spherical_coords/graphics/CalcPlot3D-theta_constant.png Gr
 aphic file (type png)
@@ -1596,7 +1596,7 @@ aphic file (type png)
 Package pdftex.def Info: ./content/01_3_spherical_coords/graphics/CalcPlot3D-th
 eta_constant.png  used on input line 86.
 (pdftex.def)             Requested size: 345.0pt x 251.57599pt.
-<./content/01_3_spherical_coords/graphics/CalcPlot3D-phi_constant_1.png, id=753
+<./content/01_3_spherical_coords/graphics/CalcPlot3D-phi_constant_1.png, id=758
 , 1690.315pt x 1232.605pt>
 File: ./content/01_3_spherical_coords/graphics/CalcPlot3D-phi_constant_1.png Gr
 aphic file (type png)
@@ -1604,7 +1604,7 @@ aphic file (type png)
 Package pdftex.def Info: ./content/01_3_spherical_coords/graphics/CalcPlot3D-ph
 i_constant_1.png  used on input line 95.
 (pdftex.def)             Requested size: 345.0pt x 251.57599pt.
-<./content/01_3_spherical_coords/graphics/CalcPlot3D-phi_constant_2.png, id=754
+<./content/01_3_spherical_coords/graphics/CalcPlot3D-phi_constant_2.png, id=759
 , 1690.315pt x 1232.605pt>
 File: ./content/01_3_spherical_coords/graphics/CalcPlot3D-phi_constant_2.png Gr
 aphic file (type png)
@@ -1614,7 +1614,7 @@ i_constant_2.png  used on input line 100.
 (pdftex.def)             Requested size: 345.0pt x 251.57599pt.
  [55 <./content/01_3_spherical_coords/graphics/CalcPlot3D-theta_constant.png> <
 ./content/01_3_spherical_coords/graphics/CalcPlot3D-phi_constant_1.png>]
-<./content/01_3_spherical_coords/graphics/CalcPlot3D-phi_constant_3.png, id=762
+<./content/01_3_spherical_coords/graphics/CalcPlot3D-phi_constant_3.png, id=767
 , 1690.315pt x 1232.605pt>
 File: ./content/01_3_spherical_coords/graphics/CalcPlot3D-phi_constant_3.png Gr
 aphic file (type png)
@@ -1622,7 +1622,7 @@ aphic file (type png)
 Package pdftex.def Info: ./content/01_3_spherical_coords/graphics/CalcPlot3D-ph
 i_constant_3.png  used on input line 105.
 (pdftex.def)             Requested size: 345.0pt x 251.57599pt.
-<./content/01_3_spherical_coords/graphics/CalcPlot3D-double_cone.png, id=763, 1
+<./content/01_3_spherical_coords/graphics/CalcPlot3D-double_cone.png, id=768, 1
 690.315pt x 1232.605pt>
 File: ./content/01_3_spherical_coords/graphics/CalcPlot3D-double_cone.png Graph
 ic file (type png)
@@ -1633,7 +1633,7 @@ uble_cone.png  used on input line 111.
  [56 <./content/01_3_spherical_coords/graphics/CalcPlot3D-phi_constant_2.png> <
 ./content/01_3_spherical_coords/graphics/CalcPlot3D-phi_constant_3.png>]
 <./content/01_3_spherical_coords/graphics/CalcPlot3D-elliptic_hyperboloid.png, 
-id=771, 1690.315pt x 1232.605pt>
+id=776, 1690.315pt x 1232.605pt>
 File: ./content/01_3_spherical_coords/graphics/CalcPlot3D-elliptic_hyperboloid.
 png Graphic file (type png)
 <use ./content/01_3_spherical_coords/graphics/CalcPlot3D-elliptic_hyperboloid.p
@@ -1642,7 +1642,7 @@ Package pdftex.def Info: ./content/01_3_spherical_coords/graphics/CalcPlot3D-el
 liptic_hyperboloid.png  used on input line 135.
 (pdftex.def)             Requested size: 345.0pt x 251.57599pt.
  [57 <./content/01_3_spherical_coords/graphics/CalcPlot3D-double_cone.png>]
-<./content/01_3_spherical_coords/graphics/CalcPlot3D-ice_cream.png, id=778, 169
+<./content/01_3_spherical_coords/graphics/CalcPlot3D-ice_cream.png, id=783, 169
 0.315pt x 1232.605pt>
 File: ./content/01_3_spherical_coords/graphics/CalcPlot3D-ice_cream.png Graphic
  file (type png)
@@ -1663,7 +1663,7 @@ LaTeX Warning: No \author given.
 
 LaTeX Warning: No \author given.
 
-<./content/01_5_graphing/graphics/CalcPlot3D-x2.png, id=862, 1690.315pt x 1232.
+<./content/01_5_graphing/graphics/CalcPlot3D-x2.png, id=867, 1690.315pt x 1232.
 605pt>
 File: ./content/01_5_graphing/graphics/CalcPlot3D-x2.png Graphic file (type png
 )
@@ -1674,7 +1674,7 @@ ed on input line 37.
 [67
 
 ] [68 <./content/01_5_graphing/graphics/CalcPlot3D-x2.png>]
-<./content/01_5_graphing/graphics/CalcPlot3D-contour.png, id=880, 1690.315pt x 
+<./content/01_5_graphing/graphics/CalcPlot3D-contour.png, id=885, 1690.315pt x 
 1232.605pt>
 File: ./content/01_5_graphing/graphics/CalcPlot3D-contour.png Graphic file (typ
 e png)
@@ -1682,7 +1682,7 @@ e png)
 Package pdftex.def Info: ./content/01_5_graphing/graphics/CalcPlot3D-contour.pn
 g  used on input line 71.
 (pdftex.def)             Requested size: 345.0pt x 251.57599pt.
-<./content/01_5_graphing/graphics/CalcPlot3D-x2plusy2.png, id=881, 1690.315pt x
+<./content/01_5_graphing/graphics/CalcPlot3D-x2plusy2.png, id=886, 1690.315pt x
  1232.605pt>
 File: ./content/01_5_graphing/graphics/CalcPlot3D-x2plusy2.png Graphic file (ty
 pe png)
@@ -1692,7 +1692,7 @@ ng  used on input line 77.
 (pdftex.def)             Requested size: 345.0pt x 251.57599pt.
  [69 <./content/01_5_graphing/graphics/CalcPlot3D-contour.png> <./content/01_5_
 graphing/graphics/CalcPlot3D-x2plusy2.png>]
-<./content/01_5_graphing/graphics/CalcPlot3D-level_sets.png, id=888, 1690.315pt
+<./content/01_5_graphing/graphics/CalcPlot3D-level_sets.png, id=893, 1690.315pt
  x 1232.605pt>
 File: ./content/01_5_graphing/graphics/CalcPlot3D-level_sets.png Graphic file (
 type png)
@@ -1701,7 +1701,7 @@ Package pdftex.def Info: ./content/01_5_graphing/graphics/CalcPlot3D-level_sets
 .png  used on input line 107.
 (pdftex.def)             Requested size: 345.0pt x 251.57599pt.
  [70 <./content/01_5_graphing/graphics/CalcPlot3D-level_sets.png>]
-<./content/01_5_graphing/graphics/CalcPlot3D-x_sections.png, id=896, 1690.315pt
+<./content/01_5_graphing/graphics/CalcPlot3D-x_sections.png, id=901, 1690.315pt
  x 1232.605pt>
 File: ./content/01_5_graphing/graphics/CalcPlot3D-x_sections.png Graphic file (
 type png)
@@ -1710,7 +1710,7 @@ Package pdftex.def Info: ./content/01_5_graphing/graphics/CalcPlot3D-x_sections
 .png  used on input line 145.
 (pdftex.def)             Requested size: 345.0pt x 251.57599pt.
  [71 <./content/01_5_graphing/graphics/CalcPlot3D-x_sections.png>]
-<./content/01_5_graphing/graphics/CalcPlot3D-y_sections.png, id=904, 1690.315pt
+<./content/01_5_graphing/graphics/CalcPlot3D-y_sections.png, id=909, 1690.315pt
  x 1232.605pt>
 File: ./content/01_5_graphing/graphics/CalcPlot3D-y_sections.png Graphic file (
 type png)
@@ -1719,7 +1719,7 @@ Package pdftex.def Info: ./content/01_5_graphing/graphics/CalcPlot3D-y_sections
 .png  used on input line 157.
 (pdftex.def)             Requested size: 345.0pt x 251.57599pt.
 [72 <./content/01_5_graphing/graphics/CalcPlot3D-y_sections.png>]
-<./content/01_5_graphing/graphics/CalcPlot3D-cone.png, id=917, 1690.315pt x 123
+<./content/01_5_graphing/graphics/CalcPlot3D-cone.png, id=922, 1690.315pt x 123
 2.605pt>
 File: ./content/01_5_graphing/graphics/CalcPlot3D-cone.png Graphic file (type p
 ng)
@@ -1727,7 +1727,7 @@ ng)
 Package pdftex.def Info: ./content/01_5_graphing/graphics/CalcPlot3D-cone.png  
 used on input line 196.
 (pdftex.def)             Requested size: 172.5pt x 125.788pt.
-<./content/01_5_graphing/graphics/CalcPlot3D-hyper_para1.png, id=918, 1690.315p
+<./content/01_5_graphing/graphics/CalcPlot3D-hyper_para1.png, id=923, 1690.315p
 t x 1232.605pt>
 File: ./content/01_5_graphing/graphics/CalcPlot3D-hyper_para1.png Graphic file 
 (type png)
@@ -1736,7 +1736,7 @@ Package pdftex.def Info: ./content/01_5_graphing/graphics/CalcPlot3D-hyper_para
 1.png  used on input line 197.
 (pdftex.def)             Requested size: 172.5pt x 125.788pt.
  [73 <./content/01_5_graphing/graphics/CalcPlot3D-cone.png>]
-<./content/01_5_graphing/graphics/CalcPlot3D-hyper_para2.png, id=935, 1690.315p
+<./content/01_5_graphing/graphics/CalcPlot3D-hyper_para2.png, id=940, 1690.315p
 t x 1232.605pt>
 File: ./content/01_5_graphing/graphics/CalcPlot3D-hyper_para2.png Graphic file 
 (type png)
@@ -1744,7 +1744,7 @@ File: ./content/01_5_graphing/graphics/CalcPlot3D-hyper_para2.png Graphic file
 Package pdftex.def Info: ./content/01_5_graphing/graphics/CalcPlot3D-hyper_para
 2.png  used on input line 198.
 (pdftex.def)             Requested size: 172.5pt x 125.788pt.
-<./content/01_5_graphing/graphics/CalcPlot3D-hyperboloid1.png, id=936, 1690.315
+<./content/01_5_graphing/graphics/CalcPlot3D-hyperboloid1.png, id=941, 1690.315
 pt x 1232.605pt>
 File: ./content/01_5_graphing/graphics/CalcPlot3D-hyperboloid1.png Graphic file
  (type png)
@@ -1752,7 +1752,7 @@ File: ./content/01_5_graphing/graphics/CalcPlot3D-hyperboloid1.png Graphic file
 Package pdftex.def Info: ./content/01_5_graphing/graphics/CalcPlot3D-hyperboloi
 d1.png  used on input line 199.
 (pdftex.def)             Requested size: 172.5pt x 125.788pt.
-<./content/01_5_graphing/graphics/CalcPlot3D-hyperboloid2.png, id=937, 1690.315
+<./content/01_5_graphing/graphics/CalcPlot3D-hyperboloid2.png, id=942, 1690.315
 pt x 1232.605pt>
 File: ./content/01_5_graphing/graphics/CalcPlot3D-hyperboloid2.png Graphic file
  (type png)
@@ -1764,7 +1764,7 @@ d2.png  used on input line 200.
 1_5_graphing/graphics/CalcPlot3D-hyper_para2.png> <./content/01_5_graphing/grap
 hics/CalcPlot3D-hyperboloid1.png>] [75 <./content/01_5_graphing/graphics/CalcPl
 ot3D-hyperboloid2.png>]
-<./content/01_5_graphing/graphics/CalcPlot3D-nested_level_surfaces.png, id=955,
+<./content/01_5_graphing/graphics/CalcPlot3D-nested_level_surfaces.png, id=960,
  1690.315pt x 1232.605pt>
 File: ./content/01_5_graphing/graphics/CalcPlot3D-nested_level_surfaces.png Gra
 phic file (type png)
@@ -1778,7 +1778,7 @@ el_surfaces.png  used on input line 274.
 
 LaTeX Warning: No \author given.
 
-<./content/01_6_quadric_surfaces/graphics/CalcPlot3D-parabola.png, id=968, 1690
+<./content/01_6_quadric_surfaces/graphics/CalcPlot3D-parabola.png, id=973, 1690
 .315pt x 1232.605pt>
 File: ./content/01_6_quadric_surfaces/graphics/CalcPlot3D-parabola.png Graphic 
 file (type png)
@@ -1786,7 +1786,7 @@ file (type png)
 Package pdftex.def Info: ./content/01_6_quadric_surfaces/graphics/CalcPlot3D-pa
 rabola.png  used on input line 18.
 (pdftex.def)             Requested size: 345.0pt x 251.57599pt.
-<./content/01_6_quadric_surfaces/graphics/CalcPlot3D-ellipse.png, id=969, 1690.
+<./content/01_6_quadric_surfaces/graphics/CalcPlot3D-ellipse.png, id=974, 1690.
 315pt x 1232.605pt>
 File: ./content/01_6_quadric_surfaces/graphics/CalcPlot3D-ellipse.png Graphic f
 ile (type png)
@@ -1798,7 +1798,7 @@ lipse.png  used on input line 24.
 
  <./content/01_6_quadric_surfaces/graphics/CalcPlot3D-parabola.png> <./content/
 01_6_quadric_surfaces/graphics/CalcPlot3D-ellipse.png>]
-<./content/01_6_quadric_surfaces/graphics/CalcPlot3D-hyperbola.png, id=978, 169
+<./content/01_6_quadric_surfaces/graphics/CalcPlot3D-hyperbola.png, id=983, 169
 0.315pt x 1232.605pt>
 File: ./content/01_6_quadric_surfaces/graphics/CalcPlot3D-hyperbola.png Graphic
  file (type png)
@@ -1807,7 +1807,7 @@ Package pdftex.def Info: ./content/01_6_quadric_surfaces/graphics/CalcPlot3D-hy
 perbola.png  used on input line 30.
 (pdftex.def)             Requested size: 345.0pt x 251.57599pt.
  [79 <./content/01_6_quadric_surfaces/graphics/CalcPlot3D-hyperbola.png>]
-<./content/01_6_quadric_surfaces/graphics/CalcPlot3D-ellipsoid.png, id=987, 169
+<./content/01_6_quadric_surfaces/graphics/CalcPlot3D-ellipsoid.png, id=992, 169
 0.315pt x 1232.605pt>
 File: ./content/01_6_quadric_surfaces/graphics/CalcPlot3D-ellipsoid.png Graphic
  file (type png)
@@ -1815,7 +1815,7 @@ File: ./content/01_6_quadric_surfaces/graphics/CalcPlot3D-ellipsoid.png Graphic
 Package pdftex.def Info: ./content/01_6_quadric_surfaces/graphics/CalcPlot3D-el
 lipsoid.png  used on input line 64.
 (pdftex.def)             Requested size: 345.0pt x 251.57599pt.
-<./content/01_6_quadric_surfaces/graphics/CalcPlot3D-paraboloid.png, id=988, 16
+<./content/01_6_quadric_surfaces/graphics/CalcPlot3D-paraboloid.png, id=993, 16
 90.315pt x 1232.605pt>
 File: ./content/01_6_quadric_surfaces/graphics/CalcPlot3D-paraboloid.png Graphi
 c file (type png)
@@ -1825,16 +1825,16 @@ raboloid.png  used on input line 85.
 (pdftex.def)             Requested size: 345.0pt x 251.57599pt.
  [80 <./content/01_6_quadric_surfaces/graphics/CalcPlot3D-ellipsoid.png> <./con
 tent/01_6_quadric_surfaces/graphics/CalcPlot3D-paraboloid.png>]
-<./content/01_6_quadric_surfaces/graphics/CalcPlot3D-hyper_para2.png, id=996, 1
-690.315pt x 1232.605pt>
+<./content/01_6_quadric_surfaces/graphics/CalcPlot3D-hyper_para2.png, id=1001, 
+1690.315pt x 1232.605pt>
 File: ./content/01_6_quadric_surfaces/graphics/CalcPlot3D-hyper_para2.png Graph
 ic file (type png)
 <use ./content/01_6_quadric_surfaces/graphics/CalcPlot3D-hyper_para2.png>
 Package pdftex.def Info: ./content/01_6_quadric_surfaces/graphics/CalcPlot3D-hy
 per_para2.png  used on input line 103.
 (pdftex.def)             Requested size: 345.0pt x 251.57599pt.
-<./content/01_6_quadric_surfaces/graphics/CalcPlot3D-hyper_para1.png, id=997, 1
-690.315pt x 1232.605pt>
+<./content/01_6_quadric_surfaces/graphics/CalcPlot3D-hyper_para1.png, id=1002, 
+1690.315pt x 1232.605pt>
 File: ./content/01_6_quadric_surfaces/graphics/CalcPlot3D-hyper_para1.png Graph
 ic file (type png)
 <use ./content/01_6_quadric_surfaces/graphics/CalcPlot3D-hyper_para1.png>
@@ -1843,7 +1843,7 @@ per_para1.png  used on input line 109.
 (pdftex.def)             Requested size: 345.0pt x 251.57599pt.
  [81 <./content/01_6_quadric_surfaces/graphics/CalcPlot3D-hyper_para2.png> <./c
 ontent/01_6_quadric_surfaces/graphics/CalcPlot3D-hyper_para1.png>]
-<./content/01_6_quadric_surfaces/graphics/CalcPlot3D-cone.png, id=1005, 1690.31
+<./content/01_6_quadric_surfaces/graphics/CalcPlot3D-cone.png, id=1010, 1690.31
 5pt x 1232.605pt>
 File: ./content/01_6_quadric_surfaces/graphics/CalcPlot3D-cone.png Graphic file
  (type png)
@@ -1851,7 +1851,7 @@ File: ./content/01_6_quadric_surfaces/graphics/CalcPlot3D-cone.png Graphic file
 Package pdftex.def Info: ./content/01_6_quadric_surfaces/graphics/CalcPlot3D-co
 ne.png  used on input line 127.
 (pdftex.def)             Requested size: 345.0pt x 251.57599pt.
-<./content/01_6_quadric_surfaces/graphics/CalcPlot3D-hyperboloid1.png, id=1006,
+<./content/01_6_quadric_surfaces/graphics/CalcPlot3D-hyperboloid1.png, id=1011,
  1690.315pt x 1232.605pt>
 File: ./content/01_6_quadric_surfaces/graphics/CalcPlot3D-hyperboloid1.png Grap
 hic file (type png)
@@ -1860,7 +1860,7 @@ Package pdftex.def Info: ./content/01_6_quadric_surfaces/graphics/CalcPlot3D-hy
 perboloid1.png  used on input line 145.
 (pdftex.def)             Requested size: 345.0pt x 251.57599pt.
  [82 <./content/01_6_quadric_surfaces/graphics/CalcPlot3D-cone.png>]
-<./content/01_6_quadric_surfaces/graphics/CalcPlot3D-hyperboloid2.png, id=1014,
+<./content/01_6_quadric_surfaces/graphics/CalcPlot3D-hyperboloid2.png, id=1019,
  1690.315pt x 1232.605pt>
 File: ./content/01_6_quadric_surfaces/graphics/CalcPlot3D-hyperboloid2.png Grap
 hic file (type png)
@@ -1871,7 +1871,7 @@ perboloid2.png  used on input line 163.
  [83 <./content/01_6_quadric_surfaces/graphics/CalcPlot3D-hyperboloid1.png> <./
 content/01_6_quadric_surfaces/graphics/CalcPlot3D-hyperboloid2.png>] [84]
 <./content/01_6_quadric_surfaces/graphics/CalcPlot3D-shifted_ellipse.png, id=10
-38, 1690.315pt x 1232.605pt>
+44, 1690.315pt x 1232.605pt>
 File: ./content/01_6_quadric_surfaces/graphics/CalcPlot3D-shifted_ellipse.png G
 raphic file (type png)
 <use ./content/01_6_quadric_surfaces/graphics/CalcPlot3D-shifted_ellipse.png>
@@ -1880,7 +1880,7 @@ ifted_ellipse.png  used on input line 222.
 (pdftex.def)             Requested size: 345.0pt x 251.57599pt.
  [85 <./content/01_6_quadric_surfaces/graphics/CalcPlot3D-shifted_ellipse.png>]
 <./content/01_6_quadric_surfaces/graphics/CalcPlot3D-shifted_hyperboloid.png, i
-d=1052, 1324.95pt x 1232.605pt>
+d=1057, 1324.95pt x 1232.605pt>
 File: ./content/01_6_quadric_surfaces/graphics/CalcPlot3D-shifted_hyperboloid.p
 ng Graphic file (type png)
 <use ./content/01_6_quadric_surfaces/graphics/CalcPlot3D-shifted_hyperboloid.pn
@@ -1893,7 +1893,7 @@ loid.png>] (./content/02_1_parametric_curves/parametric_curves.tex
 
 LaTeX Warning: No \author given.
 
-<./content/02_1_parametric_curves/graphics/CalcPlot3D-unit_circle.png, id=1066,
+<./content/02_1_parametric_curves/graphics/CalcPlot3D-unit_circle.png, id=1071,
  1612.0225pt x 1200.485pt>
 File: ./content/02_1_parametric_curves/graphics/CalcPlot3D-unit_circle.png Grap
 hic file (type png)
@@ -1905,7 +1905,7 @@ nit_circle.png  used on input line 30.
 
 ] [89 <./content/02_1_parametric_curves/graphics/CalcPlot3D-unit_circle.png>] [
 90]
-<./content/02_1_parametric_curves/graphics/CalcPlot3D-line_para.png, id=1094, 1
+<./content/02_1_parametric_curves/graphics/CalcPlot3D-line_para.png, id=1099, 1
 612.0225pt x 1200.485pt>
 File: ./content/02_1_parametric_curves/graphics/CalcPlot3D-line_para.png Graphi
 c file (type png)
@@ -1913,7 +1913,7 @@ c file (type png)
 Package pdftex.def Info: ./content/02_1_parametric_curves/graphics/CalcPlot3D-l
 ine_para.png  used on input line 105.
 (pdftex.def)             Requested size: 345.0pt x 256.9269pt.
-<./content/02_1_parametric_curves/graphics/CalcPlot3D-ellipse.png, id=1095, 161
+<./content/02_1_parametric_curves/graphics/CalcPlot3D-ellipse.png, id=1100, 161
 2.0225pt x 1200.485pt>
 File: ./content/02_1_parametric_curves/graphics/CalcPlot3D-ellipse.png Graphic 
 file (type png)
@@ -1928,7 +1928,7 @@ Overfull \hbox (11.97978pt too wide) in paragraph at lines 128--130
 e, in or-der to parametriza-
  []
 
-<./content/02_1_parametric_curves/graphics/CalcPlot3D-ellipse_rot.png, id=1104,
+<./content/02_1_parametric_curves/graphics/CalcPlot3D-ellipse_rot.png, id=1109,
  1612.0225pt x 1200.485pt>
 File: ./content/02_1_parametric_curves/graphics/CalcPlot3D-ellipse_rot.png Grap
 hic file (type png)
@@ -1936,7 +1936,7 @@ hic file (type png)
 Package pdftex.def Info: ./content/02_1_parametric_curves/graphics/CalcPlot3D-e
 llipse_rot.png  used on input line 146.
 (pdftex.def)             Requested size: 345.0pt x 256.9269pt.
-<./content/02_1_parametric_curves/graphics/CalcPlot3D-ellipse_3D.png, id=1105, 
+<./content/02_1_parametric_curves/graphics/CalcPlot3D-ellipse_3D.png, id=1110, 
 1612.0225pt x 1200.485pt>
 File: ./content/02_1_parametric_curves/graphics/CalcPlot3D-ellipse_3D.png Graph
 ic file (type png)
@@ -1945,7 +1945,7 @@ Package pdftex.def Info: ./content/02_1_parametric_curves/graphics/CalcPlot3D-e
 llipse_3D.png  used on input line 168.
 (pdftex.def)             Requested size: 345.0pt x 256.9269pt.
 [92 <./content/02_1_parametric_curves/graphics/CalcPlot3D-ellipse_rot.png>]
-<./content/02_1_parametric_curves/graphics/CalcPlot3D-cyl_plane.png, id=1111, 1
+<./content/02_1_parametric_curves/graphics/CalcPlot3D-cyl_plane.png, id=1116, 1
 612.0225pt x 1200.485pt>
 File: ./content/02_1_parametric_curves/graphics/CalcPlot3D-cyl_plane.png Graphi
 c file (type png)
@@ -1954,7 +1954,7 @@ Package pdftex.def Info: ./content/02_1_parametric_curves/graphics/CalcPlot3D-c
 yl_plane.png  used on input line 185.
 (pdftex.def)             Requested size: 345.0pt x 256.9269pt.
 <./content/02_1_parametric_curves/graphics/CalcPlot3D-cyl_plane_curve.png, id=1
-112, 1612.0225pt x 1200.485pt>
+117, 1612.0225pt x 1200.485pt>
 File: ./content/02_1_parametric_curves/graphics/CalcPlot3D-cyl_plane_curve.png 
 Graphic file (type png)
 <use ./content/02_1_parametric_curves/graphics/CalcPlot3D-cyl_plane_curve.png>
@@ -1964,7 +1964,7 @@ yl_plane_curve.png  used on input line 189.
 
 [93 <./content/02_1_parametric_curves/graphics/CalcPlot3D-ellipse_3D.png> <./co
 ntent/02_1_parametric_curves/graphics/CalcPlot3D-cyl_plane.png>]
-<./content/02_1_parametric_curves/graphics/CalcPlot3D-tornado.png, id=1120, 161
+<./content/02_1_parametric_curves/graphics/CalcPlot3D-tornado.png, id=1125, 161
 2.0225pt x 1200.485pt>
 File: ./content/02_1_parametric_curves/graphics/CalcPlot3D-tornado.png Graphic 
 file (type png)
@@ -1978,7 +1978,7 @@ ornado.png  used on input line 216.
 
 LaTeX Warning: No \author given.
 
-<./content/02_2_velocity_and_speed/graphics/CalcPlot3D-sv_deriv.png, id=1135, 1
+<./content/02_2_velocity_and_speed/graphics/CalcPlot3D-sv_deriv.png, id=1140, 1
 612.0225pt x 1200.485pt>
 File: ./content/02_2_velocity_and_speed/graphics/CalcPlot3D-sv_deriv.png Graphi
 c file (type png)
@@ -1989,7 +1989,7 @@ sv_deriv.png  used on input line 20.
 [96
 
  <./content/02_2_velocity_and_speed/graphics/CalcPlot3D-sv_deriv.png>]
-<./content/02_2_velocity_and_speed/graphics/CalcPlot3D-curve_deriv.png, id=1143
+<./content/02_2_velocity_and_speed/graphics/CalcPlot3D-curve_deriv.png, id=1148
 , 1612.0225pt x 1200.485pt>
 File: ./content/02_2_velocity_and_speed/graphics/CalcPlot3D-curve_deriv.png Gra
 phic file (type png)
@@ -1999,7 +1999,7 @@ curve_deriv.png  used on input line 33.
 (pdftex.def)             Requested size: 345.0pt x 256.9269pt.
 
 [97 <./content/02_2_velocity_and_speed/graphics/CalcPlot3D-curve_deriv.png>]
-<./content/02_2_velocity_and_speed/graphics/CalcPlot3D-vel_vector.png, id=1152,
+<./content/02_2_velocity_and_speed/graphics/CalcPlot3D-vel_vector.png, id=1157,
  1612.0225pt x 1200.485pt>
 File: ./content/02_2_velocity_and_speed/graphics/CalcPlot3D-vel_vector.png Grap
 hic file (type png)
@@ -2027,7 +2027,7 @@ OT1/cmr/m/n/10 0 \OMS/cmsy/m/n/10 ^^T \OML/cmm/m/it/10 t \OMS/cmsy/m/n/10 ^^T [
 
 [101]
 <./content/02_2_velocity_and_speed/graphics/CalcPlot3D-tangent_line.png, id=118
-1, 1551.7975pt x 1096.095pt>
+6, 1551.7975pt x 1096.095pt>
 File: ./content/02_2_velocity_and_speed/graphics/CalcPlot3D-tangent_line.png Gr
 aphic file (type png)
 <use ./content/02_2_velocity_and_speed/graphics/CalcPlot3D-tangent_line.png>
@@ -2100,7 +2100,7 @@ r/m/n/10 ] \OMS/cmsy/m/n/10 ! \U/msb/m/n/10 R[]$ \OT1/cmr/m/it/10 de-fined by $
 mr/m/n/10 ))$\OT1/cmr/m/it/10 . 
  []
 
-<./content/02_4_curve_length/graphics/CalcPlot3D-unit_circle.png, id=1229, 1551
+<./content/02_4_curve_length/graphics/CalcPlot3D-unit_circle.png, id=1234, 1551
 .7975pt x 1096.095pt>
 File: ./content/02_4_curve_length/graphics/CalcPlot3D-unit_circle.png Graphic f
 ile (type png)
@@ -2118,7 +2118,7 @@ r/m/n/10 ] \OMS/cmsy/m/n/10 ! \U/msb/m/n/10 R[]$ \OT1/cmr/m/it/10 de-fined by $
 mr/m/n/10 )\OML/cmm/m/it/10 ; t\OT1/cmr/m/n/10 )$\OT1/cmr/m/it/10 . 
  []
 
-<./content/02_4_curve_length/graphics/CalcPlot3D-spiral.png, id=1235, 1551.7975
+<./content/02_4_curve_length/graphics/CalcPlot3D-spiral.png, id=1240, 1551.7975
 pt x 1096.095pt>
 File: ./content/02_4_curve_length/graphics/CalcPlot3D-spiral.png Graphic file (
 type png)
@@ -2143,7 +2143,7 @@ LaTeX Warning: No \author given.
 
 ] [114]
 <./content/02_5_arclength_function/graphics/CalcPlot3D-arclength_ex.png, id=127
-1, 1646.15pt x 1232.605pt>
+6, 1646.15pt x 1232.605pt>
 File: ./content/02_5_arclength_function/graphics/CalcPlot3D-arclength_ex.png Gr
 aphic file (type png)
 <use ./content/02_5_arclength_function/graphics/CalcPlot3D-arclength_ex.png>
@@ -2177,7 +2177,7 @@ it/10 , parametrized
  []
 
 [118]
-<./content/02_6_curvature/graphics/CalcPlot3D-generic_circle.png, id=1304, 1646
+<./content/02_6_curvature/graphics/CalcPlot3D-generic_circle.png, id=1309, 1646
 .15pt x 1232.605pt>
 File: ./content/02_6_curvature/graphics/CalcPlot3D-generic_circle.png Graphic f
 ile (type png)
@@ -2202,16 +2202,16 @@ LaTeX Warning: No \author given.
 [121
 
 ] [122]
-<./content/02_7_tnb_frames/graphics/right_hand_rule.jpg, id=1335, 4047.12pt x 3
-035.34pt>
-File: ./content/02_7_tnb_frames/graphics/right_hand_rule.jpg Graphic file (type
- jpg)
-<use ./content/02_7_tnb_frames/graphics/right_hand_rule.jpg>
-Package pdftex.def Info: ./content/02_7_tnb_frames/graphics/right_hand_rule.jpg
+<./content/02_7_tnb_frames/graphics/right_hand_rule.pdf, id=1340, 794.97pt x 61
+4.295pt>
+File: ./content/02_7_tnb_frames/graphics/right_hand_rule.pdf Graphic file (type
+ pdf)
+<use ./content/02_7_tnb_frames/graphics/right_hand_rule.pdf>
+Package pdftex.def Info: ./content/02_7_tnb_frames/graphics/right_hand_rule.pdf
   used on input line 98.
-(pdftex.def)             Requested size: 345.0pt x 258.71838pt.
- [123] [124 <./content/02_7_tnb_frames/graphics/right_hand_rule.jpg>]) [125] (.
-/content/02_8_more_tnb/more_tnb.tex
+(pdftex.def)             Requested size: 345.0pt x 266.59752pt.
+ [123] [124 <./content/02_7_tnb_frames/graphics/right_hand_rule.pdf, page is ro
+tated 90 degrees>]) [125] (./content/02_8_more_tnb/more_tnb.tex
 
 LaTeX Warning: No \author given.
 
@@ -2232,7 +2232,7 @@ be . com / watch ? v = youtu . be / 230jX21EO3A$[][]
  []
 
 [127] [128]
-<./content/02_8_more_tnb/graphics/CalcPlot3D-tnb_parabola.png, id=1383, 1646.15
+<./content/02_8_more_tnb/graphics/CalcPlot3D-tnb_parabola.png, id=1398, 1646.15
 pt x 1232.605pt>
 File: ./content/02_8_more_tnb/graphics/CalcPlot3D-tnb_parabola.png Graphic file
  (type png)
@@ -2527,7 +2527,7 @@ LaTeX Warning: No \author given.
 [233
 
 ]
-<./content/hw_01_coordinates/graphics/CalcPlot3D-pp_1.png, id=2175, 1690.315pt 
+<./content/hw_01_coordinates/graphics/CalcPlot3D-pp_1.png, id=2190, 1690.315pt 
 x 1232.605pt>
 File: ./content/hw_01_coordinates/graphics/CalcPlot3D-pp_1.png Graphic file (ty
 pe png)
@@ -2535,7 +2535,7 @@ pe png)
 Package pdftex.def Info: ./content/hw_01_coordinates/graphics/CalcPlot3D-pp_1.p
 ng  used on input line 36.
 (pdftex.def)             Requested size: 345.0pt x 251.57599pt.
-<./content/hw_01_coordinates/graphics/CalcPlot3D-pp_3.png, id=2176, 1690.315pt 
+<./content/hw_01_coordinates/graphics/CalcPlot3D-pp_3.png, id=2191, 1690.315pt 
 x 1232.605pt>
 File: ./content/hw_01_coordinates/graphics/CalcPlot3D-pp_3.png Graphic file (ty
 pe png)
@@ -2543,7 +2543,7 @@ pe png)
 Package pdftex.def Info: ./content/hw_01_coordinates/graphics/CalcPlot3D-pp_3.p
 ng  used on input line 39.
 (pdftex.def)             Requested size: 345.0pt x 251.57599pt.
-<./content/hw_01_coordinates/graphics/CalcPlot3D-pp_2.png, id=2177, 1690.315pt 
+<./content/hw_01_coordinates/graphics/CalcPlot3D-pp_2.png, id=2192, 1690.315pt 
 x 1232.605pt>
 File: ./content/hw_01_coordinates/graphics/CalcPlot3D-pp_2.png Graphic file (ty
 pe png)
@@ -2567,7 +2567,7 @@ LaTeX Font Warning: Font shape `OT1/cmss/bx/sl' undefined
 
 ] [238] [239] [240]
 <./content/hw_02_graphing/graphics/CalcPlot3D-quadric_options_incorrect1.png, i
-d=2271, 1555.8125pt x 1037.8775pt>
+d=2286, 1555.8125pt x 1037.8775pt>
 File: ./content/hw_02_graphing/graphics/CalcPlot3D-quadric_options_incorrect1.p
 ng Graphic file (type png)
 <use ./content/hw_02_graphing/graphics/CalcPlot3D-quadric_options_incorrect1.pn
@@ -2577,7 +2577,7 @@ ptions_incorrect1.png  used on input line 172.
 (pdftex.def)             Requested size: 345.0pt x 230.13914pt.
  [241]
 <./content/hw_02_graphing/graphics/CalcPlot3D-quadric_options_correct.png, id=2
-293, 1551.7975pt x 1096.095pt>
+308, 1551.7975pt x 1096.095pt>
 File: ./content/hw_02_graphing/graphics/CalcPlot3D-quadric_options_correct.png 
 Graphic file (type png)
 <use ./content/hw_02_graphing/graphics/CalcPlot3D-quadric_options_correct.png>
@@ -2585,7 +2585,7 @@ Package pdftex.def Info: ./content/hw_02_graphing/graphics/CalcPlot3D-quadric_o
 ptions_correct.png  used on input line 173.
 (pdftex.def)             Requested size: 345.0pt x 243.68385pt.
 <./content/hw_02_graphing/graphics/CalcPlot3D-quadric_options_incorrect2.png, i
-d=2294, 1551.7975pt x 1096.095pt>
+d=2309, 1551.7975pt x 1096.095pt>
 File: ./content/hw_02_graphing/graphics/CalcPlot3D-quadric_options_incorrect2.p
 ng Graphic file (type png)
 <use ./content/hw_02_graphing/graphics/CalcPlot3D-quadric_options_incorrect2.pn
@@ -2594,7 +2594,7 @@ Package pdftex.def Info: ./content/hw_02_graphing/graphics/CalcPlot3D-quadric_o
 ptions_incorrect2.png  used on input line 174.
 (pdftex.def)             Requested size: 345.0pt x 243.68385pt.
 <./content/hw_02_graphing/graphics/CalcPlot3D-quadric_options_incorrect3.png, i
-d=2295, 1551.7975pt x 1096.095pt>
+d=2310, 1551.7975pt x 1096.095pt>
 File: ./content/hw_02_graphing/graphics/CalcPlot3D-quadric_options_incorrect3.p
 ng Graphic file (type png)
 <use ./content/hw_02_graphing/graphics/CalcPlot3D-quadric_options_incorrect3.pn
@@ -2607,7 +2607,7 @@ png> <./content/hw_02_graphing/graphics/CalcPlot3D-quadric_options_correct.png>
  <./content/hw_02_graphing/graphics/CalcPlot3D-quadric_options_incorrect2.png>]
  [243 <./content/hw_02_graphing/graphics/CalcPlot3D-quadric_options_incorrect3.
 png>]
-<./content/hw_02_graphing/graphics/CalcPlot3D-abs_incorrect1.png, id=2323, 1551
+<./content/hw_02_graphing/graphics/CalcPlot3D-abs_incorrect1.png, id=2338, 1551
 .7975pt x 1096.095pt>
 File: ./content/hw_02_graphing/graphics/CalcPlot3D-abs_incorrect1.png Graphic f
 ile (type png)
@@ -2616,7 +2616,7 @@ Package pdftex.def Info: ./content/hw_02_graphing/graphics/CalcPlot3D-abs_incor
 rect1.png  used on input line 235.
 (pdftex.def)             Requested size: 345.0pt x 243.68385pt.
  [244]
-<./content/hw_02_graphing/graphics/CalcPlot3D-abs_correct.png, id=2349, 1551.79
+<./content/hw_02_graphing/graphics/CalcPlot3D-abs_correct.png, id=2365, 1551.79
 75pt x 1096.095pt>
 File: ./content/hw_02_graphing/graphics/CalcPlot3D-abs_correct.png Graphic file
  (type png)
@@ -2624,7 +2624,7 @@ File: ./content/hw_02_graphing/graphics/CalcPlot3D-abs_correct.png Graphic file
 Package pdftex.def Info: ./content/hw_02_graphing/graphics/CalcPlot3D-abs_corre
 ct.png  used on input line 236.
 (pdftex.def)             Requested size: 345.0pt x 243.68385pt.
-<./content/hw_02_graphing/graphics/CalcPlot3D-abs_incorrect2.png, id=2350, 1551
+<./content/hw_02_graphing/graphics/CalcPlot3D-abs_incorrect2.png, id=2366, 1551
 .7975pt x 1096.095pt>
 File: ./content/hw_02_graphing/graphics/CalcPlot3D-abs_incorrect2.png Graphic f
 ile (type png)
@@ -2632,7 +2632,7 @@ ile (type png)
 Package pdftex.def Info: ./content/hw_02_graphing/graphics/CalcPlot3D-abs_incor
 rect2.png  used on input line 237.
 (pdftex.def)             Requested size: 345.0pt x 243.68385pt.
-<./content/hw_02_graphing/graphics/CalcPlot3D-abs_incorrect3.png, id=2351, 1551
+<./content/hw_02_graphing/graphics/CalcPlot3D-abs_incorrect3.png, id=2367, 1551
 .7975pt x 1096.095pt>
 File: ./content/hw_02_graphing/graphics/CalcPlot3D-abs_incorrect3.png Graphic f
 ile (type png)
@@ -2643,7 +2643,7 @@ rect3.png  used on input line 238.
  [245 <./content/hw_02_graphing/graphics/CalcPlot3D-abs_incorrect1.png> <./cont
 ent/hw_02_graphing/graphics/CalcPlot3D-abs_correct.png> <./content/hw_02_graphi
 ng/graphics/CalcPlot3D-abs_incorrect2.png>]
-<./content/hw_02_graphing/graphics/CalcPlot3D-correct_ellipse.png, id=2362, 155
+<./content/hw_02_graphing/graphics/CalcPlot3D-correct_ellipse.png, id=2378, 155
 1.7975pt x 1096.095pt>
 File: ./content/hw_02_graphing/graphics/CalcPlot3D-correct_ellipse.png Graphic 
 file (type png)
@@ -2651,7 +2651,7 @@ file (type png)
 Package pdftex.def Info: ./content/hw_02_graphing/graphics/CalcPlot3D-correct_e
 llipse.png  used on input line 249.
 (pdftex.def)             Requested size: 172.5pt x 121.84192pt.
-<./content/hw_02_graphing/graphics/CalcPlot3D-incorrect_ellipse1.png, id=2363, 
+<./content/hw_02_graphing/graphics/CalcPlot3D-incorrect_ellipse1.png, id=2379, 
 1551.7975pt x 1096.095pt>
 File: ./content/hw_02_graphing/graphics/CalcPlot3D-incorrect_ellipse1.png Graph
 ic file (type png)
@@ -2661,7 +2661,7 @@ _ellipse1.png  used on input line 250.
 (pdftex.def)             Requested size: 172.5pt x 121.84192pt.
  [246 <./content/hw_02_graphing/graphics/CalcPlot3D-abs_incorrect3.png> <./cont
 ent/hw_02_graphing/graphics/CalcPlot3D-correct_ellipse.png>]
-<./content/hw_02_graphing/graphics/CalcPlot3D-incorrect_ellipse2.png, id=2373, 
+<./content/hw_02_graphing/graphics/CalcPlot3D-incorrect_ellipse2.png, id=2388, 
 1551.7975pt x 1096.095pt>
 File: ./content/hw_02_graphing/graphics/CalcPlot3D-incorrect_ellipse2.png Graph
 ic file (type png)
@@ -2672,7 +2672,7 @@ _ellipse2.png  used on input line 251.
  [247 <./content/hw_02_graphing/graphics/CalcPlot3D-incorrect_ellipse1.png> <./
 content/hw_02_graphing/graphics/CalcPlot3D-incorrect_ellipse2.png>]
 <./content/hw_02_graphing/graphics/CalcPlot3D-incorrect_shifted_ellipse1.png, i
-d=2389, 1551.7975pt x 1096.095pt>
+d=2404, 1551.7975pt x 1096.095pt>
 File: ./content/hw_02_graphing/graphics/CalcPlot3D-incorrect_shifted_ellipse1.p
 ng Graphic file (type png)
 <use ./content/hw_02_graphing/graphics/CalcPlot3D-incorrect_shifted_ellipse1.pn
@@ -2681,7 +2681,7 @@ Package pdftex.def Info: ./content/hw_02_graphing/graphics/CalcPlot3D-incorrect
 _shifted_ellipse1.png  used on input line 293.
 (pdftex.def)             Requested size: 172.5pt x 121.84192pt.
 <./content/hw_02_graphing/graphics/CalcPlot3D-correct_shifted_ellipse.png, id=2
-390, 1551.7975pt x 1096.095pt>
+405, 1551.7975pt x 1096.095pt>
 File: ./content/hw_02_graphing/graphics/CalcPlot3D-correct_shifted_ellipse.png 
 Graphic file (type png)
 <use ./content/hw_02_graphing/graphics/CalcPlot3D-correct_shifted_ellipse.png>
@@ -2691,7 +2691,7 @@ hifted_ellipse.png  used on input line 294.
  [248 <./content/hw_02_graphing/graphics/CalcPlot3D-incorrect_shifted_ellipse1.
 png>]
 <./content/hw_02_graphing/graphics/CalcPlot3D-incorrect_shifted_ellipse2.png, i
-d=2403, 1551.7975pt x 1096.095pt>
+d=2418, 1551.7975pt x 1096.095pt>
 File: ./content/hw_02_graphing/graphics/CalcPlot3D-incorrect_shifted_ellipse2.p
 ng Graphic file (type png)
 <use ./content/hw_02_graphing/graphics/CalcPlot3D-incorrect_shifted_ellipse2.pn
@@ -2700,7 +2700,7 @@ Package pdftex.def Info: ./content/hw_02_graphing/graphics/CalcPlot3D-incorrect
 _shifted_ellipse2.png  used on input line 295.
 (pdftex.def)             Requested size: 172.5pt x 121.84192pt.
 <./content/hw_02_graphing/graphics/CalcPlot3D-incorrect_shifted_ellipse3.png, i
-d=2404, 1551.7975pt x 1096.095pt>
+d=2419, 1551.7975pt x 1096.095pt>
 File: ./content/hw_02_graphing/graphics/CalcPlot3D-incorrect_shifted_ellipse3.p
 ng Graphic file (type png)
 <use ./content/hw_02_graphing/graphics/CalcPlot3D-incorrect_shifted_ellipse3.pn
@@ -2711,16 +2711,16 @@ _shifted_ellipse3.png  used on input line 296.
  [249 <./content/hw_02_graphing/graphics/CalcPlot3D-correct_shifted_ellipse.png
 > <./content/hw_02_graphing/graphics/CalcPlot3D-incorrect_shifted_ellipse2.png>
  <./content/hw_02_graphing/graphics/CalcPlot3D-incorrect_shifted_ellipse3.png>]
-<./content/hw_02_graphing/graphics/CalcPlot3D-incorrect_paraboloid1.png, id=241
-5, 1551.7975pt x 1096.095pt>
+<./content/hw_02_graphing/graphics/CalcPlot3D-incorrect_paraboloid1.png, id=243
+0, 1551.7975pt x 1096.095pt>
 File: ./content/hw_02_graphing/graphics/CalcPlot3D-incorrect_paraboloid1.png Gr
 aphic file (type png)
 <use ./content/hw_02_graphing/graphics/CalcPlot3D-incorrect_paraboloid1.png>
 Package pdftex.def Info: ./content/hw_02_graphing/graphics/CalcPlot3D-incorrect
 _paraboloid1.png  used on input line 324.
 (pdftex.def)             Requested size: 172.5pt x 121.84192pt.
-<./content/hw_02_graphing/graphics/CalcPlot3D-incorrect_paraboloid2.png, id=241
-6, 1551.7975pt x 1096.095pt>
+<./content/hw_02_graphing/graphics/CalcPlot3D-incorrect_paraboloid2.png, id=243
+1, 1551.7975pt x 1096.095pt>
 File: ./content/hw_02_graphing/graphics/CalcPlot3D-incorrect_paraboloid2.png Gr
 aphic file (type png)
 <use ./content/hw_02_graphing/graphics/CalcPlot3D-incorrect_paraboloid2.png>
@@ -2728,15 +2728,15 @@ Package pdftex.def Info: ./content/hw_02_graphing/graphics/CalcPlot3D-incorrect
 _paraboloid2.png  used on input line 325.
 (pdftex.def)             Requested size: 172.5pt x 121.84192pt.
  [250 <./content/hw_02_graphing/graphics/CalcPlot3D-incorrect_paraboloid1.png>]
-<./content/hw_02_graphing/graphics/CalcPlot3D-incorrect_paraboloid3.png, id=242
-9, 1551.7975pt x 1096.095pt>
+<./content/hw_02_graphing/graphics/CalcPlot3D-incorrect_paraboloid3.png, id=244
+4, 1551.7975pt x 1096.095pt>
 File: ./content/hw_02_graphing/graphics/CalcPlot3D-incorrect_paraboloid3.png Gr
 aphic file (type png)
 <use ./content/hw_02_graphing/graphics/CalcPlot3D-incorrect_paraboloid3.png>
 Package pdftex.def Info: ./content/hw_02_graphing/graphics/CalcPlot3D-incorrect
 _paraboloid3.png  used on input line 326.
 (pdftex.def)             Requested size: 172.5pt x 121.84192pt.
-<./content/hw_02_graphing/graphics/CalcPlot3D-correct_paraboloid.png, id=2430, 
+<./content/hw_02_graphing/graphics/CalcPlot3D-correct_paraboloid.png, id=2445, 
 1551.7975pt x 1096.095pt>
 File: ./content/hw_02_graphing/graphics/CalcPlot3D-correct_paraboloid.png Graph
 ic file (type png)
@@ -2752,7 +2752,7 @@ tent/hw_02_graphing/graphics/CalcPlot3D-correct_paraboloid.png>]) [252]
 LaTeX Warning: No \author given.
 
 <./content/hw_03_parametrized_curves/graphics/CalcPlot3D-line_incorrect1.png, i
-d=2455, 1551.7975pt x 1096.095pt>
+d=2470, 1551.7975pt x 1096.095pt>
 File: ./content/hw_03_parametrized_curves/graphics/CalcPlot3D-line_incorrect1.p
 ng Graphic file (type png)
 <use ./content/hw_03_parametrized_curves/graphics/CalcPlot3D-line_incorrect1.pn
@@ -2761,7 +2761,7 @@ Package pdftex.def Info: ./content/hw_03_parametrized_curves/graphics/CalcPlot3
 D-line_incorrect1.png  used on input line 13.
 (pdftex.def)             Requested size: 345.0pt x 243.68385pt.
 <./content/hw_03_parametrized_curves/graphics/CalcPlot3D-line_correct.png, id=2
-456, 1551.7975pt x 1096.095pt>
+471, 1551.7975pt x 1096.095pt>
 File: ./content/hw_03_parametrized_curves/graphics/CalcPlot3D-line_correct.png 
 Graphic file (type png)
 <use ./content/hw_03_parametrized_curves/graphics/CalcPlot3D-line_correct.png>
@@ -2769,7 +2769,7 @@ Package pdftex.def Info: ./content/hw_03_parametrized_curves/graphics/CalcPlot3
 D-line_correct.png  used on input line 14.
 (pdftex.def)             Requested size: 345.0pt x 243.68385pt.
 <./content/hw_03_parametrized_curves/graphics/CalcPlot3D-line_incorrect2.png, i
-d=2457, 1551.7975pt x 1096.095pt>
+d=2472, 1551.7975pt x 1096.095pt>
 File: ./content/hw_03_parametrized_curves/graphics/CalcPlot3D-line_incorrect2.p
 ng Graphic file (type png)
 <use ./content/hw_03_parametrized_curves/graphics/CalcPlot3D-line_incorrect2.pn
@@ -2782,7 +2782,7 @@ D-line_incorrect2.png  used on input line 15.
  <./content/hw_03_parametrized_curves/graphics/CalcPlot3D-line_incorrect1.png> 
 <./content/hw_03_parametrized_curves/graphics/CalcPlot3D-line_correct.png>]
 <./content/hw_03_parametrized_curves/graphics/CalcPlot3D-line_incorrect3.png, i
-d=2469, 1551.7975pt x 1096.095pt>
+d=2484, 1551.7975pt x 1096.095pt>
 File: ./content/hw_03_parametrized_curves/graphics/CalcPlot3D-line_incorrect3.p
 ng Graphic file (type png)
 <use ./content/hw_03_parametrized_curves/graphics/CalcPlot3D-line_incorrect3.pn
@@ -2791,7 +2791,7 @@ Package pdftex.def Info: ./content/hw_03_parametrized_curves/graphics/CalcPlot3
 D-line_incorrect3.png  used on input line 16.
 (pdftex.def)             Requested size: 345.0pt x 243.68385pt.
 <./content/hw_03_parametrized_curves/graphics/CalcPlot3D-line_incorrect4.png, i
-d=2470, 1551.7975pt x 1096.095pt>
+d=2485, 1551.7975pt x 1096.095pt>
 File: ./content/hw_03_parametrized_curves/graphics/CalcPlot3D-line_incorrect4.p
 ng Graphic file (type png)
 <use ./content/hw_03_parametrized_curves/graphics/CalcPlot3D-line_incorrect4.pn
@@ -2800,7 +2800,7 @@ Package pdftex.def Info: ./content/hw_03_parametrized_curves/graphics/CalcPlot3
 D-line_incorrect4.png  used on input line 17.
 (pdftex.def)             Requested size: 345.0pt x 243.68385pt.
 <./content/hw_03_parametrized_curves/graphics/CalcPlot3D-line_incorrect5.png, i
-d=2471, 1551.7975pt x 1096.095pt>
+d=2486, 1551.7975pt x 1096.095pt>
 File: ./content/hw_03_parametrized_curves/graphics/CalcPlot3D-line_incorrect5.p
 ng Graphic file (type png)
 <use ./content/hw_03_parametrized_curves/graphics/CalcPlot3D-line_incorrect5.pn
@@ -2813,7 +2813,7 @@ ng> <./content/hw_03_parametrized_curves/graphics/CalcPlot3D-line_incorrect3.pn
 g> <./content/hw_03_parametrized_curves/graphics/CalcPlot3D-line_incorrect4.png
 >]
 <./content/hw_03_parametrized_curves/graphics/CalcPlot3D-cusp_correct.png, id=2
-482, 1551.7975pt x 1096.095pt>
+497, 1551.7975pt x 1096.095pt>
 File: ./content/hw_03_parametrized_curves/graphics/CalcPlot3D-cusp_correct.png 
 Graphic file (type png)
 <use ./content/hw_03_parametrized_curves/graphics/CalcPlot3D-cusp_correct.png>
@@ -2821,7 +2821,7 @@ Package pdftex.def Info: ./content/hw_03_parametrized_curves/graphics/CalcPlot3
 D-cusp_correct.png  used on input line 25.
 (pdftex.def)             Requested size: 345.0pt x 243.68385pt.
 <./content/hw_03_parametrized_curves/graphics/CalcPlot3D-cusp_incorrect1.png, i
-d=2483, 1551.7975pt x 1096.095pt>
+d=2498, 1551.7975pt x 1096.095pt>
 File: ./content/hw_03_parametrized_curves/graphics/CalcPlot3D-cusp_incorrect1.p
 ng Graphic file (type png)
 <use ./content/hw_03_parametrized_curves/graphics/CalcPlot3D-cusp_incorrect1.pn
@@ -2833,7 +2833,7 @@ D-cusp_incorrect1.png  used on input line 26.
 png> <./content/hw_03_parametrized_curves/graphics/CalcPlot3D-cusp_correct.png>
 ]
 <./content/hw_03_parametrized_curves/graphics/CalcPlot3D-cusp_incorrect2.png, i
-d=2492, 1551.7975pt x 1096.095pt>
+d=2507, 1551.7975pt x 1096.095pt>
 File: ./content/hw_03_parametrized_curves/graphics/CalcPlot3D-cusp_incorrect2.p
 ng Graphic file (type png)
 <use ./content/hw_03_parametrized_curves/graphics/CalcPlot3D-cusp_incorrect2.pn
@@ -2842,7 +2842,7 @@ Package pdftex.def Info: ./content/hw_03_parametrized_curves/graphics/CalcPlot3
 D-cusp_incorrect2.png  used on input line 27.
 (pdftex.def)             Requested size: 345.0pt x 243.68385pt.
 <./content/hw_03_parametrized_curves/graphics/CalcPlot3D-cusp_incorrect3.png, i
-d=2493, 1551.7975pt x 1096.095pt>
+d=2508, 1551.7975pt x 1096.095pt>
 File: ./content/hw_03_parametrized_curves/graphics/CalcPlot3D-cusp_incorrect3.p
 ng Graphic file (type png)
 <use ./content/hw_03_parametrized_curves/graphics/CalcPlot3D-cusp_incorrect3.pn
@@ -2851,7 +2851,7 @@ Package pdftex.def Info: ./content/hw_03_parametrized_curves/graphics/CalcPlot3
 D-cusp_incorrect3.png  used on input line 28.
 (pdftex.def)             Requested size: 345.0pt x 243.68385pt.
 <./content/hw_03_parametrized_curves/graphics/CalcPlot3D-cusp_incorrect4.png, i
-d=2494, 1551.7975pt x 1096.095pt>
+d=2509, 1551.7975pt x 1096.095pt>
 File: ./content/hw_03_parametrized_curves/graphics/CalcPlot3D-cusp_incorrect4.p
 ng Graphic file (type png)
 <use ./content/hw_03_parametrized_curves/graphics/CalcPlot3D-cusp_incorrect4.pn
@@ -2864,7 +2864,7 @@ png> <./content/hw_03_parametrized_curves/graphics/CalcPlot3D-cusp_incorrect2.p
 ng> <./content/hw_03_parametrized_curves/graphics/CalcPlot3D-cusp_incorrect3.pn
 g>]
 <./content/hw_03_parametrized_curves/graphics/CalcPlot3D-half_circle.png, id=25
-05, 1551.7975pt x 1096.095pt>
+20, 1551.7975pt x 1096.095pt>
 File: ./content/hw_03_parametrized_curves/graphics/CalcPlot3D-half_circle.png G
 raphic file (type png)
 <use ./content/hw_03_parametrized_curves/graphics/CalcPlot3D-half_circle.png>
@@ -2873,8 +2873,8 @@ D-half_circle.png  used on input line 36.
 (pdftex.def)             Requested size: 345.0pt x 243.68385pt.
  [257 <./content/hw_03_parametrized_curves/graphics/CalcPlot3D-cusp_incorrect4.
 png> <./content/hw_03_parametrized_curves/graphics/CalcPlot3D-half_circle.png>]
-<./content/hw_03_parametrized_curves/graphics/CalcPlot3D-sine_curve.png, id=251
-9, 1551.7975pt x 1096.095pt>
+<./content/hw_03_parametrized_curves/graphics/CalcPlot3D-sine_curve.png, id=253
+5, 1551.7975pt x 1096.095pt>
 File: ./content/hw_03_parametrized_curves/graphics/CalcPlot3D-sine_curve.png Gr
 aphic file (type png)
 <use ./content/hw_03_parametrized_curves/graphics/CalcPlot3D-sine_curve.png>
@@ -2896,7 +2896,7 @@ OML/cmm/m/it/10 L \OT1/cmr/m/n/10 = [][] []\OML/cmm/m/it/10 dx$
 [262
 
 ]
-<./content/hw_04_arclength_curvature/graphics/curvyCurve.pdf, id=2563, 180.5107
+<./content/hw_04_arclength_curvature/graphics/curvyCurve.pdf, id=2578, 180.5107
 pt x 99.71754pt>
 File: ./content/hw_04_arclength_curvature/graphics/curvyCurve.pdf Graphic file 
 (type pdf)
@@ -2904,7 +2904,7 @@ File: ./content/hw_04_arclength_curvature/graphics/curvyCurve.pdf Graphic file
 Package pdftex.def Info: ./content/hw_04_arclength_curvature/graphics/curvyCurv
 e.pdf  used on input line 63.
 (pdftex.def)             Requested size: 345.0pt x 190.59427pt.
-<./content/hw_04_arclength_curvature/graphics/curvatures.pdf, id=2564, 235.8284
+<./content/hw_04_arclength_curvature/graphics/curvatures.pdf, id=2579, 235.8284
 6pt x 70.60298pt>
 File: ./content/hw_04_arclength_curvature/graphics/curvatures.pdf Graphic file 
 (type pdf)
@@ -2914,28 +2914,52 @@ s.pdf  used on input line 75.
 (pdftex.def)             Requested size: 345.0pt x 103.29279pt.
  [263 <./content/hw_04_arclength_curvature/graphics/curvyCurve.pdf>]
 [264 <./content/hw_04_arclength_curvature/graphics/curvatures.pdf>]) [265]
-(./content/hw_08_differentiability/hw_differentiability.tex
+(./content/hw_05_tnb_acceleration/hw_tnb_acceleration.tex
 
 LaTeX Warning: No \author given.
 
+
+Overfull \hbox (14.04922pt too wide) in paragraph at lines 24--25
+[]\OT1/cmr/m/sl/10 Find the mov-ing frame for the path $[]\OT1/cmr/m/n/10 (\OML
+/cmm/m/it/10 t\OT1/cmr/m/n/10 ) = (2\OML/cmm/m/it/10 t; \OT1/cmr/m/n/10 6 [](3\
+OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OMS/cmsy/m/n/10 ^^@\OT1/c
+mr/m/n/10 6 [](3\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ))$\OT1/cmr/m/sl/10 .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
+
+ []
+
 [266
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
+
+ []
+
+[267]) [268] (./content/hw_08_differentiability/hw_differentiability.tex
+
+LaTeX Warning: No \author given.
+
+[269
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 88--89
 
  []
 
-[267]
+[270]
 Underfull \hbox (badness 10000) in paragraph at lines 90--91
 
  []
 
-) [268]
+) [271]
 (./content/hw_09_properties_of_derivatives/hw_properties_of_derivatives.tex
 
 LaTeX Warning: No \author given.
 
-[269
+[272
 
 ]
 Overfull \hbox (0.6165pt too wide) in paragraph at lines 60--61
@@ -2950,28 +2974,20 @@ Overfull \hbox (9.94054pt too wide) in paragraph at lines 68--69
 =
  []
 
-[270]
-Overfull \hbox (106.94435pt too wide) in paragraph at lines 95--96
-[]\OT1/cmr/m/sl/10 Consider the func-tion $\OT1/cmr/bx/n/10 g \OT1/cmr/m/n/10 :
- \U/msb/m/n/10 R[] \OMS/cmsy/m/n/10 ! \U/msb/m/n/10 R[]$ \OT1/cmr/m/sl/10 given
- by $\OT1/cmr/bx/n/10 g\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^Z; ^^R; ^^^\OT1/cmr/
-m/n/10 ) = (\OML/cmm/m/it/10 ^^Z [] ^^R [] ^^^; ^^Z [] ^^R [] ^^^; ^^Z [] ^^^\O
-T1/cmr/m/n/10 )$\OT1/cmr/m/sl/10 ,
- []
-
-) [271] (./content/hw_10_directional_derivatives/hw_directional_derivatives.tex
+[273]) [274]
+(./content/hw_10_directional_derivatives/hw_directional_derivatives.tex
 
 LaTeX Warning: No \author given.
 
-[272
+[275
 
 ]
-Overfull \hbox (5.86195pt too wide) in paragraph at lines 60--61
+Overfull \hbox (11.36198pt too wide) in paragraph at lines 60--61
 []\OT1/cmr/m/sl/10 Through a se-ries of un-for-tu-nate events, the un-lucky ali
 en Pmytmu
  []
 
-[273]) [274] (./content/hw_11_taylors_theorem/hw_taylors_theorem.tex
+[276]) [277] (./content/hw_11_taylors_theorem/hw_taylors_theorem.tex
 
 LaTeX Warning: No \author given.
 
@@ -2996,18 +3012,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--44
 
  []
 
-[275
+[278
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 48--51
 
  []
 
-[276]) [277] (./content/hw_12_extrema/hw_extrema.tex
+[279]) [280] (./content/hw_12_extrema/hw_extrema.tex
 
 LaTeX Warning: No \author given.
 
-[278
+[281
 
 ]
 Overfull \hbox (2.7009pt too wide) in paragraph at lines 73--74
@@ -3015,19 +3031,19 @@ Overfull \hbox (2.7009pt too wide) in paragraph at lines 73--74
 e pos-i-tive num-bers such that their prod-
  []
 
-) [279] (./content/hw_13_substitution_lagrange/hw_substitution_lagrange.tex
+) [282] (./content/hw_13_substitution_lagrange/hw_substitution_lagrange.tex
 
 LaTeX Warning: No \author given.
 
-) [280
+) [283
 
 ] (./content/pp_00_review/review.tex
 
 LaTeX Warning: No \author given.
 
-[281
+[284
 
-] [282] [283]
+] [285] [286]
 Overfull \hbox (36.38948pt too wide) in paragraph at lines 156--157
 []\OT1/cmr/m/sl/10 Compute the an-gle be-tween the vec-tors $\OT1/cmr/m/n/10 (2
 \OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 3\OML/cm
@@ -3037,21 +3053,21 @@ sl/10 and $\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 3\OML/cmm/m/it/
 T1/cmr/m/n/10 1\OML/cmm/m/it/10 ; \OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 2)$
  []
 
-[284] [285]
+[287] [288]
 Overfull \hbox (8.86192pt too wide) in paragraph at lines 242--243
 []\OT1/cmr/m/sl/10 Compute the vol-ume of the par-al-lelepiped de-ter-mined by 
 $\OT1/cmr/m/n/10 (1\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 6\OML/cmm/m/it/10 ; \OT1/
 cmr/m/n/10 2)$\OT1/cmr/m/sl/10 ,
  []
 
-[286] [287]) [288] (./content/pp_01_coordinates/coordinates.tex
+[289] [290]) [291] (./content/pp_01_coordinates/coordinates.tex
 
 LaTeX Warning: No \author given.
 
-[289
+[292
 
 ]
-<./content/pp_01_coordinates/graphics/cylinder_wedge.pdf, id=2859, 169.41634pt 
+<./content/pp_01_coordinates/graphics/cylinder_wedge.pdf, id=2903, 169.41634pt 
 x 170.5846pt>
 File: ./content/pp_01_coordinates/graphics/cylinder_wedge.pdf Graphic file (typ
 e pdf)
@@ -3059,9 +3075,9 @@ e pdf)
 Package pdftex.def Info: ./content/pp_01_coordinates/graphics/cylinder_wedge.pd
 f  used on input line 93.
 (pdftex.def)             Requested size: 169.41591pt x 170.58417pt.
- [290] [291 <./content/pp_01_coordinates/graphics/cylinder_wedge.pdf, page is r
+ [293] [294 <./content/pp_01_coordinates/graphics/cylinder_wedge.pdf, page is r
 otated 180 degrees>]
-<./content/pp_01_coordinates/graphics/sphere_wedge.pdf, id=2882, 167.46265pt x 
+<./content/pp_01_coordinates/graphics/sphere_wedge.pdf, id=2925, 167.46265pt x 
 193.85759pt>
 File: ./content/pp_01_coordinates/graphics/sphere_wedge.pdf Graphic file (type 
 pdf)
@@ -3069,27 +3085,27 @@ pdf)
 Package pdftex.def Info: ./content/pp_01_coordinates/graphics/sphere_wedge.pdf 
  used on input line 162.
 (pdftex.def)             Requested size: 167.46222pt x 193.8571pt.
- [292] [293 <./content/pp_01_coordinates/graphics/sphere_wedge.pdf, page is rot
-ated 180 degrees>] [294] [295] [296]) [297]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 118.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 118.
+ [295] [296 <./content/pp_01_coordinates/graphics/sphere_wedge.pdf, page is rot
+ated 180 degrees>] [297] [298] [299]) [300]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 119.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 119.
 
 (./multivariable.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 118.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 118.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 119.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 119.
 Package rerunfilecheck Info: File `multivariable.out' has not changed.
-(rerunfilecheck)             Checksum: 1C896DE14A6A099C6382C376C916B3F7;4044.
+(rerunfilecheck)             Checksum: 16BBBF240BD9DEF6739077C28C8C4C13;4130.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 118.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 119.
  ) 
 Here is how much of TeX's memory you used:
- 40641 strings out of 492649
- 935752 string characters out of 6129622
+ 40662 strings out of 492649
+ 936098 string characters out of 6129622
  1058393 words of memory out of 5000000
- 42282 multiletter control sequences out of 15000+600000
+ 42283 multiletter control sequences out of 15000+600000
  549306 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,20n,118p,10420b,967s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3111,17 +3127,18 @@ ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive
 /2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/texlive/
 2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive
 /2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/
-2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/20
-18/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/201
-8/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2018
-/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/20
-18/texmf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb></usr/local/texlive/2
-018/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texli
-ve/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on multivariable.pdf (297 pages, 16322028 bytes).
+2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/20
+18/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2018
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2018/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2018/t
+exmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2018
+/texmf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb></usr/local/texlive/201
+8/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive
+/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on multivariable.pdf (300 pages, 16339849 bytes).
 PDF statistics:
- 3297 PDF objects out of 3580 (max. 8388607)
- 2722 compressed objects within 28 object streams
- 1308 named destinations out of 1440 (max. 500000)
- 1046 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3346 PDF objects out of 3580 (max. 8388607)
+ 2765 compressed objects within 28 object streams
+ 1325 named destinations out of 1440 (max. 500000)
+ 1054 words of extra memory for PDF output out of 10000 (max. 10000000)
 
