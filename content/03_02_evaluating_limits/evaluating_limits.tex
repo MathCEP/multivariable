@@ -24,8 +24,6 @@ Let $f:\mathbb{R}\rightarrow\mathbb{R}$ be a function. We write
 if for all $\epsilon >0$, there exists some $\delta >0$ such that for all $x$ with $0 < |x-a| < \delta$, we have $|f(x)-L| < \epsilon$.
 \end{definition}
 
-VISUAL
-
 We use this definition to guide our formal definition of a limit for multivariable functions.
 
 \begin{definition}
@@ -42,7 +40,23 @@ Because the inputs here are points in $\mathbb{R}^n$, when we take points ``clos
 \]
 So when we're considering all $\vec{x}$ such that $\|\vec{x}-\vec{a}\| < \delta$, we're taking all points within a distance $\delta$ of $\vec{a}$. This is called the \emph{open ball of radius $\delta$ centered at $\vec{a}$}. 
 
-PICTURES
+\begin{image}
+\begin{tikzpicture}
+\draw[dashed, fill = gray!40] (0,0) circle (2cm);
+\draw (0,0 ) -- node[above]{$r$} (2,0);
+\node at (0,-3) {$\text{an open ball in }\mathbb{R}^2$};
+\begin{scope}[xshift=7cm]
+  \shade[ball color = gray!40, opacity = 0.4] (0,0) circle (2cm);
+  \draw[dashed] (0,0) circle (2cm);
+  \draw[dashed] (-2,0) arc (180:360:2 and 0.6);
+  \draw[dashed, gray] (2,0) arc (0:180:2 and 0.6);
+  \fill[fill=black] (0,0) circle (1pt);
+  \draw[dashed, gray] (0,0 ) -- node[above]{$r$} (2,0);
+  \node at (0,-3) {$\text{an open ball in }\mathbb{R}^3$};
+ \end{scope}
+
+\end{tikzpicture}
+\end{image}
 
 When we add in the condition that $0<\|\vec{x}-\vec{a}\|$, we are excluding the point $a$ itself.
 
@@ -53,7 +67,7 @@ Given $\epsilon >0$, we'd like to find $\delta$ such that $0< \|(x,y,z)-(1,2,3)\
 \[
 0< \sqrt{(x-1)^2+(y-2)^2+(z-3)^2}<\delta.
 \]
-Using the triangle inequality (DOES THIS SHOW UP IN THE REVIEW?), we have
+Using the triangle inequality, $\sqrt{(x-1)^2}+\sqrt{(y-2)^2}+\sqrt{(z-3)^2} < \sqrt{(x-1)^2+(y-2)^2+(z-3)^2}$. From this, we have
 \[
 0< \sqrt{(x-1)^2}+\sqrt{(y-2)^2}+\sqrt{(z-3)^2}<\delta,
 \]
@@ -76,14 +90,12 @@ using the triangle inequality. By properties of absolute values, and using our a
 &=8\delta.
 \end{align*}
 So if we choose $\delta = \epsilon/8$, we'll have $|(2x-y+5z)-15|<\epsilon$ for all $(x,y,z)$ with $0< \|(x,y,z)-(1,2,3)\|<\delta$.
-
-SHOULD I DO THE WHOLE PROOF?
 \end{example}
 
 Now that we have a formal definition of limits, let's revisit our result about approaching a point along various paths.
 
 \begin{proposition}
-Consider a function $f:\mathbb{R}^n\rightarrow \mathbb{R}$, and a point $\vec{a}\in\mathbb{R}^n$. Suppose there are continuous paths $vec{x}(t)$ and $\vec{y}(t)$ such that $\vec{x}(t_1) = \vec{y}(t_2) = \vec{a}$, and suppose that
+Consider a function $f:\mathbb{R}^n\rightarrow \mathbb{R}$, and a point $\vec{a}\in\mathbb{R}^n$. Suppose there are continuous paths $\vec{x}(t)$ and $\vec{y}(t)$ such that $\vec{x}(t_1) = \vec{y}(t_2) = \vec{a}$, and suppose that
 \[
 \lim_{t\rightarrow t_1}f(\vec{x}(t))\neq \lim_{t\rightarrow t_2}f(\vec{y}(t))
 \]
@@ -91,16 +103,19 @@ Consider a function $f:\mathbb{R}^n\rightarrow \mathbb{R}$, and a point $\vec{a}
 \end{proposition}
 
 \begin{proof}
-(I'M NOT SURE THIS IS ACTUALLY WORTHWHILE...SO I STOPPED WRITING IT)
+In this proof, we'll handle the case where both limits exist. Suppose $\lim_{t\rightarrow t_1}f(\vec{x}(t)) = L$ and $\lim_{t\rightarrow t_2}f(\vec{y}(t)) = M$. We'll prove the contrapositive of the given statement: if $\lim_{\vec{x}\rightarrow\vec{a}}f(x)$ exists, then $L=M$.
 
-In this proof, we'll handle the case where both limits exist. Suppose $\lim_{t\rightarrow t_1}f(\vec{x}(t)) = L$ and $\lim_{t\rightarrow t_2}f(\vec{y}(t)) = M$. Let $\epsilon = \frac{|L-M|}{4}$.
+Suppose $\lim_{\vec{v}\rightarrow\vec{a}}f(\vec{v})=N$. Then there exists $\delta$ such that for $0< \|\vec{v} - \vec{a}\| < \delta$, we have $|f(\vec{v}) - N| < \epsilon$.
 
-We will do a proof by contradiction. Suppose $\lim_{\vec{x}\rightarrow\vec{a}}f(x)=N$. Then there exists $\delta$ such that 
+Since $\lim_{t\rightarrow t_1}f(\vec{x}(t)) = L$, there exists some $\delta_1>0$ such that for all $t$ with $0<|t-t_1|<\delta_1$, we have $|f(\vec{x}(t))-L|<\epsilon$. Since $\vec{x}$ is continuous, we can also find some $\delta_1'$ such that $\|\vec{x}(t)-\vec{a}\|<\delta$ for $|t-t_1|<\delta_1'$. Since $\|\vec{x}(t) - \vec{a}\| < \delta$, we also have that $|f(\vec{x}(t)) - N| < \epsilon$. From this, we have that
+\begin{align*}
+|N-L| &= |N-f(\vec{x}(t)) + f(\vec{x}(t)) - L\\
+&\leq |f(\vec{x}(t))-N| + |f(\vec{x}(t)) - L|\\
+&< 2\epsilon.
+\end{align*}
+Since this must be true for all $\epsilon$, we must have $N=L$.
 
-Since $\lim_{t\rightarrow t_1}f(\vec{x}(t)) = L$, there exists some $\delta_1>0$ such that for all $t$ with $0<|t-t_1|<\delta_1$, we have $|f(\vec{x}(t))-L|<\epsilon$. Since $\vec{x}$ is continuous, we can also find some $\delta_1'$ such that $\|\vec{x}(t)-\vec{a}\|<\delta$ for $|t-t_1|<\delta_1'$. 
-
-Since $\lim_{t\rightarrow t_2}f(\vec{y}(t)) = M$, there exists some $\delta_2>0$ such that for all $t$ with $0<|t-t_2|<\delta_2$, we have $|f(\vec{x}(t))-L|<\epsilon$.
-
+By the same reasoning, applied to the path $\vec{y}$, we have $N=M$. Thus, we would need to have $L=M$.
 \end{proof}
 
 \section*{Changing coordinates}
@@ -111,7 +126,23 @@ One strategy for evaluating limits is to change coordinates in a way that reduce
 
 Suppose we're taking the limit of a function $f(x,y)$ as $(x,y)\rightarrow (0,0)$, so we're approaching the origin. In polar coordinates $(\theta, r)$, approaching the origin is equivalent to taking $r\rightarrow 0$. It doesn't matter what $\theta$ does; as long as $r$ goes to $0$, we will be approaching the origin.
 
-VISUAL
+\begin{image}
+\begin{tikzpicture}
+\draw[<->] (-5,0) -- (5,0) node[below] {$x$};
+\draw[<->] (0,-5) -- (0,5) node[left] {$y$};
+\draw[gray] (0,0) circle (4cm);
+\draw[gray] (0,0) circle (2cm);
+\draw[gray] (0,0) circle (1cm);
+\draw[gray] (0,0) circle (.5cm);
+\draw[gray] (0,0) circle (.25cm);
+\draw[gray] (0,0) circle (.125cm);
+\draw[gray] (0,0) circle (.0625cm);
+\node at (3,3) {$r = 1$};
+\node at (1.5,1.5) {$r =.5$};
+\node at (.75,.75) {$r = .25$};
+\node at (0,-5.25) {As $r\rightarrow 0$, we approach the origin.};
+\end{tikzpicture}
+\end{image}
 
 This makes polar coordinates a common and convenient choice for a change of variables to evaluate limits.
 
@@ -165,7 +196,7 @@ We'll use a change of coordinates to evaluate $\lim_{(x,y)\rightarrow(0,0)} (x-y
 Notice that the expression on the right depends only on $u$, and not on $v$. Because of this, we can evaluate this limit as
 \begin{align*}
 \lim_{(u,v)\rightarrow (0,0)} ue^{-u^2} &= \lim_{u\rightarrow 0} ue^{-u^2}\\
-&= \lim_{u\rightarrow 0}\frac{u}{e^{u^2}}
+&= \lim_{u\rightarrow 0}\frac{u}{e^{u^2}}\\
 &= \answer{0}.
 \end{align*}
 Thus, we have $\lim_{(x,y)\rightarrow(0,0)} (x-y)e^{-(x-y)^2}=0$.
@@ -195,7 +226,7 @@ In all of the above cases, we considered limits approaching the origin. We can u
 Consider the limit $\lim_{(x,y)\rightarrow(2,3)} (x-2)(y-3)$. Here, it's convenient to use polar coordinates translated so they're centered at the point $(2,3)$. That is, we let $x = 2+r\cos\theta $ and $y=3+r\sin\theta$, so that $r=0$ when $(x,y)=(2,3)$. Then we can evaluate our limit as
 \begin{align*}
 \lim_{(x,y)\rightarrow(2,3)} (x-2)(y-3) &= \lim_{r\rightarrow 0}(2+r\cos\theta-2)(3+r\sin\theta -3)\\
-&=\lim_{r\rightarrow 0}r\cos\theta\cdot r\sin\theta
+&=\lim_{r\rightarrow 0}r\cos\theta\cdot r\sin\theta\\
 &= \lim_{r\rightarrow 0}r^2\cos\theta\sin\theta
 \end{align*}
 Notice that $-r^2\leq r^2\cos\theta\sin\theta\leq r^2$, and $\lim_{r\rightarrow 0}-r^2 = \lim_{r\rightarrow 0}r^2 = 0$. Then, by the squeeze theorem, $\lim_{r\rightarrow 0} r^2\cos\theta\sin\theta =0$. Thus, we have
@@ -203,7 +234,5 @@ Notice that $-r^2\leq r^2\cos\theta\sin\theta\leq r^2$, and $\lim_{r\rightarrow 
 \lim_{(x,y)\rightarrow(2,3)} (x-2)(y-3) = 0.
 \]
 \end{example}
-
-SHOULD THIS INCLUDE SOMETHING ABOUT THE REQUIREMENTS FOR A CHANGE OF COORDINATES?
 
 \end{document}

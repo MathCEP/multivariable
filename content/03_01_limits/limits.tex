@@ -32,19 +32,21 @@ if $f(x)$ approaches $L$ as $x$ approaches $a$.
 
 When we think of $x$ approaching $a$ along the number line, $\mathbb{R}$, we can approach $a$ from two directions: left and right.
 
-VISUAL
+YOUTUBE: number line
 
-This lead us to the idea of left and right limits.
+This led to the idea of left and right limits.
 
 When we have a function whose domain is a subset of $\mathbb{R}^n$, there are infinitely many possible ways to approach a point. We can approach a point along infinitely many different lines, and we can also ``zig-zag'' or ``spiral'' into a point.
 
-VISUAL
+In the video below, we see just a few of the infinitely many different ways that we can approach a point in $\mathbb{R}^2$.
+
+YOUTUBE: plane paths
 
 This makes limits in $\mathbb{R}^n$ particularly challenging!
 
 \section*{Showing that limits do not exist}
 
-For now, we'll work with an informal, intuitive definition of limits of functions $f:\mathbb{R}^n\rightarrow\mathbb{R}$. We'll revisit this definition, and provide a formal, epsilon-delta definition, in a later section. We model our informal definition after our definition from single variable calculus.
+For now, we'll work with an informal, intuitive definition of limits of functions $f:\mathbb{R}^n\rightarrow\mathbb{R}$. We'll revisit this definition and provide a formal epsilon-delta definition in a later section. We model our informal definition after our definition from single variable calculus.
 
 \begin{definition}
 Let $f:\mathbb{R}^n\rightarrow \mathbb{R}$. We say that
@@ -59,7 +61,7 @@ Note that since $f$ is a function from $\mathbb{R}^n$ to $\mathbb{R}$, the input
 An important consequence of this definition is that if we approach the point $\vec{a}$ along any path, the value of the function $f$ should always approach the limit $L$ (if the limit exists). This provides us with an important tool for showing that some limits do not exist.
 
 \begin{proposition}
-Consider a function $f:\mathbb{R}^n\rightarrow \mathbb{R}$, and a point $\vec{a}\in\mathbb{R}^n$. Suppose there are continuous paths $vec{x}(t)$ and $\vec{y}(t)$ such that $\vec{x}(t_1) = \vec{y}(t_2) = \vec{a}$, and suppose that
+Consider a function $f:\mathbb{R}^n\rightarrow \mathbb{R}$, and a point $\vec{a}\in\mathbb{R}^n$. Suppose there are continuous paths $\vec{x}(t)$ and $\vec{y}(t)$ such that $\vec{x}(t_1) = \vec{y}(t_2) = \vec{a}$, and suppose that
 \[
 \lim_{t\rightarrow t_1}f(\vec{x}(t))\neq \lim_{t\rightarrow t_2}f(\vec{y}(t))
 \]
@@ -90,9 +92,9 @@ Next, let's see what happens when we approach the origin along the $y$-axis. Tha
 
 Thus, we have found two paths along which $f$ approaches different values. This means that $\lim_{\vec{x}\rightarrow\vec{a}}f(\vec{x})$ does not exist.
 
-We can see this behavior reflected in the graph of $f$.
+We can see this behavior reflected in the graph of $f$. If we approach the origin along the $x$-axis, the value of the function approaches $1$. If we approach the origin along the $y$-axis, the value of the function approaches $-1$. Near the origin, the graph of the function looks like it's somehow ``pinched'' to accommodate this behavior.
 
-GRAPH
+YOUTUBE: pinched graph
 \end{example}
 
 \begin{example}
