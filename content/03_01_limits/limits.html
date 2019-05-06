@@ -49,51 +49,53 @@ This leads us to our second, informal definition of a limit.
 </div>
 <!--l. 33--><p class="noindent" >When we think of <script type="math/tex">x</script> approaching <script type="math/tex">a</script> along the number line, <script type="math/tex">\mathbb {R}</script>, we can approach <script type="math/tex">a</script> from two
 directions: left and right.
-</p><!--l. 35--><p class="noindent" >VISUAL
-</p><!--l. 37--><p class="noindent" >This lead us to the idea of left and right limits.
+</p><!--l. 35--><p class="noindent" >YOUTUBE: number line
+</p><!--l. 37--><p class="noindent" >This led to the idea of left and right limits.
 </p><!--l. 39--><p class="noindent" >When we have a function whose domain is a subset of <script type="math/tex">\mathbb {R}^n</script>, there are infinitely
 many possible ways to approach a point. We can approach a point along
 infinitely many different lines, and we can also “zig-zag” or “spiral” into a
 point.
-</p><!--l. 41--><p class="noindent" >VISUAL
-</p><!--l. 43--><p class="noindent" >This makes limits in <script type="math/tex">\mathbb {R}^n</script> particularly challenging!
-<a 
- id="Q1-1-1"></a>
+</p><!--l. 41--><p class="noindent" >In the video below, we see just a few of the infinitely many different ways that we can
+approach a point in <script type="math/tex">\mathbb {R}^2</script>.
+</p><!--l. 43--><p class="noindent" >YOUTUBE: plane paths
                                                                   
 
                                                                   
+</p><!--l. 45--><p class="noindent" >This makes limits in <script type="math/tex">\mathbb {R}^n</script> particularly challenging!
+<a 
+ id="Q1-1-1"></a>
 </p>
 <h3 class="likesectionHead"><a 
  id="x1-1000"></a>Showing that limits do not exist</h3>
-<!--l. 47--><p class="noindent" >For now, we’ll work with an informal, intuitive definition of limits of functions <script type="math/tex">f:\mathbb {R}^n\rightarrow \mathbb {R}</script>. We’ll
-revisit this definition, and provide a formal, epsilon-delta definition, in a later section.
+<!--l. 49--><p class="noindent" >For now, we’ll work with an informal, intuitive definition of limits of functions <script type="math/tex">f:\mathbb {R}^n\rightarrow \mathbb {R}</script>. We’ll
+revisit this definition and provide a formal epsilon-delta definition in a later section.
 We model our informal definition after our definition from single variable
 calculus.
 </p>
 <div class="theorem-like problem-environment definition" id="problem3"><a 
  id="x1-1001r3"></a>Let <script type="math/tex">f:\mathbb {R}^n\rightarrow \mathbb {R}</script>. We say that <script type="math/tex; mode=display"> \lim _{\vec {x}\rightarrow \vec {a}}f(\vec {x})=L </script> if <script type="math/tex">f(\vec {x})</script> gets close to <script type="math/tex">L</script> as <script type="math/tex">\vec {x}</script> gets close to <script type="math/tex">\vec {a}</script>.
 </div>
-<!--l. 57--><p class="noindent" >Note that since <script type="math/tex">f</script> is a function from <script type="math/tex">\mathbb {R}^n</script> to <script type="math/tex">\mathbb {R}</script>, the inputs of <script type="math/tex">f</script> are points/vectors in <script type="math/tex">\mathbb {R}^n</script>, and the
+<!--l. 59--><p class="noindent" >Note that since <script type="math/tex">f</script> is a function from <script type="math/tex">\mathbb {R}^n</script> to <script type="math/tex">\mathbb {R}</script>, the inputs of <script type="math/tex">f</script> are points/vectors in <script type="math/tex">\mathbb {R}^n</script>, and the
 outputs of <script type="math/tex">f</script> are numbers in <script type="math/tex">\mathbb {R}</script>.
-</p><!--l. 59--><p class="noindent" >An important consequence of this definition is that if we approach the point <script type="math/tex">\vec {a}</script> along
+</p><!--l. 61--><p class="noindent" >An important consequence of this definition is that if we approach the point <script type="math/tex">\vec {a}</script> along
 any path, the value of the function <script type="math/tex">f</script> should always approach the limit <script type="math/tex">L</script> (if the limit
 exists). This provides us with an important tool for showing that some limits do not
 exist.
 </p>
 <div class="theorem-like problem-environment proposition" id="problem4"><a 
- id="x1-1002r4"></a>Consider a function <script type="math/tex">f:\mathbb {R}^n\rightarrow \mathbb {R}</script>, and a point <script type="math/tex">\vec {a}\in \mathbb {R}^n</script>. Suppose there are continuous paths <script type="math/tex">vec{x}(t)</script> and <script type="math/tex">\vec {y}(t)</script> such
+ id="x1-1002r4"></a>Consider a function <script type="math/tex">f:\mathbb {R}^n\rightarrow \mathbb {R}</script>, and a point <script type="math/tex">\vec {a}\in \mathbb {R}^n</script>. Suppose there are continuous paths <script type="math/tex">\vec {x}(t)</script> and <script type="math/tex">\vec {y}(t)</script> such
 that <script type="math/tex">\vec {x}(t_1) = \vec {y}(t_2) = \vec {a}</script>, and suppose that <script type="math/tex; mode=display"> \lim _{t\rightarrow t_1}f(\vec {x}(t))\neq \lim _{t\rightarrow t_2}f(\vec {y}(t)) </script> (or one of these limits does not exist). Then <script type="math/tex">\lim _{\vec {x}\rightarrow \vec {a}}f(x)</script> does not
 exist.
 </div>
-<!--l. 69--><p class="noindent" >Note that the contrapositive of this statement is false: if we find two paths along
+<!--l. 71--><p class="noindent" >Note that the contrapositive of this statement is false: if we find two paths along
 which a function has the same limit, this does not guarantee that the overall limit
 exists.
-</p><!--l. 71--><p class="noindent" >We will prove this proposition once we give the epsilon-delta definition of a limit, but
+</p><!--l. 73--><p class="noindent" >We will prove this proposition once we give the epsilon-delta definition of a limit, but
 for now, we’ll use it to show that some limits do not exist.
 </p>
 <div class="theorem-like problem-environment example" id="problem5"><a 
  id="x1-1003r5"></a>Consider the function <script type="math/tex">f(x,y) = \frac {x^2-y^2}{x^2+y^2}</script>. We will show that <script type="math/tex">\lim _{(x,y)\rightarrow (0,0)} f(x,y)</script> does not exist.
-<!--l. 76--><p class="noindent" >First, let’s see what happens when we approach the origin along the
+<!--l. 78--><p class="noindent" >First, let’s see what happens when we approach the origin along the
 <script type="math/tex">x</script>-axis. In this case, the <script type="math/tex">y</script>-coordinate will always be <script type="math/tex">0</script>. More specifically, we
 approach along the path <script type="math/tex">\vec {x}(t) = (t,0)</script>, and let <script type="math/tex">t\rightarrow 0</script>. We find the limit of <script type="math/tex">f</script> along this path:
 </p><script type="math/tex; mode=display"> \begin{align*} 
@@ -102,55 +104,59 @@ approach along the path <script type="math/tex">\vec {x}(t) = (t,0)</script>, an
 &= \lim_{t\rightarrow 0}1\\
 &= 1.
 \end{align*}</script>
-<!--l. 84--><p class="noindent" >Next, let’s see what happens when we approach the origin along the <script type="math/tex">y</script>-axis. That is,
-we’ll consider the path <script type="math/tex">\vec {y}(t) = (0,t)</script>, and take <script type="math/tex">t\rightarrow 0</script>. We find the limit of <script type="math/tex">f</script> along this path:
                                                                   
 
                                                                   
+<!--l. 86--><p class="noindent" >Next, let’s see what happens when we approach the origin along the <script type="math/tex">y</script>-axis. That is,
+we’ll consider the path <script type="math/tex">\vec {y}(t) = (0,t)</script>, and take <script type="math/tex">t\rightarrow 0</script>. We find the limit of <script type="math/tex">f</script> along this path:
 </p><script type="math/tex; mode=display"> \begin{align*} 
 \lim_{t\rightarrow 0}f(\vec{y}(t)) &= \lim_{t\rightarrow 0}f(0,t)\\
 &= \lim_{t\rightarrow 0}\frac{0^2-t^2}{0^2+t^2}\\
 &= \answer{-1}.
 \end{align*}</script>
-<!--l. 91--><p class="noindent" >Thus, we have found two paths along which <script type="math/tex">f</script> approaches different values. This means
+<!--l. 93--><p class="noindent" >Thus, we have found two paths along which <script type="math/tex">f</script> approaches different values. This means
 that <script type="math/tex">\lim _{\vec {x}\rightarrow \vec {a}}f(\vec {x})</script> does not exist.
-</p><!--l. 93--><p class="noindent" >We can see this behavior reflected in the graph of <script type="math/tex">f</script>.
-</p><!--l. 95--><p class="noindent" >GRAPH
+</p><!--l. 95--><p class="noindent" >We can see this behavior reflected in the graph of <script type="math/tex">f</script>. If we approach the origin along
+the <script type="math/tex">x</script>-axis, the value of the function approaches <script type="math/tex">1</script>. If we approach the origin
+along the <script type="math/tex">y</script>-axis, the value of the function approaches <script type="math/tex">-1</script>. Near the origin, the
+graph of the function looks like it’s somehow “pinched” to accommodate this
+behavior.
+</p><!--l. 97--><p class="noindent" >YOUTUBE: pinched graph
 </div>
 </p>
 <div class="theorem-like problem-environment example" id="problem6"><a 
  id="x1-1004r6"></a>Consider the function <script type="math/tex">f(x,y) = \frac {x^2y}{x^4+y^2}</script>. We’ll investigate whether <script type="math/tex">\lim _{(x,y)\rightarrow (0,0)}f(x,y)</script> exists.
-<!--l. 101--><p class="noindent" >First, let’s see what happens when we approach the origin along the <script type="math/tex">x</script>- and
+<!--l. 103--><p class="noindent" >First, let’s see what happens when we approach the origin along the <script type="math/tex">x</script>- and
 <script type="math/tex">y</script>-axes.
-</p><!--l. 103--><p class="noindent" >Along the <script type="math/tex">x</script>-axis, we use the path <script type="math/tex">\vec {x}(t) = (t,0)</script>, and we have
+</p><!--l. 105--><p class="noindent" >Along the <script type="math/tex">x</script>-axis, we use the path <script type="math/tex">\vec {x}(t) = (t,0)</script>, and we have
 </p><script type="math/tex; mode=display"> \begin{align*} 
 \lim_{t\rightarrow 0}f(\vec{x}(t)) &= \lim_{t\rightarrow 0}f(t,0)\\
 &= \lim_{t\rightarrow 0}\frac{t^2 0}{t^4+0^2}\\
 &= \answer{0}.\\
 \end{align*}</script>
-<!--l. 110--><p class="noindent" >Along the <script type="math/tex">y</script>-axis, we use the path <script type="math/tex">\vec {y}(t) = (0,t)</script>, and we have
+<!--l. 112--><p class="noindent" >Along the <script type="math/tex">y</script>-axis, we use the path <script type="math/tex">\vec {y}(t) = (0,t)</script>, and we have
 </p><script type="math/tex; mode=display"> \begin{align*} 
 \lim_{t\rightarrow 0}f(\vec{y}(t)) &= \lim_{t\rightarrow 0}f(0,t)\\
 &= \lim_{t\rightarrow 0}\frac{0^2 t}{0^4+t^2}\\
 &= \answer{0}.
 \end{align*}</script>
-<!--l. 117--><p class="noindent" >Based on these limits, what can we conclude about <script type="math/tex">\lim _{(x,y)\rightarrow (0,0)}f(x,y)</script>? </p><div class="multiple-choice" id="problem7"><span class="choice  "   id="choice1">It exists, and equals <script type="math/tex">0</script>.</span> <span class="choice  "   id="choice2">It
+<!--l. 119--><p class="noindent" >Based on these limits, what can we conclude about <script type="math/tex">\lim _{(x,y)\rightarrow (0,0)}f(x,y)</script>? </p><div class="multiple-choice" id="problem7"><span class="choice  "   id="choice1">It exists, and equals <script type="math/tex">0</script>.</span> <span class="choice  "   id="choice2">It
 doesn’t exist.</span> <span class="choice correct "   id="choice3">We still don’t know if it exists or not.</span> </div>
-<!--l. 124--><p class="noindent" >Next, let’s see what happens when we approach the origin along any
+<!--l. 126--><p class="noindent" >Next, let’s see what happens when we approach the origin along any
 line <script type="math/tex">y=mx</script>. We can parametrize this line as <script type="math/tex">\vec {z}(t) = (t, mt)</script>. Along this line, we have
 </p><script type="math/tex; mode=display"> \begin{align*} 
 \lim_{t\rightarrow 0}f(\vec{z}(t)) &= \lim_{t\rightarrow 0}f(t,mt)\\
+                                                                  
+
+                                                                  
 &= \lim_{t\rightarrow 0}\frac{t^2 mt}{t^4+(mt)^2}\\
 &= \lim_{t\rightarrow 0}\frac{mt^3}{t^4+(mt)^2}\\
 &= \lim_{t\rightarrow 0}\frac{mt}{t^2+m^2}\\
 &= \answer{0}.
-                                                                  
-
-                                                                  
 \end{align*}</script>
-<!--l. 133--><p class="noindent" >Based on the above limits, what can we conclude about <script type="math/tex">\lim _{(x,y)\rightarrow (0,0)}f(x,y)</script>? </p><div class="multiple-choice" id="problem8"><span class="choice  "   id="choice4">It exists, and equals <script type="math/tex">0</script>.</span> <span class="choice  " 
+<!--l. 135--><p class="noindent" >Based on the above limits, what can we conclude about <script type="math/tex">\lim _{(x,y)\rightarrow (0,0)}f(x,y)</script>? </p><div class="multiple-choice" id="problem8"><span class="choice  "   id="choice4">It exists, and equals <script type="math/tex">0</script>.</span> <span class="choice  " 
 id="choice5">It doesn’t exist.</span> <span class="choice correct "   id="choice6">We still don’t know if it exists or not.</span> </div>
-<!--l. 140--><p class="noindent" >Finally, let’s see what happens when we approach the origin along
+<!--l. 142--><p class="noindent" >Finally, let’s see what happens when we approach the origin along
 the parabola <script type="math/tex">y=x^2</script>, which can be parametrized as <script type="math/tex">\vec {w}(t) = (t, t^2)</script>. Along this path, we have
 </p><script type="math/tex; mode=display"> \begin{align*} 
 \lim_{t\rightarrow 0}f(\vec{q}(t)) &= \lim_{t\rightarrow 0}f(t,t^2)\\
@@ -158,10 +164,10 @@ the parabola <script type="math/tex">y=x^2</script>, which can be parametrized a
 &= \lim_{t\rightarrow 0}\frac{t^4}{t^4+mt^4}\\
 &= \answer{1/2}.
 \end{align*}</script>
-<!--l. 148--><p class="noindent" >Based on the above limits, what can we conclude about <script type="math/tex">\lim _{(x,y)\rightarrow (0,0)}f(x,y)</script>? </p><div class="multiple-choice" id="problem9"><span class="choice  "   id="choice7">It exists, and equals <script type="math/tex">0</script>.</span> <span class="choice correct " 
+<!--l. 150--><p class="noindent" >Based on the above limits, what can we conclude about <script type="math/tex">\lim _{(x,y)\rightarrow (0,0)}f(x,y)</script>? </p><div class="multiple-choice" id="problem9"><span class="choice  "   id="choice7">It exists, and equals <script type="math/tex">0</script>.</span> <span class="choice correct " 
 id="choice8">It doesn’t exist.</span> <span class="choice  "   id="choice9">We still don’t know if it exists or not.</span> </div>
-<!--l. 155--><p class="noindent" ></div>
-</p><!--l. 157--><p class="noindent" >In the previous example, we saw that we might get the same limit approaching along
+<!--l. 157--><p class="noindent" ></div>
+</p><!--l. 159--><p class="noindent" >In the previous example, we saw that we might get the same limit approaching along
 any line through the origin, but it’s still possible that the overall limit might not
 exist. Thus, we won’t be able to show that limits exist by examining specific paths,
 and we’ll need to find other methods to evaluate limits.
