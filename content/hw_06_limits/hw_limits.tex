@@ -1,0 +1,128 @@
+\documentclass{ximera}
+\graphicspath{{./content/hw_06_limits/graphics/}{./graphics/}}
+\title{Homework 6: Limits}
+\begin{document}
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\section*{Completion Packet}
+
+\begin{problem}
+Evaluate the limit, or explain why it doesn't exist.
+\[
+\lim_{(x,y,z)\rightarrow (0,0,0)} 3e^{x^2+y^2+z^2}\cos(xy)
+\]
+\end{problem}
+
+\begin{problem}
+Evaluate the limit, or explain why it doesn't exist.
+\[
+\lim_{(x,y)\rightarrow (0,0)}\dfrac{y}{x^2+y^2}
+\]
+\end{problem}
+
+\begin{problem}
+Evaluate the limit, or explain why it doesn't exist.
+\[
+\lim_{(x,y)\rightarrow (1,0)}\dfrac{|x|}{x^2+y^2}
+\]
+\end{problem}
+
+\begin{problem}
+Evaluate the limit, or explain why it doesn't exist.
+\[
+\lim_{(x,y,z) \rightarrow (0,0,0)}\dfrac{xy}{x^2+y^2+z^2}
+\]
+\end{problem}
+
+\begin{problem}
+Evaluate the limit, or explain why it doesn't exist.
+\[
+\lim_{(x,y)\rightarrow (0,0)}\dfrac{x^3y^3}{x^2+y^2}
+\]
+\end{problem}
+
+\begin{problem}
+Evaluate the limit, or explain why it doesn't exist.
+\[
+\lim_{(x,y,z) \rightarrow (0,0,0)}\dfrac{xyz}{x^2+y^2+z^2}
+\]
+\end{problem}
+
+\begin{problem}
+Consider the function $f(x,y) = \frac{xy^2}{(x+y^2)^2}$.
+\begin{enumerate}
+\item If you approach $(0,0)$ along any line $y=mx$, what does $f(x,y)$ approach?
+\item If you approach $(0,0)$ along the parabola $x=y^2$, what does $f(x,y)$ approach?
+\item Does $\lim_{(x,y)\rightarrow (0,0)} f(x,y)$ exist?
+\end{enumerate}
+\end{problem}
+
+\begin{problem}
+Show that the function $f(x,y) = \cos^2(x+y) + e^{xy}$ is continuous on its domain.
+\end{problem}
+
+\section*{Graded Problems}
+
+\begin{problem}
+Consider the function $f(x,y) = \dfrac{\sin(x+y)}{x+y}$.
+\begin{enumerate}
+\item What change of coordinates, $u(x,y)$ and $v(x,y)$, can you use to evaluate this limit?
+\item Evaluate $\lim_{(x,y)\rightarrow (0,0)}f(x,y)$.
+\item Consider the path $\vec{x}(t) = (t,-t)$. Explain why $\lim_{t\rightarrow 0} f(\vec{x}(t))$ does not exist. Explain why this does not contradict your answer to (b).
+\end{enumerate}
+\emph{Hint: from single variable calculus, what is $\lim_{x\rightarrow 0}\frac{\sin(x)}{x}$?}
+\end{problem}
+
+\begin{problem}
+Evaluate the limit, or explain why it doesn't exist.
+\[
+\lim_{(x,y)\rightarrow (0,0)}\frac{x^2+4xy+y^2}{x^2+y^2}
+\]
+\end{problem}
+
+\section*{Professional Problem}
+
+\begin{problem}
+%copied from handout, with some editing
+
+In this professional problem, you will prove the following statement.
+
+\framebox[\textwidth][c]{\parbox[t]{.95\textwidth}{
+Let $f(x,y) = \displaystyle\dfrac{3x^2 y}{x^2+y^2}$, and let $\varepsilon > 0$ be given. If $\delta = \varepsilon/3$, then $ 0 < |(x,y) - (0,0)| < \delta$ implies that $|f(x,y)-0|< \varepsilon $, and therefore $\displaystyle\lim_{(x,y) \to (0,0)} f(x,y) = 0$.
+}}
+
+Consider the function
+\[ f(x,y) = \dfrac{3x^2 y}{x^2+y^2}. \]
+By switching to cylindrical coordinates, you could show the limit of $f$ as $(x,y)\to(0,0)$ is 0.  Instead, you will show find limit using the $\varepsilon -\delta$ definition of a limit.  Your goal is this: given any $\varepsilon > 0$, you must show there is a $\delta > 0$ so that 
+\[ 0 < | (x,y) - (0,0) | < \delta \mbox{ implies that } |f(x,y)-0| < \varepsilon. \]
+For the given point and function, the choice $\delta = \varepsilon/3$ will accomplish this.
+
+\textbf{Hints:} Think back to the limit proofs you did last year.  They were separated into \textit{Think} and \textit{Proof} sections.  The \textit{Think} portion has already been done for you, inasmuch as the choice of $\delta$ has been made for you.  However, you still need to understand why this $\delta$ works in order to provide the proof.\\
+
+Below is a list of important facts which are necessary to prove this statement. First, convince yourself that they are true on scratch paper. Then, incorporate these facts, with their justifications, into a complete proof.
+\begin{itemize}
+% \item Remember, you are \emph{given} some arbitrarily small $\varepsilon > 0$. Your goal is to show that $\delta = \varepsilon/3$ makes the above implication true.
+
+\item $ 0 < |(x,y)-(0,0)| < \delta  \mbox{ if and only if } 0 < \sqrt{x^2 + y^2} < \delta$.
+
+\item  $\displaystyle \left|\dfrac{3x^2 y}{x^2+y^2} - 0 \right| < \varepsilon  \mbox{ if and only if } \frac{3x^2|y|}{x^2+y^2} < \varepsilon $.
+
+\item $\displaystyle \frac{3x^2|y|}{x^2+y^2} \le \frac{3(x^{2}+y^{2})|y|}{x^{2}+y^{2}}$, and therefore $\displaystyle \frac{3x^2|y|}{x^2+y^2} \le 3\sqrt{x^2 + y^2}$.
+
+\end{itemize}
+
+\textbf{Focuses:} This week, you should focus on these items when writing your solution:
+\begin{itemize}
+	\item \textbf{Organization and Structure:} Your proof should be completely self-contained. The facts above are merely suggestions: Their complete and precise statements and justifications should be incorporated into your proof. Write, revise, and rewrite until your entire proof flows together in a logical order. Be concise.
+	\item \textbf{Explanation:} Justify all necessary steps, including those which are not covered by the hints.
+	\item \textbf{Attention to Mathematical Details:} Be very careful with absolute values and strict inequalities. Make sure that your implications follow from each other in the correct order.
+	\item \textbf{Notation:} Use mathematical notation appropriately. Do not use notation in place of english words, or vice versa. \emph{Everything}, including equations, should be part of a complete (but possibly brief) sentence.
+\end{itemize}
+
+\end{problem}
+
+
+
+\end{document}

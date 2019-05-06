@@ -49,19 +49,21 @@ This leads us to our second, informal definition of a limit.
 </div>
 <!--l. 33--><p class="noindent" >When we think of <script type="math/tex">x</script> approaching <script type="math/tex">a</script> along the number line, <script type="math/tex">\mathbb {R}</script>, we can approach <script type="math/tex">a</script> from two
 directions: left and right.
-</p><!--l. 35--><p class="noindent" >YOUTUBE: number line
-</p><!--l. 37--><p class="noindent" >This led to the idea of left and right limits.
+</p>
+<div class="video youtube-player" data-youtube="d6kArlwck9s">_</div>
+<!--l. 37--><p class="noindent" >This led to the idea of left and right limits.
 </p><!--l. 39--><p class="noindent" >When we have a function whose domain is a subset of <script type="math/tex">\mathbb {R}^n</script>, there are infinitely
 many possible ways to approach a point. We can approach a point along
 infinitely many different lines, and we can also “zig-zag” or “spiral” into a
 point.
 </p><!--l. 41--><p class="noindent" >In the video below, we see just a few of the infinitely many different ways that we can
 approach a point in <script type="math/tex">\mathbb {R}^2</script>.
-</p><!--l. 43--><p class="noindent" >YOUTUBE: plane paths
+</p>
                                                                   
 
                                                                   
-</p><!--l. 45--><p class="noindent" >This makes limits in <script type="math/tex">\mathbb {R}^n</script> particularly challenging!
+<div class="video youtube-player" data-youtube="jMGwRdDZYnY">_</div>
+<!--l. 45--><p class="noindent" >This makes limits in <script type="math/tex">\mathbb {R}^n</script> particularly challenging!
 <a 
  id="Q1-1-1"></a>
 </p>
@@ -103,10 +105,10 @@ approach along the path <script type="math/tex">\vec {x}(t) = (t,0)</script>, an
 &= \lim_{t\rightarrow 0}\frac{t^2-0^2}{t^2+0^2}\\
 &= \lim_{t\rightarrow 0}1\\
 &= 1.
-\end{align*}</script>
                                                                   
 
                                                                   
+\end{align*}</script>
 <!--l. 86--><p class="noindent" >Next, let’s see what happens when we approach the origin along the <script type="math/tex">y</script>-axis. That is,
 we’ll consider the path <script type="math/tex">\vec {y}(t) = (0,t)</script>, and take <script type="math/tex">t\rightarrow 0</script>. We find the limit of <script type="math/tex">f</script> along this path:
 </p><script type="math/tex; mode=display"> \begin{align*} 
@@ -121,9 +123,9 @@ the <script type="math/tex">x</script>-axis, the value of the function approache
 along the <script type="math/tex">y</script>-axis, the value of the function approaches <script type="math/tex">-1</script>. Near the origin, the
 graph of the function looks like it’s somehow “pinched” to accommodate this
 behavior.
-</p><!--l. 97--><p class="noindent" >YOUTUBE: pinched graph
-</div>
 </p>
+<div class="video youtube-player" data-youtube="4peT8wUfc1Q">_</div>
+</div>
 <div class="theorem-like problem-environment example" id="problem6"><a 
  id="x1-1004r6"></a>Consider the function <script type="math/tex">f(x,y) = \frac {x^2y}{x^4+y^2}</script>. We’ll investigate whether <script type="math/tex">\lim _{(x,y)\rightarrow (0,0)}f(x,y)</script> exists.
 <!--l. 103--><p class="noindent" >First, let’s see what happens when we approach the origin along the <script type="math/tex">x</script>- and
@@ -143,12 +145,12 @@ behavior.
 <!--l. 119--><p class="noindent" >Based on these limits, what can we conclude about <script type="math/tex">\lim _{(x,y)\rightarrow (0,0)}f(x,y)</script>? </p><div class="multiple-choice" id="problem7"><span class="choice  "   id="choice1">It exists, and equals <script type="math/tex">0</script>.</span> <span class="choice  "   id="choice2">It
 doesn’t exist.</span> <span class="choice correct "   id="choice3">We still don’t know if it exists or not.</span> </div>
 <!--l. 126--><p class="noindent" >Next, let’s see what happens when we approach the origin along any
-line <script type="math/tex">y=mx</script>. We can parametrize this line as <script type="math/tex">\vec {z}(t) = (t, mt)</script>. Along this line, we have
-</p><script type="math/tex; mode=display"> \begin{align*} 
-\lim_{t\rightarrow 0}f(\vec{z}(t)) &= \lim_{t\rightarrow 0}f(t,mt)\\
                                                                   
 
                                                                   
+line <script type="math/tex">y=mx</script>. We can parametrize this line as <script type="math/tex">\vec {z}(t) = (t, mt)</script>. Along this line, we have
+</p><script type="math/tex; mode=display"> \begin{align*} 
+\lim_{t\rightarrow 0}f(\vec{z}(t)) &= \lim_{t\rightarrow 0}f(t,mt)\\
 &= \lim_{t\rightarrow 0}\frac{t^2 mt}{t^4+(mt)^2}\\
 &= \lim_{t\rightarrow 0}\frac{mt^3}{t^4+(mt)^2}\\
 &= \lim_{t\rightarrow 0}\frac{mt}{t^2+m^2}\\
