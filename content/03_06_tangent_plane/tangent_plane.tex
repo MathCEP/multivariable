@@ -1,6 +1,6 @@
 \documentclass{ximera}
 
-\graphicspath{{./graphics/}}
+\graphicspath{{./graphics/}{./content/03_06_tangent_plane/graphics/}}
 
 \title{Geometry of Differentiability}
 \begin{document}
@@ -13,7 +13,7 @@ In single variable calculus, derivatives were closely related to the slope of th
 f'(a) = \lim_{h\rightarrow 0}\frac{f(a+h)-f(a)}{h}.
 \]
 
-VISUAL
+\youtube{1FATfS-nTl8}
 
 In the other direction, we were able to use differentiation rules to more easily find the equation for the tangent line to a graph at a point.
 
@@ -39,7 +39,7 @@ y-13 = \answer{14(x-2)}.
 
 When a single variable function is differentiable, we can use the above method to find an equation for the tangent line. In addition, the tangent line provides us with a good linear approximation for the function.
 
-We would like to do something analogous for multi-variable functions, but this raises a few questions. What would be the equivalent of the tangent line? What does it mean for a function to be differentiable?
+We would like to do something analogous for multivariable functions, but this raises a few questions. What would be the equivalent of the tangent line? What does it mean for a function to be differentiable?
 
 As we begin to explore these questions, we'll focus on functions $\mathbb{R}^2\rightarrow\mathbb{R}$, so that we can visualize their graphs.
 
@@ -50,19 +50,28 @@ In single variable calculus, we could get a good sense of whether a function was
 \begin{problem}
 For each of the graphs, determine whether the given function is differentiable at $x=a$.
 
-GRAPH PARABOLA
+\begin{image}
+\includegraphics[width = \textwidth]{CalcPlot3D-sv_parabola}
+\end{image}
+
 \begin{multipleChoice}
 \choice[correct]{differentiable}
 \choice{not differentiable}
 \end{multipleChoice}
 
-GRAPH JUMP DISCONTINUITY
+\begin{image}
+\includegraphics[width = \textwidth]{CalcPlot3D-sv_jump}
+\end{image}
+
 \begin{multipleChoice}
 \choice{differentiable}
 \choice[correct]{not differentiable}
 \end{multipleChoice}
 
-GRAPH ABSOLUTE VALUE
+\begin{image}
+\includegraphics[width = \textwidth]{CalcPlot3D-sv_cusp}
+\end{image}
+
 \begin{multipleChoice}
 \choice{differentiable}
 \choice[correct]{not differentiable}
@@ -72,7 +81,7 @@ GRAPH ABSOLUTE VALUE
 
 If there is a discontinuity or some sort of corner or cusp in the graph at a point, then the function will not be differentiable at that point. Roughly speaking, if we ``zoom in'' on the graph of a function near a point, and the graph looks very close to a line, then the function will be differentiable at that point.
 
-PARABOLA ZOOM
+\youtube{U_t2RFukDlA}
 
 We'll extend this idea to make our first, informal definition of differentiability for a function from $\mathbb{R}^2$ to $\mathbb{R}$.
 
@@ -87,7 +96,7 @@ For now, let's use this informal definition to investigate differentiability for
 \begin{example}
 Consider the function $f(x,y) = xy+2x+y$, graphed below.
 
-ZOOMABLE GRAPH
+\youtube{AuaD1C1jLsA}
 
 Is $f$ differentiable at $(0,0)$?
 \begin{multipleChoice}
@@ -106,7 +115,7 @@ f(x,y) = \begin{cases}
    \end{cases},
 \] graphed below.
 
-ZOOMABLE GRAPH
+\youtube{u5CZGY65wtc}
 
 Is f differentiable at $(0,0)$?
 \begin{multipleChoice}
@@ -169,11 +178,11 @@ To compute the partial derivatives with respect to $x$ and $y$, we'll need to us
 f_x(0,0) &= \lim_{h\rightarrow 0}\frac{f(0+h,0)-f(0,0)}{h}\\
 &= \lim_{h\rightarrow 0}\frac{(1-|0|)-(1-|0|)}{h}\\
 &= \lim_{h\rightarrow 0}\frac{0}{h}\\
-&= 0.
+&= 0\\
 f_y(0,0) &= \lim_{h\rightarrow 0}\frac{f(0,0+h)-f(0,0)}{h}\\
 &= \lim_{h\rightarrow 0}\frac{(1-|0|)-(1-|0|)}{h}\\
 &= \lim_{h\rightarrow 0}\frac{0}{h}\\
-&= 0.
+&= 0
 \end{align*}
 
 We can also find $f(0,0)$,
