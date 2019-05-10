@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  8 MAY 2019 12:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  8 MAY 2019 13:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -929,7 +929,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \openout8 = `hw_partial_derivatives.jax'.
 
 )
-No file hw_partial_derivatives.aux.
+(./hw_partial_derivatives.aux)
 \openout1 = `hw_partial_derivatives.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
@@ -946,6 +946,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
+
 (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count191
@@ -972,10 +973,12 @@ Package hyperref Info: Link coloring ON on input line 4.
 LaTeX Info: Redefining \ref on input line 4.
 LaTeX Info: Redefining \pageref on input line 4.
 LaTeX Info: Redefining \nameref on input line 4.
+(./hw_partial_derivatives.out) (./hw_partial_derivatives.out)
 \@outlinefile=\write9
 \openout9 = `hw_partial_derivatives.out'.
 
 LaTeX Font Info:    Try loading font information for U+msa on input line 7.
+
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
@@ -1009,22 +1012,16 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 101.
  (./hw_partial_derivatives.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 101.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 101.
+Package rerunfilecheck Info: File `hw_partial_derivatives.out' has not changed.
 
-
-Package rerunfilecheck Warning: File `hw_partial_derivatives.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `hw_partial_derivatives.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  A49446FDF3B864CE68DD08F7A27BED58;67.
+(rerunfilecheck)             Checksum: A49446FDF3B864CE68DD08F7A27BED58;67.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 101.
  ) 
 Here is how much of TeX's memory you used:
- 29372 strings out of 492649
- 688776 string characters out of 6129622
- 862136 words of memory out of 5000000
- 32700 multiletter control sequences out of 15000+600000
+ 29381 strings out of 492649
+ 688959 string characters out of 6129622
+ 862628 words of memory out of 5000000
+ 32703 multiletter control sequences out of 15000+600000
  12283 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,10n,98p,825b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1040,10 +1037,10 @@ xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/tex
 live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/te
 xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
 live/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on hw_partial_derivatives.pdf (3 pages, 116569 bytes).
+Output written on hw_partial_derivatives.pdf (3 pages, 116668 bytes).
 PDF statistics:
- 98 PDF objects out of 1000 (max. 8388607)
- 80 compressed objects within 1 object stream
+ 102 PDF objects out of 1000 (max. 8388607)
+ 84 compressed objects within 1 object stream
  24 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

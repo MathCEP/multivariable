@@ -51,9 +51,9 @@ D\vec{f}(x_1,...,x_n) = \begin{pmatrix}
 \]
 \end{definition}
 
-It can be hard to remember whether the variable or the component changes across the rows or columns. Here are a couple of ways to remember which way it goes:
+It can be difficult to remember whether the variable or the component changes across the rows or columns. Here are a couple of ways to remember which way it goes:
 \begin{itemize}
-\item The derivative matrix represents a linear transformation $\mathbb{R}^n\rightarrow\mathbb{R}^m$.
+\item The derivative matrix represents a linear transformation $\mathbb{R}^n\rightarrow\mathbb{R}^m$, hence is an $m\times n$ matrix.
 \item The rows are gradients of the component functions.
 \end{itemize}
 
@@ -107,10 +107,17 @@ We say that $\vec{f}$ is \emph{differentiable} at $\vec{a}$ if
 \lim_{\vec{x}\rightarrow \vec{a}}\frac{\vec{f}(\vec{x}) - \vec{h}(\vec{x})}{\|\vec{x}-\vec{a}\|} = \vec{0}.
 \]
 
-If any of the partial derivatives of $\vec{f}$ do not exist, or the above limit does not exist or is not $0$, then $\vec{f}$ is not differentiable at $\vec{a}$.
+If any of the partial derivatives of $\vec{f}$ do not exist, or the above limit does not exist or is not $0$, then $\vec{f}$ is not differentiable at $\vec{a}$. 
 \end{definition}
 
-Note one of the quirks of multivariable differentiation: if the derivative matrix exist, it's still possible for the function to not be differentiable.
+Note one of the quirks of multivariable differentiation: if the derivative matrix exist, it's still possible for the function to not be differentiable. We've seen this with functions before, when the partial derivatives of a function exist, and yet the function is not differentiable. For example, we've worked with the piecewise function defined by
+\[
+f(x,y) = \begin{cases} 
+      1-|y| & \text{if }|y|\leq |x| \\
+      1-|x| & \text{if }|y| > |x|
+   \end{cases}.
+\]
+We found that the partial derivatives $f_x(0,0)$ and $f_y(0,0)$ both exist and are $0$. However, the function $f$ is not differentiable at $(0,0)$.
 
 For vector-valued functions, we can also reduce differentiability to differentiability of its component functions.
 
