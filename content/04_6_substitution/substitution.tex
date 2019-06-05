@@ -1,6 +1,6 @@
 \documentclass{ximera}
 
-\graphicspath{{./graphics/}}
+\graphicspath{{./graphics/}{./content/04_6_substitution/graphics}}
 
 \title{Optimization with Constraints}
 \begin{document}
@@ -10,9 +10,19 @@
 
 In this section, we will study optimization subject to constraints. For example, suppose we would like the find the maximum value of $f(x,y) = xy$ subject to the constraint $2x+2y=100$. We can think of this as restricting ourselves to the line $2x+2y=100$, and finding the maximum value of $f$ over this line.
 
-PICTURE
+\begin{image}
+\begin{tikzpicture}
+\draw[<->] (-2,0) -- (2,0);
+\node[anchor = west] at (2,0) {$x$};
+\draw[<->] (0,-2) -- (0,2);
+\node[anchor = south] at (0,2) {$y$};
 
-These types of problems often arise in real-world applications: you have some limitation on resources, which provide the constraint, and want to optimize some sort of performance. A classic problem from geometry and single variable calculus is to maximize the area of a rectangle, subject to the constraint that the perimeter is $100m$. Setting up the problem algebraically, this is equivalent to finding the maximum value of $f(x,y) = xy$ subject to the constraint $2x+2y=100$. In single variable calculus, we could solve for $y$ in the second equation, and use this to reduce the objective function, $f(x,y)$, to a single variable function, which we would them optimize. That is, from $y=50-x$, we would have
+\draw[very thick, <->] (-1,2) -- (2,-1);
+\node[anchor = west] at (.5,.5) {$2x+2y=100$};
+\end{tikzpicture}
+\end{image}
+
+These types of problems often arise in real-world applications: you have some limitation on resources, which provide the constraint, and want to optimize some sort of performance. A classical problem from geometry and single variable calculus is to maximize the area of a rectangle, subject to the constraint that the perimeter is $100m$. Setting up the problem algebraically, this is equivalent to finding the maximum value of $f(x,y) = xy$ subject to the constraint $2x+2y=100$. In single variable calculus, we could solve for $y$ in the second equation, and use this to reduce the objective function, $f(x,y)$, to a single variable function, which we would them optimize. That is, from $y=50-x$, we would have
 \begin{align*}
 g(x) &= f(x,50-x)\\
 &= x(50-x)\\
@@ -66,7 +76,9 @@ Hg(x,y) = \begin{pmatrix}
 \]
 Using Sylvester's Theorem, this matrix is negative definite. So, $g$ has a local maximum at $(10,10)$. But does this mean that $g$ has an absolute maximum at $(10,10)$? Let's look at the graph of $g$ to investigate.
 
-PICTURE
+\begin{image}
+\includegraphics[width = \textwidth]{CalcPlot3D-saddle}
+\end{image}
 
 We see that $g$ actually doesn't have any absolute maximum (or minimum) - it's values get arbitrarily large, and arbitrarily small. So, here we see an example where the multivariable situation is more nuanced than the single variable situation. Often, it will be difficult to determine if multivariable functions have absolute extrema using the methods that we've covered so far. However, in the case where we're optimizing a continuous function over a compact region, we know that absolute extrema exist. Because of this fact, we will focus most of our attention on this special situation.
 
@@ -83,9 +95,19 @@ g(x,y) &= f(x,y,30-x-y)\\
 &= xy(30-x-y)\\
 &= 30xy-x^2y-xy^2.
 \end{align*}
-Keeping our previous constraints in mind, we want to optimize $g$ over the region $X = \{(x,y)\;:\;x\geq 0, y\geq 0, \text{ and } 30-x-y\geq 0\}$. Graphing this region in $\mathbb{R}^2$, we see that $X$ is a compact region, hence has an absolute maximum and absolute minimum.
+Keeping our previous constraints in mind, we want to optimize $g$ over the region $X = \{(x,y)\;:\;x\geq 0, y\geq 0, \text{ and } 30-x-y\geq 0\}$. Graphing this region in $\mathbb{R}^2$, we see that $X$ is a compact region, hence $g$ has an absolute maximum and absolute minimum over $X$.
 
-PICTURE
+\begin{image}
+\begin{tikzpicture}
+\draw[<->] (-2,0) -- (2,0);
+\node[anchor = west] at (2,0) {$x$};
+\draw[<->] (0,-2) -- (0,2);
+\node[anchor = south] at (0,2) {$y$};
+
+\draw[fill = gray] (0,0) --(1,0) -- (0,1) -- (0,0);
+\node[anchor = west] at (.5,.6) {$X$};
+\end{tikzpicture}
+\end{image}
 
 We find the gradient of $g$ to find the critical points in $X$,
 \[
@@ -109,9 +131,19 @@ We'll now look at another example where optimizing a multivariable function subj
 \begin{example}
 We'll find the absolute maximum and absolute minimum of $f(x,y) = x^2-y^2$ subject to the constraint $x^2+y^2=1$.
 
-PICTURE
+\begin{image}
+\begin{tikzpicture}
+\draw[<->] (-2,0) -- (2,0);
+\node[anchor = west] at (2,0) {$x$};
+\draw[<->] (0,-2) -- (0,2);
+\node[anchor = south] at (0,2) {$y$};
 
-Since $\{(x,y)\;:\;x^2+y^2=1\}$ is a compact region (it's the unit circle), and $f$ is a continuous function, the Extreme Value Theorem tells us that $f$ will have an absolute maximum and minimum.
+\draw (0,0) circle (1);
+\node[anchor = west] at (.8,.8) {$x^2+y^2=1$};
+\end{tikzpicture}
+\end{image}
+
+Since $\{(x,y)\;:\;x^2+y^2=1\}$ is a compact region, and $f$ is a continuous function, the Extreme Value Theorem tells us that $f$ will have an absolute maximum and minimum.
 
 Let's rewrite the constraint as $x^2=1-y^2$, and substitute this into $f$ to reduce $f$ to a function of a single variable:
 \begin{align*}
@@ -142,9 +174,11 @@ So, we see that $g$ has an absolute maximum of $1$ at $y=0$, and an absolute min
 
 Translating this back to our original function, $f$ has an absolute maximum of $1$ at $(\pm 1, 0)$, and an absolute minimum of $-1$ at $(0,\pm 1)$.
 
-We can see this reflected in the graph of $f$ over $x^2+y^2=1$.
+We can see this reflected in the graph of $f$ over $x^2+y^2=1$; the edge of the saddle shape graphed below.
 
-PICTURE
+\begin{image}
+\includegraphics[width=\textwidth]{CalcPlot3D-pringle}
+\end{image}
 
 \end{example}
 

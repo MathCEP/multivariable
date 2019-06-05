@@ -2,7 +2,7 @@
 
 \graphicspath{{./graphics/}}
 
-\title{Review of Taylor Polynomials}
+\title{Taylor Polynomials}
 \begin{document}
 \begin{abstract}
 \end{abstract}
@@ -17,7 +17,7 @@ We would like to do something similar in multivariable calculus, and we will use
 In single variable calculus, we defined Taylor polynomials using the derivatives of a function $f$. The idea behind this definition is to define a polynomial that will have the same derivatives as $f$, up to the degree of the polynomial.
 
 \begin{definition}
-Let $f:\mathbb{R}\rightarrow\mathbb{R}$ be a function that the derivatives $f'(a),f''(a),...,f^{(n)}(a)$ exist for given $a\in\mathbb{R}$ (up to and including the $n$th derivative). Then we define the $n$th degree Taylor polynomial of $f$ centered at $a$ to be
+Let $f:\mathbb{R}\rightarrow\mathbb{R}$ be a function such that the derivatives $f'(a),f''(a),...,f^{(n)}(a)$ exist for some given $a\in\mathbb{R}$ (up to and including the $n$th derivative). Then we define the $n$th degree Taylor polynomial of $f$ centered at $a$ to be
 \[
 p_n(x)=f(a) + f'(a)(x-a) + \frac{f''(a)}{2}(x-a)^2+\cdots + \frac{f^{(n)}(a)}{n!}(x-a)^n.
 \]
@@ -48,7 +48,7 @@ p_n''(a) &=f''(a) + f'''(a)(a-a) + \cdots + \frac{f^{(n)}(a)}{(n-2)!}(a-a)^{n-2}
 \end{align*}
 So we see that the second derivatives match as well, and hopefully the pattern is clear enough to believe that higher order derivatives will match as well.
 
-We'll do an example of computation a Taylor polynomial, and then review some important Taylor polynomials.
+We'll do an example computation of a Taylor polynomial, and then review some important Taylor polynomials.
 
 \begin{example}
 We'll find the fifth degree Taylor polynomial of $f(x) = \sin(x)$ centered at $x = 0$. First, we compute the first five derivatives of $f$.
@@ -73,6 +73,8 @@ p_5(x) &= f(0) + f'(0)(x-0) + \frac{f''(0)}{2}(x-0)^2+ \frac{f'''(0)}{3!}(x-0)^3
 &= \answer{x -\frac{1}{6}x^3+\frac{1}{120}x^5}.
 \end{align*}
 \end{example}
+
+In the following proposition, we list several common Taylor polynomials that are useful to remember.
 
 \begin{proposition}
 The $n$th degree Taylor polynomial of $f(x) = \frac{1}{1-x}$ centered at $0$ is
@@ -139,7 +141,7 @@ Substituting $u=xy$, we obtain
 \[
 1 + xy + \frac{(xy)^2}{2!} +\frac{(xy)^3}{3!} + \frac{(xy)^4}{4!}.
 \]
-However, this is not a fourth degree polynomial in $x$ and $y$! Since $(xy)^4$ has total degree $8$, we have terms of to large of a degree. Taking only terms of degree $4$ or less, we find the fourth degree Taylor polynomial of $f(x,y) = e^{xy}$.
+However, this is not a fourth degree polynomial in $x$ and $y$! Since $(xy)^4$ has total degree $8$, we have terms of too large of a degree. Taking only terms of degree $4$ or less, we find the fourth degree Taylor polynomial of $f(x,y) = e^{xy}$.
 \[
 p_4(x,y) = 1 + xy + \frac{(xy)^2}{2!}
 \]

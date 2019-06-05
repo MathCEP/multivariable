@@ -14,21 +14,44 @@ f_x(x,y)=\lim_{h\rightarrow 0}\frac{f(x+h,y)-f(x,y)}{h}.
 \]
 Here, we thought of $y$ as a constant, which made $f$ only a function of $x$, and reduced us to a single variable derivative. This told us how a small change in $x$ would after the value of $f$, if we kept $y$ constant. In other words, the partial derivatives described how the function $f$ was changing in the positive $x$-direction and in the positive $y$-direction.
 
-PICTURE
+\begin{image}
+\begin{tikzpicture}
+\draw[color = white] (-8,0) -- (8,4);
+\fill (0,0) circle(2pt);
+\draw[->, dashed] (0,0) -- (3,0);
+\draw[->, dashed] (0,0) -- (0,3);
+\node[anchor = west] at (3.2,0) {positive $x$-direction};
+\node[anchor = south] at (0,3.2) {positive $y$-direction};
+\end{tikzpicture}
+\end{image}
 
-But what if we want to find how $f$ changes if we change both $x$ and $y$? One possible way to do this would be to change $x$ and $y$ by the same amount, which would be equivalent to finding how $f$ changes as we move along the line $y=x$.
+But what if we want to find how $f$ changes if we change both $x$ and $y$? One possible way to do this would be to increase $x$ and $y$ by the same amount, which would be equivalent to finding how $f$ changes as we increase $x$ and $y$ along the line $y=x$.
 
-PICTURE
+\begin{image}
+\begin{tikzpicture}
+\draw[color = white] (-8,0) -- (8,4);
+\fill (0,0) circle(2pt);
+\draw[->, dashed] (0,0) -- (3,3);
+\node[anchor = west] at (3.2,3) {increasing $x$ and $y$ along $x=y$};
+\end{tikzpicture}
+\end{image}
 
-Alternatively, we could change $y$ by twice as much as $x$. This would be equivalent to finding how $f$ changes as we move along the line $y=2x$.
+Alternatively, we could decrease $y$ by twice as much as $x$. This would be equivalent to finding how $f$ changes as decreasing $x$ and $y$ along the line $y=2x$.
 
-PICTURE
+\begin{image}
+\begin{tikzpicture}
+\draw[color = white] (-8,-4) -- (8,0);
+\fill (0,0) circle(2pt);
+\draw[->, dashed] (0,0) -- (-1.5,-3);
+\node[anchor = east] at (-1.7,-3) {decreasing $x$ and $y$ along $y=2x$};
+\end{tikzpicture}
+\end{image}
 
 As you can see, there are many different ways that we can change $x$ and $y$, corresponding to different directions in the $xy$-plane. In order to determine how $f$ changes as we move in all of these different directions, we will now define directional derivatives.
 
 \section*{Directional derivatives}
 
-We would like to compute the instantaneous rate of change of a function $f:\mathbb{R}^n\rightarrow\mathbb{R}$ as we move in some given direction in $\mathbb{R}^n$. We will model our definition after partial derivatives and single variable derivatives, and use a unit vector $\vec{v}$ to describe the direction.
+We would like to compute the instantaneous rate of change of a function $f:\mathbb{R}^n\rightarrow\mathbb{R}$ at a point as we move in some given direction in $\mathbb{R}^n$. We will model our definition after partial derivatives and single variable derivatives, and use a unit vector $\vec{v}$ to describe the direction.
 
 \begin{definition}
 Consider a function $f:\mathbb{R}^n\rightarrow\mathbb{R}$, a point $\vec{a}\in\mathbb{R}^n$, and a direction given by a unit vector $\vec{v}\in\mathbb{R}^n$. Then we define the \emph{directional derivative} of $f$ at $\vec{a}$ in the direction of $\vec{v}$ to be
@@ -40,7 +63,16 @@ provided this limit exists.
 
 Noticing that by looking at $f(\vec{a}+h\vec{v})$, we are finding the value of $f$ when we move a small distance, $h$, in the direction of $\vec{v}$ from the point $\vec{a}$.
 
-VISUAL
+\begin{image}
+\begin{tikzpicture}
+\fill (0,0) circle(2pt);
+\node[anchor = north] at (0,0) {$\vec{a}$};
+\draw[->, dashed] (0,0) -- (3,3);
+\node[anchor = west] at (3.1,3) {$\vec{v}$};
+\draw[->, thick] (0,0) -- (1,1);
+\node[anchor = west] at (1.1,1) {$\vec{a} + h\vec{v}$};
+\end{tikzpicture}
+\end{image}
 
 When computing directional derivatives, it's important to remember that the direction must be given by a \emph{unit} vector. Otherwise, the length of the vector will change the value of the limit above. If you'd like to find a directional derivative in a direction given by a non-unit vector $\vec{w}$, you should normalize $\vec{w}$ to unit length.
 

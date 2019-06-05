@@ -1,6 +1,6 @@
 \documentclass{ximera}
 
-\graphicspath{{./graphics/}}
+\graphicspath{{./graphics/}{./content/04_4_local_extrema/graphics/}}
 
 \title{Local Extrema}
 \begin{document}
@@ -93,9 +93,13 @@ Our definition of critical points of multivariable functions is also very simila
 We say that $f:\mathbb{R}^n\rightarrow\mathbb{R}$ has a \emph{critical point} at $\vec{x}=\vec{a}$ if $\nabla f(\vec{a})=\vec{0}$, or $\nabla f(\vec{a})$ does not exist.
 \end{definition}
 
-For functions $f:\mathbb{R}^2\rightarrow\mathbb{R}$, we can visualize critical points as points where the tangent plane is either horizontal, or undefined.
+For functions $f:\mathbb{R}^2\rightarrow\mathbb{R}$, we can visualize critical points as points where the tangent plane is either horizontal, or undefined. Each of the graphs below has a critical point at $(0,0)$.
 
-PICTURES
+\begin{image}
+\includegraphics[width = .33\textwidth]{CalcPlot3D-pos_def}
+\includegraphics[width = .33\textwidth]{CalcPlot3D-indef}
+\includegraphics[width = .33\textwidth]{CalcPlot3D-abs}
+\end{image}
 
 As in single variable calculus, if a function has local extrema, they will occur at critical points.
 
@@ -124,7 +128,7 @@ Thus, the critical points of $f$ are $(0,-2)$, $(1,-3/2)$, and $(-4,6)$.
 
 \section*{Classifying critical points}
 
-We can use the Hessian matrix to classify critical points in some cases.
+Analogous to the second derivative test from single variable calculus, we can use the Hessian matrix to classify critical points in some cases.
 
 \begin{proposition}
 Suppose $f:\mathbb{R}^n\rightarrow\mathbb{R}$ has continuous second order partial derivatives (so $f$ has $\mathcal{C}^2$) at and near a critical point $\vec{a}\in U$.

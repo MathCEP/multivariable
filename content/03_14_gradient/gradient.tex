@@ -1,6 +1,6 @@
 \documentclass{ximera}
 
-\graphicspath{{./graphics/}}
+\graphicspath{{./graphics/}{./content/03_14_gradient/graphics/}}
 
 \title{The Gradient and Level Sets}
 \begin{document}
@@ -109,7 +109,7 @@ What does this mean for the possible values for a directional derivative? Recall
 \[
 \nabla f(\vec{a})\cdot \vec{v} = \|\nabla f(\vec{a})\|\;\|\vec{v}\|\cos\theta,
 \]
-Where $\theta$ is the angle between the two vectors. Since $\vec{v}$ is a unit vector, we have
+where $\theta$ is the angle between the two vectors. Since $\vec{v}$ is a unit vector, we have
 \[
 \|\nabla f(\vec{a})\|\;\|\vec{v}\|\cos\theta = \|\nabla f(\vec{a})\|\cos\theta.
 \]
@@ -117,17 +117,45 @@ Since $-1\leq \cos\theta \leq 1$, we have that
 \[
 -\|\nabla f(\vec{a})\|\leq D_{\vec{v}}f(\vec{a})\leq \|\nabla f(\vec{a})\|.
 \]
-In particular, the largest that $D_{\vec{v}}f(\vec{a})$ can be is $\|\nabla f(\vec{a})\|$, and this occurs when $\vec{v}$ points in the same direction as $\nabla f(\vec{a})$ (so $\theta = 0$). Thus, the gradient points in the direction of greatest increase.
-
-VISUAL
+In particular, the largest that $D_{\vec{v}}f(\vec{a})$ can be is $\|\nabla f(\vec{a})\|$, and this occurs when $\vec{v}$ points in the same direction as $\nabla f(\vec{a})$, so that $\theta = 0$. Thus, the gradient points in the direction of greatest increase.
 
 On the other hand, the minimum value that $D_{\vec{v}}f(\vec{a})$ can have is $-\|\nabla f(\vec{a})\|$, and this occurs when $\vec{v}$ points in the opposite direction from $\nabla f(\vec{a})$, in the direction of $-\nabla f(\vec{a})$. Thus, $-\nabla f(\vec{a})$ points in the direction of greatest decrease.
 
-VISUAL
-
 Additionally, from $D_{\vec{v}}f(\vec{a}) = \nabla f(\vec{a})\cdot \vec{v}$, we can see that  $\vec{v}$ is perpendicular to $\nabla f(\vec{a})$ if and only if $D_{\vec{v}}f(\vec{a})=0$. But what does it mean for $D_{\vec{v}}f(\vec{a})$? This means that there is no instantaneous change in $f$ in the direction of $\vec{v}$, which means that $\vec{v}$ will be a tangent vector to a level curve.
 
-VISUAL
+\begin{example}
+Consider the graph of the function $f(x,y) = x^2+y^2$, which is a paraboloid.
+
+\begin{image}
+\includegraphics[width = \textwidth]{CalcPlot3d-paraboloid}
+\end{image}
+
+Let's consider how this function changes near the point $(2,1)$.
+
+The gradient of $f$ at $(2,1)$ is
+\[
+\nabla f(2,1) = \answer{(4,2)}.
+\]
+Consulting the graph of $f$ near the point $(2,1)$, we can confirm that it increases most rapidly when we move in the direction of $\nabla f(2,1)$. We can also confirm that it decreases most rapidly when we move in the direction of $-\nabla f(2,1)$.
+
+The point $(2,1)$ lies on the level curve $x^2 + y^2 = 5$. A tangent vector to this level curve at the point $(2,1)$ is given by $(-1, 2)$.
+
+\begin{image}
+\begin{tikzpicture}
+\draw[<->] (-4,0) -- (4,0);
+\node[anchor = west] at (4,0) {$x$};
+\draw[<->] (0,-4) -- (0,4);
+\node[anchor = south] at (0,4) {$y$};
+\draw (0,0) circle (2.236);
+\fill (2,1) circle(2pt);
+\node[anchor = west] at (2,1) {$(2,1)$};
+\draw[->] (2,1) -- (1, 3);
+\node[anchor = south] at (1,3) {$(-1,2)$};
+\end{tikzpicture}
+\end{image}
+
+This vector, $(-1,2)$, is perpendicular to our gradient $\nabla f(2,1)$.
+\end{example}
 
 We'll state this observation more formally, and prove that the gradient is perpendicular to the level curves.
 
@@ -140,9 +168,13 @@ Then, for any point $\vec{x}_0$ in $S$, the gradient $\nabla f(\vec{x}_0)$ is pe
 \end{theorem} 
 
 \begin{proof}
-Let $\vec{x}(t)$ be a parametrization of $S$, and let $\vec{x}_0=\vec{x}(t_0)$. In order to show that $\nabla f(\vec{x}_0)$ is perpendicular to $S$, we will show that the gradient $\nabla f(\vec{x}_0)$ is perpendicular to the velocity vector $\vec{x}'(t_0)$. By the definition of $S$,
+We need to show that for any vector $\vec{a}$ which is tangent to $S$ at $\vec{x}_0$, we have that $\vec{a}$ is perpendicular to $\nabla f(\vec{x}_0)$.
+
+If $\vec{a}$ is tangent to $S$, we can find a parametrized curve $\vec{x}(t)$ lying in $S$ such that $\vec{x}_0=\vec{x}(t_0)$ and $\vec{x}'(t_0) = \vec{a}$. We will show that $\nabla f(\vec{x}_0)$ is perpendicular to $\vec{a} = \vec{x}'(t_0)$.
+
+By the definition of $S$, and since $\vec{x}(t)$ lies in $S$, 
 \[
-f(\vec{x}(t))=c,
+f(\vec{x}(t))=c
 \]
 for all $t$. Differentiating both sides of this identity, and using the chain rule on the left side, we obtain
 \[
@@ -157,8 +189,6 @@ which we can rewrite as
 \nabla f(\vec{x}_0)\cdot \vec{x}'(t_0) = 0.
 \]
 Thus, we have shown that $\nabla f(\vec{x}_0)$ is perpendicular to the level set $S$.
-
-THIS PROOF ONLY WORKS WHEN IT'S A LEVEL CURVE, NOT A LEVEL SURFACE ETC.
 \end{proof}
 
 \end{document}

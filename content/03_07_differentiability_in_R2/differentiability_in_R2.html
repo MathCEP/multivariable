@@ -34,7 +34,7 @@ Variables</title>
 class="abstract" 
 >
 </div>   <div class="maketitle"></div>
-<!--l. 11--><p class="noindent" >So far, we have an informal definition of differentiability for functions <script type="math/tex">f\mathbb {R}^2\rightarrow \mathbb {R}</script>: if the
+<!--l. 11--><p class="noindent" >So far, we have an informal definition of differentiability for functions <script type="math/tex">f:\mathbb {R}^2\rightarrow \mathbb {R}</script>: if the
 graph of <script type="math/tex">f</script> “looks like” a plane near a point, then <script type="math/tex">f</script> is differentiable at that
 point.
 </p>
@@ -122,7 +122,7 @@ h(x,y) &=f(a,b)+f_x(a,b)(x-a)+f_y(a,b)(y-b)\\
 \lim_{(x,y)\rightarrow (0,0)}\frac{xy}{\sqrt{x^2+y^2}} &= \lim_{r\rightarrow 0}\frac{r\cos\theta\cdot r\sin\theta}{\sqrt{r^2}}\\
 &=  \lim_{r\rightarrow 0}\frac{r^2\cos\theta\sin\theta}{|r|}.
 \end{align*}</script>
-<!--l. 105--><p class="noindent" >Since <script type="math/tex">-1\leq \cos \theta \sin \theta \leq 1</script>, we have <script type="math/tex; mode=display"> -|r|\leq \frac {r^2\cos \theta \sin \theta }{|r|} \leq |r|. </script> Since <script type="math/tex">\lim _r\rightarrow 0 -|r| = \lim _r\rightarrow 0 |r| = 0</script>, by the squeeze theorem, we have <script type="math/tex; mode=display"> \lim _{r\rightarrow }\frac {r^2\cos \theta \sin \theta }{|r|} = 0. </script> Thus, we have shown that <script type="math/tex">\lim _{(x,y)\rightarrow (0,0)}\frac {f(x,y) - h(x,y)}{\|(x,y)-(0,0)\|}=0</script>,
+<!--l. 105--><p class="noindent" >Since <script type="math/tex">-1\leq \cos \theta \sin \theta \leq 1</script>, we have <script type="math/tex; mode=display"> -|r|\leq \frac {r^2\cos \theta \sin \theta }{|r|} \leq |r|. </script> Since <script type="math/tex">\lim _{r\rightarrow 0} -|r| = \lim _{r\rightarrow 0} |r| = 0</script>, by the squeeze theorem, we have <script type="math/tex; mode=display"> \lim _{r\rightarrow }\frac {r^2\cos \theta \sin \theta }{|r|} = 0. </script> Thus, we have shown that <script type="math/tex">\lim _{(x,y)\rightarrow (0,0)}\frac {f(x,y) - h(x,y)}{\|(x,y)-(0,0)\|}=0</script>,
 showing that <script type="math/tex">f</script> is differentiable at <script type="math/tex">(0,0)</script>.
 </div>
 </body> 

@@ -1,6 +1,6 @@
 \documentclass{ximera}
 
-\graphicspath{{./graphics/}}
+\graphicspath{{./graphics/}{./content/04_2_quadratic_forms/graphics/}}
 
 \title{Quadratic Forms}
 \begin{document}
@@ -10,7 +10,7 @@
 
 In order to better understand the behavior of multivariable functions, we would like to define some sort of second derivative for multivariable functions. For first derivatives, we have the gradient and derivative matrix filling the roles of derivatives for scalar-valued and vector-valued functions, respectively. Before we define the second derivative, we will try to understand second-order behavior in multivariable functions specifically. That is, we'll consider polynomials in $n$-variables that only terms of degree $2$, and determine how these polynomials behave.
 
-Polynomials with the property are very important throughout mathematics, and they are called quadratic forms. You've frequently seen a quadratic form which arises from the length of a vector $\vec{x} = (x_1,...,x_n)$,
+Polynomials with this property are very important throughout mathematics, and they are called quadratic forms. You've frequently seen a quadratic form which arises from the length of a vector $\vec{x} = (x_1,...,x_n)$,
 \[
 \|\vec{x}\|^2 = x_1^2 + x_2^2 + \cdots + x_n^2.
 \]
@@ -66,7 +66,7 @@ c_{11} & c_{12} & \cdots & c_{1n}\\
 For example, the quadratic form corresponding to the matrix $\begin{pmatrix}1 & 2\\ 0 & 3\end{pmatrix}$ is
 \begin{align*}
 p(x,y) &= \begin{pmatrix} x & y\end{pmatrix}\begin{pmatrix}1 & 2\\ 0 & 3\end{pmatrix}\begin{pmatrix} x \\ y\end{pmatrix}\\
-&= \begin{pmatrix} x & y\end{pmatrix}\begin{pmatrix} x+2y \\ 3y\end{pmatrix}
+&= \begin{pmatrix} x & y\end{pmatrix}\begin{pmatrix} x+2y \\ 3y\end{pmatrix}\\
 &= x^2+2xy+3y^2.
 \end{align*}
 The quadratic form corresponding to the matrix $\begin{pmatrix}1 & 2 & 3\\0 & 4 & 5\\0 & 0 & 6\end{pmatrix}$ is
@@ -118,9 +118,9 @@ A quadratic form $p(\vec{x})$ is...
 
 \item \emph{negative definite} if $p(\vec{x})<0$ for all $\vec{x}\neq 0$.
 
-\item \emph{positive semi-definite} if it is not positive definite, and $p(\vec{x})\geq 0$ for all $\vec{x})$.
+\item \emph{positive semi-definite} if it is not positive definite, and $p(\vec{x})\geq 0$ for all $\vec{x}$.
 
-\item \emph{negative semi-definite} if it is not positive definite, and $p(\vec{x})\geq 0$ for all $\vec{x})$.
+\item \emph{negative semi-definite} if it is not positive definite, and $p(\vec{x})\geq 0$ for all $\vec{x}$.
 
 \item \emph{indefinite} if it is none of the above. That is, there exist $\vec{x}_1,\vec{x}_2\neq \vec{0}$ such that $p(\vec{x}_1) <0$ and $p(\vec{x}_2)>0$. 
 \end{itemize}
@@ -129,31 +129,41 @@ A quadratic form $p(\vec{x})$ is...
 \begin{example}
 The quadratic form $p(x,y) = x^2+y^2$ is positive definite. Its graph is pictured below.
 
-PICTURE
+\begin{image}
+\includegraphics[width=\textwidth]{CalcPlot3D-pos_def}
+\end{image}
 
-The graphs of other positive definite quadratic forms look similar, though they may be stretched in various directions. Notice that for a positive definite quadratic form, there is always a strict minimum at the origin.
+The graphs of other positive definite quadratic forms on $\mathbb{R}^2$ look similar, though they may be stretched in various directions. Notice that for a positive definite quadratic form, there is always a strict minimum at the origin.
 
 The quadratic form $p(x,y) = -x^2-y^2$ is negative definite. Its graph is pictured below.
 
-PICTURE
+\begin{image}
+\includegraphics[width=\textwidth]{CalcPlot3D-neg_def}
+\end{image}
 
 The graphs of other negative definite quadratic forms look similar, though they may be stretched in various directions. Notice that for a negative definite quadratic form, there is always a strict maximum at the origin.
 
 The quadratic form $p(x,y) = x^2$ is positive semi-definite. Its graph is pictured below.
 
-PICTURE
+\begin{image}
+\includegraphics[width=\textwidth]{CalcPlot3D-pos_semidef}
+\end{image}
 
 The graphs of other positive semi-definite quadratic forms look similar, though they may be stretched in various directions. 
 
 The quadratic form $p(x,y) = -x^2$ is negative semi-definite. Its graph is pictured below.
 
-PICTURE
+\begin{image}
+\includegraphics[width=\textwidth]{CalcPlot3D-neg_semidef}
+\end{image}
 
 The graphs of other negative semi-definite quadratic forms look similar, though they may be stretched in various directions.
 
 The quadratic form $p(x,y) = x^2-y^2$ is indefinite. Its graph is pictured below.
 
-PICTURE
+\begin{image}
+\includegraphics[width=\textwidth]{CalcPlot3D-indef}
+\end{image}
 
 The graphs of other indefinite quadratic forms look similar, though they may be stretched in various directions. Notice the behavior of the graph around the origin; because of its shape, this is called a \emph{saddle point}.
 
@@ -174,7 +184,7 @@ a_{13} & a_{23} & a_{33} & \cdots & a_{1n}\\
 a_{1n} & a_{2n} & a_{3n} & \cdots & a_{nn}\\
 \end{pmatrix}.
 \]
-Consider the sequence of determinants
+Consider the sequence of determinants of the $n$ square upper left submatrices of $A$, 
 \[
 d_1 = a_{11}, d_2 = \text{det}\begin{pmatrix}a_{11} & a_{12}\\ a_{12} & a_{22}\end{pmatrix}, d_3 = \text{det}\begin{pmatrix}a_{11} & a_{12} & a_{13}\\ a_{12} & a_{22} & a_{23}\\ a_{13} & a_{23} & a_{33}\end{pmatrix},...,d_n = \text{det}\begin{pmatrix}
 a_{11} & a_{12} & a_{13} & \cdots & a_{1n}\\

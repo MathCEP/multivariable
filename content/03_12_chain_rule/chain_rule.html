@@ -15,6 +15,12 @@
 <div class="preamble"><script type="math/tex">\newenvironment {prompt}{}{}
 \newcommand {\DeclareMathOperator }[2]{\@OldDeclareMathOperator {##1}{##2}\immediate \write \myfile {\unexpanded {\DeclareMathOperator }{\unexpanded {##1}}{\unexpanded {##2}}}}
 \newcommand {\ungraded }[0]{}
+\newcommand {\expl@create@bool@option }[2]{\DeclareOption {##1}{\chardef ##2=1 }\DeclareOption {##1=true}{\chardef ##2=1 }\DeclareOption {##1=false}{\chardef ##2=0 }\newcommand *##2{}\chardef ##2=0 }
+\newcommand {\l@expl@check@declarations@bool }[0]{}
+\newcommand {\l@expl@log@functions@bool }[0]{}
+\newcommand {\l@expl@enable@debug@bool }[0]{}
+\newcommand {\l@expl@options@clist }[0]{}
+\newcommand {\hobby@processpt }[1]{##1\pgfmathsetmacro \hobby@x {\the \pgf@x /1cm}\pgfmathsetmacro \hobby@y {\the \pgf@y /1cm}\ifx \hobby@initial@pt \pgfutil@empty \xdef \hobby@initial@pt {x = \hobby@x ,y = \hobby@y }\fi \expandafter \hobbyaddpoint \expandafter {\hobby@point@options ,x = \hobby@x ,y = \hobby@y }\def \hobby@point@options {}\let \tikz@scan@point@options =\pgfutil@empty \pgfutil@ifnextchar \relax {\expandafter \hobbysetparams \expandafter {\hobby@this@opts }\ifhobby@externalise \ifx \hobby@path@name \pgfutil@empty \hobbygenusepath \else \hobbygenuseifnecpath {\hobby@path@name }\fi \else \hobbygenusepath \fi \ifx \hobby@path@name \pgfutil@empty \else \hobbysavepath {\hobby@path@name }\fi \global \let \hobby@path@name =\pgfutil@empty }{\pgfutil@ifnextchar .{\hobby@swallowdots }{\tikz@scan@one@point \hobby@processpt }}}
 \newcommand {\reserved@a }[2]{}
 \newcommand {\HyperFirstAtBeginDocument }[0]{\AtBeginDocument }
 \newcommand {\reserved@a }[1]{}
@@ -26,90 +32,92 @@
 \newcommand {\reserved@a }[2]{}
 \newcommand {\reserved@a }[0]{\AtBeginDocument }
 \newcommand {\reserved@a }[1]{}
-\newcommand {\reserved@a }[2]{}                                                                                                                                                 </script><script type="text/javascript"> 
+\newcommand {\reserved@a }[2]{}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           </script><script type="text/javascript"> 
 </script> 
 </div>
 <div 
 class="abstract" 
 >
 </div>   <div class="maketitle"></div>
-<!--l. 11--><p class="noindent" >In this activity, we introduce the multi-variable chain rule, and we use it to compute
-derivatives of compositions of functions.
-<a 
- id="Q1-1-1"></a>
-</p>
-<h3 class="likesectionHead"><a 
- id="x1-1000"></a>The Chain Rule</h3>
-<!--l. 15--><p class="noindent" >Let’s begin by recalling the chain rule from single variable calculus. If we have
+<!--l. 13--><p class="noindent" >We’ll begin by recalling the chain rule from single variable calculus. If we have
 differentiable functions <script type="math/tex">f</script> and <script type="math/tex">g</script>, then we can compute the derivative of the composition
 as <script type="math/tex">(f\circ g)'(x) =f'(g(x))g'(x)</script>.
 </p>
 <div class="theorem-like problem-environment example" id="problem1"><a 
- id="x1-1001r1"></a>Let <script type="math/tex">f(x) = \sin (x)</script> and <script type="math/tex">g(x) = x^2</script>. Then <script type="math/tex">f'(x) = \cos (x)</script>, <script type="math/tex">g'(x)=2x</script>, and we can differentiate the composition <script type="math/tex">(f\circ g)(x) = \sin (x^2)</script> using the chain rule:
+ id="x1-23r1"></a>Let <script type="math/tex">f(x) = \sin (x)</script> and <script type="math/tex">g(x) = x^2</script>. Then <script type="math/tex">f'(x) = \cos (x)</script>, <script type="math/tex">g'(x)=2x</script>, and we can differentiate the composition <script type="math/tex">(f\circ g)(x) = \sin (x^2)</script> using the chain rule:
 <script type="math/tex; mode=display"> \begin{align*} 
 (f\circ g)'(x) &= f'(g(x))g'(x)\\
 &=\cos(g(x))\cdot 2x\\
 &=\cos(x^2)\cdot 2x.
 \end{align*}</script>
-<!--l. 24--><p class="noindent" >We can also use the chain rule to differentiate the composition <script type="math/tex">(g\circ f)(x) = \sin ^2(x)</script>.
+<!--l. 22--><p class="noindent" >We can also use the chain rule to differentiate the composition <script type="math/tex">(g\circ f)(x) = \sin ^2(x)</script>.
 </p><script type="math/tex; mode=display"> \begin{align*} 
 (g\circ f)'(x) &= g'(f(x))f'(x)\\
 &=2(f(x))\cos(x)\\
 &=2\sin(x)\cos(x)
 \end{align*}</script>
+<!--l. 28--><p class="noindent" ></div>
+<a 
+ id="Q1-1-1"></a>
                                                                   
 
                                                                   
-<!--l. 30--><p class="noindent" ></div>
-</p><!--l. 32--><p class="noindent" >The multi-variable chain rule is similar, with the derivative matrix taking the place of
+</p>
+<h3 class="likesectionHead"><a 
+ id="x1-1000"></a>The Chain Rule</h3>
+<!--l. 32--><p class="noindent" >The multi-variable chain rule is similar, with the derivative matrix taking the place of
 the single variable derivative, so that the chain rule will involve matrix multiplication.
 We also need to pay extra attention to whether the composition of functions is even
 defined.
+</p><!--l. 34--><p class="noindent" >In particular, suppose we have functions <script type="math/tex">\vec {g}:\mathbb {R}^m\rightarrow \mathbb {R}^p</script> and <script type="math/tex">\vec {f}:\mathbb {R}^q\rightarrow \mathbb {R}^n</script>. In order for the composition <script type="math/tex">\vec {f}\circ \vec {g}</script> to be
+defined, the outputs of <script type="math/tex">\vec {g}</script> need to be sensible inputs for <script type="math/tex">\vec {f}</script>. This means that we would
+need <script type="math/tex">p=q</script>, so that <script type="math/tex">\mathbb {R}^p = \mathbb {R}^q</script>.
+</p><!--l. 36--><p class="noindent" >If <script type="math/tex">\vec {f}</script> isn’t defined on all of <script type="math/tex">\mathbb {R}^p</script>, so that <script type="math/tex">\vec {f}:X\subset \mathbb {R}^p\rightarrow \mathbb {R}^n</script>, then the range of <script type="math/tex">\vec {g}:\mathbb {R}^m\rightarrow \mathbb {R}^p</script> would need to be contained in <script type="math/tex">X</script>,
+in order for the composition <script type="math/tex">\vec {f}\circ \vec {g}</script> to be defined. Alternatively, we could restrict
+the domain of <script type="math/tex">g</script> to ensure that the range of <script type="math/tex">g</script> is contained in the domain of
+<script type="math/tex">f</script>.
 </p>
+<div class="image-environment" role="img" aria-labelledby="image-alt-1">  <img 
+src="./chain_rule-figure0.svg" alt=""  
+ />
+</div>
 <div class="theorem-like problem-environment theorem" id="problem2"><a 
- id="x1-1002r2"></a>Suppose <script type="math/tex">\mathbf {f}:Y\subset \mathbb {R}^p\rightarrow \mathbb {R}^n</script> and <script type="math/tex">\mathbf {g}:X\subset \mathbb {R}^m\rightarrow \mathbb {R}^p</script> are defined on open sets <script type="math/tex">Y\subset \mathbb {R}^p</script> and <script type="math/tex">X\subset \mathbb {R}^m</script>, respectively. Suppose that <script type="math/tex">\mathbf {g}(X)\subset Y</script>, so the
-image of <script type="math/tex">\mathbf {g}</script> is contained in the domain of <script type="math/tex">\mathbf {f}</script>. Suppose further that <script type="math/tex">\mathbf {g}</script> is differentiable at
-some point <script type="math/tex">\mathbf {x}_0\in X</script>, and that <script type="math/tex">\mathbf {f}</script> is differentiable at <script type="math/tex">\mathbf {y}_0=\mathbf {g}(\mathbf {x}_0)\in Y</script>.
-<!--l. 37--><p class="noindent" >Then the composition <script type="math/tex">\mathbf {f}\circ \mathbf {g}</script> is differentiable at <script type="math/tex">\mathbf {x}_0</script>, and
+ id="x1-1001r2"></a>Suppose <script type="math/tex">\vec {f}:Y\subset \mathbb {R}^p\rightarrow \mathbb {R}^n</script> and <script type="math/tex">\vec {g}:X\subset \mathbb {R}^m\rightarrow \mathbb {R}^p</script> are defined on open sets <script type="math/tex">Y\subset \mathbb {R}^p</script> and <script type="math/tex">X\subset \mathbb {R}^m</script>, respectively. Suppose that <script type="math/tex">\vec {g}(X)\subset Y</script>, so the
+image of <script type="math/tex">\vec {g}</script> is contained in the domain of <script type="math/tex">\vec {f}</script>. Suppose further that <script type="math/tex">\vec {g}</script> is differentiable at
+some point <script type="math/tex">\vec {x}_0\in X</script>, and that <script type="math/tex">\vec {f}</script> is differentiable at <script type="math/tex">\vec {y}_0=\vec {g}(\vec {x}_0)\in Y</script>.
+<!--l. 75--><p class="noindent" >Then the composition <script type="math/tex">\vec {f}\circ \vec {g}</script> is differentiable at <script type="math/tex">\vec {x}_0</script>, and
 </p><script type="math/tex; mode=display"> \begin{align*} 
- D(\mathbf{f}\circ\mathbf{g})(\mathbf{x}_0) &= D\mathbf{f}(\mathbf{y}_0)D\mathbf{g}(\mathbf{x}_0)\\
- &= D\mathbf{f}(\mathbf{g}(\mathbf{x}_0))D\mathbf{g}(\mathbf{x}_0).
+ D(\vec{f}\circ\vec{g})(\vec{x}_0) &= D\vec{f}(\vec{y}_0)D\vec{g}(\vec{x}_0)\\
+ &= D\vec{f}(\vec{g}(\vec{x}_0))D\vec{g}(\vec{x}_0).
  \end{align*}</script>
-<!--l. 42--><p class="noindent" ></div>
-</p><!--l. 44--><p class="noindent" >Although the conditions sound complicated, essentially they’re just requiring that all
+<!--l. 80--><p class="noindent" ></div>
+</p><!--l. 82--><p class="noindent" >Although the conditions sound complicated, essentially they’re just requiring that all
 of the derivatives mentioned actually exist. Note the similarities to the single variable
 chain rule.
-</p><!--l. 46--><p class="noindent" >
-</p>
-<div class="proof">
-<!--l. 47--><p class="noindent" ><span class="head">
-</p><dl class="trivlist"><dt class="trivlist">
-Proof   </dt><dd 
-class="trivlist"></span>super great proof of chain rule                                                   <script type="math/tex">\blacksquare </script></dd></dl>
-</div>
 <a 
  id="Q1-1-3"></a>
+</p>
 <h3 class="likesectionHead"><a 
  id="x1-2000"></a>A Special Case</h3>
-<!--l. 52--><p class="noindent" >We’ll now consider a special case of the chain rule, when we have a composition <script type="math/tex">f\circ g</script> of
-functions <script type="math/tex">f:\mathbb {R}^n\rightarrow \mathbb {R}</script> and <script type="math/tex">\mathbf {g}:\mathbb {R}\rightarrow \mathbb {R}^n</script>. Note that <script type="math/tex">f</script> is a scalar function, and we can think of <script type="math/tex">\mathbf {g}</script> as a curve in
+<!--l. 86--><p class="noindent" >We’ll now consider a special case of the chain rule, when we have a composition <script type="math/tex">f\circ g</script> of
+functions <script type="math/tex">f:\mathbb {R}^n\rightarrow \mathbb {R}</script> and <script type="math/tex">\vec {g}:\mathbb {R}\rightarrow \mathbb {R}^n</script>. Note that <script type="math/tex">f</script> is a scalar function, and we can think of <script type="math/tex">\vec {g}</script> as a curve in
 <script type="math/tex">\mathbb {R}^n</script>.
-</p><!--l. 54--><p class="noindent" >Let’s look at what the chain rule tells us in this case. For any <script type="math/tex">x_0\in \mathbb {R}</script>, we have <script type="math/tex; mode=display"> D(f\circ \mathbf {g})(x_0) = Df(\mathbf {g}(x_0))D\mathbf {g}(x_0). </script>
-Writing <script type="math/tex">\mathbf {g}(x) = (g_1(x),...,g_n(x))</script> in terms of its components, we have <script type="math/tex; mode=display"> D\mathbf {g} = \left (\begin {array}{c}\partial g_1/\partial x\\ \vdots \\\partial g_n/\partial x\end {array}\right ). </script> Since <script type="math/tex">\mathbf {g}</script> only has one input
-variable, we can rewrite this as <script type="math/tex; mode=display"> D\mathbf {g}(x) = \left (\begin {array}{c}g_1'(x)\\ \vdots \\g_n'(x)\end {array}\right ). </script> Now that we’ve sorted out <script type="math/tex">D\mathbf {g}</script>, let’s consider <script type="math/tex">Df</script>.
-Since <script type="math/tex">f</script> is a scalar-valued function, <script type="math/tex">Df</script> will consist of only one row, <script type="math/tex; mode=display"> Df = \left (\begin {array}{ccc}\frac {\partial f}{\partial x_1} & \cdots & \frac {\partial f}{\partial x_n}\end {array}\right ). </script> For <script type="math/tex">Df(\mathbf {g}(x_0))</script>, we
-would evaluate these partial derivatives at <script type="math/tex">\mathbf {g}(x_0)</script>: <script type="math/tex; mode=display"> Df(\mathbf {g}(x_0)) = \left (\begin {array}{ccc}\frac {\partial f}{\partial x_1}(\mathbf {g}(x_0)) & \cdots & \frac {\partial f}{\partial x_n}(\mathbf {g}(x_0))\end {array}\right ). </script> Now let’s turn our attention
-back to the composition <script type="math/tex">f\circ \mathbf {g}</script>. Putting together our results from above, we have
-</p><script type="math/tex; mode=display"> \begin{align*} 
-D(f\circ\mathbf{g})(x_0) &= Df(\mathbf{g}(x_0))D\mathbf{g}(x_0)\\
-&= \left(\begin{array}{ccc}\frac{\partial f}{\partial x_1}(\mathbf{g}(x_0)) & \cdots & \frac{\partial f}{\partial x_n}(\mathbf{g}(x_0))\end{array}\right)\left(\begin{array}{c}g_1'(x_0)\\ \vdots\\g_n'(x_0)\end{array}\right)\\
+</p><!--l. 88--><p class="noindent" >Let’s look at what the chain rule tells us in this case. For any <script type="math/tex">x_0\in \mathbb {R}</script>, we have <script type="math/tex; mode=display"> D(f\circ \vec {g})(x_0) = Df(\vec {g}(x_0))D\vec {g}(x_0). </script>
+Writing <script type="math/tex">\vec {g}(x) = (g_1(x),...,g_n(x))</script> in terms of its components, we have <script type="math/tex; mode=display"> D\vec {g} = \left (\begin {array}{c}\partial g_1/\partial x\\ \vdots \\\partial g_n/\partial x\end {array}\right ). </script> Since <script type="math/tex">\vec {g}</script> only has one input
+variable, we can rewrite this as <script type="math/tex; mode=display"> D\vec {g}(x) = \left (\begin {array}{c}g_1'(x)\\ \vdots \\g_n'(x)\end {array}\right ). </script> Now that we’ve sorted out <script type="math/tex">D\vec {g}</script>, let’s consider <script type="math/tex">Df</script>.
                                                                   
 
                                                                   
-&=\left(\left(\frac{\partial f}{\partial x_1}(\mathbf{g}(x_0))\right)g_1'(x_0)+\cdots + \left(\frac{\partial f}{\partial x_n}(\mathbf{g}(x_0))\right)g_n'(x_0)\right)
+Since <script type="math/tex">f</script> is a scalar-valued function, <script type="math/tex">Df</script> will consist of only one row, <script type="math/tex; mode=display"> Df = \left (\begin {array}{ccc}\frac {\partial f}{\partial x_1} & \cdots & \frac {\partial f}{\partial x_n}\end {array}\right ). </script> For <script type="math/tex">Df(\vec {g}(x_0))</script>, we
+would evaluate these partial derivatives at <script type="math/tex">\vec {g}(x_0)</script>: <script type="math/tex; mode=display"> Df(\vec {g}(x_0)) = \left (\begin {array}{ccc}\frac {\partial f}{\partial x_1}(\vec {g}(x_0)) & \cdots & \frac {\partial f}{\partial x_n}(\vec {g}(x_0))\end {array}\right ). </script> Now let’s turn our attention
+back to the composition <script type="math/tex">f\circ \vec {g}</script>. Putting together our results from above, we have
+</p><script type="math/tex; mode=display"> \begin{align*} 
+D(f\circ\vec{g})(x_0) &= Df(\vec{g}(x_0))D\vec{g}(x_0)\\
+&= \left(\begin{array}{ccc}\frac{\partial f}{\partial x_1}(\vec{g}(x_0)) & \cdots & \frac{\partial f}{\partial x_n}(\vec{g}(x_0))\end{array}\right)\left(\begin{array}{c}g_1'(x_0)\\ \vdots\\g_n'(x_0)\end{array}\right)\\
+&=\left(\frac{\partial f}{\partial x_1}(\vec{g}(x_0))\right)g_1'(x_0)+\cdots + \left(\frac{\partial f}{\partial x_n}(\vec{g}(x_0))\right)g_n'(x_0)
 \end{align*}</script>
-<!--l. 80--><p class="noindent" >Since <script type="math/tex">f\circ \mathbf {g}:\mathbb {R}\rightarrow \mathbb {R}</script> is a single variable function, its derivative matrix at <script type="math/tex">x_0</script> only has one entry,
-which is <script type="math/tex">\frac {d f\circ \mathbf {g}}{dx}(x_0)</script>. So, we can rewrite the above as <script type="math/tex; mode=display"> \frac {d f\circ \mathbf {g}}{dx}(x_0) = \left (\frac {\partial f}{\partial x_1}(\mathbf {g}(x_0))\right )g_1'(x_0)+\cdots + \left (\frac {\partial f}{\partial x_n}(\mathbf {g}(x_0))\right )g_n'(x_0). </script> This gives us a special case of the
+<!--l. 114--><p class="noindent" >Since <script type="math/tex">f\circ \vec {g}:\mathbb {R}\rightarrow \mathbb {R}</script> is a single variable function, its derivative matrix at <script type="math/tex">x_0</script> only has one entry,
+which is <script type="math/tex">\frac {d (f\circ \vec {g})}{dx}(x_0)</script>. So, we can rewrite the above as <script type="math/tex; mode=display"> \frac {d (f\circ \vec {g})}{dx}(x_0) = \left (\frac {\partial f}{\partial x_1}(\vec {g}(x_0))\right )g_1'(x_0)+\cdots + \left (\frac {\partial f}{\partial x_n}(\vec {g}(x_0))\right )g_n'(x_0). </script> This gives us a special case of the
 Chain Rule, that can be useful when we have a composition of functions
 <script type="math/tex">\mathbb {R}\rightarrow \mathbb {R}^n\rightarrow \mathbb {R}</script>.
 <a 
@@ -118,53 +126,50 @@ Chain Rule, that can be useful when we have a composition of functions
 <h3 class="likesectionHead"><a 
  id="x1-3000"></a>Examples</h3>
 <div class="theorem-like problem-environment example" id="problem3"><a 
- id="x1-3001r3"></a>Let’s consider the functions <script type="math/tex">\mathbf {f}(x,y) = (x^2+y^2, xy)</script> and <script type="math/tex">\mathbf {g}(x,y) = (3xy, x-y, 7y^2)</script>. First, let’s decide how we can compose these
+ id="x1-3001r3"></a>Let’s consider the functions <script type="math/tex">\vec {f}(x,y) = (x^2+y^2, xy)</script> and <script type="math/tex">\vec {g}(x,y) = (3xy, x-y, 7y^2)</script>. First, let’s decide how we can compose these
 functions.
-<!--l. 91--><p class="noindent" >Which composition(s) exist? </p><div class="multiple-choice" id="problem4"><span class="choice  "   id="choice1">Neither <script type="math/tex">\mathbf {f}\circ \mathbf {g}</script> nor <script type="math/tex">\mathbf {g}\circ \mathbf {f}</script> exists.</span> <span class="choice  "   id="choice2"><script type="math/tex">\mathbf {f}\circ \mathbf {g}</script> exists, but <script type="math/tex">\mathbf {g}\circ \mathbf {f}</script> does not.</span> <span class="choice correct "   id="choice3"><script type="math/tex">\mathbf {g}\circ \mathbf {f}</script> exists,
-but <script type="math/tex">\mathbf {f}\circ \mathbf {g}</script> does not.</span> <span class="choice  "   id="choice4"><script type="math/tex">\mathbf {f}\circ \mathbf {g}</script> and <script type="math/tex">\mathbf {g}\circ \mathbf {f}</script> both exist.</span> </div>
-<!--l. 99--><p class="noindent" >We’ll compute the derivative matrix <script type="math/tex">D(\mathbf {g}\circ \mathbf {f}</script> in two ways: using the chain rule, and
+<!--l. 125--><p class="noindent" >Which composition(s) exist? </p><div class="multiple-choice" id="problem4"><span class="choice  "   id="choice1">Neither <script type="math/tex">\vec {f}\circ \vec {g}</script> nor <script type="math/tex">\vec {g}\circ \vec {f}</script> exists.</span> <span class="choice  "   id="choice2"><script type="math/tex">\vec {f}\circ \vec {g}</script> exists, but <script type="math/tex">\vec {g}\circ \vec {f}</script> does not.</span> <span class="choice correct "   id="choice3"><script type="math/tex">\vec {g}\circ \vec {f}</script> exists,
+but <script type="math/tex">\vec {f}\circ \vec {g}</script> does not.</span> <span class="choice  "   id="choice4"><script type="math/tex">\vec {f}\circ \vec {g}</script> and <script type="math/tex">\vec {g}\circ \vec {f}</script> both exist.</span> </div>
+<!--l. 133--><p class="noindent" >We’ll compute the derivative matrix <script type="math/tex">D(\vec {g}\circ \vec {f}</script> in two ways: using the chain rule, and
 directly.
-</p><!--l. 101--><p class="noindent" >Let’s begin by using the chain rule. We’ll have <script type="math/tex; mode=display"> D(\mathbf {g}\circ \mathbf {f})(\mathbf {x}) = D\mathbf {g}(\mathbf {f}(\mathbf {x}))D\mathbf {f}(\mathbf {x}), </script> so we’ll start by computing the derivative matrices <script type="math/tex">D\mathbf {f}</script> and <script type="math/tex">D\mathbf {g}</script>.
+</p><!--l. 135--><p class="noindent" >Let’s begin by using the chain rule. We’ll have <script type="math/tex; mode=display"> D(\vec {g}\circ \vec {f})(\vec {x}) = D\vec {g}(\vec {f}(\vec {x}))D\vec {f}(\vec {x}), </script> so we’ll start by computing the derivative matrices <script type="math/tex">D\vec {f}</script> and <script type="math/tex">D\vec {g}</script>.
 </p><script type="math/tex; mode=display"> \begin{align*} 
-D\mathbf{f}(x,y) &= \left(\begin{array}{cc}\answer{2x} & \answer{2y}\\\answer{y} & \answer{x}\end{array}\right)\\
-D\mathbf{g}(x,y) &= \left(\begin{array}{cc}\answer{3y} & \answer{3x}\\\answer{1} & \answer{-1}\\\answer{0} & \answer{14y}\end{array}\right)
+D\vec{f}(x,y) &= \left(\begin{array}{cc}\answer{2x} & \answer{2y}\\\answer{y} & \answer{x}\end{array}\right)\\
+D\vec{g}(x,y) &= \left(\begin{array}{cc}\answer{3y} & \answer{3x}\\\answer{1} & \answer{-1}\\\answer{0} & \answer{14y}\end{array}\right)
 \end{align*}</script>
-<!--l. 110--><p class="noindent" >Now, for <script type="math/tex">D\mathbf {g}(\mathbf {f}(\mathbf {x}))</script>, we need to input <script type="math/tex">\mathbf {f}(x,y)</script> into <script type="math/tex">D\mathbf {g}</script>. </p><script type="math/tex; mode=display"> \begin{align*} 
-D\mathbf{g}(\mathbf{f}(x,y)) &= D\mathbf{g}(x^2+y^2, xy)\\
+<!--l. 144--><p class="noindent" >Now, for <script type="math/tex">D\vec {g}(\vec {f}(\vec {x}))</script>, we need to input <script type="math/tex">\vec {f}(x,y)</script> into <script type="math/tex">D\vec {g}</script>. </p><script type="math/tex; mode=display"> \begin{align*} 
+D\vec{g}(\vec{f}(x,y)) &= D\vec{g}(x^2+y^2, xy)\\
 &= \left(\begin{array}{cc}\answer{3(xy)} & \answer{3(x^2+y^2)}\\\answer{1} & \answer{-1}\\\answer{0} & \answer{14(xy)}\end{array}\right)
 \end{align*}</script>
-<!--l. 115--><p class="noindent" >To compute <script type="math/tex"> D(\mathbf {g}\circ \mathbf {f})(x,y)</script>, we multiply matrices, and obtain
+<!--l. 149--><p class="noindent" >To compute <script type="math/tex"> D(\vec {g}\circ \vec {f})(x,y)</script>, we multiply matrices, and obtain
 </p><script type="math/tex; mode=display"> \begin{align*} 
-D(\mathbf{g}\circ\mathbf{f})(x,y) &=  \left(\begin{array}{cc}\answer{3(xy)} & \answer{3(x^2+y^2)}\\\answer{1} & \answer{-1}\\\answer{0} & \answer{14(xy)}\end{array}\right)\left(\begin{array}{cc}\answer{2x} & \answer{2y}\\\answer{y} & \answer{x}\end{array}\right)\\
+D(\vec{g}\circ\vec{f})(x,y) &=  \left(\begin{array}{cc}\answer{3(xy)} & \answer{3(x^2+y^2)}\\\answer{1} & \answer{-1}\\\answer{0} & \answer{14(xy)}\end{array}\right)\left(\begin{array}{cc}\answer{2x} & \answer{2y}\\\answer{y} & \answer{x}\end{array}\right)\\
 &= \left(\begin{array}{cc}\answer{9x^2y+3y^3} & \answer{3x^3+9xy^2}\\\answer{2x-y} & \answer{2y-x}\\\answer{14xy^2} & \answer{14x^2y}\end{array}\right).
 \end{align*}</script>
-<!--l. 121--><p class="noindent" >Let’s verify our answer, by computing the <script type="math/tex">D(\mathbf {g}\circ \mathbf {f})(x,y)</script> directly, without using the chain rule. We’ll
-begin by finding <script type="math/tex">\mathbf {g}\circ \mathbf {f}</script>. </p><script type="math/tex; mode=display"> \begin{align*} 
-(\mathbf{g}\circ\mathbf{f})(x,y) &= \mathbf{g}(f(x,y))\\
-&= \mathbf{g}(x^2+y^2,xy)\\
-&= \answer{(3(x^2+y^2)(xy),(x^2+y^2)-(xy),7(xy)^2)}.
-\end{align*}</script>
+<!--l. 155--><p class="noindent" >Let’s verify our answer, by computing the <script type="math/tex">D(\vec {g}\circ \vec {f})(x,y)</script> directly, without using the chain rule.
                                                                   
 
                                                                   
-<!--l. 127--><p class="noindent" >This simplifies to <script type="math/tex">(\mathbf {g}\circ \mathbf {f})(x,y) = (3x^3y+3xy^3, x^2+y^2-xy,7x^2y^2)</script>. We can then compute the derivative matrix. <script type="math/tex; mode=display"> (\mathbf {g}\circ \mathbf {f})(x,y) = \left (\begin {array}{cc}\answer {9x^2y+3y^3} & \answer {3x^3+9xy^2}\\\answer {2x-y} & \answer {2y-x}\\\answer {14xy^2} & \answer {14x^2y}\end {array}\right ) </script> We see that this
+We’ll begin by finding <script type="math/tex">\vec {g}\circ \vec {f}</script>. </p><script type="math/tex; mode=display"> \begin{align*} 
+(\vec{g}\circ\vec{f})(x,y) &= \vec{g}(f(x,y))\\
+&= \vec{g}(x^2+y^2,xy)\\
+&= \answer{(3(x^2+y^2)(xy),(x^2+y^2)-(xy),7(xy)^2)}.
+\end{align*}</script>
+<!--l. 161--><p class="noindent" >This simplifies to <script type="math/tex">(\vec {g}\circ \vec {f})(x,y) = (3x^3y+3xy^3, x^2+y^2-xy,7x^2y^2)</script>. We can then compute the derivative matrix. <script type="math/tex; mode=display"> (\vec {g}\circ \vec {f})(x,y) = \left (\begin {array}{cc}\answer {9x^2y+3y^3} & \answer {3x^3+9xy^2}\\\answer {2x-y} & \answer {2y-x}\\\answer {14xy^2} & \answer {14x^2y}\end {array}\right ) </script> We see that this
 gives the same result as using the chain rule.
 </div>
 </p>
 <div class="theorem-like problem-environment example" id="problem5"><a 
- id="x1-3002r4"></a>special case
-</div>
-<div class="theorem-like problem-environment example" id="problem6"><a 
- id="x1-3003r5"></a>Consider the function <script type="math/tex">g:\mathbb {R}^2\rightarrow \mathbb {R}^2</script>, given by <script type="math/tex">\mathbf {g}(r,\theta ) = (r\cos \theta , r\sin \theta )</script>. We can think of this function as converting from
+ id="x1-3002r4"></a>Consider the function <script type="math/tex">g:\mathbb {R}^2\rightarrow \mathbb {R}^2</script>, given by <script type="math/tex">\vec {g}(r,\theta ) = (r\cos \theta , r\sin \theta )</script>. We can think of this function as converting from
 polar coordinates to Cartesian coordinates. Suppose we have a function <script type="math/tex">f:\mathbb {R}^2\rightarrow \mathbb {R}</script>,
 and we want to know how <script type="math/tex">f</script> changes with respect to polar coordinates. We
-could find this by computing <script type="math/tex; mode=display"> D(f\circ \mathbf {g}) = \left (\begin {array}{cc}\frac {\partial (f\circ \mathbf {g})}{\partial r} & \frac {\partial (f\circ \mathbf {g})}{\partial \theta }\end {array}\right ). </script> For specific functions <script type="math/tex">f</script>, we could probably
+could find this by computing <script type="math/tex; mode=display"> D(f\circ \vec {g}) = \left (\begin {array}{cc}\frac {\partial (f\circ \vec {g})}{\partial r} & \frac {\partial (f\circ \vec {g})}{\partial \theta }\end {array}\right ). </script> For specific functions <script type="math/tex">f</script>, we could probably
 compute this derivative matrix directly. However, if we use the chain rule, we
 can find a general formula for the derivative matrix. The chain rule tells us
-<script type="math/tex; mode=display"> D(f\circ \mathbf {g})(r,\theta ) = Df(\mathbf {g}(r,\theta ))D\mathbf {g}(r,\theta ). </script> We don’t know precisely what <script type="math/tex">Df</script> will be, but we can write it in terms of
-its partial derivatives: <script type="math/tex; mode=display"> Df = \left (\begin {array}{cc}\frac {\partial f}{\partial x} & \frac {\partial f}{\partial y} \end {array}\right ). </script> Given <script type="math/tex">\mathbf {g}(r,\theta ) = (r\cos \theta , r\sin \theta )</script>, we can compute the derivative matrix of <script type="math/tex">\mathbf {g}</script>.
+<script type="math/tex; mode=display"> D(f\circ \vec {g})(r,\theta ) = Df(\vec {g}(r,\theta ))D\vec {g}(r,\theta ). </script> We don’t know precisely what <script type="math/tex">Df</script> will be, but we can write it in terms of
+its partial derivatives: <script type="math/tex; mode=display"> Df = \left (\begin {array}{cc}\frac {\partial f}{\partial x} & \frac {\partial f}{\partial y} \end {array}\right ). </script> Given <script type="math/tex">\vec {g}(r,\theta ) = (r\cos \theta , r\sin \theta )</script>, we can compute the derivative matrix of <script type="math/tex">\vec {g}</script>.
 <script type="math/tex; mode=display"> \begin{align*} 
-D\mathbf{g}(r,\theta) &= \left(\begin{array}{cc}
+D\vec{g}(r,\theta) &= \left(\begin{array}{cc}
 \partial g_1/\partial r & \partial g_1/\partial\theta\\
 \partial g_2\partial r & \partial g_2/\partial\theta
 \end{array}\right)\\
@@ -173,32 +178,27 @@ D\mathbf{g}(r,\theta) &= \left(\begin{array}{cc}
 \answer{\sin\theta} & \answer{r\cos\theta}
 \end{array}\right)
 \end{align*}</script>
-<!--l. 163--><p class="noindent" >Then,  from  the  chain  rule,  we  have
+<!--l. 193--><p class="noindent" >Then,  from  the  chain  rule,  we  have
 </p><script type="math/tex; mode=display"> \begin{align*} 
-D(f\circ\mathbf{g})(r,\theta) &= Df(\mathbf{g}(r,\theta))D\mathbf{g}(r,\theta)\\
-&= \left(\begin{array}{cc}\frac{\partial f}{\partial x}(\mathbf{g}(r,\theta)) & \frac{\partial f}{\partial y}(\mathbf{g}(r,\theta)) \end{array}\right)\left(\begin{array}{cc}
+D(f\circ\vec{g})(r,\theta) &= Df(\vec{g}(r,\theta))D\vec{g}(r,\theta)\\
+&= \left(\begin{array}{cc}\frac{\partial f}{\partial x}(\vec{g}(r,\theta)) & \frac{\partial f}{\partial y}(\vec{g}(r,\theta)) \end{array}\right)\left(\begin{array}{cc}
 \cos\theta & -r\sin\theta\\
 \sin\theta & r\cos\theta
 \end{array}\right)\\
-&= \left(\begin{array}{cc}\cos\theta\frac{\partial f}{\partial x}(\mathbf{g}(r,\theta)) + \sin\theta\frac{\partial f}{\partial y}(\mathbf{g}(r,\theta)) & -r\sin\theta\frac{\partial f}{\partial x}(\mathbf{g}(r,\theta)) + r\cos\theta\frac{\partial f}{\partial y}(\mathbf{g}(r,\theta))  \end{array}\right)
+&= \left(\begin{array}{cc}\cos\theta\frac{\partial f}{\partial x}(\vec{g}(r,\theta)) + \sin\theta\frac{\partial f}{\partial y}(\vec{g}(r,\theta)) & -r\sin\theta\frac{\partial f}{\partial x}(\vec{g}(r,\theta)) + r\cos\theta\frac{\partial f}{\partial y}(\vec{g}(r,\theta))  \end{array}\right)
 \end{align*}</script>
-<!--l. 172--><p class="noindent" >Since <script type="math/tex; mode=display"> D(f\circ \mathbf {g}) = \left (\begin {array}{cc}\frac {\partial (f\circ \mathbf {g})}{\partial r} & \frac {\partial (f\circ \mathbf {g})}{\partial \theta }\end {array}\right ), </script> we then have that </p><script type="math/tex; mode=display"> \begin{align*} 
-\frac{\partial(f\circ \mathbf{g})}{\partial r} &= \cos\theta\frac{\partial f}{\partial x}(\mathbf{g}(r,\theta)) + \sin\theta\frac{\partial f}{\partial y}(\mathbf{g}(r,\theta))\\
-&= \cos\theta\frac{\partial f}{\partial x}(r\cos\theta,r\sin\theta) + \sin\theta\frac{\partial f}{\partial y}(r\cos\theta,r\sin\theta),
-\end{align*}</script>
+<!--l. 202--><p class="noindent" >Since <script type="math/tex; mode=display"> D(f\circ \vec {g}) = \left (\begin {array}{cc}\frac {\partial (f\circ \vec {g})}{\partial r} & \frac {\partial (f\circ \vec {g})}{\partial \theta }\end {array}\right ), </script> we then have that </p><script type="math/tex; mode=display"> \begin{align*} 
+\frac{\partial(f\circ \vec{g})}{\partial r} &= \cos\theta\frac{\partial f}{\partial x}(\vec{g}(r,\theta)) + \sin\theta\frac{\partial f}{\partial y}(\vec{g}(r,\theta))\\
                                                                   
 
                                                                   
-<!--l. 181--><p class="noindent" >and </p><script type="math/tex; mode=display"> \begin{align*} 
-\frac{\partial(f\circ \mathbf{g})}{\partial \theta}&=-r\sin\theta\frac{\partial f}{\partial x}(\mathbf{g}(r,\theta)) + r\cos\theta\frac{\partial f}{\partial y}(\mathbf{g}(r,\theta)) \\
+&= \cos\theta\frac{\partial f}{\partial x}(r\cos\theta,r\sin\theta) + \sin\theta\frac{\partial f}{\partial y}(r\cos\theta,r\sin\theta),
+\end{align*}</script>
+<!--l. 211--><p class="noindent" >and </p><script type="math/tex; mode=display"> \begin{align*} 
+\frac{\partial(f\circ \vec{g})}{\partial \theta}&=-r\sin\theta\frac{\partial f}{\partial x}(\vec{g}(r,\theta)) + r\cos\theta\frac{\partial f}{\partial y}(\vec{g}(r,\theta)) \\
 &=-r\sin\theta\frac{\partial f}{\partial x}(r\cos\theta,r\sin\theta) + r\cos\theta\frac{\partial f}{\partial y}(r\cos\theta,r\sin\theta).
 \end{align*}</script>
-<!--l. 188--><p class="noindent" ></div>
-<a 
- id="Q1-1-7"></a>
-</p>
-<h3 class="likesectionHead"><a 
- id="x1-4000"></a>Conclusion</h3>
+<!--l. 218--><p class="noindent" ></div>
 </body> 
  
 </html>

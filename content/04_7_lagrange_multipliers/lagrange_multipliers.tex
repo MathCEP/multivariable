@@ -12,11 +12,59 @@ We've seen how we can optimize a function subject to a constraint using substitu
 
 \section*{Gradients}
 
-Suppose we wish to optimize a function $f:\mathbb{R}^n\rightarrow\mathbb{R}$ subject to some constraint $g(\vec{x}) = C$, where $C$ is a constant, and $g:\mathbb{R}^n\rightarrow\mathbb{R}$ is a function. For now, we'll focus on the case $n=2$, so we have a function $f:\mathbb{R}^2\rightarrow\mathbb{R}$ and a constraint $g(x,y) = C$. The graph of $f$ will be a surface in $\mathbb{R}^3$, and the graph of $g(x,y) = C$ is a curve in $\mathbb{R}^2$.
+Suppose we wish to optimize a function $f:\mathbb{R}^n\rightarrow\mathbb{R}$ subject to some constraint $g(\vec{x}) = C$, where $C$ is a constant, and $g:\mathbb{R}^n\rightarrow\mathbb{R}$ is a function. For now, we'll focus on the case $n=2$, so we have a function $f:\mathbb{R}^2\rightarrow\mathbb{R}$ and a constraint $g(x,y) = C$. The graph of $f$ will be a surface in $\mathbb{R}^3$, 
 
-SOME PICTURES SOMEWHERE IN HERE, REDO THIS IN TERMS OF CRITICAL POINTS?
+\begin{image}
+\includegraphics[width = \textwidth]{CalcPlot3D-surface}
+\end{image}
 
-Now, suppose that the maximum value of $f(x,y)$ subject to the constraint $g(x,y)=C$ occurs at some point $(a,b)$. Suppose we parametrize the curve $g(x,y)=C$ as $\vec{x}(t)$, with $(a,b)=\vec{x}(t_0)$. We can view $g(x,y)=C$ as a level curve of the function $g(x,y)$, and then the gradient of $g(x,y)$ will always be perpendicular to the curve $g(x,y)=C$. More precisely, for any point $(x,y) = \vec{x}(t)$ on the curve $g(x,y)=C$, we'll have $\nabla g(x,y)$ is perpendicular to $\vec{x}'(t)$. That is, $\nabla g(\vec{x}(t))\perp \vec{x}'(t)$ for all $t$.
+and the graph of $g(x,y) = C$ is a curve in $\mathbb{R}^2$.
+
+\begin{image}
+\begin{tikzpicture}
+\draw (0,0) circle (1);
+\draw[<->] (-2,0) -- (2,0);
+\node[anchor = west] at (2,0) {$x$};
+\draw[<->] (0,-2) -- (0,2);
+\node[anchor = south] at (0,2) {$y$};
+\end{tikzpicture}
+\end{image}
+
+Now, suppose that the maximum value of $f(x,y)$ subject to the constraint $g(x,y)=C$ occurs at some point $(a,b)$. Suppose we parametrize the curve $g(x,y)=C$ as $\vec{x}(t)$, with $(a,b)=\vec{x}(t_0)$. We can view $g(x,y)=C$ as a level curve of the function $g(x,y)$, and then the gradient of $g(x,y)$ will always be perpendicular to the curve $g(x,y)=C$.
+
+\begin{image}
+\begin{tikzpicture}
+\draw[<->] (-2,0) -- (2,0);
+\node[anchor = west] at (2,0) {$x$};
+\draw[<->] (0,-2) -- (0,2);
+\node[anchor = south] at (0,2) {$y$};
+
+\draw[color = purple] (0,0) circle (1);
+\node[anchor = west] at (.7,-.8) {\color{purple} $g(x,y) = C$};
+\draw[->, color = blue] (.707,.707) -- (1.2,1.2);
+\node[anchor = west] at (1.2,1.2) {\color{blue} $\nabla g$};
+\end{tikzpicture}
+\end{image}
+
+More precisely, for any point $(x,y) = \vec{x}(t)$ on the curve $g(x,y)=C$, we'll have $\nabla g(x,y)$ is perpendicular to $\vec{x}'(t)$. That is, $\nabla g(\vec{x}(t))\perp \vec{x}'(t)$ for all $t$.
+
+\begin{image}
+\begin{tikzpicture}
+\draw[<->] (-2,0) -- (2,0);
+\node[anchor = west] at (2,0) {$x$};
+\draw[<->] (0,-2) -- (0,2);
+\node[anchor = south] at (0,2) {$y$};
+
+
+\draw[color = purple] (0,0) circle (1);
+\draw[->, color = blue] (.707,.707) -- (1.2,1.2);
+\node[anchor = west] at (1.2,1.2) {\color{blue} $\nabla g(\vec{x}(t))$};
+\draw[->, color = red] (.707,.707) -- (.2,1.2);
+\node[anchor = south] at (.4,1.1) {\color{red} $\vec{x}'(t)$};
+\draw[color = purple, fill = purple] (.707,.707) circle (1pt);
+\node[anchor = north] at (.5,.707) {\color{purple} $\vec{x}(t)$};
+\end{tikzpicture}
+\end{image}
 
 Next, let's turn our attention back to $f$. If $f$ has an absolute maximum subject to $g(x,y)=C$, then $f(\vec{x}(t))$ has an absolute maximum at $t=t_0$. This means that $f(\vec{x}(t))$ has a critical point at $t=t_0$, so $\frac{d}{dt}f(\vec{x}(t))|_{t=t_0}=0$. Using the chain rule, we can rewrite this as
 \[
@@ -107,7 +155,9 @@ We see that the absolute maximum of $f$ subject to our constraint is $1$, and th
 \begin{example}
 Next, we'll attempt to optimize $f(x,y) = 12-x^2-y^2$ subject to the constraint $y^2=x+5$. Here, we'll need to be a bit more careful, since the curve defined by $y^2=x+5$ is not compact, as it is unbounded. 
 
-PICTURE
+\begin{image}
+\includegraphics[width = \textwidth]{CalcPlot3D-parabola}
+\end{image}
 
 However, Lagrange multipliers will still be helpful for finding critical points. We can rewrite our constaint as $y^2-x=5$, and take $g(x,y) = y^2-x$. So, we are optimizing $f(x,y)$ subject to the constraint $g(x,y) = 5$.
 
@@ -142,7 +192,9 @@ In this case, we can't determine the absolute maximum and absolute minimum by pl
 
 However, looking at the graph of $f$ over the curve $g(x,y) = 5$, we can see that the absolute maximum occurs at the points $\left(-\frac{1}{2}, \pm\frac{3}{\sqrt{2}}\right)$. Although there is a local minimum at $(-5,0)$, this is not an absolute minimum, as there is no absolute minimum.
 
-GRAPH
+\begin{image}
+\includegraphics[width = \textwidth]{CalcPlot3D-constraint}
+\end{image}
 
 \end{example}
 

@@ -33,49 +33,54 @@
 class="abstract" 
 >
 </div>   <div class="maketitle"></div>
-<!--l. 11--><p class="noindent" >In this activity, we explore some of the properties of differentiation. This include how
-derivatives interact with addition and scalar multiplication, as well as product and
-quotient rules for scalar valued functions.
+<!--l. 11--><p class="noindent" >In single variable calculus, you learned many differentiate rules and properties in
+order to more easily compute derivatives without the limit definition. These rules
+included the product rule, the quotient rule, the chain rule, and more, along with
+memorizing the derivatives of common functions.
+</p><!--l. 13--><p class="noindent" >Since partial derivatives obey the same rules as single variable derivatives, and the
+derivative matrix and gradient are comprised of partial derivatives, many of the rules
+listed above have analogous results in multivariable calculus. We’ll now start to
+explore some differentiation results for multivariable functions.
 <a 
  id="Q1-1-1"></a>
 </p>
 <h3 class="likesectionHead"><a 
  id="x1-1000"></a>Linearity of the derivative</h3>
-<!--l. 15--><p class="noindent" >As you may recall from single variable calculus, “the derivative of the sum is the sum
+<!--l. 17--><p class="noindent" >As you may recall from single variable calculus, “the derivative of the sum is the sum
 of the derivatives.” That is, if we have differentiable functions <script type="math/tex">f(x)</script> and <script type="math/tex">g(x)</script>, we compute the
 derivative of the sum <script type="math/tex">f(x)+g(x)</script> by taking the sum of the derivatives <script type="math/tex">f'(x)</script> and <script type="math/tex">g'(x)</script>. For example,
 </p><script type="math/tex; mode=display"> \begin{align*} 
 \frac{d}{dx}\left(\sin(x)+x^2\right) &= \frac{d}{dx}\left(\sin(x)\right) + \frac{d}{dx}\left(x^2\right)\\
 &= \cos(x)+2x.
 \end{align*}</script>
-<!--l. 21--><p class="noindent" >An analogous result holds in multivariable calculus, for the derivative matrix.
+<!--l. 23--><p class="noindent" >An analogous result holds in multivariable calculus, for the derivative matrix.
 </p>
 <div class="theorem-like problem-environment proposition" id="problem1"><a 
- id="x1-1001r1"></a>Suppose <script type="math/tex">\mathbf {f}:X\subset \mathbb {R}^n\rightarrow \mathbb {R}^m</script> and <script type="math/tex">\mathbf {g}:Y\subset \mathbb {R}^n\rightarrow \mathbb {R}^m</script> are differentiable functions on subsets <script type="math/tex">X</script> and <script type="math/tex">Y</script> of <script type="math/tex">\mathbb {R}^n</script>, respectively. Then <script type="math/tex">\mathbf {f}+\mathbf {g}</script> is
-differentiable on <script type="math/tex">X\cap Y</script>, and <script type="math/tex">D(\mathbf {f}+\mathbf {g})=D\mathbf {f}+D\mathbf {g}</script> on <script type="math/tex">X\cap Y</script>.
+ id="x1-1001r1"></a>Suppose <script type="math/tex">\vec {f}:X\subset \mathbb {R}^n\rightarrow \mathbb {R}^m</script> and <script type="math/tex">\vec {g}:Y\subset \mathbb {R}^n\rightarrow \mathbb {R}^m</script> are differentiable functions on subsets <script type="math/tex">X</script> and <script type="math/tex">Y</script> of <script type="math/tex">\mathbb {R}^n</script>, respectively. Then <script type="math/tex">\vec {f}+\vec {g}</script> is
+differentiable on <script type="math/tex">X\cap Y</script>, and <script type="math/tex">D(\vec {f}+\vec {g})=D\vec {f}+D\vec {g}</script> on <script type="math/tex">X\cap Y</script>.
 </div>
-<!--l. 27--><p class="noindent" >
-</p>
-<div class="proof">
-<!--l. 28--><p class="noindent" ><span class="head">
                                                                   
 
                                                                   
+<!--l. 29--><p class="noindent" >
+</p>
+<div class="proof">
+<!--l. 30--><p class="noindent" ><span class="head">
 </p><dl class="trivlist"><dt class="trivlist">
 Proof   </dt><dd 
-class="trivlist"></span>We will begin by showing that <script type="math/tex">D(\mathbf {f}+\mathbf {g}) = D\mathbf {f}+D\mathbf {g}</script> on <script type="math/tex">X\cap Y</script>. Since <script type="math/tex">X\cap Y</script> is contained in the domains
-of both <script type="math/tex">\mathbf {f}</script> and <script type="math/tex">\mathbf {g}</script>, <script type="math/tex">D\mathbf {f}</script> and <script type="math/tex">D\mathbf {g}</script> both exist on <script type="math/tex">X\cap Y</script>.
-<!--l. 30--><p class="noindent" >Write <script type="math/tex">\mathbf {f}(\mathbf {x}) = (f_1(\mathbf {x}),...,f_m(\mathbf {x}))</script> and <script type="math/tex">\mathbf {g}(\mathbf {x}) = (g_1(\mathbf {x}),...,g_m(\mathbf {x}))</script> in terms of their component functions. Then, we have
+class="trivlist"></span>We will begin by showing that <script type="math/tex">D(\vec {f}+\vec {g}) = D\vec {f}+D\vec {g}</script> on <script type="math/tex">X\cap Y</script>. Since <script type="math/tex">X\cap Y</script> is contained in the domains
+of both <script type="math/tex">\vec {f}</script> and <script type="math/tex">\vec {g}</script>, <script type="math/tex">D\vec {f}</script> and <script type="math/tex">D\vec {g}</script> both exist on <script type="math/tex">X\cap Y</script>.
+<!--l. 32--><p class="noindent" >Write <script type="math/tex">\vec {f}(\vec {x}) = (f_1(\vec {x}),...,f_m(\vec {x}))</script> and <script type="math/tex">\vec {g}(\vec {x}) = (g_1(\vec {x}),...,g_m(\vec {x}))</script> in terms of their component functions. Then, we have
 </p><script type="math/tex; mode=display"> \begin{align*} 
-(\mathbf{f}+\mathbf{g})(\mathbf{x}) &= \mathbf{f}(\mathbf{x})+\mathbf{g}(\mathbf{x})\\
-&= (f_1(\mathbf{x}),...,f_m(\mathbf{x})) + (g_1(\mathbf{x}),...,g_m(\mathbf{x}))\\
-&= (f_1(\mathbf{x})+g_1(\mathbf{x}),...,f_m(\mathbf{x})+g_m(\mathbf{x}))\\
-&= ((f_1+g_1)(\mathbf{x}),...,(f_m+g_m)(\mathbf{x})),
+(\vec{f}+\vec{g})(\vec{x}) &= \vec{f}(\vec{x})+\vec{g}(\vec{x})\\
+&= (f_1(\vec{x}),...,f_m(\vec{x})) + (g_1(\vec{x}),...,g_m(\vec{x}))\\
+&= (f_1(\vec{x})+g_1(\vec{x}),...,f_m(\vec{x})+g_m(\vec{x}))\\
+&= ((f_1+g_1)(\vec{x}),...,(f_m+g_m)(\vec{x})),
 \end{align*}</script>
-<!--l. 37--><p class="noindent" >giving us the component functions of <script type="math/tex">\mathbf {f}+\mathbf {g}</script>.
-</p><!--l. 39--><p class="noindent" >Using the component functions found above, we take the derivative matrix of <script type="math/tex">\mathbf {f}+\mathbf {g}</script>, using the
+<!--l. 39--><p class="noindent" >giving us the component functions of <script type="math/tex">\vec {f}+\vec {g}</script>.
+</p><!--l. 41--><p class="noindent" >Using the component functions found above, we take the derivative matrix of <script type="math/tex">\vec {f}+\vec {g}</script>, using the
 linearity of partial derivatives. </p><script type="math/tex; mode=display"> \begin{align*} 
-D(\mathbf{f}+\mathbf{g}) &=\left(\begin{array}{cccc}
+D(\vec{f}+\vec{g}) &=\left(\begin{array}{cccc}
 \frac{\partial (f_1+g_1)}{\partial x_1} & \frac{\partial (f_1+g_1)}{\partial x_2} & \cdots &\frac{\partial (f_1+g_1)}{\partial x_n}\\
  \frac{\partial (f_2+g_2)}{\partial x_1} & \frac{\partial (f_2+g_2)}{\partial x_2} & \cdots &\frac{\partial (f_2+g_2)}{\partial x_n}\\
  \vdots & \vdots && \vdots\\
@@ -93,70 +98,70 @@ D(\mathbf{f}+\mathbf{g}) &=\left(\begin{array}{cccc}
  \vdots & \vdots && \vdots\\
 \frac{\partial f_m}{\partial x_1} & \frac{\partial f_m}{\partial x_2} & \cdots &\frac{\partial f_m}{\partial x_n}\\
 \end{array}\right)
+                                                                  
+
+                                                                  
 +\left(\begin{array}{cccc}
 \frac{\partial g_1}{\partial x_1} & \frac{\partial g_1}{\partial x_2} & \cdots &\frac{\partial g_1}{\partial x_n}\\
 \frac{\partial g_2}{\partial x_1} & \frac{\partial g_2}{\partial x_2} & \cdots &\frac{\partial g_2}{\partial x_n}\\
  \vdots & \vdots && \vdots\\
-                                                                  
-
-                                                                  
 \frac{\partial g_m}{\partial x_1} & \frac{\partial g_m}{\partial x_2} & \cdots &\frac{\partial g_m}{\partial x_n}\\
 \end{array}\right)\\
-&= D\mathbf{f}+D\mathbf{g}.
+&= D\vec{f}+D\vec{g}.
 \end{align*}</script>
-<!--l. 68--><p class="noindent" >Thus, we have <script type="math/tex">D(\mathbf {f}+\mathbf {g}) = D\mathbf {f}+D\mathbf {g}</script> on <script type="math/tex">X\cap Y</script>.
-</p><!--l. 70--><p class="noindent" >Next, we need to show that <script type="math/tex">\mathbf {f}+\mathbf {g}</script> is differentiable on <script type="math/tex">X\cap Y</script>. In order to show this, we will show
-that the following limit evaluates to <script type="math/tex">0</script>, for <script type="math/tex">\mathbf {a}\in X\cap Y</script>. This is done by separating the <script type="math/tex">\mathbf {f}</script> and <script type="math/tex">\mathbf {g}</script> terms,
-using the triangle inequality, and using the fact that <script type="math/tex">\mathbf {f}</script> and <script type="math/tex">\mathbf {g}</script> are both differentiable on
+<!--l. 70--><p class="noindent" >Thus, we have <script type="math/tex">D(\vec {f}+\vec {g}) = D\vec {f}+D\vec {g}</script> on <script type="math/tex">X\cap Y</script>.
+</p><!--l. 72--><p class="noindent" >Next, we need to show that <script type="math/tex">\vec {f}+\vec {g}</script> is differentiable on <script type="math/tex">X\cap Y</script>. In order to show this, we will show
+that the following limit evaluates to <script type="math/tex">0</script>, for <script type="math/tex">\vec {a}\in X\cap Y</script>. This is done by separating the <script type="math/tex">\vec {f}</script> and <script type="math/tex">\vec {g}</script> terms,
+using the triangle inequality, and using the fact that <script type="math/tex">\vec {f}</script> and <script type="math/tex">\vec {g}</script> are both differentiable on
 <script type="math/tex">X\cap Y</script>.
 </p>
 <script type="math/tex; mode=display"> \begin{align*} 
-\lim_{\mathbf{x}\rightarrow\mathbf{a}}&\frac{\|(\mathbf{f}+\mathbf{g})(\mathbf{x}) - ((\mathbf{f}+\mathbf{g})(\mathbf{a})+D(\mathbf{f}+\mathbf{g})(\mathbf{a})(\mathbf{x}-\mathbf{a})\|}{\|\mathbf{x}-\mathbf{a}\|}\\
-&= \lim_{\mathbf{x}\rightarrow\mathbf{a}}\frac{\|\mathbf{f}(\mathbf{x})+\mathbf{g}(\mathbf{x}) - \mathbf{f}(\mathbf{a})-\mathbf{g}(\mathbf{a})-(D\mathbf{f}(\mathbf{a})+D\mathbf{g}(\mathbf{a}))(\mathbf{x}-\mathbf{a})\|}{\|\mathbf{x}-\mathbf{a}\|}\\
-&= \lim_{\mathbf{x}\rightarrow\mathbf{a}}\frac{\|\mathbf{f}(\mathbf{x})+\mathbf{g}(\mathbf{x}) - \mathbf{f}(\mathbf{a})-\mathbf{g}(\mathbf{a})-D\mathbf{f}(\mathbf{a})(\mathbf{x}-\mathbf{a})-D\mathbf{g}(\mathbf{a})(\mathbf{x}-\mathbf{a})\|}{\|\mathbf{x}-\mathbf{a}\|}\\
-&= \lim_{\mathbf{x}\rightarrow\mathbf{a}}\frac{\|\mathbf{f}(\mathbf{x}) - \mathbf{f}(\mathbf{a})-D\mathbf{f}(\mathbf{a})(\mathbf{x}-\mathbf{a})+\mathbf{g}(\mathbf{x}) - \mathbf{g}(\mathbf{a})-D\mathbf{g}(\mathbf{a})(\mathbf{x}-\mathbf{a})\|}{\|\mathbf{x}-\mathbf{a}\|}\\
-&\leq \lim_{\mathbf{x}\rightarrow\mathbf{a}}\frac{\|\mathbf{f}(\mathbf{x}) - \mathbf{f}(\mathbf{a})-D\mathbf{f}(\mathbf{a})(\mathbf{x}-\mathbf{a})\|+\|\mathbf{g}(\mathbf{x}) - \mathbf{g}(\mathbf{a})-D\mathbf{g}(\mathbf{a})(\mathbf{x}-\mathbf{a})\|}{\|\mathbf{x}-\mathbf{a}\|}\\
-&\leq \lim_{\mathbf{x}\rightarrow\mathbf{a}}\frac{\|\mathbf{f}(\mathbf{x}) - \mathbf{f}(\mathbf{a})-D\mathbf{f}(\mathbf{a})(\mathbf{x}-\mathbf{a})\|}{\|\mathbf{x}-\mathbf{a}\|}+\lim_{\mathbf{x}\rightarrow\mathbf{a}}\frac{\|\mathbf{g}(\mathbf{x}) - \mathbf{g}(\mathbf{a})-D\mathbf{g}(\mathbf{a})(\mathbf{x}-\mathbf{a})\|}{\|\mathbf{x}-\mathbf{a}\|}\\
-&= \lim_{\mathbf{x}\rightarrow\mathbf{a}}\frac{\|\mathbf{f}(\mathbf{x}) - (\mathbf{f}(\mathbf{a})+D\mathbf{f}(\mathbf{a})(\mathbf{x}-\mathbf{a}))\|}{\|\mathbf{x}-\mathbf{a}\|}+\lim_{\mathbf{x}\rightarrow\mathbf{a}}\frac{\|\mathbf{g}(\mathbf{x}) - (\mathbf{g}(\mathbf{a})+D\mathbf{g}(\mathbf{a})(\mathbf{x}-\mathbf{a}))\|}{\|\mathbf{x}-\mathbf{a}\|}\\
+\lim_{\vec{x}\rightarrow\vec{a}}&\frac{\|(\vec{f}+\vec{g})(\vec{x}) - ((\vec{f}+\vec{g})(\vec{a})+D(\vec{f}+\vec{g})(\vec{a})(\vec{x}-\vec{a})\|}{\|\vec{x}-\vec{a}\|}\\
+&= \lim_{\vec{x}\rightarrow\vec{a}}\frac{\|\vec{f}(\vec{x})+\vec{g}(\vec{x}) - \vec{f}(\vec{a})-\vec{g}(\vec{a})-(D\vec{f}(\vec{a})+D\vec{g}(\vec{a}))(\vec{x}-\vec{a})\|}{\|\vec{x}-\vec{a}\|}\\
+&= \lim_{\vec{x}\rightarrow\vec{a}}\frac{\|\vec{f}(\vec{x})+\vec{g}(\vec{x}) - \vec{f}(\vec{a})-\vec{g}(\vec{a})-D\vec{f}(\vec{a})(\vec{x}-\vec{a})-D\vec{g}(\vec{a})(\vec{x}-\vec{a})\|}{\|\vec{x}-\vec{a}\|}\\
+&= \lim_{\vec{x}\rightarrow\vec{a}}\frac{\|\vec{f}(\vec{x}) - \vec{f}(\vec{a})-D\vec{f}(\vec{a})(\vec{x}-\vec{a})+\vec{g}(\vec{x}) - \vec{g}(\vec{a})-D\vec{g}(\vec{a})(\vec{x}-\vec{a})\|}{\|\vec{x}-\vec{a}\|}\\
+&\leq \lim_{\vec{x}\rightarrow\vec{a}}\frac{\|\vec{f}(\vec{x}) - \vec{f}(\vec{a})-D\vec{f}(\vec{a})(\vec{x}-\vec{a})\|+\|\vec{g}(\vec{x}) - \vec{g}(\vec{a})-D\vec{g}(\vec{a})(\vec{x}-\vec{a})\|}{\|\vec{x}-\vec{a}\|}\\
+&\leq \lim_{\vec{x}\rightarrow\vec{a}}\frac{\|\vec{f}(\vec{x}) - \vec{f}(\vec{a})-D\vec{f}(\vec{a})(\vec{x}-\vec{a})\|}{\|\vec{x}-\vec{a}\|}+\lim_{\vec{x}\rightarrow\vec{a}}\frac{\|\vec{g}(\vec{x}) - \vec{g}(\vec{a})-D\vec{g}(\vec{a})(\vec{x}-\vec{a})\|}{\|\vec{x}-\vec{a}\|}\\
+&= \lim_{\vec{x}\rightarrow\vec{a}}\frac{\|\vec{f}(\vec{x}) - (\vec{f}(\vec{a})+D\vec{f}(\vec{a})(\vec{x}-\vec{a}))\|}{\|\vec{x}-\vec{a}\|}+\lim_{\vec{x}\rightarrow\vec{a}}\frac{\|\vec{g}(\vec{x}) - (\vec{g}(\vec{a})+D\vec{g}(\vec{a})(\vec{x}-\vec{a}))\|}{\|\vec{x}-\vec{a}\|}\\
 &= 0 + 0\\
 &= 0
 \end{align*}</script>
                                                                   <script type="math/tex">\blacksquare </script></dd></dl>
 </div>
-<!--l. 86--><p class="noindent" >You may also recall the constant multiple rule from single variable calculus. For
+<!--l. 88--><p class="noindent" >You may also recall the constant multiple rule from single variable calculus. For
 example, </p><script type="math/tex; mode=display"> \begin{align*} 
 \frac{d}{dx}(4x^2) &= 4\left(\frac{d}{dx}(x^2)\right)\\
 &= 4(2x)\\
 &=8x.
 \end{align*}</script>
-<!--l. 93--><p class="noindent" >We have an analogous result in multivariable calculus.
-</p>
-<div class="theorem-like problem-environment proposition" id="problem2"><a 
- id="x1-1002r2"></a>Suppose <script type="math/tex">\mathbf {f}:X\subset \mathbb {R}^n\rightarrow \mathbb {R}^m</script>is a differentiable function on a subset <script type="math/tex">X</script> of <script type="math/tex">\mathbb {R}^n</script>, and let <script type="math/tex">k</script> be any constant. Then <script type="math/tex">k\mathbf {f}</script>
-is also differentiable on <script type="math/tex">X</script>, and <script type="math/tex">D(k\mathbf {f})=kD\mathbf {f}</script> on <script type="math/tex">X</script>.
-</div>
                                                                   
 
                                                                   
-<!--l. 99--><p class="noindent" >The proof of this proposition is somewhat similar to the previous theorem, and it is
+<!--l. 95--><p class="noindent" >We have an analogous result in multivariable calculus.
+</p>
+<div class="theorem-like problem-environment proposition" id="problem2"><a 
+ id="x1-1002r2"></a>Suppose <script type="math/tex">\vec {f}:X\subset \mathbb {R}^n\rightarrow \mathbb {R}^m</script>is a differentiable function on a subset <script type="math/tex">X</script> of <script type="math/tex">\mathbb {R}^n</script>, and let <script type="math/tex">k</script> be any constant. Then <script type="math/tex">k\vec {f}</script>
+is also differentiable on <script type="math/tex">X</script>, and <script type="math/tex">D(k\vec {f})=kD\vec {f}</script> on <script type="math/tex">X</script>.
+</div>
+<!--l. 101--><p class="noindent" >The proof of this proposition is somewhat similar to the previous theorem, and it is
 left as an exercise.
-</p><!--l. 101--><p class="noindent" >Although these are important results, they actually aren’t particularly useful for
+</p><!--l. 103--><p class="noindent" >Although these are important results, they actually aren’t particularly useful for
 computing derivative matrices. In practice, you’d compute the derivative matrix of a
 sum of functions by first adding the components, then differentiating. We include an
 example to demonstrate this.
 </p>
 <div class="theorem-like problem-environment example" id="problem3"><a 
- id="x1-1003r3"></a>Consider the functions <script type="math/tex">\mathbf {f},\mathbf {g}:\mathbb {R}^2\rightarrow \mathbb {R}^2</script> given by <script type="math/tex">\mathbf {f}(x,y) = (x^2, xy)</script> and <script type="math/tex">\mathbf {g}(x,y) = (xy^2, y)</script>.
-<!--l. 106--><p class="noindent" >We will compute the derivative matrix <script type="math/tex">D(\mathbf {f}+\mathbf {g})</script> in two ways: first directly, and then by using
+ id="x1-1003r3"></a>Consider the functions <script type="math/tex">\vec {f},\vec {g}:\mathbb {R}^2\rightarrow \mathbb {R}^2</script> given by <script type="math/tex">\vec {f}(x,y) = (x^2, xy)</script> and <script type="math/tex">\vec {g}(x,y) = (xy^2, y)</script>.
+<!--l. 108--><p class="noindent" >We will compute the derivative matrix <script type="math/tex">D(\vec {f}+\vec {g})</script> in two ways: first directly, and then by using
 the sum rule proved above.
-</p><!--l. 108--><p class="noindent" >The function <script type="math/tex">\mathbf {f}+\mathbf {g}</script> is given by <script type="math/tex; mode=display"> (\mathbf {f}+\mathbf {g})(x,y) = \answer {(x^2+xy^2, xy+y)}. </script> We can then compute the derivative matrix <script type="math/tex">D(\mathbf {f}+mathbf{g})</script> directly as
-<script type="math/tex; mode=display"> D(\mathbf {f}+\mathbf {g})=\left (\begin {array}{cc} \answer {2x+y^2} & \answer {2xy}\\\answer {y} & \answer {x+1}\end {array}\right ). </script>
-</p><!--l. 117--><p class="noindent" >We will now use our multivariable sum rule. We have <script type="math/tex; mode=display"> D\mathbf {f}(x,y) = \left (\begin {array}{cc} \answer {2x} & \answer {0}\\\answer {y} & \answer {x}\end {array}\right ), </script> and <script type="math/tex; mode=display"> D\mathbf {g}(x,y) = \left (\begin {array}{cc} \answer {y^2} & \answer {2xy}\\\answer {0} & \answer {1}\end {array}\right ). </script> Adding these matrices, we then
-have that </p><script type="math/tex; mode=display"> \begin{align*} 
-D(\mathbf{f}+\mathbf{g})(x,y) &= D\mathbf{f}(x,y)+D\mathbf{g}(x,y)\\
+</p><!--l. 110--><p class="noindent" >The function <script type="math/tex">\vec {f}+\vec {g}</script> is given by <script type="math/tex; mode=display"> (\vec {f}+\vec {g})(x,y) = \answer {(x^2+xy^2, xy+y)}. </script> We can then compute the derivative matrix <script type="math/tex">D(\vec {f}+\vec {g})</script> directly as
+<script type="math/tex; mode=display"> D(\vec {f}+\vec {g})=\left (\begin {array}{cc} \answer {2x+y^2} & \answer {2xy}\\\answer {y} & \answer {x+1}\end {array}\right ). </script>
+</p><!--l. 119--><p class="noindent" >We will now use our multivariable sum rule. We have <script type="math/tex; mode=display"> D\vec {f}(x,y) = \left (\begin {array}{cc} \answer {2x} & \answer {0}\\\answer {y} & \answer {x}\end {array}\right ), </script> and <script type="math/tex; mode=display"> D\vec {g}(x,y) = \left (\begin {array}{cc} \answer {y^2} & \answer {2xy}\\\answer {0} & \answer {1}\end {array}\right ). </script> Adding these matrices, we
+then have that </p><script type="math/tex; mode=display"> \begin{align*} 
+D(\vec{f}+\vec{g})(x,y) &= D\vec{f}(x,y)+D\vec{g}(x,y)\\
 &= \left(\begin{array}{cc} \answer{2x+y^2} & \answer{2xy}\\\answer{y} & \answer{x+1}\end{array}\right).
 \end{align*}</script>
-<!--l. 132--><p class="noindent" >We get the correct answer using either method, but using the sum rule doesn’t seem
+<!--l. 134--><p class="noindent" >We get the correct answer using either method, but using the sum rule doesn’t seem
 to provide much (if any) of a computational advantage over computing the derivative
 matrix directly. Nonetheless, it is mathematically important that the derivative seems
 to “distribute” over addition.
@@ -166,33 +171,33 @@ to “distribute” over addition.
 </p>
 <h3 class="likesectionHead"><a 
  id="x1-2000"></a>Product and Quotient laws</h3>
-<!--l. 137--><p class="noindent" >We will now try to find multi-variable analogs to the product and quotient rules from
+<!--l. 139--><p class="noindent" >We will now try to find multi-variable analogs to the product and quotient rules from
 single variable calculus. Let’s start by considering when these rules might make
 sense.
-</p><!--l. 139--><p class="noindent" >Suppose we have functions <script type="math/tex">\mathbf {f}(x,y) = (x^2,xy)</script> and <script type="math/tex">\mathbf {g}(x,y) = (xy^2, y)</script>. If we wanted to define the product of these
-functions, what would that mean? The outputs of <script type="math/tex">\mathbf {f}</script> and <script type="math/tex">\mathbf {g}</script> are vectors, so we’d be trying
-to multiply two vectors - but there isn’t really a clear multiplication on vectors,! We
+</p><!--l. 141--><p class="noindent" >Suppose we have functions <script type="math/tex">\vec {f}(x,y) = (x^2,xy)</script> and <script type="math/tex">\vec {g}(x,y) = (xy^2, y)</script>. If we wanted to define the product of these
+functions, what would that mean? The outputs of <script type="math/tex">\vec {f}</script> and <script type="math/tex">\vec {g}</script> are vectors, so we’d be trying
+to multiply two vectors - but there isn’t really a clear multiplication on vectors! We
 could try multiplying component-wise, taking the dot product, or taking the cross
 product, and in different settings, these all might be reasonable things to do. We
 could work on finding product rules for all of the different ways we could “multiply”
+                                                                  
+
+                                                                  
 two vectors (these can be found in the exercises), but we’ll save some time, and focus
 on a case where we do have one clear choice for multiplication: <em>scalar-valued
 functions</em>.
 </p>
 <div class="theorem-like problem-environment proposition" id="problem4"><a 
- id="x1-2001r4"></a>Suppose <script type="math/tex">\mathbf {f}:X\subset \mathbb {R}^n\rightarrow \mathbb {R}</script> and <script type="math/tex">\mathbf {g}:Y\subset \mathbb {R}^n\rightarrow \mathbb {R}</script> are differentiable scalar-valued functions on subsets <script type="math/tex">X</script> and <script type="math/tex">Y</script> of <script type="math/tex">\mathbb {R}^n</script>,
-respectively. Then <script type="math/tex">fg</script> is differentiable on <script type="math/tex">X\cap Y</script>, and <script type="math/tex; mode=display">D(fg)(\mathbf {a})=g(\mathbf {a})Df(\mathbf {a})+f(\mathbf {a})Dg(\mathbf {a})</script> for <script type="math/tex">\mathbf {a}</script> in <script type="math/tex">X\cap Y</script>.
-                                                                  
-
-                                                                  
+ id="x1-2001r4"></a>Suppose <script type="math/tex">\vec {f}:X\subset \mathbb {R}^n\rightarrow \mathbb {R}</script> and <script type="math/tex">\vec {g}:Y\subset \mathbb {R}^n\rightarrow \mathbb {R}</script> are differentiable scalar-valued functions on subsets <script type="math/tex">X</script> and <script type="math/tex">Y</script> of <script type="math/tex">\mathbb {R}^n</script>,
+respectively. Then <script type="math/tex">fg</script> is differentiable on <script type="math/tex">X\cap Y</script>, and <script type="math/tex; mode=display">D(fg)(\vec {a})=g(\vec {a})Df(\vec {a})+f(\vec {a})Dg(\vec {a})</script> for <script type="math/tex">\vec {a}</script> in <script type="math/tex">X\cap Y</script>.
 </div>
-<!--l. 145--><p class="noindent" >Similarly, we have a multi-variable quotient rule for scalar valued functions.
+<!--l. 147--><p class="noindent" >Similarly, we have a multivariable quotient rule for scalar valued functions.
 </p>
 <div class="theorem-like problem-environment proposition" id="problem5"><a 
- id="x1-2002r5"></a>Suppose <script type="math/tex">\mathbf {f}:X\subset \mathbb {R}^n\rightarrow \mathbb {R}</script> and <script type="math/tex">\mathbf {g}:Y\subset \mathbb {R}^n\rightarrow \mathbb {R}</script> are differentiable scalar-valued functions on subsets <script type="math/tex">X</script> and <script type="math/tex">Y</script> of <script type="math/tex">\mathbb {R}^n</script>,
-respectively. Then <script type="math/tex">\frac {f}{g}</script> is differentiable on <script type="math/tex">X\cap Y</script>, and <script type="math/tex; mode=display">D\left (\frac {f}{g}\right )(\mathbf {a})=\frac {g(\mathbf {a})Df(\mathbf {a})-f(\mathbf {a})Dg(\mathbf {a})}{(g(\mathbf {a}))^2}</script> for <script type="math/tex">\mathbf {a}</script> in <script type="math/tex">X\cap Y</script>.
+ id="x1-2002r5"></a>Suppose <script type="math/tex">\vec {f}:X\subset \mathbb {R}^n\rightarrow \mathbb {R}</script> and <script type="math/tex">\vec {g}:Y\subset \mathbb {R}^n\rightarrow \mathbb {R}</script> are differentiable scalar-valued functions on subsets <script type="math/tex">X</script> and <script type="math/tex">Y</script> of <script type="math/tex">\mathbb {R}^n</script>,
+respectively. Then <script type="math/tex">\frac {f}{g}</script> is differentiable on <script type="math/tex">X\cap Y</script>, and <script type="math/tex; mode=display">D\left (\frac {f}{g}\right )(\vec {a})=\frac {g(\vec {a})Df(\vec {a})-f(\vec {a})Dg(\vec {a})}{(g(\vec {a}))^2}</script> for <script type="math/tex">\vec {a}</script> in <script type="math/tex">X\cap Y</script>.
 </div>
-<!--l. 151--><p class="noindent" >We’ll leave the proofs of these results as exercises, as they are similar to the single
+<!--l. 153--><p class="noindent" >We’ll leave the proofs of these results as exercises, as they are similar to the single
 variable proofs.
 </body> 
  

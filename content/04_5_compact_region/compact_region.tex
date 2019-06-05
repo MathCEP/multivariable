@@ -48,15 +48,40 @@ A subset $X\subset\mathbb{R}^n$ is \emph{compact} if it is both closed and bound
 \begin{example}
 The set $\{(x,y)\;:\;x^2+y^2<1\}\subset\mathbb{R}^2$ is bounded, but not closed, since it does not contain its boundary. Hence it is not compact.
 
-PICTURE
+\begin{image}
+\begin{tikzpicture}
+\draw[dashed, fill = gray] (0,0) circle (1);
+\draw[<->] (-2,0) -- (2,0);
+\node[anchor = west] at (2,0) {$x$};
+\draw[<->] (0,-2) -- (0,2);
+\node[anchor = south] at (0,2) {$y$};
+\end{tikzpicture}
+\end{image}
 
 The set $\{(x,y)\;:\;x^2+y^2\leq 1\}\subset\mathbb{R}^2$ is both closed and bounded, hence compact.
 
-PICTURE
+\begin{image}
+\begin{tikzpicture}
+\draw[fill = gray] (0,0) circle (1);
+\draw[<->] (-2,0) -- (2,0);
+\node[anchor = west] at (2,0) {$x$};
+\draw[<->] (0,-2) -- (0,2);
+\node[anchor = south] at (0,2) {$y$};
+\end{tikzpicture}
+\end{image}
 
 The set $\{(x,y)\;:\;x^2+y^2\geq 1\}\subset\mathbb{R}^2$ is  closed but not bounded. Hence it is not compact.
 
-PICTURE
+\begin{image}
+\begin{tikzpicture}
+\draw[color = gray, fill = gray] (-2,-2) -- (-2,2) -- (2,2) -- (2,-2);
+\draw[fill = white] (0,0) circle (1);
+\draw[<->] (-2,0) -- (2,0);
+\node[anchor = west] at (2,0) {$x$};
+\draw[<->] (0,-2) -- (0,2);
+\node[anchor = south] at (0,2) {$y$};
+\end{tikzpicture}
+\end{image}
 
 \end{example}
 
@@ -120,7 +145,17 @@ Because of this theorem, we can follow the steps below to optimize a continuous 
 \begin{example}
 We'll find the absolute maximum and minimum values of $f(x,y)= x^2-xy+y^2$ on $D=\{(x,y)\;:\;x^2+y^2\leq 1\}\subset \mathbb{R}^2$.
 
-GRAPH D
+\begin{image}
+\begin{tikzpicture}
+\draw[fill = gray] (0,0) circle (1);
+\draw[<->] (-2,0) -- (2,0);
+\node[anchor = west] at (2,0) {$x$};
+\draw[<->] (0,-2) -- (0,2);
+\node[anchor = south] at (0,2) {$y$};
+
+\node[anchor = south] at (.75,.75) {$D$};
+\end{tikzpicture}
+\end{image}
 
 First, note that $f$ is continuous, and $D$ is a compact region, so $f$ has an absolute maximum and an absolute minimum over $D$, and each occurs either at a critical point or on the boundary of $D$.
 
@@ -164,7 +199,9 @@ Comparing all of these values, we see that the absolute maximum of $g$ is $\frac
 
 Now, considering the values of $f$ at the critical points and on the boundary of $X$, we see that the absolute maximum of $f$ is $\frac{3}{2}$ and this occurs at $\left(\frac{-\sqrt{2}}{2},\frac{\sqrt{2}}{2}\right)$ and $\left(\frac{\sqrt{2}}{2},\frac{-\sqrt{2}}{2}\right)$. The absolute minimum of $f$ is $0$ and this occurs at $(0,0)$.
 
-GRAPH f OVER D
+\begin{image}
+\includegraphics[width=\textwidth]{CalcPlot3D-abs_extrema}
+\end{image}
 \end{example}
 
 
