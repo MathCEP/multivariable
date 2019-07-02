@@ -6,11 +6,13 @@
 <meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
 <!-- charset=utf-8,-css,html,htex4ht,xhtml --> 
 <meta name="src" content="velocity_and_speed.tex" /> 
-<meta name="author" content="" /> 
+<meta name="author" content="Melissa
+Lynn" /> 
 <meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
 <meta name="ximera" content="version 0.0.1" /> 
 <link href="https://ximera.osu.edu/public/stylesheets/standalone.css" rel="stylesheet" media="screen"/> 
 <script type="text/javascript" async src="https://ximera.osu.edu/public/javascripts/standalone.min.js"></script> 
+<meta name="learning-outcome" content="Understand the definitions and geometric significance of velocity, speed, and acceleration of a parametric curves, and be able to compute them."/> 
 </head><body> 
 <div class="preamble"><script type="math/tex">\newenvironment {prompt}{}{}
 \newcommand {\DeclareMathOperator }[2]{\@OldDeclareMathOperator {##1}{##2}\immediate \write \myfile {\unexpanded {\DeclareMathOperator }{\unexpanded {##1}}{\unexpanded {##2}}}}
@@ -33,14 +35,14 @@
 class="abstract" 
 >
 </div>   <div class="maketitle"></div>
-<!--l. 12--><p class="noindent" >Consider a path <script type="math/tex">\vec {x}:I\subset \mathbb {R}\rightarrow \mathbb {R}^n</script> which parametrizes a curve in <script type="math/tex">\mathbb {R}^n</script>. We often think about this as a
+<!--l. 15--><p class="noindent" >Consider a path <script type="math/tex">\vec {x}:I\subset \mathbb {R}\rightarrow \mathbb {R}^n</script> which parametrizes a curve in <script type="math/tex">\mathbb {R}^n</script>. We often think about this as a
 particle tracing out the curve as time, given by <script type="math/tex">t</script>, passes. We would like to be able to
 understand and describe the motion of the particle on the curve, and find its velocity
 and speed, in particular. In order to do this, we need to figure out how to
 differentiate a path.
-</p><!--l. 14--><p class="noindent" >Before we define the derivative of a path, we quickly review the single variable
+</p><!--l. 17--><p class="noindent" >Before we define the derivative of a path, we quickly review the single variable
 definition of a derivative, given in Calculus I.
-</p><!--l. 16--><p class="noindent" >Given a single variable function <script type="math/tex">f(x)</script>, we found the instantaneous rate of change at <script type="math/tex">x</script> of
+</p><!--l. 19--><p class="noindent" >Given a single variable function <script type="math/tex">f(x)</script>, we found the instantaneous rate of change at <script type="math/tex">x</script> of
 this function by taking the derivative of <script type="math/tex">f</script> at <script type="math/tex">x</script>. The derivative also told us the slope of
 the tangent line at <script type="math/tex">x</script>. In order to compute this, we imagined finding the slope of secant
 lines getting closer and closer to the point. Taking a limit, we obtained the slope of
@@ -49,25 +51,25 @@ the tangent line.
 <div class="image-environment" role="img" aria-labelledby="image-alt-1"><img 
 src="./graphics/CalcPlot3D-sv_deriv.png" alt="PIC"  
  /> </div>
-<!--l. 22--><p class="noindent" >The slope of the secant line through the points <script type="math/tex">(x,f(x))</script> and <script type="math/tex">(x+h,f(x+h))</script> is given by <script type="math/tex">\dfrac {f(x+h)-f(x)}{h}</script>, so we defined the
+<!--l. 25--><p class="noindent" >The slope of the secant line through the points <script type="math/tex">(x,f(x))</script> and <script type="math/tex">(x+h,f(x+h))</script> is given by <script type="math/tex">\dfrac {f(x+h)-f(x)}{h}</script>, so we defined the
 derivative of <script type="math/tex">f</script> at <script type="math/tex">x</script> to be <script type="math/tex; mode=display"> f'(x) = \lim _{h\rightarrow 0}\frac {f(x+h)-f(x)}{h}. </script>
 <a 
  id="Q1-1-1"></a>
 </p>
 <h3 class="likesectionHead"><a 
  id="x1-1000"></a>Derivatives</h3>
-<!--l. 29--><p class="noindent" >We use the same idea for a path <script type="math/tex">\vec {x}</script> in <script type="math/tex">\mathbb {R}^n</script>. We consider secant vectors from <script type="math/tex">\vec {x}(t)</script> to <script type="math/tex">\vec {x}(t+h)</script> as
+<!--l. 32--><p class="noindent" >We use the same idea for a path <script type="math/tex">\vec {x}</script> in <script type="math/tex">\mathbb {R}^n</script>. We consider secant vectors from <script type="math/tex">\vec {x}(t)</script> to <script type="math/tex">\vec {x}(t+h)</script> as
 <script type="math/tex">h\rightarrow 0</script>.
-</p>
                                                                   
 
                                                                   
+</p>
 <div class="image-environment" role="img" aria-labelledby="image-alt-2"><img 
 src="./graphics/CalcPlot3D-curve_deriv.png" alt="PIC"  
  /> </div>
-<!--l. 35--><p class="noindent" >To define the derivative, we will scale these vectors to account for the change in the
+<!--l. 38--><p class="noindent" >To define the derivative, we will scale these vectors to account for the change in the
 parameter and then take a limit.
-</p><!--l. 37--><p class="noindent" >Later, we will see that limits for multivariable functions are difficult to define and
+</p><!--l. 40--><p class="noindent" >Later, we will see that limits for multivariable functions are difficult to define and
 compute in general. Fortunately, for paths, limits are fairly simple: we just take the
 limit of the components. We now define limits along paths, along with continuous
 paths.
@@ -75,47 +77,47 @@ paths.
 <div class="theorem-like problem-environment definition" id="problem1"><a 
  id="x1-1001r1"></a>Let <script type="math/tex">\vec {x}:I\rightarrow \mathbb {R}^n</script> be a path in <script type="math/tex">\mathbb {R}^n</script>, defined on an interval <script type="math/tex">[a,b]</script>. Let <script type="math/tex">x_1,...,x_n</script> be the component functions of <script type="math/tex">\vec {x}</script>, so
 that <script type="math/tex">\vec {x}(t)=(x_1(t),...,x_n(t))</script>. For <script type="math/tex">t_0\in (a,b)</script>, we define the <em>limit</em> of <script type="math/tex">\vec {x}</script> as <script type="math/tex">t</script> approaches <script type="math/tex">t_0</script> to be <script type="math/tex; mode=display"> \lim _{t\rightarrow t_0}\vec {x}(t) = \left (\lim _{t\rightarrow t_0}x_1(t),...,\lim _{t\rightarrow t_0}x_n(t)\right ). </script>
-<!--l. 45--><p class="noindent" >A path <script type="math/tex">\vec {x}:I\rightarrow \mathbb {R}^n</script> is <em>continuous</em> at <script type="math/tex">t_0\in I</script> if <script type="math/tex">\lim _{t\rightarrow t_0}\vec {x}(t) = \vec {x}(t_0)</script>.
+<!--l. 48--><p class="noindent" >A path <script type="math/tex">\vec {x}:I\rightarrow \mathbb {R}^n</script> is <em>continuous</em> at <script type="math/tex">t_0\in I</script> if <script type="math/tex">\lim _{t\rightarrow t_0}\vec {x}(t) = \vec {x}(t_0)</script>.
 </div>
-</p><!--l. 48--><p class="noindent" >Now that we’ve defined limits of paths, we are ready to define the derivative of a
+</p><!--l. 51--><p class="noindent" >Now that we’ve defined limits of paths, we are ready to define the derivative of a
 path as a limit of secant vectors.
 </p>
 <div class="theorem-like problem-environment definition" id="problem2"><a 
  id="x1-1002r2"></a>Let <script type="math/tex">\vec {x}:I\subset \mathbb {R}\rightarrow \mathbb {R}^n</script> be a path in <script type="math/tex">\mathbb {R}^n</script>. We define the derivative of <script type="math/tex">\vec {x}</script> at <script type="math/tex">t</script> to be <script type="math/tex; mode=display"> \vec {x}'(t) = \lim _{h\rightarrow 0} \frac {\vec {x}(t+h) - \vec {x}(t)}{h}, </script> if the limit exists.
-<!--l. 57--><p class="noindent" >We also call <script type="math/tex">\vec {x}'(t)</script> the <em>velocity vector</em> of <script type="math/tex">\vec {x}</script>, and denote it as <script type="math/tex">\vec {v}(t)</script>.
+<!--l. 60--><p class="noindent" >We also call <script type="math/tex">\vec {x}'(t)</script> the <em>velocity vector</em> of <script type="math/tex">\vec {x}</script>, and denote it as <script type="math/tex">\vec {v}(t)</script>.
 </div>
-</p><!--l. 60--><p class="noindent" >We’ll often draw the velocity vector starting at the give point, and we can then see
+</p><!--l. 63--><p class="noindent" >We’ll often draw the velocity vector starting at the give point, and we can then see
 how it’s tangent to the curve.
 </p>
 <div class="image-environment" role="img" aria-labelledby="image-alt-3"><img 
 src="./graphics/CalcPlot3D-vel_vector.png" alt="PIC"  
  /> </div>
-<!--l. 66--><p class="noindent" >We can also see how the velocity vector changes as we move along a curve.
+<!--l. 69--><p class="noindent" >We can also see how the velocity vector changes as we move along a curve.
 </p>
 <div class="video youtube-player" data-youtube="waxAKBuX4Fc">_</div>
-<!--l. 70--><p class="noindent" >When we first defined derivatives in Calculus I, we spent weeks figuring out how to
+<!--l. 73--><p class="noindent" >When we first defined derivatives in Calculus I, we spent weeks figuring out how to
 compute them. We started computing using only the limit definition, then we
 introduced the power rule, the product rule, the chain rule, and so on. Fortunately,
 we don’t need to repeat this process in Multivariable Calculus: we can take advantage
 of our previous experience computing derivatives. In order to see why this is
 the case, let’s take another look at our definition for the derivative of a
 path.
-</p><!--l. 72--><p class="noindent" >We have <script type="math/tex">\vec {x}'(t) = \lim _{h\rightarrow 0} \frac {\vec {x}(t+h) - \vec {x}(t)}{h}</script> for a path <script type="math/tex">\vec {x}</script>. We can write out the path <script type="math/tex">\vec {x}</script> in terms of
+</p><!--l. 75--><p class="noindent" >We have <script type="math/tex">\vec {x}'(t) = \lim _{h\rightarrow 0} \frac {\vec {x}(t+h) - \vec {x}(t)}{h}</script> for a path <script type="math/tex">\vec {x}</script>. We can write out the path <script type="math/tex">\vec {x}</script> in terms of
 its components, so <script type="math/tex; mode=display"> \vec {x}(t) = (x_1(t),...,x_n(t)). </script> Substituting this into the limit, we have
 </p><script type="math/tex; mode=display"> \begin{align*} 
 \vec{x}'(t) &= \lim_{h\rightarrow 0} \frac{\vec{x}(t+h) - \vec{x}(t)}{h},\\
 &= \lim_{h\rightarrow 0}\frac{(x_1(t+h),...,x_n(t+h)) - (x_1(t),...,x_n(t))}{h},\\
-&= \lim_{h\rightarrow 0}\frac{(x_1(t+h) - x_1(t),...,x_n(t+h) - x_1(t))}{h}.
                                                                   
 
                                                                   
+&= \lim_{h\rightarrow 0}\frac{(x_1(t+h) - x_1(t),...,x_n(t+h) - x_1(t))}{h}.
 \end{align*}</script>
-<!--l. 82--><p class="noindent" >Dividing through by the scalar <script type="math/tex">h</script> and bringing the limit inside of the vector, we have
+<!--l. 85--><p class="noindent" >Dividing through by the scalar <script type="math/tex">h</script> and bringing the limit inside of the vector, we have
 </p><script type="math/tex; mode=display"> \begin{align*} 
 \vec{x}'(t) &= \lim_{h\rightarrow 0}\left(\frac{x_1(t+h) - x_1(t)}{h},...,\frac{x_n(t+h) - x_1(t)}{h}\right),\\
 &= \left(\lim_{h\rightarrow 0}\frac{x_1(t+h) - x_1(t)}{h},...,\lim_{h\rightarrow 0}\frac{x_n(t+h) - x_1(t)}{h}\right).
 \end{align*}</script>
-<!--l. 88--><p class="noindent" >Looking at the limits inside of the components, they should look familiar. They’re
+<!--l. 91--><p class="noindent" >Looking at the limits inside of the components, they should look familiar. They’re
 derivatives of single variable functions! That is, we now have <script type="math/tex; mode=display"> \vec {x}'(t) = (x_1'(t),...,x_n'(t)). </script> This means that we can
 differentiate a path by differentiating its components, thus taking advantage of our
 knowledge of single variable derivatives.
@@ -129,15 +131,15 @@ this path, <script type="math/tex; mode=display"> \begin{align*}
 \vec{x}'(t) &= \left(\frac{d}{dt}\cos(t), \frac{d}{dt}\sin(t)\right)\\
 &= \left(-\sin(t), \cos(t)\right).
 \end{align*}</script>
-<!--l. 108--><p class="noindent" >We can see how the velocity vector changes as <script type="math/tex">t</script> increases from <script type="math/tex">0</script> to <script type="math/tex">2\pi </script>. Notice that it’s
+<!--l. 111--><p class="noindent" >We can see how the velocity vector changes as <script type="math/tex">t</script> increases from <script type="math/tex">0</script> to <script type="math/tex">2\pi </script>. Notice that it’s
 always tangent to the circle.
 </p>
 <div class="video youtube-player" data-youtube="MojL8LAKTso">_</div>
-<!--l. 112--><p class="noindent" ></div>
+<!--l. 115--><p class="noindent" ></div>
 </p>
 <div role="article" class="problem-environment problem" id="problem5"><a 
  id="x1-1005r5"></a> Consider the path <script type="math/tex">\vec {y}(t) = (t^2,t^3)</script> for <script type="math/tex">0\leq t\leq 1</script>. Compute the velocity vector. <script type="math/tex; mode=display"> y'(t) = \answer {(2t, 3t^2)} </script>
-<!--l. 120--><p class="noindent" >Consider the path <script type="math/tex">\vec {z}(t) = \left (t, e^{t^2}\right )</script> for <script type="math/tex">-\infty < t < \infty </script>. Compute the velocity vector. <script type="math/tex; mode=display"> z'(t) = \answer {(1, 2te^{t^2})} </script>
+<!--l. 123--><p class="noindent" >Consider the path <script type="math/tex">\vec {z}(t) = \left (t, e^{t^2}\right )</script> for <script type="math/tex">-\infty < t < \infty </script>. Compute the velocity vector. <script type="math/tex; mode=display"> z'(t) = \answer {(1, 2te^{t^2})} </script>
 </p></div>
 <div class="theorem-like problem-environment example" id="problem6"><a 
  id="x1-1006r6"></a>We can similarly compute the velocity of a path in <script type="math/tex">\mathbb {R}^3</script>, or <script type="math/tex">\mathbb {R}^n</script> for any <script type="math/tex">n</script>. Let’s compute the
@@ -146,29 +148,29 @@ have <script type="math/tex; mode=display"> \vec {x}'(t) = \answer {(\cos (t)-t\
 <script type="math/tex">20</script>.
 <div class="video youtube-player" data-youtube="dVoY9sHH2g4">_</div>
 </div>
+                                                                  
+
+                                                                  
 <a 
  id="Q1-1-3"></a>
 <h3 class="likesectionHead"><a 
  id="x1-2000"></a>Speed</h3>
-<!--l. 142--><p class="noindent" >We defined the derivative <script type="math/tex">\vec {x}'</script> of a path <script type="math/tex">\vec {x}</script>, thinking of a limit of scaled secant vectors.
+<!--l. 145--><p class="noindent" >We defined the derivative <script type="math/tex">\vec {x}'</script> of a path <script type="math/tex">\vec {x}</script>, thinking of a limit of scaled secant vectors.
 Taking the limit of these vectors, our derivative gives us a vector which is tangent to
-                                                                  
-
-                                                                  
 the path.
 </p>
 <div class="image-environment" role="img" aria-labelledby="image-alt-4"><img 
 src="./graphics/CalcPlot3D-vel_vector.png" alt="PIC"  
  /> </div>
-<!--l. 148--><p class="noindent" >The direction of <script type="math/tex">\vec {x}'</script> gives us the direction of instantaneous of a particle moving along
+<!--l. 151--><p class="noindent" >The direction of <script type="math/tex">\vec {x}'</script> gives us the direction of instantaneous of a particle moving along
 the path, and the length of <script type="math/tex">\vec {x}'</script> tells us the speed of the particle. Recall that we
 sometimes refer to <script type="math/tex">\vec {x}'</script> as the velocity vector, and write it as <script type="math/tex">\vec {v}</script>.
 </p>
 <div class="theorem-like problem-environment definition" id="problem7"><a 
  id="x1-2001r7"></a>Consider a path <script type="math/tex">\vec {x}:I\subset \mathbb {R}\rightarrow \mathbb {R}^n</script>.
-<!--l. 153--><p class="noindent" >We previously defined the velocity vector of <script type="math/tex">\vec {x}</script> at <script type="math/tex">t</script> to be <script type="math/tex">\vec {v}(t) = \vec {x}'(t)</script>. The velocity vector is tangent
+<!--l. 156--><p class="noindent" >We previously defined the velocity vector of <script type="math/tex">\vec {x}</script> at <script type="math/tex">t</script> to be <script type="math/tex">\vec {v}(t) = \vec {x}'(t)</script>. The velocity vector is tangent
 to <script type="math/tex">\vec {x}</script> at <script type="math/tex">\vec {x}(t)</script>.
-</p><!--l. 155--><p class="noindent" >The <em>speed</em> of <script type="math/tex">\vec {x}</script> at <script type="math/tex">t</script> is <script type="math/tex">\|\vec {x}'(t)\| = \|\vec {v}(t)\|</script>.
+</p><!--l. 158--><p class="noindent" >The <em>speed</em> of <script type="math/tex">\vec {x}</script> at <script type="math/tex">t</script> is <script type="math/tex">\|\vec {x}'(t)\| = \|\vec {v}(t)\|</script>.
 </div>
 </p>
 <div class="theorem-like problem-environment example" id="problem8"><a 
@@ -180,9 +182,9 @@ computed the velocity of this path as <script type="math/tex; mode=display"> \ve
 & = \sqrt{1},\\
 & = 1.
 \end{align*}</script>
-<!--l. 171--><p class="noindent" >Consider the path <script type="math/tex">\vec {y}(t) = (\cos (t^2), \sin (t^2))</script> for <script type="math/tex">0\leq t\leq \sqrt {2\pi }</script>. This also parametrizes the unit circle in <script type="math/tex">\mathbb {R}^2</script>. The velocity vector
+<!--l. 174--><p class="noindent" >Consider the path <script type="math/tex">\vec {y}(t) = (\cos (t^2), \sin (t^2))</script> for <script type="math/tex">0\leq t\leq \sqrt {2\pi }</script>. This also parametrizes the unit circle in <script type="math/tex">\mathbb {R}^2</script>. The velocity vector
 of this path is <script type="math/tex; mode=display"> \vec {y}'(t) = \answer {(-2t\sin (t^2), 2t\cos (t^2))}. </script> The speed of this path is <script type="math/tex; mode=display"> \|\vec {y}'(t)\| = \answer {2t}. </script>
-</p><!--l. 180--><p class="noindent" >Although both of these paths parametrize the unit circle counterclockwise and
+</p><!--l. 183--><p class="noindent" >Although both of these paths parametrize the unit circle counterclockwise and
 starting and ending at <script type="math/tex">(1,0)</script>, they do so in different ways. The first path, <script type="math/tex">\vec {x}</script>, traverses the
 unit circle at constant speed. The second path, <script type="math/tex">\vec {y}</script>, travels very slowly at first, then the
 speed increases as it travels around the circle.
@@ -192,25 +194,25 @@ speed increases as it travels around the circle.
  id="x1-2003r9"></a>Consider the path <script type="math/tex">\vec {x}(t)=(\cos (t),\sin (t),t)</script> in <script type="math/tex">\mathbb {R}^3</script>. The velocity vector of this path is <script type="math/tex; mode=display"> \vec {v}(t) = \answer {(-\sin (t),\cos (t),1)}, </script> And the speed of this path
 is <script type="math/tex; mode=display"> \|\vec {v}(t)\| = \answer {\sqrt {2}}. </script>
 </div>
+                                                                  
+
+                                                                  
 <a 
  id="Q1-1-5"></a>
 <h3 class="likesectionHead"><a 
  id="x1-3000"></a>Acceleration</h3>
-<!--l. 196--><p class="noindent" >Given a path <script type="math/tex">\vec {x}(t)</script> in <script type="math/tex">\mathbb {R}^n</script> defined on an interval <script type="math/tex">I</script>, we’ve seen that we can compute it’s
+<!--l. 199--><p class="noindent" >Given a path <script type="math/tex">\vec {x}(t)</script> in <script type="math/tex">\mathbb {R}^n</script> defined on an interval <script type="math/tex">I</script>, we’ve seen that we can compute it’s
 velocity, <script type="math/tex">\vec {v}(t) = \vec {x}'(t)</script>. We can view the velocity as a function from <script type="math/tex">I</script> to <script type="math/tex">\mathbb {R}^n</script>, which gives us another
 path in <script type="math/tex">\mathbb {R}^n</script>. We can then differentiate <script type="math/tex">\vec {v}(t)</script>, giving us a sort of “second derivative” of
-                                                                  
-
-                                                                  
 our original path <script type="math/tex">\vec {x}(t)</script>. We call this the <em>acceleration</em> of <script type="math/tex">\vec {x}(t)</script>, and denote it by <script type="math/tex">\vec {x}''(t)</script> or
 <script type="math/tex">\vec {a}(t)</script>.
 </p>
 <div class="theorem-like problem-environment example" id="problem10"><a 
  id="x1-3001r10"></a>We’ll compute the acceleration of the path <script type="math/tex">\vec {x}(t) = (t,t^2,t^3)</script> in <script type="math/tex">\mathbb {R}^3</script>.
-<!--l. 201--><p class="noindent" >First, we compute the velocity, by differentiating the given path. <script type="math/tex; mode=display"> \vec {x}'(t) = \answer {(1,2t,3t^3)} </script> Then, we
+<!--l. 204--><p class="noindent" >First, we compute the velocity, by differentiating the given path. <script type="math/tex; mode=display"> \vec {x}'(t) = \answer {(1,2t,3t^3)} </script> Then, we
 differentiate again, to find the acceleration. <script type="math/tex; mode=display"> \vec {x}''(t) = \answer {(0,2,9t)} </script>
 </div>
-</p><!--l. 211--><p class="noindent" >As you can imagine, we could continue to take higher and higher derivatives of our
+</p><!--l. 214--><p class="noindent" >As you can imagine, we could continue to take higher and higher derivatives of our
 path. In most cases, the velocity and acceleration will provide the most useful
 information about the path, so we’ll typically stop there. However, some theorems
 will have requirements about differentiability, so we’ll classify functions based on how
@@ -219,7 +221,7 @@ differentiable they are.
 <div class="theorem-like problem-environment definition" id="problem11"><a 
  id="x1-3002r11"></a>Let <script type="math/tex">\vec {x}:I\rightarrow \mathbb {R}^n</script> be a path in <script type="math/tex">\mathbb {R}^n</script>. We say that <script type="math/tex">\vec {x}(t)</script> is <em>of class</em> <script type="math/tex">C^k</script> if the <script type="math/tex">k</script>th derivative of <script type="math/tex">\vec {x}(t)</script> exists and is
 continuous.
-<!--l. 216--><p class="noindent" >If <script type="math/tex">\vec {x}(t)</script> has continuous derivatives of all orders, then we say that <script type="math/tex">\vec {x}(t)</script> is <em>of class</em> <script type="math/tex">C^{\infty }</script>. In this case,
+<!--l. 219--><p class="noindent" >If <script type="math/tex">\vec {x}(t)</script> has continuous derivatives of all orders, then we say that <script type="math/tex">\vec {x}(t)</script> is <em>of class</em> <script type="math/tex">C^{\infty }</script>. In this case,
 we also say that <script type="math/tex">\vec {x}(t)</script> is <em>smooth</em>.
 </div>
 <a 
@@ -227,7 +229,7 @@ we also say that <script type="math/tex">\vec {x}(t)</script> is <em>smooth</em>
 </p>
 <h3 class="likesectionHead"><a 
  id="x1-4000"></a>Parametrizing the tangent line</h3>
-<!--l. 222--><p class="noindent" >Consider a path <script type="math/tex">\vec {x}:I\subset \mathbb {R}\rightarrow \mathbb {R}^n</script>. The velocity of this path gives us a vector <script type="math/tex">\vec {x}'(t)</script> tangent to the curve at <script type="math/tex">\vec {x}(t)</script>.
+<!--l. 225--><p class="noindent" >Consider a path <script type="math/tex">\vec {x}:I\subset \mathbb {R}\rightarrow \mathbb {R}^n</script>. The velocity of this path gives us a vector <script type="math/tex">\vec {x}'(t)</script> tangent to the curve at <script type="math/tex">\vec {x}(t)</script>.
 The tangent line to <script type="math/tex">\vec {x}</script> at <script type="math/tex">\vec {x}(t)</script> passes through the point <script type="math/tex">\vec {x}(t)</script> and is parallel to the vector <script type="math/tex">\vec {x}'(t)</script>.
 This allows us to parametrize the tangent line, however we need to be very
 careful to distinguish between the parameter for the <em>line</em> and the parameter
@@ -238,9 +240,12 @@ our chosen point, so we are working with the point <script type="math/tex">\vec 
 <div class="theorem-like problem-environment proposition" id="problem12"><a 
  id="x1-4001r12"></a>Consider a path <script type="math/tex">\vec {x}:I\subset \mathbb {R}\rightarrow \mathbb {R}^n</script>. We can parametrize the line tangent to <script type="math/tex">\vec {x}</script> at <script type="math/tex">\vec {x}(t_0)</script> as <script type="math/tex; mode=display"> \vec {l}(t) = \vec {x}(t_0) + t\vec {x}'(t_0) \textrm { for } -\infty < t < \infty . </script>
 </div>
-<!--l. 231--><p class="noindent" >Note that it’s particularly important to allow the parameter <script type="math/tex">t</script> to be any real number,
+<!--l. 234--><p class="noindent" >Note that it’s particularly important to allow the parameter <script type="math/tex">t</script> to be any real number,
 otherwise we will be missing part of the line.
 </p>
+                                                                  
+
+                                                                  
 <div class="theorem-like problem-environment example" id="problem13"><a 
  id="x1-4002r13"></a>As an example, we’ll find a parametrization for the tangent line to the path <script type="math/tex">\vec {x}(t)=(\cos (t),\sin (t),t)</script>, when <script type="math/tex">t=0</script>.
 The derivative is <script type="math/tex; mode=display"> \vec {x}'(t) = \answer {(-\sin (t),\cos (t),1)}. </script> When <script type="math/tex">t=0</script>, this is <script type="math/tex; mode=display"> \vec {x}'(0) = \answer {(0,1,1)}. </script> When <script type="math/tex">t=0</script>, we have <script type="math/tex; mode=display"> \vec {x}(0) = \answer {(1,0,0)}. </script> Parametrizing the tangent line, we
@@ -248,18 +253,15 @@ have <script type="math/tex; mode=display"> \begin{align*}
 \vec{l}(t) &= \vec{x}(0) + t\vec{x}'(0)\\
 &= \answer{(1,t,t)},
 \end{align*}</script>
-                                                                  
-
-                                                                  
-<!--l. 251--><p class="noindent" >for <script type="math/tex">-\infty < t < \infty </script>.
-</p><!--l. 253--><p class="noindent" >Below, we have the graph of the curve parametrized by <script type="math/tex">\vec {x}(t)</script>, along with its tangent line
+<!--l. 254--><p class="noindent" >for <script type="math/tex">-\infty < t < \infty </script>.
+</p><!--l. 256--><p class="noindent" >Below, we have the graph of the curve parametrized by <script type="math/tex">\vec {x}(t)</script>, along with its tangent line
 when <script type="math/tex">t=0</script>.
 </p>
 <div class="image-environment" role="img" aria-labelledby="image-alt-5"><img 
 src="./graphics/CalcPlot3D-tangent_line.png" alt="PIC"  
  /> </div>
 </div>
-<!--l. 260--><p class="noindent" ><em>Images were generated using <a 
+<!--l. 263--><p class="noindent" ><em>Images were generated using <a 
 href="https://www.monroecc.edu/faculty/paulseeburger/calcnsf/CalcPlot3D/" >CalcPlot3D</a>.</em>
 </body> 
  

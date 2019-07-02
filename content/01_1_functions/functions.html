@@ -6,11 +6,12 @@
 <meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
 <!-- charset=utf-8,-css,html,htex4ht,xhtml --> 
 <meta name="src" content="functions.tex" /> 
-<meta name="author" content="" /> 
+<meta name="author" content="Melissa Lynn" /> 
 <meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
 <meta name="ximera" content="version 0.0.1" /> 
 <link href="https://ximera.osu.edu/public/stylesheets/standalone.css" rel="stylesheet" media="screen"/> 
 <script type="text/javascript" async src="https://ximera.osu.edu/public/javascripts/standalone.min.js"></script> 
+<meta name="learning-outcome" content="Understand the definition of a function, and be able to classify functions as injective and surjective. Find the component functions of a multivariable functions."/> 
 </head><body> 
 <div class="preamble"><script type="math/tex">\newenvironment {prompt}{}{}
 \newcommand {\DeclareMathOperator }[2]{\@OldDeclareMathOperator {##1}{##2}\immediate \write \myfile {\unexpanded {\DeclareMathOperator }{\unexpanded {##1}}{\unexpanded {##2}}}}
@@ -39,7 +40,7 @@
 class="abstract" 
 >
 </div>   <div class="maketitle"></div>
-<!--l. 11--><p class="noindent" >You’ve certainly seen many functions before. For example, you’ve worked with linear
+<!--l. 14--><p class="noindent" >You’ve certainly seen many functions before. For example, you’ve worked with linear
 functions, such as <script type="math/tex; mode=display"> f(x) = 3x+2, </script> quadratic functions, such as <script type="math/tex; mode=display"> h(t) = -4.9t^2 + 20t + 5, </script> and more complicated functions such
 as <script type="math/tex; mode=display"> g(x) = e^{5\sin (x^2)}+\ln \cot x. </script> You’ve seen functions of more than one variable in the form of linear
 transformations, such as </p><script type="math/tex; mode=display"> \begin{align*} 
@@ -54,7 +55,7 @@ x\\
 y
 \end{array}\right).
 \end{align*}</script>
-<!--l. 37--><p class="noindent" >Not surprisingly, in multivariable calculus, we’ll be studying functions of more than
+<!--l. 40--><p class="noindent" >Not surprisingly, in multivariable calculus, we’ll be studying functions of more than
 one variable. Before starting to work with these functions, we now cover some of the
                                                                   
 
@@ -66,7 +67,7 @@ the definition of a function.
 </p>
 <h3 class="likesectionHead"><a 
  id="x1-1000"></a>Definition of a function</h3>
-<!--l. 41--><p class="noindent" >Although we’ll often think of a function as some rule, such as <script type="math/tex">f(x) = x^2</script>. However, a function
+<!--l. 44--><p class="noindent" >Although we’ll often think of a function as some rule, such as <script type="math/tex">f(x) = x^2</script>. However, a function
 really consists of three pieces: a domain, a codomain, and some sort of assignment.
 This assignment could be given by a simple rule, like <script type="math/tex">f(x) = x^2</script>, or could be much more
 difficult to describe.
@@ -74,9 +75,9 @@ difficult to describe.
 <div class="theorem-like problem-environment definition" id="problem1"><a 
  id="x1-1001r1"></a>For sets <script type="math/tex">X</script> and <script type="math/tex">Y</script>, a <em>function</em> <script type="math/tex">f:X\rightarrow Y</script> from <script type="math/tex">X</script> to <script type="math/tex">Y</script> assigns an element of <script type="math/tex">Y</script> to each element of
 <script type="math/tex">X</script>.
-<!--l. 46--><p class="noindent" >We call <script type="math/tex">X</script> the <em>domain</em> of <script type="math/tex">f</script>, and <script type="math/tex">Y</script> the <em>codomain</em> of <script type="math/tex">f</script>.
+<!--l. 49--><p class="noindent" >We call <script type="math/tex">X</script> the <em>domain</em> of <script type="math/tex">f</script>, and <script type="math/tex">Y</script> the <em>codomain</em> of <script type="math/tex">f</script>.
 </div>
-</p><!--l. 49--><p class="noindent" >You might have seen some sort of “blob” diagram like the one below, showing that
+</p><!--l. 52--><p class="noindent" >You might have seen some sort of “blob” diagram like the one below, showing that
 each element of <script type="math/tex">X</script> gets mapped to some element of <script type="math/tex">Y</script>.
 </p>
 <div class="image-environment" role="img" aria-labelledby="image-alt-1">  <img 
@@ -85,10 +86,10 @@ src="./functions-figure0.svg" alt=""
 </div>
 <div class="theorem-like problem-environment example" id="problem2"><a 
  id="x1-1002r2"></a>We can define a function <script type="math/tex">f:\mathbb {R}^2\rightarrow \mathbb {R}</script> by <script type="math/tex">f(x,y) = xy</script>.
-<!--l. 98--><p class="noindent" >We can define a function <script type="math/tex">g:\mathbb {R}^2\rightarrow \mathbb {R}^3</script> by <script type="math/tex">g(x,y) = (x+y, x-y, xy)</script>.
-</p><!--l. 100--><p class="noindent" >For <script type="math/tex">U = \{(x,y,z)\neq (0,0,0)\}\in \mathbb {R}^3</script>, we can define a function <script type="math/tex">h:U\rightarrow \mathbb {R}^2</script> by <script type="math/tex">h(x,y,z) = \left (\frac {x}{x^2+y^2+z^2}, \frac {y}{x^2+y^2+z^2}\right )</script>.
-</p><!--l. 102--><p class="noindent" ></div>
-</p><!--l. 105--><p class="noindent" >We can think of <script type="math/tex">X</script> as the set of inputs to a function, and <script type="math/tex">Y</script> as the set containing the
+<!--l. 101--><p class="noindent" >We can define a function <script type="math/tex">g:\mathbb {R}^2\rightarrow \mathbb {R}^3</script> by <script type="math/tex">g(x,y) = (x+y, x-y, xy)</script>.
+</p><!--l. 103--><p class="noindent" >For <script type="math/tex">U = \{(x,y,z)\neq (0,0,0)\}\in \mathbb {R}^3</script>, we can define a function <script type="math/tex">h:U\rightarrow \mathbb {R}^2</script> by <script type="math/tex">h(x,y,z) = \left (\frac {x}{x^2+y^2+z^2}, \frac {y}{x^2+y^2+z^2}\right )</script>.
+</p><!--l. 105--><p class="noindent" ></div>
+</p><!--l. 108--><p class="noindent" >We can think of <script type="math/tex">X</script> as the set of inputs to a function, and <script type="math/tex">Y</script> as the set containing the
 outputs. Each input coming from the set <script type="math/tex">X</script> has to have some corresponding
 output, but some elements of <script type="math/tex">Y</script> might not actually occur as outputs of the
 function.
@@ -99,7 +100,7 @@ function.
 defined by <script type="math/tex">f(a,b) = a-b</script></span> <span class="choice  "   id="choice3"><script type="math/tex">f:\mathbb {R}\rightarrow \mathbb {R}</script> defined by <script type="math/tex">f(x) = \pm x</script></span> <span class="choice correct "   id="choice4"><script type="math/tex">f:\mathbb {R}\rightarrow \mathbb {R}^2</script> defined by <script type="math/tex">f(x) = (x,x)</script></span>
 </div>
 </div>
-<!--l. 117--><p class="noindent" >If we would like to refer to the elements in the codomain which actually do occur as
+<!--l. 120--><p class="noindent" >If we would like to refer to the elements in the codomain which actually do occur as
 outputs, we call this the range of <script type="math/tex">f</script>.
 </p>
 <div class="theorem-like problem-environment definition" id="problem5"><a 
@@ -110,7 +111,7 @@ is, there is some input <script type="math/tex">x</script> that has <script type
                                                                   
 <script type="math/tex; mode=display"> \textrm {Range }f = \{y\in Y\,:\, y = f(x) \textrm { for some } x\in X\}. </script>
 </div>
-<!--l. 126--><p class="noindent" >We can visualize the range as a smaller set contained within the codomain.
+<!--l. 129--><p class="noindent" >We can visualize the range as a smaller set contained within the codomain.
 </p>
 <div class="image-environment" role="img" aria-labelledby="image-alt-2">  <img 
 src="./functions-figure1.svg" alt=""  
@@ -119,7 +120,7 @@ src="./functions-figure1.svg" alt=""
 <div class="theorem-like problem-environment example" id="problem6"><a 
  id="x1-1006r6"></a>Consider the function <script type="math/tex">f:\mathbb {R}^2\rightarrow \mathbb {R}</script> defined by <script type="math/tex">f(x,y) = xy</script>. For any real number <script type="math/tex">r</script>, <script type="math/tex">r = f(1,r)</script>, so <script type="math/tex">r</script> is in the range of <script type="math/tex">f</script>.
 Thus, the range of <script type="math/tex">f</script> is all real numbers, <script type="math/tex">\mathbb {R}</script>.
-<!--l. 179--><p class="noindent" >We can define a function <script type="math/tex">g:\mathbb {R}^2\rightarrow \mathbb {R}^3</script> by <script type="math/tex">g(x,y) = (x+y, x-y, xy)</script>. In this case, the range of <script type="math/tex">g</script> is the set <script type="math/tex">\{(x+y,x-y,xy)\;:\;x,y\in \mathbb {R}\}</script>, and it’s somewhat
+<!--l. 182--><p class="noindent" >We can define a function <script type="math/tex">g:\mathbb {R}^2\rightarrow \mathbb {R}^3</script> by <script type="math/tex">g(x,y) = (x+y, x-y, xy)</script>. In this case, the range of <script type="math/tex">g</script> is the set <script type="math/tex">\{(x+y,x-y,xy)\;:\;x,y\in \mathbb {R}\}</script>, and it’s somewhat
 difficult to find a simpler way to describe the range. However, we can see that the
 range of <script type="math/tex">g</script> is not all of <script type="math/tex">\mathbb {R}^3</script>, since <script type="math/tex">(1,2,0)</script> is not in the range of <script type="math/tex">g</script>. We can see this by writing <script type="math/tex">(1,2,0) = (x+y,x-y,xy)</script>, and
 trying to solve for <script type="math/tex">x</script> and <script type="math/tex">y</script>. Here, <script type="math/tex">0=xy</script> implies that we must have <script type="math/tex">x=0</script> or <script type="math/tex">y=0</script>. If <script type="math/tex">x=0</script>, the first and
@@ -131,11 +132,11 @@ components give us <script type="math/tex">x=1</script> and <script type="math/t
 <div role="article" class="problem-environment problem" id="problem7"><a 
  id="x1-1007r7"></a> What is the range of the function <script type="math/tex">f:\mathbb {R}\rightarrow \mathbb {R}^2</script> defined by <script type="math/tex">f(x) = (x,x)</script>? <div class="multiple-choice" id="problem8"><span class="choice  "   id="choice5"><script type="math/tex">\mathbb {R}^2</script></span> <span class="choice  "   id="choice6"><script type="math/tex">\mathbb {R}</script></span> <span class="choice correct "   id="choice7"><script type="math/tex">\{(a,b)\in \mathbb {R}^2\,:\,a=b\}</script></span> <span class="choice  "   id="choice8"><script type="math/tex">\{(a,b)\in \mathbb {R}^2\,:\,a=b\}</script></span> </div>
 </div>
-<!--l. 192--><p class="noindent" >Sometimes we work with functions that aren’t defined on all of <script type="math/tex">\mathbb {R}^n</script>. When the domain of
+<!--l. 195--><p class="noindent" >Sometimes we work with functions that aren’t defined on all of <script type="math/tex">\mathbb {R}^n</script>. When the domain of
 <script type="math/tex">f</script> is a subset <script type="math/tex">D</script> of <script type="math/tex">\mathbb {R}^n</script>, we write <script type="math/tex; mode=display"> f:D\subset \mathbb {R}^n\rightarrow \mathbb {R}^m. </script> When we’re working with functions on subsets of <script type="math/tex">\mathbb {R}^n</script>, we’ll
 frequently want to work with the largest possible set that the function is defined on.
 We call this the <em>natural domain</em> of the function.
-</p><!--l. 198--><p class="noindent" >Often, we’ll define a function just by giving a “rule” determining its assignment, and
+</p><!--l. 201--><p class="noindent" >Often, we’ll define a function just by giving a “rule” determining its assignment, and
 in this case, you should assume that the domain is the natural domain.
 </p>
 <div role="article" class="problem-environment problem" id="problem9"><a 
@@ -145,14 +146,14 @@ in this case, you should assume that the domain is the natural domain.
  id="Q1-1-3"></a>
 <h3 class="likesectionHead"><a 
  id="x1-2000"></a>Types of functions</h3>
-<!--l. 212--><p class="noindent" >In some special situations, every element of <script type="math/tex">Y</script> really does appear as an output of the
+<!--l. 215--><p class="noindent" >In some special situations, every element of <script type="math/tex">Y</script> really does appear as an output of the
 function <script type="math/tex">f</script>. In this case, we say that <script type="math/tex">f</script> is onto, or surjective.
 </p>
 <div class="theorem-like problem-environment definition" id="problem11"><a 
  id="x1-2001r9"></a>A function <script type="math/tex">f:X\rightarrow Y</script> is <em>onto</em>, or <em>surjective</em>, if for every element <script type="math/tex">y\in Y</script>, there is some <script type="math/tex">x\in X</script> such that <script type="math/tex">f(x) = y</script>. We
 can also write this condition as <script type="math/tex; mode=display"> Y = \textrm {Range }f. </script>
 </div>
-<!--l. 221--><p class="noindent" >We can visualize this as every element of <script type="math/tex">Y</script> getting mapped to by some element of <script type="math/tex">X</script>,
+<!--l. 224--><p class="noindent" >We can visualize this as every element of <script type="math/tex">Y</script> getting mapped to by some element of <script type="math/tex">X</script>,
                                                                   
 
                                                                   
@@ -164,7 +165,7 @@ src="./functions-figure2.svg" alt=""
 </div>
 <div class="theorem-like problem-environment example" id="problem12"><a 
  id="x1-2002r10"></a>Consider the function <script type="math/tex">f:\mathbb {R}^2\rightarrow \mathbb {R}</script> defined by <script type="math/tex">f(x,y) = xy</script>. We previously showed that <script type="math/tex">\text {Range }f=\mathbb {R}</script>, so <script type="math/tex">f</script> is onto.
-<!--l. 278--><p class="noindent" >Consider the function <script type="math/tex">g:\mathbb {R}^2\rightarrow \mathbb {R}^3</script> defined by <script type="math/tex">g(x,y) = (x+y, x-y, xy)</script>. We previously showed that <script type="math/tex">\text {Range }g=\mathbb {R}^3</script>, so <script type="math/tex">g</script> is not
+<!--l. 281--><p class="noindent" >Consider the function <script type="math/tex">g:\mathbb {R}^2\rightarrow \mathbb {R}^3</script> defined by <script type="math/tex">g(x,y) = (x+y, x-y, xy)</script>. We previously showed that <script type="math/tex">\text {Range }g=\mathbb {R}^3</script>, so <script type="math/tex">g</script> is not
 onto.
 </div>
 </p>
@@ -174,25 +175,25 @@ onto.
 defined by <script type="math/tex">f(a,b) = a-b</script></span> <span class="choice  "   id="choice15"><script type="math/tex">f:\mathbb {R}\rightarrow \mathbb {R}^2</script> defined by <script type="math/tex">f(x) = (x,x)</script></span> <span class="choice  "   id="choice16"><script type="math/tex">f:\mathbb {R}^2\rightarrow \mathbb {R}</script> defined by <script type="math/tex">f(x,y) = x^2y^2</script></span>
 </div>
 </div>
-<!--l. 291--><p class="noindent" >Another important type of function is a one-to-one, or injective, function. For a
+<!--l. 294--><p class="noindent" >Another important type of function is a one-to-one, or injective, function. For a
 one-to-one function, different inputs always go to different outputs.
 </p>
 <div class="theorem-like problem-environment definition" id="problem15"><a 
  id="x1-2005r13"></a>A function <script type="math/tex">f:X\rightarrow Y</script> is <em>one-to-one</em>, or <em>injective</em>, if whenever <script type="math/tex">f(x_1) = f(x_2)</script> for <script type="math/tex">x_1,x_2\in X</script>, then we must have
 <script type="math/tex">x_1 = x_2</script>.
-<!--l. 296--><p class="noindent" >Another way to say this is that whenever <script type="math/tex">x_1\neq x_2</script>, we have <script type="math/tex">f(x_1)\neq f(x_2)</script>.
+<!--l. 299--><p class="noindent" >Another way to say this is that whenever <script type="math/tex">x_1\neq x_2</script>, we have <script type="math/tex">f(x_1)\neq f(x_2)</script>.
 </p>
 <div class="image-environment" role="img" aria-labelledby="image-alt-4">  <img 
 src="./functions-figure3.svg" alt=""  
  />
 </div>
-<!--l. 343--><p class="noindent" ></div>
-</p><!--l. 345--><p class="noindent" >We can visualize this as no two elements of <script type="math/tex">X</script> getting mapped to the same element of
+<!--l. 346--><p class="noindent" ></div>
+</p><!--l. 348--><p class="noindent" >We can visualize this as no two elements of <script type="math/tex">X</script> getting mapped to the same element of
 <script type="math/tex">Y</script>.
 </p>
 <div class="theorem-like problem-environment example" id="problem16"><a 
  id="x1-2006r14"></a>Consider the function <script type="math/tex">f:\mathbb {R}^2\rightarrow \mathbb {R}</script> defined by <script type="math/tex">f(x,y) = xy</script>. We have that <script type="math/tex">f(0,1) = 0</script> and <script type="math/tex">f(1,0)=0</script>, so <script type="math/tex">f</script> is not one-to-one.
-<!--l. 350--><p class="noindent" >Consider the function <script type="math/tex">g:\mathbb {R}^2\rightarrow \mathbb {R}^3</script> defined by <script type="math/tex">g(x,y) = (x+y, x-y, xy)</script>. We’ll show that <script type="math/tex">g</script> is one-to-one, by showing that if
+<!--l. 353--><p class="noindent" >Consider the function <script type="math/tex">g:\mathbb {R}^2\rightarrow \mathbb {R}^3</script> defined by <script type="math/tex">g(x,y) = (x+y, x-y, xy)</script>. We’ll show that <script type="math/tex">g</script> is one-to-one, by showing that if
 two inputs map to the same output, they must have been the same input. That is,
 suppose we have <script type="math/tex">g(x_1,y_1) = g(x_2,y_2)</script>. Then <script type="math/tex; mode=display"> (x_1+y_1, x_1-y_1, x_1y_1) = (x_2+y_2, x_2-y_2, x_2y_2). </script> In order to show that <script type="math/tex">x_1=x_2</script> and <script type="math/tex">y_1=y_2</script>, we actually only need to look at
 the first two components, which give us the system of equations <script type="math/tex; mode=display"> \begin {cases} x_1+y_1 = x_2+y_2\\ x_1-y_1 = x_2-y_2\\ \end {cases}. </script> Adding
@@ -214,7 +215,7 @@ id="choice18"><script type="math/tex">f:\mathbb {R}^2\rightarrow \mathbb {R}</sc
  id="Q1-1-5"></a>
 <h3 class="likesectionHead"><a 
  id="x1-3000"></a>Component functions</h3>
-<!--l. 376--><p class="noindent" >When we’re trying to understand the behavior of a function <script type="math/tex">f:X\subset \mathbb {R}^n\rightarrow \mathbb {R}^m</script>, it can sometimes be
+<!--l. 379--><p class="noindent" >When we’re trying to understand the behavior of a function <script type="math/tex">f:X\subset \mathbb {R}^n\rightarrow \mathbb {R}^m</script>, it can sometimes be
 helpful to split <script type="math/tex">\mathbb {R}^m</script> into its components. From this, we get the component functions of
 <script type="math/tex">f</script>.
 </p>
@@ -229,7 +230,7 @@ g_1(x,y) &= x+y,\\
 g_2(x,y) &= x-y,\\
 g_3(x,y) &= xy.
 \end{align*}</script>
-<!--l. 392--><p class="noindent" >Notice that each of these is a function <script type="math/tex">\mathbb {R}^2\rightarrow \mathbb {R}</script>.
+<!--l. 395--><p class="noindent" >Notice that each of these is a function <script type="math/tex">\mathbb {R}^2\rightarrow \mathbb {R}</script>.
 </div>
 </body> 
  

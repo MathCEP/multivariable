@@ -1,0 +1,42 @@
+\outcome {Review basic properties of vectors.}
+\outcome {Review algebraic and geometric properties of the dot product.}
+\outcome {Review algebraic and geometric properties of the cross product.}
+\outcome {Review basic matrix operations.}
+\outcome {Review equations and parametrizations of lines and planes.}
+\outcome {Review Cartesian coordinates, polar coordinates, and linear change of coordinates.}
+\outcome {Understand the definition of a function, and be able to classify functions as injective and surjective. Find the component functions of a multivariable functions.}
+\outcome {Understand the relationship between a graph and cross-sections, contours, and level curves. Use these curves to visualize and sketch the graph of a function.}
+\outcome {Be able to use the cross-sections of a quadric surface to figure out its shape. Learn the names of various quadric surfaces, and be able to recognize these surfaces.}
+\outcome {Understand the geometry of cylindrical coordinates. Be able to describe curves, surfaces, and regions using cylindrical coordinates, and convert between cylindrical and Cartesian coordinates.}
+\outcome {Understand the geometry of spherical coordinates. Be able to describe curves, surfaces, and regions using spherical coordinates, and convert between spherical, cylindrical, and Cartesian coordinates.}
+\outcome {Understand the geometry and definitions of open and closed sets. Do very simple proofs about these properties. Identify sets as open, closed, both, or neither.}
+\outcome {Understand the definition of a parametric curves, and that there can be multiple parametrizations for a given curve. Be able to graph a parametric curve, and parametrize curves.}
+\outcome {Understand the definitions and geometric significance of velocity, speed, and acceleration of a parametric curves, and be able to compute them.}
+\outcome {Understand algebraic properties of velocity and speed, and the special case of a curve on a sphere.}
+\outcome {Understand the definition and geometric significance of the length of a curve. Compute the lengths of parametric curves.}
+\outcome {Understand and compute the arclength function, and parametrize curves with respect to arclength.}
+\outcome {Understand the definition and geometric significance of curvature. Compute curvature. Understand the definition of the osculating circle.}
+\outcome {Understand the definition and geometric significance of the moving frame.}
+\outcome {Compute the moving frames of parametric curves.}
+\outcome {Understand the decomposition of the acceleration vector into tangential and normal components. Be able to relate and manipulate the various properties of parametric curves.}
+\outcome {Understand the limit definition of partial derivatives, and compute partial derivatives.}
+\outcome {Understand the geometric significance of partial derivatives.}
+\outcome {Compute higher order partial derivatives, and understand their geometric significance. Understand how to apply Clairaut's theorem.}
+\outcome {Understand the geometric idea of limits, and use paths to show that some limits do not exist.}
+\outcome {Use the epsilon-delta definition of multi-variable limits, and evaluate limits by changing coordinates.}
+\outcome {Understand the definition of continuity. Identify continuous functions, and evaluate their limits using direct substitution.}
+\outcome {Understand what it means geometrically for a function of two variables to be differentiable.}
+\outcome {Understand the definition of differentiability for a function of two variables, and use this definition to show that a function is differentiable.}
+\outcome {Understand the definition of differentiability for functions of $n$ variables. Compute gradients, and use them to show that functions are differentiable.}
+\outcome {Understand the general definition of differentiability. Compute derivative matrices, and use them to show that functions are differentiable.}
+\outcome {Understand and apply basic properties of differentiation.}
+\outcome {Understand and apply the chain rule.}
+\outcome {Understand the idea behind directional derivatives, and use the limit definition to compute them.}
+\outcome {Understand the relationship between the gradient and directional derivatives. Use the gradient to compute directional derivatives and identify the direction of greatest increase.}
+\outcome {Understand the relationship between the gradient and level curves and surfaces. Use this relationship to find equations for tangent planes.}
+\outcome {Review single variable Taylor polynomials, including the formulas for common functions. Use these formulas to find Taylor polynomials for multivariable functions which can be rewritten as functions of a single variable.}
+\outcome {Identify and classify quadratic forms. Use Sylvester's theorem where appropriate.}
+\outcome {Compute Hessian matrices, and use them to find Taylor polynomials.}
+\outcome {Compute critical points to find local extrema, and use the Hessian matrix to classify them.}
+\outcome {Identify compact regions. Use the extreme value theorem to find global extrema.}
+\outcome {Understand the justification for Lagrange multipliers, and use them to solve constrained optimization problems.}

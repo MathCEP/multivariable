@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  19 MAR 2019 21:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  1 JUL 2019 20:11
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -6,7 +6,7 @@ entering extended mode
 input{dot_product}
 (./dot_product.tex (/Users/Melissa/Library/texmf/tex/latex/ximeraLatex/ximera.c
 ls
-Document Class: ximera 2018/10/17 v1.00 Simultaneously write print and online i
+Document Class: ximera 2018/10/28 v1.00 Simultaneously write print and online i
 nteractive materials
 
 '::.   .::' ::  :::::     :::::  .:::::::::::::::::::.    ::: 
@@ -866,20 +866,20 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 
 )
 No file ./dot_product-figure0.aux.
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
 (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count191
@@ -898,25 +898,22 @@ LaTeX Font Info:    ... okay on input line 5.
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.16} into 
 your preamble.
- on input line 5.
+ on input line 7.
 
 \c@lstlisting=\count197
 \AtBeginShipoutBox=\box48
-Package hyperref Info: Link coloring ON on input line 5.
-LaTeX Info: Redefining \ref on input line 5.
-LaTeX Info: Redefining \pageref on input line 5.
-LaTeX Info: Redefining \nameref on input line 5.
-LaTeX Font Info:    Try loading font information for U+msa on input line 9.
+Package hyperref Info: Link coloring ON on input line 7.
+LaTeX Info: Redefining \ref on input line 7.
+LaTeX Info: Redefining \pageref on input line 7.
+LaTeX Info: Redefining \nameref on input line 7.
+LaTeX Font Info:    Try loading font information for U+msa on input line 11.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 9.
+LaTeX Font Info:    Try loading font information for U+msb on input line 11.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-
-LaTeX Warning: No \author given.
-
 \openout6 = `./dot_product-figure0.dpth'.
 
 [1
@@ -929,16 +926,16 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 132.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 132.
  ) 
 Here is how much of TeX's memory you used:
- 29763 strings out of 492649
- 701959 string characters out of 6129622
- 871861 words of memory out of 5000000
- 33107 multiletter control sequences out of 15000+600000
+ 29767 strings out of 492649
+ 702043 string characters out of 6129622
+ 871929 words of memory out of 5000000
+ 33111 multiletter control sequences out of 15000+600000
  11986 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,10n,98p,819b,685s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 >
-Output written on ./dot_product-figure0.pdf (1 page, 9821 bytes).
+Output written on ./dot_product-figure0.pdf (1 page, 9850 bytes).
 PDF statistics:
  18 PDF objects out of 1000 (max. 8388607)
  11 compressed objects within 1 object stream

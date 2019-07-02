@@ -6,11 +6,12 @@
 <meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
 <!-- charset=utf-8,-css,html,htex4ht,xhtml --> 
 <meta name="src" content="curvature.tex" /> 
-<meta name="author" content="" /> 
+<meta name="author" content="Melissa Lynn" /> 
 <meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
 <meta name="ximera" content="version 0.0.1" /> 
 <link href="https://ximera.osu.edu/public/stylesheets/standalone.css" rel="stylesheet" media="screen"/> 
 <script type="text/javascript" async src="https://ximera.osu.edu/public/javascripts/standalone.min.js"></script> 
+<meta name="learning-outcome" content="Understand the definition and geometric significance of curvature. Compute curvature. Understand the definition of the osculating circle."/> 
 </head><body> 
 <div class="preamble"><script type="math/tex">\newenvironment {prompt}{}{}
 \newcommand {\DeclareMathOperator }[2]{\@OldDeclareMathOperator {##1}{##2}\immediate \write \myfile {\unexpanded {\DeclareMathOperator }{\unexpanded {##1}}{\unexpanded {##2}}}}
@@ -33,24 +34,24 @@
 class="abstract" 
 >
 </div>   <div class="maketitle"></div>
-<!--l. 11--><p class="noindent" >We have an intuitive idea for what it means for a curve to be “curvy.” Intuitively, we
+<!--l. 14--><p class="noindent" >We have an intuitive idea for what it means for a curve to be “curvy.” Intuitively, we
 would probably describe the following curves as “not very curvy.”
 </p>
 <div class="image-environment" role="img" aria-labelledby="image-alt-1">  <img 
 src="./curvature-figure0.svg" alt=""  
  />
 </div>
-<!--l. 21--><p class="noindent" >On the other hand, we’d probably describe the next group of curves as “very
+<!--l. 24--><p class="noindent" >On the other hand, we’d probably describe the next group of curves as “very
 curvy.”
 </p>
 <div class="image-environment" role="img" aria-labelledby="image-alt-2">  <img 
 src="./curvature-figure1.svg" alt=""  
  />
 </div>
-<!--l. 37--><p class="noindent" >However, we don’t yet have a way to represent “curviness” mathematically. In this
+<!--l. 40--><p class="noindent" >However, we don’t yet have a way to represent “curviness” mathematically. In this
 section, we’ll define the <em>curvature</em> of a curve, which will allow us to quantify
 “curviness.”
-</p><!--l. 39--><p class="noindent" >In order to ensure that our definition is independent of the parametrization, we’ll
+</p><!--l. 42--><p class="noindent" >In order to ensure that our definition is independent of the parametrization, we’ll
 need to work with the arclength parametrization <script type="math/tex">\vec {x}(s)</script>. Recall that this parametrization
 traverses the curve at unit speed.
 <a 
@@ -58,7 +59,7 @@ traverses the curve at unit speed.
 </p>
 <h3 class="likesectionHead"><a 
  id="x1-1000"></a>Definition of Curvature</h3>
-<!--l. 43--><p class="noindent" >Let’s look at the behavior of the unit tangent vector as we traverse various curves.
+<!--l. 46--><p class="noindent" >Let’s look at the behavior of the unit tangent vector as we traverse various curves.
 The unit tangent vector is the velocity divided by the speed, so <script type="math/tex; mode=display"> \vec {T}(t) = \frac {\vec {x}'(t)}{\|\vec {x}'(t)\|}. </script> Since the arclength
                                                                   
 
@@ -66,7 +67,7 @@ The unit tangent vector is the velocity divided by the speed, so <script type="m
 parametrization has unit speed, we have <script type="math/tex; mode=display"> \vec {T}(s) = \vec {x}'(s). </script>
 </p>
 <div class="video youtube-player" data-youtube="h6NFSX12Zpw">_</div>
-<!--l. 54--><p class="noindent" >We see that the unit tangent vector changes very quickly when we’re curving sharply,
+<!--l. 57--><p class="noindent" >We see that the unit tangent vector changes very quickly when we’re curving sharply,
 and the unit tangent vector doesn’t change when we’re going straight. So, we’ll use
 the change in the unit tangent vector to measure “curviness.”
 </p>
@@ -74,17 +75,17 @@ the change in the unit tangent vector to measure “curviness.”
  id="x1-1001r1"></a>Suppose the arclength parametrization of a curve <script type="math/tex">C</script> is <script type="math/tex">\vec {x}(s)</script>. Then we define the <em>curvature</em>
 of <script type="math/tex">C</script> at time <script type="math/tex">s</script> to be <script type="math/tex; mode=display"> \kappa (s) = \|\vec {T}'(s)\|. </script>
 </div>
-<!--l. 63--><p class="noindent" >Unfortunately, as we’ve seen, it’s not always easy to find an arclength parametrization
+<!--l. 66--><p class="noindent" >Unfortunately, as we’ve seen, it’s not always easy to find an arclength parametrization
 for a curve. Fortunately, we can still compute the curvature without finding an
 arclength parametrization.
-</p><!--l. 65--><p class="noindent" >Suppose we have a parametrization <script type="math/tex">\vec {x}(t)</script> of a curve. Then, thinking of <script type="math/tex">s</script> as a function of <script type="math/tex">t</script>
+</p><!--l. 68--><p class="noindent" >Suppose we have a parametrization <script type="math/tex">\vec {x}(t)</script> of a curve. Then, thinking of <script type="math/tex">s</script> as a function of <script type="math/tex">t</script>
 and using the chain rule, <script type="math/tex; mode=display"> \vec {T}'(t) = \vec {T}'(s)s'(t). </script> Then <script type="math/tex">\vec {T}'(s) = \frac {\vec {T}'(t)}{s'(t)}</script>. Recalling that <script type="math/tex">s'(t)</script> is the speed of the parametrization <script type="math/tex">\vec {x}(t)</script>,
 we can compute the curvature as follows.
 </p>
 <div class="theorem-like problem-environment proposition" id="problem2"><a 
  id="x1-1002r2"></a>Let <script type="math/tex">\vec {x}(t)</script> be a parametrization of a curve <script type="math/tex">C</script>. Then <script type="math/tex; mode=display"> \kappa (t) = \frac {\|\vec {T}'(t)\|}{\|\vec {x}'(t)\|}. </script>
 </div>
-<!--l. 78--><p class="noindent" >We’ll typically use this equation to compute curvature.
+<!--l. 81--><p class="noindent" >We’ll typically use this equation to compute curvature.
 <a 
  id="Q1-1-3"></a>
 </p>
@@ -92,11 +93,11 @@ we can compute the curvature as follows.
  id="x1-2000"></a>Computing Curvature</h3>
 <div class="theorem-like problem-environment example" id="problem3"><a 
  id="x1-2001r3"></a>We’ll compute the curvature of a circle of radius <script type="math/tex">a>0</script>, parametrized by <script type="math/tex">\vec {x}(t) = (a\cos (t), a\sin (t))</script>.
-<!--l. 85--><p class="noindent" >In order to find the unit tangent vector, we’ll need to compute the velocity and
+<!--l. 88--><p class="noindent" >In order to find the unit tangent vector, we’ll need to compute the velocity and
 speed. <script type="math/tex; mode=display"> \vec {x}'(t) = \answer {(-a\sin (t), a\cos (t))} </script> Then the speed of <script type="math/tex">x(t)</script> is <script type="math/tex; mode=display"> \|\vec {x}'(t)\| = \answer {a}. </script> Dividing the velocity by the speed, we obtain
 the unit tangent vector, <script type="math/tex; mode=display"> \vec {T}(t) = \answer {(-\sin (t),\cos (t))}. </script> Now, we find <script type="math/tex">\vec {T}'(t)</script>. <script type="math/tex; mode=display"> \vec {T}'(t) = (-cos(t),-sin(t)) </script> The magnitude of this vector is
 <script type="math/tex">\answer {1}</script>.
-</p><!--l. 103--><p class="noindent" >Finally, we compute the curvature at time <script type="math/tex">t</script>. <script type="math/tex; mode=display"> \kappa (t) = \frac {\|\vec {T}'(t)\|}{\|\vec {x}'(t)\|} = \answer {\frac {1}{a}} </script> Note that the curvature is independent
+</p><!--l. 106--><p class="noindent" >Finally, we compute the curvature at time <script type="math/tex">t</script>. <script type="math/tex; mode=display"> \kappa (t) = \frac {\|\vec {T}'(t)\|}{\|\vec {x}'(t)\|} = \answer {\frac {1}{a}} </script> Note that the curvature is independent
 of the time <script type="math/tex">t</script>, so independent of our position on the circle. This matches with the
 symmetry of the circle.
 </p>
@@ -106,30 +107,30 @@ src="./graphics/CalcPlot3D-generic_circle.png" alt="PIC"
 </div>
 <div class="theorem-like problem-environment example" id="problem4"><a 
  id="x1-2002r4"></a>We’ll compute the curvature of the path <script type="math/tex">\vec {x}(t) = (t\cos (t),t\sin (t), t^2)</script>, for <script type="math/tex">t\geq 0</script>.
-<!--l. 117--><p class="noindent" >In order to find the unit tangent vector, we’ll need to compute the velocity and
+<!--l. 120--><p class="noindent" >In order to find the unit tangent vector, we’ll need to compute the velocity and
 speed. <script type="math/tex; mode=display"> \vec {x}'(t) = \answer {(-t\sin (t), t\cos (t),2t)} </script> Then the speed of <script type="math/tex">x(t)</script> is <script type="math/tex; mode=display"> \|\vec {x}'(t)\| = \answer {\sqrt {5}t}. </script> Dividing the velocity by the speed, we obtain
 the unit tangent vector, <script type="math/tex; mode=display"> \vec {T}(t) = \answer {(\frac {-1}{\sqrt {5}}\sin (t),\frac {1}{\sqrt {5}}\cos (t), \frac {2}{\sqrt {5}})}. </script> Now, we find <script type="math/tex">\vec {T}'(t)</script>. <script type="math/tex; mode=display"> \vec {T}'(t) = (\frac {-1}{\sqrt {5}}\cos (t),\frac {-1}{\sqrt {5}}\sin (t), 0) </script> The magnitude of this vector is
                                                                   
 
                                                                   
 <script type="math/tex">\answer {\sqrt {5}}</script>.
-</p><!--l. 135--><p class="noindent" >Finally, we compute the curvature at time <script type="math/tex">t</script>. <script type="math/tex; mode=display"> \kappa (t) = \frac {\|\vec {T}'(t)\|}{\|\vec {x}'(t)\|} = \answer {\frac {1}{t}} </script>
+</p><!--l. 138--><p class="noindent" >Finally, we compute the curvature at time <script type="math/tex">t</script>. <script type="math/tex; mode=display"> \kappa (t) = \frac {\|\vec {T}'(t)\|}{\|\vec {x}'(t)\|} = \answer {\frac {1}{t}} </script>
 </div>
 <a 
  id="Q1-1-5"></a>
 </p>
 <h3 class="likesectionHead"><a 
  id="x1-3000"></a>Osculating Circle</h3>
-<!--l. 143--><p class="noindent" >In a previous example, we found that the curvature of the circle of radius <script type="math/tex">a</script> is constant,
+<!--l. 146--><p class="noindent" >In a previous example, we found that the curvature of the circle of radius <script type="math/tex">a</script> is constant,
 and <script type="math/tex">\kappa = \frac {1}{a}</script>. Another way to say this is that the radius of the circle is “one over the
 curvature,” or <script type="math/tex">a = \frac {1}{\kappa }</script>. We can extend this idea to other curves as well: given <script type="math/tex">\vec {x}(t)</script>, <script type="math/tex">r = \frac {1}{\kappa (t)}</script> is the radius
 of the circle which “best fits” the graph at time <script type="math/tex">t</script>. We call this circle the <em>osculating
 circle</em> at that point.
-</p><!--l. 145--><p class="noindent" >In the following video, you can see how the osculating circle changes as we traverse a
+</p><!--l. 148--><p class="noindent" >In the following video, you can see how the osculating circle changes as we traverse a
 curve.
 </p>
 <div class="video youtube-player" data-youtube="VkTSpo8e4Mc">_</div>
-<!--l. 150--><p class="noindent" ><em>Images were generated using <a 
+<!--l. 153--><p class="noindent" ><em>Images were generated using <a 
 href="https://www.monroecc.edu/faculty/paulseeburger/calcnsf/CalcPlot3D/" >CalcPlot3D</a>.</em>
 </body> 
  

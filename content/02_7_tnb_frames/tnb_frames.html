@@ -6,11 +6,13 @@
 <meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
 <!-- charset=utf-8,-css,html,htex4ht,xhtml --> 
 <meta name="src" content="tnb_frames.tex" /> 
-<meta name="author" content="" /> 
+<meta name="author" content="Melissa
+Lynn" /> 
 <meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
 <meta name="ximera" content="version 0.0.1" /> 
 <link href="https://ximera.osu.edu/public/stylesheets/standalone.css" rel="stylesheet" media="screen"/> 
 <script type="text/javascript" async src="https://ximera.osu.edu/public/javascripts/standalone.min.js"></script> 
+<meta name="learning-outcome" content="Understand the definition and geometric significance of the moving frame."/> 
 </head><body> 
 <div class="preamble"><script type="math/tex">\newenvironment {prompt}{}{}
 \newcommand {\DeclareMathOperator }[2]{\@OldDeclareMathOperator {##1}{##2}\immediate \write \myfile {\unexpanded {\DeclareMathOperator }{\unexpanded {##1}}{\unexpanded {##2}}}}
@@ -33,11 +35,11 @@
 class="abstract" 
 >
 </div>   <div class="maketitle"></div>
-<!--l. 11--><p class="noindent" >In this section, we introduce the moving frame of a path in <script type="math/tex">\mathbb {R}^3</script>, which is also called the
+<!--l. 14--><p class="noindent" >In this section, we introduce the moving frame of a path in <script type="math/tex">\mathbb {R}^3</script>, which is also called the
 TNB frame. This is a set of three mutually perpendicular unit vectors (an
 orthonormal set) which provide a consistent reference frame for a particle moving
 along a path.
-</p><!--l. 13--><p class="noindent" >Imagine yourself walking around, and think about the following three directions:
+</p><!--l. 16--><p class="noindent" >Imagine yourself walking around, and think about the following three directions:
 </p>
      <ul class="itemize1">
      <li class="itemize">the direction that you’re looking (“ahead”),
@@ -45,47 +47,47 @@ along a path.
      <li class="itemize">the direction that your head is pointing (“up”),
      </li>
      <li class="itemize">the direction to your right (“right”).</li></ul>
-<!--l. 19--><p class="noindent" >Together, the directions “ahead,” “up,” and “right” define your own, personal
+<!--l. 22--><p class="noindent" >Together, the directions “ahead,” “up,” and “right” define your own, personal
 reference frame. You can describe locations relative to your reference frame:
 </p>
 <div class="center" 
 >
-<!--l. 20--><p class="noindent" >
-</p><!--l. 21--><p class="noindent" >“the classroom is up a floor, three doors ahead, and on the right.”</p></div>
-<!--l. 23--><p class="noindent" >However, relative to the rest of the universe, these directions change as you walk
-around. If you turn around to face in the opposite direction, ahead and right would
-be pointing in the opposite directions that they were before. If you fly across
+<!--l. 23--><p class="noindent" >
+</p><!--l. 24--><p class="noindent" >“the classroom is up a floor, three doors ahead, and on the right.”</p></div>
+<!--l. 26--><p class="noindent" >However, relative to the rest of the universe, these directions change as you walk
                                                                   
 
                                                                   
+around. If you turn around to face in the opposite direction, ahead and right would
+be pointing in the opposite directions that they were before. If you fly across
 the world to Australia, the up direction is now in a different direction. So,
 this frame of reference is unique to your position, and how you are moving
 around.
-</p><!--l. 25--><p class="noindent" >Our goal is to define a similar reference frame for a particle moving along a path in <script type="math/tex">\mathbb {R}^3</script>,
+</p><!--l. 28--><p class="noindent" >Our goal is to define a similar reference frame for a particle moving along a path in <script type="math/tex">\mathbb {R}^3</script>,
 which will consist of three orthonormal vectors.
 <a 
  id="Q1-1-1"></a>
 </p>
 <h3 class="likesectionHead"><a 
  id="x1-1000"></a>Defining the moving frame</h3>
-<!--l. 29--><p class="noindent" >Suppose we have a path <script type="math/tex">\vec {x}(t)</script> in <script type="math/tex">\mathbb {R}^3</script>, and we want to define a reasonable reference frame for a
+<!--l. 32--><p class="noindent" >Suppose we have a path <script type="math/tex">\vec {x}(t)</script> in <script type="math/tex">\mathbb {R}^3</script>, and we want to define a reasonable reference frame for a
 particle moving along this path, which will consist of three mutually orthogonal unit
 vectors, hence an orthonormal basis for <script type="math/tex">\mathbb {R}^3</script>. We’ll construct this reference frame one
 vector at a time, thinking about how we can encode the motion of a particle along
 the path.
-</p><!--l. 31--><p class="noindent" >The first vector of our moving frame will match the “ahead” direction of our analogy:
+</p><!--l. 34--><p class="noindent" >The first vector of our moving frame will match the “ahead” direction of our analogy:
 we want a vector that tells us the direction in which the particle is moving. Since the
 velocity vector <script type="math/tex">\vec {x}'(t)</script> points in the direction of instantaneous motion along the path, this
 gives us the correct direction for our first vector. However, the velocity vector isn’t
 necessarily a unit vector. In order to obtain a unit vector in the same direction as the
 velocity vector, we divide <script type="math/tex">\vec {x}'(t)</script> by its length, obtaining the <em>unit tangent vector</em>:
 <script type="math/tex; mode=display"> \vec {T}(t) = \dfrac {\vec {x}'(t)}{\|\vec {x}'(t)\|}. </script>
-</p><!--l. 36--><p class="noindent" >In the video below, you can see how the unit tangent vector changes as we traverse a
+</p><!--l. 39--><p class="noindent" >In the video below, you can see how the unit tangent vector changes as we traverse a
 curve. Notice that the unit tangent vector is always pointing in the direction of
 motion.
 </p>
 <div class="video youtube-player" data-youtube="PFYJcjdn35o">_</div>
-<!--l. 40--><p class="noindent" >For the second vector of our moving frame, we’d like to give the direction in which a
+<!--l. 43--><p class="noindent" >For the second vector of our moving frame, we’d like to give the direction in which a
 particle moving along the path is turning. This doesn’t quite match up with the
 direction “right” from our analogy, since you might be turning to either the left or
 the right. Thinking back to our definition of curvature, we were able to see how a
@@ -96,81 +98,81 @@ That is, we considered <script type="math/tex">\vec {T}'(t)</script>. As it turn
 <div class="theorem-like problem-environment proposition" id="problem1"><a 
  id="x1-1001r1"></a><script type="math/tex">\vec {T}'(t)\perp \vec {T}(t)</script>
 </div>
-<!--l. 46--><p class="noindent" >
+<!--l. 49--><p class="noindent" >
 </p>
-<div class="proof">
-<!--l. 47--><p class="noindent" ><span class="head">
                                                                   
 
                                                                   
+<div class="proof">
+<!--l. 50--><p class="noindent" ><span class="head">
 </p><dl class="trivlist"><dt class="trivlist">
 Proof   </dt><dd 
 class="trivlist"></span>Since <script type="math/tex">\vec {T}(t)</script> is a unit vector, we have <script type="math/tex; mode=display"> \vec {T}(t)\cdot \vec {T}(t) = \answer {1} </script> for all <script type="math/tex">t</script>. Differentiating both sides of
 this equation, we have <script type="math/tex; mode=display"> \frac {d}{dt}(\vec {T}(t)\cdot \vec {T}(t)) = \answer {0}. </script> Using properties of derivatives, we then have <script type="math/tex; mode=display"> \vec {T}'(t)\cdot \vec {T}(t) + \vec {T}(t)\cdot \vec {T}'(t)=0, </script> so <script type="math/tex; mode=display"> \vec {T}'(t)\cdot \vec {T}(t) = 0. </script> This
 means that <script type="math/tex">T'(t)</script> and <script type="math/tex">T(t)</script> are perpendicular for all <script type="math/tex">t</script>.                                              <script type="math/tex">\blacksquare </script></dd></dl>
 </div>
-<!--l. 66--><p class="noindent" >Since <script type="math/tex">\vec {T}'(t)</script> will always be perpendicular to <script type="math/tex">\vec {T}(t)</script>, it’s a great candidate for the second direction
+<!--l. 69--><p class="noindent" >Since <script type="math/tex">\vec {T}'(t)</script> will always be perpendicular to <script type="math/tex">\vec {T}(t)</script>, it’s a great candidate for the second direction
 in our moving frame. However, <script type="math/tex">\vec {T}'(t)</script> won’t always be a unit vector, so we’ll need
 to divide by its length to normalize. This gives us the <em>unit normal vector</em>,
 <script type="math/tex; mode=display"> \vec {N}(t) = \dfrac {\vec {T}'(t)}{\|\vec {T}'(t)\|}. </script>
-</p><!--l. 71--><p class="noindent" >In the video below, you can see how the unit tangent vector and unit normal vector
+</p><!--l. 74--><p class="noindent" >In the video below, you can see how the unit tangent vector and unit normal vector
 change as we traverse a curve. Notice that the unit normal vector is always
 perpendicular to the unit tangent vector, and that the unit normal vector points in
 the direction that we’re curving.
 </p>
 <div class="video youtube-player" data-youtube="IRpyE1_YCT8">_</div>
-<!--l. 75--><p class="noindent" >Together, the unit tangent vector and unit normal vector span a plane, which we call
+<!--l. 78--><p class="noindent" >Together, the unit tangent vector and unit normal vector span a plane, which we call
 the <em>osculating plane</em>. The osculating circle will always lie in the osculating
 plane.
-</p><!--l. 77--><p class="noindent" >So far we have the first two vectors of our moving frame, so we just need to find the
+</p><!--l. 80--><p class="noindent" >So far we have the first two vectors of our moving frame, so we just need to find the
 third. Let’s think about how many potential candidates there are for the last vector
 in our moving frame.
-</p><!--l. 79--><p class="noindent" >If we have two orthonormal vectors <script type="math/tex">\vec {v}_1</script> and <script type="math/tex">\vec {v}_2</script> in <script type="math/tex">\mathbb {R}^3</script>, how many unit vectors in <script type="math/tex">\mathbb {R}^3</script> are
+</p><!--l. 82--><p class="noindent" >If we have two orthonormal vectors <script type="math/tex">\vec {v}_1</script> and <script type="math/tex">\vec {v}_2</script> in <script type="math/tex">\mathbb {R}^3</script>, how many unit vectors in <script type="math/tex">\mathbb {R}^3</script> are
 perpendicular to both of these vectors? </p><div class="multiple-choice" id="problem2"><span class="choice  "   id="choice1">0</span> <span class="choice  "   id="choice2">1</span> <span class="choice correct "   id="choice3">2</span> <span class="choice  "   id="choice4">3</span> <span class="choice  "   id="choice5">infinitely many</span> </div>
-<!--l. 88--><p class="noindent" >We’ll choose the third and final vector <script type="math/tex">\vec {B}</script> in our moving frame so that respects the right
+<!--l. 91--><p class="noindent" >We’ll choose the third and final vector <script type="math/tex">\vec {B}</script> in our moving frame so that respects the right
 hand rule with the first two vectors.
-</p><!--l. 90--><p class="noindent" >That is, if you take your right hand, point your fingers in the direction of <script type="math/tex">\vec {T}</script>, and curl
+</p><!--l. 93--><p class="noindent" >That is, if you take your right hand, point your fingers in the direction of <script type="math/tex">\vec {T}</script>, and curl
 your fingers in the direction of <script type="math/tex">\vec {N}</script>, then your thumb will be pointing in the direction of
 <script type="math/tex">\vec {B}</script>.
 </p>
 <div class="video youtube-player" data-youtube="7f0JAqyAsnU">_</div>
-<!--l. 94--><p class="noindent" >Another way to describe the right hand rule is that if you take your right hand,
+<!--l. 97--><p class="noindent" >Another way to describe the right hand rule is that if you take your right hand,
 point your index finger in the direction of <script type="math/tex">\vec {T}</script>, and point your middle finger
 in the direction of <script type="math/tex">\vec {T}</script>, then your thumb will be pointing in the direction of
 <script type="math/tex">\vec {B}</script>.
 </p>
-<div class="image-environment" role="img" aria-labelledby="image-alt-1"><img 
-src="./graphics/right_hand_rule.jpg" alt="PIC"  
- /> </div>
-<!--l. 100--><p class="noindent" >In order to do this, we define the <em>unit binormal vector</em> to be <script type="math/tex; mode=display"> \vec {B}(t) = \vec {T}(t)\times \vec {N}(t). </script> What is the relationship
                                                                   
 
                                                                   
+<div class="image-environment" role="img" aria-labelledby="image-alt-1"><img 
+src="./graphics/right_hand_rule.jpg" alt="PIC"  
+ /> </div>
+<!--l. 103--><p class="noindent" >In order to do this, we define the <em>unit binormal vector</em> to be <script type="math/tex; mode=display"> \vec {B}(t) = \vec {T}(t)\times \vec {N}(t). </script> What is the relationship
 between <script type="math/tex">\vec {T}(t)\times \vec {N}(t)</script> and <script type="math/tex">\vec {N}(t)\times \vec {T}(t)</script>? Select all that apply. </p><div class="select-all" id="problem3"><a 
  id="x1-1002r2"></a> <span class="choice  "   id="choice6">They’re the same vector.</span> <span class="choice correct "   id="choice7">They have the
 same length.</span> <span class="choice  "   id="choice8">They point in the same direction.</span> <span class="choice correct "   id="choice9">They point in opposite directions.</span>
 <span class="choice correct "   id="choice10">One is <script type="math/tex">-1</script> times the other.</span>
 </div> So, we need to be careful about the order of this cross product, so that we choose
 our unit binormal vector consistently.
-<!--l. 114--><p class="noindent" >Together, <script type="math/tex">\vec {T}</script>, <script type="math/tex">\vec {N}</script> and <script type="math/tex">\vec {B}</script> are three mutually perpendicular unit vectors. They form an
+<!--l. 117--><p class="noindent" >Together, <script type="math/tex">\vec {T}</script>, <script type="math/tex">\vec {N}</script> and <script type="math/tex">\vec {B}</script> are three mutually perpendicular unit vectors. They form an
 orthonormal basis for <script type="math/tex">\mathbb {R}^3</script>, which changes as we move along the path.
-</p><!--l. 116--><p class="noindent" >In the video below, you can see how the unit tangent vector, unit normal vector, and
+</p><!--l. 119--><p class="noindent" >In the video below, you can see how the unit tangent vector, unit normal vector, and
 unit binormal vector change as we traverse a curve. Notice that the unit binormal is
 always perpendicular to the unit tangent and unit normal vectors, and that it
 respects the right hand rule.
 </p>
 <div class="video youtube-player" data-youtube="8sqA5OfrpCQ">_</div>
-<!--l. 120--><p class="noindent" >We now summarize the above derivations in our definition of the moving
+<!--l. 123--><p class="noindent" >We now summarize the above derivations in our definition of the moving
 frame.
 </p>
 <div class="theorem-like problem-environment definition" id="problem4"><a 
  id="x1-1003r3"></a>Given a path <script type="math/tex">\vec {x}(t)</script>, we define the <em>moving frame</em> of the path to be the triple <script type="math/tex">(\vec {T},\vec {N},\vec {B})</script>.
-<!--l. 125--><p class="noindent" ><script type="math/tex">\vec {T}</script> is the <em>unit tangent vector</em>, <script type="math/tex; mode=display"> \vec {T}(t) = \dfrac {\vec {x}'(t)}{\|\vec {x}'(t)\|}. </script>
-</p><!--l. 130--><p class="noindent" ><script type="math/tex">\vec {N}</script> is the <em>unit normal vector</em>, <script type="math/tex; mode=display"> \vec {N}(t) = \dfrac {\vec {T}'(t)}{\|\vec {T}'(t)\|}. </script>
-</p><!--l. 135--><p class="noindent" ><script type="math/tex">\vec {B}</script> is the <em>unit binormal vector</em>, <script type="math/tex; mode=display"> \vec {B}(t) = \vec {T}(t)\times \vec {N}(t). </script>
-</p><!--l. 140--><p class="noindent" >The moving frame is also called the <em>TNB frame</em>.
+<!--l. 128--><p class="noindent" ><script type="math/tex">\vec {T}</script> is the <em>unit tangent vector</em>, <script type="math/tex; mode=display"> \vec {T}(t) = \dfrac {\vec {x}'(t)}{\|\vec {x}'(t)\|}. </script>
+</p><!--l. 133--><p class="noindent" ><script type="math/tex">\vec {N}</script> is the <em>unit normal vector</em>, <script type="math/tex; mode=display"> \vec {N}(t) = \dfrac {\vec {T}'(t)}{\|\vec {T}'(t)\|}. </script>
+</p><!--l. 138--><p class="noindent" ><script type="math/tex">\vec {B}</script> is the <em>unit binormal vector</em>, <script type="math/tex; mode=display"> \vec {B}(t) = \vec {T}(t)\times \vec {N}(t). </script>
+</p><!--l. 143--><p class="noindent" >The moving frame is also called the <em>TNB frame</em>.
 </div>
-</p><!--l. 143--><p class="noindent" ><em>Images were generated using <a 
+</p><!--l. 146--><p class="noindent" ><em>Images were generated using <a 
 href="https://www.monroecc.edu/faculty/paulseeburger/calcnsf/CalcPlot3D/" >CalcPlot3D</a>.</em>
 </body> 
  

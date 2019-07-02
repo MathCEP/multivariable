@@ -1,9 +1,9 @@
 \expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi
 \doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{Q1-1-1}{}{Derivatives}}{1}\relax 
 \doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-1000}{QQ2-1-2}{Derivatives}}{1}\relax 
-\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{Q1-1-3}{}{Speed}}{3}\relax 
-\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-2000}{QQ2-1-4}{Speed}}{3}\relax 
-\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{Q1-1-5}{}{Acceleration}}{4}\relax 
-\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-3000}{QQ2-1-6}{Acceleration}}{4}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{Q1-1-3}{}{Speed}}{4}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-2000}{QQ2-1-4}{Speed}}{4}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{Q1-1-5}{}{Acceleration}}{5}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-3000}{QQ2-1-6}{Acceleration}}{5}\relax 
 \doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{Q1-1-7}{}{Parametrizing the tangent line}}{5}\relax 
 \doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-4000}{QQ2-1-8}{Parametrizing the tangent line}}{5}\relax 

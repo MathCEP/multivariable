@@ -86,15 +86,17 @@ compact sets.
 <h3 class="likesectionHead"><a 
  id="x1-1000"></a>Compact sets</h3>
 <!--l. 38--><p class="noindent" >In order to formulate a version of the Extreme Value Theorem for multivariable
-functions, we need to consider functions over compact sets.
+functions, we need to consider functions over compact sets, which must be closed.
+Recall that a subset <script type="math/tex">X\subset \mathbb {R}^n</script> is <em>closed</em> if its complement is open. Equivalently, <script type="math/tex">X</script> is closed if
+and only if it contains all of its boundary points. Roughly speaking, a set is compact
+if its “edges” are solid lines, not dashed lines.
+</p><!--l. 40--><p class="noindent" >For a set to be compact, it needs to be bounded in addition to being closed.
 </p>
 <div class="theorem-like problem-environment definition" id="problem3"><a 
- id="x1-1001r3"></a>A subset <script type="math/tex">X\subset \mathbb {R}^n</script> is <em>closed</em> if it includes its boundary. Roughly speaking, this means that the
-“edges” of <script type="math/tex">X</script> are solid lines, not dashed lines.
-<!--l. 43--><p class="noindent" >A subset <script type="math/tex">X\subset \mathbb {R}^n</script> is <em>bounded</em> if there exists some <script type="math/tex">R</script> such that that <script type="math/tex">X\subset B_R(\vec {0}) = \{\vec {x}\;:\;\|\vec {x}\|<R\}</script>. Roughly speaking, this
+ id="x1-1001r3"></a>A subset <script type="math/tex">X\subset \mathbb {R}^n</script> is <em>bounded</em> if there exists some <script type="math/tex">R</script> such that that <script type="math/tex">X\subset B_R(\vec {0}) = \{\vec {x}\;:\;\|\vec {x}\|<R\}</script>. Roughly speaking, this
 means that <script type="math/tex">X</script> doesn’t stretch to infinity in any direction, so we can zoom out far
 enough that we can see all of <script type="math/tex">X</script>.
-</p><!--l. 45--><p class="noindent" >A subset <script type="math/tex">X\subset \mathbb {R}^n</script> is <em>compact</em> if it is both closed and bounded.
+<!--l. 45--><p class="noindent" >A subset <script type="math/tex">X\subset \mathbb {R}^n</script> is <em>compact</em> if it is both closed and bounded.
 </div>
 </p>
 <div class="theorem-like problem-environment example" id="problem4"><a 
@@ -106,13 +108,13 @@ src="./compact_region-figure0.svg" alt=""
 </div>
 <!--l. 61--><p class="noindent" >The set <script type="math/tex">\{(x,y)\;:\;x^2+y^2\leq 1\}\subset \mathbb {R}^2</script> is both closed and bounded, hence compact.
 </p>
+                                                                  
+
+                                                                  
 <div class="image-environment" role="img" aria-labelledby="image-alt-2">  <img 
 src="./compact_region-figure1.svg" alt=""  
  />
 </div>
-                                                                  
-
-                                                                  
 <!--l. 73--><p class="noindent" >The set <script type="math/tex">\{(x,y)\;:\;x^2+y^2\geq 1\}\subset \mathbb {R}^2</script> is closed but not bounded. Hence it is not compact.
 </p>
 <div class="image-environment" role="img" aria-labelledby="image-alt-3">  <img 
@@ -158,12 +160,12 @@ critical point of <script type="math/tex">f</script> in <script type="math/tex">
 </p><!--l. 138--><p class="noindent" >Because of this theorem, we can follow the steps below to optimize a continuous
 function <script type="math/tex">f</script> on a compact region <script type="math/tex">X</script>.
      </p><dl class="enumerate-enumitem"><dt class="enumerate-enumitem">
- (a) </dt><dd 
-class="enumerate-enumitem">Find the critical points of <script type="math/tex">f</script> in <script type="math/tex">X</script>, and find the value of <script type="math/tex">f</script> at each of these
-     points.
                                                                   
 
                                                                   
+ (a) </dt><dd 
+class="enumerate-enumitem">Find the critical points of <script type="math/tex">f</script> in <script type="math/tex">X</script>, and find the value of <script type="math/tex">f</script> at each of these
+     points.
      </dd><dt class="enumerate-enumitem">
  (b) </dt><dd 
 class="enumerate-enumitem">Find the absolute maximum and absolute minimum of <script type="math/tex">f</script> on the boundary
@@ -204,12 +206,12 @@ g\left(\frac{3\pi}{4}\right) = \frac{3}{2},\\
 g\left(\frac{5\pi}{4}\right) = \frac{1}{2},\\
 g\left(\frac{7\pi}{4}\right) = \frac{3}{2}.\\
 \end{align*}</script>
-<!--l. 193--><p class="noindent" >The values of <script type="math/tex">g</script> at the endpoints, <script type="math/tex">t=0</script> and <script type="math/tex">t=2\pi </script>, are </p><script type="math/tex; mode=display"> \begin{align*} 
-g(0) &= 1,\\
-g(2\pi) &= 1.
                                                                   
 
                                                                   
+<!--l. 193--><p class="noindent" >The values of <script type="math/tex">g</script> at the endpoints, <script type="math/tex">t=0</script> and <script type="math/tex">t=2\pi </script>, are </p><script type="math/tex; mode=display"> \begin{align*} 
+g(0) &= 1,\\
+g(2\pi) &= 1.
 \end{align*}</script>
 <!--l. 198--><p class="noindent" >Comparing all of these values, we see that the absolute maximum of <script type="math/tex">g</script> is <script type="math/tex">\frac {3}{2}</script>, and this
 occurs when <script type="math/tex">t=\frac {3\pi }{4}</script> and when <script type="math/tex">t=\frac {7\pi }{4}</script>. These correspond to the points <script type="math/tex">\left (\frac {-\sqrt {2}}{2},\frac {\sqrt {2}}{2}\right )</script> and <script type="math/tex">\left (\frac {\sqrt {2}}{2},\frac {-\sqrt {2}}{2}\right )</script> on the boundary of <script type="math/tex">D</script>.

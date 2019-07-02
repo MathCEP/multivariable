@@ -4,7 +4,7 @@
 \contentsline {section}{The Cross Product}{15}{section*.3}
 \contentsline {section}{Matrices}{19}{section*.4}
 \contentsline {section}{Representations of Lines and Planes}{32}{section*.5}
-\contentsline {section}{Review of Coordinate Systems}{34}{section*.6}
+\contentsline {section}{Coordinate Systems}{34}{section*.6}
 \contentsline {part}{II\hspace {1em}Coordinate Systems and Functions}{44}{part.2}
 \contentsline {section}{Functions}{44}{section*.7}
 \contentsline {section}{Graphing Functions}{51}{section*.8}
