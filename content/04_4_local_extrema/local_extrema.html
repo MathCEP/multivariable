@@ -116,9 +116,17 @@ derivative.
  id="x1-2001r7"></a>We say that <script type="math/tex">f:\mathbb {R}^n\rightarrow \mathbb {R}</script> has a <em>critical point</em> at <script type="math/tex">\vec {x}=\vec {a}</script> if <script type="math/tex">\nabla f(\vec {a})=\vec {0}</script>, or <script type="math/tex">\nabla f(\vec {a})</script> does not exist.
 </div>
 <!--l. 96--><p class="noindent" >For functions <script type="math/tex">f:\mathbb {R}^2\rightarrow \mathbb {R}</script>, we can visualize critical points as points where the tangent plane is
-either horizontal, or undefined.
-</p><!--l. 98--><p class="noindent" >PICTURES
-</p><!--l. 100--><p class="noindent" >As in single variable calculus, if a function has local extrema, they will occur at
+either horizontal, or undefined. Each of the graphs below has a critical point at
+<script type="math/tex">(0,0)</script>.
+</p>
+<div class="image-environment" role="img" aria-labelledby="image-alt-1"><img 
+src="./graphics/CalcPlot3D-pos_def.png" alt="PIC"  
+ /> <img 
+src="./graphics/CalcPlot3D-indef.png" alt="PIC"  
+ /> <img 
+src="./graphics/CalcPlot3D-abs.png" alt="PIC"  
+ /> </div>
+<!--l. 104--><p class="noindent" >As in single variable calculus, if a function has local extrema, they will occur at
 critical points.
 </p>
 <div class="theorem-like problem-environment proposition" id="problem10"><a 
@@ -130,17 +138,18 @@ critical points.
 points in <script type="math/tex">\mathbb {R}^2</script>, so the critical points will satisfy <script type="math/tex">\nabla f(x,y)=(0,0)</script>. In order to find the critical points, we
 solve the system of equations <script type="math/tex; mode=display">\begin {cases} 3x^2+2xy=0\\ x^2-2y-4=0 \end {cases}.</script> Factoring the first equation, we have <script type="math/tex">x(3x+2y)=0</script>, giving us the
 cases <script type="math/tex">x=0</script> or <script type="math/tex">3x+2y=0</script>.
-<!--l. 118--><p class="noindent" >If <script type="math/tex">x=0</script>, the second equation gives us <script type="math/tex">y=-2</script>. So <script type="math/tex">(0,-2)</script> is a critical point.
-</p><!--l. 120--><p class="noindent" >If <script type="math/tex">3x+2y=0</script>, plugging <script type="math/tex">y=\frac {-3}{2} x</script> into the second equation gives us <script type="math/tex">x^2+3x-4=0</script>, so <script type="math/tex">x=1</script> or <script type="math/tex">x=-4</script>. This gives us the critical
+<!--l. 122--><p class="noindent" >If <script type="math/tex">x=0</script>, the second equation gives us <script type="math/tex">y=-2</script>. So <script type="math/tex">(0,-2)</script> is a critical point.
+</p><!--l. 124--><p class="noindent" >If <script type="math/tex">3x+2y=0</script>, plugging <script type="math/tex">y=\frac {-3}{2} x</script> into the second equation gives us <script type="math/tex">x^2+3x-4=0</script>, so <script type="math/tex">x=1</script> or <script type="math/tex">x=-4</script>. This gives us the critical
 points <script type="math/tex">(1,-3/2)</script> and <script type="math/tex">(-4,6)</script>.
-</p><!--l. 122--><p class="noindent" >Thus, the critical points of <script type="math/tex">f</script> are <script type="math/tex">(0,-2)</script>, <script type="math/tex">(1,-3/2)</script>, and <script type="math/tex">(-4,6)</script>.
+</p><!--l. 126--><p class="noindent" >Thus, the critical points of <script type="math/tex">f</script> are <script type="math/tex">(0,-2)</script>, <script type="math/tex">(1,-3/2)</script>, and <script type="math/tex">(-4,6)</script>.
 </div>
 <a 
  id="Q1-1-5"></a>
 </p>
 <h3 class="likesectionHead"><a 
  id="x1-3000"></a>Classifying critical points</h3>
-<!--l. 127--><p class="noindent" >We can use the Hessian matrix to classify critical points in some cases.
+<!--l. 131--><p class="noindent" >Analogous to the second derivative test from single variable calculus, we can use the
+Hessian matrix to classify critical points in some cases.
 </p>
 <div class="theorem-like problem-environment proposition" id="problem12"><a 
  id="x1-3001r10"></a>Suppose <script type="math/tex">f:\mathbb {R}^n\rightarrow \mathbb {R}</script> has continuous second order partial derivatives (so <script type="math/tex">f</script> has <script type="math/tex">\mathcal {C}^2</script>) at and near a
@@ -150,12 +159,12 @@ critical point <script type="math/tex">\vec {a}\in U</script>.
      </li>
      <li class="itemize">If <script type="math/tex">Hf(\vec {a})</script> is negative definite, then <script type="math/tex">f</script> has a <em>local maximum</em> at <script type="math/tex">\vec {x}=\vec {a}</script>.
      </li>
-     <li class="itemize">If <script type="math/tex">Hf(\vec {a})</script> is indefinite, then <script type="math/tex">f</script> has a saddle point at <script type="math/tex">\vec {x}=\vec {a}</script>.</li></ul>
-<!--l. 136--><p class="noindent" ></div>
-</p>
                                                                   
 
                                                                   
+     <li class="itemize">If <script type="math/tex">Hf(\vec {a})</script> is indefinite, then <script type="math/tex">f</script> has a saddle point at <script type="math/tex">\vec {x}=\vec {a}</script>.</li></ul>
+<!--l. 140--><p class="noindent" ></div>
+</p>
 <div class="theorem-like problem-environment example" id="problem13"><a 
  id="x1-3002r11"></a>Consider again the function <script type="math/tex">f(x,y) = x^3+x^2y-y^2-4y</script>. Earlier, we found the critical points of this function,
 which are <script type="math/tex">(0,-2)</script>, <script type="math/tex">(1,-3/2)</script>, and <script type="math/tex">(-4,6)</script>. In order to classify these critical points, we find the Hessian matrix

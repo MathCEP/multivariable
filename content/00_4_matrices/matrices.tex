@@ -1,6 +1,8 @@
 \documentclass{ximera}  
 
 \title{Matrices}  
+\author{Melissa Lynn}
+\outcome{Review basic matrix operations.}
 
 \begin{document}  
 \begin{abstract}  
@@ -135,26 +137,25 @@ Let $A$ and $B$ be $m\times n$ matrices, and let $k$ and $l$ be scalars in $\mat
 \end{enumerate}
 \end{proposition}
 
-We'll now define matrix multiplication, which can be a bit trickier to work with than matrix addition or scalar multiplication. Here are some important things to remember about matrix multiplication:
+We'll now define matrix multiplication, which can be a bit trickier to work with than matrix addition or scalar multiplication. Matrix multiplication is stranger because it arises from the correspondence between matrices and linear transformations, in a way so that multiplication corresponds to composition of transformations. We'll review this correspondence a bit later. For now, here are some important things to remember about matrix multiplication:
 \begin{itemize}
 \item Not all matrices can be multiplied. In order to compute the product $AB$ of two matrices $A$ and $B$, the number of columns in $A$ needs to be the same as the number of rows in $B$.
 \item Matrix multiplication is \emph{not} commutative. In fact, its possible that the matrix product $AB$ exists but the product $BA$ does not.
 \end{itemize}
 
 \begin{definition}
-Let $A$ be an $m\times n$ matrix, and let $B$ be an $n\times p$ matrix, with  
+Let $A$ be an $m\times n$ matrix, and let $B$ be an $n\times p$ matrix, and let $\vec{a}_i$ be the row vectors of $A$, and $\vec{b}_j$ the column vectors of $B$. That is, 
 \begin{align*}
-A &= \left(\begin{array}{cccc}
-a_{11}& a_{12} & \cdots & a_{1n}\\
-a_{21}& a_{22} & \cdots & a_{2n}\\
-\vdots & \vdots & & \vdots\\
-a_{m1}& a_{m2} & \cdots & a_{mn}\\
+A &= \left(\begin{array}{ccc}
+- & \vec{a}_1 & -\\
+- & \vec{a}_2 & -\\
+& \vdots &\\
+- & \vec{a}_m & -\\
 \end{array}\right), \\
 B &= \left(\begin{array}{cccc}
-b_{11}& b_{12} & \cdots & b_{1p}\\
-b_{21}& b_{22} & \cdots & b_{2p}\\
-\vdots & \vdots & & \vdots\\
-b_{n1}& b_{n2} & \cdots & b_{np}\\
+| & | & & |\\
+\vec{b}_1 & \vec{b}_2 & \cdots & \vec{b}_p\\
+| & | & & |
 \end{array}\right).
 \end{align*}
 Note that we are assuming the number of columns in $A$ is the same as the number of rows in $B$.
@@ -162,13 +163,13 @@ Note that we are assuming the number of columns in $A$ is the same as the number
 We define the \emph{matrix product} of $A$ and $B$, denoted $AB$, to be the $m\times p$ matrix
 \[
 AB = \left(\begin{array}{cccc}
-a_{11}b_{11} + a_{12}b_{21}+\cdots + a_{1n}b_{n1}& a_{11}b_{12} + a_{12}b_{22}+\cdots + a_{1n}b_{n2} & \cdots & a_{11}b_{1p} + a_{12}b_{2p}+\cdots + a_{1n}b_{np}\\
-a_{21}b_{11} + a_{22}b_{21}+\cdots + a_{2n}b_{n1}& a_{21}b_{12} + a_{22}b_{22}+\cdots + a_{2n}b_{n2} & \cdots & a_{21}b_{1p} + a_{22}b_{2p}+\cdots + a_{2n}b_{np}\\
+\vec{a}_1\cdot \vec{b}_1 & \vec{a}_1\cdot \vec{b}_2 & \cdots & \vec{a}_1\cdot \vec{b}_p\\
+\vec{a}_2\cdot \vec{b}_1 & \vec{a}_2\cdot \vec{b}_2 & \cdots & \vec{a}_2\cdot \vec{b}_p\\
 \vdots & \vdots & & \vdots\\
-a_{m1}b_{11} + a_{m2}b_{21}+\cdots + a_{mn}b_{n1}& a_{m1}b_{12} + a_{m2}b_{22}+\cdots + a_{mn}b_{n2} & \cdots & a_{m1}b_{1p} + a_{m2}b_{2p}+\cdots + a_{mn}b_{np}\\
+\vec{a}_m\cdot \vec{b}_1 & \vec{a}_m\cdot \vec{b}_2 & \cdots & \vec{a}_m\cdot \vec{b}_p\\
 \end{array}\right).
 \] 
-Equivalently, we could define the $ij$th entry of $AB$ to be the dot product of the $i$th row of $A$ with the $j$th column of $B$. This makes sense, since the number of columns in $A$ is the same as the number of rows in $B$ (both $n$), which ensures that the $i$th row of $A$ and the $j$th column of $B$ are both vectors in $\mathbb{R}^n$.
+That is, we define the $ij$th entry of $AB$ to be the dot product of the $i$th row of $A$ with the $j$th column of $B$. This definition makes sense, since the number of columns in $A$ is the same as the number of rows in $B$ (both $n$), which ensures that the $i$th row of $A$ and the $j$th column of $B$ are both vectors in $\mathbb{R}^n$.
 \end{definition}
 
 This definition can seem a bit convoluted, and it's easier to understand how matrix multiplication works by going through an example.
@@ -554,10 +555,6 @@ A = \left(\begin{array}{cc}
 \end{array}\right).
 \]
 \end{example}
-
-\section*{Summary}
-
-In this section, we reviewed matrix operations and properties, determinants, and linear transformations.
 
 Although we've reviewed some of the most important concepts from linear algebra, there is still a lot of material that we weren't able to include here. Make sure you refer back to your linear algebra textbook if there's anything else you need to review!
 

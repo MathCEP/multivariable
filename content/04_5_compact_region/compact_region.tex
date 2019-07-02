@@ -1,6 +1,6 @@
 \documentclass{ximera}
 
-\graphicspath{{./graphics/}}
+\graphicspath{{./graphics/}{./content/04_5_compact_region/graphics/}}
 
 \title{Absolute Extrema}
 \begin{document}
@@ -35,11 +35,11 @@ We will be able to find an analogous theorem and process for finding the absolut
 
 \section*{Compact sets}
 
-In order to formulate a version of the Extreme Value Theorem for multivariable functions, we need to consider functions over compact sets.
+In order to formulate a version of the Extreme Value Theorem for multivariable functions, we need to consider functions over compact sets, which must be closed. Recall that a subset $X\subset\mathbb{R}^n$ is \emph{closed} if its complement is open. Equivalently, $X$ is closed if and only if it contains all of its boundary points. Roughly speaking, a set is compact if its ``edges'' are solid lines, not dashed lines.
+
+For a set to be compact, it needs to be bounded in addition to being closed.
 
 \begin{definition}
-A subset $X\subset\mathbb{R}^n$ is \emph{closed} if it includes its boundary. Roughly speaking, this means that the ``edges'' of $X$ are solid lines, not dashed lines.
-
 A subset $X\subset\mathbb{R}^n$ is \emph{bounded} if there exists some $R$ such that that $X\subset B_R(\vec{0}) = \{\vec{x}\;:\;\|\vec{x}\|<R\}$. Roughly speaking, this means that $X$ doesn't stretch to infinity in any direction, so we can zoom out far enough that we can see all of $X$.
 
 A subset $X\subset\mathbb{R}^n$ is \emph{compact} if it is both closed and bounded.

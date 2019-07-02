@@ -37,10 +37,14 @@ class="abstract"
 suppose we would like the find the maximum value of <script type="math/tex">f(x,y) = xy</script> subject to the constraint <script type="math/tex">2x+2y=100</script>. We
 can think of this as restricting ourselves to the line <script type="math/tex">2x+2y=100</script>, and finding the maximum value
 of <script type="math/tex">f</script> over this line.
-</p><!--l. 13--><p class="noindent" >PICTURE
-</p><!--l. 15--><p class="noindent" >These types of problems often arise in real-world applications: you have some
+</p>
+<div class="image-environment" role="img" aria-labelledby="image-alt-1">  <img 
+src="./substitution-figure0.svg" alt=""  
+ />
+</div>
+<!--l. 25--><p class="noindent" >These types of problems often arise in real-world applications: you have some
 limitation on resources, which provide the constraint, and want to optimize some sort
-of performance. A classic problem from geometry and single variable calculus is to
+of performance. A classical problem from geometry and single variable calculus is to
 maximize the area of a rectangle, subject to the constraint that the perimeter is <script type="math/tex">100m</script>.
 Setting up the problem algebraically, this is equivalent to finding the maximum value
 of <script type="math/tex">f(x,y) = xy</script> subject to the constraint <script type="math/tex">2x+2y=100</script>. In single variable calculus, we could solve for <script type="math/tex">y</script> in the
@@ -51,16 +55,16 @@ g(x) &= f(x,50-x)\\
 &= x(50-x)\\
 &= 50x-x^2.
 \end{align*}</script>
-<!--l. 21--><p class="noindent" >Differentiating <script type="math/tex">g</script>, we get <script type="math/tex; mode=display"> g'(x) = 50-2x. </script> So, we have <script type="math/tex">g'(x) = 0</script> when <script type="math/tex">x = 25</script>. The second derivative of <script type="math/tex">g</script> is <script type="math/tex">g''(x) = -2<0</script>, so <script type="math/tex">g</script> has a
+<!--l. 31--><p class="noindent" >Differentiating <script type="math/tex">g</script>, we get <script type="math/tex; mode=display"> g'(x) = 50-2x. </script> So, we have <script type="math/tex">g'(x) = 0</script> when <script type="math/tex">x = 25</script>. The second derivative of <script type="math/tex">g</script> is <script type="math/tex">g''(x) = -2<0</script>, so <script type="math/tex">g</script> has a
 local maximum at <script type="math/tex">x=25</script>. Since <script type="math/tex">g</script> is continuous on all of <script type="math/tex">\mathbb {R}</script> and has only one critical point, this
 means that <script type="math/tex">g</script> has an absolute maximum at <script type="math/tex">x=25</script>. So, the maximum value of <script type="math/tex">f</script> is
 <script type="math/tex; mode=display"> f(25,50-25) = g(25) = 15625. </script>
-</p><!--l. 30--><p class="noindent" >For optimization subject to a constraint for multivariable functions in general, we’ll
-follow a similar process: use the constraint to make a substitution, and then optimize
-the resulting function. However, we’ll soon see that this can be much more
                                                                   
 
                                                                   
+</p><!--l. 40--><p class="noindent" >For optimization subject to a constraint for multivariable functions in general, we’ll
+follow a similar process: use the constraint to make a substitution, and then optimize
+the resulting function. However, we’ll soon see that this can be much more
 complicated than it was in the single variable case, and it requires paying careful
 attention to constraints and domains.
 <a 
@@ -68,7 +72,7 @@ attention to constraints and domains.
 </p>
 <h3 class="likesectionHead"><a 
  id="x1-1000"></a>Optimization with Constraints</h3>
-<!--l. 34--><p class="noindent" >Let’s consider a higher dimensional version of the problem from the introduction.
+<!--l. 44--><p class="noindent" >Let’s consider a higher dimensional version of the problem from the introduction.
 That is, let’s try to find the maximum value of <script type="math/tex">f(x,y,z) = xyz</script> subject to the constraint that <script type="math/tex">x+y+z=30</script>.
 Taking the constraint <script type="math/tex">x+y+z=30</script> and solving for <script type="math/tex">z</script>, we have <script type="math/tex">z = 30-x-y</script>. Using substitution, we can reduce
 the function <script type="math/tex">f</script> to a function of two variables, </p><script type="math/tex; mode=display"> \begin{align*} 
@@ -76,16 +80,19 @@ g(x,y) &= f(x,y,30-x-y)\\
 &= xy(30-x-y)\\
 &= 30xy-x^2y-xy^2.
 \end{align*}</script>
-<!--l. 40--><p class="noindent" >So, we’d like to optimize <script type="math/tex">g</script>. In order to do this, we’ll find the critical points of <script type="math/tex">g</script>. For
+<!--l. 50--><p class="noindent" >So, we’d like to optimize <script type="math/tex">g</script>. In order to do this, we’ll find the critical points of <script type="math/tex">g</script>. For
 this, we first find the gradient of <script type="math/tex">g</script>. <script type="math/tex; mode=display"> \nabla g(x,y) = (30y-2xy-y^2, 30x-2xy-x^2) </script> Solving <script type="math/tex">(30y-2xy-y^2, 30x-2xy-x^2) = (0,0)</script>, we find two critical points: <script type="math/tex">(0,0)</script> and <script type="math/tex">(10,10)</script>. Let’s
 use the Hessian matrix of <script type="math/tex">g</script> to determine the behavior of <script type="math/tex">g</script> at these critical points. <script type="math/tex; mode=display"> Hg(x,y) = \begin {pmatrix} -2y & 30-2x-2y\\ 30-2x-2y & -2x \end {pmatrix} </script> At <script type="math/tex">(0,0)</script>,
 the Hessian matrix is <script type="math/tex; mode=display"> Hg(x,y) = \begin {pmatrix} 0 & 30\\ 30 & 0 \end {pmatrix}. </script> This corresponds to the quadratic form <script type="math/tex">p(x,y) = 60xy</script>, which is indefinite.
 So, <script type="math/tex">g</script> has a saddle point at <script type="math/tex">(0,0)</script>.
-</p><!--l. 60--><p class="noindent" >At <script type="math/tex">(10,10)</script>, the Hessian matrix is <script type="math/tex; mode=display"> Hg(x,y) = \begin {pmatrix} -20 & -10\\ -10 & -20 \end {pmatrix}. </script> Using Sylvester’s Theorem, this matrix is negative definite.
+</p><!--l. 70--><p class="noindent" >At <script type="math/tex">(10,10)</script>, the Hessian matrix is <script type="math/tex; mode=display"> Hg(x,y) = \begin {pmatrix} -20 & -10\\ -10 & -20 \end {pmatrix}. </script> Using Sylvester’s Theorem, this matrix is negative definite.
 So, <script type="math/tex">g</script> has a local maximum at <script type="math/tex">(10,10)</script>. But does this mean that <script type="math/tex">g</script> has an absolute maximum at
 <script type="math/tex">(10,10)</script>? Let’s look at the graph of <script type="math/tex">g</script> to investigate.
-</p><!--l. 69--><p class="noindent" >PICTURE
-</p><!--l. 71--><p class="noindent" >We see that <script type="math/tex">g</script> actually doesn’t have any absolute maximum (or minimum) - it’s values
+</p>
+<div class="image-environment" role="img" aria-labelledby="image-alt-2"><img 
+src="./graphics/CalcPlot3D-saddle.png" alt="PIC"  
+ /> </div>
+<!--l. 83--><p class="noindent" >We see that <script type="math/tex">g</script> actually doesn’t have any absolute maximum (or minimum) - it’s values
 get arbitrarily large, and arbitrarily small. So, here we see an example where the
 multivariable situation is more nuanced than the single variable situation. Often, it
 will be difficult to determine if multivariable functions have absolute extrema using
@@ -93,67 +100,73 @@ the methods that we’ve covered so far. However, in the case where we’re opti
 continuous function over a compact region, we know that absolute extrema
 exist. Because of this fact, we will focus most of our attention on this special
 situation.
-</p><!--l. 73--><p class="noindent" >With that in mind, let’s consider a revised version of our previous problem.
+</p><!--l. 85--><p class="noindent" >With that in mind, let’s consider a revised version of our previous problem.
 </p>
 <div class="theorem-like problem-environment example" id="problem1"><a 
  id="x1-1001r1"></a>We’ll find the maximum and minimum values of <script type="math/tex">f(x,y,z) = xyz</script> subject to the constraints that <script type="math/tex">x+y+z=30</script>, and
 <script type="math/tex">x</script>, <script type="math/tex">y</script>, and <script type="math/tex">z</script> must be <em>nonnegative</em>.
-<!--l. 78--><p class="noindent" >If we consider the set of <script type="math/tex">(x,y,z)</script> such that <script type="math/tex">x+y+z=30</script>, and <script type="math/tex">x,y,z\geq 0</script>, we see that this is a triangle in <script type="math/tex">\mathbb {R}^3</script>, and that
-it is a compact region. Since <script type="math/tex">f</script> is a continuous function, the Extreme Value Theorem
-guarantees that it will achieve and absolute maximum and minimum. We could
-optimize this function using our earlier methods for compact regions, but we’ll
                                                                   
 
                                                                   
+<!--l. 90--><p class="noindent" >If we consider the set of <script type="math/tex">(x,y,z)</script> such that <script type="math/tex">x+y+z=30</script>, and <script type="math/tex">x,y,z\geq 0</script>, we see that this is a triangle in <script type="math/tex">\mathbb {R}^3</script>, and that
+it is a compact region. Since <script type="math/tex">f</script> is a continuous function, the Extreme Value Theorem
+guarantees that it will achieve and absolute maximum and minimum. We could
+optimize this function using our earlier methods for compact regions, but we’ll
 instead optimize using substitution.
-</p><!--l. 80--><p class="noindent" >Substituting <script type="math/tex">z = 30-x-y</script>, we reduce <script type="math/tex">f</script> to a function of two variables, </p><script type="math/tex; mode=display"> \begin{align*} 
+</p><!--l. 92--><p class="noindent" >Substituting <script type="math/tex">z = 30-x-y</script>, we reduce <script type="math/tex">f</script> to a function of two variables, </p><script type="math/tex; mode=display"> \begin{align*} 
 g(x,y) &= f(x,y,30-x-y)\\
 &= xy(30-x-y)\\
 &= 30xy-x^2y-xy^2.
 \end{align*}</script>
-<!--l. 86--><p class="noindent" >Keeping our previous constraints in mind, we want to optimize <script type="math/tex">g</script> over the region <script type="math/tex">X = \{(x,y)\;:\;x\geq 0, y\geq 0, \text { and } 30-x-y\geq 0\}</script>.
-Graphing this region in <script type="math/tex">\mathbb {R}^2</script>, we see that <script type="math/tex">X</script> is a compact region, hence has an absolute
-maximum and absolute minimum.
-</p><!--l. 88--><p class="noindent" >PICTURE
-</p><!--l. 90--><p class="noindent" >We find the gradient of <script type="math/tex">g</script> to find the critical points in <script type="math/tex">X</script>, <script type="math/tex; mode=display"> \nabla g(x,y) = (30y-2xy-y^2, 30x-2xy-x^2), </script> and solving <script type="math/tex">(30y-2xy-y^2, 30x-2xy-x^2) = (0,0)</script>, we
+<!--l. 98--><p class="noindent" >Keeping our previous constraints in mind, we want to optimize <script type="math/tex">g</script> over the region <script type="math/tex">X = \{(x,y)\;:\;x\geq 0, y\geq 0, \text { and } 30-x-y\geq 0\}</script>.
+Graphing this region in <script type="math/tex">\mathbb {R}^2</script>, we see that <script type="math/tex">X</script> is a compact region, hence <script type="math/tex">g</script> has an absolute
+maximum and absolute minimum over <script type="math/tex">X</script>.
+</p>
+<div class="image-environment" role="img" aria-labelledby="image-alt-3">  <img 
+src="./substitution-figure1.svg" alt=""  
+ />
+</div>
+<!--l. 112--><p class="noindent" >We find the gradient of <script type="math/tex">g</script> to find the critical points in <script type="math/tex">X</script>, <script type="math/tex; mode=display"> \nabla g(x,y) = (30y-2xy-y^2, 30x-2xy-x^2), </script> and solving <script type="math/tex">(30y-2xy-y^2, 30x-2xy-x^2) = (0,0)</script>, we
 find two critical points: <script type="math/tex">(0,0)</script> and <script type="math/tex">(10,10)</script>. Evaluating <script type="math/tex">g</script> at these critical points, we find
 </p><script type="math/tex; mode=display"> \begin{align*} 
 g(0,0) &= 0,\\
 g(10,10) &= 1000.
 \end{align*}</script>
-<!--l. 99--><p class="noindent" >Now, let’s examine <script type="math/tex">g</script> on the boundary of <script type="math/tex">X</script>. The boundary of <script type="math/tex">X</script> consists of three line
+<!--l. 121--><p class="noindent" >Now, let’s examine <script type="math/tex">g</script> on the boundary of <script type="math/tex">X</script>. The boundary of <script type="math/tex">X</script> consists of three line
 segments, along which we have <script type="math/tex">x = 0</script>, <script type="math/tex">y=0</script>, or <script type="math/tex">30-x-y=0</script>. In each of these cases, <script type="math/tex">g(x,y) = 0</script>, so <script type="math/tex">g</script> is zero along the
 entire boundary of <script type="math/tex">X</script>.
-</p><!--l. 101--><p class="noindent" >Comparing the values that we’ve found, we see that <script type="math/tex">g</script> has an absolute maximum of <script type="math/tex">1000</script> at
+</p><!--l. 123--><p class="noindent" >Comparing the values that we’ve found, we see that <script type="math/tex">g</script> has an absolute maximum of <script type="math/tex">1000</script> at
 <script type="math/tex">(10,10)</script>, and an absolute minimum of <script type="math/tex">0</script> which occurs along the line segments <script type="math/tex">x=0</script>, <script type="math/tex">y=0</script>, and
 <script type="math/tex">30-x-y=0</script>.
-</p><!--l. 103--><p class="noindent" >Translating this back to our original function <script type="math/tex">f</script>, the absolute maximum of <script type="math/tex">f</script> subject to
+</p><!--l. 125--><p class="noindent" >Translating this back to our original function <script type="math/tex">f</script>, the absolute maximum of <script type="math/tex">f</script> subject to
 the constraint <script type="math/tex">x+y+z=30</script> for nonnegative <script type="math/tex">x,y,z</script> is <script type="math/tex">1000</script>, which occurs at the point <script type="math/tex">(10,10,10)</script>. The absolute
 minimum is <script type="math/tex">0</script>, which occurs when <script type="math/tex">x=0</script>, <script type="math/tex">y=0</script>, or <script type="math/tex">z=0</script>.
-</p><!--l. 105--><p class="noindent" ></div>
-</p><!--l. 107--><p class="noindent" >We’ll now look at another example where optimizing a multivariable function subject
+</p><!--l. 127--><p class="noindent" ></div>
+</p><!--l. 129--><p class="noindent" >We’ll now look at another example where optimizing a multivariable function subject
 to a constraint using substitution is deceptively difficult.
 </p>
 <div class="theorem-like problem-environment example" id="problem2"><a 
  id="x1-1002r2"></a>We’ll find the absolute maximum and absolute minimum of <script type="math/tex">f(x,y) = x^2-y^2</script> subject to the constraint
 <script type="math/tex">x^2+y^2=1</script>.
-<!--l. 112--><p class="noindent" >PICTURE
-</p><!--l. 114--><p class="noindent" >Since <script type="math/tex">\{(x,y)\;:\;x^2+y^2=1\}</script> is a compact region (it’s the unit circle), and <script type="math/tex">f</script> is a continuous function, the
-Extreme Value Theorem tells us that <script type="math/tex">f</script> will have an absolute maximum and
-minimum.
-</p><!--l. 116--><p class="noindent" >Let’s rewrite the constraint as <script type="math/tex">x^2=1-y^2</script>, and substitute this into <script type="math/tex">f</script> to reduce <script type="math/tex">f</script> to a function of a
-single variable: </p><script type="math/tex; mode=display"> \begin{align*} 
-g(y) &= (1-y^2)-y^2\\
-&= 1-2y^2.
+<div class="image-environment" role="img" aria-labelledby="image-alt-4">  <img 
+src="./substitution-figure2.svg" alt=""  
+ />
                                                                   
 
                                                                   
+</div>
+<!--l. 146--><p class="noindent" >Since <script type="math/tex">\{(x,y)\;:\;x^2+y^2=1\}</script> is a compact region, and <script type="math/tex">f</script> is a continuous function, the Extreme Value
+Theorem tells us that <script type="math/tex">f</script> will have an absolute maximum and minimum.
+</p><!--l. 148--><p class="noindent" >Let’s rewrite the constraint as <script type="math/tex">x^2=1-y^2</script>, and substitute this into <script type="math/tex">f</script> to reduce <script type="math/tex">f</script> to a function of a
+single variable: </p><script type="math/tex; mode=display"> \begin{align*} 
+g(y) &= (1-y^2)-y^2\\
+&= 1-2y^2.
 \end{align*}</script>
-<!--l. 121--><p class="noindent" >Differentiating <script type="math/tex">g</script>, we obtain <script type="math/tex; mode=display"> g'(y) = -4y. </script> This has one critical point, <script type="math/tex">y=0</script>. Taking the second derivative
+<!--l. 153--><p class="noindent" >Differentiating <script type="math/tex">g</script>, we obtain <script type="math/tex; mode=display"> g'(y) = -4y. </script> This has one critical point, <script type="math/tex">y=0</script>. Taking the second derivative
 of <script type="math/tex">g</script>, we have <script type="math/tex; mode=display"> g''(y) = -4, </script> so <script type="math/tex">g</script> has a local maximum at <script type="math/tex">y=0</script>. Since <script type="math/tex">g</script> only has one critical point and it’s a
 local maximum, <script type="math/tex">g</script> has an absolute maximum at <script type="math/tex">y=0</script>. Furthermore, <script type="math/tex">g</script> has no absolute
 minimum.
-</p><!--l. 131--><p class="noindent" >However, we said that <script type="math/tex">f</script> must have an absolute minimum, so something must be
+</p><!--l. 163--><p class="noindent" >However, we said that <script type="math/tex">f</script> must have an absolute minimum, so something must be
 wrong! Here, we’ve lost track of some of the information contained in our
 constraint. Consider again <script type="math/tex; mode=display"> x^2= 1-y^2. </script> Since <script type="math/tex">x^2\geq 0</script> for all <script type="math/tex">x</script>, we must have <script type="math/tex">-1\leq y\leq 1</script>. So, we should really be
 optimizing <script type="math/tex">g</script> over the closed interval <script type="math/tex">[-1,1]</script>. We’ve already found the critical point, <script type="math/tex">y=0</script>, of <script type="math/tex">g</script>.
@@ -163,14 +176,18 @@ g(0) &= 1,\\
 g(-1) &=-1,\\
 g(1) &= -1.
 \end{align*}</script>
-<!--l. 141--><p class="noindent" >So, we see that <script type="math/tex">g</script> has an absolute maximum of <script type="math/tex">1</script> at <script type="math/tex">y=0</script>, and an absolute minimum of <script type="math/tex">-1</script> at <script type="math/tex">y=-1</script>
+<!--l. 173--><p class="noindent" >So, we see that <script type="math/tex">g</script> has an absolute maximum of <script type="math/tex">1</script> at <script type="math/tex">y=0</script>, and an absolute minimum of <script type="math/tex">-1</script> at <script type="math/tex">y=-1</script>
 and <script type="math/tex">y=1</script>.
-</p><!--l. 143--><p class="noindent" >Translating this back to our original function, <script type="math/tex">f</script> has an absolute maximum of <script type="math/tex">1</script> at <script type="math/tex">(\pm 1, 0)</script>, and
+</p><!--l. 175--><p class="noindent" >Translating this back to our original function, <script type="math/tex">f</script> has an absolute maximum of <script type="math/tex">1</script> at <script type="math/tex">(\pm 1, 0)</script>, and
 an absolute minimum of <script type="math/tex">-1</script> at <script type="math/tex">(0,\pm 1)</script>.
-</p><!--l. 145--><p class="noindent" >We can see this reflected in the graph of <script type="math/tex">f</script> over <script type="math/tex">x^2+y^2=1</script>.
-</p><!--l. 147--><p class="noindent" >PICTURE
-</p><!--l. 149--><p class="noindent" ></div>
-</p><!--l. 151--><p class="noindent" >The moral of this section is: weird things can happen with multivariable functions,
+</p><!--l. 177--><p class="noindent" >We can see this reflected in the graph of <script type="math/tex">f</script> over <script type="math/tex">x^2+y^2=1</script>; the edge of the saddle shape graphed
+below.
+</p>
+<div class="image-environment" role="img" aria-labelledby="image-alt-5"><img 
+src="./graphics/CalcPlot3D-pringle.png" alt="PIC"  
+ /> </div>
+<!--l. 183--><p class="noindent" ></div>
+</p><!--l. 185--><p class="noindent" >The moral of this section is: weird things can happen with multivariable functions,
 and you need to be very careful with constraints.
 </body> 
  

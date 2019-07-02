@@ -40,15 +40,31 @@ function of <script type="math/tex">x</script>, and reduced us to a single varia
 change in <script type="math/tex">x</script> would after the value of <script type="math/tex">f</script>, if we kept <script type="math/tex">y</script> constant. In other words, the partial
 derivatives described how the function <script type="math/tex">f</script> was changing in the positive <script type="math/tex">x</script>-direction and in
 the positive <script type="math/tex">y</script>-direction.
-</p><!--l. 17--><p class="noindent" >PICTURE
-</p><!--l. 19--><p class="noindent" >But what if we want to find how <script type="math/tex">f</script> changes if we change both <script type="math/tex">x</script> and <script type="math/tex">y</script>? One possible way
-to do this would be to change <script type="math/tex">x</script> and <script type="math/tex">y</script> by the same amount, which would be equivalent
-to finding how <script type="math/tex">f</script> changes as we move along the line <script type="math/tex">y=x</script>.
-</p><!--l. 21--><p class="noindent" >PICTURE
-</p><!--l. 23--><p class="noindent" >Alternatively, we could change <script type="math/tex">y</script> by twice as much as <script type="math/tex">x</script>. This would be equivalent to
-finding how <script type="math/tex">f</script> changes as we move along the line <script type="math/tex">y=2x</script>.
-</p><!--l. 25--><p class="noindent" >PICTURE
-</p><!--l. 27--><p class="noindent" >As you can see, there are many different ways that we can change <script type="math/tex">x</script> and <script type="math/tex">y</script>,
+</p>
+<div class="image-environment" role="img" aria-labelledby="image-alt-1">  <img 
+src="./directional_derivatives-figure0.svg" alt=""  
+ />
+</div>
+<!--l. 28--><p class="noindent" >But what if we want to find how <script type="math/tex">f</script> changes if we change both <script type="math/tex">x</script> and <script type="math/tex">y</script>? One possible way
+to do this would be to increase <script type="math/tex">x</script> and <script type="math/tex">y</script> by the same amount, which would
+be equivalent to finding how <script type="math/tex">f</script> changes as we increase <script type="math/tex">x</script> and <script type="math/tex">y</script> along the line
+<script type="math/tex">y=x</script>.
+</p>
+<div class="image-environment" role="img" aria-labelledby="image-alt-2">  <img 
+src="./directional_derivatives-figure1.svg" alt=""  
+ />
+</div>
+<!--l. 39--><p class="noindent" >Alternatively, we could decrease <script type="math/tex">y</script> by twice as much as <script type="math/tex">x</script>. This would be equivalent to
+finding how <script type="math/tex">f</script> changes as decreasing <script type="math/tex">x</script> and <script type="math/tex">y</script> along the line <script type="math/tex">y=2x</script>.
+</p>
+<div class="image-environment" role="img" aria-labelledby="image-alt-3">  <img 
+src="./directional_derivatives-figure2.svg" alt=""  
+ />
+</div>
+                                                                  
+
+                                                                  
+<!--l. 50--><p class="noindent" >As you can see, there are many different ways that we can change <script type="math/tex">x</script> and <script type="math/tex">y</script>,
 corresponding to different directions in the <script type="math/tex">xy</script>-plane. In order to determine how <script type="math/tex">f</script>
 changes as we move in all of these different directions, we will now define directional
 derivatives.
@@ -57,11 +73,8 @@ derivatives.
 </p>
 <h3 class="likesectionHead"><a 
  id="x1-1000"></a>Directional derivatives</h3>
-<!--l. 31--><p class="noindent" >We would like to compute the instantaneous rate of change of a function <script type="math/tex">f:\mathbb {R}^n\rightarrow \mathbb {R}</script> as we
-                                                                  
-
-                                                                  
-move in some given direction in <script type="math/tex">\mathbb {R}^n</script>. We will model our definition after partial
+<!--l. 54--><p class="noindent" >We would like to compute the instantaneous rate of change of a function <script type="math/tex">f:\mathbb {R}^n\rightarrow \mathbb {R}</script> at a point
+as we move in some given direction in <script type="math/tex">\mathbb {R}^n</script>. We will model our definition after partial
 derivatives and single variable derivatives, and use a unit vector <script type="math/tex">\vec {v}</script> to describe the
 direction.
 </p>
@@ -70,10 +83,14 @@ direction.
 the <em>directional derivative</em> of <script type="math/tex">f</script> at <script type="math/tex">\vec {a}</script> in the direction of <script type="math/tex">\vec {v}</script> to be <script type="math/tex; mode=display"> D_{\vec {v}}f(\vec {a}) = \lim _{h\rightarrow 0}\frac {f(\vec {a}+h\vec {v})-f(\vec {a})}{h}, </script> provided this limit
 exists.
 </div>
-<!--l. 41--><p class="noindent" >Noticing that by looking at <script type="math/tex">f(\vec {a}+h\vec {v})</script>, we are finding the value of <script type="math/tex">f</script> when we move a small
+<!--l. 64--><p class="noindent" >Noticing that by looking at <script type="math/tex">f(\vec {a}+h\vec {v})</script>, we are finding the value of <script type="math/tex">f</script> when we move a small
 distance, <script type="math/tex">h</script>, in the direction of <script type="math/tex">\vec {v}</script> from the point <script type="math/tex">\vec {a}</script>.
-</p><!--l. 43--><p class="noindent" >VISUAL
-</p><!--l. 45--><p class="noindent" >When computing directional derivatives, it’s important to remember that the
+</p>
+<div class="image-environment" role="img" aria-labelledby="image-alt-4">  <img 
+src="./directional_derivatives-figure3.svg" alt=""  
+ />
+</div>
+<!--l. 77--><p class="noindent" >When computing directional derivatives, it’s important to remember that the
 direction must be given by a <em>unit</em> vector. Otherwise, the length of the vector will
 change the value of the limit above. If you’d like to find a directional derivative
 in a direction given by a non-unit vector <script type="math/tex">\vec {w}</script>, you should normalize <script type="math/tex">\vec {w}</script> to unit
@@ -81,7 +98,7 @@ length.
 </p>
 <div class="theorem-like problem-environment example" id="problem2"><a 
  id="x1-1002r2"></a>We’ll compute the directional derivative of <script type="math/tex">f(x,y) = x^2y+y^2</script> at <script type="math/tex">\vec {a}=(2,0)</script>, in the direction of <script type="math/tex">(3,4)</script>.
-<!--l. 50--><p class="noindent" >Since <script type="math/tex">(3,4)</script> isn’t a unit vector, we need to normalize it. Since <script type="math/tex">\|(3,4)\| = \sqrt {3^2+4^2}=5</script>, we’ll
+<!--l. 82--><p class="noindent" >Since <script type="math/tex">(3,4)</script> isn’t a unit vector, we need to normalize it. Since <script type="math/tex">\|(3,4)\| = \sqrt {3^2+4^2}=5</script>, we’ll
 use the vector <script type="math/tex">\vec {v}=\left (\frac {3}{5},\frac {4}{5}\right )</script> to compute our desired directional derivative.
 </p><script type="math/tex; mode=display"> \begin{align*} 
 D_{\vec{v}}f(\vec{a}) &= \lim_{h\rightarrow 0}\frac{f(\vec{a}+h\vec{v})-f(\vec{a})}{h}\\
@@ -91,9 +108,12 @@ D_{\vec{v}}f(\vec{a}) &= \lim_{h\rightarrow 0}\frac{f(\vec{a}+h\vec{v})-f(\vec{a
 &= \lim_{h\rightarrow 0}\left(2+\frac{3}{5}h\right)^2\cdot \frac{4}{5} + \left(\frac{4}{5}\right)^2h\\
 &= 4\cdot \frac{4}{5}\\
 &= \frac{16}{5}.
+                                                                  
+
+                                                                  
 \end{align*}</script>
-<!--l. 60--><p class="noindent" ></div>
-</p><!--l. 62--><p class="noindent" >Fortunately, we won’t always need to resort to evaluating directional derivatives
+<!--l. 92--><p class="noindent" ></div>
+</p><!--l. 94--><p class="noindent" >Fortunately, we won’t always need to resort to evaluating directional derivatives
 using the limit definition. We’ll soon see how we can use the gradient to compute
 directional derivatives.
 </body> 

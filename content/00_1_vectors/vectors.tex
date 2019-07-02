@@ -1,6 +1,8 @@
 \documentclass{ximera}  
 
-\title{Vectors}  
+\title{Vectors} 
+\author{Melissa Lynn}
+\outcome{Review basic properties of vectors.} 
 
 \begin{document}  
 \begin{abstract}  
@@ -155,6 +157,7 @@ In this example, we add the vectors $(1,1)$ and $(1,3)$. Adding these vectors al
 
 \begin{image}
 \begin{tikzpicture}
+\draw[color = white] (-4,0) -- (4,0);
 \draw[<->] (-1,0) -- (3,0);
 \draw[<->] (0,-1) -- (0,5);
 \foreach \x in  {0,1,2}
@@ -299,7 +302,7 @@ When we multiply $(1,3)$ by $2$, we obtain $(2,6)$, which is twice as long as $(
  
   \begin{image}
 \begin{tikzpicture}
-\draw[<->] (-7,0) -- (4,0);
+\draw[<->] (-3,0) -- (4,0);
 \draw[<->] (0,-7) -- (0,4);
 \foreach \x in  {0,1}
 \draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt);
@@ -318,7 +321,7 @@ When we multiply $(1,3)$ by $2$, we obtain $(2,6)$, which is twice as long as $(
 
 \begin{scope}[xshift=10cm]
 
-\draw[<->] (-7,0) -- (4,0);
+\draw[<->] (-3,0) -- (4,0);
 \draw[<->] (0,-7) -- (0,4);
 \foreach \x in  {0,1}
 \draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt);
@@ -384,8 +387,5 @@ Similarly, in $\mathbb{R}^3$, we sometimes write the standard basis vectors as $
 (2,3,4) = 2\mathbf{i}+3\mathbf{j}+4\mathbf{k}.
 \]
 
-\section*{Summary}
-
-In this section, we reviewed some basics about vectors, including the definition of a vector, basic vector operations, standard basis vectors, notation, and the geometric perspective.
 
 \end{document}

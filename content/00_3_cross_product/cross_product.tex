@@ -1,6 +1,8 @@
 \documentclass{ximera}  
 
 \title{The Cross Product}  
+\author{Melissa Lynn}
+\outcome{Review algebraic and geometric properties of the cross product.}
 
 \begin{document}  
 \begin{abstract}  
@@ -71,6 +73,8 @@ where $\theta$ is the angle between the vectors $\vec{a}$ and $\vec{b}$. Further
 
 \begin{image}
 \begin{tikzpicture}
+\draw[color=white] (-2,0) -- (6,0);
+
 \draw[<->] (-1,0) -- (4,0);
 \draw[<->] (0,-1) -- (0,4);
 
@@ -92,6 +96,7 @@ where $\theta$ is the angle between the vectors $\vec{a}$ and $\vec{b}$. Further
 
 \begin{image}
 \begin{tikzpicture}
+\draw[color = white] (-2,0) -- (6,0);
 
 \node[draw, circle, thick, fill=black, minimum size=1mm, inner sep=0] at (0,0) {};
 \draw[->, very thick] (0,0) -- (3,0);
@@ -105,7 +110,7 @@ where $\theta$ is the angle between the vectors $\vec{a}$ and $\vec{b}$. Further
 \end{tikzpicture}
 \end{image}
 
-Image this image in $\mathbb{R}^3$, so that $\vec{a}\times\vec{b}$ is perpendicular to both $\vec{a}$ and $\vec{b}$.
+Imagine this image in $\mathbb{R}^3$, so that $\vec{a}\times\vec{b}$ is perpendicular to both $\vec{a}$ and $\vec{b}$.
 
 \end{itemize}
 \end{proposition}
@@ -141,9 +146,5 @@ The volume of the parellelepiped can be computed as the area of the base times t
 \begin{proposition}
 The volume of the parallelepiped determined by the vectors $\vec{a}$, $\vec{b}$, and $\vec{c}$ can be computed as $|(\vec{a}\times\vec{b})\cdot\vec{c}|$.
 \end{proposition}
-
-\section*{Summary}
-
-We've reviewed the cross product, including its properties and geometric perspective, including its use in finding the area of parallelograms and volume of parallelepipeds.
 
 \end{document}

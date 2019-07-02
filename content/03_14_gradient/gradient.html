@@ -116,46 +116,63 @@ derivatives.
  id="x1-2000"></a>The gradient and level sets</h3>
 <!--l. 104--><p class="noindent" >We’ve shown that for a differentiable function <script type="math/tex">f:\mathbb {R}^n\rightarrow \mathbb {R}</script>, we can compute directional
 derivatives as <script type="math/tex; mode=display"> D_{\vec {v}}f(\vec {a}) = \nabla f(\vec {a})\cdot \vec {v}. </script> What does this mean for the possible values for a directional
-derivative? Recall that the dot product can be computed as <script type="math/tex; mode=display"> \nabla f(\vec {a})\cdot \vec {v} = \|\nabla f(\vec {a})\|\;\|\vec {v}\|\cos \theta , </script> Where <script type="math/tex">\theta </script> is the angle
+derivative? Recall that the dot product can be computed as <script type="math/tex; mode=display"> \nabla f(\vec {a})\cdot \vec {v} = \|\nabla f(\vec {a})\|\;\|\vec {v}\|\cos \theta , </script> where <script type="math/tex">\theta </script> is the angle
 between the two vectors. Since <script type="math/tex">\vec {v}</script> is a unit vector, we have <script type="math/tex; mode=display"> \|\nabla f(\vec {a})\|\;\|\vec {v}\|\cos \theta = \|\nabla f(\vec {a})\|\cos \theta . </script> Since <script type="math/tex">-1\leq \cos \theta \leq 1</script>, we have that <script type="math/tex; mode=display"> -\|\nabla f(\vec {a})\|\leq D_{\vec {v}}f(\vec {a})\leq \|\nabla f(\vec {a})\|. </script> In
 particular, the largest that <script type="math/tex">D_{\vec {v}}f(\vec {a})</script> can be is <script type="math/tex">\|\nabla f(\vec {a})\|</script>, and this occurs when <script type="math/tex">\vec {v}</script> points in the same
-direction as <script type="math/tex">\nabla f(\vec {a})</script> (so <script type="math/tex">\theta = 0</script>). Thus, the gradient points in the direction of greatest
+direction as <script type="math/tex">\nabla f(\vec {a})</script>, so that <script type="math/tex">\theta = 0</script>. Thus, the gradient points in the direction of greatest
 increase.
-</p><!--l. 122--><p class="noindent" >VISUAL
-</p><!--l. 124--><p class="noindent" >On the other hand, the minimum value that <script type="math/tex">D_{\vec {v}}f(\vec {a})</script> can have is <script type="math/tex">-\|\nabla f(\vec {a})\|</script>, and this occurs when <script type="math/tex">\vec {v}</script>
+</p><!--l. 122--><p class="noindent" >On the other hand, the minimum value that <script type="math/tex">D_{\vec {v}}f(\vec {a})</script> can have is <script type="math/tex">-\|\nabla f(\vec {a})\|</script>, and this occurs when <script type="math/tex">\vec {v}</script>
 points in the opposite direction from <script type="math/tex">\nabla f(\vec {a})</script>, in the direction of <script type="math/tex">-\nabla f(\vec {a})</script>. Thus, <script type="math/tex">-\nabla f(\vec {a})</script> points in the
 direction of greatest decrease.
-</p><!--l. 126--><p class="noindent" >VISUAL
-</p><!--l. 128--><p class="noindent" >Additionally, from <script type="math/tex">D_{\vec {v}}f(\vec {a}) = \nabla f(\vec {a})\cdot \vec {v}</script>, we can see that <script type="math/tex">\vec {v}</script> is perpendicular to <script type="math/tex">\nabla f(\vec {a})</script> if and only if <script type="math/tex">D_{\vec {v}}f(\vec {a})=0</script>. But what
+</p><!--l. 124--><p class="noindent" >Additionally, from <script type="math/tex">D_{\vec {v}}f(\vec {a}) = \nabla f(\vec {a})\cdot \vec {v}</script>, we can see that <script type="math/tex">\vec {v}</script> is perpendicular to <script type="math/tex">\nabla f(\vec {a})</script> if and only if <script type="math/tex">D_{\vec {v}}f(\vec {a})=0</script>. But what
 does it mean for <script type="math/tex">D_{\vec {v}}f(\vec {a})</script>? This means that there is no instantaneous change in <script type="math/tex">f</script>
 in the direction of <script type="math/tex">\vec {v}</script>, which means that <script type="math/tex">\vec {v}</script> will be a tangent vector to a level
 curve.
-</p><!--l. 130--><p class="noindent" >VISUAL
-</p><!--l. 132--><p class="noindent" >We’ll state this observation more formally, and prove that the gradient is
-perpendicular to the level curves.
 </p>
-<div class="theorem-like problem-environment theorem" id="problem6"><a 
- id="x1-2001r6"></a>Consider a function <script type="math/tex">f:\mathbb {R}^n\rightarrow \mathbb {R}</script>, and suppose <script type="math/tex">f</script> is of class <script type="math/tex">\mathcal {C}^1</script>. For some constant <script type="math/tex">c</script>, consider
-the level set <script type="math/tex; mode=display"> S = \{\vec {x}\in \mathbb {R}^n\;:\;f(\vec {x})=c\}. </script> Then, for any point <script type="math/tex">\vec {x}_0</script> in <script type="math/tex">S</script>, the gradient <script type="math/tex">\nabla f(\vec {x}_0)</script> is perpendicular to
-<script type="math/tex">S</script>.
+<div class="theorem-like problem-environment example" id="problem6"><a 
+ id="x1-2001r6"></a>Consider the graph of the function <script type="math/tex">f(x,y) = x^2+y^2</script>, which is a paraboloid.
+<div class="image-environment" role="img" aria-labelledby="image-alt-1"><img 
+src="./graphics/CalcPlot3d-paraboloid.png" alt="PIC"  
+ /> </div>
+<!--l. 133--><p class="noindent" >Let’s consider how this function changes near the point <script type="math/tex">(2,1)</script>.
+</p><!--l. 135--><p class="noindent" >The gradient of <script type="math/tex">f</script> at <script type="math/tex">(2,1)</script> is <script type="math/tex; mode=display"> \nabla f(2,1) = \answer {(4,2)}. </script> Consulting the graph of <script type="math/tex">f</script> near the point <script type="math/tex">(2,1)</script>, we can confirm that
+it increases most rapidly when we move in the direction of <script type="math/tex">\nabla f(2,1)</script>. We can also
+confirm that it decreases most rapidly when we move in the direction of
+<script type="math/tex">-\nabla f(2,1)</script>.
+</p><!--l. 141--><p class="noindent" >The point <script type="math/tex">(2,1)</script> lies on the level curve <script type="math/tex">x^2 + y^2 = 5</script>. A tangent vector to this level curve at the point <script type="math/tex">(2,1)</script> is
+given by <script type="math/tex">(-1, 2)</script>.
+</p>
+<div class="image-environment" role="img" aria-labelledby="image-alt-2">  <img 
+src="./gradient-figure0.svg" alt=""  
+ />
 </div>
-<!--l. 142--><p class="noindent" >
-</p>
-<div class="proof">
-<!--l. 143--><p class="noindent" ><span class="head">
-</p><dl class="trivlist"><dt class="trivlist">
-Proof   </dt><dd 
-class="trivlist"></span>Let <script type="math/tex">\vec {x}(t)</script> be a parametrization of <script type="math/tex">S</script>, and let <script type="math/tex">\vec {x}_0=\vec {x}(t_0)</script>. In order to show that <script type="math/tex">\nabla f(\vec {x}_0)</script> is
-perpendicular to <script type="math/tex">S</script>, we will show that the gradient <script type="math/tex">\nabla f(\vec {x}_0)</script> is perpendicular to the velocity
-vector <script type="math/tex">\vec {x}'(t_0)</script>. By the definition of <script type="math/tex">S</script>, <script type="math/tex; mode=display"> f(\vec {x}(t))=c, </script> for all <script type="math/tex">t</script>. Differentiating both sides of this identity,
+<!--l. 157--><p class="noindent" >This vector, <script type="math/tex">(-1,2)</script>, is perpendicular to our gradient <script type="math/tex">\nabla f(2,1)</script>.
+</div>
+</p><!--l. 160--><p class="noindent" >We’ll state this observation more formally, and prove that the gradient is
+perpendicular to the level curves.
                                                                   
 
                                                                   
-and using the chain rule on the left side, we obtain <script type="math/tex; mode=display"> \nabla f(\vec {x}(t))\cdot \vec {x}'(t) = 0. </script> Plugging in <script type="math/tex">t=t_0</script>, this gives us
-<script type="math/tex; mode=display"> \nabla f(\vec {x}(t_0))\cdot \vec {x}'(t_0) = 0, </script> which we can rewrite as <script type="math/tex; mode=display"> \nabla f(\vec {x}_0)\cdot \vec {x}'(t_0) = 0. </script> Thus, we have shown that <script type="math/tex">\nabla f(\vec {x}_0)</script> is perpendicular to the
-level set <script type="math/tex">S</script>.
-<!--l. 161--><p class="noindent" >THIS PROOF ONLY WORKS WHEN IT’S A LEVEL CURVE, NOT A LEVEL
-SURFACE ETC.                                                                                 <script type="math/tex">\blacksquare </script></p></dd></dl>
+</p>
+<div class="theorem-like problem-environment theorem" id="problem7"><a 
+ id="x1-2002r7"></a>Consider a function <script type="math/tex">f:\mathbb {R}^n\rightarrow \mathbb {R}</script>, and suppose <script type="math/tex">f</script> is of class <script type="math/tex">\mathcal {C}^1</script>. For some constant <script type="math/tex">c</script>, consider
+the level set <script type="math/tex; mode=display"> S = \{\vec {x}\in \mathbb {R}^n\;:\;f(\vec {x})=c\}. </script> Then, for any point <script type="math/tex">\vec {x}_0</script> in <script type="math/tex">S</script>, the gradient <script type="math/tex">\nabla f(\vec {x}_0)</script> is perpendicular to
+<script type="math/tex">S</script>.
+</div>
+<!--l. 170--><p class="noindent" >
+</p>
+<div class="proof">
+<!--l. 171--><p class="noindent" ><span class="head">
+</p><dl class="trivlist"><dt class="trivlist">
+Proof   </dt><dd 
+class="trivlist"></span>We need to show that for any vector <script type="math/tex">\vec {a}</script> which is tangent to <script type="math/tex">S</script> at <script type="math/tex">\vec {x}_0</script>, we have
+that <script type="math/tex">\vec {a}</script> is perpendicular to <script type="math/tex">\nabla f(\vec {x}_0)</script>.
+<!--l. 173--><p class="noindent" >If <script type="math/tex">\vec {a}</script> is tangent to <script type="math/tex">S</script>, we can find a parametrized curve <script type="math/tex">\vec {x}(t)</script> lying in <script type="math/tex">S</script> such that <script type="math/tex">\vec {x}_0=\vec {x}(t_0)</script> and <script type="math/tex">\vec {x}'(t_0) = \vec {a}</script>.
+We will show that <script type="math/tex">\nabla f(\vec {x}_0)</script> is perpendicular to <script type="math/tex">\vec {a} = \vec {x}'(t_0)</script>.
+</p><!--l. 175--><p class="noindent" >By the definition of <script type="math/tex">S</script>, and since <script type="math/tex">\vec {x}(t)</script> lies in <script type="math/tex">S</script>, <script type="math/tex; mode=display"> f(\vec {x}(t))=c </script> for all <script type="math/tex">t</script>. Differentiating both sides of this
+identity, and using the chain rule on the left side, we obtain <script type="math/tex; mode=display"> \nabla f(\vec {x}(t))\cdot \vec {x}'(t) = 0. </script> Plugging in <script type="math/tex">t=t_0</script>, this
+gives us <script type="math/tex; mode=display"> \nabla f(\vec {x}(t_0))\cdot \vec {x}'(t_0) = 0, </script> which we can rewrite as <script type="math/tex; mode=display"> \nabla f(\vec {x}_0)\cdot \vec {x}'(t_0) = 0. </script> Thus, we have shown that <script type="math/tex">\nabla f(\vec {x}_0)</script> is perpendicular
+to the level set <script type="math/tex">S</script>.                                                                                  <script type="math/tex">\blacksquare </script></p></dd></dl>
 </div>
 </body> 
  

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  4 JUN 2019 13:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  28 JUN 2019 10:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1020,13 +1020,13 @@ Package rerunfilecheck Info: File `compact_region.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 210.
  ) 
 Here is how much of TeX's memory you used:
- 29455 strings out of 492649
- 690441 string characters out of 6129622
- 863498 words of memory out of 5000000
- 32757 multiletter control sequences out of 15000+600000
+ 29457 strings out of 492649
+ 690487 string characters out of 6129622
+ 862559 words of memory out of 5000000
+ 32758 multiletter control sequences out of 15000+600000
  13302 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 69i,9n,98p,742b,710s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 69i,9n,98p,742b,708s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxsl10.pfb
@@ -1043,7 +1043,7 @@ texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/te
 xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/tex
 live/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local
 /texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on compact_region.pdf (7 pages, 327722 bytes).
+Output written on compact_region.pdf (7 pages, 327958 bytes).
 PDF statistics:
  155 PDF objects out of 1000 (max. 8388607)
  126 compressed objects within 2 object streams

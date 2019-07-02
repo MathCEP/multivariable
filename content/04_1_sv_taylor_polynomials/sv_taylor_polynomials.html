@@ -1,6 +1,6 @@
 <!doctype html> 
 <html lang="en"> 
-<head> <title>Review of Taylor Polynomials</title> 
+<head> <title>Taylor Polynomials</title> 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
 <meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
 <meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
@@ -55,9 +55,9 @@ function <script type="math/tex">f</script>. The idea behind this definition is 
 same derivatives as <script type="math/tex">f</script>, up to the degree of the polynomial.
 </p>
 <div class="theorem-like problem-environment definition" id="problem1"><a 
- id="x1-1001r1"></a>Let <script type="math/tex">f:\mathbb {R}\rightarrow \mathbb {R}</script> be a function that the derivatives <script type="math/tex">f'(a),f''(a),...,f^{(n)}(a)</script> exist for given <script type="math/tex">a\in \mathbb {R}</script> (up to and including the <script type="math/tex">n</script>th
-derivative). Then we define the <script type="math/tex">n</script>th degree Taylor polynomial of <script type="math/tex">f</script> centered at <script type="math/tex">a</script> to be <script type="math/tex; mode=display"> p_n(x)=f(a) + f'(a)(x-a) + \frac {f''(a)}{2}(x-a)^2+\cdots + \frac {f^{(n)}(a)}{n!}(x-a)^n. </script>
-Note that the <script type="math/tex">k</script>th term of this polynomial is <script type="math/tex; mode=display"> \frac {f^{(k)}(a)}{k!}(x-a)^k. </script>
+ id="x1-1001r1"></a>Let <script type="math/tex">f:\mathbb {R}\rightarrow \mathbb {R}</script> be a function such that the derivatives <script type="math/tex">f'(a),f''(a),...,f^{(n)}(a)</script> exist for some given <script type="math/tex">a\in \mathbb {R}</script> (up to and
+including the <script type="math/tex">n</script>th derivative). Then we define the <script type="math/tex">n</script>th degree Taylor polynomial of <script type="math/tex">f</script>
+centered at <script type="math/tex">a</script> to be <script type="math/tex; mode=display"> p_n(x)=f(a) + f'(a)(x-a) + \frac {f''(a)}{2}(x-a)^2+\cdots + \frac {f^{(n)}(a)}{n!}(x-a)^n. </script> Note that the <script type="math/tex">k</script>th term of this polynomial is <script type="math/tex; mode=display"> \frac {f^{(k)}(a)}{k!}(x-a)^k. </script>
 </div>
 <!--l. 30--><p class="noindent" >We’ll show that the first and second derivatives of <script type="math/tex">f(x)</script> and <script type="math/tex">p_n(x)</script> at <script type="math/tex">a</script> are the same for <script type="math/tex">n\geq 2</script>, and we’ll leave
                                                                   
@@ -79,7 +79,7 @@ p_n''(a) &=f''(a) + f'''(a)(a-a) + \cdots + \frac{f^{(n)}(a)}{(n-2)!}(a-a)^{n-2}
 \end{align*}</script>
 <!--l. 49--><p class="noindent" >So we see that the second derivatives match as well, and hopefully the pattern is
 clear enough to believe that higher order derivatives will match as well.
-</p><!--l. 51--><p class="noindent" >We’ll do an example of computation a Taylor polynomial, and then review some
+</p><!--l. 51--><p class="noindent" >We’ll do an example computation of a Taylor polynomial, and then review some
 important Taylor polynomials.
 </p>
 <div class="theorem-like problem-environment example" id="problem2"><a 
@@ -107,54 +107,56 @@ p_5(x) &= f(0) + f'(0)(x-0) + \frac{f''(0)}{2}(x-0)^2+ \frac{f'''(0)}{3!}(x-0)^3
 &= \answer{x -\frac{1}{6}x^3+\frac{1}{120}x^5}.
 \end{align*}</script>
 <!--l. 75--><p class="noindent" ></div>
+</p><!--l. 77--><p class="noindent" >In the following proposition, we list several common Taylor polynomials that are
+useful to remember.
 </p>
 <div class="theorem-like problem-environment proposition" id="problem3"><a 
  id="x1-1003r3"></a>The <script type="math/tex">n</script>th degree Taylor polynomial of <script type="math/tex">f(x) = \frac {1}{1-x}</script> centered at <script type="math/tex">0</script> is <script type="math/tex; mode=display"> \begin{align*} 
 p_n(x) &= 1 + x + x^2 + \cdots + x^n\\
 &= \sum_{k=0}^n x^k.
 \end{align*}</script>
-<!--l. 84--><p class="noindent" >The <script type="math/tex">n</script>th degree Taylor polynomial of <script type="math/tex">f(x) = e^x</script> centered at <script type="math/tex">0</script> is
+<!--l. 86--><p class="noindent" >The <script type="math/tex">n</script>th degree Taylor polynomial of <script type="math/tex">f(x) = e^x</script> centered at <script type="math/tex">0</script> is
 </p><script type="math/tex; mode=display"> \begin{align*} 
 p_n(x) &= 1 + x + \frac{x^2}{2!} +\frac{x^3}{3!} + \cdots + \frac{x^n}{n!}\\
 &= \sum_{k=0}^{n}\frac{x^k}{k!}.
 \end{align*}</script>
-<!--l. 90--><p class="noindent" >The <script type="math/tex">2n</script>th degree Taylor polynomial of <script type="math/tex">f(x) = \cos (x)</script> centered at <script type="math/tex">0</script> is
+<!--l. 92--><p class="noindent" >The <script type="math/tex">2n</script>th degree Taylor polynomial of <script type="math/tex">f(x) = \cos (x)</script> centered at <script type="math/tex">0</script> is
 </p><script type="math/tex; mode=display"> \begin{align*} 
 p_n(x) &= 1 - \frac{x^2}{2!} +\frac{x^4}{4!} - \frac{x^6}{6!} + \cdots + (-1)^n\frac{x^{2n}}{(2n)!}\\
 &= \sum_{k=0}^{n} (-1)^k\frac{x^{2k}}{(2k)!}.
 \end{align*}</script>
-<!--l. 96--><p class="noindent" >The <script type="math/tex">(2n-1)</script>th degree Taylor polynomial of <script type="math/tex">f(x) = \sin (x)</script> centered at <script type="math/tex">0</script> is
+<!--l. 98--><p class="noindent" >The <script type="math/tex">(2n-1)</script>th degree Taylor polynomial of <script type="math/tex">f(x) = \sin (x)</script> centered at <script type="math/tex">0</script> is
 </p><script type="math/tex; mode=display"> \begin{align*} 
 p_n(x) &= x - \frac{x^3}{3!} +\frac{x^5}{5!} - \frac{x^7}{7!} + \cdots + (-1)^{n-1}\frac{x^{2n-1}}{(2n-1)!}\\
 &= \sum_{k=0}^{n} (-1)^{k-1}\frac{x^{2k-1}}{(2k-1)!}.
 \end{align*}</script>
-<!--l. 102--><p class="noindent" >The <script type="math/tex">n</script>th degree Taylor polynomial of <script type="math/tex">f(x) = \ln (x+1)</script> centered at <script type="math/tex">0</script> is
+<!--l. 104--><p class="noindent" >The <script type="math/tex">n</script>th degree Taylor polynomial of <script type="math/tex">f(x) = \ln (x+1)</script> centered at <script type="math/tex">0</script> is
 </p><script type="math/tex; mode=display"> \begin{align*} 
 p_n(x) &= x - \frac{x^2}{2} +\frac{x^3}{3!} - \frac{x^4}{4} + \frac{x^5}{5} - \cdots + (-1)^{n-1}\frac{x^n}{n}\\
 &= \sum_{k=0}^{n}(-1)^{k-1}\frac{x^k}{k}.
 \end{align*}</script>
-<!--l. 108--><p class="noindent" >The <script type="math/tex">(2n-1)</script>th degree Taylor polynomial of <script type="math/tex">f(x) = \arctan (x)</script> centered at <script type="math/tex">0</script> is
+<!--l. 110--><p class="noindent" >The <script type="math/tex">(2n-1)</script>th degree Taylor polynomial of <script type="math/tex">f(x) = \arctan (x)</script> centered at <script type="math/tex">0</script> is
 </p><script type="math/tex; mode=display"> \begin{align*} 
 p_n(x) &= x - \frac{x^3}{3} +\frac{x^5}{5} - \frac{x^7}{7} + \frac{x^9}{9} - \cdots + (-1)^{n-1}\frac{x^{2n-1}}{2n-1}\\
 &= \sum_{k=0}^{n}(-1)^{k-1}\frac{x^{2k-1}}{2k-1}.
 \end{align*}</script>
-<!--l. 113--><p class="noindent" ></div>
-<a 
- id="Q1-1-3"></a>
-</p>
                                                                   
 
                                                                   
+<!--l. 115--><p class="noindent" ></div>
+<a 
+ id="Q1-1-3"></a>
+</p>
 <h3 class="likesectionHead"><a 
  id="x1-2000"></a>Taylor polynomials of multivariable functions</h3>
-<!--l. 117--><p class="noindent" >We’ll now turn our attention to multivariable functions. In order to define Taylor
+<!--l. 119--><p class="noindent" >We’ll now turn our attention to multivariable functions. In order to define Taylor
 polynomials for multivariable functions, we need to be able to take higher order
 derivatives of multivariable functions. For the first derivative, we have the derivative
 matrix giving the total derivative of a multivariable function. However, we haven’t
 defined any analogous “second order total derivative,” much less higher order
 derivatives! We will need to do this before we can give any sort of definition of Taylor
 polynomials beyond degree one.
-</p><!--l. 119--><p class="noindent" >For now, we can think of the Taylor polynomial as giving the best polynomial
+</p><!--l. 121--><p class="noindent" >For now, we can think of the Taylor polynomial as giving the best polynomial
 approximation for a function, and use our knowledge about single variable Taylor
 polynomials in order to find Taylor polynomials of some special multivariable
 functions.
@@ -170,7 +172,7 @@ degree polynomial in <script type="math/tex">x</script> and <script type="math/t
  id="x1-2002r5"></a>We will find the fourth degree Taylor polynomial of <script type="math/tex">f(x,y) = e^{xy}</script> centered at the origin. Letting <script type="math/tex">u=xy</script>,
 we’ll use the fourth degree Taylor polynomial of <script type="math/tex">e^u</script>: <script type="math/tex; mode=display"> p_4(u) = 1 + u + \frac {u^2}{2!} +\frac {u^3}{3!} + \frac {u^4}{4!}. </script> Substituting <script type="math/tex">u=xy</script>, we obtain <script type="math/tex; mode=display"> 1 + xy + \frac {(xy)^2}{2!} +\frac {(xy)^3}{3!} + \frac {(xy)^4}{4!}. </script> However,
 this is not a fourth degree polynomial in <script type="math/tex">x</script> and <script type="math/tex">y</script>! Since <script type="math/tex">(xy)^4</script> has total degree <script type="math/tex">8</script>, we have
-terms of to large of a degree. Taking only terms of degree <script type="math/tex">4</script> or less, we find the fourth
+terms of too large of a degree. Taking only terms of degree <script type="math/tex">4</script> or less, we find the fourth
 degree Taylor polynomial of <script type="math/tex">f(x,y) = e^{xy}</script>. <script type="math/tex; mode=display"> p_4(x,y) = 1 + xy + \frac {(xy)^2}{2!} </script>
 </div>
 </body> 
