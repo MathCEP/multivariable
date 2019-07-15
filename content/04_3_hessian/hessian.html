@@ -1,16 +1,18 @@
 <!doctype html> 
 <html lang="en"> 
-<head> <title>The Hessian Matrix</title> 
+<head> <title>The  Hessian  Matrix</title> 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
 <meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
 <meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
 <!-- charset=utf-8,-css,html,htex4ht,xhtml --> 
 <meta name="src" content="hessian.tex" /> 
-<meta name="author" content="" /> 
+<meta name="author" content="Melissa
+Lynn" /> 
 <meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
 <meta name="ximera" content="version 0.0.1" /> 
 <link href="https://ximera.osu.edu/public/stylesheets/standalone.css" rel="stylesheet" media="screen"/> 
 <script type="text/javascript" async src="https://ximera.osu.edu/public/javascripts/standalone.min.js"></script> 
+<meta name="learning-outcome" content="Compute Hessian matrices, and use them to find Taylor polynomials."/> 
 </head><body> 
 <div class="preamble"><script type="math/tex">\newenvironment {prompt}{}{}
 \newcommand {\DeclareMathOperator }[2]{\@OldDeclareMathOperator {##1}{##2}\immediate \write \myfile {\unexpanded {\DeclareMathOperator }{\unexpanded {##1}}{\unexpanded {##2}}}}
@@ -33,7 +35,7 @@
 class="abstract" 
 >
 </div>   <div class="maketitle"></div>
-<!--l. 11--><p class="noindent" >We’ve been working towards defining some sort of “second derivative” for
+<!--l. 14--><p class="noindent" >We’ve been working towards defining some sort of “second derivative” for
 multivariable functions, which can tell us about the second-order behavior of
 functions. It will also enable us to define degree two Taylor polynomials, and we’ll
 later see how it can be used to classify critical points in optimization.
@@ -42,7 +44,7 @@ later see how it can be used to classify critical points in optimization.
 </p>
 <h3 class="likesectionHead"><a 
  id="x1-1000"></a>The Hessian Matrix</h3>
-<!--l. 15--><p class="noindent" >Suppose we have a differentiable function <script type="math/tex">f:\mathbb {R}^n\rightarrow \mathbb {R}</script>. We can take the gradient of this function. <script type="math/tex; mode=display"> \nabla f = \left (\frac {\partial f}{\partial x_1}, \frac {\partial f}{\partial x_2}, \frac {\partial f}{\partial x_3},..., \frac {\partial f}{\partial x_n} \right ) </script>
+<!--l. 18--><p class="noindent" >Suppose we have a differentiable function <script type="math/tex">f:\mathbb {R}^n\rightarrow \mathbb {R}</script>. We can take the gradient of this function. <script type="math/tex; mode=display"> \nabla f = \left (\frac {\partial f}{\partial x_1}, \frac {\partial f}{\partial x_2}, \frac {\partial f}{\partial x_3},..., \frac {\partial f}{\partial x_n} \right ) </script>
 We can think of the gradient as a function <script type="math/tex">\nabla f: \mathbb {R}^n\rightarrow \mathbb {R}^n</script>. Assuming all of the partial derivatives
 exist, we can then take the derivative matrix of <script type="math/tex">\nabla f</script>. This gives us a square <script type="math/tex">n\times n</script> matrix,
 which we call the Hessian of <script type="math/tex">f</script>.
@@ -50,26 +52,26 @@ which we call the Hessian of <script type="math/tex">f</script>.
 <div class="theorem-like problem-environment definition" id="problem1"><a 
  id="x1-1001r1"></a>The <em>Hessian Matrix</em> of <script type="math/tex">f:\mathbb {R}^n\rightarrow \mathbb {R}</script> is the <script type="math/tex">n\times n</script> matrix <script type="math/tex; mode=display"> Hf = \begin {pmatrix} \frac {\partial ^2 f}{\partial x_1^2} & \frac {\partial ^2 f}{\partial x_2\partial x_1} & \cdots & \frac {\partial ^2 f}{\partial x_n\partial x_1}\\ \frac {\partial ^2 f}{\partial x_1x_2} & \frac {\partial ^2 f}{\partial x_2^2} & \cdots & \frac {\partial ^2 f}{\partial x_n\partial x_2}\\ \vdots & \vdots &\ddots & \vdots \\ \frac {\partial ^2 f}{\partial x_1x_n} & \frac {\partial ^2 f}{\partial x_2x_n} & \cdots & \frac {\partial ^2 f}{\partial x_n^2}\\ \end {pmatrix}. </script>
 </div>
-<!--l. 33--><p class="noindent" >Notice that if <script type="math/tex">f</script> has continuous first and second order partial derivatives, then the
+<!--l. 36--><p class="noindent" >Notice that if <script type="math/tex">f</script> has continuous first and second order partial derivatives, then the
 Hessian matrix will be symmetric by Clairaut’s Theorem.
 </p>
 <div class="theorem-like problem-environment example" id="problem2"><a 
  id="x1-1002r2"></a>Consider the function <script type="math/tex">f(x,y) = x + 2xy + 3y^3</script>. We’ll compute the Hessian of <script type="math/tex">f</script>. First, we find the gradient of <script type="math/tex">f</script>.
 <script type="math/tex; mode=display"> \nabla f = \answer {(1+2y, 2x+9y^2)} </script> Taking the derivative matrix of the gradient, we obtain the Hessian of <script type="math/tex">f</script>.
 <script type="math/tex; mode=display"> Hf = \begin {pmatrix} \answer {0} & \answer {2}\\ \answer {2} & \answer {18y} \end {pmatrix} </script>
-<!--l. 48--><p class="noindent" >Consider the function <script type="math/tex">g(x,y,z) = e^{xyz}</script>. We’ll compute the Hessian of <script type="math/tex">g</script>. First, we find the gradient of <script type="math/tex">g</script>.
+<!--l. 51--><p class="noindent" >Consider the function <script type="math/tex">g(x,y,z) = e^{xyz}</script>. We’ll compute the Hessian of <script type="math/tex">g</script>. First, we find the gradient of <script type="math/tex">g</script>.
 <script type="math/tex; mode=display"> \nabla g = \answer {(yze^{xyz}, xze^{xyz}, xye^{xyz})} </script> Taking the derivative matrix of the gradient we obtain the Hessian of <script type="math/tex">f</script>.
-<script type="math/tex; mode=display"> Hf = \begin {pmatrix} \answer {y^2z^2e^{xyz}} & \answer {z(xyz+1)e^{xyz}} & \answer {y(xyz+1)e^{xyz}}\\ \answer {z(xyz+1)e^{xyz}} & \answer {x^2z^2e^{xyz}} & \answer {x(xyz+1)e^{xyz}}\\ \answer {y(xyz+1)e^{xyz}} & \answer {x(xyz+1)e^{xyz}} & \answer {x^2y^2e^{xyz}} \end {pmatrix} </script>
                                                                   
 
                                                                   
+<script type="math/tex; mode=display"> Hf = \begin {pmatrix} \answer {y^2z^2e^{xyz}} & \answer {z(xyz+1)e^{xyz}} & \answer {y(xyz+1)e^{xyz}}\\ \answer {z(xyz+1)e^{xyz}} & \answer {x^2z^2e^{xyz}} & \answer {x(xyz+1)e^{xyz}}\\ \answer {y(xyz+1)e^{xyz}} & \answer {x(xyz+1)e^{xyz}} & \answer {x^2y^2e^{xyz}} \end {pmatrix} </script>
 </div>
 <a 
  id="Q1-1-3"></a>
 </p>
 <h3 class="likesectionHead"><a 
  id="x1-2000"></a>Taylor Polynomials</h3>
-<!--l. 64--><p class="noindent" >We’re now in position to define the second-order Taylor polynomial of a function <script type="math/tex">f:\mathbb {R}^n\rightarrow \mathbb {R}</script>,
+<!--l. 67--><p class="noindent" >We’re now in position to define the second-order Taylor polynomial of a function <script type="math/tex">f:\mathbb {R}^n\rightarrow \mathbb {R}</script>,
 using the Hessian matrix to find the degree two terms.
 </p>
 <div class="theorem-like problem-environment definition" id="problem3"><a 
@@ -86,14 +88,14 @@ Hf(x,y) &= \begin{pmatrix}
 \answer{2} & \answer{18y}
 \end{pmatrix}.
 \end{align*}</script>
-<!--l. 82--><p class="noindent" >Plugging in the point <script type="math/tex">(2,1)</script>, we have </p><script type="math/tex; mode=display"> \begin{align*} 
+<!--l. 85--><p class="noindent" >Plugging in the point <script type="math/tex">(2,1)</script>, we have </p><script type="math/tex; mode=display"> \begin{align*} 
 \nabla f(2,1) &= \answer{(3, 13)},\\
 Hf(x,y) &= \begin{pmatrix}
 \answer{0} & \answer{2}\\
 \answer{2} & \answer{18}
 \end{pmatrix}.
 \end{align*}</script>
-<!--l. 90--><p class="noindent" >Then, the degree 2 Taylor polynomial of <script type="math/tex">f</script> centered at <script type="math/tex">(2,1)</script> is
+<!--l. 93--><p class="noindent" >Then, the degree 2 Taylor polynomial of <script type="math/tex">f</script> centered at <script type="math/tex">(2,1)</script> is
 </p><script type="math/tex; mode=display"> \begin{align*} 
 p_2(x,y) &= f(2,1) + \nabla f(2,1)\cdot (x-2,y-1) + \frac{1}{2} (x-2,y-1)^T Hf(2,1)(x-2,y-1)\\
 &= 11+ (3,13)\cdot (x-2,y-1) + \frac{1}{2} \begin{pmatrix}x-2 & y-1\end{pmatrix}\begin{pmatrix}
@@ -102,12 +104,12 @@ p_2(x,y) &= f(2,1) + \nabla f(2,1)\cdot (x-2,y-1) + \frac{1}{2} (x-2,y-1)^T Hf(2
 \end{pmatrix}\begin{pmatrix}x-2 \\ y-1\end{pmatrix}\\
 &= 11 + 3(x-2)+ 13(y-1) + \frac{1}{2}(4(x-2)(y-1)+18(y-1)^2)\\
 &= 5 + x -9y + 2xy + 9y^2.
-\end{align*}</script>
                                                                   
 
                                                                   
-<!--l. 100--><p class="noindent" ></div>
-</p><!--l. 102--><p class="noindent" >Notice that the order two part of the Taylor polynomial, <script type="math/tex; mode=display"> \frac {1}{2} (\vec {x}-\vec {a})^T Hf(\vec {a})(\vec {x}-\vec {a}), </script> will be a quadratic form
+\end{align*}</script>
+<!--l. 103--><p class="noindent" ></div>
+</p><!--l. 105--><p class="noindent" >Notice that the order two part of the Taylor polynomial, <script type="math/tex; mode=display"> \frac {1}{2} (\vec {x}-\vec {a})^T Hf(\vec {a})(\vec {x}-\vec {a}), </script> will be a quadratic form
 when <script type="math/tex">\vec {a} = \vec {0}</script>. We will soon make use of our classification of quadratic forms in order to use
 the Hessian matrix to determine the order two behavior of a function, which will be
 useful for optimizing multivariable functions.

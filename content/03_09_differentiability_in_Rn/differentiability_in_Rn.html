@@ -6,11 +6,12 @@
 <meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
 <!-- charset=utf-8,-css,html,htex4ht,xhtml --> 
 <meta name="src" content="differentiability_in_Rn.tex" /> 
-<meta name="author" content="" /> 
+<meta name="author" content="Melissa Lynn" /> 
 <meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
 <meta name="ximera" content="version 0.0.1" /> 
 <link href="https://ximera.osu.edu/public/stylesheets/standalone.css" rel="stylesheet" media="screen"/> 
 <script type="text/javascript" async src="https://ximera.osu.edu/public/javascripts/standalone.min.js"></script> 
+<meta name="learning-outcome" content="Understand the definition of differentiability for functions of $n$ variables. Compute gradients, and use them to show that functions are differentiable."/> 
 </head><body> 
 <div class="preamble"><script type="math/tex">\newenvironment {prompt}{}{}
 \newcommand {\DeclareMathOperator }[2]{\@OldDeclareMathOperator {##1}{##2}\immediate \write \myfile {\unexpanded {\DeclareMathOperator }{\unexpanded {##1}}{\unexpanded {##2}}}}
@@ -33,7 +34,7 @@
 class="abstract" 
 >
 </div>   <div class="maketitle"></div>
-<!--l. 11--><p class="noindent" >We’ve given a formal definition for differentiability of a function <script type="math/tex">f:\mathbb {R}^2\rightarrow \mathbb {R}</script>,
+<!--l. 14--><p class="noindent" >We’ve given a formal definition for differentiability of a function <script type="math/tex">f:\mathbb {R}^2\rightarrow \mathbb {R}</script>,
 </p>
 <div class="theorem-like problem-environment definition" id="problem1"><a 
  id="x1-17r1"></a>Consider the function <script type="math/tex">f:\mathbb {R}^2\rightarrow \mathbb {R}</script>, and suppose that the partial derivatives <script type="math/tex">f_x</script> and <script type="math/tex">f_y</script> are defined at
@@ -41,9 +42,9 @@ the point <script type="math/tex">(x,y)=(a,b)</script>. Define the linear functi
 the partial derivatives <script type="math/tex">f_x(a,b)</script> and <script type="math/tex">f_y(a,b)</script> do not exist, or the above limit does not exist or is not <script type="math/tex">0</script>,
 then <script type="math/tex">f</script> is not differentiable at <script type="math/tex">(a,b)</script>.
 </div>
-<!--l. 25--><p class="noindent" >The idea behind this definition is that <script type="math/tex">h(x,y)</script> will be a “good” linear approximation to <script type="math/tex">f(x,y)</script>
+<!--l. 28--><p class="noindent" >The idea behind this definition is that <script type="math/tex">h(x,y)</script> will be a “good” linear approximation to <script type="math/tex">f(x,y)</script>
 near <script type="math/tex">(a,b)</script> if <script type="math/tex">f</script> is differentiable at <script type="math/tex">(a,b)</script>.
-</p><!--l. 27--><p class="noindent" >We would now like to define differentiability for scalar-valued functions of more than
+</p><!--l. 30--><p class="noindent" >We would now like to define differentiability for scalar-valued functions of more than
 two variables, so functions from <script type="math/tex">\mathbb {R}^n</script> to <script type="math/tex">\mathbb {R}</script>. This definition will closely resemble our
 definition above, which handles the case <script type="math/tex">n=2</script>. For example, in the case <script type="math/tex">n=3</script>, we will use the
 linear function <script type="math/tex; mode=display"> h(x,y,z) = f(a,b,c) + f_x(a,b,c)(x-a) + f_y(a,b,c)(y-b)+f_z(a,b,c)(z-c). </script> For larger <script type="math/tex">n</script>, we’ll define a similar function <script type="math/tex">h</script>, but this notation will
@@ -55,7 +56,7 @@ function.
 </p>
 <h3 class="likesectionHead"><a 
  id="x1-1000"></a>The gradient</h3>
-<!--l. 35--><p class="noindent" >In order to organize our information about partial derivatives, and streamline our
+<!--l. 38--><p class="noindent" >In order to organize our information about partial derivatives, and streamline our
 definition of differentiability for functions <script type="math/tex">\mathbb {R}^n\rightarrow \mathbb {R}</script>, we now define the gradient of a
 scalar-valued function.
 </p>
@@ -65,7 +66,7 @@ scalar-valued function.
 <div class="theorem-like problem-environment definition" id="problem2"><a 
  id="x1-1001r2"></a>Consider a function <script type="math/tex">f:\mathbb {R}^n\rightarrow \mathbb {R}</script>. The <em>gradient</em> of <script type="math/tex">f</script> is the function <script type="math/tex">\nabla f:\mathbb {R}^n\rightarrow \mathbb {R}^n</script>, defined by <script type="math/tex; mode=display"> \nabla f = \left (\frac {\partial f}{\partial x_1},\frac {\partial f}{\partial x_2},...,\frac {\partial f}{\partial x_n}\right ). </script>
 </div>
-<!--l. 44--><p class="noindent" >The gradient vector will be a useful computation tool in general, not only for defining
+<!--l. 47--><p class="noindent" >The gradient vector will be a useful computation tool in general, not only for defining
 differentiability.
 </p>
 <div class="theorem-like problem-environment example" id="problem3"><a 
@@ -74,18 +75,18 @@ f_x(x,y,z) &= 2x,\\
 f_y(x,y,z) &= e^z,\\
 f_z(x,y,z) &= ye^z.
 \end{align*}</script>
-<!--l. 53--><p class="noindent" >Then the gradient of <script type="math/tex">f</script> is <script type="math/tex; mode=display"> \nabla f = (2x, e^z ye^z). </script>
+<!--l. 56--><p class="noindent" >Then the gradient of <script type="math/tex">f</script> is <script type="math/tex; mode=display"> \nabla f = (2x, e^z ye^z). </script>
 </div>
 </p>
 <div role="article" class="problem-environment problem" id="problem4"><a 
  id="x1-1003r4"></a> Find the gradient of each function.
-<!--l. 62--><p class="noindent" ><script type="math/tex">f(x,y,z) = \sin (xyz)</script> <script type="math/tex; mode=display"> \nabla f(x,y,z) = \answer {(yz\cos (xyz), xz\cos (xyz),xy\cos (xyz))} </script> <script type="math/tex">g(x,y) = x^2e^y + y</script> <script type="math/tex; mode=display"> \nabla g(x,y) = \answer {(2xe^y, x^2e^y+1)} </script> <script type="math/tex">h(x_1,x_2,x_3,x_4) = x_1^2x_2+x_1x_3+x_2x_4</script> <script type="math/tex; mode=display"> \nabla h(x_1,x_2,x_3,x_4) = \answer {(2x_1x_2+x_3,x_1^2+x_4,x_1,x_2)} </script>
+<!--l. 65--><p class="noindent" ><script type="math/tex">f(x,y,z) = \sin (xyz)</script> <script type="math/tex; mode=display"> \nabla f(x,y,z) = \answer {(yz\cos (xyz), xz\cos (xyz),xy\cos (xyz))} </script> <script type="math/tex">g(x,y) = x^2e^y + y</script> <script type="math/tex; mode=display"> \nabla g(x,y) = \answer {(2xe^y, x^2e^y+1)} </script> <script type="math/tex">h(x_1,x_2,x_3,x_4) = x_1^2x_2+x_1x_3+x_2x_4</script> <script type="math/tex; mode=display"> \nabla h(x_1,x_2,x_3,x_4) = \answer {(2x_1x_2+x_3,x_1^2+x_4,x_1,x_2)} </script>
 </p></div>
 <a 
  id="Q1-1-3"></a>
 <h3 class="likesectionHead"><a 
  id="x1-2000"></a>Differentiability</h3>
-<!--l. 78--><p class="noindent" >Now that we’ve defined the gradient, let’s revisit our definition of differentiability for
+<!--l. 81--><p class="noindent" >Now that we’ve defined the gradient, let’s revisit our definition of differentiability for
 a function from <script type="math/tex">\mathbb {R}^2</script> to <script type="math/tex">\mathbb {R}</script>. We used the function <script type="math/tex; mode=display"> h(x,y) = f(a,b) + f_x(a,b)(x-a)+f_y(a,b)(y-b). </script> Looking at the terms <script type="math/tex">f_x(a,b)(x-a)+f_y(a,b)(y-b)</script>, we can rewrite this
 as a dot product of two vectors: <script type="math/tex; mode=display"> f_x(a,b)(x-a)+f_y(a,b)(y-b) = (f_x(a,b), f_y(a,b))\cdot (x-a,y-b). </script> The first vector is the gradient of <script type="math/tex">f</script> evaluated at <script type="math/tex">(a,b)</script>, so
 we can rewrite this as <script type="math/tex; mode=display"> (f_x(a,b), f_y(a,b))\cdot (x-a,y-b) = \nabla f(a,b)\cdot (x-a,y-b). </script> If we take <script type="math/tex">\vec {x}=(x,y)</script> and <script type="math/tex">\vec {a} = (a,b)</script>, we can write this as <script type="math/tex; mode=display"> \nabla f(\vec {a})\cdot (\vec {x}-\vec {a}). </script> With these
@@ -95,14 +96,14 @@ notational changes in mind, we now define differentiability for a function
 <div class="theorem-like problem-environment definition" id="problem5"><a 
  id="x1-2001r5"></a>Consider a function <script type="math/tex">f:\mathbb {R}^n\rightarrow \mathbb {R}</script>. For a point <script type="math/tex">\vec {a}\in \mathbb {R}^n</script>, define <script type="math/tex; mode=display"> h(\vec {x}) = f(\vec {a})+\nabla f(\vec {a})\cdot (\vec {x}-\vec {a}). </script> We say that <script type="math/tex">f</script> is <em>differentiable</em> at <script type="math/tex">\vec {a}</script> if <script type="math/tex; mode=display"> \lim _{\vec {x}\rightarrow \vec {a}}\frac {f(\vec {x}) - h(\vec {x})}{\|\vec {x}-\vec {a}\|} = 0. </script> If <script type="math/tex">f</script> is
 differentiable, we say that <script type="math/tex">h(\vec {x})</script> is the <em>tangent hyperplane</em> to <script type="math/tex">f</script> at <script type="math/tex">\vec {a}</script>.
-<!--l. 107--><p class="noindent" >If any of the partial derivatives of <script type="math/tex">f</script> do not exist, or the above limit does not exist or is
+<!--l. 110--><p class="noindent" >If any of the partial derivatives of <script type="math/tex">f</script> do not exist, or the above limit does not exist or is
 not <script type="math/tex">0</script>, then <script type="math/tex">f</script> is not differentiable at <script type="math/tex">\vec {a}</script>.
 </div>
 </p>
 <div class="theorem-like problem-environment example" id="problem6"><a 
  id="x1-2002r6"></a>We’ll use this definition of differentiability to prove that the function <script type="math/tex">f(x,y,z) = xy+z</script> is differentiable
 at <script type="math/tex">(1,1,1)</script>.
-<!--l. 113--><p class="noindent" >First, we find the gradient of <script type="math/tex">f</script>. <script type="math/tex; mode=display"> \nabla f(x,y,z) = \answer {(y,x,1)} </script> At the point <script type="math/tex">(1,1,1)</script>, we have <script type="math/tex; mode=display"> \nabla f(1,1,1) = \answer {(1,1,1)}. </script> From this, we find the formula for
+<!--l. 116--><p class="noindent" >First, we find the gradient of <script type="math/tex">f</script>. <script type="math/tex; mode=display"> \nabla f(x,y,z) = \answer {(y,x,1)} </script> At the point <script type="math/tex">(1,1,1)</script>, we have <script type="math/tex; mode=display"> \nabla f(1,1,1) = \answer {(1,1,1)}. </script> From this, we find the formula for
 <script type="math/tex">h(x,y,z)</script>. </p><script type="math/tex; mode=display"> \begin{align*} 
 h(x,y,z) &= f(1,1,1)+\nabla f(1,1,1)\cdot ((x,y,z)-(1,1,1))\\
 &= 2+(1,1,1)\cdot (x-1,y-1,z-1)\\
@@ -111,22 +112,22 @@ h(x,y,z) &= f(1,1,1)+\nabla f(1,1,1)\cdot ((x,y,z)-(1,1,1))\\
                                                                   
 
                                                                   
-<!--l. 128--><p class="noindent" >Next, we evaluate the limit </p><script type="math/tex; mode=display"> \begin{align*} 
+<!--l. 131--><p class="noindent" >Next, we evaluate the limit </p><script type="math/tex; mode=display"> \begin{align*} 
 \lim_{(x,y,z)\rightarrow (1,1,1)}\frac{f(x,y,z) - h(x,y,z)}{\|(x,y,z)-(1,1,1)\|} &= \lim_{(x,y,z)\rightarrow (1,1,1)}\frac{(xy+z) - (x+y+z-1)}{\sqrt{(x-1)^2+(y-1)^2+(z-1)^2}}\\
 &= \lim_{(x,y,z)\rightarrow (1,1,1)}\frac{xy-x-y+1}{\sqrt{(x-1)^2+(y-1)^2+(z-1)^2}}.\\
 \end{align*}</script>
-<!--l. 133--><p class="noindent" >To evaluate this limit, we switch to translated spherical coordinates
+<!--l. 136--><p class="noindent" >To evaluate this limit, we switch to translated spherical coordinates
 </p><script type="math/tex; mode=display"> \begin{align*} 
 x &= 1+\rho\cos\theta\sin\phi,\\
 y &= 1+\rho\sin\theta\sin\phi,\\
 z &= 1+\rho\cos\phi.
 \end{align*}</script>
-<!--l. 139--><p class="noindent" >Making  this  change,  we  obtain
+<!--l. 142--><p class="noindent" >Making  this  change,  we  obtain
 </p><script type="math/tex; mode=display"> \begin{align*} 
 \lim_{(x,y,z)\rightarrow (1,1,1)}\frac{xy-x-y+1}{\sqrt{(x-1)^2+(y-1)^2+(z-1)^2}} &= \lim_{\rho\rightarrow 0}\frac{(1+\rho\cos\theta\sin\phi)(1+\rho\sin\theta\sin\phi) - (1+\rho\cos\theta\sin\phi) - (1+\rho\sin\theta\sin\phi) + 1}{|\rho|}\\
 &= \lim_{\rho\rightarrow 0}\frac{\rho^2\cos\theta\sin\theta\sin^2\phi}{|\rho|}.
 \end{align*}</script>
-<!--l. 144--><p class="noindent" >Since <script type="math/tex">-|\rho |\leq \frac {\rho ^2\cos \theta \sin \theta \sin ^2\phi }{|\rho |} \leq |\rho |</script>, we use the squeeze theorem to obtain <script type="math/tex; mode=display"> \lim _{\rho \rightarrow 0}\frac {\rho ^2\cos \theta \sin \theta \sin ^2\phi }{|\rho |} =0. </script> Thus, we have shown that <script type="math/tex">f(x,y,z) = xy+z</script> is
+<!--l. 147--><p class="noindent" >Since <script type="math/tex">-|\rho |\leq \frac {\rho ^2\cos \theta \sin \theta \sin ^2\phi }{|\rho |} \leq |\rho |</script>, we use the squeeze theorem to obtain <script type="math/tex; mode=display"> \lim _{\rho \rightarrow 0}\frac {\rho ^2\cos \theta \sin \theta \sin ^2\phi }{|\rho |} =0. </script> Thus, we have shown that <script type="math/tex">f(x,y,z) = xy+z</script> is
 differentiable at <script type="math/tex">(1,1,1)</script>.
 </div>
 </body> 

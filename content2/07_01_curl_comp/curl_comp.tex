@@ -1,0 +1,192 @@
+\documentclass{ximera}  
+
+\title{Curl of a Vector Field}  
+
+\begin{document}  
+\begin{abstract}  
+%Computation
+\end{abstract}  
+\maketitle 
+
+
+Imagine the vector field below represents fluid flow:
+
+\desmos{vhuoyka1ys}{50}{500}
+
+%https://www.desmos.com/calculator/vhuoyka1ys
+
+%VECTOR FIELD (-y,0), with plus signs
+
+If we fix the center point of each $+$ above, which way will they rotate? \wordChoice{\choice{clockwise}\choice[correct]{counter-clockwise}}
+
+We can describe this concept as microscopic rotation or local rotation, and it turns out that the \emph{curl} of a vector field measures this local rotation.
+
+In this activity, we define curl and focus on computation. In the next activity, we discuss the geometric significance of curl and how it represents local rotation.
+
+\section*{Definition of Curl}
+
+A curl is an example of an \emph{operator}, which is a mathematical object you've seen before. Roughly speaking, it's a ``function'' on functions. That is, it takes a function as an input, and produces a function as an output. Here, we're using ``function'' very broadly - a function could be scalar-valued, a path, or even a vector field!
+
+To prove that you've seen operators before, let's look at a specific example:
+\begin{problem}
+What does $\dfrac{d}{dt}g(t)$ mean?
+\begin{multipleChoice}
+\choice{Multiply $g(t)$ by the fraction $\dfrac{d}{dt}$.}
+\choice[correct]{Take the derivative of $g$ with respect to $t$.}
+\end{multipleChoice}
+\begin{problem}
+What does $\dfrac{d}{dt}$ mean?
+\begin{multipleChoice}
+\choice{The same thing as $\dfrac{1}{t}$.}
+\choice[correct]{Take the derivative with respect to $t$.}
+\end{multipleChoice}
+\begin{problem}
+It turns out that $\dfrac{d}{dt}$ is an example of an \emph{operator}.
+
+To introduce the curl, we need to talk about another operator, $\nabla$ which we call the \emph{del operator}.
+
+What does $\nabla (g(x,y,z))$ mean?
+\begin{multipleChoice}
+\choice{The change in $g$.}
+\choice[correct]{$\left(\dfrac{\partial g}{\partial x}, \dfrac{\partial g}{\partial y}, \dfrac{\partial g}{\partial z}\right)$}
+\end{multipleChoice}
+
+\begin{problem}
+From this, we can deduce that $\nabla$ should mean $\left(\dfrac{\partial}{\partial x}, \dfrac{\partial}{\partial y}, \dfrac{\partial}{\partial z}\right)$. Note that this is an operator.
+\end{problem}
+\end{problem}
+\end{problem}
+\end{problem}
+
+\begin{definition}
+The \emph{del operator} in $\mathbb{R}^n$ is $\left(\dfrac{\partial}{\partial x_1}, \dfrac{\partial}{\partial x_2}, \dfrac{\partial}{\partial x_3},...,\dfrac{\partial}{\partial x_n}\right)$.
+\end{definition}
+
+There's one more ingredient that we need to review in order to define the curl of a vector field, the cross product.
+
+\begin{problem}
+If $\mathbf{v}=(1,2,3)$ and $\mathbf{w}=(4,5,6)$, what is $\mathbf{v}\times\mathbf{w}$?
+$\answer{(-3,6,-3)}$.
+\begin{problem}
+Note that this is computed as the determinant
+\[
+\left|\begin{array}{ccc}
+\mathbf{i}&\mathbf{j}&\mathbf{k}\\
+1&2&3\\
+4&5&6
+\end{array}\right|
+\]
+\begin{problem}
+Given a vector field $\mathbf{F}=(M(x,y,z),N(x,y,z),P(x,y,z))$, how might we interpret $\nabla\times\mathbf{F}$?
+\begin{align*}
+\nabla\times\mathbf{F} &= \left|\begin{array}{ccc}
+\mathbf{i}&\mathbf{j}&\mathbf{k}\\
+\answer{\dfrac{\partial}{\partial x}}&\answer{\dfrac{\partial}{\partial y}}&\answer{\dfrac{\partial}{\partial z}}\\
+M&N&P
+\end{array}\right|\\
+&= \left(\dfrac{\partial P}{\partial y}-\dfrac{\partial N}{\partial z}, -\left(\dfrac{\partial P}{\partial x}-\dfrac{\partial M}{\partial z}\right), \dfrac{\partial N}{\partial x} - \dfrac{\partial M}{\partial y}\right)
+\end{align*}
+\end{problem}
+\end{problem}
+\end{problem}
+
+Based on this, we give our definition for the curl of a three-dimensional vector field:
+
+\begin{definition}
+The \emph{curl} of a three-dimensional vector field $\mathbf{F}(x,y,z) = (M(x,y,z), N(x,y,z), P(x,y,z))$ is
+\begin{align*}
+\nabla\times\mathbf{F} &= \left|\begin{array}{ccc}
+\mathbf{i}&\mathbf{j}&\mathbf{k}\\
+\dfrac{\partial}{\partial x}&\dfrac{\partial}{\partial y}&\dfrac{\partial}{\partial z}\\
+\answer{M}&\answer{N}&\answer{P}
+\end{array}\right|\\
+&= \left(\dfrac{\partial P}{\partial y}-\dfrac{\partial N}{\partial z}, -\left(\dfrac{\partial P}{\partial x}-\dfrac{\partial M}{\partial z}\right), \dfrac{\partial N}{\partial x} - \dfrac{\partial M}{\partial y}\right)
+\end{align*}
+\end{definition}
+
+Note that this input is a vector field $\mathbf{F}$ in $\mathbb{R}^3$, and the output is another vector field in $\mathbf{R}^3$.
+
+\begin{problem}
+Let $\mathbf{F}=(e^y, xz, 3z)$. Compute the curl $\nabla\times\mathbf{F}$.
+\[
+\nabla\times\mathbf{F} = \answer{(-x,0,z-e^y)}
+\]
+\end{problem}
+
+Note that we have only defined the curl for three-dimensional vector fields. However, by being a bit clever, we can extend this definition to two-dimensional vector fields.
+
+\begin{definition}
+If the three-dimensional vector field $\mathbf{F}$ has the form $\mathbf{F}(x,y,z)=(M(x,y), N(x,y), 0)$, then $\nabla\times\mathbf{F}$ is often called the \emph{two-dimensional curl} of $\mathbf{F}$.
+
+Moreover, if $\mathbf{G}(x,y)=(M(x,y), N(x,y))$ is a vector field in $\mathbb{R}^2$, then we define the \emph{curl} of $\mathbf{G}$ as the curl of the three-dimensional vector field $\widetilde{\mathbf{G}}(x,y,z)=(M(x,y),N(x,y),0)$.
+\end{definition}
+
+It turns out, the curl of a two-dimensional vector field can be written in a simpler form.
+
+\begin{proposition}
+The two-dimensional curl of $\mathbf{F}(x,y) = (M(x,y),N(x,y),0)$ is
+\[
+\nabla\times \mathbf{F} = \left(0,0,\dfrac{\partial N}{\partial x} - \dfrac{\partial M}{\partial y}\right)
+\]
+\end{proposition}
+
+\begin{proof}
+From the definition of the curl, we have
+\[
+\nabla\times\mathbf{F} = \left(\dfrac{\partial P}{\partial y}-\dfrac{\partial N}{\partial z}, -\left(\dfrac{\partial P}{\partial x}-\dfrac{\partial M}{\partial z}\right), \dfrac{\partial N}{\partial x} - \dfrac{\partial M}{\partial y}\right).
+\]
+Since the third component, $P$, of our vector field is identically $0$, we have
+\[
+\nabla\times\mathbf{F} = \left(\answer{0}-\dfrac{\partial N}{\partial z}, -\left(\answer{0}-\dfrac{\partial M}{\partial z}\right), \dfrac{\partial N}{\partial x} - \dfrac{\partial M}{\partial y}\right).
+\]
+Both $M(x,y)$ and $N(x,y)$ are constant with respect to $z$, so we then have
+\[
+\nabla\times\mathbf{F} = \left(\answer{0}, \answer{0}, \dfrac{\partial N}{\partial x} - \dfrac{\partial M}{\partial y}\right),
+\]
+as desired.
+\end{proof}
+
+Sometimes we refer to $\dfrac{\partial N}{\partial x} - \dfrac{\partial M}{\partial y}$ as the curl $\nabla\times\mathbf{F}$ if $\mathbf{F}$ is two-dimensional, instead of writing out the entire vector.
+
+Note that we've only defined the curl of a vector field for two- and three-dimensional vector fields. Why doesn't it make sense to define the curl of a four-dimensional (or higher!) vector field?
+\begin{multipleChoice}
+\choice{We only exist in three dimensions.}
+\choice[correct]{The cross product is only defined in $\mathbf{R}^3$.}
+\end{multipleChoice}
+
+\begin{problem}
+Given $\mathbf{F}(x,y)=(y,0)$, compute the curl $\nabla\times\mathbf{F}$.
+\[
+\nabla\times\mathbf{F} = \answer{(0,0,-1)}
+\]
+\end{problem}
+
+\begin{problem}
+Given $\mathbf{F}(x,y)=(-y,0)$, compute the curl $\nabla\times\mathbf{F}$.
+\[
+\nabla\times\mathbf{F} = \answer{(0,0,1)}
+\]
+\end{problem}
+
+Let's look at this example, $\mathbf{F}(x,y) = (-y,0)$. It turns out that this is the vector field from the beginning of this activity:
+
+%Vector field with plus signs
+
+We imagined that the center of the plus signs were fixed, and determined that the vector field would rotate the plus signs counterclockwise. We claimed that this local rotation had something to do with the curl of the vector field, which we computed to be $\nabla\times\mathbf{F} = (0,0,1)$.
+
+In the next activity, we'll study the geometric significance of the curl, and why the curl measures this ``microscopic'' rotation.
+
+\section*{Summary}
+
+In this section, we defined the curl of a two- or three-dimensional vector field, which can be computed as follows:
+\begin{itemize}
+\item For a three-dimensional vector field, $\mathbf{F}(x,y,z) = (M(x,y,z), N(x,y,z), P(x,y,z))$, we have $\nabla\times\mathbf{F} = \left(\dfrac{\partial P}{\partial y}-\dfrac{\partial N}{\partial z}, -\left(\dfrac{\partial P}{\partial x}-\dfrac{\partial M}{\partial z}\right), \dfrac{\partial N}{\partial x} - \dfrac{\partial M}{\partial y}\right)$
+\item The two-dimensional curl of $\mathbf{F}(x,y) = (M(x,y),N(x,y),0)$ can be computed as
+\[
+\nabla\times \mathbf{F} = \left(0,0,\dfrac{\partial N}{\partial x} - \dfrac{\partial M}{\partial y}\right)
+\]
+\end{itemize}
+
+In the next activity, we will discuss the geometric significance of the curl, and how it relates to the local rotation of the vector field.
+
+\end{document}

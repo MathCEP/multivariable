@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=latex 2018.4.16)  5 JUN 2019 10:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=latex 2018.4.16)  1 JUL 2019 20:51
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -2311,49 +2311,46 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-
-LaTeX Warning: No \author given.
-
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 )
 
-./directional_derivatives.tex:7: LaTeX Error: Environment abstract undefined.
+./directional_derivatives.tex:10: LaTeX Error: Environment abstract undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7 \begin{abstract}
-                    
+l.10 \begin{abstract}
+                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./directional_derivatives.tex:8: LaTeX Error: \begin{document} ended by \end{ab
-stract}.
+./directional_derivatives.tex:11: LaTeX Error: \begin{document} ended by \end{a
+bstract}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8 \end{abstract}
-                  
+l.11 \end{abstract}
+                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 11.
+LaTeX Font Info:    Try loading font information for U+msa on input line 14.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 11.
+LaTeX Font Info:    Try loading font information for U+msb on input line 14.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -2361,14 +2358,14 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (/usr/local/texlive/2018/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-l.25 --- TeX4ht warning --- File `"./directional_derivatives-figure0.xbb"' not 
+l.28 --- TeX4ht warning --- File `"./directional_derivatives-figure0.xbb"' not 
 found ---
-l.25 --- TeX4ht warning --- Cannot determine size of graphic in "./directional_
+l.28 --- TeX4ht warning --- Cannot determine size of graphic in "./directional_
 derivatives-figure0.xbb" (no BoundingBox) ---
-./directional_derivatives.tex:25: Undefined control sequence.
+./directional_derivatives.tex:28: Undefined control sequence.
 \:Needs #1->File: \Gin 
                        @base.svg
-l.25 \end{tikzpicture}
+l.28 \end{tikzpicture}
                       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2376,15 +2373,15 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-l. 25 --- needs --- ./directional_derivatives-figure0.svg ---
-l.36 --- TeX4ht warning --- File `"./directional_derivatives-figure1.xbb"' not 
+l. 28 --- needs --- ./directional_derivatives-figure0.svg ---
+l.39 --- TeX4ht warning --- File `"./directional_derivatives-figure1.xbb"' not 
 found ---
-l.36 --- TeX4ht warning --- Cannot determine size of graphic in "./directional_
+l.39 --- TeX4ht warning --- Cannot determine size of graphic in "./directional_
 derivatives-figure1.xbb" (no BoundingBox) ---
-./directional_derivatives.tex:36: Undefined control sequence.
+./directional_derivatives.tex:39: Undefined control sequence.
 \:Needs #1->File: \Gin 
                        @base.svg
-l.36 \end{tikzpicture}
+l.39 \end{tikzpicture}
                       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2392,15 +2389,15 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-l. 36 --- needs --- ./directional_derivatives-figure1.svg ---
-l.47 --- TeX4ht warning --- File `"./directional_derivatives-figure2.xbb"' not 
+l. 39 --- needs --- ./directional_derivatives-figure1.svg ---
+l.50 --- TeX4ht warning --- File `"./directional_derivatives-figure2.xbb"' not 
 found ---
-l.47 --- TeX4ht warning --- Cannot determine size of graphic in "./directional_
+l.50 --- TeX4ht warning --- Cannot determine size of graphic in "./directional_
 derivatives-figure2.xbb" (no BoundingBox) ---
-./directional_derivatives.tex:47: Undefined control sequence.
+./directional_derivatives.tex:50: Undefined control sequence.
 \:Needs #1->File: \Gin 
                        @base.svg
-l.47 \end{tikzpicture}
+l.50 \end{tikzpicture}
                       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2408,18 +2405,18 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-l. 47 --- needs --- ./directional_derivatives-figure2.svg ---
+l. 50 --- needs --- ./directional_derivatives-figure2.svg ---
 [1
 
 ]
-l.74 --- TeX4ht warning --- File `"./directional_derivatives-figure3.xbb"' not 
+l.77 --- TeX4ht warning --- File `"./directional_derivatives-figure3.xbb"' not 
 found ---
-l.74 --- TeX4ht warning --- Cannot determine size of graphic in "./directional_
+l.77 --- TeX4ht warning --- Cannot determine size of graphic in "./directional_
 derivatives-figure3.xbb" (no BoundingBox) ---
-./directional_derivatives.tex:74: Undefined control sequence.
+./directional_derivatives.tex:77: Undefined control sequence.
 \:Needs #1->File: \Gin 
                        @base.svg
-l.74 \end{tikzpicture}
+l.77 \end{tikzpicture}
                       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2427,23 +2424,23 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-l. 74 --- needs --- ./directional_derivatives-figure3.svg ---
+l. 77 --- needs --- ./directional_derivatives-figure3.svg ---
 [2] [3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 96.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 99.
  [4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 96.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 99.
  (./directional_derivatives.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 96.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 96.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 96.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 99.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 99.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 99.
  ) 
 Here is how much of TeX's memory you used:
  34944 strings out of 492650
  774549 string characters out of 6129648
- 1099965 words of memory out of 5000000
+ 1099964 words of memory out of 5000000
  38050 multiletter control sequences out of 15000+600000
  5879 words of font info for 25 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,5n,98p,1236b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on directional_derivatives.dvi (4 pages, 14252 bytes).
+Output written on directional_derivatives.dvi (4 pages, 14416 bytes).

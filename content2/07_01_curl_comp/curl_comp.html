@@ -1,0 +1,191 @@
+<!doctype html> 
+<html lang="en"> 
+<head> <title>Curl of a Vector Field</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<!-- charset=utf-8,-css,html,htex4ht,xhtml --> 
+<meta name="src" content="curl_comp.tex" /> 
+<meta name="author" content="" /> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
+<meta name="ximera" content="version 0.0.1" /> 
+<link href="https://ximera.osu.edu/public/stylesheets/standalone.css" rel="stylesheet" media="screen"/> 
+<script type="text/javascript" async src="https://ximera.osu.edu/public/javascripts/standalone.min.js"></script> 
+</head><body> 
+<div class="preamble"><script type="math/tex">\newenvironment {prompt}{}{}
+\newcommand {\DeclareMathOperator }[2]{\@OldDeclareMathOperator {##1}{##2}\immediate \write \myfile {\unexpanded {\DeclareMathOperator }{\unexpanded {##1}}{\unexpanded {##2}}}}
+\newcommand {\ungraded }[0]{}
+\newcommand {\reserved@a }[2]{}
+\newcommand {\HyperFirstAtBeginDocument }[0]{\AtBeginDocument }
+\newcommand {\reserved@a }[1]{}
+\newcommand {\reserved@a }[2]{}
+\newcommand {\vnameref  }[1]{\unskip ~\nameref {##1}\@vpageref [\unskip ]{##1}}
+\newcommand {\ref  }[0]{\@ifstar \@refstar \T@ref }
+\newcommand {\pageref  }[0]{\@ifstar \@pagerefstar \T@pageref }
+\newcommand {\nameref  }[0]{\@ifstar \@namerefstar \T@nameref }
+\newcommand {\reserved@a }[2]{}
+\newcommand {\reserved@a }[0]{\AtBeginDocument }
+\newcommand {\reserved@a }[1]{}
+\newcommand {\reserved@a }[2]{}                                                                                                                                                 </script><script type="text/javascript"> 
+</script> 
+</div>
+<div 
+class="abstract" 
+>
+</div>   <div class="maketitle"></div>
+<!--l. 12--><p class="noindent" >Imagine the vector field below represents fluid flow:
+</p><!--l. 14--><p class="noindent" ><iframe src="https://www.desmos.com/calculator/vhuoyka1ys" width="100%" height="500px" style="border: 1px solid ##ccc" frameborder=0>This browser does not support embedded elements.</iframe>
+</p><!--l. 20--><p class="noindent" >If we fix the center point of each <script type="math/tex">+</script> above, which way will they rotate? <span class="word-choice" id="word-choice1"><a 
+ id="x1-17r1"></a><span class="choice  "   id="choice1">clockwise</span><span class="choice correct " 
+id="choice2">counter-clockwise</span>
+</span>
+</p><!--l. 22--><p class="noindent" >We can describe this concept as microscopic rotation or local rotation, and it turns
+out that the <em>curl</em> of a vector field measures this local rotation.
+</p><!--l. 24--><p class="noindent" >In this activity, we define curl and focus on computation. In the next activity,
+we discuss the geometric significance of curl and how it represents local
+rotation.
+<a 
+ id="Q1-1-1"></a>
+</p>
+<h3 class="likesectionHead"><a 
+ id="x1-1000"></a>Definition of Curl</h3>
+<!--l. 28--><p class="noindent" >A curl is an example of an <em>operator</em>, which is a mathematical object you’ve seen
+before. Roughly speaking, it’s a “function” on functions. That is, it takes a function
+as an input, and produces a function as an output. Here, we’re using “function”
+very broadly - a function could be scalar-valued, a path, or even a vector
+field!
+</p><!--l. 30--><p class="noindent" >To prove that you’ve seen operators before, let’s look at a specific example: </p><div role="article" class="problem-environment problem" id="problem2"><a 
+ id="x1-1001r2"></a> What
+does <script type="math/tex">\dfrac {d}{dt}g(t)</script> mean? <div class="multiple-choice" id="problem3"><span class="choice  "   id="choice3">Multiply <script type="math/tex">g(t)</script> by the fraction <script type="math/tex">\dfrac {d}{dt}</script>.</span> <span class="choice correct "   id="choice4">Take the derivative of <script type="math/tex">g</script> with respect to <script type="math/tex">t</script>.</span>
+</div>
+<div role="article" class="problem-environment problem" id="problem4"><a 
+ id="x1-1002r3"></a> What does <script type="math/tex">\dfrac {d}{dt}</script> mean? <div class="multiple-choice" id="problem5"><span class="choice  "   id="choice5">The same thing as <script type="math/tex">\dfrac {1}{t}</script>.</span> <span class="choice correct "   id="choice6">Take the derivative with respect to <script type="math/tex">t</script>.</span>
+</div>
+                                                                  
+
+                                                                  
+<div role="article" class="problem-environment problem" id="problem6"><a 
+ id="x1-1003r4"></a> It turns out that <script type="math/tex">\dfrac {d}{dt}</script> is an example of an <em>operator</em>.
+<!--l. 46--><p class="noindent" >To introduce the curl, we need to talk about another operator, <script type="math/tex">\nabla </script> which we call the <em>del
+operator</em>.
+</p><!--l. 48--><p class="noindent" >What does <script type="math/tex">\nabla (g(x,y,z))</script> mean? </p><div class="multiple-choice" id="problem7"><span class="choice  "   id="choice7">The change in <script type="math/tex">g</script>.</span> <span class="choice correct "   id="choice8"><script type="math/tex">\left (\dfrac {\partial g}{\partial x}, \dfrac {\partial g}{\partial y}, \dfrac {\partial g}{\partial z}\right )</script></span> </div>
+<div role="article" class="problem-environment problem" id="problem8"><a 
+ id="x1-1004r5"></a> From this, we can deduce that <script type="math/tex">\nabla </script> should mean <script type="math/tex">\left (\dfrac {\partial }{\partial x}, \dfrac {\partial }{\partial y}, \dfrac {\partial }{\partial z}\right )</script>. Note that this is an operator.
+</div>
+</div>
+</div>
+</div>
+<div class="theorem-like problem-environment definition" id="problem9"><a 
+ id="x1-1005r6"></a>The <em>del operator</em> in <script type="math/tex">\mathbb {R}^n</script> is <script type="math/tex">\left (\dfrac {\partial }{\partial x_1}, \dfrac {\partial }{\partial x_2}, \dfrac {\partial }{\partial x_3},...,\dfrac {\partial }{\partial x_n}\right )</script>.
+</div>
+<!--l. 65--><p class="noindent" >There’s one more ingredient that we need to review in order to define the curl of a
+vector field, the cross product.
+</p>
+<div role="article" class="problem-environment problem" id="problem10"><a 
+ id="x1-1006r7"></a> If <script type="math/tex">\mathbf {v}=(1,2,3)</script> and <script type="math/tex">\mathbf {w}=(4,5,6)</script>, what is <script type="math/tex">\mathbf {v}\times \mathbf {w}</script>? <script type="math/tex">\answer {(-3,6,-3)}</script>. <div role="article" class="problem-environment problem" id="problem11"><a 
+ id="x1-1007r8"></a> Note that this is computed as the determinant <script type="math/tex; mode=display"> \left |\begin {array}{ccc} \mathbf {i}&\mathbf {j}&\mathbf {k}\\ 1&2&3\\ 4&5&6 \end {array}\right | </script> <div role="article" class="problem-environment problem" id="problem12"><a 
+ id="x1-1008r9"></a> Given a vector field <script type="math/tex">\mathbf {F}=(M(x,y,z),N(x,y,z),P(x,y,z))</script>,
+how might we interpret <script type="math/tex">\nabla \times \mathbf {F}</script>? <script type="math/tex; mode=display"> \begin{align*} 
+\nabla\times\mathbf{F} &= \left|\begin{array}{ccc}
+\mathbf{i}&\mathbf{j}&\mathbf{k}\\
+\answer{\dfrac{\partial}{\partial x}}&\answer{\dfrac{\partial}{\partial y}}&\answer{\dfrac{\partial}{\partial z}}\\
+M&N&P
+\end{array}\right|\\
+&= \left(\dfrac{\partial P}{\partial y}-\dfrac{\partial N}{\partial z}, -\left(\dfrac{\partial P}{\partial x}-\dfrac{\partial M}{\partial z}\right), \dfrac{\partial N}{\partial x} - \dfrac{\partial M}{\partial y}\right)
+\end{align*}</script>
+</div>
+</div>
+</div>
+<!--l. 93--><p class="noindent" >Based on this, we give our definition for the curl of a three-dimensional vector
+field:
+</p>
+<div class="theorem-like problem-environment definition" id="problem13"><a 
+ id="x1-1009r10"></a>The <em>curl</em> of a three-dimensional vector field <script type="math/tex">\mathbf {F}(x,y,z) = (M(x,y,z), N(x,y,z), P(x,y,z))</script> is <script type="math/tex; mode=display"> \begin{align*} 
+\nabla\times\mathbf{F} &= \left|\begin{array}{ccc}
+\mathbf{i}&\mathbf{j}&\mathbf{k}\\
+\dfrac{\partial}{\partial x}&\dfrac{\partial}{\partial y}&\dfrac{\partial}{\partial z}\\
+\answer{M}&\answer{N}&\answer{P}
+\end{array}\right|\\
+&= \left(\dfrac{\partial P}{\partial y}-\dfrac{\partial N}{\partial z}, -\left(\dfrac{\partial P}{\partial x}-\dfrac{\partial M}{\partial z}\right), \dfrac{\partial N}{\partial x} - \dfrac{\partial M}{\partial y}\right)
+\end{align*}</script>
+                                                                  
+
+                                                                  
+<!--l. 105--><p class="noindent" ></div>
+</p><!--l. 107--><p class="noindent" >Note that this input is a vector field <script type="math/tex">\mathbf {F}</script> in <script type="math/tex">\mathbb {R}^3</script>, and the output is another vector field in
+<script type="math/tex">\mathbf {R}^3</script>.
+</p>
+<div role="article" class="problem-environment problem" id="problem14"><a 
+ id="x1-1010r11"></a> Let <script type="math/tex">\mathbf {F}=(e^y, xz, 3z)</script>. Compute the curl <script type="math/tex">\nabla \times \mathbf {F}</script>. <script type="math/tex; mode=display"> \nabla \times \mathbf {F} = \answer {(-x,0,z-e^y)} </script>
+</div>
+<!--l. 116--><p class="noindent" >Note that we have only defined the curl for three-dimensional vector fields. However,
+by being a bit clever, we can extend this definition to two-dimensional vector
+fields.
+</p>
+<div class="theorem-like problem-environment definition" id="problem15"><a 
+ id="x1-1011r12"></a>If the three-dimensional vector field <script type="math/tex">\mathbf {F}</script> has the form <script type="math/tex">\mathbf {F}(x,y,z)=(M(x,y), N(x,y), 0)</script>, then <script type="math/tex">\nabla \times \mathbf {F}</script> is often called the
+<em>two-dimensional curl</em> of <script type="math/tex">\mathbf {F}</script>.
+<!--l. 121--><p class="noindent" >Moreover, if <script type="math/tex">\mathbf {G}(x,y)=(M(x,y), N(x,y))</script> is a vector field in <script type="math/tex">\mathbb {R}^2</script>, then we define the <em>curl</em> of <script type="math/tex">\mathbf {G}</script> as the curl of the
+three-dimensional vector field <script type="math/tex">\widetilde {\mathbf {G}}(x,y,z)=(M(x,y),N(x,y),0)</script>.
+</div>
+</p><!--l. 124--><p class="noindent" >It turns out, the curl of a two-dimensional vector field can be written in a simpler
+form.
+</p>
+<div class="theorem-like problem-environment proposition" id="problem16"><a 
+ id="x1-1012r13"></a>The two-dimensional curl of <script type="math/tex">\mathbf {F}(x,y) = (M(x,y),N(x,y),0)</script> is <script type="math/tex; mode=display"> \nabla \times \mathbf {F} = \left (0,0,\dfrac {\partial N}{\partial x} - \dfrac {\partial M}{\partial y}\right ) </script>
+</div>
+<!--l. 133--><p class="noindent" >
+</p>
+<div class="proof">
+<!--l. 134--><p class="noindent" ><span class="head">
+</p><dl class="trivlist"><dt class="trivlist">
+Proof   </dt><dd 
+class="trivlist"></span>From the definition of the curl, we have <script type="math/tex; mode=display"> \nabla \times \mathbf {F} = \left (\dfrac {\partial P}{\partial y}-\dfrac {\partial N}{\partial z}, -\left (\dfrac {\partial P}{\partial x}-\dfrac {\partial M}{\partial z}\right ), \dfrac {\partial N}{\partial x} - \dfrac {\partial M}{\partial y}\right ). </script> Since the third component, <script type="math/tex">P</script>,
+of our vector field is identically <script type="math/tex">0</script>, we have <script type="math/tex; mode=display"> \nabla \times \mathbf {F} = \left (\answer {0}-\dfrac {\partial N}{\partial z}, -\left (\answer {0}-\dfrac {\partial M}{\partial z}\right ), \dfrac {\partial N}{\partial x} - \dfrac {\partial M}{\partial y}\right ). </script> Both <script type="math/tex">M(x,y)</script> and <script type="math/tex">N(x,y)</script> are constant with respect
+to <script type="math/tex">z</script>, so we then have <script type="math/tex; mode=display"> \nabla \times \mathbf {F} = \left (\answer {0}, \answer {0}, \dfrac {\partial N}{\partial x} - \dfrac {\partial M}{\partial y}\right ), </script> as desired.                                                             <script type="math/tex">\blacksquare </script></dd></dl>
+</div>
+<!--l. 149--><p class="noindent" >Sometimes we refer to <script type="math/tex">\dfrac {\partial N}{\partial x} - \dfrac {\partial M}{\partial y}</script> as the curl <script type="math/tex">\nabla \times \mathbf {F}</script> if <script type="math/tex">\mathbf {F}</script> is two-dimensional, instead of writing out the
+entire vector.
+</p><!--l. 151--><p class="noindent" >Note that we’ve only defined the curl of a vector field for two- and three-dimensional
+vector fields. Why doesn’t it make sense to define the curl of a four-dimensional (or
+higher!) vector field? </p><div class="multiple-choice" id="problem17"><span class="choice  "   id="choice9">We only exist in three dimensions.</span> <span class="choice correct "   id="choice10">The cross product is
+only defined in <script type="math/tex">\mathbf {R}^3</script>.</span> </div>
+<div role="article" class="problem-environment problem" id="problem18"><a 
+ id="x1-1013r14"></a> Given <script type="math/tex">\mathbf {F}(x,y)=(y,0)</script>, compute the curl <script type="math/tex">\nabla \times \mathbf {F}</script>. <script type="math/tex; mode=display"> \nabla \times \mathbf {F} = \answer {(0,0,-1)} </script>
+</div>
+                                                                  
+
+                                                                  
+<div role="article" class="problem-environment problem" id="problem19"><a 
+ id="x1-1014r15"></a> Given <script type="math/tex">\mathbf {F}(x,y)=(-y,0)</script>, compute the curl <script type="math/tex">\nabla \times \mathbf {F}</script>. <script type="math/tex; mode=display"> \nabla \times \mathbf {F} = \answer {(0,0,1)} </script>
+</div>
+<!--l. 171--><p class="noindent" >Let’s look at this example, <script type="math/tex">\mathbf {F}(x,y) = (-y,0)</script>. It turns out that this is the vector field from the
+beginning of this activity:
+</p><!--l. 175--><p class="noindent" >We imagined that the center of the plus signs were fixed, and determined that the
+vector field would rotate the plus signs counterclockwise. We claimed that this local
+rotation had something to do with the curl of the vector field, which we computed to
+be <script type="math/tex">\nabla \times \mathbf {F} = (0,0,1)</script>.
+</p><!--l. 177--><p class="noindent" >In the next activity, we’ll study the geometric significance of the curl, and why the
+curl measures this “microscopic” rotation.
+<a 
+ id="Q1-1-3"></a>
+</p>
+<h3 class="likesectionHead"><a 
+ id="x1-2000"></a>Summary</h3>
+<!--l. 181--><p class="noindent" >In this section, we defined the curl of a two- or three-dimensional vector field, which
+can be computed as follows: </p>
+     <ul class="itemize1">
+     <li class="itemize">For a three-dimensional vector field, <script type="math/tex">\mathbf {F}(x,y,z) = (M(x,y,z), N(x,y,z), P(x,y,z))</script>, we have <script type="math/tex">\nabla \times \mathbf {F} = \left (\dfrac {\partial P}{\partial y}-\dfrac {\partial N}{\partial z}, -\left (\dfrac {\partial P}{\partial x}-\dfrac {\partial M}{\partial z}\right ), \dfrac {\partial N}{\partial x} - \dfrac {\partial M}{\partial y}\right )</script>
+     </li>
+     <li class="itemize">The two-dimensional curl of <script type="math/tex">\mathbf {F}(x,y) = (M(x,y),N(x,y),0)</script> can be computed as <script type="math/tex; mode=display"> \nabla \times \mathbf {F} = \left (0,0,\dfrac {\partial N}{\partial x} - \dfrac {\partial M}{\partial y}\right ) </script></li></ul>
+<!--l. 190--><p class="noindent" >In the next activity, we will discuss the geometric significance of the curl, and how it
+relates to the local rotation of the vector field.
+</body> 
+ 
+</html>
+                                                                  
+
+                                                                  
+                                                                  
+
+

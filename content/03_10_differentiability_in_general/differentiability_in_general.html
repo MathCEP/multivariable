@@ -1,16 +1,18 @@
 <!doctype html> 
 <html lang="en"> 
-<head> <title>Differentiability in General</title> 
+<head> <title>Differentiability  in  General</title> 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
 <meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
 <meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
 <!-- charset=utf-8,-css,html,htex4ht,xhtml --> 
 <meta name="src" content="differentiability_in_general.tex" /> 
-<meta name="author" content="" /> 
+<meta name="author" content="Melissa
+Lynn" /> 
 <meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
 <meta name="ximera" content="version 0.0.1" /> 
 <link href="https://ximera.osu.edu/public/stylesheets/standalone.css" rel="stylesheet" media="screen"/> 
 <script type="text/javascript" async src="https://ximera.osu.edu/public/javascripts/standalone.min.js"></script> 
+<meta name="learning-outcome" content="Understand the general definition of differentiability. Compute derivative matrices, and use them to show that functions are differentiable."/> 
 </head><body> 
 <div class="preamble"><script type="math/tex">\newenvironment {prompt}{}{}
 \newcommand {\DeclareMathOperator }[2]{\@OldDeclareMathOperator {##1}{##2}\immediate \write \myfile {\unexpanded {\DeclareMathOperator }{\unexpanded {##1}}{\unexpanded {##2}}}}
@@ -33,16 +35,16 @@
 class="abstract" 
 >
 </div>   <div class="maketitle"></div>
-<!--l. 11--><p class="noindent" >We’ve defined differentiability for scalar-valued functions, <script type="math/tex">\mathbb {R}^n\rightarrow \mathbb {R}</script>.
+<!--l. 14--><p class="noindent" >We’ve defined differentiability for scalar-valued functions, <script type="math/tex">\mathbb {R}^n\rightarrow \mathbb {R}</script>.
 </p>
 <div class="theorem-like problem-environment definition" id="problem1"><a 
  id="x1-17r1"></a>Consider a function <script type="math/tex">f:\mathbb {R}^n\rightarrow \mathbb {R}</script>. For a point <script type="math/tex">\vec {a}\in \mathbb {R}^n</script>, define <script type="math/tex; mode=display"> h(\vec {x}) = f(\vec {a})+\nabla f(\vec {a})\cdot (\vec {x}-\vec {a}). </script> We say that <script type="math/tex">f</script> is <em>differentiable</em> at <script type="math/tex">\vec {a}</script> if <script type="math/tex; mode=display"> \lim _{\vec {x}\rightarrow \vec {a}}\frac {f(\vec {x}) - h(\vec {x})}{\|\vec {x}-\vec {a}\|} = 0. </script> If <script type="math/tex">f</script> is
 differentiable, we say that <script type="math/tex">h(\vec {x})</script> is the <em>tangent hyperplane</em> to <script type="math/tex">f</script> at <script type="math/tex">\vec {a}</script>.
-<!--l. 24--><p class="noindent" >If any of the partial derivatives of <script type="math/tex">f</script> do not exist, or the above limit does not exist or is
+<!--l. 27--><p class="noindent" >If any of the partial derivatives of <script type="math/tex">f</script> do not exist, or the above limit does not exist or is
 not <script type="math/tex">0</script>, then <script type="math/tex">f</script> is not differentiable at <script type="math/tex">\vec {a}</script>.
 </div>
-</p><!--l. 27--><p class="noindent" >We’d now like to define differentiability for vector-valued functions, <script type="math/tex">\vec {f}:\mathbb {R}^n\rightarrow \mathbb {R}^m</script>.
-</p><!--l. 29--><p class="noindent" >In order to define differentiability for scalar-valued functions <script type="math/tex">f:\mathbb {R}^n\rightarrow \mathbb {R}</script>, we organized our
+</p><!--l. 30--><p class="noindent" >We’d now like to define differentiability for vector-valued functions, <script type="math/tex">\vec {f}:\mathbb {R}^n\rightarrow \mathbb {R}^m</script>.
+</p><!--l. 32--><p class="noindent" >In order to define differentiability for scalar-valued functions <script type="math/tex">f:\mathbb {R}^n\rightarrow \mathbb {R}</script>, we organized our
 partial derivatives into a vector, the gradient of <script type="math/tex">f</script>. <script type="math/tex; mode=display"> \nabla f = \left (\frac {\partial f}{\partial x_1},...,\frac {\partial f}{\partial x_n}\right ) </script> We would like to do something
 similar for a vector-valued function <script type="math/tex">\vec {f}:\mathbb {R}^n\rightarrow \mathbb {R}^m</script>, and organize all of the partial derivatives into a
 single object. However, for a function <script type="math/tex">\vec {f}:\mathbb {R}^n\rightarrow \mathbb {R}^m</script>, we not only have partial derivatives with
@@ -57,13 +59,13 @@ derivative matrix.
 <div class="theorem-like problem-environment definition" id="problem2"><a 
  id="x1-1001r2"></a>Let <script type="math/tex">\vec {f}:\mathbb {R}^n\rightarrow \mathbb {R}^m</script>, and suppose all of the partial derivatives of <script type="math/tex">\vec {f}</script> exist. Write <script type="math/tex">\vec {f}</script> in terms of its
 component functions, <script type="math/tex; mode=display"> \vec {f}(x_1,...,x_n) = (f_1(x_1,..,x_n),...,f_m(x_1,...,x_n)). </script>
-<!--l. 43--><p class="noindent" >We define the <em>derivative matrix</em> of <script type="math/tex">\vec {f}</script> to be the <script type="math/tex">m\times n</script> matrix with <script type="math/tex">\frac {\partial f_i}{\partial x_j}</script> as the <script type="math/tex">ij</script>th entry. That is,
+<!--l. 46--><p class="noindent" >We define the <em>derivative matrix</em> of <script type="math/tex">\vec {f}</script> to be the <script type="math/tex">m\times n</script> matrix with <script type="math/tex">\frac {\partial f_i}{\partial x_j}</script> as the <script type="math/tex">ij</script>th entry. That is,
 <script type="math/tex; mode=display"> D\vec {f}(x_1,...,x_n) = \begin {pmatrix} \frac {\partial f_1}{\partial x_1} & \cdots & \frac {\partial f_1}{\partial x_n}\\ \frac {\partial f_2}{\partial x_1} & \cdots & \frac {\partial f_2}{\partial x_n}\\ \vdots & \ddots & \vdots \\ \frac {\partial f_m}{\partial x_1} & \cdots & \frac {\partial f_m}{\partial x_n} \end {pmatrix}. </script>
-</div>
                                                                   
 
                                                                   
-</p><!--l. 54--><p class="noindent" >It can be difficult to remember whether the variable or the component changes across
+</div>
+</p><!--l. 57--><p class="noindent" >It can be difficult to remember whether the variable or the component changes across
 the rows or columns. Here are a couple of ways to remember which way it goes:
 </p>
      <ul class="itemize1">
@@ -83,51 +85,51 @@ D\vec{f}(x,y,z) &= \begin{pmatrix}
 yz & xz & xy\\
 \end{pmatrix}
 \end{align*}</script>
-<!--l. 72--><p class="noindent" ></div>
+<!--l. 75--><p class="noindent" ></div>
 </p>
 <div role="article" class="problem-environment problem" id="problem4"><a 
  id="x1-1003r4"></a> Find the derivative matrix of each of the following functions.
-<!--l. 77--><p class="noindent" ><script type="math/tex">\vec {f}(x,y) = (x^2+y^2, \sin (xy), e^{x+y})</script> <script type="math/tex; mode=display"> D\vec {f}(x,y) =\begin {pmatrix} \answer {2x} & \answer {2y}\\ \answer {y\cos (xy)} & \answer {x\cos (xy)}\\ \answer {e^{x+y}} & \answer {e^{x+y}} \end {pmatrix} </script>
-</p><!--l. 86--><p class="noindent" ><script type="math/tex">\vec {g}(x,y,z) = (x^2z+yz^2, x+y+z, x+y^2+z)</script> <script type="math/tex; mode=display"> D\vec {g}(x,y,z) =\begin {pmatrix} \answer {2xz} & \answer {z^2} & \answer {x^2+2yz}\\ \answer {1} & \answer {1} & \answer {1}\\ \answer {1} & \answer {2y} & \answer {1} \end {pmatrix} </script>
+<!--l. 80--><p class="noindent" ><script type="math/tex">\vec {f}(x,y) = (x^2+y^2, \sin (xy), e^{x+y})</script> <script type="math/tex; mode=display"> D\vec {f}(x,y) =\begin {pmatrix} \answer {2x} & \answer {2y}\\ \answer {y\cos (xy)} & \answer {x\cos (xy)}\\ \answer {e^{x+y}} & \answer {e^{x+y}} \end {pmatrix} </script>
+</p><!--l. 89--><p class="noindent" ><script type="math/tex">\vec {g}(x,y,z) = (x^2z+yz^2, x+y+z, x+y^2+z)</script> <script type="math/tex; mode=display"> D\vec {g}(x,y,z) =\begin {pmatrix} \answer {2xz} & \answer {z^2} & \answer {x^2+2yz}\\ \answer {1} & \answer {1} & \answer {1}\\ \answer {1} & \answer {2y} & \answer {1} \end {pmatrix} </script>
 </p></div>
 <a 
  id="Q1-1-3"></a>
 <h3 class="likesectionHead"><a 
  id="x1-2000"></a>Differentiability</h3>
-<!--l. 98--><p class="noindent" >We can now generalize our definition of differentiability for scalar-valued functions,
+<!--l. 101--><p class="noindent" >We can now generalize our definition of differentiability for scalar-valued functions,
 by replacing the gradient with the derivative matrix.
 </p>
 <div class="theorem-like problem-environment definition" id="problem5"><a 
  id="x1-2001r5"></a>Consider a function <script type="math/tex">\vec {f}:\mathbb {R}^n\rightarrow \mathbb {R}^m</script>. For a point <script type="math/tex">\vec {a}\in \mathbb {R}^n</script>, define <script type="math/tex; mode=display"> \vec {h}(\vec {x}) = \vec {f}(\vec {a})+D\vec {f}(\vec {a})(\vec {x}-\vec {a}). </script> We say that <script type="math/tex">\vec {f}</script> is <em>differentiable</em> at <script type="math/tex">\vec {a}</script> if
 <script type="math/tex; mode=display"> \lim _{\vec {x}\rightarrow \vec {a}}\frac {\vec {f}(\vec {x}) - \vec {h}(\vec {x})}{\|\vec {x}-\vec {a}\|} = \vec {0}. </script>
-<!--l. 110--><p class="noindent" >If any of the partial derivatives of <script type="math/tex">\vec {f}</script> do not exist, or the above limit does not exist or is
+<!--l. 113--><p class="noindent" >If any of the partial derivatives of <script type="math/tex">\vec {f}</script> do not exist, or the above limit does not exist or is
 not <script type="math/tex">0</script>, then <script type="math/tex">\vec {f}</script> is not differentiable at <script type="math/tex">\vec {a}</script>.
 </div>
-</p><!--l. 113--><p class="noindent" >Note one of the quirks of multivariable differentiation: if the derivative matrix
                                                                   
 
                                                                   
+</p><!--l. 116--><p class="noindent" >Note one of the quirks of multivariable differentiation: if the derivative matrix
 exist, it’s still possible for the function to not be differentiable. We’ve seen
 this with functions before, when the partial derivatives of a function exist,
 and yet the function is not differentiable. For example, we’ve worked with
 the piecewise function defined by <script type="math/tex; mode=display"> f(x,y) = \begin {cases} 1-|y| & \text {if }|y|\leq |x| \\ 1-|x| & \text {if }|y| > |x| \end {cases}. </script> We found that the partial derivatives <script type="math/tex">f_x(0,0)</script>
 and <script type="math/tex">f_y(0,0)</script> both exist and are <script type="math/tex">0</script>. However, the function <script type="math/tex">f</script> is not differentiable at
 <script type="math/tex">(0,0)</script>.
-</p><!--l. 122--><p class="noindent" >For vector-valued functions, we can also reduce differentiability to differentiability of
+</p><!--l. 125--><p class="noindent" >For vector-valued functions, we can also reduce differentiability to differentiability of
 its component functions.
 </p>
 <div class="theorem-like problem-environment theorem" id="problem6"><a 
  id="x1-2002r6"></a>A function <script type="math/tex">\vec {f}:\mathbb {R}^n\rightarrow \mathbb {R}^m</script> is differentiable if and only if its component functions are all
 differentiable.
 </div>
-<!--l. 128--><p class="noindent" >This theorem can quickly be proved from the definitions of differentiability in these
+<!--l. 131--><p class="noindent" >This theorem can quickly be proved from the definitions of differentiability in these
 two cases.
 <a 
  id="Q1-1-5"></a>
 </p>
 <h3 class="likesectionHead"><a 
  id="x1-3000"></a>A criterion for differentiability</h3>
-<!--l. 132--><p class="noindent" >Checking differentiability using the limit definitions that we’ve found can be a huge
+<!--l. 135--><p class="noindent" >Checking differentiability using the limit definitions that we’ve found can be a huge
 pain! It would be much nicer if we could tell if a function is differentiable just
 by looking at the partial derivatives. Fortunately, this is possible in some
 cases.
@@ -136,7 +138,7 @@ cases.
  id="x1-3001r7"></a>Consider a function <script type="math/tex">\vec {f}:\mathbb {R}^n\rightarrow \mathbb {R}^m</script>. Suppose that all of the partial derivatives, <script type="math/tex">\partial f_i/\partial x_j</script>, exist and are
 continuous in a neighborhood of a point <script type="math/tex">\vec {a}</script>. Then <script type="math/tex">\vec {f}</script> is differentiable at <script type="math/tex">\vec {a}</script>.
 </div>
-<!--l. 138--><p class="noindent" >An analogous result holds for scalar-valued functions. This theorem requires a very
+<!--l. 141--><p class="noindent" >An analogous result holds for scalar-valued functions. This theorem requires a very
 important note: its converse is <em>false</em>. That is, if one or more of the partial derivatives
 of a function is discontinuous, it’s still possible that the function is differentiable. In
 this case, you would probably need to resort to the limit definition to determine
@@ -145,21 +147,21 @@ differentiability.
 <div class="theorem-like problem-environment example" id="problem8"><a 
  id="x1-3002r8"></a>We’ll use the above theorem to show that <script type="math/tex">\vec {g}(x,y,z) = (x^2z+yz^2, x+y+z, x+y^2+z)</script> is differentiable at all points in
 <script type="math/tex">\mathbb {R}^3</script>.
-<!--l. 143--><p class="noindent" >First, we find all of the partial derivatives of <script type="math/tex">g</script>. </p><script type="math/tex; mode=display"> \begin{align*} 
+<!--l. 146--><p class="noindent" >First, we find all of the partial derivatives of <script type="math/tex">g</script>. </p><script type="math/tex; mode=display"> \begin{align*} 
 \frac{\partial g_1}{\partial x} &= \answer{2xz}\\
 \frac{\partial g_1}{\partial y} &= \answer{z^2}\\
 \frac{\partial g_1}{\partial z} &= \answer{x^2+2yz}\\
 \frac{\partial g_2}{\partial x} &= \answer{1}\\
 \frac{\partial g_2}{\partial y} &= \answer{1}\\
-\frac{\partial g_2}{\partial z} &= \answer{1}\\
                                                                   
 
                                                                   
+\frac{\partial g_2}{\partial z} &= \answer{1}\\
 \frac{\partial g_3}{\partial x} &= \answer{1}\\
 \frac{\partial g_3}{\partial y} &= \answer{2y}\\
 \frac{\partial g_2}{\partial z} &= \answer{1}\\
 \end{align*}</script>
-<!--l. 156--><p class="noindent" >All of these functions are polynomials, hence continuous at all points <script type="math/tex">\mathbb {R}^3</script>. Since the
+<!--l. 159--><p class="noindent" >All of these functions are polynomials, hence continuous at all points <script type="math/tex">\mathbb {R}^3</script>. Since the
 partial derivatives of <script type="math/tex">\vec {g}</script> all exist and are continuous on <script type="math/tex">\mathbb {R}^3</script>, by the theorem above, <script type="math/tex">\vec {g}</script> is
 differentiable at all points in <script type="math/tex">\mathbb {R}^3</script>.
 </div>

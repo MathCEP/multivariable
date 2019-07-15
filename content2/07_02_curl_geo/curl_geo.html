@@ -1,0 +1,255 @@
+<!doctype html> 
+<html lang="en"> 
+<head> <title>Geometric  Significance  of
+Curl</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<!-- charset=utf-8,-css,html,htex4ht,xhtml --> 
+<meta name="src" content="curl_geo.tex" /> 
+<meta name="author" content="" /> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
+<meta name="ximera" content="version 0.0.1" /> 
+<link href="https://ximera.osu.edu/public/stylesheets/standalone.css" rel="stylesheet" media="screen"/> 
+<script type="text/javascript" async src="https://ximera.osu.edu/public/javascripts/standalone.min.js"></script> 
+</head><body> 
+<div class="preamble"><script type="math/tex">\newenvironment {prompt}{}{}
+\newcommand {\DeclareMathOperator }[2]{\@OldDeclareMathOperator {##1}{##2}\immediate \write \myfile {\unexpanded {\DeclareMathOperator }{\unexpanded {##1}}{\unexpanded {##2}}}}
+\newcommand {\ungraded }[0]{}
+\newcommand {\reserved@a }[2]{}
+\newcommand {\HyperFirstAtBeginDocument }[0]{\AtBeginDocument }
+\newcommand {\reserved@a }[1]{}
+\newcommand {\reserved@a }[2]{}
+\newcommand {\vnameref  }[1]{\unskip ~\nameref {##1}\@vpageref [\unskip ]{##1}}
+\newcommand {\ref  }[0]{\@ifstar \@refstar \T@ref }
+\newcommand {\pageref  }[0]{\@ifstar \@pagerefstar \T@pageref }
+\newcommand {\nameref  }[0]{\@ifstar \@namerefstar \T@nameref }
+\newcommand {\reserved@a }[2]{}
+\newcommand {\reserved@a }[0]{\AtBeginDocument }
+\newcommand {\reserved@a }[1]{}
+\newcommand {\reserved@a }[2]{}                                                                                                                                                 </script><script type="text/javascript"> 
+</script> 
+</div>
+<div 
+class="abstract" 
+>
+</div>   <div class="maketitle"></div>
+<!--l. 11--><p class="noindent" >Consider the vector field <script type="math/tex">\mathbf {F}(x,y)=(-y,0)</script>.
+</p><!--l. 13--><p class="noindent" >We can compute the curl of this vector field, <script type="math/tex; mode=display"> \nabla \times \mathbf {F}=(0,0,1) </script>
+</p><!--l. 18--><p class="noindent" >Imagine that we fix a point (representing a particle) in this vector field, but allow it
+to rotate. If imagine the vector field acting as a force on this particle, which way will
+it cause the particle to rotate?
+</p><!--l. 20--><p class="noindent" >(VECTOR FIELD)
+</p><!--l. 22--><p class="noindent" >Here, we see that the vector field is applying a greater force to the “top” of the
+particle than to the “bottom.” this will cause the particle to rotate counterclockwise.
+We describe this type of rotation as <em>local rotation</em> or <em>microscopic rotation</em>, since it’s
+the rotation when we “zoom in” on the particle.
+</p><!--l. 24--><p class="noindent" >It turns out that the curl of a vector field provides a measure of this local rotation -
+but how are these connected? We will answer this question in this section, discussing
+the geometric significance of the curl.
+<a 
+ id="Q1-1-1"></a>
+</p>
+<h3 class="likesectionHead"><a 
+ id="x1-1000"></a>Geometric Significance of Two-dimensional Curl</h3>
+<!--l. 28--><p class="noindent" >Recall that, for a two-dimensional vector field <script type="math/tex">\mathbf {F}(x,y)=(M,N)</script>, we can compute the curl as <script type="math/tex; mode=display"> \nabla \times \mathbf {F} = (0,0,N_x-M_y) </script> where <script type="math/tex">N_x</script> is
+the partial derivative of <script type="math/tex">N</script> with respect to <script type="math/tex">x</script>, and <script type="math/tex">M_y</script> is the partial derivative of <script type="math/tex">M</script>
+with respect to <script type="math/tex">y</script>. We’ll start by considering how <script type="math/tex">M_y</script> and <script type="math/tex">N_x</script> contribute to local
+rotation.
+</p><!--l. 34--><p class="noindent" >First let’s consider the case where <script type="math/tex">M_y<0</script>. In this case, the <script type="math/tex">x</script>-component of the vector field <script type="math/tex">\mathbf {F}</script> is
+<em>decreasing</em> as we move in the positive <script type="math/tex">y</script> direction. Select all pictures which match this
+                                                                  
+
+                                                                  
+situation.
+</p>
+<div class="image-environment" role="img" aria-labelledby="image-alt-1">  <img 
+src="./curl_geo-figure0.svg" alt=""  
+ />
+</div>
+<div class="select-all" id="problem1"><a 
+ id="x1-1001r1"></a> <span class="choice correct "   id="choice1">(a)</span> <span class="choice  "   id="choice2">(b)</span> <span class="choice  "   id="choice3">(c)</span> <span class="choice  "   id="choice4">(d)</span> <span class="choice  "   id="choice5">(e)</span> <span class="choice correct "   id="choice6">(f)</span> <span class="choice  "   id="choice7">(g)</span> <span class="choice  "   id="choice8">(h)</span>
+</div>
+<!--l. 83--><p class="noindent" >If <script type="math/tex">M_y<0</script>, which way will this cause a particle in the vector field to rotate? </p><div class="multiple-choice" id="problem2"><span class="choice  "   id="choice9">Clockwise.</span> <span class="choice correct " 
+id="choice10">Counterclockwise.</span> </div>
+<!--l. 89--><p class="noindent" >Now, let’s consider the case where <script type="math/tex">N_x>0</script>. This means that the <script type="math/tex">y</script>-component of the vector
+field <script type="math/tex">\mathbf {F}</script> is increasing as we move in the positive <script type="math/tex">x</script> direction. Select all pictures which
+match this situation.
+</p>
+<div class="image-environment" role="img" aria-labelledby="image-alt-2">  <img 
+src="./curl_geo-figure1.svg" alt=""  
+ />
+</div>
+<div class="select-all" id="problem3"><a 
+ id="x1-1002r2"></a> <span class="choice  "   id="choice11">(a)</span> <span class="choice  "   id="choice12">(b)</span> <span class="choice  "   id="choice13">(c)</span> <span class="choice correct "   id="choice14">(d)</span> <span class="choice  "   id="choice15">(e)</span> <span class="choice  "   id="choice16">(f)</span> <span class="choice correct "   id="choice17">(g)</span> <span class="choice  "   id="choice18">(h)</span>
+</div>
+<!--l. 138--><p class="noindent" >If <script type="math/tex">N_x<0</script>, which way will this cause a particle in the vector field to rotate? </p><div class="multiple-choice" id="problem4"><span class="choice  "   id="choice19">Clockwise.</span> <span class="choice correct " 
+id="choice20">Counterclockwise.</span> </div>
+<!--l. 144--><p class="noindent" >We’ve seen that the signs of <script type="math/tex">N_x</script> and <script type="math/tex">M_y</script> correspond to the direction of local rotation, with <script type="math/tex">N_x>0</script>
+and <script type="math/tex">M_y<0</script> contributing to counterclockwise rotation.
+</p><!--l. 146--><p class="noindent" >In general, we have that the sign of <script type="math/tex">N_x-M_y</script> corresponds to the direction of local
+rotation in the plane. In particular, we have the following correspondences:
+</p><script type="math/tex; mode=display"> \begin{align*} 
+N_x-M_y>0\;&\longleftrightarrow\; \textrm{counterclockwise local rotation}\\
+N_x-M_y<0\;&\longleftrightarrow\; \textrm{clockwise local rotation}\\
+N_x-M_y=0\;&\longleftrightarrow\; \textrm{no local rotation}\\
+\end{align*}</script>
+<!--l. 153--><p class="noindent" >Remembering that <script type="math/tex">N_x-M_y</script> is the <em>curl</em> of the two-dimensional vector field <script type="math/tex">\mathbf {F}</script>, we now have that
+the sign of the curl tells us the direction of local rotation for two-dimensional vector
+fields.
+</p><!--l. 155--><p class="noindent" >We have a special term for a vector field that never has any local rotation: we call
+such a vector field <em>irrotational</em>.
+</p><!--l. 157--><p class="noindent" >Furthermore, the length of the curl, <script type="math/tex; mode=display"> \|(0,0,N_x-M_y)\|=|N_x-M_y|, </script> corresponds to the speed of rotation.
+</p><!--l. 163--><p class="noindent" >For example, in which case will the particle spin faster?
+</p>
+                                                                  
+
+                                                                  
+<div class="multiple-choice" id="problem5"><span class="choice correct "   id="choice21">  <img 
+src="./curl_geo-figure2.svg" alt=""  
+ />
+</span> <span class="choice  "   id="choice22">  <img 
+src="./curl_geo-figure3.svg" alt=""  
+ />
+</span> </div>
+<!--l. 176--><p class="noindent" >Note that this corresponds to a larger value of <script type="math/tex">N_x</script> (the change in the <script type="math/tex">y</script>-component of <script type="math/tex">\mathbf {F}</script> as
+we move in the positive <script type="math/tex">x</script> direction).
+</p><!--l. 178--><p class="noindent" >We now apply our knowledge of the geometric significance of the curl in a couple of
+examples.
+</p>
+<div class="theorem-like problem-environment example" id="problem6"><a 
+ id="x1-1003r3"></a>Consider the vector field <script type="math/tex">\mathbf {F}(x,y)=(-y,x^2)</script>. Compute the curl of <script type="math/tex">\mathbf {F}</script>, and describe the local rotation of
+the vector field at the points <script type="math/tex">(1,0)</script> and <script type="math/tex">(-4,1)</script>. <div class="theorem-like problem-environment explanation" id="problem7"><a 
+ id="x1-1004r4"></a>We begin by computing the curl of <script type="math/tex">\mathbf {F}</script>, <script type="math/tex; mode=display"> \nabla \times \mathbf {F} = (0,0,\answer {2x+1}). </script> At the point
+<script type="math/tex">(1,0)</script>, we have <script type="math/tex">(\nabla \times \mathbf {F})(1,0) = (0,0,\answer {3})</script>. Looking at the third component, we see that the sign of <script type="math/tex">N_x-M_y</script> at <script type="math/tex">(1,0)</script> is <span class="word-choice" id="word-choice8"><a 
+ id="x1-1005r5"></a><span class="choice correct "   id="choice23">positive</span><span class="choice  " 
+id="choice24">negative</span><span class="choice  "   id="choice25">zero</span>
+</span>. Thus, the local rotation of the vector field at the point <script type="math/tex">(1,0)</script> is <span class="word-choice" id="word-choice9"><a 
+ id="x1-1006r6"></a><span class="choice  "   id="choice26">clockwise</span><span class="choice correct " 
+id="choice27">counterclockwise</span><span class="choice  "   id="choice28">no rotation</span>
+</span>.
+<!--l. 189--><p class="noindent" >At the point <script type="math/tex">(-4,1)</script>, we have <script type="math/tex">(\nabla \times \mathbf {F})(-4,1) = (0,0,\answer {-7})</script>. Looking at the third component, we see that the sign of <script type="math/tex">N_x-M_y</script> at <script type="math/tex">(-4,1)</script>
+is <span class="word-choice" id="word-choice10"><a 
+ id="x1-1007r7"></a><span class="choice  "   id="choice29">positive</span><span class="choice correct "   id="choice30">negative</span><span class="choice  "   id="choice31">zero</span>
+</span>. Thus, the local rotation of the vector field at the point <script type="math/tex">(-4,1)</script> is <span class="word-choice" id="word-choice11"><a 
+ id="x1-1008r8"></a><span class="choice correct "   id="choice32">clockwise</span><span class="choice  " 
+id="choice33">counterclockwise</span><span class="choice  "   id="choice34">no rotation</span>
+</span>.
+</p><!--l. 191--><p class="noindent" >Looking at a graph of the vector field, we can see that this local rotation is reflected
+in the graph.
+</p><!--l. 193--><p class="noindent" >(ADD GRAPH, WITH ROTATION?)
+</div>
+</div>
+</p>
+<div class="theorem-like problem-environment example" id="problem12"><a 
+ id="x1-1009r9"></a>Let <script type="math/tex">\mathbf {F}(x,y)=\left (\dfrac {y}{x^2+y^2},\dfrac {x}{x^2+y^2}\right )</script>. Compute the curl <script type="math/tex">\nabla \times \mathbf {F}</script>, and interpret it geometrically. <div class="theorem-like problem-environment explanation" id="problem13"><a 
+ id="x1-1010r10"></a>Computing our partial
+derivatives, we have <script type="math/tex; mode=display"> N_x = \answer {\frac {x^2+y^2-2x^2}{(x^2+y^2)^2}} </script> and <script type="math/tex; mode=display"> M_y = \answer {\frac {-x^2-y^2+2x^2}{(x^2+y^2)^2}}. </script> Then, the curl of <script type="math/tex">\mathbf {F}</script> is <script type="math/tex; mode=display"> \nabla \times \mathbf {F} = (0,0,\answer {0}). </script>
+<!--l. 213--><p class="noindent" >Thus, we see that there is no local rotation at any point in the vector field. This is
+particularly interesting once we look at a graph of the vector field.
+</p><!--l. 215--><p class="noindent" >(GRAPH)
+</p><!--l. 217--><p class="noindent" >From the graph of the vector field, there certainly seems to be some larger scale,
+global rotation of the vector field. However, our computation showed that there is
+no local rotation. This example illustrates an important distinction: curl
+measures <em>local</em> rotation of a vector field, which is a different concept from <em>global</em>
+rotation.
+</div>
+</div>
+</p><!--l. 221--><p class="noindent" >In this section, we saw how the curl of a vector field corresponded to local rotation
+for a two-dimensional vector field. In the next section, we describe how the curl
+                                                                  
+
+                                                                  
+of a vector field corresponds to local rotation for <em>three</em>-dimensional vector
+fields.
+<a 
+ id="Q1-1-3"></a>
+</p>
+<h3 class="likesectionHead"><a 
+ id="x1-2000"></a>Geometric Significance of Three-dimensional Curl</h3>
+<!--l. 225--><p class="noindent" >For a three dimensional vector field <script type="math/tex">\mathbf {F}(x,y,z)=(M,N,P)</script>, we can compute the curl of <script type="math/tex">\mathbf {F}</script> as <script type="math/tex; mode=display"> \nabla \times \mathbf {F} = (P_y-N_z, \answer {-P_x+M_z},\answer {N_x-M_y}). </script> Here, the
+situation is more complicated than in two dimensions. In the plane, there are only
+two possible ways to rotate: clockwise and counterclockwise. In <script type="math/tex">\mathbb {R}^3</script>, there are infinitely
+many different ways to rotate, since we have infinitely many choices of axes.
+Yikes!
+</p><!--l. 231--><p class="noindent" >Fortunately, three-dimensional curl still tells about local rotation. In this case, we
+imagine local rotation as rotation of an infinitesimal (tiny) sphere. This sphere can
+rotate in infinitely many different ways, depending on which axis we rotate
+around.
+</p><!--l. 233--><p class="noindent" >When we look at the components of the curl, this tells us about rotation perpendicular
+to each of the axes, ignoring rotation in any other direction. Specifically,
+</p><script type="math/tex; mode=display"> \begin{align*} 
+N_x-M_y\textrm{ (the $z$-component of $\mathbf{F}$)}\;&\longleftrightarrow\;\textrm{ rotation perpendicular to the $z$-axis)}\\
+P_y-N_z\textrm{ (the $x$-component of $\mathbf{F}$)}\;&\longleftrightarrow\;\textrm{ rotation perpendicular to the $x$-axis)}\\
+-P_x+M_z\textrm{ (the $y$-component of $\mathbf{F}$)}\;&\longleftrightarrow\;\textrm{ rotation perpendicular to the $y$-axis)}
+\end{align*}</script>
+<!--l. 240--><p class="noindent" >Once again, the sign tells us the direction of rotation, with positive sign
+corresponding to counterclockwise rotation (viewed from the positive axes).
+</p><!--l. 242--><p class="noindent" >Furthermore, the length of the curl, <script type="math/tex">\|\nabla \times \mathbf {F}\|</script>, tells us the speed of rotation, and the direction
+of <script type="math/tex">\nabla \times \mathbf {F}</script> tells us the axis of rotation.
+</p><!--l. 244--><p class="noindent" >In <script type="math/tex">\mathbb {R}^3</script>, we would like to be able to describe the direction of rotation around a given axis.
+However, this can be tricky, since it’s a matter of perspective. Imagine rotation in
+the <script type="math/tex">xy</script>-plane. If the rotation is clockwise viewed from above, then it will be
+counterclockwise from below! Fortunately, curl follows the <em>right hand rule</em>:
+</p>
+     <ul class="itemize1">
+     <li class="itemize">If you point your right thumb in the direct of <script type="math/tex">\nabla \times \mathbf {F}</script>, then your fingers will curl
+     in the direction of local rotation.</li></ul>
+<!--l. 249--><p class="noindent" >We now put this to use in an example.
+</p>
+<div role="article" class="problem-environment problem" id="problem14"><a 
+ id="x1-2001r11"></a> Consider the vector field <script type="math/tex">\mathbf {F}(x,y,z)=\left (0,\dfrac {-z}{(y^2+z^2)^{3/2}},\dfrac {y}{(y^2+z^2)^{3/2}}\right )</script>. Compute the curl of <script type="math/tex">\mathbf {F}</script>. <script type="math/tex; mode=display"> \nabla \times \mathbf {F} = \answer {(\frac {-1}{(y^2+z^2)^{3/2}},0,0)} </script> <div role="article" class="problem-environment problem" id="problem15"><a 
+ id="x1-2002r12"></a> What is the axis of local rotation
+(at any point)? <div class="multiple-choice" id="problem16"><span class="choice correct "   id="choice35">The <script type="math/tex">x</script>-axis.</span> <span class="choice  "   id="choice36">The <script type="math/tex">y</script>-axis.</span> <span class="choice  "   id="choice37">The <script type="math/tex">z</script>-axis.</span> <span class="choice  "   id="choice38">Some other line.</span>
+</div>
+<div role="article" class="problem-environment problem" id="problem17"><a 
+ id="x1-2003r13"></a> Viewed from the positive <script type="math/tex">x</script>-axis, what is the direction of local rotation (at any point)?
+                                                                  
+
+                                                                  
+<div class="multiple-choice" id="problem18"><span class="choice correct "   id="choice39">Clockwise.</span> <span class="choice  "   id="choice40">Counterclockwise.</span> </div>
+<div role="article" class="problem-environment problem" id="problem19"><a 
+ id="x1-2004r14"></a> How does the speed of local rotation change as we move closer to the origin? <div class="multiple-choice" id="problem20"><span class="choice  "   id="choice41">Stays
+the same.</span> <span class="choice  "   id="choice42">Gets slower.</span> <span class="choice correct "   id="choice43">Gets faster.</span> </div>
+</div>
+</div>
+</div>
+</div>
+<!--l. 282--><p class="noindent" >We’ve now seen how the curl describes the local rotation of a three-dimensional
+vector field. In the next section, we’ll cover some connections of the curl to previous
+topics.
+<a 
+ id="Q1-1-5"></a>
+</p>
+<h3 class="likesectionHead"><a 
+ id="x1-3000"></a>Summary</h3>
+<!--l. 286--><p class="noindent" >In this section, we studied the geometric significance of the curl. We found that the
+curl gives a measure of the local rotation of a vector field.
+</p><!--l. 288--><p class="noindent" >For a two-dimensional vector field, the sign of the curl told us the
+direction of rotation. Specifically, we have the following correspondence.
+</p><script type="math/tex; mode=display"> \begin{align*} 
+N_x-M_y>0\;&\longleftrightarrow\; \textrm{counterclockwise local rotation}\\
+N_x-M_y<0\;&\longleftrightarrow\; \textrm{clockwise local rotation}\\
+N_x-M_y=0\;&\longleftrightarrow\; \textrm{no local rotation}\\
+\end{align*}</script>
+<!--l. 294--><p class="noindent" >The magnitude <script type="math/tex">|N_x-M_y|</script> corresponds to speed of rotation.
+</p><!--l. 296--><p class="noindent" >For a three-dimensional vector field, the components of the curl tell us about local
+rotation perpendicular to the axes. We also have: </p>
+     <ul class="itemize1">
+     <li class="itemize">The length of the curl, <script type="math/tex">\|\nabla \times \mathbf {F}\|</script>, corresponds to the speed of rotation.
+     </li>
+     <li class="itemize">The direction of the curl vector <script type="math/tex">\nabla \times \mathbf {F}</script> gives the axis of rotation.
+     </li>
+     <li class="itemize">Curl follows the right hand rule: if you point your thumb in the direction
+     of <script type="math/tex">\nabla \times \mathbf {F}</script>, your fingers curl in the direction of local rotation.</li></ul>
+<!--l. 303--><p class="noindent" >In the next section, we’ll consider the curl of a conservative vector field, and how the
+curl connects to Green’s Theorem.
+</body> 
+ 
+</html>
+                                                                  
+
+                                                                  
+                                                                  
+
+

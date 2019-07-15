@@ -1,16 +1,18 @@
 <!doctype html> 
 <html lang="en"> 
-<head> <title>Lagrange Multipliers</title> 
+<head> <title>Lagrange  Multipliers</title> 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
 <meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
 <meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
 <!-- charset=utf-8,-css,html,htex4ht,xhtml --> 
 <meta name="src" content="lagrange_multipliers.tex" /> 
-<meta name="author" content="" /> 
+<meta name="author" content="Melissa
+Lynn" /> 
 <meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
 <meta name="ximera" content="version 0.0.1" /> 
 <link href="https://ximera.osu.edu/public/stylesheets/standalone.css" rel="stylesheet" media="screen"/> 
 <script type="text/javascript" async src="https://ximera.osu.edu/public/javascripts/standalone.min.js"></script> 
+<meta name="learning-outcome" content="Understand the justification for Lagrange multipliers, and use them to solve constrained optimization problems."/> 
 </head><body> 
 <div class="preamble"><script type="math/tex">\newenvironment {prompt}{}{}
 \newcommand {\DeclareMathOperator }[2]{\@OldDeclareMathOperator {##1}{##2}\immediate \write \myfile {\unexpanded {\DeclareMathOperator }{\unexpanded {##1}}{\unexpanded {##2}}}}
@@ -33,7 +35,7 @@
 class="abstract" 
 >
 </div>   <div class="maketitle"></div>
-<!--l. 11--><p class="noindent" >We’ve seen how we can optimize a function subject to a constraint using substitution,
+<!--l. 14--><p class="noindent" >We’ve seen how we can optimize a function subject to a constraint using substitution,
 and we’ve seen that it can be very difficult to correctly handle the constraints!
 Fortunately, there is a tool that we can use to simplify this process. This tool is
 called “Lagrange multipliers.”
@@ -42,44 +44,44 @@ called “Lagrange multipliers.”
 </p>
 <h3 class="likesectionHead"><a 
  id="x1-1000"></a>Gradients</h3>
-<!--l. 15--><p class="noindent" >Suppose we wish to optimize a function <script type="math/tex">f:\mathbb {R}^n\rightarrow \mathbb {R}</script> subject to some constraint <script type="math/tex">g(\vec {x}) = C</script>, where <script type="math/tex">C</script> is a
+<!--l. 18--><p class="noindent" >Suppose we wish to optimize a function <script type="math/tex">f:\mathbb {R}^n\rightarrow \mathbb {R}</script> subject to some constraint <script type="math/tex">g(\vec {x}) = C</script>, where <script type="math/tex">C</script> is a
 constant, and <script type="math/tex">g:\mathbb {R}^n\rightarrow \mathbb {R}</script> is a function. For now, we’ll focus on the case <script type="math/tex">n=2</script>, so we have a function <script type="math/tex">f:\mathbb {R}^2\rightarrow \mathbb {R}</script>
 and a constraint <script type="math/tex">g(x,y) = C</script>. The graph of <script type="math/tex">f</script> will be a surface in <script type="math/tex">\mathbb {R}^3</script>,
 </p>
 <div class="image-environment" role="img" aria-labelledby="image-alt-1"><img 
 src="./graphics/CalcPlot3D-surface.png" alt="PIC"  
  /> </div>
-<!--l. 21--><p class="noindent" >and the graph of <script type="math/tex">g(x,y) = C</script> is a curve in <script type="math/tex">\mathbb {R}^2</script>.
+<!--l. 24--><p class="noindent" >and the graph of <script type="math/tex">g(x,y) = C</script> is a curve in <script type="math/tex">\mathbb {R}^2</script>.
 </p>
 <div class="image-environment" role="img" aria-labelledby="image-alt-2">  <img 
 src="./lagrange_multipliers-figure0.svg" alt=""  
  />
 </div>
-<!--l. 33--><p class="noindent" >Now, suppose that the maximum value of <script type="math/tex">f(x,y)</script> subject to the constraint <script type="math/tex">g(x,y)=C</script> occurs at some
+<!--l. 36--><p class="noindent" >Now, suppose that the maximum value of <script type="math/tex">f(x,y)</script> subject to the constraint <script type="math/tex">g(x,y)=C</script> occurs at some
 point <script type="math/tex">(a,b)</script>. Suppose we parametrize the curve <script type="math/tex">g(x,y)=C</script> as <script type="math/tex">\vec {x}(t)</script>, with <script type="math/tex">(a,b)=\vec {x}(t_0)</script>. We can view <script type="math/tex">g(x,y)=C</script> as a level curve of
 the function <script type="math/tex">g(x,y)</script>, and then the gradient of <script type="math/tex">g(x,y)</script> will always be perpendicular to the curve
 <script type="math/tex">g(x,y)=C</script>.
-</p>
                                                                   
 
                                                                   
+</p>
 <div class="image-environment" role="img" aria-labelledby="image-alt-3">  <img 
 src="./lagrange_multipliers-figure1.svg" alt=""  
  />
 </div>
-<!--l. 49--><p class="noindent" >More precisely, for any point <script type="math/tex">(x,y) = \vec {x}(t)</script> on the curve <script type="math/tex">g(x,y)=C</script>, we’ll have <script type="math/tex">\nabla g(x,y)</script> is perpendicular to <script type="math/tex">\vec {x}'(t)</script>. That is, <script type="math/tex">\nabla g(\vec {x}(t))\perp \vec {x}'(t)</script>
+<!--l. 52--><p class="noindent" >More precisely, for any point <script type="math/tex">(x,y) = \vec {x}(t)</script> on the curve <script type="math/tex">g(x,y)=C</script>, we’ll have <script type="math/tex">\nabla g(x,y)</script> is perpendicular to <script type="math/tex">\vec {x}'(t)</script>. That is, <script type="math/tex">\nabla g(\vec {x}(t))\perp \vec {x}'(t)</script>
 for all <script type="math/tex">t</script>.
 </p>
 <div class="image-environment" role="img" aria-labelledby="image-alt-4">  <img 
 src="./lagrange_multipliers-figure2.svg" alt=""  
  />
 </div>
-<!--l. 69--><p class="noindent" >Next, let’s turn our attention back to <script type="math/tex">f</script>. If <script type="math/tex">f</script> has an absolute maximum subject to <script type="math/tex">g(x,y)=C</script>, then
+<!--l. 72--><p class="noindent" >Next, let’s turn our attention back to <script type="math/tex">f</script>. If <script type="math/tex">f</script> has an absolute maximum subject to <script type="math/tex">g(x,y)=C</script>, then
 <script type="math/tex">f(\vec {x}(t))</script> has an absolute maximum at <script type="math/tex">t=t_0</script>. This means that <script type="math/tex">f(\vec {x}(t))</script> has a critical point at <script type="math/tex">t=t_0</script>, so <script type="math/tex">\frac {d}{dt}f(\vec {x}(t))|_{t=t_0}=0</script>. Using
 the chain rule, we can rewrite this as <script type="math/tex; mode=display"> \nabla f(\vec {x}(t_0))\cdot \vec {x}'(t)=0. </script> So, both <script type="math/tex">\nabla f(a,b)</script> and <script type="math/tex">\nabla g(a,b)</script> are perpendicular to <script type="math/tex">\vec {x}'(t)</script>. Since we
 are considering vectors in <script type="math/tex">\mathbb {R}^2</script>, this means that <script type="math/tex">\nabla f(a,b)</script> and <script type="math/tex">\nabla g(a,b)</script> are parallel, so we can write <script type="math/tex; mode=display"> \nabla f(a,b) = \lambda \nabla g(a,b) </script> for
 some constant <script type="math/tex">\lambda </script>.
-</p><!--l. 79--><p class="noindent" >So, we can find candidate points for the absolute maximum (and similarly, the
+</p><!--l. 82--><p class="noindent" >So, we can find candidate points for the absolute maximum (and similarly, the
 absolute minimum) of <script type="math/tex">f(x,y)</script> subject to the constraint <script type="math/tex">g(x,y)=C</script> by finding points where <script type="math/tex; mode=display"> \nabla f(a,b) = \lambda \nabla g(a,b). </script> This
 observation generalizes to <script type="math/tex">\mathbb {R}^n</script>.
 </p>
@@ -88,10 +90,10 @@ observation generalizes to <script type="math/tex">\mathbb {R}^n</script>.
 minimum at <script type="math/tex">\vec {a}</script> subject to the constraint <script type="math/tex">g(\vec {x}) = C</script>, then there exists some scalar <script type="math/tex">\lambda </script> such that <script type="math/tex; mode=display"> \nabla f(\vec {a}) = \lambda \nabla g(\vec {a}). </script> The
 constant <script type="math/tex">\lambda </script> is called a <em>Lagrange Multiplier</em>.
 </div>
-<!--l. 93--><p class="noindent" >We can leverage this theorem into a method for finding absolute extrema of
+<!--l. 96--><p class="noindent" >We can leverage this theorem into a method for finding absolute extrema of
 a function subject to a constraint, which we call the <em>method of Lagrange
 multipliers</em>.
-</p><!--l. 95--><p class="noindent" >To find the absolute extrema of a function <script type="math/tex">f(\vec {x})</script> subject to a constraint <script type="math/tex">g(\vec {x})=C</script>:
+</p><!--l. 98--><p class="noindent" >To find the absolute extrema of a function <script type="math/tex">f(\vec {x})</script> subject to a constraint <script type="math/tex">g(\vec {x})=C</script>:
      </p><dl class="enumerate-enumitem"><dt class="enumerate-enumitem">
  (a) </dt><dd 
 class="enumerate-enumitem">Compute the gradients <script type="math/tex">\nabla f(\vec {x})</script> and <script type="math/tex">\nabla g(\vec {x})</script>.
@@ -103,33 +105,33 @@ class="enumerate-enumitem">Solve the system of equations <script type="math/tex;
 class="enumerate-enumitem">The solutions to the system of equations in (2) are the critical points of <script type="math/tex">f(\vec {x})</script>
      subject to <script type="math/tex">g(\vec {x}) = C</script>. Classify these critical points in order to determine the absolute
      extrema.
-     <!--l. 106--><p class="noindent" >If  <script type="math/tex">g(\vec {x})=C</script>  is  compact,  we  can  determine  the  absolute  extrema  by  comparing
+     <!--l. 109--><p class="noindent" >If  <script type="math/tex">g(\vec {x})=C</script>  is  compact,  we  can  determine  the  absolute  extrema  by  comparing
      the values of <script type="math/tex">f</script> at the critical points. In this case, absolute extrema are
      guaranteed to exist by the Extreme Value Theorem.</p></dd></dl>
-<!--l. 109--><p class="noindent" >We’ll see how this process works in a couple of examples. First, we repeating an
+<!--l. 112--><p class="noindent" >We’ll see how this process works in a couple of examples. First, we repeating an
 optimization problem which was previously done with substitution.
-</p>
                                                                   
 
                                                                   
+</p>
 <div class="theorem-like problem-environment example" id="problem2"><a 
  id="x1-1005r2"></a>We’ll find the absolute maximum and absolute minimum of <script type="math/tex">f(x,y) = x^2-y^2</script> subject to the constraint
 <script type="math/tex">x^2+y^2=1</script>. Notice that <script type="math/tex">x^2+y^2=1</script> is a compact region, so absolute extrema will exist.
-<!--l. 114--><p class="noindent" >If we let <script type="math/tex">g(x,y) = x^2+y^2</script>, our constraint is <script type="math/tex">g(x,y) = 1</script>.
-</p><!--l. 116--><p class="noindent" >Computing the gradients of <script type="math/tex">f</script> and <script type="math/tex">g</script>, we have </p><script type="math/tex; mode=display"> \begin{align*} 
+<!--l. 117--><p class="noindent" >If we let <script type="math/tex">g(x,y) = x^2+y^2</script>, our constraint is <script type="math/tex">g(x,y) = 1</script>.
+</p><!--l. 119--><p class="noindent" >Computing the gradients of <script type="math/tex">f</script> and <script type="math/tex">g</script>, we have </p><script type="math/tex; mode=display"> \begin{align*} 
 \nabla f(x,y) &= \answer{(2x, -2y)},\\
 \nabla g(x,y) &= \answer{(2x, 2y)}.
 \end{align*}</script>
-<!--l. 121--><p class="noindent" >Setting up the system of equations <script type="math/tex; mode=display">\begin {cases} \nabla f(\vec {x}) = \lambda \nabla g(\vec {x})\\ g(\vec {x}) = 1 \end {cases}, </script> we have </p><script type="math/tex; mode=display"> \begin{align*} 
+<!--l. 124--><p class="noindent" >Setting up the system of equations <script type="math/tex; mode=display">\begin {cases} \nabla f(\vec {x}) = \lambda \nabla g(\vec {x})\\ g(\vec {x}) = 1 \end {cases}, </script> we have </p><script type="math/tex; mode=display"> \begin{align*} 
 \nabla (2x,-2y) &= \lambda (2x, 2y)\\
 x^2+y^2&=1\\
 \end{align*}</script>
-<!--l. 131--><p class="noindent" >We can rewrite this as a system of three equations, <script type="math/tex; mode=display">\begin {cases} 2x=2\lambda x\\ 2y=-2\lambda y\\ x^2 +y^2 =1 \end {cases}. </script>
-</p><!--l. 138--><p class="noindent" >From the first equation, we have either <script type="math/tex">x=0</script> or <script type="math/tex">\lambda =1</script>.
-</p><!--l. 140--><p class="noindent" >If <script type="math/tex">x=0</script>, the third equation gives us <script type="math/tex">y=\pm 1</script>. Thus, we obtain the critical points <script type="math/tex">(0,\pm 1)</script>.
-</p><!--l. 142--><p class="noindent" >If <script type="math/tex">\lambda =1</script>, the second equation gives us <script type="math/tex">y=0</script>. Then, the third equation gives us <script type="math/tex">x = \pm 1</script>. This gives us
+<!--l. 134--><p class="noindent" >We can rewrite this as a system of three equations, <script type="math/tex; mode=display">\begin {cases} 2x=2\lambda x\\ 2y=-2\lambda y\\ x^2 +y^2 =1 \end {cases}. </script>
+</p><!--l. 141--><p class="noindent" >From the first equation, we have either <script type="math/tex">x=0</script> or <script type="math/tex">\lambda =1</script>.
+</p><!--l. 143--><p class="noindent" >If <script type="math/tex">x=0</script>, the third equation gives us <script type="math/tex">y=\pm 1</script>. Thus, we obtain the critical points <script type="math/tex">(0,\pm 1)</script>.
+</p><!--l. 145--><p class="noindent" >If <script type="math/tex">\lambda =1</script>, the second equation gives us <script type="math/tex">y=0</script>. Then, the third equation gives us <script type="math/tex">x = \pm 1</script>. This gives us
 the critical points <script type="math/tex">(\pm 1, 0)</script>.
-</p><!--l. 144--><p class="noindent" >Since we know that <script type="math/tex">f</script> will have an absolute maximum and minimum subject to our
+</p><!--l. 147--><p class="noindent" >Since we know that <script type="math/tex">f</script> will have an absolute maximum and minimum subject to our
 constraint, we will compare the values at the critical points to determine the absolute
 maximum and minimum. </p><script type="math/tex; mode=display"> \begin{align*} 
 f(0,-1) &= -1\\
@@ -137,7 +139,7 @@ f(0,1) &= -1\\
 f(-1,0) &= 1\\
 f(1,0) &=1
 \end{align*}</script>
-<!--l. 152--><p class="noindent" >We see that the absolute maximum of <script type="math/tex">f</script> subject to our constraint is <script type="math/tex">1</script>, and this occurs
+<!--l. 155--><p class="noindent" >We see that the absolute maximum of <script type="math/tex">f</script> subject to our constraint is <script type="math/tex">1</script>, and this occurs
 at the points <script type="math/tex">(\pm 1, 0)</script>. The absolute minimum of <script type="math/tex">f</script> subject to our constraint is <script type="math/tex">-1</script>, and this
 occurs at the points <script type="math/tex">(0,\pm 1)</script>.
 </div>
@@ -149,31 +151,31 @@ unbounded.
 <div class="image-environment" role="img" aria-labelledby="image-alt-5"><img 
 src="./graphics/CalcPlot3D-parabola.png" alt="PIC"  
  /> </div>
-<!--l. 162--><p class="noindent" >However, Lagrange multipliers will still be helpful for finding critical points. We can
+<!--l. 165--><p class="noindent" >However, Lagrange multipliers will still be helpful for finding critical points. We can
 rewrite our constaint as <script type="math/tex">y^2-x=5</script>, and take <script type="math/tex">g(x,y) = y^2-x</script>. So, we are optimizing <script type="math/tex">f(x,y)</script> subject to the constraint
-<script type="math/tex">g(x,y) = 5</script>.
                                                                   
 
                                                                   
-</p><!--l. 164--><p class="noindent" >We begin by finding the gradients of <script type="math/tex">f</script> and <script type="math/tex">g</script>. </p><script type="math/tex; mode=display"> \begin{align*} 
+<script type="math/tex">g(x,y) = 5</script>.
+</p><!--l. 167--><p class="noindent" >We begin by finding the gradients of <script type="math/tex">f</script> and <script type="math/tex">g</script>. </p><script type="math/tex; mode=display"> \begin{align*} 
 \nabla f(x,y) &= \answer{(-2x, -2y)}\\
 \nabla g(x,y) &= \answer{(-1, 2y)}
 \end{align*}</script>
-<!--l. 169--><p class="noindent" >Next, we solve the system <script type="math/tex; mode=display">\begin {cases} \nabla f(\vec {x}) = \lambda \nabla g(\vec {x})\\ g(\vec {x}) = 5 \end {cases}, </script> which is <script type="math/tex; mode=display">\begin {cases} (-2x,-2y) = \lambda (-1,2y)\\ y^2-x= 5 \end {cases}. </script> We can rewrite this system as the three
+<!--l. 172--><p class="noindent" >Next, we solve the system <script type="math/tex; mode=display">\begin {cases} \nabla f(\vec {x}) = \lambda \nabla g(\vec {x})\\ g(\vec {x}) = 5 \end {cases}, </script> which is <script type="math/tex; mode=display">\begin {cases} (-2x,-2y) = \lambda (-1,2y)\\ y^2-x= 5 \end {cases}. </script> We can rewrite this system as the three
 equations <script type="math/tex; mode=display">\begin {cases} -2x = -\lambda \\ -2y = 2\lambda y\\ y^2-x= 5 \end {cases}. </script> From the second equation, we have either <script type="math/tex">y=0</script>, or <script type="math/tex">\lambda =-1</script>.
-</p><!--l. 187--><p class="noindent" >If <script type="math/tex">y=0</script>, the third equation gives us <script type="math/tex">x=-5</script>. So, we have a critical point <script type="math/tex">(-5,0)</script>.
-</p><!--l. 189--><p class="noindent" >If <script type="math/tex">\lambda =-1</script>, the first equation gives us <script type="math/tex">x= -\frac {1}{2}</script>. Then the third equation gives us <script type="math/tex">y=\pm \frac {3}{\sqrt {2}}</script>. So, we have the
+</p><!--l. 190--><p class="noindent" >If <script type="math/tex">y=0</script>, the third equation gives us <script type="math/tex">x=-5</script>. So, we have a critical point <script type="math/tex">(-5,0)</script>.
+</p><!--l. 192--><p class="noindent" >If <script type="math/tex">\lambda =-1</script>, the first equation gives us <script type="math/tex">x= -\frac {1}{2}</script>. Then the third equation gives us <script type="math/tex">y=\pm \frac {3}{\sqrt {2}}</script>. So, we have the
 critical points <script type="math/tex">\left (-\frac {1}{2}, \pm \frac {3}{\sqrt {2}}\right )</script>.
-</p><!--l. 191--><p class="noindent" >In this case, we can’t determine the absolute maximum and absolute minimum by
+</p><!--l. 194--><p class="noindent" >In this case, we can’t determine the absolute maximum and absolute minimum by
 plugging in these points, since we aren’t optimizing over a compact region.
-</p><!--l. 193--><p class="noindent" >However, looking at the graph of <script type="math/tex">f</script> over the curve <script type="math/tex">g(x,y) = 5</script>, we can see that the absolute
+</p><!--l. 196--><p class="noindent" >However, looking at the graph of <script type="math/tex">f</script> over the curve <script type="math/tex">g(x,y) = 5</script>, we can see that the absolute
 maximum occurs at the points <script type="math/tex">\left (-\frac {1}{2}, \pm \frac {3}{\sqrt {2}}\right )</script>. Although there is a local minimum at <script type="math/tex">(-5,0)</script>, this is not an
 absolute minimum, as there is no absolute minimum.
 </p>
 <div class="image-environment" role="img" aria-labelledby="image-alt-6"><img 
 src="./graphics/CalcPlot3D-constraint.png" alt="PIC"  
  /> </div>
-<!--l. 199--><p class="noindent" ></div>
+<!--l. 202--><p class="noindent" ></div>
 </body> 
  
 </html>

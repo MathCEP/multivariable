@@ -6,11 +6,13 @@
 <meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
 <!-- charset=utf-8,-css,html,htex4ht,xhtml --> 
 <meta name="src" content="gradient.tex" /> 
-<meta name="author" content="" /> 
+<meta name="author" content="Melissa
+Lynn" /> 
 <meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
 <meta name="ximera" content="version 0.0.1" /> 
 <link href="https://ximera.osu.edu/public/stylesheets/standalone.css" rel="stylesheet" media="screen"/> 
 <script type="text/javascript" async src="https://ximera.osu.edu/public/javascripts/standalone.min.js"></script> 
+<meta name="learning-outcome" content="Understand the relationship between the gradient and directional derivatives. Use the gradient to compute directional derivatives and identify the direction of greatest increase."/> 
 </head><body> 
 <div class="preamble"><script type="math/tex">\newenvironment {prompt}{}{}
 \newcommand {\DeclareMathOperator }[2]{\@OldDeclareMathOperator {##1}{##2}\immediate \write \myfile {\unexpanded {\DeclareMathOperator }{\unexpanded {##1}}{\unexpanded {##2}}}}
@@ -33,7 +35,7 @@
 class="abstract" 
 >
 </div>   <div class="maketitle"></div>
-<!--l. 11--><p class="noindent" >We’ve defined the directional derivatives of a function, which allow us to determine
+<!--l. 14--><p class="noindent" >We’ve defined the directional derivatives of a function, which allow us to determine
 how a function is changing in various directions.
 </p>
 <div class="theorem-like problem-environment definition" id="problem1"><a 
@@ -41,90 +43,90 @@ how a function is changing in various directions.
 the <em>directional derivative</em> of <script type="math/tex">f</script> at <script type="math/tex">\vec {a}</script> in the direction of <script type="math/tex">\vec {v}</script> to be <script type="math/tex; mode=display"> D_{\vec {v}}f(\vec {a}) = \lim _{h\rightarrow 0}\frac {f(\vec {a}+h\vec {v})-f(\vec {a})}{h}, </script> provided this limit
 exists.
 </div>
-<!--l. 21--><p class="noindent" >However, we would like an easier way to evaluate directional derivatives, that doesn’t
+<!--l. 24--><p class="noindent" >However, we would like an easier way to evaluate directional derivatives, that doesn’t
 require the limit definition.
-</p><!--l. 23--><p class="noindent" >Such a method will require use of the gradient of the function. Recall our definition
+</p><!--l. 26--><p class="noindent" >Such a method will require use of the gradient of the function. Recall our definition
 of the gradient of a function <script type="math/tex">f:\mathbb {R}^n\rightarrow \mathbb {R}</script>.
 </p>
 <div class="theorem-like problem-environment definition" id="problem2"><a 
  id="x1-18r2"></a>Consider a function <script type="math/tex">f:\mathbb {R}^n\rightarrow \mathbb {R}</script>. The <em>gradient</em> of <script type="math/tex">f</script> is the function <script type="math/tex">\nabla f:\mathbb {R}^n\rightarrow \mathbb {R}^n</script>, defined by <script type="math/tex; mode=display"> \nabla f = \left (\frac {\partial f}{\partial x_1},\frac {\partial f}{\partial x_2},...,\frac {\partial f}{\partial x_n}\right ). </script>
 </div>
-<!--l. 32--><p class="noindent" >We’ll see that this vector turns out to be closely related to directional derivatives.
+<!--l. 35--><p class="noindent" >We’ll see that this vector turns out to be closely related to directional derivatives.
 <a 
  id="Q1-1-1"></a>
 </p>
 <h3 class="likesectionHead"><a 
  id="x1-1000"></a>The gradient and directional derivatives</h3>
-<!--l. 36--><p class="noindent" >Let’s suppose we have a differentiable function <script type="math/tex">f:\mathbb {R}^n\rightarrow \mathbb {R}</script>, and consider our definition of the
+<!--l. 39--><p class="noindent" >Let’s suppose we have a differentiable function <script type="math/tex">f:\mathbb {R}^n\rightarrow \mathbb {R}</script>, and consider our definition of the
 directional derivative a function <script type="math/tex">f</script> at <script type="math/tex">\vec {a}</script> in the direction of a unit vector <script type="math/tex">\vec {v}</script>, which was <script type="math/tex; mode=display"> D_{\vec {v}}f(\vec {a}) = \lim _{h\rightarrow 0}\frac {f(\vec {a}+h\vec {v})-f(\vec {a})}{h}. </script>
 We’ll rewrite this definition by considering another function, <script type="math/tex">F(h) = f(\vec {a}+h\vec {v})</script>. Notice that <script type="math/tex">F</script> is a single
 variable function, and when we rewrite the directional derivative, we have
-</p><script type="math/tex; mode=display"> \begin{align*} 
-D_{\vec{v}}f(\vec{a})& = \lim_{h\rightarrow 0}\frac{f(\vec{a}+h\vec{v})-f(\vec{a})}{h}\\
                                                                   
 
                                                                   
+</p><script type="math/tex; mode=display"> \begin{align*} 
+D_{\vec{v}}f(\vec{a})& = \lim_{h\rightarrow 0}\frac{f(\vec{a}+h\vec{v})-f(\vec{a})}{h}\\
 &= \lim_{h\rightarrow 0 }\frac{F(h)-F(0)}{h-0}\\
 &= F'(0).
 \end{align*}</script>
-<!--l. 46--><p class="noindent" >So, the directional derivative is just the derivative of this single variable function <script type="math/tex">F(h)</script> evaluated
+<!--l. 49--><p class="noindent" >So, the directional derivative is just the derivative of this single variable function <script type="math/tex">F(h)</script> evaluated
 at <script type="math/tex">0</script>. Revisiting our definition of <script type="math/tex">F(h)</script>, we can use the chain rule to find the derivative of <script type="math/tex">F</script>.
 </p><script type="math/tex; mode=display"> \begin{align*} 
 \frac{d}{dh}F(h) &= \nabla f(\vec{a}+h\vec{v})\cdot\frac{d}{dh}(\vec{a}+h\vec{v})\\
 &= \nabla f(\vec{a}+h\vec{v})\cdot\vec{v}\\
 \end{align*}</script>
-<!--l. 51--><p class="noindent" >Evaluating at <script type="math/tex">h=0</script>, we have </p><script type="math/tex; mode=display"> \begin{align*} 
+<!--l. 54--><p class="noindent" >Evaluating at <script type="math/tex">h=0</script>, we have </p><script type="math/tex; mode=display"> \begin{align*} 
 D_{\vec{v}}f(\vec{a}) &= F'(0)\\
 &= \nabla f(\vec{a})\cdot \vec{v}.
 \end{align*}</script>
-<!--l. 57--><p class="noindent" >Thus, we have arrived at the following result.
+<!--l. 60--><p class="noindent" >Thus, we have arrived at the following result.
 </p>
 <div class="theorem-like problem-environment theorem" id="problem3"><a 
  id="x1-1001r3"></a>Suppose <script type="math/tex">f:\mathbb {R}^n\rightarrow \mathbb {R}</script> is differentiable at <script type="math/tex">\vec {a}\in \mathbb {R}^n</script>. Then <script type="math/tex">D_{\vec {v}}f(\vec {a})</script> exists for all unit vectors <script type="math/tex">\vec {v}\in \mathbb {R}^n</script>, and <script type="math/tex; mode=display"> D_{\vec {v}}f(\vec {a}) = \nabla f(\vec {a})\cdot \vec {v}. </script>
 </div>
-<!--l. 66--><p class="noindent" >Let’s use this result to compute some directional derivatives.
+<!--l. 69--><p class="noindent" >Let’s use this result to compute some directional derivatives.
 </p>
 <div class="theorem-like problem-environment example" id="problem4"><a 
  id="x1-1002r4"></a>We’ll compute the directional derivative of <script type="math/tex">f(x,y) = x^2y+y^2</script> at <script type="math/tex">\vec {a}=(2,0)</script>, in the direction of <script type="math/tex">(3,4)</script>. (We previously
 computed this directional derivative using the limit definition.)
-<!--l. 71--><p class="noindent" >Since <script type="math/tex">(3,4)</script> isn’t a unit vector, we need to normalize it. Since <script type="math/tex">\|(3,4)\| = \sqrt {3^2+4^2}=5</script>, we’ll use the vector <script type="math/tex">\vec {v}=\left (\frac {3}{5},\frac {4}{5}\right )</script> to
+<!--l. 74--><p class="noindent" >Since <script type="math/tex">(3,4)</script> isn’t a unit vector, we need to normalize it. Since <script type="math/tex">\|(3,4)\| = \sqrt {3^2+4^2}=5</script>, we’ll use the vector <script type="math/tex">\vec {v}=\left (\frac {3}{5},\frac {4}{5}\right )</script> to
 compute our desired directional derivative.
-</p><!--l. 73--><p class="noindent" >Next, we’ll need the gradient of <script type="math/tex">f</script>. <script type="math/tex; mode=display"> \nabla f(x,y) = (2xy, x^2+2y) </script> Since the partial derivatives of <script type="math/tex">f</script> are polynomials,
+</p><!--l. 76--><p class="noindent" >Next, we’ll need the gradient of <script type="math/tex">f</script>. <script type="math/tex; mode=display"> \nabla f(x,y) = (2xy, x^2+2y) </script> Since the partial derivatives of <script type="math/tex">f</script> are polynomials,
 they are continuous, so <script type="math/tex">f</script> is differentiable. Thus, we can use the above theorem to
 compute the directional derivative.
-</p><!--l. 79--><p class="noindent" >Then, we can compute the directional derivative as
+</p><!--l. 82--><p class="noindent" >Then, we can compute the directional derivative as
 </p><script type="math/tex; mode=display"> \begin{align*} 
 D_{\vec{v}}f(\vec{a}) &= \nabla f(\vec{a})\cdot \vec{v}\\
 &= \nabla f(2,0)\cdot \left(\frac{3}{5},\frac{4}{5}\right)\\
 &= (0,4)\cdot \left(\frac{3}{5},\frac{4}{5}\right)\\
 &= \frac{16}{5}.
 \end{align*}</script>
-<!--l. 87--><p class="noindent" >This matches what we had previously computed using the definition of directional
+<!--l. 90--><p class="noindent" >This matches what we had previously computed using the definition of directional
 derivatives.
-</div>
                                                                   
 
                                                                   
+</div>
 </p>
 <div role="article" class="problem-environment problem" id="problem5"><a 
  id="x1-1003r5"></a> Compute the directional derivative of <script type="math/tex">f(x,y,z) = 3xy+xz^2</script> at <script type="math/tex">\vec {a}=(2,0,1)</script>, in the direction of <script type="math/tex">(2, 2, 1)</script>. <script type="math/tex; mode=display"> D_{\vec {v}}f(\vec {a}) = \answer {6} </script>
-<!--l. 96--><p class="noindent" >Compute the directional derivative of <script type="math/tex">f(x,y,z) = 3xy+xz^2</script> at <script type="math/tex">\vec {a}=(2,0,1)</script>, in the direction of <script type="math/tex">(-2,1,-1)</script>. <script type="math/tex; mode=display"> D_{\vec {v}}f(\vec {a}) = \answer {0} </script>
+<!--l. 99--><p class="noindent" >Compute the directional derivative of <script type="math/tex">f(x,y,z) = 3xy+xz^2</script> at <script type="math/tex">\vec {a}=(2,0,1)</script>, in the direction of <script type="math/tex">(-2,1,-1)</script>. <script type="math/tex; mode=display"> D_{\vec {v}}f(\vec {a}) = \answer {0} </script>
 </p></div>
 <a 
  id="Q1-1-3"></a>
 <h3 class="likesectionHead"><a 
  id="x1-2000"></a>The gradient and level sets</h3>
-<!--l. 104--><p class="noindent" >We’ve shown that for a differentiable function <script type="math/tex">f:\mathbb {R}^n\rightarrow \mathbb {R}</script>, we can compute directional
+<!--l. 107--><p class="noindent" >We’ve shown that for a differentiable function <script type="math/tex">f:\mathbb {R}^n\rightarrow \mathbb {R}</script>, we can compute directional
 derivatives as <script type="math/tex; mode=display"> D_{\vec {v}}f(\vec {a}) = \nabla f(\vec {a})\cdot \vec {v}. </script> What does this mean for the possible values for a directional
 derivative? Recall that the dot product can be computed as <script type="math/tex; mode=display"> \nabla f(\vec {a})\cdot \vec {v} = \|\nabla f(\vec {a})\|\;\|\vec {v}\|\cos \theta , </script> where <script type="math/tex">\theta </script> is the angle
 between the two vectors. Since <script type="math/tex">\vec {v}</script> is a unit vector, we have <script type="math/tex; mode=display"> \|\nabla f(\vec {a})\|\;\|\vec {v}\|\cos \theta = \|\nabla f(\vec {a})\|\cos \theta . </script> Since <script type="math/tex">-1\leq \cos \theta \leq 1</script>, we have that <script type="math/tex; mode=display"> -\|\nabla f(\vec {a})\|\leq D_{\vec {v}}f(\vec {a})\leq \|\nabla f(\vec {a})\|. </script> In
 particular, the largest that <script type="math/tex">D_{\vec {v}}f(\vec {a})</script> can be is <script type="math/tex">\|\nabla f(\vec {a})\|</script>, and this occurs when <script type="math/tex">\vec {v}</script> points in the same
 direction as <script type="math/tex">\nabla f(\vec {a})</script>, so that <script type="math/tex">\theta = 0</script>. Thus, the gradient points in the direction of greatest
 increase.
-</p><!--l. 122--><p class="noindent" >On the other hand, the minimum value that <script type="math/tex">D_{\vec {v}}f(\vec {a})</script> can have is <script type="math/tex">-\|\nabla f(\vec {a})\|</script>, and this occurs when <script type="math/tex">\vec {v}</script>
+</p><!--l. 125--><p class="noindent" >On the other hand, the minimum value that <script type="math/tex">D_{\vec {v}}f(\vec {a})</script> can have is <script type="math/tex">-\|\nabla f(\vec {a})\|</script>, and this occurs when <script type="math/tex">\vec {v}</script>
 points in the opposite direction from <script type="math/tex">\nabla f(\vec {a})</script>, in the direction of <script type="math/tex">-\nabla f(\vec {a})</script>. Thus, <script type="math/tex">-\nabla f(\vec {a})</script> points in the
 direction of greatest decrease.
-</p><!--l. 124--><p class="noindent" >Additionally, from <script type="math/tex">D_{\vec {v}}f(\vec {a}) = \nabla f(\vec {a})\cdot \vec {v}</script>, we can see that <script type="math/tex">\vec {v}</script> is perpendicular to <script type="math/tex">\nabla f(\vec {a})</script> if and only if <script type="math/tex">D_{\vec {v}}f(\vec {a})=0</script>. But what
+</p><!--l. 127--><p class="noindent" >Additionally, from <script type="math/tex">D_{\vec {v}}f(\vec {a}) = \nabla f(\vec {a})\cdot \vec {v}</script>, we can see that <script type="math/tex">\vec {v}</script> is perpendicular to <script type="math/tex">\nabla f(\vec {a})</script> if and only if <script type="math/tex">D_{\vec {v}}f(\vec {a})=0</script>. But what
 does it mean for <script type="math/tex">D_{\vec {v}}f(\vec {a})</script>? This means that there is no instantaneous change in <script type="math/tex">f</script>
 in the direction of <script type="math/tex">\vec {v}</script>, which means that <script type="math/tex">\vec {v}</script> will be a tangent vector to a level
 curve.
@@ -134,42 +136,42 @@ curve.
 <div class="image-environment" role="img" aria-labelledby="image-alt-1"><img 
 src="./graphics/CalcPlot3d-paraboloid.png" alt="PIC"  
  /> </div>
-<!--l. 133--><p class="noindent" >Let’s consider how this function changes near the point <script type="math/tex">(2,1)</script>.
-</p><!--l. 135--><p class="noindent" >The gradient of <script type="math/tex">f</script> at <script type="math/tex">(2,1)</script> is <script type="math/tex; mode=display"> \nabla f(2,1) = \answer {(4,2)}. </script> Consulting the graph of <script type="math/tex">f</script> near the point <script type="math/tex">(2,1)</script>, we can confirm that
+<!--l. 136--><p class="noindent" >Let’s consider how this function changes near the point <script type="math/tex">(2,1)</script>.
+</p><!--l. 138--><p class="noindent" >The gradient of <script type="math/tex">f</script> at <script type="math/tex">(2,1)</script> is <script type="math/tex; mode=display"> \nabla f(2,1) = \answer {(4,2)}. </script> Consulting the graph of <script type="math/tex">f</script> near the point <script type="math/tex">(2,1)</script>, we can confirm that
 it increases most rapidly when we move in the direction of <script type="math/tex">\nabla f(2,1)</script>. We can also
 confirm that it decreases most rapidly when we move in the direction of
 <script type="math/tex">-\nabla f(2,1)</script>.
-</p><!--l. 141--><p class="noindent" >The point <script type="math/tex">(2,1)</script> lies on the level curve <script type="math/tex">x^2 + y^2 = 5</script>. A tangent vector to this level curve at the point <script type="math/tex">(2,1)</script> is
+</p><!--l. 144--><p class="noindent" >The point <script type="math/tex">(2,1)</script> lies on the level curve <script type="math/tex">x^2 + y^2 = 5</script>. A tangent vector to this level curve at the point <script type="math/tex">(2,1)</script> is
 given by <script type="math/tex">(-1, 2)</script>.
 </p>
 <div class="image-environment" role="img" aria-labelledby="image-alt-2">  <img 
 src="./gradient-figure0.svg" alt=""  
  />
 </div>
-<!--l. 157--><p class="noindent" >This vector, <script type="math/tex">(-1,2)</script>, is perpendicular to our gradient <script type="math/tex">\nabla f(2,1)</script>.
+<!--l. 160--><p class="noindent" >This vector, <script type="math/tex">(-1,2)</script>, is perpendicular to our gradient <script type="math/tex">\nabla f(2,1)</script>.
 </div>
-</p><!--l. 160--><p class="noindent" >We’ll state this observation more formally, and prove that the gradient is
-perpendicular to the level curves.
+</p><!--l. 163--><p class="noindent" >We’ll state this observation more formally, and prove that the gradient is
                                                                   
 
                                                                   
+perpendicular to the level curves.
 </p>
 <div class="theorem-like problem-environment theorem" id="problem7"><a 
  id="x1-2002r7"></a>Consider a function <script type="math/tex">f:\mathbb {R}^n\rightarrow \mathbb {R}</script>, and suppose <script type="math/tex">f</script> is of class <script type="math/tex">\mathcal {C}^1</script>. For some constant <script type="math/tex">c</script>, consider
 the level set <script type="math/tex; mode=display"> S = \{\vec {x}\in \mathbb {R}^n\;:\;f(\vec {x})=c\}. </script> Then, for any point <script type="math/tex">\vec {x}_0</script> in <script type="math/tex">S</script>, the gradient <script type="math/tex">\nabla f(\vec {x}_0)</script> is perpendicular to
 <script type="math/tex">S</script>.
 </div>
-<!--l. 170--><p class="noindent" >
+<!--l. 173--><p class="noindent" >
 </p>
 <div class="proof">
-<!--l. 171--><p class="noindent" ><span class="head">
+<!--l. 174--><p class="noindent" ><span class="head">
 </p><dl class="trivlist"><dt class="trivlist">
 Proof   </dt><dd 
 class="trivlist"></span>We need to show that for any vector <script type="math/tex">\vec {a}</script> which is tangent to <script type="math/tex">S</script> at <script type="math/tex">\vec {x}_0</script>, we have
 that <script type="math/tex">\vec {a}</script> is perpendicular to <script type="math/tex">\nabla f(\vec {x}_0)</script>.
-<!--l. 173--><p class="noindent" >If <script type="math/tex">\vec {a}</script> is tangent to <script type="math/tex">S</script>, we can find a parametrized curve <script type="math/tex">\vec {x}(t)</script> lying in <script type="math/tex">S</script> such that <script type="math/tex">\vec {x}_0=\vec {x}(t_0)</script> and <script type="math/tex">\vec {x}'(t_0) = \vec {a}</script>.
+<!--l. 176--><p class="noindent" >If <script type="math/tex">\vec {a}</script> is tangent to <script type="math/tex">S</script>, we can find a parametrized curve <script type="math/tex">\vec {x}(t)</script> lying in <script type="math/tex">S</script> such that <script type="math/tex">\vec {x}_0=\vec {x}(t_0)</script> and <script type="math/tex">\vec {x}'(t_0) = \vec {a}</script>.
 We will show that <script type="math/tex">\nabla f(\vec {x}_0)</script> is perpendicular to <script type="math/tex">\vec {a} = \vec {x}'(t_0)</script>.
-</p><!--l. 175--><p class="noindent" >By the definition of <script type="math/tex">S</script>, and since <script type="math/tex">\vec {x}(t)</script> lies in <script type="math/tex">S</script>, <script type="math/tex; mode=display"> f(\vec {x}(t))=c </script> for all <script type="math/tex">t</script>. Differentiating both sides of this
+</p><!--l. 178--><p class="noindent" >By the definition of <script type="math/tex">S</script>, and since <script type="math/tex">\vec {x}(t)</script> lies in <script type="math/tex">S</script>, <script type="math/tex; mode=display"> f(\vec {x}(t))=c </script> for all <script type="math/tex">t</script>. Differentiating both sides of this
 identity, and using the chain rule on the left side, we obtain <script type="math/tex; mode=display"> \nabla f(\vec {x}(t))\cdot \vec {x}'(t) = 0. </script> Plugging in <script type="math/tex">t=t_0</script>, this
 gives us <script type="math/tex; mode=display"> \nabla f(\vec {x}(t_0))\cdot \vec {x}'(t_0) = 0, </script> which we can rewrite as <script type="math/tex; mode=display"> \nabla f(\vec {x}_0)\cdot \vec {x}'(t_0) = 0. </script> Thus, we have shown that <script type="math/tex">\nabla f(\vec {x}_0)</script> is perpendicular
 to the level set <script type="math/tex">S</script>.                                                                                  <script type="math/tex">\blacksquare </script></p></dd></dl>

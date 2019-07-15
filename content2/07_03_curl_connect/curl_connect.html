@@ -1,0 +1,146 @@
+<!doctype html> 
+<html lang="en"> 
+<head> <title>Connections  of  Curl  with  Older
+Material</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<!-- charset=utf-8,-css,html,htex4ht,xhtml --> 
+<meta name="src" content="curl_connect.tex" /> 
+<meta name="author" content="" /> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
+<meta name="ximera" content="version 0.0.1" /> 
+<link href="https://ximera.osu.edu/public/stylesheets/standalone.css" rel="stylesheet" media="screen"/> 
+<script type="text/javascript" async src="https://ximera.osu.edu/public/javascripts/standalone.min.js"></script> 
+</head><body> 
+<div class="preamble"><script type="math/tex">\newenvironment {prompt}{}{}
+\newcommand {\DeclareMathOperator }[2]{\@OldDeclareMathOperator {##1}{##2}\immediate \write \myfile {\unexpanded {\DeclareMathOperator }{\unexpanded {##1}}{\unexpanded {##2}}}}
+\newcommand {\ungraded }[0]{}
+\newcommand {\reserved@a }[2]{}
+\newcommand {\HyperFirstAtBeginDocument }[0]{\AtBeginDocument }
+\newcommand {\reserved@a }[1]{}
+\newcommand {\reserved@a }[2]{}
+\newcommand {\vnameref  }[1]{\unskip ~\nameref {##1}\@vpageref [\unskip ]{##1}}
+\newcommand {\ref  }[0]{\@ifstar \@refstar \T@ref }
+\newcommand {\pageref  }[0]{\@ifstar \@pagerefstar \T@pageref }
+\newcommand {\nameref  }[0]{\@ifstar \@namerefstar \T@nameref }
+\newcommand {\reserved@a }[2]{}
+\newcommand {\reserved@a }[0]{\AtBeginDocument }
+\newcommand {\reserved@a }[1]{}
+\newcommand {\reserved@a }[2]{}                                                                                                                                                 </script><script type="text/javascript"> 
+</script> 
+</div>
+<div 
+class="abstract" 
+>
+</div>   <div class="maketitle"></div>
+<!--l. 11--><p class="noindent" >We’ve defined the curl of a two or three dimensional vector field, and we found that
+this gives a measure of the local rotation of a vector field.
+</p><!--l. 13--><p class="noindent" >In this section, we discuss connections of the curl to previous topics from the course.
+In particular, we find the curl of a conservative vector field, and we restate Green’s
+Theorem in terms of curl.
+<a 
+ id="Q1-1-1"></a>
+</p>
+<h3 class="likesectionHead"><a 
+ id="x1-1000"></a>Curl of a Conservative Vector Field</h3>
+<!--l. 17--><p class="noindent" >In this section, we prove that the curl of a conservative vector field will always be
+zero. Thus, conservative vector fields are irrotational.
+</p>
+<div class="theorem-like problem-environment theorem" id="problem1"><a 
+ id="x1-1001r1"></a>Suppose <script type="math/tex">\mathbf {F}</script> is a <script type="math/tex">C^1</script> conservative vector field in <script type="math/tex">\mathbb {R}^3</script>, so there is a function <script type="math/tex">f:\mathbb {R}^3\rightarrow \mathbb {R}</script> such that <script type="math/tex">\mathbf {F}=\nabla f</script>. Then
+<script type="math/tex">\nabla \times \mathbf {F} = \mathbf {0}</script>.
+</div>
+<!--l. 23--><p class="noindent" >
+</p>
+<div class="proof">
+<!--l. 24--><p class="noindent" ><span class="head">
+</p><dl class="trivlist"><dt class="trivlist">
+Proof   </dt><dd 
+class="trivlist"></span>Suppose <script type="math/tex">\mathbf {F}(x,y,z)=(M,N,P)</script> is a <script type="math/tex">C^1</script> conservative vector field, with
+<script type="math/tex">\mathbf {F}=\nabla f</script>. Then we must have <script type="math/tex; mode=display"> \left (\dfrac {\partial f}{\partial x}, \dfrac {\partial f}{\partial y}, \dfrac {\partial f}{\partial z}\right ) = \answer {(M,N,P)}. </script> Computing the curl of <script type="math/tex">\mathbf {F}</script>, we have
+<script type="math/tex; mode=display"> \begin{align*} 
+\nabla\times\mathbf{F} &= \left(\dfrac{\partial P}{\partial y}-\dfrac{\partial N}{\partial z}, -\left(\dfrac{\partial P}{\partial x}-\dfrac{\partial M}{\partial z}\right), \dfrac{\partial N}{\partial x} - \dfrac{\partial M}{\partial y}\right)\\
+                                                                  
+
+                                                                  
+&= \left(\dfrac{\partial}{\partial y}\dfrac{\partial f}{\partial z}-\dfrac{\partial}{\partial z}\dfrac{\partial f}{\partial y}, -\left(\dfrac{\partial}{\partial x}\dfrac{\partial f}{\partial z}-\dfrac{\partial}{\partial z}\dfrac{\partial f}{\partial x}\right), \dfrac{\partial}{\partial x}\dfrac{\partial f}{\partial y} - \dfrac{\partial}{\partial y}\dfrac{\partial f}{\partial x}\right),
+\end{align*}</script>
+<!--l. 33--><p class="noindent" >substituting in for the components <script type="math/tex">M</script>, <script type="math/tex">N</script>, and <script type="math/tex">P</script>.
+</p><!--l. 35--><p class="noindent" >Now, we will use Clairaut’s Theorem to simplify this vector. Since <script type="math/tex">\mathbf {F}=(M,N,P)</script> is a <script type="math/tex">C^1</script>
+vector field, the partial derivatives of its components (<script type="math/tex">\dfrac {\partial M}{\partial y}</script>, <script type="math/tex">\dfrac {\partial M}{\partial z}</script>, etc.) exist and are
+continuous. This means that all second-order partial derivatives of <script type="math/tex">f</script> exist and
+are continuous. Then, by Clairaut’s Theorem, the order of differentiation
+for the second-order mixed partials doesn’t matter. In particular, we have
+</p><script type="math/tex; mode=display"> \begin{align*} 
+\dfrac{\partial^2 f}{\partial y\partial x} &= \dfrac{\partial^2 f}{\partial x\partial y}\\
+\dfrac{\partial^2 f}{\partial z\partial x} &= \dfrac{\partial^2 f}{\partial x\partial z}\\
+\dfrac{\partial^2 f}{\partial z\partial y} &= \dfrac{\partial^2 f}{\partial y\partial z}.
+\end{align*}</script>
+<!--l. 41--><p class="noindent" >Using this fact in our computation of the curl, we now have
+</p><script type="math/tex; mode=display"> \begin{align*} 
+\nabla\times\mathbf{F} &= \left(\dfrac{\partial^2 f}{\partial y\partial z}-\dfrac{\partial^2 f}{\partial z\partial y}, -\left(\dfrac{\partial^2 f}{\partial x\partial z}-\dfrac{\partial^2 f}{\partial z\partial x}\right), \dfrac{\partial^2 f}{\partial x\partial y} - \dfrac{\partial^2 f}{\partial y\partial x}\right) \\
+&= \answer{(0,0,0)}
+\end{align*}</script>
+<!--l. 46--><p class="noindent" >Thus, we have shown that the curl of a conservative vector field is zero.         <script type="math/tex">\blacksquare </script></p></dd></dl>
+</div>
+<!--l. 49--><p class="noindent" >So, conservative vector fields are irrotational. A reasonable follow-up question would
+be: if the curl of a vector field is zero, is the vector field necessarily conservative?
+We’ll leave this as an open question for the reader, with the suggestion that you think
+about how you can use past results, and what hypotheses are necessary for this
+converse to be true.
+<a 
+ id="Q1-1-3"></a>
+</p>
+<h3 class="likesectionHead"><a 
+ id="x1-2000"></a>Curl and Green’s Theorem</h3>
+<!--l. 54--><p class="noindent" >In this section, we see that we’ve actually already seen the curl of a vector field. It
+turns out that the curl showed up in Green’s Theorem, we just didn’t know that it
+was the curl yet.
+</p><!--l. 56--><p class="noindent" >Recall the statement of Green’s Theorem:
+</p>
+<div class="theorem-like problem-environment theorem" id="problem2"><a 
+ id="x1-2001r2"></a>Let <script type="math/tex">D</script> be a closed and bounded region in <script type="math/tex">\mathbb {R}^2</script>, whose boundary <script type="math/tex">\partial D</script> consists of finitely many
+simple, closed, piecewise <script type="math/tex">C^1</script> curves. Orient the boundary <script type="math/tex">\partial D</script> so that <script type="math/tex">D</script> is on the left as one
+travels along <script type="math/tex">\partial D</script>.
+                                                                  
+
+                                                                  
+<!--l. 61--><p class="noindent" >Let <script type="math/tex">\mathbf {F}(x,y)=(M,N)</script> be a <script type="math/tex">C^1</script> vector field defined on <script type="math/tex">D</script>. Then, <script type="math/tex; mode=display"> \oint _C\mathbf {F}\cdot d\mathbf {s} = \iint _D\left (\dfrac {\partial N}{\partial x}-\dfrac {\partial M}{\partial y}\right )\,dxdy. </script>
+</div>
+</p><!--l. 67--><p class="noindent" >The integrand of the double integral, <script type="math/tex">\dfrac {\partial N}{\partial x}-\dfrac {\partial M}{\partial y}</script>, should now look familiar. This mysterious
+quantity is actually the two-dimensional curl of the vector field <script type="math/tex">\mathbf {F}</script>!
+</p><!--l. 69--><p class="noindent" >Using this realization, we can now restate Green’s Theorem in terms of the curl of
+<script type="math/tex">\mathbf {F}</script>.
+</p>
+<div class="theorem-like problem-environment theorem" id="problem3"><a 
+ id="x1-2002r3"></a>Let <script type="math/tex">D</script> be a closed and bounded region in <script type="math/tex">\mathbb {R}^2</script>, whose boundary <script type="math/tex">\partial D</script> consists of finitely many
+simple, closed, piecewise <script type="math/tex">C^1</script> curves. Orient the boundary <script type="math/tex">\partial D</script> so that <script type="math/tex">D</script> is on the left as one
+travels along <script type="math/tex">\partial D</script>.
+<!--l. 74--><p class="noindent" >Let <script type="math/tex">\mathbf {F}(x,y)=(M,N)</script> be a <script type="math/tex">C^1</script> vector field defined on <script type="math/tex">D</script>. Then, <script type="math/tex; mode=display"> \oint _C\mathbf {F}\cdot d\mathbf {s} = \iint _D\nabla \times \mathbf {F}\,dxdy. </script>
+</div>
+</p><!--l. 80--><p class="noindent" >Now, let’s think a bit more about what Green’s Theorem is saying here.
+</p><!--l. 82--><p class="noindent" >The vector line integral, <script type="math/tex">\oint _C\mathbf {F}\cdot d\mathbf {s}</script>, computes the global circulation of the vector field around
+the boundary of the region.
+</p><!--l. 84--><p class="noindent" >The double integral <script type="math/tex">\iint _D\nabla \times \mathbf {F}\,dxdy</script> is computed by integrating curl over the region <script type="math/tex">D</script>. We can think
+of this as “adding up” the local rotation of the vector field.
+</p><!--l. 86--><p class="noindent" >Thus, we can think of Green’s Theorem as saying that the global circulation of the
+vector field around the boundary is equal to the total local rotation across the region.
+If you think about it, this does make some sense!
+<a 
+ id="Q1-1-5"></a>
+</p>
+<h3 class="likesectionHead"><a 
+ id="x1-3000"></a>Summary</h3>
+<!--l. 90--><p class="noindent" >In this activity, we connected the curl of a vector field to concepts we’ve covered
+previously. In particular, we showed that the curl of a <script type="math/tex">C^1</script> conservative vector field is
+zero, and we restated Green’s Theorem in terms of curl.
+</body> 
+ 
+</html>
+                                                                  
+
+                                                                  
+                                                                  
+
+

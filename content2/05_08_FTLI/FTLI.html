@@ -1,0 +1,357 @@
+<!doctype html> 
+<html lang="en"> 
+<head> <title>Path Independence and FTLI</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<!-- charset=utf-8,-css,html,htex4ht,xhtml --> 
+<meta name="src" content="FTLI.tex" /> 
+<meta name="author" content="" /> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
+<meta name="ximera" content="version 0.0.1" /> 
+<link href="https://ximera.osu.edu/public/stylesheets/standalone.css" rel="stylesheet" media="screen"/> 
+<script type="text/javascript" async src="https://ximera.osu.edu/public/javascripts/standalone.min.js"></script> 
+</head><body> 
+<div class="preamble"><script type="math/tex">\newenvironment {prompt}{}{}
+\newcommand {\DeclareMathOperator }[2]{\@OldDeclareMathOperator {##1}{##2}\immediate \write \myfile {\unexpanded {\DeclareMathOperator }{\unexpanded {##1}}{\unexpanded {##2}}}}
+\newcommand {\ungraded }[0]{}
+\newcommand {\reserved@a }[2]{}
+\newcommand {\HyperFirstAtBeginDocument }[0]{\AtBeginDocument }
+\newcommand {\reserved@a }[1]{}
+\newcommand {\reserved@a }[2]{}
+\newcommand {\vnameref  }[1]{\unskip ~\nameref {##1}\@vpageref [\unskip ]{##1}}
+\newcommand {\ref  }[0]{\@ifstar \@refstar \T@ref }
+\newcommand {\pageref  }[0]{\@ifstar \@pagerefstar \T@pageref }
+\newcommand {\nameref  }[0]{\@ifstar \@namerefstar \T@nameref }
+\newcommand {\reserved@a }[2]{}
+\newcommand {\reserved@a }[0]{\AtBeginDocument }
+\newcommand {\reserved@a }[1]{}
+\newcommand {\reserved@a }[2]{}                                                                                                                                                 </script><script type="text/javascript"> 
+</script> 
+</div>
+<div 
+class="abstract" 
+>
+</div>   <div class="maketitle"></div>
+<!--l. 11--><p class="noindent" >In the previous activity, we introduced some basic definitions from topology. These
+definitions are necessary in order to correctly state theorems in this section and the
+next, so pay attention to the hypotheses of these theorems!
+</p><!--l. 13--><p class="noindent" >We begin this activity by defining what it means for a vector field to be path
+independent. We then state and prove the Fundamental Theorem of Line Integrals.
+This theorem gives us an easy way to compute vector line integrals of a
+gradient field, provided the domain is open and connected. We then use the
+Fundamental Theorem of Line Integrals to show that conservative vector
+fields are path independent (under the appropriate conditions), and finish
+by discussing the various methods we now have for computing vector line
+integrals.
+<a 
+ id="Q1-1-1"></a>
+</p>
+<h3 class="likesectionHead"><a 
+ id="x1-1000"></a>Path Independence</h3>
+<!--l. 17--><p class="noindent" >In this section, we introduce the idea of “path independence” for a vector field. We
+see an example of a vector field that is not path independent, and vector field that is
+path independent.
+</p>
+<div class="theorem-like problem-environment example" id="problem1"><a 
+ id="x1-1001r1"></a>Consider the vector field <script type="math/tex">\textbf {F}(x,y) = (y,0)</script>. Let <script type="math/tex">\textbf {x}(t)</script> be the path from <script type="math/tex">(1,0)</script> to <script type="math/tex">(0,1)</script> along a straight line. Let <script type="math/tex">\textbf {y}(t)</script>
+be the path from <script type="math/tex">(1,0)</script> to <script type="math/tex">(0,1)</script> counterclockwise around the unit circle. Compute <script type="math/tex">\int _\textbf {x} \textbf {F}\cdot d\textbf {s}</script>
+and <script type="math/tex">\int _\textbf {y} \textbf {F}\cdot d\textbf {s}</script>. Are they equal? <div class="theorem-like problem-environment explanation" id="problem2"><a 
+ id="x1-1002r2"></a>We’ll begin by parametrizing our paths. <script type="math/tex; mode=display"> \textbf {x}(t)= (\answer {1-t},\answer {t})\hspace {1cm}\textrm {for }t\in [0,1] </script> <script type="math/tex; mode=display"> \textbf {y}(t)= (\answer {\cos (t)},\answer {\sin (t)})\hspace {1cm}\textrm {for }t\in [0,\frac {\pi }{2}] </script> Now, we
+compute these line integrals using the definition <script type="math/tex; mode=display"> \int _\textbf {x} \textbf {F}\cdot d\textbf {s} = \int _a^b\textbf {F}(\textbf {x}(t))\cdot \textbf {x}'(t)\,dt. </script> Integrating along <script type="math/tex">\textbf {x}</script>, we have
+<script type="math/tex; mode=display"> \begin{align*} 
+\int_\textbf{x} \textbf{F}\cdot d\textbf{s} &= \int_a^b\textbf{F}(\textbf{x}(t))\cdot \textbf{x}'(t)\,dt\\
+&= \int_{\answer{0}}^{\answer[given]{1}}(t,0)\cdot(-1, 1)\,dt\\
+                                                                  
+
+                                                                  
+&= \int_{\answer{0}}^{\answer{1}}-t\,dt\\
+&= \answer{-\frac{1}{2}}
+\end{align*}</script>
+<!--l. 40--><p class="noindent" >Integrating  along  <script type="math/tex">\textbf {y}</script>,  we  have
+</p><script type="math/tex; mode=display"> \begin{align*} 
+\int_\textbf{y} \textbf{F}\cdot d\textbf{s} &= \int_a^b\textbf{F}(\textbf{y}(t))\cdot \textbf{y}'(t)\,dt\\
+&= \int_{0}^{\pi/2}(\sin(t),0)\cdot({\answer{-\sin(t)}}, {\answer{\cos(t)}})\,dt\\
+&= \int_{0}^{\pi/2}\answer{-\sin^2(t)}\,dt\\
+&= \answer{-\frac{\pi}{4}}
+\end{align*}</script>
+<!--l. 47--><p class="noindent" >Comparing <script type="math/tex">\int _\textbf {x} \textbf {F}\cdot d\textbf {s}</script> and <script type="math/tex">\int _\textbf {y} \textbf {F}\cdot d\textbf {s}</script>, we see that they are </p><div class="multiple-choice" id="problem3"><span class="choice  "   id="choice1">Equal.</span> <span class="choice correct "   id="choice2">Not equal.</span> </div>
+</div>
+</div>
+<!--l. 55--><p class="noindent" >Now, let’s investigate integrating a different vector field along those same
+paths.
+</p>
+<div class="theorem-like problem-environment example" id="problem4"><a 
+ id="x1-1003r3"></a>Consider the vector field <script type="math/tex">\textbf {F}(x,y) = (y,x)</script>. Let <script type="math/tex">\textbf {x}(t)</script> be the path from <script type="math/tex">(1,0)</script> to <script type="math/tex">(0,1)</script> along a straight line. Let <script type="math/tex">\textbf {y}(t)</script> be the
+path from <script type="math/tex">(1,0)</script> to <script type="math/tex">(0,1)</script> counterclockwise around the unit circle. Compute <script type="math/tex">\int _\textbf {x} \textbf {F}\cdot d\textbf {s}</script> and <script type="math/tex">\int _\textbf {y} \textbf {F}\cdot d\textbf {s}</script>. Are
+they equal? <div class="theorem-like problem-environment explanation" id="problem5"><a 
+ id="x1-1004r4"></a>Once again, we begin by parametrizing our paths. <script type="math/tex; mode=display"> \textbf {x}(t)= (1-t,t)\hspace {1cm}\textrm {for }t\in [0,1] </script> <script type="math/tex; mode=display"> \textbf {y}(t)= (\cos (t),\sin (t))\hspace {1cm}\textrm {for }t\in [0,\frac {\pi }{2}] </script> Next, we
+compute these line integrals using the definition <script type="math/tex; mode=display"> \int _\textbf {x} \textbf {F}\cdot d\textbf {s} = \int _a^b\textbf {F}(\textbf {x}(t))\cdot \textbf {x}'(t)\,dt. </script> Integrating along <script type="math/tex">\textbf {x}</script>, we have
+<script type="math/tex; mode=display"> \begin{align*} 
+\int_\textbf{x} \textbf{F}\cdot d\textbf{s} &= \int_a^b\textbf{F}(\textbf{x}(t))\cdot \textbf{x}'(t)\,dt\\
+&= \int_{0}^{1}(\answer{t},\answer{1-t})\cdot(-1, 1)\,dt\\
+&= \int_{0}^{1}\answer{1-2t}\,dt\\
+&= \answer{0}
+\end{align*}</script>
+<!--l. 78--><p class="noindent" >Integrating  along  <script type="math/tex">\textbf {y}</script>,  we  have
+</p><script type="math/tex; mode=display"> \begin{align*} 
+\int_\textbf{y} \textbf{F}\cdot d\textbf{s} &= \int_a^b\textbf{F}(\textbf{y}(t))\cdot \textbf{y}'(t)\,dt\\
+&= \int_{0}^{\pi/2}(\answer{\sin(t)},\answer{\cos(t)})\cdot(-\sin(t), \cos(t))\,dt\\
+&= \int_{0}^{\pi/2}\answer{-\sin^2(t)+\cos^2(t)}\,dt\\
+&= \answer{0}
+\end{align*}</script>
+<!--l. 85--><p class="noindent" >Comparing <script type="math/tex">\int _\textbf {x} \textbf {F}\cdot d\textbf {s}</script> and <script type="math/tex">\int _\textbf {y} \textbf {F}\cdot d\textbf {s}</script>, we see that they are </p><div class="multiple-choice" id="problem6"><span class="choice correct "   id="choice3">Equal.</span> <span class="choice  "   id="choice4">Not equal.</span> </div>
+                                                                  
+
+                                                                  
+</div>
+</div>
+<!--l. 93--><p class="noindent" >In fact, it turns out that if we integrate <script type="math/tex">\textbf {F}(x,y) = (y,x)</script> along <em>any</em> path starting at <script type="math/tex">(1,0)</script> and ending at <script type="math/tex">(0,1)</script>,
+the integral will be <script type="math/tex">0</script>. So, the integral does not depend on the path we take to get
+between these two points. A vector field with this property is called <em>path
+independent</em>.
+</p>
+<div class="theorem-like problem-environment definition" id="problem7"><a 
+ id="x1-1005r5"></a>A continuous vector field is called <em>path independent</em> if <script type="math/tex">\int _C \textbf {F}\cdot d\textbf {s}=\int _D \textbf {F}\cdot d\textbf {s}</script> for any two simple, piecewise <script type="math/tex">C^1</script>,
+oriented curves <script type="math/tex">C</script> and <script type="math/tex">D</script> with the same start and end points.
+</div>
+<!--l. 99--><p class="noindent" >Let’s review the meaning of the requirements on the curves <script type="math/tex">C</script> and <script type="math/tex">D</script>.
+</p><!--l. 101--><p class="noindent" >A curve is <em>simple</em> if it <span class="word-choice" id="word-choice8"><a 
+ id="x1-1006r6"></a><span class="choice  "   id="choice5">isn’t too “bumpy.”</span><span class="choice correct "   id="choice6">doesn’t intersect itself, except the start
+and end point can be the same.</span><span class="choice  "   id="choice7">is smooth.</span>
+</span>
+</p><!--l. 103--><p class="noindent" >A curve is <script type="math/tex">C^1</script> if it <span class="word-choice" id="word-choice9"><a 
+ id="x1-1007r7"></a><span class="choice  "   id="choice8">is continuous.</span><span class="choice  "   id="choice9">is differentiable.</span><span class="choice correct "   id="choice10">has continuous partial
+derivatives.</span>
+</span>
+</p><!--l. 105--><p class="noindent" >A curve is <em>oriented</em> if it <span class="word-choice" id="word-choice10"><a 
+ id="x1-1008r8"></a><span class="choice correct "   id="choice11">has a specified direction.</span><span class="choice  "   id="choice12">knows which way is
+North.</span>
+</span>
+</p><!--l. 107--><p class="noindent" >Our next question is: how do we know if a vector field is path independent? Of
+course, it’s impossible to check every line integral over every possible curve between
+any two points - we would never finish these computations! Instead, we need some
+theorems that give us conditions under which a vector field is path independent.
+Our first step towards these theorems is the Fundamental Theorem of Line
+Integrals.
+<a 
+ id="Q1-1-3"></a>
+</p>
+<h3 class="likesectionHead"><a 
+ id="x1-2000"></a>Fundamental Theorem of Line Integrals</h3>
+<!--l. 111--><p class="noindent" >We now introduce the Fundamental Theorem of Line Integrals, which gives us a
+slick way to compute the integral of a gradient vector field over a piecewise <script type="math/tex">C^1</script>
+curve. In particular, note the conditions on the domain <script type="math/tex">X</script>: it must be open and
+connected.
+</p>
+<div class="theorem-like problem-environment theorem" id="problem11"><a 
+ id="x1-2001r9"></a><strong>Fundamental Theorem of Line Integrals</strong>
+<!--l. 116--><p class="noindent" >Let <script type="math/tex">f:X\subset \mathbb {R}^n\rightarrow \mathbb {R}</script> be <script type="math/tex">C^1</script>, where <script type="math/tex">X</script> is open and connected. Then if <script type="math/tex">C</script> is any piecewise <script type="math/tex">C^1</script> curve from <script type="math/tex">\textbf {A}</script> to <script type="math/tex">\textbf {B}</script>,
+then <script type="math/tex; mode=display"> \int _C\nabla f\cdot d\textbf {s} = f(\textbf {B})-f(\textbf {A}) </script>
+</div>
+</p><!--l. 122--><p class="noindent" >This should look vaguely familiar - it resembles the Fundamental Theorem of
+Calculus from single variable calculus, also called the evaluation theorem.
+                                                                  
+
+                                                                  
+</p><!--l. 124--><p class="noindent" >We now prove the Fundamental Theorem of Line Integrals in the special case where
+we have a <em>simple</em> parametrization of the curve <script type="math/tex">C</script>.
+</p><!--l. 126--><p class="noindent" >
+</p>
+<div class="proof">
+<!--l. 127--><p class="noindent" ><span class="head">
+</p><dl class="trivlist"><dt class="trivlist">
+Proof   </dt><dd 
+class="trivlist"></span>Let <script type="math/tex">\textbf {x}(t)</script> be a simple parametrization of <script type="math/tex">C</script>, where <script type="math/tex">t\in [a,b]</script>, <script type="math/tex">\textbf {x}(a)=\textbf {A}</script>, and <script type="math/tex">\textbf {x}(b)=\textbf {B}</script> (so the starting
+point is <script type="math/tex">\textbf {A}</script>, and the ending point is <script type="math/tex">\textbf {B}</script>).
+<!--l. 129--><p class="noindent" >Then we compute the line integral as: <script type="math/tex; mode=display"> \int _C\nabla f\cdot d\textbf {s} = \int _\textbf {x}\nabla f\cdot d\textbf {s}. </script> By the definition, we can compute
+this line integral as <script type="math/tex; mode=display"> \int _\textbf {x}\nabla f\cdot d\textbf {s} = \int _a^b \nabla f(\textbf {x}(t))\cdot \textbf {x}'(t)\,dt. </script> The integrand here should look familiar from one
+of the multivariable versions of the chain rule - it’s the derivative of <script type="math/tex">f(\textbf {x}(t))</script>.
+Making this replacement, we have <script type="math/tex; mode=display"> \int _\textbf {x}\nabla f\cdot d\textbf {s} = \int _a^b \frac {d}{dt}(f(\textbf {x}(t)))\,dt. </script> Now, we can apply the Fundamental
+Theorem of Calculus (from single variable) to evaluate this integral, since
+an antiderivative for the integrand will be given by <script type="math/tex">f(\textbf {x}(t))</script>. From this we obtain:
+</p><script type="math/tex; mode=display"> \begin{align*} 
+\int_\textbf{x}\nabla f\cdot d\textbf{s} &= (f(\textbf{x}(t)))\vert_a^b\\
+&= f(\textbf{x}(b))-f(\textbf{x}(a))\\
+&= f(\textbf{B})-f(\textbf{A})
+\end{align*}</script>
+<!--l. 147--><p class="noindent" >In the last step, we use that <script type="math/tex">\textbf {A}</script> and <script type="math/tex">\textbf {B}</script> are the start an end points of <script type="math/tex">\textbf {x}(t)</script>, respectively.
+</p><!--l. 149--><p class="noindent" >Thus, we have proven the Fundamental Theorem of Line Integrals (when we have a
+simple parametrization of the curve <script type="math/tex">C</script>).                                                      <script type="math/tex">\blacksquare </script></p></dd></dl>
+</div>
+<!--l. 152--><p class="noindent" >Before discussing how the Fundamental Theorem of Line Integrals relates to path
+independence, let’s look at how this helps us compute integrals of gradient vector
+fields.
+</p>
+<div class="theorem-like problem-environment example" id="problem12"><a 
+ id="x1-2002r10"></a>Let <script type="math/tex">\textbf {F}(x,y)=(y,x)</script>. Observe that <script type="math/tex">\textbf {F}=\nabla f</script>, where <script type="math/tex">f(x,y)=xy</script>. Compute <script type="math/tex">\int _C\textbf {F}\cdot d\textbf {s}</script> for the curve <script type="math/tex">C</script> below, starting at <script type="math/tex">(0,1)</script> and ending
+at <script type="math/tex">(1,0)</script>.
+<div class="center" 
+>
+<!--l. 156--><p class="noindent" >
+</p><!--l. 157--><p class="noindent" >  <img 
+src="./FTLI-figure0.svg" alt=""  
+ />
+</p></div>
+<div class="theorem-like problem-environment explanation" id="problem13"><a 
+ id="x1-2003r11"></a>We certainly would like to avoid parametrizing this curve! So, we will use the
+Fundamental Theorem of Line Integrals to compute this integral.
+                                                                  
+
+                                                                  
+<!--l. 178--><p class="noindent" >First, let’s verify that <script type="math/tex">\textbf {F}=\nabla f</script> for <script type="math/tex">f(x,y)=xy</script>. </p><script type="math/tex; mode=display"> \begin{align*} 
+\frac{\partial}{\partial x}xy &= \answer{y}\\
+\frac{\partial}{\partial y}xy &= \answer{x}
+\end{align*}</script>
+<!--l. 183--><p class="noindent" >Thus, we have <script type="math/tex">\nabla f(x,y)= (y,x) = \textbf {F}(x,y)</script>.
+</p><!--l. 185--><p class="noindent" >We can then use the Fundamental Theorem of Line Integrals to compute <script type="math/tex">\int _C\textbf {F}\cdot d\textbf {s}</script>.
+</p><script type="math/tex; mode=display"> \begin{align*} 
+\int_C\textbf{F}\cdot d\textbf{s} &= \int_C\nabla f\cdot d\textbf{s}\\
+&= f(0,1) - f(1,0)\\
+&= \answer{0}
+\end{align*}</script>
+<!--l. 192--><p class="noindent" ></div>
+</div>
+</p><!--l. 195--><p class="noindent" >Now, it turns out that we can use the Fundamental Theorem of Line Integrals to
+prove the following corollary about the relationship between conservative vector fields
+and path independence. Note once again that we require the domain to be open and
+connected.
+</p>
+<div class="theorem-like problem-environment corollary" id="problem14"><a 
+ id="x1-2004r12"></a>If <script type="math/tex">\textbf {F}</script> is a conservative vector field (so <script type="math/tex">\textbf {F}=\nabla f</script> for some <script type="math/tex">f</script>) defined on an open and connected
+domain <script type="math/tex">X</script>, then <script type="math/tex">\textbf {F}</script> is path independent.
+</div>
+<!--l. 201--><p class="noindent" >
+</p>
+<div class="proof">
+<!--l. 202--><p class="noindent" ><span class="head">
+</p><dl class="trivlist"><dt class="trivlist">
+Proof   </dt><dd 
+class="trivlist"></span>Let <script type="math/tex">C</script> and <script type="math/tex">D</script> be two curves with starting point <script type="math/tex">\textbf {A}</script> and ending point <script type="math/tex">\textbf {B}</script>. We
+will show that <script type="math/tex">\int _C\textbf {F}\cdot d\textbf {s}=\int _D\textbf {F}\cdot d\textbf {s}</script>.
+<!--l. 204--><p class="noindent" >Recall that “<script type="math/tex">\textbf {F}</script> is conservative” means that <script type="math/tex">\textbf {F}=\nabla f</script> for some function <script type="math/tex">f</script>, which will enable us
+to use the Fundamental Theorem of Line Integrals (FTLI). Then we have:
+</p><script type="math/tex; mode=display"> \begin{align*} 
+\int_C\textbf{F}\cdot d\textbf{s} &= \int_C\nabla f\cdot d\textbf{s}\\
+&= f(\textbf{B})-f(\textbf{A})\hspace{1in}\textrm{(by FTLI)}\\
+&= \int_D\nabla f\cdot d\textbf{s}\hspace{1in}\textrm{(also by FTLI)}\\
+&= \int_D\textbf{F}\cdot d\textbf{s}.
+\end{align*}</script>
+<!--l. 211--><p class="noindent" >Thus, we have shown that <script type="math/tex">\int _C\textbf {F}\cdot d\textbf {s}=\int _D\textbf {F}\cdot d\textbf {s}</script>, and so have shown that <script type="math/tex">\textbf {F}</script> is path independent.       <script type="math/tex">\blacksquare </script></p></dd></dl>
+                                                                  
+
+                                                                  
+</div>
+<!--l. 214--><p class="noindent" >This corollary, with the Fundamental Theorem of Line Integrals, gives us a new tool
+for computing line integrals.
+<a 
+ id="Q1-1-5"></a>
+</p>
+<h3 class="likesectionHead"><a 
+ id="x1-3000"></a>Strategies for Computing Line Integrals</h3>
+<!--l. 218--><p class="noindent" >We now have a few options for computing line integrals:
+     </p><dl class="enumerate-enumitem"><dt class="enumerate-enumitem">
+ (a) </dt><dd 
+class="enumerate-enumitem">Using the original definition: <script type="math/tex; mode=display"> \int _C\textbf {F}\cdot d\textbf {s} = \int _a^b\textbf {F}(\textbf {x}(t))\cdot \textbf {x}'(t)\,dt </script>
+     </dd><dt class="enumerate-enumitem">
+ (b) </dt><dd 
+class="enumerate-enumitem">If <script type="math/tex">\textbf {F}</script> is conservative (so <script type="math/tex">\textbf {F}=\nabla f</script> for some <script type="math/tex">f</script>):
+         <dl class="enumerate-enumitem"><dt class="enumerate-enumitem">
+      (i) </dt><dd 
+class="enumerate-enumitem">We can use the Fundamental Theorem of Line Integrals: <script type="math/tex; mode=display"> \int _C\textbf {F}\cdot d\textbf {s} = f(\textbf {B})-f(\textbf {A}) </script>
+         </dd><dt class="enumerate-enumitem">
+     (ii) </dt><dd 
+class="enumerate-enumitem">Since the vector field is path independent, we can find an <em>easier</em> path
+         with the same start and end points, and integrate over that path.</dd></dl>
+     </dd></dl>
+<!--l. 235--><p class="noindent" >Let’s look at how these different methods can be used in an example.
+</p>
+<div class="theorem-like problem-environment example" id="problem15"><a 
+ id="x1-3005r13"></a>Let <script type="math/tex">\textbf {F}(x,y) = (2xy^2, 2x^2y)</script>, and consider <script type="math/tex">\textbf {x}(t)=(2\cos (\pi t),\sin (\pi t^2))</script> for <script type="math/tex">t\in [0,1]</script>. Compute <script type="math/tex">\int _{\textbf {x}}\textbf {F}\cdot d\textbf {s}</script>. <div class="theorem-like problem-environment explanation" id="problem16"><a 
+ id="x1-3006r14"></a>We’ll evaluate this integral in three different
+ways.
+<!--l. 242--><p class="noindent" >First, let’s evaluate using the definition of vector line integrals.
+</p><script type="math/tex; mode=display"> \begin{align*} 
+\int_{\textbf{x}}\textbf{F}\cdot d\textbf{s} &= \int_a^b\textbf{F}(\textbf{x}(t))\cdot \textbf{x}'(t)\,dt\\
+&= \int_0^1(4\cos(\pi t)\sin^2(\pi t^2), 8\cos^2(\pi t)\sin(\pi t^2))\cdot (\answer{-2\pi\sin(\pi t)}, \answer{2\pi t\cos(\pi t^2)}\,dt\\
+&= \int_0^1\answer{-8\pi\cos(\pi t)\sin(\pi t)\sin^2(\pi t^2) + 16\pi t\cos(\pi t^2)\cos^2(\pi t)\sin(\pi t^2)}\,dt
+\end{align*}</script>
+<!--l. 248--><p class="noindent" >This is an integral that it might be possible to figure out how to compute, but we
+certainly do not want to! We can use a computer algebra system to see that the
+result is <script type="math/tex">0</script>, but to compute the integral by hand, we will turn to our other
+methods.
+</p><!--l. 250--><p class="noindent" >For our alternate methods, we need to find a potential function <script type="math/tex">f(x,y)</script> such that <script type="math/tex">\textbf {F}=\nabla f</script>. It turns out that
+<script type="math/tex">f(x,y)=x^2y^2</script> works. Let’s verify this. </p><script type="math/tex; mode=display"> \begin{align*} 
+\frac{\partial}{\partial x} (x^2y^2) &= \answer{2xy^2}\\
+\frac{\partial}{\partial y} (x^2y^2) &= \answer{2x^2y}\\
+\end{align*}</script>
+                                                                  
+
+                                                                  
+<!--l. 256--><p class="noindent" >Now that we have our function <script type="math/tex">f(x,y)=x^2y^2</script> such that <script type="math/tex">\textbf {F}=\nabla f</script>, we will use the Fundamental
+Theorem of Line Integrals to evaluate. Note the start and end points of our
+curve
+</p>
+<script type="math/tex; mode=display"> \begin{align*} 
+\textbf{A} &= \textbf{x}(0) = (\answer{2}, \answer{0})\\
+\textbf{B} &= \textbf{x}(1) = (\answer{-2}, \answer{0})\\
+\end{align*}</script>
+<script type="math/tex; mode=display"> \begin{align*} 
+\int_{\textbf{x}}\textbf{F}\cdot d\textbf{s} &= \int_{\textbf{x}}\nabla f\cdot d\textbf{s}\\
+&= f(\textbf{B})-f(\textbf{A})\\
+&= \answer{0}
+\end{align*}</script>
+<!--l. 269--><p class="noindent" >Note that this is a much easier computation than the integral we had from the first
+method.
+</p><!--l. 271--><p class="noindent" >Finally, we compute the line integral using the third method. We have already shown
+that <script type="math/tex">\mathbf {F}</script> is a conservative vector field (by finding <script type="math/tex">f</script> such that <script type="math/tex">\mathbf {F}=\nabla f</script>), and hence we know that <script type="math/tex">\mathbf {F}</script>
+is path independent. So we can compute this integral by instead integrating
+over an easier path with the same start and end points, <script type="math/tex">(2,0)</script> and <script type="math/tex">(-2,0)</script>, respectively.
+Let’s choose the straight line from <script type="math/tex">(2,0)</script> to <script type="math/tex">(-2,0)</script>, and parametrize this curve. <script type="math/tex; mode=display"> \textbf {y}(t)=(\answer {t}, 0)\hspace {1cm} \textrm {for }t\in [-2,2] </script> Now
+we can integrate over <script type="math/tex">y</script> instead, which will be a much easier computation.
+</p><script type="math/tex; mode=display"> \begin{align*} 
+\int_{\textbf{x}}\textbf{F}\cdot d\textbf{s}  &= \int_{\textbf{y}}\textbf{F}\cdot d\textbf{s}\\
+&= \int_{-2}^{2} \textbf{F}(\textbf{y}(t))\cdot \textbf{y}'(t)\,dt\\
+&= \int_{-2}^{2} (\answer{0},\answer{0})\cdot (1,0)\,dt\\
+&= \int_{-2}^{2} \answer{0}\,dt\\
+&= \answer{0}
+\end{align*}</script>
+<!--l. 284--><p class="noindent" >So we’ve seen that we can compute this line integral in a few different ways, using the
+fact that the vector field is conservative.
+</div>
+</div>
+</p><!--l. 288--><p class="noindent" >Depending on the particular problem or example, any one of these methods might be
+easier than the others. You should practice trying these different methods, and see
+which you prefer! However, remember that for the second and third options, we need
+to first verify that the vector field <script type="math/tex">\mathbf {F}</script> is conservative. This usually means finding a
+potential function <script type="math/tex">f</script> such that <script type="math/tex">\mathbf {F}=\nabla f</script>.
+<a 
+ id="Q1-1-7"></a>
+</p>
+                                                                  
+
+                                                                  
+<h3 class="likesectionHead"><a 
+ id="x1-4000"></a>Summary</h3>
+<!--l. 292--><p class="noindent" >In this activity, we introduced the following terms. </p>
+     <ul class="itemize1">
+     <li class="itemize">Path independent</li></ul>
+<!--l. 296--><p class="noindent" >We also established the following results. </p>
+     <ul class="itemize1">
+     <li class="itemize">The Fundamental Theorem of Line Integrals.
+     </li>
+     <li class="itemize">If <script type="math/tex">\textbf {F}</script> is a conservative vector field defined on an open and connected domain
+     <script type="math/tex">X</script>, then <script type="math/tex">\textbf {F}</script> is path independent.</li></ul>
+<!--l. 302--><p class="noindent" >These results provide us with new methods to compute some vector line
+integrals.
+</p><!--l. 304--><p class="noindent" >In the next activity, we will discuss how we can determine whether or not a vector
+field is conservative.
+</body> 
+ 
+</html>
+                                                                  
+
+                                                                  
+                                                                  
+
+

@@ -1,17 +1,18 @@
 <!doctype html> 
 <html lang="en"> 
-<head> <title>Continuity  and  Limits  in
-General</title> 
+<head> <title>Continuity and Limits in General</title> 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
 <meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
 <meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
 <!-- charset=utf-8,-css,html,htex4ht,xhtml --> 
 <meta name="src" content="continuity.tex" /> 
-<meta name="author" content="" /> 
+<meta name="author" content="Melissa
+Lynn" /> 
 <meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
 <meta name="ximera" content="version 0.0.1" /> 
 <link href="https://ximera.osu.edu/public/stylesheets/standalone.css" rel="stylesheet" media="screen"/> 
 <script type="text/javascript" async src="https://ximera.osu.edu/public/javascripts/standalone.min.js"></script> 
+<meta name="learning-outcome" content="Understand the definition of continuity. Identify continuous functions, and evaluate their limits using direct substitution."/> 
 </head><body> 
 <div class="preamble"><script type="math/tex">\newenvironment {prompt}{}{}
 \newcommand {\DeclareMathOperator }[2]{\@OldDeclareMathOperator {##1}{##2}\immediate \write \myfile {\unexpanded {\DeclareMathOperator }{\unexpanded {##1}}{\unexpanded {##2}}}}
@@ -34,17 +35,17 @@ General</title>
 class="abstract" 
 >
 </div>   <div class="maketitle"></div>
-<!--l. 11--><p class="noindent" >So far, we’ve seen how we can show that limits exist using a delta-epsilon proof,
+<!--l. 14--><p class="noindent" >So far, we’ve seen how we can show that limits exist using a delta-epsilon proof,
 or by changing coordinates. In single variable calculus, we were often able
 to evaluate limits by direct substitution. For example, we could evaluate
 </p><script type="math/tex; mode=display"> \begin{align*} 
 \lim_{x\rightarrow 2} x^2+x\sin(\pi x) &= 2^2 + 2\sin(\pi \cdot 2)\\
 &= \answer{4}.
 \end{align*}</script>
-<!--l. 16--><p class="noindent" >We are able to do this because the function <script type="math/tex">f(x) = x^2+x\sin (\pi x)</script> is continuous. Recall that a function <script type="math/tex">f:\mathbb {R}\rightarrow \mathbb {R}</script> is
+<!--l. 19--><p class="noindent" >We are able to do this because the function <script type="math/tex">f(x) = x^2+x\sin (\pi x)</script> is continuous. Recall that a function <script type="math/tex">f:\mathbb {R}\rightarrow \mathbb {R}</script> is
 <em>continuous</em> at <script type="math/tex">x=a</script> if <script type="math/tex; mode=display"> \lim _{x\rightarrow a}f(x) = f(a). </script> For continuous functions, we can evaluate limits by simply plugging
 in the value.
-</p><!--l. 22--><p class="noindent" >Once we define continuity for multivariable functions, and determine which
+</p><!--l. 25--><p class="noindent" >Once we define continuity for multivariable functions, and determine which
 functions are continuous, we can use similar methods to evaluate multivariable
 limits.
 <a 
@@ -52,12 +53,12 @@ limits.
 </p>
 <h3 class="likesectionHead"><a 
  id="x1-1000"></a>Continuity</h3>
-<!--l. 26--><p class="noindent" >We define continuity similarly to how we did in single variable calculus.
+<!--l. 29--><p class="noindent" >We define continuity similarly to how we did in single variable calculus.
 </p>
 <div class="theorem-like problem-environment definition" id="problem1"><a 
  id="x1-1001r1"></a>A function <script type="math/tex">f:\mathbb {R}^n\rightarrow \mathbb {R}</script> is <em>continuous</em> at <script type="math/tex">\vec {x}=\vec {a}</script> in <script type="math/tex">\mathbb {R}^n</script> if <script type="math/tex; mode=display"> \lim _{\vec {x}\rightarrow \vec {a}}f(\vec {x}) = f(\vec {a}). </script>
 </div>
-<!--l. 35--><p class="noindent" >Also similar to single variable calculus, virtually all of the common functions that we
+<!--l. 38--><p class="noindent" >Also similar to single variable calculus, virtually all of the common functions that we
 work with are continuous on their domains. That is, anywhere that they’re defined,
                                                                   
 
@@ -76,15 +77,15 @@ they are continuous.
      <li class="itemize">trigonometric functions and inverse trigonometric functions
      </li>
      <li class="itemize">exponential functions and logarithmic functions</li></ul>
-<!--l. 46--><p class="noindent" ></div>
-</p><!--l. 48--><p class="noindent" >Furthermore, all of the ways that we’d like to combine continuous functions will
+<!--l. 49--><p class="noindent" ></div>
+</p><!--l. 51--><p class="noindent" >Furthermore, all of the ways that we’d like to combine continuous functions will
 result in another continuous function.
 </p>
 <div class="theorem-like problem-environment theorem" id="problem3"><a 
  id="x1-1003r3"></a>If <script type="math/tex">f</script> is continuous at <script type="math/tex">\vec {x}=\vec {a}</script>, and <script type="math/tex">k</script> is a real number, then <script type="math/tex">kf</script> is also continuous at <script type="math/tex">\vec {a}</script>.
-<!--l. 53--><p class="noindent" >If <script type="math/tex">f</script> and <script type="math/tex">g</script> are continuous at <script type="math/tex">\vec {x}=\vec {a}\in \mathbb {R}^n</script>, then <script type="math/tex">f+g</script> is also continuous at <script type="math/tex">\vec {a}</script>.
-</p><!--l. 55--><p class="noindent" >If <script type="math/tex">f</script> and <script type="math/tex">g</script> are continuous at <script type="math/tex">\vec {x}=\vec {a}\in \mathbb {R}^n</script>, then <script type="math/tex">fg</script> is also continuous at <script type="math/tex">\vec {a}</script>.
-</p><!--l. 57--><p class="noindent" >If <script type="math/tex">g</script> is continuous at <script type="math/tex">\vec {x}=\vec {a}</script>, and <script type="math/tex">f</script> is continuous at <script type="math/tex">g(\vec {a})</script>, then <script type="math/tex">f\circ g</script> is continuous at <script type="math/tex">\vec {a}</script>.
+<!--l. 56--><p class="noindent" >If <script type="math/tex">f</script> and <script type="math/tex">g</script> are continuous at <script type="math/tex">\vec {x}=\vec {a}\in \mathbb {R}^n</script>, then <script type="math/tex">f+g</script> is also continuous at <script type="math/tex">\vec {a}</script>.
+</p><!--l. 58--><p class="noindent" >If <script type="math/tex">f</script> and <script type="math/tex">g</script> are continuous at <script type="math/tex">\vec {x}=\vec {a}\in \mathbb {R}^n</script>, then <script type="math/tex">fg</script> is also continuous at <script type="math/tex">\vec {a}</script>.
+</p><!--l. 60--><p class="noindent" >If <script type="math/tex">g</script> is continuous at <script type="math/tex">\vec {x}=\vec {a}</script>, and <script type="math/tex">f</script> is continuous at <script type="math/tex">g(\vec {a})</script>, then <script type="math/tex">f\circ g</script> is continuous at <script type="math/tex">\vec {a}</script>.
 </div>
 </p>
 <div class="theorem-like problem-environment example" id="problem4"><a 
@@ -108,7 +109,7 @@ id="choice5"><script type="math/tex">j(x,y) = \tan (xy)</script></span> <span cl
 
                                                                   
 \end{align*}</script>
-<!--l. 86--><p class="noindent" >Note that even if a function is discontinuous at a point, it’s still possible that the
+<!--l. 89--><p class="noindent" >Note that even if a function is discontinuous at a point, it’s still possible that the
 limit exists. In this case, you’ll need to use a change of coordinates or other method
 to evaluate the limit.
 </div>
@@ -117,10 +118,10 @@ to evaluate the limit.
 </p>
 <h3 class="likesectionHead"><a 
  id="x1-2000"></a>Limits in General</h3>
-<!--l. 91--><p class="noindent" >So far, we’ve defined limits of scalar-valued functions, <script type="math/tex">\mathbb {R}^n\rightarrow \mathbb {R}</script>. We’ve seen how we can
+<!--l. 94--><p class="noindent" >So far, we’ve defined limits of scalar-valued functions, <script type="math/tex">\mathbb {R}^n\rightarrow \mathbb {R}</script>. We’ve seen how we can
 evaluate these limits, or show that they do not exist. However, we’ve yet to deal with
 more general multivariable functions, <script type="math/tex">\mathbb {R}^n\rightarrow \mathbb {R}^m</script>.
-</p><!--l. 93--><p class="noindent" >Fortunately, limits in the more general setting turn out to be an easy extension of the
+</p><!--l. 96--><p class="noindent" >Fortunately, limits in the more general setting turn out to be an easy extension of the
 limits that we’ve already defined. That is, if we have a function <script type="math/tex">\vec {f}:\mathbb {R}^n\rightarrow \mathbb {R}^m</script>, we can write <script type="math/tex">\vec {f}</script> in
 terms of its coordinate functions, <script type="math/tex; mode=display"> \vec {f}(\vec {x}) = (f_1(\vec {x}), f_2(\vec {x}),...,f_m(\vec {x})). </script> Then, we can use the limits of the coordinate
 functions to define a limit of <script type="math/tex">f</script>.
@@ -129,7 +130,7 @@ functions to define a limit of <script type="math/tex">f</script>.
  id="x1-2001r7"></a>Suppose we have a function <script type="math/tex">\vec {f}:\mathbb {R}^n\rightarrow \mathbb {R}^m</script> with <script type="math/tex">\vec {f}(\vec {x}) = (f_1(\vec {x}), f_2(\vec {x}),...,f_m(\vec {x}))</script>. Then we define <script type="math/tex; mode=display"> \lim _{\vec {x}\rightarrow \vec {a}}\vec {f}(\vec {x}) = \left (\lim _{\vec {x}\rightarrow \vec {a}}f_1(\vec {x}), \lim _{\vec {x}\rightarrow \vec {a}}f_2(\vec {x}),...,\lim _{\vec {x}\rightarrow \vec {a}}f_m(\vec {x})\right ), </script> provided each of these limits
 exist.
 </div>
-<!--l. 107--><p class="noindent" >So, we can evaluate the limit of a function <script type="math/tex">\vec {f}:\mathbb {R}^n\rightarrow \mathbb {R}^m</script> by taking the limit of the component
+<!--l. 110--><p class="noindent" >So, we can evaluate the limit of a function <script type="math/tex">\vec {f}:\mathbb {R}^n\rightarrow \mathbb {R}^m</script> by taking the limit of the component
 functions. Because of this, the results and methods that we’ve used for limits of
 scalar functions carry naturally over to this more general setting.
 </p>
@@ -140,7 +141,7 @@ scalar functions carry naturally over to this more general setting.
 \lim_{(x,y)\rightarrow(0,1)}\left(\sin(x+y), \frac{1}{\ln(y)}\right) &= \answer{DNE}\\
 \lim_{(x,y)\rightarrow(0,0)}\left(\frac{x^3y}{x^2+y^2}, \frac{xy^3}{x^2+y^2}\right) &= \answer{(0,0)}
 \end{align*}</script>
-<!--l. 116--><p class="noindent" ></div>
+<!--l. 119--><p class="noindent" ></div>
 </body> 
  
 </html>

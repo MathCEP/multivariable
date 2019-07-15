@@ -1,16 +1,18 @@
 <!doctype html> 
 <html lang="en"> 
-<head> <title>Absolute Extrema</title> 
+<head> <title>Absolute  Extrema</title> 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
 <meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
 <meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
 <!-- charset=utf-8,-css,html,htex4ht,xhtml --> 
 <meta name="src" content="compact_region.tex" /> 
-<meta name="author" content="" /> 
+<meta name="author" content="Melissa
+Lynn" /> 
 <meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
 <meta name="ximera" content="version 0.0.1" /> 
 <link href="https://ximera.osu.edu/public/stylesheets/standalone.css" rel="stylesheet" media="screen"/> 
 <script type="text/javascript" async src="https://ximera.osu.edu/public/javascripts/standalone.min.js"></script> 
+<meta name="learning-outcome" content="Identify compact regions. Use the extreme value theorem to find global extrema."/> 
 </head><body> 
 <div class="preamble"><script type="math/tex">\newenvironment {prompt}{}{}
 \newcommand {\DeclareMathOperator }[2]{\@OldDeclareMathOperator {##1}{##2}\immediate \write \myfile {\unexpanded {\DeclareMathOperator }{\unexpanded {##1}}{\unexpanded {##2}}}}
@@ -33,7 +35,7 @@
 class="abstract" 
 >
 </div>   <div class="maketitle"></div>
-<!--l. 11--><p class="noindent" >We’ll now turn our attention to absolute extrema, also called global extrema.
+<!--l. 14--><p class="noindent" >We’ll now turn our attention to absolute extrema, also called global extrema.
 We’ll begin by reviewing the situation in single variable calculus, where we
 optimized over closed intervals. This is sometimes called the “closed interval
 method.”
@@ -42,13 +44,13 @@ method.”
  id="x1-17r1"></a>Let <script type="math/tex">S</script> be a subset of <script type="math/tex">\mathbb {R}</script>, and let <script type="math/tex">f:S\rightarrow \mathbb {R}</script>. We say that <script type="math/tex">f</script> has an <em>absolute maximum</em> over <script type="math/tex">S</script> at <script type="math/tex">x=c</script> if <script type="math/tex">f(x)\leq f(c)</script> for
 all <script type="math/tex">x\in S</script>. If this is the case, then we say that <script type="math/tex">f(c)</script> is the absolute maximum of <script type="math/tex">f</script> over
 <script type="math/tex">S</script>.
-<!--l. 16--><p class="noindent" >Let <script type="math/tex">S</script> be a subset of <script type="math/tex">\mathbb {R}</script>, and let <script type="math/tex">f:S\rightarrow \mathbb {R}</script>. We say that <script type="math/tex">f</script> has an <em>absolute minimum</em> over <script type="math/tex">S</script> at <script type="math/tex">x=c</script> if <script type="math/tex">f(x)\geq f(c)</script> for
+<!--l. 19--><p class="noindent" >Let <script type="math/tex">S</script> be a subset of <script type="math/tex">\mathbb {R}</script>, and let <script type="math/tex">f:S\rightarrow \mathbb {R}</script>. We say that <script type="math/tex">f</script> has an <em>absolute minimum</em> over <script type="math/tex">S</script> at <script type="math/tex">x=c</script> if <script type="math/tex">f(x)\geq f(c)</script> for
 all <script type="math/tex">x\in S</script>. If this is the case, then we say that <script type="math/tex">f(c)</script> is the absolute minimum of <script type="math/tex">f</script> over
 <script type="math/tex">S</script>.
 </div>
-</p><!--l. 19--><p class="noindent" >In general, a function is not guaranteed to have an absolute maximum or
+</p><!--l. 22--><p class="noindent" >In general, a function is not guaranteed to have an absolute maximum or
 minimum.
-</p><!--l. 21--><p class="noindent" >Usually, we took <script type="math/tex">f</script> to be a continuous function and <script type="math/tex">S</script> to be a closed interval. We did
+</p><!--l. 24--><p class="noindent" >Usually, we took <script type="math/tex">f</script> to be a continuous function and <script type="math/tex">S</script> to be a closed interval. We did
 this because, in this case, <script type="math/tex">f</script> is guaranteed to have an absolute maximum and absolute
 minimum, and these will either happen at critical points or at the endpoints of <script type="math/tex">S</script>. This
 is true by the Extreme Value Theorem.
@@ -59,7 +61,7 @@ maximum and absolute minimum over <script type="math/tex">I</script>. Furthermor
 or absolute minimum over <script type="math/tex">I</script> at <script type="math/tex">x=c</script>, then either <script type="math/tex">c</script> is a critical point of <script type="math/tex">f</script>, or <script type="math/tex">c</script> is an endpoint
 of the interval <script type="math/tex">I</script>.
 </div>
-<!--l. 27--><p class="noindent" >Using this theorem, we can find the absolute maximum and absolute minimum of a
+<!--l. 30--><p class="noindent" >Using this theorem, we can find the absolute maximum and absolute minimum of a
                                                                   
 
                                                                   
@@ -76,7 +78,7 @@ class="enumerate-enumitem">Find <script type="math/tex">f(a)</script> and <scrip
 class="enumerate-enumitem">Among the values of <script type="math/tex">f</script> at the critical points and at the endpoints, the largest
      value is the absolute maximum, and the smallest value is the absolute
      minimum.</dd></dl>
-<!--l. 34--><p class="noindent" >We will be able to find an analogous theorem and process for finding the absolute
+<!--l. 37--><p class="noindent" >We will be able to find an analogous theorem and process for finding the absolute
 maximum and absolute minimum of a multivariable function, but this raises the
 immediate question: in <script type="math/tex">\mathbb {R}^n</script>, what is the analogue of a closed interval? This brings us to
 compact sets.
@@ -85,18 +87,18 @@ compact sets.
 </p>
 <h3 class="likesectionHead"><a 
  id="x1-1000"></a>Compact sets</h3>
-<!--l. 38--><p class="noindent" >In order to formulate a version of the Extreme Value Theorem for multivariable
+<!--l. 41--><p class="noindent" >In order to formulate a version of the Extreme Value Theorem for multivariable
 functions, we need to consider functions over compact sets, which must be closed.
 Recall that a subset <script type="math/tex">X\subset \mathbb {R}^n</script> is <em>closed</em> if its complement is open. Equivalently, <script type="math/tex">X</script> is closed if
 and only if it contains all of its boundary points. Roughly speaking, a set is compact
 if its “edges” are solid lines, not dashed lines.
-</p><!--l. 40--><p class="noindent" >For a set to be compact, it needs to be bounded in addition to being closed.
+</p><!--l. 43--><p class="noindent" >For a set to be compact, it needs to be bounded in addition to being closed.
 </p>
 <div class="theorem-like problem-environment definition" id="problem3"><a 
  id="x1-1001r3"></a>A subset <script type="math/tex">X\subset \mathbb {R}^n</script> is <em>bounded</em> if there exists some <script type="math/tex">R</script> such that that <script type="math/tex">X\subset B_R(\vec {0}) = \{\vec {x}\;:\;\|\vec {x}\|<R\}</script>. Roughly speaking, this
 means that <script type="math/tex">X</script> doesn’t stretch to infinity in any direction, so we can zoom out far
 enough that we can see all of <script type="math/tex">X</script>.
-<!--l. 45--><p class="noindent" >A subset <script type="math/tex">X\subset \mathbb {R}^n</script> is <em>compact</em> if it is both closed and bounded.
+<!--l. 48--><p class="noindent" >A subset <script type="math/tex">X\subset \mathbb {R}^n</script> is <em>compact</em> if it is both closed and bounded.
 </div>
 </p>
 <div class="theorem-like problem-environment example" id="problem4"><a 
@@ -106,7 +108,7 @@ is not compact.
 src="./compact_region-figure0.svg" alt=""  
  />
 </div>
-<!--l. 61--><p class="noindent" >The set <script type="math/tex">\{(x,y)\;:\;x^2+y^2\leq 1\}\subset \mathbb {R}^2</script> is both closed and bounded, hence compact.
+<!--l. 64--><p class="noindent" >The set <script type="math/tex">\{(x,y)\;:\;x^2+y^2\leq 1\}\subset \mathbb {R}^2</script> is both closed and bounded, hence compact.
 </p>
                                                                   
 
@@ -115,29 +117,29 @@ src="./compact_region-figure0.svg" alt=""
 src="./compact_region-figure1.svg" alt=""  
  />
 </div>
-<!--l. 73--><p class="noindent" >The set <script type="math/tex">\{(x,y)\;:\;x^2+y^2\geq 1\}\subset \mathbb {R}^2</script> is closed but not bounded. Hence it is not compact.
+<!--l. 76--><p class="noindent" >The set <script type="math/tex">\{(x,y)\;:\;x^2+y^2\geq 1\}\subset \mathbb {R}^2</script> is closed but not bounded. Hence it is not compact.
 </p>
 <div class="image-environment" role="img" aria-labelledby="image-alt-3">  <img 
 src="./compact_region-figure2.svg" alt=""  
  />
 </div>
-<!--l. 86--><p class="noindent" ></div>
+<!--l. 89--><p class="noindent" ></div>
 </p>
 <div role="article" class="problem-environment problem" id="problem5"><a 
  id="x1-1003r5"></a> Sketch each region, and determine if it is closed, bounded, and/or compact.
-<!--l. 91--><p class="noindent" ><script type="math/tex">\{(x,y)\}\;:\;-1\leq x\leq 1\}</script> </p><div class="select-all" id="problem6"><a 
+<!--l. 94--><p class="noindent" ><script type="math/tex">\{(x,y)\}\;:\;-1\leq x\leq 1\}</script> </p><div class="select-all" id="problem6"><a 
  id="x1-1004r6"></a> <span class="choice correct "   id="choice1">closed</span> <span class="choice  "   id="choice2">bounded</span> <span class="choice  "   id="choice3">compact</span>
 </div>
-<!--l. 98--><p class="noindent" ><script type="math/tex">\{(x,y)\}\;:\;-1\leq y\leq 1\}</script> </p><div class="select-all" id="problem7"><a 
+<!--l. 101--><p class="noindent" ><script type="math/tex">\{(x,y)\}\;:\;-1\leq y\leq 1\}</script> </p><div class="select-all" id="problem7"><a 
  id="x1-1005r7"></a> <span class="choice correct "   id="choice4">closed</span> <span class="choice  "   id="choice5">bounded</span> <span class="choice  "   id="choice6">compact</span>
 </div>
-<!--l. 105--><p class="noindent" ><script type="math/tex">\{(x,y)\}\;:\;-1\leq x\leq 1\text { and }-1\leq y\leq 1\}</script> </p><div class="select-all" id="problem8"><a 
+<!--l. 108--><p class="noindent" ><script type="math/tex">\{(x,y)\}\;:\;-1\leq x\leq 1\text { and }-1\leq y\leq 1\}</script> </p><div class="select-all" id="problem8"><a 
  id="x1-1006r8"></a> <span class="choice correct "   id="choice7">closed</span> <span class="choice correct "   id="choice8">bounded</span> <span class="choice correct "   id="choice9">compact</span>
 </div>
-<!--l. 112--><p class="noindent" ><script type="math/tex">\{(x,y)\}\;:\;x^2-1\leq y\leq 1-x^2\}</script> </p><div class="select-all" id="problem9"><a 
+<!--l. 115--><p class="noindent" ><script type="math/tex">\{(x,y)\}\;:\;x^2-1\leq y\leq 1-x^2\}</script> </p><div class="select-all" id="problem9"><a 
  id="x1-1007r9"></a> <span class="choice correct "   id="choice10">closed</span> <span class="choice correct "   id="choice11">bounded</span> <span class="choice correct "   id="choice12">compact</span>
 </div>
-<!--l. 119--><p class="noindent" ><script type="math/tex">\{(x,y)\}\;:\;-x^2\leq y\leq x^2\}</script> </p><div class="select-all" id="problem10"><a 
+<!--l. 122--><p class="noindent" ><script type="math/tex">\{(x,y)\}\;:\;-x^2\leq y\leq x^2\}</script> </p><div class="select-all" id="problem10"><a 
  id="x1-1008r10"></a> <span class="choice correct "   id="choice13">closed</span> <span class="choice  "   id="choice14">bounded</span> <span class="choice  "   id="choice15">compact</span>
 </div>
 </div>
@@ -145,7 +147,7 @@ src="./compact_region-figure2.svg" alt=""
  id="Q1-1-3"></a>
 <h3 class="likesectionHead"><a 
  id="x1-2000"></a>Extreme Value Theorem</h3>
-<!--l. 130--><p class="noindent" >As in the single variable case, as long as we have a continuous function over a
+<!--l. 133--><p class="noindent" >As in the single variable case, as long as we have a continuous function over a
 compact region, there is guaranteed to be an absolute maximum and absolute
 minimum. Furthermore, these will always occur either at critical points, or on the
 boundary.
@@ -154,10 +156,10 @@ boundary.
  id="x1-2001r11"></a>(Extreme Value Theorem) Let <script type="math/tex">f:X\rightarrow \mathbb {R}</script> be a continuous function on a compact region
 <script type="math/tex">X\subset \mathbb {R}^n</script>. Then <script type="math/tex">f</script> has both an absolute maximum and an absolute minimum over
 <script type="math/tex">X</script>.
-<!--l. 135--><p class="noindent" >Furthermore, if <script type="math/tex">f</script> has an absolute maximum or absolute minimum at <script type="math/tex">\vec {a}</script>, then either <script type="math/tex">\vec {a}</script> is a
+<!--l. 138--><p class="noindent" >Furthermore, if <script type="math/tex">f</script> has an absolute maximum or absolute minimum at <script type="math/tex">\vec {a}</script>, then either <script type="math/tex">\vec {a}</script> is a
 critical point of <script type="math/tex">f</script> in <script type="math/tex">X</script>, or <script type="math/tex">\vec {a}</script> is on the boundary of <script type="math/tex">X</script>.
 </div>
-</p><!--l. 138--><p class="noindent" >Because of this theorem, we can follow the steps below to optimize a continuous
+</p><!--l. 141--><p class="noindent" >Because of this theorem, we can follow the steps below to optimize a continuous
 function <script type="math/tex">f</script> on a compact region <script type="math/tex">X</script>.
      </p><dl class="enumerate-enumitem"><dt class="enumerate-enumitem">
                                                                   
@@ -180,13 +182,13 @@ class="enumerate-enumitem">Of the values from steps 1 and 2, the largest value i
 src="./compact_region-figure3.svg" alt=""  
  />
 </div>
-<!--l. 160--><p class="noindent" >First, note that <script type="math/tex">f</script> is continuous, and <script type="math/tex">D</script> is a compact region, so <script type="math/tex">f</script> has an absolute
+<!--l. 163--><p class="noindent" >First, note that <script type="math/tex">f</script> is continuous, and <script type="math/tex">D</script> is a compact region, so <script type="math/tex">f</script> has an absolute
 maximum and an absolute minimum over <script type="math/tex">D</script>, and each occurs either at a critical point
 or on the boundary of <script type="math/tex">D</script>.
-</p><!--l. 162--><p class="noindent" >We first find the critical points of <script type="math/tex">f</script>, by finding where the gradient is <script type="math/tex">\vec {0}</script>. <script type="math/tex; mode=display"> \nabla f(x,y) = \answer {(2x-y, -x+2y)} </script> Solving for
+</p><!--l. 165--><p class="noindent" >We first find the critical points of <script type="math/tex">f</script>, by finding where the gradient is <script type="math/tex">\vec {0}</script>. <script type="math/tex; mode=display"> \nabla f(x,y) = \answer {(2x-y, -x+2y)} </script> Solving for
 where <script type="math/tex">\nabla f(x,y) = (0,0)</script>, we obtain the only critical point, <script type="math/tex; mode=display"> (x,y) = \answer {(0,0)}. </script> The value of <script type="math/tex">f</script> at this critical point is
 <script type="math/tex">\answer {0}</script>.
-</p><!--l. 172--><p class="noindent" >Next, we need to find the maximum and minimum values of <script type="math/tex">f</script> on the boundary of <script type="math/tex">X</script>,
+</p><!--l. 175--><p class="noindent" >Next, we need to find the maximum and minimum values of <script type="math/tex">f</script> on the boundary of <script type="math/tex">X</script>,
 which is the unit circle. In order to do this, we parametrize the unit circle, <script type="math/tex; mode=display"> \vec {x}(t) = (\cos (t),\sin (t)), </script> for <script type="math/tex">t\in [0,2\pi ]</script>.
 Substituting this into <script type="math/tex">f</script>, we can find the maximum and minimum of <script type="math/tex">f</script> on the boundary
 of <script type="math/tex">X</script> by finding the maximum and minimum of the single variable function
@@ -194,12 +196,12 @@ of <script type="math/tex">X</script> by finding the maximum and minimum of the 
 g(t) &= \cos^2 t - \cos(t)\sin(t) + \sin^2t\\
 &= 1-\cos(t)\sin(t)
 \end{align*}</script>
-<!--l. 181--><p class="noindent" >over <script type="math/tex">[0,2\pi ]</script>. To optimize this function, we follow the closed interval method for single
+<!--l. 184--><p class="noindent" >over <script type="math/tex">[0,2\pi ]</script>. To optimize this function, we follow the closed interval method for single
 variable functions. Differentiating <script type="math/tex">g</script>, we have </p><script type="math/tex; mode=display"> \begin{align*} 
 g'(t) &= \sin^2(t) - \cos^2(t)\\
 &= -\cos(2t).
 \end{align*}</script>
-<!--l. 186--><p class="noindent" >Solving <script type="math/tex">g'(t)=0</script> for <script type="math/tex">t</script>, the critical points in the interval <script type="math/tex">[0,2\pi ]</script> are <script type="math/tex">t=\frac {\pi }{4}</script>, <script type="math/tex">t =\frac {3\pi }{4}</script>, <script type="math/tex">t = \frac {5\pi }{4}</script>, and <script type="math/tex">t = \frac {7\pi }{4}</script> . The values of <script type="math/tex">g</script> at these
+<!--l. 189--><p class="noindent" >Solving <script type="math/tex">g'(t)=0</script> for <script type="math/tex">t</script>, the critical points in the interval <script type="math/tex">[0,2\pi ]</script> are <script type="math/tex">t=\frac {\pi }{4}</script>, <script type="math/tex">t =\frac {3\pi }{4}</script>, <script type="math/tex">t = \frac {5\pi }{4}</script>, and <script type="math/tex">t = \frac {7\pi }{4}</script> . The values of <script type="math/tex">g</script> at these
 points are </p><script type="math/tex; mode=display"> \begin{align*} 
 g\left(\frac{\pi}{4}\right) = \frac{1}{2},\\
 g\left(\frac{3\pi}{4}\right) = \frac{3}{2},\\
@@ -209,15 +211,15 @@ g\left(\frac{7\pi}{4}\right) = \frac{3}{2}.\\
                                                                   
 
                                                                   
-<!--l. 193--><p class="noindent" >The values of <script type="math/tex">g</script> at the endpoints, <script type="math/tex">t=0</script> and <script type="math/tex">t=2\pi </script>, are </p><script type="math/tex; mode=display"> \begin{align*} 
+<!--l. 196--><p class="noindent" >The values of <script type="math/tex">g</script> at the endpoints, <script type="math/tex">t=0</script> and <script type="math/tex">t=2\pi </script>, are </p><script type="math/tex; mode=display"> \begin{align*} 
 g(0) &= 1,\\
 g(2\pi) &= 1.
 \end{align*}</script>
-<!--l. 198--><p class="noindent" >Comparing all of these values, we see that the absolute maximum of <script type="math/tex">g</script> is <script type="math/tex">\frac {3}{2}</script>, and this
+<!--l. 201--><p class="noindent" >Comparing all of these values, we see that the absolute maximum of <script type="math/tex">g</script> is <script type="math/tex">\frac {3}{2}</script>, and this
 occurs when <script type="math/tex">t=\frac {3\pi }{4}</script> and when <script type="math/tex">t=\frac {7\pi }{4}</script>. These correspond to the points <script type="math/tex">\left (\frac {-\sqrt {2}}{2},\frac {\sqrt {2}}{2}\right )</script> and <script type="math/tex">\left (\frac {\sqrt {2}}{2},\frac {-\sqrt {2}}{2}\right )</script> on the boundary of <script type="math/tex">D</script>.
 The absolute minimum of <script type="math/tex">g</script> is <script type="math/tex">\frac {1}{2}</script>, and this occurs when <script type="math/tex">t=\frac {\pi }{4}</script> and when <script type="math/tex">t=\frac {5\pi }{4}</script>. These correspond to
 the points <script type="math/tex">\left (\frac {\sqrt {2}}{2},\frac {\sqrt {2}}{2}\right )</script> and <script type="math/tex">\left (\frac {-\sqrt {2}}{2},\frac {-\sqrt {2}}{2}\right )</script> on the boundary of <script type="math/tex">D</script>.
-</p><!--l. 200--><p class="noindent" >Now, considering the values of <script type="math/tex">f</script> at the critical points and on the boundary of <script type="math/tex">X</script>, we see
+</p><!--l. 203--><p class="noindent" >Now, considering the values of <script type="math/tex">f</script> at the critical points and on the boundary of <script type="math/tex">X</script>, we see
 that the absolute maximum of <script type="math/tex">f</script> is <script type="math/tex">\frac {3}{2}</script> and this occurs at <script type="math/tex">\left (\frac {-\sqrt {2}}{2},\frac {\sqrt {2}}{2}\right )</script> and <script type="math/tex">\left (\frac {\sqrt {2}}{2},\frac {-\sqrt {2}}{2}\right )</script>. The absolute minimum of
 <script type="math/tex">f</script> is <script type="math/tex">0</script> and this occurs at <script type="math/tex">(0,0)</script>.
 </p>
